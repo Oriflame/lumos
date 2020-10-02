@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:rajzik/lumos.git"
+    "url": "git@github.com:Oriflame/lumos.git"
   },
   "author": "Silhan Jan",
   "license": "MIT",
@@ -31,7 +31,7 @@
     "access": "public"
   },
   "beemo": {
-    "module": "@rajzik/lumos",
+    "module": "@ori/lumos",
     "drivers": [
       "babel",
       "eslint",
