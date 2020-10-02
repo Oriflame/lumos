@@ -1,6 +1,6 @@
 {
   "name": "@ori-open/config-webpack",
-  "version": "5.0.0",
+  "version": "0.0.0",
   "description": "Reusable Webpack configs.",
   "keywords": [
     "lumos",
@@ -34,7 +34,7 @@
     "@beemo/core": "^1.1.8",
     "@beemo/driver-webpack": "^1.2.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.2",
-    "@ori-open/lumos-common": "^4.0.0",
+    "@ori-open/lumos-common": "^0.0.0",
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.2",
     "css-loader": "^4.3.0",

@@ -1,4 +1,4 @@
-import { getConfig, getNextConfig } from '@ori-open/config-babel';
+import { getConfig } from '@ori-open/config-babel';
 import { getSettings } from '@ori-open/lumos-common';
 
 const { context, tool } = process.beemo;
@@ -13,15 +13,7 @@ const {
   srcFolder,
 } = getSettings();
 
-export = tool.isPluginEnabled('driver', 'next')
-  ? getNextConfig({
-      graphql,
-      next,
-      react,
-      typescript: tool.isPluginEnabled('driver', 'typescript'),
-      srcFolder,
-    })
-  : getConfig({
+export = getConfig({
       env,
       esm: !!(context.args.esm || process.env.ESM),
       graphql,

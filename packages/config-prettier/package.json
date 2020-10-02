@@ -1,6 +1,6 @@
 {
   "name": "@ori-open/config-prettier",
-  "version": "2.1.4",
+  "version": "0.0.0",
   "description": "Reusable Prettier config.",
   "keywords": [
     "lumos",
@@ -26,7 +26,7 @@
   "dependencies": {
     "@beemo/core": "^1.1.8",
     "@beemo/driver-prettier": "^1.3.2",
-    "@ori-open/lumos-common": "^4.0.0",
+    "@ori-open/lumos-common": "^0.0.0",
     "prettier": "^2.1.2"
   }
 }

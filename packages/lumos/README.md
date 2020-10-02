@@ -67,7 +67,6 @@ npm lumos typescript --build --reference-workspaces
 - [danger](../config-danger)
 - [eslint](../config-eslint)
 - [jest](../config-jest)
-- [next](../config-next)
 - [prettier](../config-prettier)
 - [typescript](../config-typescript)
 - [webpack](../config-webpack)

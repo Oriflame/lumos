@@ -1,6 +1,6 @@
 {
   "name": "@ori-open/lumos",
-  "version": "5.0.3",
+  "version": "0.0.0",
   "description": "Centralized CLI for JavaScript and TypeScript dev tools.",
   "keywords": [
     "lumos",
@@ -35,7 +35,7 @@
     "@beemo/cli": "^1.0.11",
     "@beemo/core": "^1.1.8",
     "@rajzik/conventional-changelog-beemo": "^2.1.1",
-    "@ori-open/lumos-common": "^4.0.0",
+    "@ori-open/lumos-common": "^0.0.0",
     "chalk": "^4.1.0",
     "check-node-version": "^4.0.3",
     "cross-env": "^7.0.2",
@@ -44,13 +44,12 @@
     "execa": "^4.0.3"
   },
   "devDependencies": {
-    "@ori-open/config-babel": "^3.0.0",
-    "@ori-open/config-danger": "^2.1.8",
-    "@ori-open/config-eslint": "^4.1.0",
-    "@ori-open/config-jest": "^3.0.0",
-    "@ori-open/config-next": "^3.0.0",
-    "@ori-open/config-prettier": "^2.1.4",
-    "@ori-open/config-typescript": "^3.0.0",
-    "@ori-open/config-webpack": "^5.0.0"
+    "@ori-open/config-babel": "^0.0.0",
+    "@ori-open/config-danger": "^0.0.0",
+    "@ori-open/config-eslint": "^0.0.0",
+    "@ori-open/config-jest": "^0.0.0",
+    "@ori-open/config-prettier": "^0.0.0",
+    "@ori-open/config-typescript": "^0.0.0",
+    "@ori-open/config-webpack": "^0.0.0"
   }
 }
