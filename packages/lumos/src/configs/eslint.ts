@@ -1,5 +1,5 @@
-import { getExtendsList, getIgnoreList } from '@rajzik/config-eslint';
-import { getSettings } from '@rajzik/lumos-common';
+import { getExtendsList, getIgnoreList } from '@ori-open/config-eslint';
+import { getSettings } from '@ori-open/lumos-common';
 
 const { tool } = process.beemo;
 const { next, node } = getSettings();

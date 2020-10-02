@@ -1,4 +1,4 @@
-import { getConfig, getIgnoreList } from '@rajzik/config-prettier';
+import { getConfig, getIgnoreList } from '@ori-open/config-prettier';
 
 export = {
   ...getConfig(),

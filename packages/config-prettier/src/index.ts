@@ -1,5 +1,5 @@
 import { PrettierConfig } from '@beemo/driver-prettier';
-import { IGNORE_PATHS } from '@rajzik/lumos-common';
+import { IGNORE_PATHS } from '@ori-open/lumos-common';
 
 export function getConfig(): PrettierConfig {
   return {

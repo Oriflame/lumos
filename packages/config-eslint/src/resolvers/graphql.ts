@@ -1,4 +1,4 @@
-import { GQL_EXT_PATTERN } from '@rajzik/lumos-common';
+import { GQL_EXT_PATTERN } from '@ori-open/lumos-common';
 
 export const interfaceVersion = 2;
 

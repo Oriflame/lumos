@@ -31,7 +31,7 @@
     "access": "public"
   },
   "beemo": {
-    "module": "@ori/lumos",
+    "module": "@ori-open/lumos",
     "drivers": [
       "babel",
       "eslint",

@@ -1,5 +1,5 @@
-import { getConfig, getNextConfig } from '@rajzik/config-babel';
-import { getSettings } from '@rajzik/lumos-common';
+import { getConfig, getNextConfig } from '@ori-open/config-babel';
+import { getSettings } from '@ori-open/lumos-common';
 
 const { context, tool } = process.beemo;
 const {

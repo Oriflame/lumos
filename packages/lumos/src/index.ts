@@ -1,5 +1,5 @@
 import Beemo, { DriverContext, Path } from '@beemo/core';
-import { getSettings } from '@rajzik/lumos-common';
+import { getSettings } from '@ori-open/lumos-common';
 import fs from 'fs';
 
 function hasNoPositionalArgs(context: DriverContext, name: string) {

@@ -6,7 +6,7 @@ import {
   EXTS,
   EXTS_GROUP,
   GQL_EXT_PATTERN,
-} from '@rajzik/lumos-common';
+} from '@ori-open/lumos-common';
 
 const config: ESLintConfig = {
   root: true,

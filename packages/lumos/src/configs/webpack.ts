@@ -1,5 +1,5 @@
-import { getConfig } from '@rajzik/config-webpack';
-import { getSettings } from '@rajzik/lumos-common';
+import { getConfig } from '@ori-open/config-webpack';
+import { getSettings } from '@ori-open/lumos-common';
 
 const {
   srcFolder,

@@ -1,5 +1,5 @@
 import { TypeScriptConfig } from '@beemo/driver-typescript';
-import { ALIAS_PATTERN } from '@rajzik/lumos-common';
+import { ALIAS_PATTERN } from '@ori-open/lumos-common';
 // Keep in sync with the `tsconfig.options.json` file in this package.
 export interface TypeScriptOptions {
   buildFolder: string;

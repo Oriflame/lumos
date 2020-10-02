@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-syntax, no-await-in-loop, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call */
 
 import { Path } from '@beemo/core';
-import { LumosPackage } from '@rajzik/lumos-common';
+import { LumosPackage } from '@ori-open/lumos-common';
 import chalk from 'chalk';
 import editJsonFile from 'edit-json-file';
 import { prompt } from 'enquirer';
@@ -29,7 +29,7 @@ async function copyAndInstallDepsFromModule(
 ) {
   const pkg = require(`${moduleName}/package.json`);
   const deps = Object.keys(pkg.dependencies).filter(
-    dep => !dep.includes('@beemo') && !dep.includes('@rajzik/lumos'),
+    dep => !dep.includes('@beemo') && !dep.includes('@ori-open/lumos'),
   );
 
   await installDeps(deps, isYarn, isMonorepo);
@@ -224,7 +224,7 @@ export async function eject() {
     console.log(`${chalk.gray(`[${driver}]`)} Updating dependencies`);
 
     await copyAndInstallDepsFromModule(
-      `@rajzik/config-${driver}`,
+      `@ori-open/config-${driver}`,
       response.yarn,
       response.monorepo,
     );
@@ -242,7 +242,7 @@ export async function eject() {
 
   console.log(`${chalk.cyan('[4/5]')} Removing config`);
 
-  await removeDeps(['@rajzik/lumos'], response.yarn, response.monorepo);
+  await removeDeps(['@ori-open/lumos'], response.yarn, response.monorepo);
 
   const pkg = editJsonFile(pkgPath);
 

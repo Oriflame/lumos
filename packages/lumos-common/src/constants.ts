@@ -38,7 +38,7 @@ export const NODE_TARGET = { node: NODE_VERSION };
 export const WEB_TARGET = { ie: 11 };
 
 export const SCAFFOLD_DEPS = [
-  '@rajzik/conventional-changelog-lint-config-beemo',
+  '@ori-open/conventional-changelog-lint-config-beemo',
   '@commitlint/cli',
   'husky',
   'lint-staged',

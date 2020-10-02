@@ -1,5 +1,5 @@
-import { getConfig } from '@rajzik/config-jest';
-import { getSettings } from '@rajzik/lumos-common';
+import { getConfig } from '@ori-open/config-jest';
+import { getSettings } from '@ori-open/lumos-common';
 
 const { coverage, graphql, react, srcFolder, testsFolder, node } = getSettings();
 

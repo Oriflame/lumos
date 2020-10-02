@@ -1,5 +1,5 @@
-import { getConfig } from '@rajzik/config-next';
-import { getSettings } from '@rajzik/lumos-common';
+import { getConfig } from '@ori-open/config-next';
+import { getSettings } from '@ori-open/lumos-common';
 
 const { srcFolder, root, buildFolder, nextTarget } = getSettings();
 

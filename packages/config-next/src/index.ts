@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-return */
 import bundleAnalyzer from '@next/bundle-analyzer';
-import { ALIAS_PATTERN, getESMAliases, WEBPACK_ROOT } from '@rajzik/lumos-common';
+import { ALIAS_PATTERN, getESMAliases, WEBPACK_ROOT } from '@ori-open/lumos-common';
 import { NextConfig, NextConfigObject } from 'beemo-driver-next';
 import path from 'path';
 import { mergeConfig } from './helpers';

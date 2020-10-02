@@ -6,7 +6,7 @@ import {
   LumosEnvSetting,
   NODE_TARGET,
   WEB_TARGET,
-} from '@rajzik/lumos-common';
+} from '@ori-open/lumos-common';
 
 interface BabelOptions {
   env?: LumosEnvSetting;

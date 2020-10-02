@@ -1,7 +1,7 @@
 /* eslint-disable import/no-dynamic-require */
 
 const fs = require('fs');
-const { getSettings, fromRoot } = require('@rajzik/lumos-common');
+const { getSettings, fromRoot } = require('@ori-open/lumos-common');
 
 // Import a custom setup file from the consumer
 const { testFolder } = getSettings();
