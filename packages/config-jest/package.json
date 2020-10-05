@@ -10,7 +10,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rajzik/lumos.git"
+    "url": "git@github.com:Oriflame/lumos.git"
   },
   "author": "Silhan Jan",
   "license": "MIT",
