@@ -5,7 +5,7 @@
 Centralized CLI for JavaScript and TypeScript developer tools, with sharable and battle tested
 configurations. [Built on and powered by Beemo](https://github.com/beemojs/beemo).
 
-Lumos is designed around oriflame projects. _Use at your own risk._
+Lumos is designed around Oriflame projects. _Use at your own risk._
 
 [Lumos Documentation](./packages/lumos)
 
@@ -77,7 +77,7 @@ arrow keys.
 However, there are a few caveats and requirements to follow when updating.
 
 1. Dependencies should be updated in isolation per package (workspace), and commited to git
-   separately. For example, only dependencies within the `@ori/config-jest` package should be
+   separately. For example, only dependencies within the `@ori-open/config-jest` package should be
    updated within a single commit.
    - This allows packages to update and version independently from each other.
    - The exception to this is when a dependency is used across many packages, like Babel being used
