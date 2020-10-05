@@ -1,13 +1,13 @@
 # Webpack Config
 
 Provides Webpack dependencies and configuration. Primarily used in unison with the
-[Lumos](https://www.npmjs.com/package/@rajzik/lumos) CLI.
+[Lumos](https://www.npmjs.com/package/@ori-open/lumos) CLI.
 
 ## Extending config
 
 **Create file in configs folder:**
 
-`configs/babel.js`
+`configs/webpack.js`
 
 ```js
 modules.exports = {

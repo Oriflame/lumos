@@ -1,7 +1,7 @@
 # Babel Config
 
 Factory functions for creating preset [Babel](https://babeljs.io/) configurations. Primarily used in
-unison with the [Lumos](https://www.npmjs.com/package/@rajzik/lumos) CLI.
+unison with the [Lumos](https://www.npmjs.com/package/@ori-open/lumos) CLI.
 
 ## Extending config
 
@@ -10,7 +10,7 @@ unison with the [Lumos](https://www.npmjs.com/package/@rajzik/lumos) CLI.
 ```json
 {
   "lumos": {
-    "eslint": {
+    "babel": {
       "plugins": ["styled-components"]
     }
   }
