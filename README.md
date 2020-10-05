@@ -53,8 +53,8 @@ Otherwise, we will not be accepting new features from individuals outside of Lum
 Lumos uses [conventional commits](https://www.conventionalcommits.org) and
 [Lerna](https://github.com/lerna/lerna) to automatically release and publish new package versions
 for every commit that merges to master. To ensure versions are bumped correctly, we use the
-[conventional-changelog-ori][conventional-changelog-ori] preset, coupled with PR titles and
-squash merging to achieve this.
+[conventional-changelog-ori][conventional-changelog-ori] preset, coupled with PR titles and squash
+merging to achieve this.
 
 If your PR title does not match the specification, a DangerJS status check will fail.
 

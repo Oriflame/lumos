@@ -14,14 +14,14 @@ const {
 } = getSettings();
 
 export = getConfig({
-      env,
-      esm: !!(context.args.esm || process.env.ESM),
-      graphql,
-      library,
-      next,
-      node,
-      react,
-      typescript: tool.isPluginEnabled('driver', 'typescript'),
-      empty,
-      srcFolder,
-    });
+  env,
+  esm: !!(context.args.esm || process.env.ESM),
+  graphql,
+  library,
+  next,
+  node,
+  react,
+  typescript: tool.isPluginEnabled('driver', 'typescript'),
+  empty,
+  srcFolder,
+});
