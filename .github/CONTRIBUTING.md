@@ -18,7 +18,7 @@ management layer.
 ### Workflow
 
 - `yarn run build` will build applicable packages.
-- `yarn run eslint` will run lint all source and test files.
+- `yarn run lint` will run lint all source and test files.
 - `yarn run jest` will run the test suite.
 - `yarn run prettier` will format code.
 - `yarn test` will test, lint, and build.
