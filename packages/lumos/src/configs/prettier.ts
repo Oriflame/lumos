@@ -1,4 +1,4 @@
-import { getConfig, getIgnoreList } from '@ori-open/config-prettier';
+import { getConfig, getIgnoreList } from '@oriflame/config-prettier';
 
 export = {
   ...getConfig(),

@@ -1,5 +1,5 @@
-import { getConfig } from '@ori-open/config-webpack';
-import { getSettings } from '@ori-open/lumos-common';
+import { getConfig } from '@oriflame/config-webpack';
+import { getSettings } from '@oriflame/lumos-common';
 
 const {
   srcFolder,

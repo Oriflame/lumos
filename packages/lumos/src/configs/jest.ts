@@ -1,5 +1,5 @@
-import { getConfig } from '@ori-open/config-jest';
-import { getSettings } from '@ori-open/lumos-common';
+import { getConfig } from '@oriflame/config-jest';
+import { getSettings } from '@oriflame/lumos-common';
 
 const { coverage, graphql, react, srcFolder, testsFolder, node } = getSettings();
 

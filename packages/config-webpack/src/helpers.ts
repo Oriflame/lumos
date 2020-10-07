@@ -1,5 +1,5 @@
 import { Path } from '@beemo/core';
-import { getCommitHash, getPackage, WEBPACK_ROOT } from '@ori-open/lumos-common';
+import { getCommitHash, getPackage, WEBPACK_ROOT } from '@oriflame/lumos-common';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import webpack, { Configuration } from 'webpack';

@@ -1,6 +1,6 @@
 const Enzyme = require('enzyme');
 const { createSerializer } = require('enzyme-to-json');
-const { stripHOCs } = require('@ori-open/lumos-common/react');
+const { stripHOCs } = require('@oriflame/lumos-common/react');
 
 function getAdapter() {
   try {

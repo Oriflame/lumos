@@ -1,5 +1,5 @@
 import { Path } from '@beemo/core';
-import { IGNORE_PATHS } from '@ori-open/lumos-common';
+import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
 export interface ESLintOptions {
   next?: boolean;

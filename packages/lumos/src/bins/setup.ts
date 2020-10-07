@@ -1,5 +1,5 @@
 import { Path } from '@beemo/core';
-import { LumosPackage, SCAFFOLD_DEPS } from '@ori-open/lumos-common';
+import { LumosPackage, SCAFFOLD_DEPS } from '@oriflame/lumos-common';
 import chalk from 'chalk';
 import editJsonFile from 'edit-json-file';
 import { prompt } from 'enquirer';
@@ -188,8 +188,8 @@ export async function setup() {
   console.log(`${chalk.cyan('[3/6]')} Installing dependencies`);
 
   let dependencies = [
-    '@ori-open/lumos',
-    ...response.drivers.map(driver => `@ori-open/config-${driver}`),
+    '@oriflame/lumos',
+    ...response.drivers.map(driver => `@oriflame/config-${driver}`),
   ];
 
   if (response.scaffold) {

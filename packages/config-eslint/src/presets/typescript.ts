@@ -1,5 +1,5 @@
 import { ESLintConfig } from '@beemo/driver-eslint';
-import { EXTS_GROUP, fromRoot } from '@ori-open/lumos-common';
+import { EXTS_GROUP, fromRoot } from '@oriflame/lumos-common';
 
 // In TS, all arguments are required for type information,
 // so we need to override the base JS setting.

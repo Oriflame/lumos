@@ -8,7 +8,7 @@ import {
   GQL_EXT_PATTERN,
   IGNORE_PATHS,
   TJSX_EXT_PATTERN,
-} from '@ori-open/lumos-common';
+} from '@oriflame/lumos-common';
 
 export interface JestOptions {
   graphql?: boolean;

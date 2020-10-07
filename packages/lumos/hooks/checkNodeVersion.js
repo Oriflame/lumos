@@ -2,7 +2,7 @@
 
 const chalk = require('chalk');
 const execa = require('execa');
-const { getPackage } = require('@ori-open/lumos-common');
+const { getPackage } = require('@oriflame/lumos-common');
 
 // Only run if the engines block is defined
 if (getPackage().engines) {

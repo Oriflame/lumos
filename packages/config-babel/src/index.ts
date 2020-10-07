@@ -5,7 +5,7 @@ import {
   LumosEnvSetting,
   NODE_TARGET,
   WEB_TARGET,
-} from '@ori-open/lumos-common';
+} from '@oriflame/lumos-common';
 
 interface BabelOptions {
   env?: LumosEnvSetting;

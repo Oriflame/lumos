@@ -1,7 +1,7 @@
 # ESLint Config
 
 Factory functions for creating preset [ESLint](https://eslint.org) configurations. Primarily used in
-unison with the [Lumos](https://www.npmjs.com/package/@ori-open/lumos) CLI.
+unison with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 

@@ -1,5 +1,5 @@
 {
-  "name": "@ori-open/config-prettier",
+  "name": "@oriflame/config-prettier",
   "version": "0.0.0",
   "description": "Reusable Prettier config.",
   "keywords": [
@@ -26,7 +26,7 @@
   "dependencies": {
     "@beemo/core": "^1.1.8",
     "@beemo/driver-prettier": "^1.3.2",
-    "@ori-open/lumos-common": "^0.0.0",
+    "@oriflame/lumos-common": "^0.0.0",
     "prettier": "^2.1.2"
   }
 }

@@ -10,7 +10,7 @@ import {
   GQL_EXT_PATTERN,
   TJSX_EXT_PATTERN,
   WEBPACK_ROOT,
-} from '@ori-open/lumos-common';
+} from '@oriflame/lumos-common';
 // @ts-expect-error
 import CssnanoWebpackPlugin from 'cssnano-webpack-plugin';
 import path from 'path';

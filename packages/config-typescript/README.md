@@ -1,7 +1,7 @@
 # TypeScript Config
 
 Factory functions for creating preset [TypeScript](https://www.typescriptlang.org/) configurations.
-Primarily used in unison with the [Lumos](https://www.npmjs.com/package/@ori-open/lumos) CLI.
+Primarily used in unison with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 

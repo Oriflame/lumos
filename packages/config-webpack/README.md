@@ -1,7 +1,7 @@
 # Webpack Config
 
 Provides Webpack dependencies and configuration. Primarily used in unison with the
-[Lumos](https://www.npmjs.com/package/@ori-open/lumos) CLI.
+[Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 

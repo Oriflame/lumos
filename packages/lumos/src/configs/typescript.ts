@@ -1,5 +1,5 @@
-import { getConfig, getConfigWithProjectRefs } from '@ori-open/config-typescript';
-import { getSettings } from '@ori-open/lumos-common';
+import { getConfig, getConfigWithProjectRefs } from '@oriflame/config-typescript';
+import { getSettings } from '@oriflame/lumos-common';
 
 const { context, tool } = process.beemo;
 const {

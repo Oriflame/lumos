@@ -1,5 +1,5 @@
 import { ESLintConfig } from '@beemo/driver-eslint';
-import { EXTS_GROUP } from '@ori-open/lumos-common';
+import { EXTS_GROUP } from '@oriflame/lumos-common';
 
 const config: ESLintConfig = {
   plugins: ['promise', 'unicorn'],
