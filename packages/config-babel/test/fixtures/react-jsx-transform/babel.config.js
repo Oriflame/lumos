@@ -1,3 +1,3 @@
 const { getConfig } = require('../../../lib/index');
-const config = getConfig({ srcFolder: '.', next: true });
+const config = getConfig({ srcFolder: '.', react: true });
 module.exports = config;

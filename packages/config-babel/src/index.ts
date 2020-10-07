@@ -67,6 +67,13 @@ export function getConfig({
         plugins.push(
           '@babel/plugin-transform-react-jsx-source',
           '@babel/plugin-transform-react-jsx-self',
+          [
+            '@babel/plugin-transform-react-jsx-development',
+            {
+              development: true,
+              runtime: 'automatic',
+            },
+          ],
           'react-refresh/babel',
         );
       }

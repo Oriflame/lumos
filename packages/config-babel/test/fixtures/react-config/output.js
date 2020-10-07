@@ -3,13 +3,22 @@
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 exports.__esModule = true;
+exports.App = App;
 exports.default = exports.Component = exports.another = exports.Ahoj = void 0;
 
 var _classPrivateFieldLooseBase2 = _interopRequireDefault(require("@babel/runtime/helpers/classPrivateFieldLooseBase"));
 
 var _classPrivateFieldLooseKey2 = _interopRequireDefault(require("@babel/runtime/helpers/classPrivateFieldLooseKey"));
 
+var _react = _interopRequireDefault(require("react"));
+
+function App() {
+  return <div>This is my app</div>;
+}
+
 const test = '';
+
+var _totally = (0, _classPrivateFieldLooseKey2.default)("totally");
 
 class Ahoj {
   constructor() {
@@ -26,8 +35,6 @@ class Ahoj {
 }
 
 exports.Ahoj = Ahoj;
-
-var _totally = (0, _classPrivateFieldLooseKey2.default)("totally");
 
 const another = a => {
   return a ?? '';
