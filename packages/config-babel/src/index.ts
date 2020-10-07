@@ -97,7 +97,7 @@ export function getConfig({
   }
 
   if (react) {
-    presets.push('@babel/preset-react');
+    presets.push(['@babel/preset-react', { runtime: 'automatic' }]);
   }
 
   if (typescript) {
