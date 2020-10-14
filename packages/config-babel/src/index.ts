@@ -67,13 +67,14 @@ export function getConfig({
         plugins.push(
           '@babel/plugin-transform-react-jsx-source',
           '@babel/plugin-transform-react-jsx-self',
-          [
-            '@babel/plugin-transform-react-jsx-development',
-            {
-              development: true,
-              runtime: 'automatic',
-            },
-          ],
+          // TODO: Remove once react 17 hits
+          // [
+          //   '@babel/plugin-transform-react-jsx-development',
+          //   {
+          //     development: true,
+          //     runtime: 'automatic',
+          //   },
+          // ],
           'react-refresh/babel',
         );
       }
@@ -104,7 +105,9 @@ export function getConfig({
   }
 
   if (react) {
-    presets.push(['@babel/preset-react', { runtime: 'automatic' }]);
+    // TODO: Remove once react 17 hits
+    // presets.push(['@babel/preset-react', { runtime: 'automatic' }]);
+    presets.push('@babel/preset-react');
   }
 
   if (typescript) {
