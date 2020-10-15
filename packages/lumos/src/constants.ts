@@ -13,7 +13,7 @@ export const LERNA_VERSION_ARGS = [
   // Use the Beemo conventional commit preset
   '--conventional-commits',
   '--changelog-preset',
-  '@rajzik/conventional-changelog-beemo',
+  '@rajzik/conventional-changelog-beemo', // TODO: Replace once package is released
   // Create a GitHub release
   '--create-release',
   'github',
