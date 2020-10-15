@@ -36,6 +36,10 @@ const config: ESLintConfig = {
     'react/state-in-constructor': 'off',
     'react/static-property-placement': 'off',
 
+    // Import React is no longer needed from latest version
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+
     // IMPORT
     'import/default': 'error',
     'import/namespace': 'error',
