@@ -165,7 +165,7 @@ function migrateJest() {
 
 function migrateWebpack() {
   const configPath = Path.resolve('webpack.config.js').path();
-  const url = 'https://github.com/rajzik/lumos/blob/master/packages/config-webpack/index.js';
+  const url = 'https://github.com/Oriflame/lumos/blob/master/packages/config-webpack/index.js';
 
   console.log(
     `${chalk.gray('[webpack]')} ${chalk.yellow('Webpack config could not be migrated.')}`,

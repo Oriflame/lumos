@@ -2596,6 +2596,25 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@oriflame/conventional-changelog-lint-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-0.1.0.tgz#e8844a041d83b2239dd935bd52fe6de0e068999e"
+  integrity sha512-SSYz2UW9wCFiTfy2jAg0U5zMyBS9E0Ib2454R0RUK2k2UnHtSNrIMB/DCxOan+ME2NWc/uLpTZRjf30TvIdbRA==
+  dependencies:
+    "@oriflame/conventional-changelog-types" "^0.1.0"
+
+"@oriflame/conventional-changelog-types@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-types/-/conventional-changelog-types-0.1.0.tgz#d57e79ee6035d434366d880903461caac17a5a42"
+  integrity sha512-VAaIfOOAM5YdVydMcxK+RBOyiuRmrbLuSSEc8Xsrs92k7JZybcPAsbjEE120XIWnpbqsKEctij8iSp2FvcuwEA==
+
+"@oriflame/conventional-changelog@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-0.1.0.tgz#09eb660e9b19bda685710be583eeae3c4117a7ec"
+  integrity sha512-4w8DvMBFThHHc/Kqk9p2BxAmxU8oVn00dl3nDiZzBf7Cykw6+zTME+Pocm503q1bSu2smziOg6q4CL+Zy77LTQ==
+  dependencies:
+    "@oriflame/conventional-changelog-types" "^0.1.0"
+
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.2":
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.2.tgz#1f9741e0bde9790a0e13272082ed7272a083620d"
@@ -2607,16 +2626,6 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
     source-map "^0.7.3"
-
-"@rajzik/conventional-changelog-beemo@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@rajzik/conventional-changelog-beemo/-/conventional-changelog-beemo-2.1.1.tgz#ac265588fa4f3623e954187a2e526cf930fd6865"
-  integrity sha512-+MkX7catYy0oi5C9nHMGLaP+4NMyjn03pBSWExBJTJ1Msr3wSKbWZaSWPWp2I9kl6IBisEJ8+e+CpOvWekgFGQ==
-
-"@rajzik/conventional-changelog-lint-config-beemo@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@rajzik/conventional-changelog-lint-config-beemo/-/conventional-changelog-lint-config-beemo-1.0.4.tgz#d21eb110dae6bcd5f83563f41284ea7d86b716f3"
-  integrity sha512-sGiP7NJM+Ainx+/A5mCGw/0rnG32FHOUkhFEUDTgLuCeIlyLKEBHDRIB5b8VrdN1hXz4mSKkHKHXRWqq1EmK+g==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.1"

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 process.env.BEEMO_CONFIG_MODULE = '@oriflame/lumos';
-process.env.BEEMO_MANUAL_URL = 'https://github.com/rajzik/lumos';
+process.env.BEEMO_MANUAL_URL = 'https://github.com/Oriflame/lumos';
 
 require('@beemo/cli');

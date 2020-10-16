@@ -14,7 +14,7 @@ export default class PreReleaseScript extends AutoReleaseScript {
         // Use the Beemo conventional commit preset
         '--conventional-commits',
         '--changelog-preset',
-        '@rajzik/conventional-changelog-beemo',
+        '@oriflame/conventional-changelog',
         // Push changes to git
         '--push',
         // Alter commit message to skip CI
