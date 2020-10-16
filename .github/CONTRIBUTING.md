@@ -64,7 +64,7 @@ the latest version) using the space bar and arrow keys.
 However, there are a few caveats and requirements to follow when updating.
 
 1. Dependencies should be updated in isolation per package (workspace), and committed to git
-   separately. For example, only dependencies within the `@rajzik/config-jest` package should be
+   separately. For example, only dependencies within the `@oriflame/config-jest` package should be
    updated within a single commit.
    - This allows packages to update and version independently from each other.
    - The exception to this is when a dependency is used across many packages, like Babel being used
