@@ -1,3 +1,5 @@
+import { container } from 'webpack';
+
 export interface WebpackOptions {
   analyzeBundle?: boolean;
   buildFolder?: string;
@@ -10,4 +12,5 @@ export interface WebpackOptions {
   srcFolder: string;
   entryPoint?: string;
   devServerContentBase?: string;
+  moduleFederationConfig?: ConstructorParameters<typeof container.ModuleFederationPlugin>[0];
 }

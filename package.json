@@ -64,6 +64,9 @@
       ]
     },
     "typescript": {
+      "compilerOptions": {
+        "skipLibCheck": true
+      },
       "exclude": [
         "*.test.ts"
       ]

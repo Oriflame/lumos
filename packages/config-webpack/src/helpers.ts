@@ -1,12 +1,11 @@
 import { Path } from '@beemo/core';
-import { getCommitHash, getPackage, WEBPACK_ROOT } from '@oriflame/lumos-common';
+import { getPackage, WEBPACK_ROOT } from '@oriflame/lumos-common';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
-import webpack, { Configuration } from 'webpack';
+import webpack, { Configuration, container } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import { INVALID_CHARS, NUMBER_REGEX } from './constants';
-import { InlineManifestPlugin } from './plugins';
 import { WebpackOptions } from './types';
 
 export const PROD = process.env.NODE_ENV === 'production';
@@ -36,22 +35,19 @@ export function getPlugins({
   srcFolder,
   entryPoint,
   react,
+  moduleFederationConfig,
 }: WebpackOptions): Configuration['plugins'] {
   const srcPath = path.join(WEBPACK_ROOT, srcFolder);
 
-  const plugins = [
-    new webpack.NamedChunksPlugin(),
-    new webpack.EnvironmentPlugin({
-      LAZY_LOAD: false,
-      RENDER_ENV: 'browser',
-      SILENCE_POLYGLOT_WARNINGS: true,
-      SENTRY_RELEASE: PROD ? getCommitHash() || 'production' : 'development',
-      AMP: false,
-    }),
+  const plugins: Configuration['plugins'] = [
     new webpack.DefinePlugin({
       __DEV__: JSON.stringify(!PROD),
     }),
   ];
+
+  if (moduleFederationConfig) {
+    plugins.push(new container.ModuleFederationPlugin(moduleFederationConfig));
+  }
 
   if (!PROD) {
     plugins.push(
@@ -77,7 +73,6 @@ export function getPlugins({
         filename: 'index.html',
         favicon: getFavIcon(srcPath),
       }),
-      new InlineManifestPlugin(),
     );
   }
 
@@ -90,7 +85,7 @@ export function getPlugins({
 
 export function getUniqueName() {
   const { name } = getPackage();
-  return `_${name.replace(NUMBER_REGEX, '').replace(INVALID_CHARS, '')}`;
+  return `${name.replace(NUMBER_REGEX, '').replace(INVALID_CHARS, '')}`;
 }
 
 export function getParallelValue(value: boolean | string | number | undefined): boolean | number {

@@ -9,6 +9,7 @@ const {
   root,
   buildFolder,
   devServerContentBase,
+  moduleFederationConfig,
 } = getSettings();
 
 export = getConfig({
@@ -23,4 +24,7 @@ export = getConfig({
   publicPath,
   root,
   devServerContentBase,
+  moduleFederationConfig: moduleFederationConfig as NonNullable<
+    Parameters<typeof getConfig>[0]['moduleFederationConfig']
+  >,
 });

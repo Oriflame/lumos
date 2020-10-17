@@ -24,7 +24,7 @@
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
     "allowJs": false,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "composite": true,
     "declarationMap": true
   }

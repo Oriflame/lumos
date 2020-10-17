@@ -4,6 +4,7 @@ const execa = require('execa');
 const isDocker = require('is-docker');
 const { PORT } = require('../lib/helpers');
 
+const NODE_ENV = process.env.NODE_ENV || 'development';
 const port = process.env.PORT || PORT;
 const args = process.argv.slice(2);
 
@@ -19,10 +20,20 @@ if (isDocker()) {
   args.push('--host', '0.0.0.0');
 }
 
-execa('webpack-dev-server', args, {
+// FIXME: https://github.com/webpack/webpack-dev-server/issues/2759
+// execa('webpack-dev-server', args, {
+//   cwd: process.cwd(),
+//   env: {
+//     NODE_ENV,
+//   },
+//   preferLocal: true,
+//   stdio: 'inherit',
+// });
+
+execa('webpack', ['serve', ...args], {
   cwd: process.cwd(),
   env: {
-    NODE_ENV: 'development',
+    NODE_ENV,
   },
   preferLocal: true,
   stdio: 'inherit',
