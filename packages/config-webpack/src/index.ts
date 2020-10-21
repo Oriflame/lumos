@@ -183,6 +183,7 @@ export function getConfig({
       runtimeChunk: entryPoint && PROD ? false : 'single',
       minimize: PROD,
       minimizer: [
+        '...',
         // @ts-expect-error
         new TerserPlugin({
           parallel: getParallelValue(parallel),
