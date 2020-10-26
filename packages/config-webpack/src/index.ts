@@ -183,11 +183,11 @@ export function getConfig({
       runtimeChunk: entryPoint && PROD ? false : 'single',
       minimize: PROD,
       minimizer: [
-        '...',
         // @ts-expect-error
         new TerserPlugin({
           parallel: getParallelValue(parallel),
         }),
+        '...',
         // @ts-expect-error
         new CssMinimizerPlugin({
           sourceMap: sourceMaps,
