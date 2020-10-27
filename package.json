@@ -79,7 +79,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@oriflame/conventional-changelog-lint-config": "^1.0.3",
-    "graphql": "^15.3.0",
+    "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
     "husky": "^4.3.0",
     "lerna": "^3.22.1",
