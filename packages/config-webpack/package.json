@@ -35,7 +35,7 @@
     "@beemo/core": "^1.1.8",
     "@beemo/driver-webpack": "^1.2.6",
     "@oriflame/lumos-common": "^2.0.2",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.2",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.2",
     "css-loader": "^5.0.0",
