@@ -26,7 +26,7 @@
     "@beemo/driver-babel": "^1.2.6",
     "@beemo/driver-jest": "^1.2.3",
     "@oriflame/lumos-common": "^2.0.3",
-    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/jest-dom": "^5.11.6",
     "@types/jest": "^26.0.15",
     "airbnb-js-shims": "^2.2.1",
     "cross-env": "^7.0.2",
