@@ -25,7 +25,7 @@
     "@beemo/driver-eslint": "^1.2.3",
     "@oriflame/lumos-common": "^2.0.3",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
-    "@typescript-eslint/parser": "^4.7.0",
+    "@typescript-eslint/parser": "^4.8.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.13.0",
     "eslint-config-airbnb": "^18.2.1",
