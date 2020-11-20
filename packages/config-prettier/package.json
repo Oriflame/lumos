@@ -27,6 +27,6 @@
     "@beemo/core": "^1.1.8",
     "@beemo/driver-prettier": "^1.3.2",
     "@oriflame/lumos-common": "^2.0.4",
-    "prettier": "^2.1.2"
+    "prettier": "^2.2.0"
   }
 }
