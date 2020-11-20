@@ -73,6 +73,9 @@ const config: ESLintConfig = {
   rules: {
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
+    // React in scope isn't required anymore.
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 
   overrides: [

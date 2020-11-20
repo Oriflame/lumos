@@ -1,7 +1,7 @@
 import { getConfig, getConfigWithProjectRefs } from '@oriflame/config-typescript';
 import { getSettings } from '@oriflame/lumos-common';
 
-const { context, tool } = process.beemo;
+const { context } = process.beemo;
 const {
   buildFolder,
   srcFolder,
@@ -28,7 +28,6 @@ export = context.args.referenceWorkspaces
       node,
       react,
       next,
-      usingNext: tool.isPluginEnabled('driver', 'next'),
       srcFolder: (context.args.srcFolder as string) || srcFolder,
       testsFolder: (context.args.testsFolder as string) || testsFolder,
       typesFolder: (context.args.typesFolder as string) || typesFolder,

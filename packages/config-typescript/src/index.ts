@@ -9,7 +9,6 @@ export interface TypeScriptOptions {
   next?: boolean;
   node?: boolean;
   react?: boolean;
-  usingNext?: boolean;
   srcFolder: string;
   testsFolder: string;
   typesFolder: string;
@@ -24,7 +23,6 @@ export function getCompilerOptions({
   next = false,
   node = false,
   react = false,
-  usingNext = false,
   emitDeclarationOnly = false,
   srcFolder = 'src',
   allowJs = false,
@@ -59,7 +57,8 @@ export function getCompilerOptions({
   };
 
   if (react) {
-    options.jsx = 'react';
+    // @ts-expect-error
+    options.jsx = 'react-jsx';
   }
 
   if (!library) {
@@ -67,12 +66,6 @@ export function getCompilerOptions({
     options.paths = {
       [`${ALIAS_PATTERN}/*`]: [`./${srcFolder}/*`],
     };
-  }
-
-  if (usingNext) {
-    options.jsx = 'preserve';
-    options.isolatedModules = true;
-    options.noEmit = true;
   }
 
   return options;
