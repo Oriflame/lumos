@@ -1,5 +1,3 @@
-// @ts-check
-
 export const EXTS = ['.ts', '.tsx', '.js', '.jsx', '.json'];
 
 export const EXTS_GROUP = '{ts,tsx,js,jsx}';
@@ -35,7 +33,7 @@ export const NODE_VERSION = '12.16';
 
 export const NODE_TARGET = { node: NODE_VERSION };
 
-export const WEB_TARGET = { ie: 11 };
+export const WEB_TARGET = { browsers: ['last 3 versions', 'not ie > 0'] };
 
 export const SCAFFOLD_DEPS = [
   '@oriflame/conventional-changelog-lint-config',
