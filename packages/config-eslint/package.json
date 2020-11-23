@@ -24,7 +24,7 @@
     "@beemo/core": "^1.1.8",
     "@beemo/driver-eslint": "^1.2.3",
     "@oriflame/lumos-common": "^2.1.0",
-    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.14.0",
