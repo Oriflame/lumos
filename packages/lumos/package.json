@@ -41,7 +41,7 @@
     "cross-env": "^7.0.3",
     "edit-json-file": "^1.5.0",
     "enquirer": "^2.3.6",
-    "execa": "^4.1.0"
+    "execa": "^5.0.0"
   },
   "devDependencies": {
     "@oriflame/config-babel": "^1.0.16",
