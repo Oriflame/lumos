@@ -25,8 +25,6 @@ export const IGNORE_PATHS = [
   'tmp/',
   'dist/',
   'build/',
-  '/configs/',
-  '*.d.ts',
 ];
 
 export const NODE_VERSION = '12.16';

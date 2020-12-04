@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-const { version } = require('../package.json');
+/* eslint-disable @typescript-eslint/no-require-imports, global-require */
+const { version } = require('../package.json') as Record<string, unknown>;
 
-export const VERSION = version;
+export const VERSION = version as string;
 
 // https://github.com/lerna/lerna/tree/master/commands/version#readme
 export const LERNA_VERSION_ARGS = [

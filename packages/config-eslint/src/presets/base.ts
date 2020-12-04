@@ -45,7 +45,7 @@ const config: ESLintConfig = {
 
   env: {
     browser: true,
-    node: false,
+    node: true,
   },
 
   reportUnusedDisableDirectives: true,
