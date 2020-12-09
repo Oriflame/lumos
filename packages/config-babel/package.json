@@ -21,7 +21,7 @@
     "node": ">=10.16.0"
   },
   "dependencies": {
-    "@babel/cli": "^7.12.8",
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.9",
     "@babel/plugin-proposal-decorators": "^7.12.1",
     "@babel/plugin-proposal-private-property-in-object": "^7.12.1",
