@@ -23,7 +23,7 @@
     "node": ">=10.16.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.12"
+    "@types/node": "^14.14.13"
   },
   "dependencies": {
     "@oriflame/conventional-changelog": "^1.0.6",
