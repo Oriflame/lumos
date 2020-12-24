@@ -2695,10 +2695,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@oriflame/conventional-changelog-lint-config@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.0.3.tgz#34829466e00aff9a9dfbef91df0b93f8b9a66f3d"
-  integrity sha512-fJm9XOxUi0GfF6Maqkm93EFLvaCaoupmovJTQJ+KyGyI0Ddl98YHU9gcoFG3E4FhQG5M7NxPRbfhJu3+OWcxyQ==
+"@oriflame/conventional-changelog-lint-config@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.0.4.tgz#674f3569819fa3de8370d08a874298b83ef61497"
+  integrity sha512-/EchMSWvGV2TD1//GKXn/YP94EDs+RwARg3ugGTju+oHCcqwD0JfipPjzo35KMsruikVMITCPR1F7lVpuIGMKQ==
   dependencies:
     "@oriflame/conventional-changelog-types" "^1.0.3"
 
