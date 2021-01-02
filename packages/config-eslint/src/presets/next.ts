@@ -195,7 +195,6 @@ const config: ESLintConfig = {
     'unicorn/prefer-set-has': 'error',
     'unicorn/prefer-reflect-apply': 'error',
     'unicorn/prefer-number-properties': 'error',
-    'unicorn/no-useless-undefined': 'error',
     'unicorn/no-unused-properties': 'warn',
     'unicorn/no-object-as-default-parameter': 'warn',
     'unicorn/no-nested-ternary': 'error',
