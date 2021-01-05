@@ -52,6 +52,7 @@ export interface LumosSettings {
   skipLibCheck: boolean;
   devServerContentBase?: string;
   moduleFederationConfig?: unknown;
+  host?: string;
 }
 
 export interface LumosPackage extends PackageStructure {

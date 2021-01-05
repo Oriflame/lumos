@@ -32,6 +32,7 @@ export interface WebpackOptions {
   publicPath?: string;
   srcFolder: string;
   entryPoint?: string;
+  host?: string;
 }
 ```
 
@@ -47,6 +48,7 @@ export interface WebpackOptions {
   srcFolder = 'src',
   publicPath = '/',
   root = process.cwd(),
+  host = undefined,
 }
 ```
 
@@ -72,17 +74,8 @@ export interface WebpackOptions {
 - parallel
   - Settings for terser plugin
   - fast AF boii
-- aliasPattern
-
-  - Path alias pattern
-  - Do not change unless you know what are you doing
-  - Example:
-
-  ```tsx
-  import MyModule from '~/MyModule';
-  // this will resolve src/MyModule.[ts,js,tsx,jsx]
-  // or src/MyModule/index.[ts,tsx,js,jsx]
-  ```
+- host
+  - Webpack dev server host
 
 ### CLI Options
 

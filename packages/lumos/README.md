@@ -100,7 +100,6 @@ export interface LumosSettings {
   typesFolder: string;
   entryPoint?: string;
   publicPath?: string;
-  nextTarget?: 'server' | 'serverless';
   root?: string;
   parallel?: boolean | string | number;
   testResultFileName?: string;
@@ -108,6 +107,7 @@ export interface LumosSettings {
   nextOptions?: Partial<NextConfigObject>;
   allowJs: boolean;
   skipLibCheck: boolean;
+  host?: string;
 }
 ```
 

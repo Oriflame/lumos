@@ -30,6 +30,7 @@ export function getConfig({
   publicPath = '/',
   srcFolder,
   entryPoint,
+  host,
   devServerContentBase = 'public',
   moduleFederationConfig,
 }: WebpackOptions): WebpackConfig {
@@ -173,6 +174,7 @@ export function getConfig({
       hot: true,
       quiet: false,
       port, // This can be a unix socket path so a string is valid
+      host,
       watchOptions: {
         ignored: /node_modules/,
       },

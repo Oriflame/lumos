@@ -12,5 +12,6 @@ export interface WebpackOptions {
   srcFolder: string;
   entryPoint?: string;
   devServerContentBase?: string;
+  host?: string;
   moduleFederationConfig?: ConstructorParameters<typeof container.ModuleFederationPlugin>[0];
 }
