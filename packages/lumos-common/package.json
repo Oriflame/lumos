@@ -26,6 +26,6 @@
     "@beemo/core": "^1.1.8",
     "@boost/common": "^2.4.1",
     "execa": "^5.0.0",
-    "fast-glob": "^3.2.4"
+    "fast-glob": "^3.2.5"
   }
 }
