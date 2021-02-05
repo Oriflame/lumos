@@ -21,7 +21,7 @@
     "node": ">=10.16.0"
   },
   "devDependencies": {
-    "@types/prettier": "^2.1.6"
+    "@types/prettier": "^2.2.0"
   },
   "dependencies": {
     "@beemo/core": "^1.1.8",
