@@ -26,7 +26,7 @@
   "devDependencies": {
     "@types/css-minimizer-webpack-plugin": "^1.1.1",
     "@types/terser-webpack-plugin": "^5.0.2",
-    "@types/webpack-bundle-analyzer": "^3.9.0"
+    "@types/webpack-bundle-analyzer": "^3.9.1"
   },
   "dependencies": {
     "@babel/core": "^7.12.13",
