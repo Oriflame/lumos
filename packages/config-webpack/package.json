@@ -43,7 +43,7 @@
     "execa": "^5.0.0",
     "fast-glob": "^3.2.5",
     "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.0.0",
+    "html-webpack-plugin": "^5.1.0",
     "is-docker": "^2.1.1",
     "postcss": "^8.2.6",
     "postcss-browser-reporter": "^0.6.0",
