@@ -21,7 +21,7 @@
     "node": ">=10.16.0"
   },
   "dependencies": {
-    "@babel/core": "^7.12.13",
+    "@babel/core": "^7.12.16",
     "@beemo/core": "^1.1.8",
     "@beemo/driver-babel": "^1.2.6",
     "@beemo/driver-jest": "^1.2.3",
