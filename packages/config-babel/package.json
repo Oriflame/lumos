@@ -31,7 +31,7 @@
     "@babel/plugin-transform-runtime": "^7.12.15",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
-    "@babel/preset-typescript": "^7.12.16",
+    "@babel/preset-typescript": "^7.12.17",
     "@beemo/core": "^1.1.8",
     "@beemo/driver-babel": "^1.2.6",
     "@oriflame/lumos-common": "^2.4.4",
