@@ -84,7 +84,7 @@
     "@oriflame/conventional-changelog-lint-config": "^1.0.4",
     "graphql": "^15.5.0",
     "graphql-tag": "^2.11.0",
-    "husky": "^5.0.9",
+    "husky": "^5.1.0",
     "lerna": "^3.22.1",
     "pinst": "^2.1.4",
     "rimraf": "^3.0.2"
