@@ -1167,16 +1167,16 @@
     pretty-ms "^5.1.0"
     yaml "^1.9.2"
 
-"@boost/common@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@boost/common/-/common-2.7.0.tgz#62e9717d8811a25f515ace6fc4c9e6b6d2a55d8d"
-  integrity sha512-zUUuZWlAzCpbr2vuL5Lkke8U0Kj0V8adh55t3gItqZm9Ucc9oqQg+cET1lcaM1XLGcjic55qa7cfRkNk7ESrDQ==
+"@boost/common@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@boost/common/-/common-2.7.1.tgz#ef121eef2bfcd7a41235c1c5404cb1169e4a37e5"
+  integrity sha512-GE5rH3RlpB4sqRvmR1qPIpVpVv0VUSZYjU+beLSe1jZgSVQgHwx2+1w6nfiS5tqdDx+ZJGIC5u9QinkGkMq0Hw==
   dependencies:
     "@boost/decorators" "^2.1.1"
     "@boost/internal" "^2.2.1"
     fast-glob "^3.2.4"
     json5 "^2.2.0"
-    optimal "^4.2.1"
+    optimal "^4.3.0"
     pretty-ms "^7.0.1"
     yaml "^1.10.0"
   optionalDependencies:
@@ -10275,10 +10275,10 @@ opn@^5.5.0:
   dependencies:
     is-wsl "^1.1.0"
 
-optimal@^4.2.0, optimal@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/optimal/-/optimal-4.2.1.tgz#099378c98c6128406bbafa371effda9f5adfde2d"
-  integrity sha512-iczdusOzH5u7axlK5BBMTVZQGr5bzkIaN9rpjYgWNsCLn+dSH8TpsWyVnrvaOj1w1v9CmBNUVNiDYmJYLrbkFw==
+optimal@^4.2.0, optimal@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/optimal/-/optimal-4.3.0.tgz#b0c0e646f4c64f35f1f3f57412ec0a3a51a29789"
+  integrity sha512-WzIbrg0hR3rZPspTIhYlTI2pFXo0+vsderjkJ4nuYj3FsHrdY6Q8EBaC5xhAb9vzwofZADLdSLqju+SlfxBD5w==
 
 optionator@^0.8.1:
   version "0.8.3"
