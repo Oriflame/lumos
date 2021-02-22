@@ -4,8 +4,7 @@ module.exports = {
     "./packages/config-eslint/lib/presets/typescript.js",
     "./packages/config-eslint/lib/presets/node.js",
     "./packages/config-eslint/lib/presets/testing-library.js",
-    "./packages/config-eslint/lib/presets/prettier.js",
-    "prettier/@typescript-eslint"
+    "./packages/config-eslint/lib/presets/prettier.js"
   ],
   "env": {
     "node": true

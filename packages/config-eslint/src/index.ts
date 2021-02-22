@@ -43,14 +43,6 @@ export function getExtendsList({
   // Prettier (must be last)
   if (prettier) {
     paths.push(fromHere('presets/prettier.js'));
-
-    if (typescript) {
-      paths.push('prettier/@typescript-eslint');
-    }
-
-    if (next) {
-      paths.push('prettier/unicorn');
-    }
   }
 
   return paths;

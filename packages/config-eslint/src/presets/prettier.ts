@@ -1,7 +1,7 @@
 import { ESLintConfig } from '@beemo/driver-eslint';
 
 const config: ESLintConfig = {
-  extends: ['prettier', 'prettier/react'],
+  extends: ['prettier'],
 
   plugins: ['prettier'],
 
