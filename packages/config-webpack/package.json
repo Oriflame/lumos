@@ -29,7 +29,7 @@
     "@types/webpack-bundle-analyzer": "^3.9.1"
   },
   "dependencies": {
-    "@babel/core": "^7.12.17",
+    "@babel/core": "^7.13.1",
     "@beemo/core": "^1.1.8",
     "@beemo/driver-webpack": "^1.2.6",
     "@oriflame/lumos-common": "^2.4.5",
