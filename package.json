@@ -21,6 +21,7 @@
     "prettier": "beemo prettier",
     "release-alpha": "git reset --hard && lerna publish --canary --force-publish --yes",
     "release": "git reset --hard && beemo run-script auto-release",
+    "check-eslint-deprecations": "eslint-find-rules --deprecated .eslintrc.js",
     "link-packages": "lerna exec -- yarn link",
     "unlink-packages": "lerna exec -- yarn unlink"
   },
@@ -82,6 +83,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^12.0.0",
     "@oriflame/conventional-changelog-lint-config": "^1.0.4",
+    "eslint-find-rules": "^3.6.1",
     "graphql": "^15.5.0",
     "graphql-tag": "^2.11.0",
     "husky": "^5.1.1",
