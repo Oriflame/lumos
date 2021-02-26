@@ -23,7 +23,7 @@ const config: ESLintConfig = {
     'no-dupe-else-if': 'error',
     'no-implicit-coercion': 'error',
     'no-import-assign': 'error',
-    'no-native-reassign': 'error',
+    'no-global-assign': 'error',
     'no-negated-condition': 'error',
     'no-nested-ternary': 'off', // replaced with unicorn rule
     'no-setter-return': 'error',
