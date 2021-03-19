@@ -24,7 +24,7 @@
     "lumos-webpack-server": "./bin/server"
   },
   "devDependencies": {
-    "@types/css-minimizer-webpack-plugin": "^1.1.1",
+    "@types/css-minimizer-webpack-plugin": "^1.1.2",
     "@types/terser-webpack-plugin": "^5.0.2",
     "@types/webpack-bundle-analyzer": "^3.9.1"
   },
