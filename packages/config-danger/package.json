@@ -26,7 +26,7 @@
     "@types/node": "^14.14.35"
   },
   "dependencies": {
-    "@oriflame/conventional-changelog": "^1.0.9",
+    "@oriflame/conventional-changelog": "^1.1.0",
     "danger": "^10.6.3"
   }
 }

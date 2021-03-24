@@ -2722,10 +2722,10 @@
   resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-types/-/conventional-changelog-types-1.0.3.tgz#5cba2987c8177df85b6a6aa9ec40e0f660d77100"
   integrity sha512-rNy9wGY1pC1oK71JxQmL2vb7/SpUd1X2qcYwNeNoCr+s8gdtSTJaQ6QhCqOfNLvqLumSccEmHpMqIMFA+G1Yiw==
 
-"@oriflame/conventional-changelog@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-1.0.9.tgz#feebe33e75a0d84b2be544dcf5a0d3314713196a"
-  integrity sha512-APBV37/BfzXXZqbgZ/Ozl8yoJ0qVMw8TEasaB1WoIQRHSB/tt0VK8M/sZo28Qqg8EOeKTCHSHdtrxhWsK7Uesg==
+"@oriflame/conventional-changelog@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-1.1.0.tgz#f7996fbfe61911f5b1837b65c97a8b8f5e8480c5"
+  integrity sha512-Fw5CMLQfEAngLTPWwCdBqXJHC4uoZZt8cF5qi0Qtt4+HXR2s+atT6w+GHlPsw2QbocPX9m/4MyVjHH6owZgBFA==
   dependencies:
     "@oriflame/conventional-changelog-types" "^1.0.3"
 
