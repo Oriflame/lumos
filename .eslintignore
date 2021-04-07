@@ -15,3 +15,4 @@ build*/
 \.eslintrc.js
 *.config.js
 packages/config-babel/test/fixtures/**/*
+packages/config-eslint/test/**/*

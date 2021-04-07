@@ -5,12 +5,10 @@
   "scripts": {
     "prepare": "yarn setup && beemo create-config eslint prettier",
     "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
     "setup": "tsc --build",
     "clean": "rimraf packages/*/{lib,*.tsbuildinfo}",
     "build": "beemo typescript --build --reference-workspaces",
-    "test": "yarn run build && yarn run jest && yarn run lint && yarn run test:webpack & yarn run test:webpack-entry",
+    "test": "yarn run build && yarn run jest && yarn run lint && yarn run test:webpack && yarn run test:webpack-entry",
     "pretest:webpack": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack.test.config.js",
     "test:webpack": "cross-env NODE_ENV=production webpack --config ./packages/config-webpack/test/webpack.test.config.js",
     "pretest:webpack-entry": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack-entry.test.config.js",
@@ -59,7 +57,8 @@
       },
       "ignore": [
         "*.config.js",
-        "packages/config-babel/test/fixtures/**/*"
+        "packages/config-babel/test/fixtures/**/*",
+        "packages/config-eslint/test/**/*"
       ]
     },
     "prettier": {
@@ -70,10 +69,7 @@
     "typescript": {
       "compilerOptions": {
         "skipLibCheck": true
-      },
-      "exclude": [
-        "*.test.ts"
-      ]
+      }
     }
   },
   "workspaces": [
@@ -88,7 +84,6 @@
     "graphql-tag": "^2.11.0",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
-    "pinst": "^2.1.6",
     "rimraf": "^3.0.2"
   }
 }
