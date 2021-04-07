@@ -8,7 +8,7 @@
     "setup": "tsc --build",
     "clean": "rimraf packages/*/{lib,*.tsbuildinfo}",
     "build": "beemo typescript --build --reference-workspaces",
-    "test": "yarn run build && yarn run jest && yarn run lint && yarn run test:webpack && yarn run test:webpack-entry",
+    "test": "yarn run build && yarn run lint && yarn run jest && yarn run test:webpack && yarn run test:webpack-entry",
     "pretest:webpack": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack.test.config.js",
     "test:webpack": "cross-env NODE_ENV=production webpack --config ./packages/config-webpack/test/webpack.test.config.js",
     "pretest:webpack-entry": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack-entry.test.config.js",
