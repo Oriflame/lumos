@@ -36,6 +36,7 @@ describe('Check that eslint rules are correct', () => {
         `packages/config-eslint/test/lint-files/${file}`,
         cliOptions,
       );
+
       expect(output[0].errorCount).toBe(0);
     },
   );
@@ -73,7 +74,7 @@ describe('Check that eslint rules are correct', () => {
         `packages/config-eslint/test/lint-files/errors/${file}`,
         cliOptions,
       );
-      console.log(output[0].messages);
+
       expect(output[0].errorCount).toBe(expectedErrors);
     },
   );
