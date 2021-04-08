@@ -1,3 +1,3 @@
-class ahoj {
+class TestClass {
   constructor() {}
 }

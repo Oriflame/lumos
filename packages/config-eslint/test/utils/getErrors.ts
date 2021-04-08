@@ -1,7 +1,7 @@
 import fs from 'fs';
 import eslint, { ESLint } from 'eslint';
 
-export function getErrorsConfig(
+export function getErrors(
   config: ESLint.Options['baseConfig'],
   fileToTest: string,
   options?: Parameters<ESLint['lintText']>[1]

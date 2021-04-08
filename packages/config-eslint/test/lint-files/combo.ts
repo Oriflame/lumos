@@ -7,4 +7,4 @@ export const b: Interface = (a) => {
   console.log(a);
 };
 
-b.test = 'ahoj';
+b.test = 'test string';
