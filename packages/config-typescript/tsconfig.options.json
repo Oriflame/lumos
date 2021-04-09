@@ -13,11 +13,8 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
     "pretty": true,
-    "removeComments": false,
     "strict": true,
-    "strictNullChecks": true,
     "target": "es2015"
   }
 }
