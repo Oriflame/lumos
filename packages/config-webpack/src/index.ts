@@ -106,6 +106,7 @@ export function getConfig({
             {
               loader: 'css-loader',
               options: {
+                sourceMap: sourceMaps,
                 importLoaders: 1,
                 modules: {
                   localIdentName: '[local]_[hash:base64:5]',
@@ -189,7 +190,6 @@ export function getConfig({
           parallel: getParallelValue(parallel),
         }),
         new CssMinimizerPlugin({
-          sourceMap: sourceMaps,
           parallel: getParallelValue(parallel),
         }),
       ],
