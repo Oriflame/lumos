@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-typescript",
-  "version": "1.1.21",
+  "version": "1.1.22",
   "description": "Reusable TypeScript configs.",
   "keywords": [
     "lumos",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=v10.24.1"
   },
   "dependencies": {
     "@beemo/core": "^1.1.8",

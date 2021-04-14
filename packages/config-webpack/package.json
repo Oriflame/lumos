@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-webpack",
-  "version": "2.4.66",
+  "version": "2.4.67",
   "description": "Reusable Webpack configs.",
   "keywords": [
     "lumos",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=v10.24.1"
   },
   "bin": {
     "lumos-webpack-server": "./bin/server"

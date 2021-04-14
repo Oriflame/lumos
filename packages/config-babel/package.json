@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-babel",
-  "version": "1.0.58",
+  "version": "1.0.59",
   "description": "Reusable Babel config.",
   "keywords": [
     "lumos",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=v10.24.1"
   },
   "dependencies": {
     "@babel/cli": "^7.13.14",
