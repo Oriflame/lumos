@@ -27,7 +27,7 @@
     "lumos-eject": "./bin/lumos-eject"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=v14.16.1"
   },
   "dependencies": {
     "@actions/core": "^1.2.7",
