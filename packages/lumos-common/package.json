@@ -20,7 +20,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=v10.24.1"
   },
   "dependencies": {
     "@beemo/core": "^1.1.8",

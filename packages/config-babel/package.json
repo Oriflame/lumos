@@ -18,7 +18,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=v10.24.1"
   },
   "dependencies": {
     "@babel/cli": "^7.13.14",
