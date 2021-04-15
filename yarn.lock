@@ -2732,10 +2732,10 @@
   dependencies:
     "@octokit/openapi-types" "^5.2.1"
 
-"@oriflame/conventional-changelog-lint-config@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.0.4.tgz#674f3569819fa3de8370d08a874298b83ef61497"
-  integrity sha512-/EchMSWvGV2TD1//GKXn/YP94EDs+RwARg3ugGTju+oHCcqwD0JfipPjzo35KMsruikVMITCPR1F7lVpuIGMKQ==
+"@oriflame/conventional-changelog-lint-config@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.1.0.tgz#a1efb13bb81cf8e05f883591ba05d5c2fc9b10cc"
+  integrity sha512-qJZNfr6KWHABznoRkFuifV5WX2llIK5A9UkhFrYkAywn7p+exM3c5R1dYjLbA1ObOBz8neqWhMHwiDUFAXCCdg==
   dependencies:
     "@oriflame/conventional-changelog-types" "^1.0.3"
 
