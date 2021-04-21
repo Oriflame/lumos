@@ -1,13 +1,14 @@
 import { Path } from '@beemo/core';
 import { getPackage, WEBPACK_ROOT } from '@oriflame/lumos-common';
+import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import webpack, { Configuration, container } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+
 import { INVALID_CHARS, NUMBER_REGEX } from './constants';
-import { WebpackOptions } from './types';
 import getClientEnvironment from './env';
+import { WebpackOptions } from './types';
 
 export const PROD = process.env.NODE_ENV === 'production';
 export const PORT = 3000;
@@ -87,10 +88,11 @@ export function getPlugins({
 
 export function getUniqueName() {
   const { name } = getPackage();
+
   return `${name.replace(NUMBER_REGEX, '').replace(INVALID_CHARS, '')}`;
 }
 
-export function getParallelValue(value: boolean | string | number | undefined): boolean | number {
+export function getParallelValue(value: boolean | number | string | undefined): boolean | number {
   if (value === undefined) {
     return true;
   }

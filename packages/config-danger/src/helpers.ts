@@ -30,10 +30,12 @@ export function isRevert(): boolean {
 export async function countChangesInFile(file: string): Promise<number> {
   return new Promise((resolve) => {
     danger.git.diffForFile(file).then((d) => {
-      const added = d?.added?.split('\n').length ?? 0;
-      const removed = d?.removed?.split('\n').length ?? 0;
+      const added = d?.added.split('\n').length ?? 0;
+      const removed = d?.removed.split('\n').length ?? 0;
 
       resolve(added + removed);
+
+      return d;
     });
   });
 }

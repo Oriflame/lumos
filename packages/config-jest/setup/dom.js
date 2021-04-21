@@ -1,5 +1,5 @@
-const { EventEmitter } = require('events');
 const Storage = require('dom-storage');
+const { EventEmitter } = require('events');
 
 global.localStorage = new Storage(null, { strict: false });
 

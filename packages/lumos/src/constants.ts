@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-require-imports, global-require */
+// eslint-disable-next-line node/global-require, @typescript-eslint/no-require-imports -- we need to read package.json in runtime
 const { version } = require('../package.json') as Record<string, unknown>;
 
 export const VERSION = version as string;
@@ -27,7 +27,7 @@ export const LERNA_VERSION_ARGS = [
 export const BANNER = `██╗     ██╗   ██╗███╗   ███╗ ██████╗ ███████╗
 ██║     ██║   ██║████╗ ████║██╔═══██╗██╔════╝
 ██║     ██║   ██║██╔████╔██║██║   ██║███████╗
-██║     ██║   ██║██║╚██╔╝██║██║   ██║╚════██║ version: ${version}
+██║     ██║   ██║██║╚██╔╝██║██║   ██║╚════██║ version: ${VERSION}
 ███████╗╚██████╔╝██║ ╚═╝ ██║╚██████╔╝███████║
 ╚══════╝ ╚═════╝ ╚═╝     ╚═╝ ╚═════╝ ╚══════╝
 `;

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const chalk = require('chalk');
 const execa = require('execa');
 
@@ -30,6 +28,8 @@ execa('git', ['diff-tree', '-r', '--name-only', remoteHead, branchHead])
         ' \n',
       );
     }
+
+    return files;
   })
   .catch((error) => {
     console.log('\n ', chalk.red(`🛑  Failed to detect module changes: ${error.message}`), ' \n');

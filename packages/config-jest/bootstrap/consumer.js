@@ -1,7 +1,7 @@
-/* eslint-disable import/no-dynamic-require */
+/* eslint-disable import/no-dynamic-require -- we need it here */
 
-const fs = require('fs');
 const { getSettings, fromRoot } = require('@oriflame/lumos-common');
+const fs = require('fs');
 
 // Import a custom setup file from the consumer
 const { testFolder } = getSettings();

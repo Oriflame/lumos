@@ -1,8 +1,6 @@
-#!/usr/bin/env node
-
+const { getPackage } = require('@oriflame/lumos-common');
 const chalk = require('chalk');
 const execa = require('execa');
-const { getPackage } = require('@oriflame/lumos-common');
 
 // Only run if the engines block is defined
 if (getPackage().engines) {

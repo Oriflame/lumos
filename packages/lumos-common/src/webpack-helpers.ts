@@ -1,5 +1,6 @@
 import { Path } from '@beemo/core';
 import glob from 'fast-glob';
+
 import { getPackage } from './core';
 
 const { WEBPACK_ESM_SCOPES, WEBPACK_ESM_PACKAGES } = process.env;

@@ -1,4 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment, no-restricted-syntax, no-await-in-loop, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call */
+/* eslint-disable node/global-require -- TODO: replace require() calss */
+/* eslint-disable node/no-sync -- TODO: rewrite */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call -- TODO: better typings*/
 
 import { Path } from '@beemo/core';
 import { LumosPackage } from '@oriflame/lumos-common';
@@ -7,6 +9,7 @@ import editJsonFile from 'edit-json-file';
 import { prompt } from 'enquirer';
 import execa from 'execa';
 import fs from 'fs';
+
 import { BANNER } from '../constants';
 import { installDeps } from '../helpers/installDeps';
 import { removeDeps } from '../helpers/removeDeps';
@@ -27,8 +30,8 @@ async function copyAndInstallDepsFromModule(
   isYarn: boolean,
   isMonorepo: boolean,
 ) {
-  const pkg = require(`${moduleName}/package.json`);
-  const deps = Object.keys(pkg.dependencies).filter(
+  const pkg = require(`${moduleName}/package.json`) as Record<string, unknown>;
+  const deps = Object.keys(pkg.dependencies as Record<string, string>).filter(
     (dep) => !dep.includes('@beemo') && !dep.includes('@oriflame/lumos'),
   );
 
@@ -36,8 +39,8 @@ async function copyAndInstallDepsFromModule(
   await removeDeps([moduleName], isYarn, isMonorepo);
 }
 
-function escapeRegExp(string: string): string {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function migrateDotfiles() {
@@ -67,22 +70,22 @@ function migrateDotfiles() {
     });
 
     fs.writeFileSync(dotPath, data.trim(), 'utf8');
-  } catch (error) {
+  } catch (error: unknown) {
     // Ignore
   }
 }
 
 function migratePackageScripts(lumos: LumosPackage['lumos']) {
   const pkg = editJsonFile(pkgPath);
-  const scripts = pkg.get<LumosPackage['scripts']>('scripts') || {};
-  const srcFolder = lumos.settings.srcFolder || 'src';
-  const testFolder = lumos.settings.testsFolder || 'tests';
+  const scripts = pkg.get<LumosPackage['scripts']>('scripts') ?? {};
+  const srcFolder = lumos.settings.srcFolder ?? 'src';
+  const testFolder = lumos.settings.testsFolder ?? 'tests';
 
-  if (scripts.prepare?.includes('create-config')) {
+  if (scripts.prepare.includes('create-config')) {
     delete scripts.prepare;
   }
 
-  if (scripts.release?.includes('auto-release')) {
+  if (scripts.release.includes('auto-release')) {
     delete scripts.release;
   }
 
@@ -223,6 +226,7 @@ export async function eject() {
 
     console.log(`${chalk.gray(`[${driver}]`)} Updating dependencies`);
 
+    // eslint-disable-next-line no-await-in-loop -- we don't mind in this case
     await copyAndInstallDepsFromModule(
       `@oriflame/config-${driver}`,
       response.yarn,

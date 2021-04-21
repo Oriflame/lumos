@@ -7,10 +7,10 @@ import path from 'path';
 
 export interface LumosEnvSetting {
   targets?:
-    | string
     | string[]
+    | string
     | {
-        browsers?: string | string[];
+        browsers?: string[] | string;
         esmodules?: boolean;
         node?: string | 'current' | true;
         safari?: string | 'tp';
@@ -18,11 +18,11 @@ export interface LumosEnvSetting {
       };
   spec?: boolean;
   loose?: boolean;
-  modules?: 'amd' | 'umd' | 'systemjs' | 'commonjs' | 'cjs' | 'auto' | false;
+  modules?: 'amd' | 'auto' | 'cjs' | 'commonjs' | 'systemjs' | 'umd' | false;
   debug?: boolean;
-  include?: Array<string | RegExp>;
-  exclude?: Array<string | RegExp>;
-  useBuiltIns?: 'usage' | 'entry' | false;
+  include?: Array<RegExp | string>;
+  exclude?: Array<RegExp | string>;
+  useBuiltIns?: 'entry' | 'usage' | false;
   forceAllTransforms?: boolean;
   configPath?: string;
   ignoreBrowserslistConfig?: boolean;
@@ -45,7 +45,7 @@ export interface LumosSettings {
   entryPoint?: string;
   publicPath?: string;
   root?: string;
-  parallel?: boolean | string | number;
+  parallel?: boolean | number | string;
   testResultFileName?: string;
   emptyBabelConfig: boolean;
   allowJs: boolean;
@@ -74,7 +74,8 @@ export function fromRoot(filePath: string, existsCheck = false): string {
 let pkgCache: LumosPackage | null = null;
 
 export function getPackage(): LumosPackage {
-  const instance = process.beemo?.tool;
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `process.beemo` can be undefined
+  const instance = (process.beemo?.tool as unknown) as Beemo<LumosSettings> | undefined;
 
   if (instance?.package) {
     return instance.package as LumosPackage;
@@ -84,19 +85,22 @@ export function getPackage(): LumosPackage {
     return pkgCache;
   }
 
-  // eslint-disable-next-line
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, import/no-dynamic-require, @typescript-eslint/no-require-imports -- TODO: rewrite
   pkgCache = require(fromRoot('package.json'));
 
   return pkgCache!;
 }
 
 export function getSettings(): LumosSettings {
-  const instance = (process.beemo?.tool as unknown) as Beemo<LumosSettings>;
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `process.beemo` can be undefined
+  const instance = (process.beemo?.tool as unknown) as Beemo<LumosSettings> | undefined;
   const settings: Partial<LumosSettings> = {};
   const pkg = getPackage();
 
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `instance.config` can be undefined
   if (instance?.config?.settings) {
     Object.assign(settings, instance.config.settings);
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `pkg.lumos` can be undefined
   } else if (pkg.lumos?.settings) {
     Object.assign(settings, pkg.lumos.settings);
   }

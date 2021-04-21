@@ -1,7 +1,7 @@
+import dotenv from 'dotenv';
+import dotenvExpand from 'dotenv-expand';
 import fs from 'fs';
 import path from 'path';
-import dotenvExpand from 'dotenv-expand';
-import dotenv from 'dotenv';
 
 const rootEnvFile = path.join(process.cwd(), '.env');
 
@@ -12,12 +12,8 @@ delete require.cache[require.resolve('./constants')];
 // injected into the application via DefinePlugin in Webpack configuration.
 const REACT_APP = /^REACT_APP_/i;
 
-function getClientEnvironment(mode: 'production' | 'development') {
+function getClientEnvironment(mode: 'development' | 'production') {
   const NODE_ENV = mode;
-
-  if (!NODE_ENV) {
-    throw new Error('The NODE_ENV environment variable is required but was not specified.');
-  }
 
   const dotenvFiles = [
     `${rootEnvFile}.${NODE_ENV}.local`,
@@ -37,9 +33,9 @@ function getClientEnvironment(mode: 'production' | 'development') {
 
   const raw = Object.keys(process.env)
     .filter((key) => REACT_APP.test(key))
-    .reduce(
+    .reduce<Record<string, unknown>>(
       (env, key) => {
-        // eslint-disable-next-line no-param-reassign
+        // eslint-disable-next-line no-param-reassign -- we need to mutate the new object
         env[key] = process.env[key];
 
         return env;
@@ -47,17 +43,17 @@ function getClientEnvironment(mode: 'production' | 'development') {
       {
         // Useful for determining whether we’re running in production mode.
         // Most importantly, it switches React into the correct mode.
-        NODE_ENV: process.env.NODE_ENV || 'development',
-      } as Record<string, unknown>,
+        NODE_ENV: process.env.NODE_ENV ?? 'development',
+      },
     );
   // Stringify all values so we can feed into Webpack DefinePlugin
   const stringified = {
-    'process.env': Object.keys(raw).reduce((env, key) => {
-      // eslint-disable-next-line no-param-reassign
+    'process.env': Object.keys(raw).reduce<Record<string, string>>((env, key) => {
+      // eslint-disable-next-line no-param-reassign -- we need to mutate the new object
       env[key] = JSON.stringify(raw[key]);
 
       return env;
-    }, {} as Record<string, string>),
+    }, {}),
   };
 
   return stringified;

@@ -1,4 +1,4 @@
-/* eslint-disable no-param-reassign */
+/* eslint-disable no-param-reassign -- we need it here */
 
 exports.test = function test(value) {
   return value && !value.withStyles && value.$$typeof === Symbol.for('react.test.json');
