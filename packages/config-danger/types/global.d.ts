@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import * as dng from 'danger';
 
 declare global {

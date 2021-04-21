@@ -1,4 +1,4 @@
-/* eslint-disable no-nested-ternary */
+/* eslint-disable no-nested-ternary -- TODO: what is the reason? */
 import { WebpackConfig } from '@beemo/driver-webpack';
 import {
   ALIAS_PATTERN,
@@ -15,6 +15,7 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 import { Configuration } from 'webpack';
+
 import { POSTCSS_SETTING } from './constants';
 import { getParallelValue, getPlugins, getUniqueName, PORT, PROD } from './helpers';
 import { WebpackOptions } from './types';
@@ -159,7 +160,7 @@ export function getConfig({
     output,
 
     devtool: PROD ? (sourceMaps ? 'source-map' : false) : 'cheap-module-source-map',
-    // @ts-expect-error
+    // @ts-expect-error -- TODO: what is the reason?
     devServer: {
       compress: true,
       contentBase,

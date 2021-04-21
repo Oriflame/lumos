@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call */
 import { Script } from '@beemo/core';
 import { ExecaReturnValue } from 'execa';
+
 import { LERNA_VERSION_ARGS } from '../constants';
 
 // Primarily used within CI jobs
@@ -32,7 +32,7 @@ export default class AutoReleaseScript extends Script {
       if (gitEmail.stdout) {
         email = gitEmail.stdout;
       }
-    } catch (error) {
+    } catch (error: unknown) {
       name = env.GITHUB_USER ?? 'Lumos Bot';
       email = env.GITHUB_EMAIL ?? 'lumos-ci-bot@lumos.com';
     }
@@ -50,7 +50,7 @@ export default class AutoReleaseScript extends Script {
   }
 
   // https://github.com/lerna/lerna/tree/master/commands/version#readme
-  versionPackages() {
+  async versionPackages() {
     return this.handleCommand(
       this.executeCommand('lerna', LERNA_VERSION_ARGS, {
         extendEnv: true,
@@ -60,7 +60,7 @@ export default class AutoReleaseScript extends Script {
   }
 
   // https://github.com/lerna/lerna/tree/master/commands/publish#readme
-  publishPackages() {
+  async publishPackages() {
     return this.handleCommand(
       this.executeCommand(
         'lerna',
@@ -79,7 +79,7 @@ export default class AutoReleaseScript extends Script {
     );
   }
 
-  handleCommand(promise: Promise<ExecaReturnValue>): Promise<ExecaReturnValue> {
+  async handleCommand(promise: Promise<ExecaReturnValue>): Promise<ExecaReturnValue> {
     return promise
       .then((response) => {
         const out = response.stdout.trim();
@@ -90,8 +90,8 @@ export default class AutoReleaseScript extends Script {
 
         return response;
       })
-      .catch((error) => {
-        this.tool.log.error(error.stderr);
+      .catch((error: unknown) => {
+        this.tool.log.error((error as { stderr: string }).stderr);
 
         throw error;
       });

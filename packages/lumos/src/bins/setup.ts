@@ -4,6 +4,7 @@ import chalk from 'chalk';
 import editJsonFile from 'edit-json-file';
 import { prompt } from 'enquirer';
 import execa from 'execa';
+
 import { BANNER } from '../constants';
 import { installDeps } from '../helpers/installDeps';
 

@@ -3,6 +3,7 @@ import { Script } from '@beemo/core';
 import { Octokit } from '@octokit/rest';
 import { checkCommitFormat } from '@oriflame/conventional-changelog';
 import path from 'path';
+
 import { createGitHubClient } from '../helpers/createGitHubClient';
 
 const { GITHUB_REF } = process.env;
@@ -11,6 +12,7 @@ const parsePullRequestId = (githubRef: string) => {
   const result = /refs\/pull\/(\d+)\/merge/g.exec(githubRef);
   if (!result) throw new Error('Reference not found.');
   const [, pullRequestId] = result;
+
   return pullRequestId;
 };
 
@@ -29,7 +31,7 @@ export default class PullRequestChecksScript extends Script {
   }
 
   bootstrap() {
-    this.pullRequest = parsePullRequestId(GITHUB_REF!);
+    this.pullRequest = parsePullRequestId(GITHUB_REF as string);
 
     if (this.pullRequest === 'false') {
       return;
@@ -50,6 +52,7 @@ export default class PullRequestChecksScript extends Script {
     const { data: files } = await this.client.pulls.listFiles({
       owner: this.owner,
       repo: this.repo,
+      // eslint-disable-next-line @typescript-eslint/naming-convention -- external client, we can't change listFiles()
       pull_number: Number(this.pullRequest),
     });
 
@@ -71,6 +74,7 @@ export default class PullRequestChecksScript extends Script {
     const { data: pr } = await this.client.pulls.get({
       owner: this.owner,
       repo: this.repo,
+      // eslint-disable-next-line @typescript-eslint/naming-convention -- external client, we can't change listFiles()
       pull_number: Number(this.pullRequest),
     });
 

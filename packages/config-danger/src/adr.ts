@@ -21,7 +21,7 @@ export function checkForADR(docsPath: string, options: CheckAdrOptions = {}) {
     docsExclusions.some((ex) => !!file.match(ex)),
   );
 
-  Promise.all(modifiedExclusions.map(countChangesInFile)).then((vals) => {
+  void Promise.all(modifiedExclusions.map(countChangesInFile)).then((vals) => {
     const totalChangeCount = danger.github.pr.additions + danger.github.pr.deletions;
     const exclusionChangeCount = vals.reduce((acc, val) => acc + val, 0);
     const changeCount = totalChangeCount - exclusionChangeCount;
@@ -45,5 +45,7 @@ export function checkForADR(docsPath: string, options: CheckAdrOptions = {}) {
         warn(msg);
       }
     }
+
+    return vals;
   });
 }

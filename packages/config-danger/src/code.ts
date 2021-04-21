@@ -1,4 +1,5 @@
 import path from 'path';
+
 import {
   updatedFiles,
   touchedFiles,
@@ -14,7 +15,7 @@ import { ICommonOptions } from './types';
 
 const changedSrcFiles = updatedFiles.filter((file) => IS_SRC.test(file) && SRC_EXT.test(file));
 
-export interface ITestOptions extends ICommonOptions {
+export interface TestOptions extends ICommonOptions {
   ignorePattern?: RegExp;
   root?: string;
 }
@@ -33,12 +34,12 @@ export function checkForInvalidLocks() {
 }
 
 // Check that any test file exists when source files are updated.
-export function checkForAnyTests({ root, ...options }: ITestOptions = {}) {
+export function checkForAnyTests({ root, ...options }: TestOptions = {}) {
   if (isRevert()) {
     return;
   }
 
-  const hasTestFiles = touchedFiles.some((file) => !!file.match(TEST_EXT));
+  const hasTestFiles = touchedFiles.some((file) => !!TEST_EXT.exec(file));
   const srcFiles = root
     ? changedSrcFiles.filter((srcFile) => srcFile.startsWith(root))
     : changedSrcFiles;
@@ -55,7 +56,7 @@ export function checkForAnyTests({ root, ...options }: ITestOptions = {}) {
 }
 
 // Check that all touched source files have an accompanying test file change.
-export function checkSourceFilesHaveTests({ ignorePattern, root, ...options }: ITestOptions = {}) {
+export function checkSourceFilesHaveTests({ ignorePattern, root, ...options }: TestOptions = {}) {
   if (isRevert()) {
     return;
   }
@@ -66,7 +67,7 @@ export function checkSourceFilesHaveTests({ ignorePattern, root, ...options }: I
     : changedSrcFiles;
 
   srcFiles.forEach((srcFile) => {
-    if ((ignorePattern && srcFile.match(ignorePattern)) ?? srcFile.match(GLOBAL_IGNORE)) {
+    if (ignorePattern?.exec(srcFile) ?? GLOBAL_IGNORE.exec(srcFile)) {
       return;
     }
 
@@ -85,7 +86,7 @@ export function checkSourceFilesHaveTests({ ignorePattern, root, ...options }: I
     const regex = new RegExp(testFile);
 
     updatedFiles.forEach((file) => {
-      if (file.match(regex)) {
+      if (regex.exec(file)) {
         missingTestFiles.push(`- ${srcFile.split(IS_SRC)[1]}`);
       }
     });
@@ -105,11 +106,11 @@ export function checkSourceFilesHaveTests({ ignorePattern, root, ...options }: I
 }
 
 // Component snapshot testing is deprecated, so disallow new snapshots.
-export interface ISnapshotOptions {
+export interface SnapshotOptions {
   docsUrl?: string;
 }
 
-export function disableComponentSnapshots(options: ISnapshotOptions = {}) {
+export function disableComponentSnapshots(options: SnapshotOptions = {}) {
   if (isRevert()) {
     return;
   }

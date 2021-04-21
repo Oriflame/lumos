@@ -2,6 +2,7 @@ import { Script } from '@beemo/core';
 import { Octokit } from '@octokit/rest';
 import { checkCommitFormat } from '@oriflame/conventional-changelog';
 import path from 'path';
+
 import { createGitHubClient } from '../helpers/createGitHubClient';
 
 const { TRAVIS_PULL_REQUEST, TRAVIS_PULL_REQUEST_SLUG } = process.env;
@@ -37,6 +38,7 @@ export default class PullRequestChecksScript extends Script {
     const { data: files } = await this.client.pulls.listFiles({
       owner: this.owner,
       repo: this.repo,
+      // eslint-disable-next-line @typescript-eslint/naming-convention -- external client, we can't change listFiles()
       pull_number: Number(TRAVIS_PULL_REQUEST),
     });
 
@@ -58,6 +60,7 @@ export default class PullRequestChecksScript extends Script {
     const { data: pr } = await this.client.pulls.get({
       owner: this.owner,
       repo: this.repo,
+      // eslint-disable-next-line @typescript-eslint/naming-convention -- external client, we can't change get()
       pull_number: Number(TRAVIS_PULL_REQUEST),
     });
 

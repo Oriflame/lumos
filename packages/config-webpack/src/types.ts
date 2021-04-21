@@ -3,8 +3,8 @@ import { container } from 'webpack';
 export interface WebpackOptions {
   analyzeBundle?: boolean;
   buildFolder?: string;
-  port?: string | number;
-  parallel?: boolean | string | number;
+  port?: number | string;
+  parallel?: boolean | number | string;
   root?: string;
   react?: boolean;
   sourceMaps?: boolean;

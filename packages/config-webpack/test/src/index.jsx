@@ -1,19 +1,19 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/extensions */
+/* eslint-disable node/no-missing-import, import/no-unresolved, import/extensions -- we need it here */
+/* eslint-disable no-console -- we need it here */
+/* eslint-disable react/jsx-filename-extension -- we need it here */
+
 import './test.css';
 
 import mod from './test.module.css';
 import aliasModule from '~/mdl';
 
-// eslint-disable-next-line no-console
 console.log(mod);
 
-// eslint-disable-next-line no-console
 console.log('Webpack build test!');
 
 import('./module').then((module) => module.default());
 
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line no-undef -- it will be actually defined
 document.getElementById('test').classList.add(mod.another);
 
 const test = {
@@ -25,5 +25,4 @@ aliasModule();
 
 const c = { ...test, ...{ sup: 'mate' } };
 
-// eslint-disable-next-line no-console
 console.log(c);

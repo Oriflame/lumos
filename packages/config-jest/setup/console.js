@@ -1,5 +1,6 @@
-/* eslint-disable */
-
-console.warn = console.error = function mockedConsole(message) {
+function mockedConsole(message) {
   throw new Error(message);
-};
+}
+
+console.warn = mockedConsole;
+console.error = mockedConsole;

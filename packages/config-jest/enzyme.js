@@ -1,6 +1,8 @@
+/* eslint-disable node/no-missing-require -- TODO: solve somehow? */
+
+const { stripHOCs } = require('@oriflame/lumos-common/react');
 const Enzyme = require('enzyme');
 const { createSerializer } = require('enzyme-to-json');
-const { stripHOCs } = require('@oriflame/lumos-common/react');
 
 function getAdapter() {
   try {
