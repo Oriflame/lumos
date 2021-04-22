@@ -2661,24 +2661,24 @@
   dependencies:
     "@octokit/openapi-types" "^6.0.0"
 
-"@oriflame/conventional-changelog-lint-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.1.0.tgz#a1efb13bb81cf8e05f883591ba05d5c2fc9b10cc"
-  integrity sha512-qJZNfr6KWHABznoRkFuifV5WX2llIK5A9UkhFrYkAywn7p+exM3c5R1dYjLbA1ObOBz8neqWhMHwiDUFAXCCdg==
+"@oriflame/conventional-changelog-lint-config@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.1.1.tgz#74ce33bd8d9410625a3986c13ec31fbb69646bdb"
+  integrity sha512-LZYSUUZT3H+dw4RHROUWGtVjK7QyLShRUuBWgIDFQVAXuGthw/abHAQJ1peMaS5PeZ4PAJ6LYgJiOIa1QsRkIA==
   dependencies:
-    "@oriflame/conventional-changelog-types" "^1.0.3"
+    "@oriflame/conventional-changelog-types" "^1.0.4"
 
-"@oriflame/conventional-changelog-types@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-types/-/conventional-changelog-types-1.0.3.tgz#5cba2987c8177df85b6a6aa9ec40e0f660d77100"
-  integrity sha512-rNy9wGY1pC1oK71JxQmL2vb7/SpUd1X2qcYwNeNoCr+s8gdtSTJaQ6QhCqOfNLvqLumSccEmHpMqIMFA+G1Yiw==
+"@oriflame/conventional-changelog-types@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-types/-/conventional-changelog-types-1.0.4.tgz#69d558afcc5e39c2e135efedc41897e3e598501d"
+  integrity sha512-iHOgXoC7qMd8WaG9A0bt5cAYLPLF2bMB8O/OK3peHb4/VnuOhydfmTQj+qp15CtbXgmjoqY/QthbiSUamvWf2g==
 
-"@oriflame/conventional-changelog@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-1.1.0.tgz#f7996fbfe61911f5b1837b65c97a8b8f5e8480c5"
-  integrity sha512-Fw5CMLQfEAngLTPWwCdBqXJHC4uoZZt8cF5qi0Qtt4+HXR2s+atT6w+GHlPsw2QbocPX9m/4MyVjHH6owZgBFA==
+"@oriflame/conventional-changelog@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-1.1.2.tgz#d4745852852c05391cb3b73508c9c1a75b164cfd"
+  integrity sha512-Ix0ZvbJ86cFIONVcac7idX10pqrROwmdcqBdmoBJRYBGA0pI4mYxek0zFHm3HQAyDL/qaqpO+lPDXMoTdDFOOQ==
   dependencies:
-    "@oriflame/conventional-changelog-types" "^1.0.3"
+    "@oriflame/conventional-changelog-types" "^1.0.4"
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"
