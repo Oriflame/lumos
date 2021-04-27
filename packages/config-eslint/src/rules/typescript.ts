@@ -297,7 +297,7 @@ const config: ESLintConfig['rules'] = {
   '@typescript-eslint/no-throw-literal': 'error', // disallow throwing literals as exceptions
   '@typescript-eslint/no-type-alias': 'off', // disallow the use of type aliases
   '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error', // flags unnecessary equality comparisons against boolean literals
-  '@typescript-eslint/no-unnecessary-condition': ['off', { allowConstantLoopConditions: true }], // prevents conditionals where the type is always truthy or always falsy -- false positive for some cases
+  '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }], // prevents conditionals where the type is always truthy or always falsy -- false positive for some cases
   '@typescript-eslint/no-unnecessary-qualifier': 'error', // warns when a namespace qualifier is unnecessary
   '@typescript-eslint/no-unnecessary-type-arguments': 'error', // warns if an explicitly specified type argument is the default for that type parameter
   '@typescript-eslint/no-unnecessary-type-assertion': 'error', // warns if a type assertion does not change the type of an expression

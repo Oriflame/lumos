@@ -8,3 +8,13 @@ export const b: Interface = (a) => {
 };
 
 b.test = 'test string';
+
+interface Item {
+  maybe?: string;
+}
+
+const item: Item = {};
+
+if (!item.maybe) {
+  console.log('test');
+}

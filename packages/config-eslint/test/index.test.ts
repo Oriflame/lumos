@@ -36,7 +36,7 @@ describe('Check that eslint rules are correct', () => {
         `packages/config-eslint/test/lint-files/${file}`,
         cliOptions,
       );
-
+      expect(output[0].messages.filter(item => item.severity === 2)).toEqual([]);
       expect(output[0].errorCount).toBe(0);
     },
   );
