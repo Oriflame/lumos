@@ -20,32 +20,22 @@ export function getExtendsList({
   typescript = false,
   node = false,
 }: ESLintOptions): string[] {
-  const paths = [
-    'eslint-config-airbnb',
-    fromHere('./rules/eslint'),
-    fromHere('./rules/eslint-comments'),
-    fromHere('./rules/promise'),
-    fromHere('./rules/import'),
-    fromHere('./rules/react'),
-    fromHere('./rules/a11y'),
-  ];
+  const paths = [fromHere('./presets/base')];
 
   if (next) {
-    paths.push(fromHere('./rules/unicorn'));
+    paths.push(fromHere('./presets/next'));
   }
 
   if (node) {
-    paths.push(fromHere('./rules/node'));
+    paths.push(fromHere('./presets/node'));
   }
 
   if (typescript) {
-    paths.push(fromHere('./rules/typescript'));
+    paths.push(fromHere('./presets/typescript'));
   }
 
-  paths.push(fromHere('./rules/jest'), fromHere('./rules/testing-library'));
-
   if (prettier) {
-    paths.push(fromHere('./rules/prettier'));
+    paths.push(fromHere('./presets/prettier'));
   }
 
   return paths;

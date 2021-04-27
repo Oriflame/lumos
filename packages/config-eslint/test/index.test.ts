@@ -47,7 +47,7 @@ describe('Check that eslint rules are correct', () => {
       { typescript: true, next: true },
       'typescript.ts',
       { filePath: `${process.cwd()}/packages/config-eslint/src/index.ts` },
-      1,
+      2,
     ],
     [{ node: true }, 'node.js', undefined, 1],
     [{ next: true }, 'next.js', undefined, 2],
@@ -62,7 +62,7 @@ describe('Check that eslint rules are correct', () => {
       { next: true, node: false, prettier: true, typescript: true },
       'combo.ts',
       { filePath: `${process.cwd()}/packages/config-eslint/src/index.ts` },
-      1,
+      2,
     ],
   ])(
     'Config (options: %o) should throw error with file: %s and cliOptions: %o',
