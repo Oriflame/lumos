@@ -85,7 +85,7 @@ export function getPackage(): LumosPackage {
     return pkgCache;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, import/no-dynamic-require, @typescript-eslint/no-require-imports -- TODO: rewrite
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment -- TODO: rewrite
   pkgCache = require(fromRoot('package.json'));
 
   return pkgCache!;

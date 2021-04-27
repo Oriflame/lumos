@@ -52,10 +52,9 @@
       "env": {
         "node": true
       },
-      "rules": {
-        "import/prefer-default-export": "off",
-        "@typescript-eslint/interface-name-prefix": "off"
-      },
+      "extends": [
+        "./packages/config-eslint/lib/presets/SECRET_CONFIG_DO_NOT_USE_THIS"
+      ],
       "ignore": [
         "*.config.js",
         "packages/config-babel/test/fixtures/**/*",

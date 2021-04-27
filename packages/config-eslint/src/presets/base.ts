@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention -- fml */
 import { Path } from '@beemo/core';
 import { ESLintConfig } from '@beemo/driver-eslint';
 import {
