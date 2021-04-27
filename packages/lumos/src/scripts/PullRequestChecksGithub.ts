@@ -52,7 +52,6 @@ export default class PullRequestChecksScript extends Script {
     const { data: files } = await this.client.pulls.listFiles({
       owner: this.owner,
       repo: this.repo,
-      // eslint-disable-next-line @typescript-eslint/naming-convention -- external client, we can't change listFiles()
       pull_number: Number(this.pullRequest),
     });
 
@@ -74,7 +73,6 @@ export default class PullRequestChecksScript extends Script {
     const { data: pr } = await this.client.pulls.get({
       owner: this.owner,
       repo: this.repo,
-      // eslint-disable-next-line @typescript-eslint/naming-convention -- external client, we can't change listFiles()
       pull_number: Number(this.pullRequest),
     });
 

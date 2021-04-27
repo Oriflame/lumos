@@ -1,5 +1,3 @@
-/* eslint-disable import/no-dynamic-require -- we need it here */
-
 const { getSettings, fromRoot } = require('@oriflame/lumos-common');
 const fs = require('fs');
 

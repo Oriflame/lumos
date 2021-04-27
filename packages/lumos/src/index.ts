@@ -157,8 +157,8 @@ export default function cli(tool: Beemo) {
    */
   tool.onRunDriver.listen((_, driver) => {
     driver.configure({
-      // Dont want to pull in TS types.
-      // @ts-expect-error
+      // Don't want to pull in TS types.
+      // @ts-expect-error -- not sure
       buildFolder,
       srcFolder,
       testsFolder,

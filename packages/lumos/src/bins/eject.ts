@@ -1,6 +1,4 @@
-/* eslint-disable node/global-require -- TODO: replace require() calss */
-/* eslint-disable node/no-sync -- TODO: rewrite */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call -- TODO: better typings*/
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- TODO: better typings*/
 
 import { Path } from '@beemo/core';
 import { LumosPackage } from '@oriflame/lumos-common';

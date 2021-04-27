@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 function mockedConsole(message) {
   throw new Error(message);
 }

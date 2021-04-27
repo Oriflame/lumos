@@ -1,4 +1,3 @@
-// eslint-disable-next-line node/global-require, @typescript-eslint/no-require-imports -- we need to read package.json in runtime
 const { version } = require('../package.json') as Record<string, unknown>;
 
 export const VERSION = version as string;
