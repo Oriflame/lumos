@@ -18,7 +18,7 @@ const config: ESLintConfig['rules'] = {
   'jest/no-conditional-expect': 'error', // prevent calling expect conditionally
   'jest/no-deprecated-functions': 'error', // disallow use of deprecated functions
   'jest/no-disabled-tests': 'warn', // disallow disabled tests
-  'jest/no-done-callback': 'error', // avoid using a callback in asynchronous tests and hooks
+  'jest/no-done-callback': 'warn', // avoid using a callback in asynchronous tests and hooks
   'jest/no-duplicate-hooks': 'error', // disallow duplicate setup and teardown hooks
   'jest/no-export': 'error', // disallow using exports in files containing tests
   'jest/no-focused-tests': 'error', // disallow focused tests
