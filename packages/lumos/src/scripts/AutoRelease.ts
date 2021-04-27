@@ -37,7 +37,6 @@ export default class AutoReleaseScript extends Script {
       email = env.GITHUB_EMAIL ?? 'lumos-ci-bot@lumos.com';
     }
 
-    // eslint-disable-next-line unicorn/consistent-destructuring -- required due to assigning
     Object.assign(process.env, {
       GIT_AUTHOR_NAME: name,
       GIT_AUTHOR_EMAIL: email,
