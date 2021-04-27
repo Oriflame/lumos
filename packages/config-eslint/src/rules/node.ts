@@ -16,7 +16,7 @@ const config: ESLintConfig['rules'] = {
   'node/no-callback-literal': 'off', // ensure Node.js-style error-first callback pattern is followed
   'node/no-deprecated-api': 'error', // disallow deprecated APIs
   'node/no-exports-assign': 'error', // disallow the assignment to exports
-  'node/no-extraneous-import': 'error', // disallow import declarations which import extraneous modules
+  'node/no-extraneous-import': 'off', // disallow import declarations which import extraneous modules
   'node/no-extraneous-require': 'error', // disallow require() expressions which import extraneous modules
   'node/no-missing-import': 'error', // disallow import declarations which import non-existence modules
   'node/no-missing-require': 'error', // disallow require() expressions which import non-existence modules

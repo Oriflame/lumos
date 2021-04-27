@@ -1,4 +1,5 @@
 import { ESLintConfig } from '@beemo/driver-eslint';
+import { JSX_EXTS_GROUP } from '@oriflame/lumos-common';
 
 const config: ESLintConfig['rules'] = {
   // override ESLint rules
@@ -22,6 +23,21 @@ const config: ESLintConfig['rules'] = {
     },
   ], // enforce a convention in module import order
   'import/prefer-default-export': 'off', // prefer a default export if module exports a single name
+  'import/no-extraneous-dependencies': [
+    'error',
+    {
+      devDependencies: [
+        `test/**/*.${JSX_EXTS_GROUP}`,
+        `tests/**/*.${JSX_EXTS_GROUP}`,
+        `**/*.test.${JSX_EXTS_GROUP}`,
+        `**/jest.config.${JSX_EXTS_GROUP}`,
+        `**/webpack.config.${JSX_EXTS_GROUP}`,
+        `**/webpack.config.*.${JSX_EXTS_GROUP}`,
+        `tools/**/*.${JSX_EXTS_GROUP}`,
+      ],
+      optionalDependencies: false,
+    },
+  ],
 };
 
 export = config;

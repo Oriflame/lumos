@@ -2,6 +2,8 @@ export const EXTS = ['.ts', '.tsx', '.js', '.jsx', '.json'];
 
 export const TJSX_EXTS_GROUP = '{ts,tsx,js,jsx}';
 
+export const JSX_EXTS_GROUP = '{js,jsx}';
+
 export const TSX_EXTS_GROUP = '{ts,tsx}';
 
 export const TJSX_EXT_PATTERN = /\.m?(t|j)sx?$/;

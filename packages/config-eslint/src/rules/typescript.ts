@@ -1,6 +1,7 @@
 /* eslint-disable id-denylist -- we have to use identifiers like "String" in rule definitions */
 
 import { ESLintConfig } from '@beemo/driver-eslint';
+import { TJSX_EXTS_GROUP } from '@oriflame/lumos-common';
 
 const config: ESLintConfig['rules'] = {
   // override ESLint rules
@@ -50,6 +51,22 @@ const config: ESLintConfig['rules'] = {
     'always',
     { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
   ], // ensure consistent use of file extension within the import path
+
+  'import/no-extraneous-dependencies': [
+    'error',
+    {
+      devDependencies: [
+        `test/**/*.${TJSX_EXTS_GROUP}`,
+        `tests/**/*.${TJSX_EXTS_GROUP}`,
+        `**/*.test.${TJSX_EXTS_GROUP}`,
+        `**/jest.config.${TJSX_EXTS_GROUP}`,
+        `**/webpack.config.${TJSX_EXTS_GROUP}`,
+        `**/webpack.config.*.${TJSX_EXTS_GROUP}`,
+        `tools/**/*.${TJSX_EXTS_GROUP}`,
+      ],
+      optionalDependencies: false,
+    },
+  ],
 
   // @typescript-eslint/eslint-plugin rules
   '@typescript-eslint/adjacent-overload-signatures': 'error', // require that member overloads be consecutive
