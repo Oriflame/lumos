@@ -74,7 +74,7 @@ const config: ESLintConfig['rules'] = {
   'unicorn/prefer-reflect-apply': 'off', // prefer Reflect.apply() over Function#apply()
   'unicorn/prefer-regexp-test': 'warn', // prefer RegExp#test() over String#match() and RegExp#exec()
   // Autofix can be breaking
-  'unicorn/prefer-set-has': 'off', // prefer Set#has() over Array#includes() when checking for existence or non-existence
+  'unicorn/prefer-set-has': 'warn', // prefer Set#has() over Array#includes() when checking for existence or non-existence
   'unicorn/prefer-spread': 'error', // prefer the spread operator over Array.from()
   'unicorn/prefer-string-replace-all': 'warn', // prefer String#replaceAll() over regex searches with the global flag
   'unicorn/prefer-string-slice': 'warn', // prefer String#slice() over String#substr() and String#substring()
