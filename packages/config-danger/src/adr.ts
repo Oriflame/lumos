@@ -1,9 +1,9 @@
 import { touchedFiles, countChangesInFile, debug, isRevert, TEST_EXT, SNAP_EXT } from './helpers';
-import { ICommonOptions } from './types';
+import { CommonOptions } from './types';
 
 // Check that large PRs have an associated ADR file documenting the change.
 // Ignore lock, tests, and snapshot files in the calculation.
-export type CheckAdrOptions = ICommonOptions & {
+export type CheckAdrOptions = CommonOptions & {
   changeThreshold?: number;
   docsUrl?: string;
   exclusions?: string[];
@@ -18,6 +18,7 @@ export function checkForADR(docsPath: string, options: CheckAdrOptions = {}) {
   const hasDocsFiles = touchedFiles.some((file) => file.includes(docsPath));
   const docsExclusions = [...exclusions, 'package-lock.json', 'yarn.lock', TEST_EXT, SNAP_EXT];
   const modifiedExclusions = danger.git.modified_files.filter((file) =>
+    // eslint-disable-next-line unicorn/prefer-regexp-test -- false positive
     docsExclusions.some((ex) => !!file.match(ex)),
   );
 

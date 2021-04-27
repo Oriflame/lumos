@@ -11,24 +11,24 @@ import {
   IS_TEST,
   JS_EXT,
 } from './helpers';
-import { ICommonOptions } from './types';
+import { CommonOptions } from './types';
 
 const changedSrcFiles = updatedFiles.filter((file) => IS_SRC.test(file) && SRC_EXT.test(file));
 
-export interface TestOptions extends ICommonOptions {
+export interface TestOptions extends CommonOptions {
   ignorePattern?: RegExp;
   root?: string;
 }
 
 // Check for invalid NPM/Yarn installs by verifying the lock files.
 export function checkForInvalidLocks() {
-  const fileNames = touchedFiles.map((file) => path.basename(file));
+  const fileNames = new Set(touchedFiles.map((file) => path.basename(file)));
 
-  if (fileNames.includes('package-lock.json') && !fileNames.includes('package.json')) {
+  if (fileNames.has('package-lock.json') && !fileNames.has('package.json')) {
     fail('Your PR contains changes to package-lock.json, but not package.json.');
-  } else if (fileNames.includes('npm-shrinkwrap.json') && !fileNames.includes('package.json')) {
+  } else if (fileNames.has('npm-shrinkwrap.json') && !fileNames.has('package.json')) {
     fail('Your PR contains changes to npm-shrinkwrap.json, but not package.json.');
-  } else if (fileNames.includes('yarn.lock') && !fileNames.includes('package.json')) {
+  } else if (fileNames.has('yarn.lock') && !fileNames.has('package.json')) {
     fail('Your PR contains changes to yarn.lock, but not package.json.');
   }
 }
@@ -39,7 +39,7 @@ export function checkForAnyTests({ root, ...options }: TestOptions = {}) {
     return;
   }
 
-  const hasTestFiles = touchedFiles.some((file) => !!TEST_EXT.exec(file));
+  const hasTestFiles = touchedFiles.some((file) => !!TEST_EXT.test(file));
   const srcFiles = root
     ? changedSrcFiles.filter((srcFile) => srcFile.startsWith(root))
     : changedSrcFiles;
@@ -86,7 +86,7 @@ export function checkSourceFilesHaveTests({ ignorePattern, root, ...options }: T
     const regex = new RegExp(testFile);
 
     updatedFiles.forEach((file) => {
-      if (regex.exec(file)) {
+      if (regex.test(file)) {
         missingTestFiles.push(`- ${srcFile.split(IS_SRC)[1]}`);
       }
     });
@@ -110,14 +110,15 @@ export interface SnapshotOptions {
   docsUrl?: string;
 }
 
+const fileFilter = (file: string) => file.endsWith('jsx.snap') || file.endsWith('tsx.snap');
+
 export function disableComponentSnapshots(options: SnapshotOptions = {}) {
   if (isRevert()) {
     return;
   }
 
-  const filter = (file: string) => file.endsWith('jsx.snap') || file.endsWith('tsx.snap');
-  const hasCreatedSnapshot = danger.git.created_files.some(filter);
-  const hasUpdatedSnapshots = danger.git.modified_files.some(filter);
+  const hasCreatedSnapshot = danger.git.created_files.some(fileFilter);
+  const hasUpdatedSnapshots = danger.git.modified_files.some(fileFilter);
 
   if (!hasCreatedSnapshot && !hasUpdatedSnapshots) {
     return;

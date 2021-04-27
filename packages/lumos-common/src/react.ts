@@ -14,7 +14,7 @@ export function stripHOCs(fullName: string): string {
       HOC = previousHOC.replace(/\([^()]*\)/g, '');
     } while (previousHOC !== HOC);
 
-    innerName = innerName.replace(RegExp(`^${HOC}\\(|\\)$`, 'g'), '');
+    innerName = innerName.replace(new RegExp(`^${HOC}\\(|\\)$`, 'g'), '');
   }
 
   return innerName;

@@ -54,7 +54,7 @@ export function getCompilerOptions({
   };
 
   if (react) {
-    // @ts-expect-error
+    // @ts-expect-error -- not typed
     options.jsx = 'react-jsx';
   }
 

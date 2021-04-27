@@ -4,7 +4,7 @@ export const JS_EXT = /\.jsx?$/;
 export const SRC_EXT = /\.(t|j)sx?$/;
 export const TEST_EXT = /\.test\.(t|j)sx?$/;
 export const SNAP_EXT = /\.snap$/;
-export const GLOBAL_IGNORE = /Icon[A-Z][a-zA-Z]+\.(t|j)sx$/;
+export const GLOBAL_IGNORE = /Icon[A-Z][A-Za-z]+\.(t|j)sx$/;
 
 export const updatedFiles = [...danger.git.created_files, ...danger.git.modified_files];
 

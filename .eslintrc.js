@@ -1,17 +1,10 @@
 module.exports = {
   "extends": [
-    "eslint-config-airbnb",
-    "./packages/config-eslint/lib/rules/eslint",
-    "./packages/config-eslint/lib/rules/eslint-comments",
-    "./packages/config-eslint/lib/rules/promise",
-    "./packages/config-eslint/lib/rules/import",
-    "./packages/config-eslint/lib/rules/react",
-    "./packages/config-eslint/lib/rules/a11y",
-    "./packages/config-eslint/lib/rules/node",
-    "./packages/config-eslint/lib/rules/typescript",
-    "./packages/config-eslint/lib/rules/jest",
-    "./packages/config-eslint/lib/rules/testing-library",
-    "./packages/config-eslint/lib/rules/prettier"
+    "./packages/config-eslint/lib/presets/base",
+    "./packages/config-eslint/lib/presets/next",
+    "./packages/config-eslint/lib/presets/node",
+    "./packages/config-eslint/lib/presets/typescript",
+    "./packages/config-eslint/lib/presets/prettier"
   ],
   "env": {
     "node": true

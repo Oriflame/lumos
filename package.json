@@ -44,6 +44,7 @@
     ],
     "settings": {
       "node": true,
+      "next": true,
       "testsFolder": "test",
       "library": true
     },

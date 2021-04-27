@@ -1,3 +1,3 @@
-export interface ICommonOptions {
+export interface CommonOptions {
   fail?: boolean;
 }

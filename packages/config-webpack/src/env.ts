@@ -10,7 +10,7 @@ delete require.cache[require.resolve('./constants')];
 
 // Grab NODE_ENV and REACT_* environment variables and prepare them to be
 // injected into the application via DefinePlugin in Webpack configuration.
-const REACT_APP = /^REACT_APP_/i;
+const REACT_APP = /^react_app_/i;
 
 function getClientEnvironment(mode: 'development' | 'production') {
   const NODE_ENV = mode;

@@ -57,10 +57,10 @@ function addLumosToPackage(response: SetupPrompt) {
 }
 
 function addScriptsToPackage(response: SetupPrompt) {
-  const { drivers } = response;
+  const { drivers, yarn, type } = response;
   const pkg = editJsonFile(pkgPath);
-  const client = response.yarn ? 'yarn' : 'npm';
-  const monorepo = response.type === 'monolib';
+  const client = yarn ? 'yarn' : 'npm';
+  const monorepo = type === 'monolib';
 
   const scripts = pkg.get<LumosPackage['scripts']>('scripts') ?? {};
 
@@ -81,7 +81,7 @@ function addScriptsToPackage(response: SetupPrompt) {
 
   if (drivers.includes('jest')) {
     scripts.jest = 'cross-env NODE_ENV=test TZ=UTC lumos jest';
-    scripts['jest:coverage'] = `${client} run jest ${response.yarn ? '' : '--'} --coverage`;
+    scripts['jest:coverage'] = `${client} run jest ${yarn ? '' : '--'} --coverage`;
     scripts.test = `${client} run jest:coverage`;
   }
 

@@ -21,7 +21,7 @@ export default function cli(tool: Beemo) {
   const usingJest = tool.isPluginEnabled('driver', 'jest');
   const usingTypescript = tool.isPluginEnabled('driver', 'typescript');
   const workspaces = tool.getWorkspacePaths({ relative: true });
-  const pathPrefix = workspaces.length ? createWorkspacesGlob(workspaces) : '';
+  const pathPrefix = workspaces.length > 0 ? createWorkspacesGlob(workspaces) : '';
   const exts = ['.ts', '.tsx', '.js', '.jsx'];
 
   /**
@@ -44,7 +44,7 @@ export default function cli(tool: Beemo) {
    * NEXT JS
    */
 
-  tool.onRunDriver.listen((_context, driver) => {
+  tool.onRunDriver.listen((_, driver) => {
     if (!usingTypescript) {
       driver.options.dependencies.push('typescript');
     }

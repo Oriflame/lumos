@@ -40,7 +40,7 @@ async function copyAndInstallDepsFromModule(
 }
 
 function escapeRegExp(value: string): string {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return value.replace(/[$()*+.?[\\\]^{|}]/g, '\\$&');
 }
 
 function migrateDotfiles() {

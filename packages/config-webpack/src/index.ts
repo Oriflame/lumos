@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary -- TODO: what is the reason? */
 import { WebpackConfig } from '@beemo/driver-webpack';
 import {
   ALIAS_PATTERN,
