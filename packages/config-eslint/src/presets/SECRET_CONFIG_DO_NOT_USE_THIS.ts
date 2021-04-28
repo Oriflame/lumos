@@ -25,6 +25,7 @@ const config: ESLintConfig = {
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/no-require-imports': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
+        '@typescript-eslint/strict-boolean-expressions': 'off',
       },
     },
   ],
