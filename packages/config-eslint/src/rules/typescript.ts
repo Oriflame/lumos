@@ -349,7 +349,7 @@ const config: ESLintConfig['rules'] = {
   '@typescript-eslint/space-before-function-paren': 'off', // enforce consistent spacing before function definition opening parenthesis
   '@typescript-eslint/space-infix-ops': 'off', // this rule is aimed at ensuring there are spaces around infix operators
   '@typescript-eslint/strict-boolean-expressions': [
-    'off',
+    'warn',
     {
       allowNullableBoolean: true,
       allowNullableString: true,
