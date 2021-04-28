@@ -17,7 +17,7 @@ const config: ESLintConfig['rules'] = {
   'node/no-deprecated-api': 'error', // disallow deprecated APIs
   'node/no-exports-assign': 'error', // disallow the assignment to exports
   'node/no-extraneous-import': 'off', // disallow import declarations which import extraneous modules
-  'node/no-extraneous-require': 'error', // disallow require() expressions which import extraneous modules
+  'node/no-extraneous-require': 'off', // disallow require() expressions which import extraneous modules
   'node/no-missing-import': 'error', // disallow import declarations which import non-existence modules
   'node/no-missing-require': 'error', // disallow require() expressions which import non-existence modules
   'node/no-mixed-requires': 'warn', // disallow require calls to be mixed with regular variable declarations
@@ -30,7 +30,7 @@ const config: ESLintConfig['rules'] = {
   'node/no-sync': 'warn', // disallow synchronous methods
   'node/no-unpublished-bin': 'off', // disallow bin files that npm ignores
   'node/no-unpublished-import': 'off', // disallow import declarations which import private modules
-  'node/no-unpublished-require': 'warn', // disallow require() expressions which import private modules
+  'node/no-unpublished-require': 'off', // disallow require() expressions which import private modules
   'node/no-unsupported-features/es-builtins': ['error', { ignores: [], version: '>=14.0.0' }], // disallow unsupported ECMAScript built-ins on the specified version
   'node/no-unsupported-features/es-syntax': [
     'error',
