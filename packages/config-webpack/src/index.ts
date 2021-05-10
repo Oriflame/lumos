@@ -49,7 +49,7 @@ export function getConfig({
     path: internalPath,
     publicPath,
     filename: '[name].js',
-    chunkFilename: PROD ? '[id].[contenthash:8].chunk.js' : '[id].js',
+    chunkFilename: PROD ? '[id].chunk.js' : '[id].js',
     sourceMapFilename: '[file].map',
     uniqueName: PROD ? getUniqueName() : undefined,
   };
