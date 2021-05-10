@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.19 - 2021-05-10
+
+#### 🐞 Fixes
+
+- Remove files from ignore. ([88a6a4f](https://github.com/Oriflame/lumos/commit/88a6a4fef603153b8a4a30a8a15fb85da0f9f3d2))
+
+**Note:** Version bump only for package @oriflame/config-prettier
+
+
+
+
+
 ### 1.1.18 - 2021-05-10
 
 #### 📦 Dependencies
