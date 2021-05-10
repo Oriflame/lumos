@@ -20,7 +20,7 @@ export const LERNA_VERSION_ARGS = [
   '--push',
   // Alter commit message to skip CI
   '--message',
-  'ci: release [ci skip].',
+  'ci: Release [ci skip].',
 ];
 
 export const BANNER = `██╗     ██╗   ██╗███╗   ███╗ ██████╗ ███████╗
