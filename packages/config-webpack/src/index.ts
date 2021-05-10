@@ -30,7 +30,7 @@ export function getConfig({
   sourceMaps = false,
   parallel = true,
   root = WEBPACK_ROOT,
-  publicPath = '/',
+  publicPath = 'auto',
   srcFolder,
   entryPoint,
   host,
