@@ -22,14 +22,11 @@ export function getConfig(): PrettierConfig {
 export function getIgnoreList(): string[] {
   return [
     ...IGNORE_PATHS,
-    'lerna.json',
     'npm-shrinkwrap.json',
-    'package.json',
     'package-lock.json',
     'tsconfig.json',
     'tsconfig.eslint.json',
     'tsconfig.options.json',
-    'azure-pipelines.yml',
     'CHANGELOG.md',
     'jest.config.js',
     'babel.config.js',
