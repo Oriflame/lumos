@@ -75,7 +75,7 @@ let pkgCache: LumosPackage | null = null;
 
 export function getPackage(): LumosPackage {
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `process.beemo` can be undefined
-  const instance = (process.beemo?.tool as unknown) as Beemo<LumosSettings> | undefined;
+  const instance = process.beemo?.tool as unknown as Beemo<LumosSettings> | undefined;
 
   if (instance?.package) {
     return instance.package as LumosPackage;
@@ -93,7 +93,7 @@ export function getPackage(): LumosPackage {
 
 export function getSettings(): LumosSettings {
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `process.beemo` can be undefined
-  const instance = (process.beemo?.tool as unknown) as Beemo<LumosSettings> | undefined;
+  const instance = process.beemo?.tool as unknown as Beemo<LumosSettings> | undefined;
   const settings: Partial<LumosSettings> = {};
   const pkg = getPackage();
 
