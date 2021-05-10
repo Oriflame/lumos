@@ -180,7 +180,6 @@ export function getConfig({
     },
     optimization: {
       chunkIds: PROD ? undefined : 'named',
-      runtimeChunk: entryPoint && PROD ? undefined : 'single',
       minimize: PROD,
       // @ts-expect-error -- type error
       minimizer: [

@@ -1,11 +1,14 @@
 /* eslint-disable node/no-missing-import, import/no-unresolved, import/extensions -- we need it here */
 /* eslint-disable no-console -- we need it here */
 /* eslint-disable react/jsx-filename-extension -- we need it here */
-
+/* eslint-disable import/no-extraneous-dependencies -- we need it here */
+import React from 'react';
 import './test.css';
 
 import mod from './test.module.css';
 import aliasModule from '~/mdl';
+
+console.log(React.version);
 
 console.log(mod);
 
