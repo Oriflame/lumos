@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.1.0 - 2021-05-10
+
+#### 🚀 Updates
+
+- Support extending of webpack config. (#554) ([b86e518](https://github.com/Oriflame/lumos/commit/b86e51862340e44d6314068b3517c26d5e7639cf)), closes  _#554_
+
+
+#### 📦 Dependencies
+
+- update dependency dotenv to ^9.0.1 (#557) ([d0812bf](https://github.com/Oriflame/lumos/commit/d0812bfde365a61054ab93eb8cc533b0326195e7)), closes  _#557_
+
+- update dependency dotenv to v9 (#552) ([0d4f6ec](https://github.com/Oriflame/lumos/commit/0d4f6ec4c9dc345d3500a20863623cf8a5693982)), closes  _#552_
+
+- update dependency webpack-cli to v4.7.0 (#555) ([043939f](https://github.com/Oriflame/lumos/commit/043939fdb89c042aae7774b20651afede61863a1)), closes  _#555_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.0.1 - 2021-05-06
 
 #### 📦 Dependencies
