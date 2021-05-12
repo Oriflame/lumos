@@ -29,6 +29,7 @@ const config: ESLintConfig['rules'] = {
   'no-useless-constructor': 'off', // disallow unnecessary constructors
   'require-await': 'off', // disallow async functions which have no await expression
   'space-infix-ops': 'off', // require spacing around infix operators
+  quotes: 'off',
 
   // override eslint-plugin-node rules
   'node/file-extension-in-import': [
@@ -338,7 +339,7 @@ const config: ESLintConfig['rules'] = {
   '@typescript-eslint/prefer-string-starts-ends-with': 'off', // enforce the use of String#startsWith and String#endsWith instead of other equivalent methods of checking substrings
   '@typescript-eslint/prefer-ts-expect-error': 'warn', // recommends using // @ts-expect-error over // @ts-ignore
   '@typescript-eslint/promise-function-async': 'warn', // requires any function or method that returns a Promise to be marked async
-  '@typescript-eslint/quotes': 'off', // enforce the consistent use of either backticks, double, or single quotes
+  '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }], // enforce the consistent use of either backticks, double, or single quotes
   '@typescript-eslint/require-array-sort-compare': 'warn', // enforce giving compare argument to Array#sort
   '@typescript-eslint/require-await': 'error', // disallow async functions which have no await expression
   '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }], // when adding two variables, operands must both be of type number or of type string
