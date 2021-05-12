@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.1 - 2021-05-12
+
+#### 📦 Dependencies
+
+- update dependency dotenv to ^9.0.2 (#564) ([3123ebd](https://github.com/Oriflame/lumos/commit/3123ebd227ac3d457840588b7010cb6c86628f4d)), closes  _#564_
+
+- update dependency postcss to ^8.2.15 (#566) ([e453d26](https://github.com/Oriflame/lumos/commit/e453d26164ac3c2434512af8335f0a8560aae765)), closes  _#566_
+
+- update dependency postcss-import to ^14.0.2 (#565) ([8094cca](https://github.com/Oriflame/lumos/commit/8094cca0f110fd85cef8603e937b28f5018e974e)), closes  _#565_
+
+- update dependency webpack to ^5.37.0 (#562) ([431b0b9](https://github.com/Oriflame/lumos/commit/431b0b9853845fe756fedbc7eee4d1908b74f948)), closes  _#562_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([a265c7f](https://github.com/Oriflame/lumos/commit/a265c7f5f44e3197e42a07caadece6d58774515f))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ## 3.1.0 - 2021-05-10
 
 #### 🚀 Updates
