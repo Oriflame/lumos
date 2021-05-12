@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.2 - 2021-05-12
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.14.2 (#573) ([5ada44a](https://github.com/Oriflame/lumos/commit/5ada44ae6ba4ee9959167c7febce0e13a6420d12)), closes  _#573_
+
+- update dependency css-minimizer-webpack-plugin to v3 (#572) ([69d4e15](https://github.com/Oriflame/lumos/commit/69d4e15c11b5dc784dd8f40455de6d0514d08bdb)), closes  _#572_
+
+- update dependency terser-webpack-plugin to ^5.1.2 (#571) ([32a1c0c](https://github.com/Oriflame/lumos/commit/32a1c0c5730749aaff647d304940e8e32bd19dd8)), closes  _#571_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.1.1 - 2021-05-12
 
 #### 📦 Dependencies
