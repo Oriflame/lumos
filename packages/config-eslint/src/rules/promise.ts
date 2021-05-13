@@ -2,7 +2,7 @@ import { ESLintConfig } from '@beemo/driver-eslint';
 
 const config: ESLintConfig['rules'] = {
   // eslint-plugin-promise rules
-  'promise/always-return': 'error', // return inside each then() to create readable and reusable Promise chains.
+  'promise/always-return': 'off', // return inside each then() to create readable and reusable Promise chains.
   'promise/avoid-new': 'off', // avoid creating new promises outside of utility libs (use pify instead)
   'promise/catch-or-return': 'off', // enforces the use of catch() on un-returned promises
   'promise/no-callback-in-promise': 'error', // avoid calling cb() inside of a then() (use nodeify instead)

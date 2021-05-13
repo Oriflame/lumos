@@ -67,6 +67,10 @@ const config: ESLintConfig['rules'] = {
   'unicorn/prefer-keyboard-event-key': 'warn', // prefer KeyboardEvent#key over KeyboardEvent#keyCode.
   'unicorn/prefer-math-trunc': 'warn', // enforce the use of Math.trunc instead of bitwise operators
   'unicorn/prefer-modern-dom-apis': 'warn', // prefer .before() over .insertBefore(), .replaceWith() over .replaceChild(), prefer one of .before(), .after(), .append() or .prepend() over insertAdjacentText() and insertAdjacentElement()
+  // FIXME [@rajzik]: This is good rule but adoption isn't great so far
+  'unicorn/prefer-module': 'off', // Prefer JavaScript modules (ESM) over CommonJS
+  // FIXME [eslint-plugin-import]: Once https://github.com/benmosher/eslint-plugin-import/issues/2035 is closed can be enabled
+  'unicorn/prefer-node-protocol': 'off', // Prefer using the `node:` protocol when importing Node.js builtin modules
   'unicorn/prefer-negative-index': 'warn', // prefer negative index over .length - index for {String,Array,TypedArray}#slice() and Array#splice()
   'unicorn/prefer-number-properties': 'warn', // prefer Number static properties over global ones
   'unicorn/prefer-optional-catch-binding': 'off', // prefer omitting the catch binding parameter

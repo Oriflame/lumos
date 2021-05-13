@@ -33,6 +33,12 @@ const config: ESLintConfig = {
         ...typescriptRules,
       },
     },
+    {
+      files: [`*.test.${TSX_EXTS_GROUP}`],
+      rules: {
+        '@typescript-eslint/ban-ts-comment': 'off',
+      },
+    },
   ],
 };
 
