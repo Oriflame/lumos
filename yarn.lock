@@ -2814,24 +2814,24 @@
   dependencies:
     "@octokit/openapi-types" "^6.1.1"
 
-"@oriflame/conventional-changelog-lint-config@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.1.1.tgz#74ce33bd8d9410625a3986c13ec31fbb69646bdb"
-  integrity sha512-LZYSUUZT3H+dw4RHROUWGtVjK7QyLShRUuBWgIDFQVAXuGthw/abHAQJ1peMaS5PeZ4PAJ6LYgJiOIa1QsRkIA==
-  dependencies:
-    "@oriflame/conventional-changelog-types" "^1.0.4"
-
-"@oriflame/conventional-changelog-types@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-types/-/conventional-changelog-types-1.0.4.tgz#69d558afcc5e39c2e135efedc41897e3e598501d"
-  integrity sha512-iHOgXoC7qMd8WaG9A0bt5cAYLPLF2bMB8O/OK3peHb4/VnuOhydfmTQj+qp15CtbXgmjoqY/QthbiSUamvWf2g==
-
-"@oriflame/conventional-changelog@^1.1.2":
+"@oriflame/conventional-changelog-lint-config@^1.1.2":
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-1.1.2.tgz#d4745852852c05391cb3b73508c9c1a75b164cfd"
-  integrity sha512-Ix0ZvbJ86cFIONVcac7idX10pqrROwmdcqBdmoBJRYBGA0pI4mYxek0zFHm3HQAyDL/qaqpO+lPDXMoTdDFOOQ==
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.1.2.tgz#524a42764f89d11b556a2d9e80d6111a7cfc43c2"
+  integrity sha512-bd1uSfNKMHOFyk9k9qmsH19FtB0EBysY9x+VJbaDXVfc+Jg0FTf8uU2DtEXyRiVJZSTCalpQJ/9LJmlliystDw==
   dependencies:
-    "@oriflame/conventional-changelog-types" "^1.0.4"
+    "@oriflame/conventional-changelog-types" "^1.0.5"
+
+"@oriflame/conventional-changelog-types@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-types/-/conventional-changelog-types-1.0.5.tgz#9c9bf3f1ed24bb1decba90d6330844f68f31127e"
+  integrity sha512-sInJByxVDVken5wqro/xTQuiMjdK5JkWjac4FACfj02DNooJcFBZ3QP9FcrPMIUJbRcqZiwjtr4sdkFRtVZhyA==
+
+"@oriflame/conventional-changelog@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-1.1.3.tgz#1196bb53b093a13f1aa5021072dda641876a9e76"
+  integrity sha512-y+n29TcbsM2CCaoQyT135ltmHBZRAdT6ZaPmPa1FotETRhACaxs7lUTmuxu4vvi7XND7b1EfudQ7WlYudoeXbA==
+  dependencies:
+    "@oriflame/conventional-changelog-types" "^1.0.5"
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"
