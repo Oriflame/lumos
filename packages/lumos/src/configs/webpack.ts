@@ -12,6 +12,8 @@ const {
   devServerContentBase,
   moduleFederationConfig,
   host,
+  enableSharedModules,
+  sharedModulesManifestPath,
 } = getSettings();
 
 const pkg = getPackage();
@@ -32,4 +34,6 @@ export = getConfig({
   moduleFederationConfig: moduleFederationConfig as NonNullable<
     Parameters<typeof getConfig>[0]['moduleFederationConfig']
   >,
+  enableSharedModules,
+  sharedModulesManifestPath,
 });

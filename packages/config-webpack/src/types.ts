@@ -14,4 +14,6 @@ export interface WebpackOptions {
   devServerContentBase?: string;
   host?: string;
   moduleFederationConfig?: ConstructorParameters<typeof container.ModuleFederationPlugin>[0];
+  enableSharedModules?: boolean;
+  sharedModulesManifestPath?: string;
 }

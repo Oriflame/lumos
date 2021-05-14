@@ -18,7 +18,7 @@ import TerserPlugin from 'terser-webpack-plugin';
 import { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
-import { POSTCSS_SETTING } from './constants';
+import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING } from './constants';
 import { getParallelValue, getPlugins, getUniqueName, PORT, PROD } from './helpers';
 import { WebpackOptions } from './types';
 
@@ -36,6 +36,8 @@ export function getConfig({
   host,
   devServerContentBase = 'public',
   moduleFederationConfig,
+  enableSharedModules = false,
+  sharedModulesManifestPath = DEFAULT_MANIFEST_PATH,
 }: WebpackOptions): WebpackConfig {
   const srcPath = path.join(root, srcFolder);
   const internalPath = path.join(root, buildFolder);
@@ -63,6 +65,8 @@ export function getConfig({
     entryPoint,
     srcFolder,
     moduleFederationConfig,
+    enableSharedModules,
+    sharedModulesManifestPath,
   });
 
   if (entryPoint) {

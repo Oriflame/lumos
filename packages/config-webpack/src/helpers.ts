@@ -38,6 +38,9 @@ export function getPlugins({
   entryPoint,
   react,
   moduleFederationConfig,
+  enableSharedModules,
+  root,
+  sharedModulesManifestPath,
 }: WebpackOptions): Configuration['plugins'] {
   const srcPath = path.join(WEBPACK_ROOT, srcFolder);
 
@@ -62,6 +65,14 @@ export function getPlugins({
     );
   }
 
+  if (PROD && enableSharedModules) {
+    plugins.push(
+      new webpack.DllReferencePlugin({
+        context: root,
+        manifest: path.join(root!, sharedModulesManifestPath!),
+      }),
+    );
+  }
   if (analyzeBundle) {
     // @ts-expect-error -- Type errors in bundle analyzer plugin types
     plugins.push(new BundleAnalyzerPlugin());
