@@ -18,7 +18,7 @@ import TerserPlugin from 'terser-webpack-plugin';
 import { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
-import { POSTCSS_SETTING } from './constants';
+import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING } from './constants';
 import { getParallelValue, getPlugins, getUniqueName, PORT, PROD } from './helpers';
 import { WebpackOptions } from './types';
 
@@ -30,12 +30,14 @@ export function getConfig({
   sourceMaps = false,
   parallel = true,
   root = WEBPACK_ROOT,
-  publicPath = '/',
+  publicPath = 'auto',
   srcFolder,
   entryPoint,
   host,
   devServerContentBase = 'public',
   moduleFederationConfig,
+  enableSharedModules = false,
+  sharedModulesManifestPath = DEFAULT_MANIFEST_PATH,
 }: WebpackOptions): WebpackConfig {
   const srcPath = path.join(root, srcFolder);
   const internalPath = path.join(root, buildFolder);
@@ -49,7 +51,7 @@ export function getConfig({
     path: internalPath,
     publicPath,
     filename: '[name].js',
-    chunkFilename: PROD ? '[id].[contenthash:8].chunk.js' : '[id].js',
+    chunkFilename: PROD ? '[id].chunk.js' : '[id].js',
     sourceMapFilename: '[file].map',
     uniqueName: PROD ? getUniqueName() : undefined,
   };
@@ -59,10 +61,13 @@ export function getConfig({
     buildFolder,
     port,
     react,
+    root,
     sourceMaps,
     entryPoint,
     srcFolder,
     moduleFederationConfig,
+    enableSharedModules,
+    sharedModulesManifestPath,
   });
 
   if (entryPoint) {
@@ -180,7 +185,6 @@ export function getConfig({
     },
     optimization: {
       chunkIds: PROD ? undefined : 'named',
-      runtimeChunk: entryPoint && PROD ? undefined : 'single',
       minimize: PROD,
       // @ts-expect-error -- type error
       minimizer: [

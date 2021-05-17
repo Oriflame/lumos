@@ -1,5 +1,4 @@
 import { Path } from '@beemo/core';
-// import ModuleFederationConcatRuntime from '@module-federation/concat-runtime';
 import { getPackage, WEBPACK_ROOT } from '@oriflame/lumos-common';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
@@ -39,6 +38,9 @@ export function getPlugins({
   entryPoint,
   react,
   moduleFederationConfig,
+  enableSharedModules,
+  root,
+  sharedModulesManifestPath,
 }: WebpackOptions): Configuration['plugins'] {
   const srcPath = path.join(WEBPACK_ROOT, srcFolder);
 
@@ -47,11 +49,6 @@ export function getPlugins({
       __DEV__: JSON.stringify(!PROD),
     }),
   ];
-
-  // Currently not working
-  // if (PROD && entryPoint && moduleFederationConfig) {
-  //   plugins.push(new ModuleFederationConcatRuntime());
-  // }
 
   if (moduleFederationConfig) {
     plugins.push(new container.ModuleFederationPlugin(moduleFederationConfig));
@@ -68,6 +65,14 @@ export function getPlugins({
     );
   }
 
+  if (PROD && enableSharedModules) {
+    plugins.push(
+      new webpack.DllReferencePlugin({
+        context: root,
+        manifest: path.join(root!, sharedModulesManifestPath!),
+      }),
+    );
+  }
   if (analyzeBundle) {
     // @ts-expect-error -- Type errors in bundle analyzer plugin types
     plugins.push(new BundleAnalyzerPlugin());

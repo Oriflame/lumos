@@ -53,6 +53,8 @@ export interface LumosSettings {
   devServerContentBase?: string;
   moduleFederationConfig?: unknown;
   host?: string;
+  enableSharedModules?: boolean;
+  sharedModulesManifestPath?: string;
 }
 
 export interface LumosPackage extends PackageStructure {
