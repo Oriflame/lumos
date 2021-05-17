@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.2.0 - 2021-05-17
+
+This PR provides support for DLL that can be used for vendor sharing, setup for user is minimal and can be done only via one flag in package.json -> lumos -> setting by setting enableSharedModules to true.
+
+Developer is unaffected by this change on local machine.
+
+Add dll consumption support
+Runtime chunk is optimization that is not needed and no longer wanted by oriflame.
+Public path auto can resolve url even from blob storage.
+This PR provides multiple optimizations and fixes some issues that had to be resolved manually.
+
+#### 🚀 Updates
+
+- Add DLL integration and misc optimization. (#568) ([9005a33](https://github.com/Oriflame/lumos/commit/9005a3363aaa4e79c43e1e3bfaa1f8c0b8e6a029)), closes  _#568_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.1.3 - 2021-05-17
 
 #### 📦 Dependencies
