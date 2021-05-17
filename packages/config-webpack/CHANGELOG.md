@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.1 - 2021-05-17
+
+#### 📦 Dependencies
+
+- update dependency webpack-bundle-analyzer to ^4.4.2 (#581) ([1906015](https://github.com/Oriflame/lumos/commit/190601565494966d7ffb879865291944b348098f)), closes  _#581_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ## 3.2.0 - 2021-05-17
 
 This PR provides support for DLL that can be used for vendor sharing, setup for user is minimal and can be done only via one flag in package.json -> lumos -> setting by setting enableSharedModules to true.

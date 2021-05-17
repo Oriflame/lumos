@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.1 - 2021-05-17
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ## 3.1.0 - 2021-05-17
 
 This PR provides support for DLL that can be used for vendor sharing, setup for user is minimal and can be done only via one flag in package.json -> lumos -> setting by setting enableSharedModules to true.
