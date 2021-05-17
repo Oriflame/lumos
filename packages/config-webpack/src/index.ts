@@ -61,6 +61,7 @@ export function getConfig({
     buildFolder,
     port,
     react,
+    root,
     sourceMaps,
     entryPoint,
     srcFolder,
