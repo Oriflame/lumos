@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 2.0.5 - 2021-05-20
+
+#### 📦 Dependencies
+
+- update dependency babel-plugin-graphql-tag to ^3.3.0 (#587) ([37ea561](https://github.com/Oriflame/lumos/commit/37ea5618ce11577c0b5c1eb178a4969ef9deebe7)), closes  _#587_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([4ffb3e9](https://github.com/Oriflame/lumos/commit/4ffb3e9fc81ff776153f4030f4902df1ae57f019))
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
 ### 2.0.4 - 2021-05-18
 
 #### 📦 Dependencies

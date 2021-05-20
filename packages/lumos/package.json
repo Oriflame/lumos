@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/lumos",
-  "version": "3.1.5",
+  "version": "3.1.6",
   "description": "Centralized CLI for JavaScript and TypeScript dev tools.",
   "keywords": [
     "lumos",
@@ -45,7 +45,7 @@
     "execa": "^5.0.0"
   },
   "devDependencies": {
-    "@oriflame/config-babel": "^2.0.4",
+    "@oriflame/config-babel": "^2.0.5",
     "@oriflame/config-danger": "^1.1.35",
     "@oriflame/config-eslint": "^3.2.4",
     "@oriflame/config-jest": "^1.1.39",
