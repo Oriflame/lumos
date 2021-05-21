@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.5 - 2021-05-21
+
+#### 📦 Dependencies
+
+- update dependency postcss to ^8.3.0 (#589) ([aeb9f68](https://github.com/Oriflame/lumos/commit/aeb9f684cb898493a1e21699110c9def10599fdf)), closes  _#589_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.2.4 - 2021-05-20
 
 #### 📦 Dependencies
