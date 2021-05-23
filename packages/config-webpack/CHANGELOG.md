@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.6 - 2021-05-23
+
+#### 📦 Dependencies
+
+- update dependency dotenv to v10 (#591) ([2203f72](https://github.com/Oriflame/lumos/commit/2203f72fc6caea794b620cee691d0f59e4480e0f)), closes  _#591_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([6de46a7](https://github.com/Oriflame/lumos/commit/6de46a7a45a96c80d1f918a436ba03be02b2b43d))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.2.5 - 2021-05-21
 
 #### 📦 Dependencies
