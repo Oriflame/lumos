@@ -33,7 +33,7 @@
     "dom-storage": "^2.1.0",
     "graphql": "^15.5.0",
     "graphql-tag": "^2.12.4",
-    "jest": "^27.0.1",
+    "jest": "^27.0.3",
     "jest-junit": "^12.1.0"
   },
   "optionalDependencies": {
