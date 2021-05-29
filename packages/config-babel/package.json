@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-babel",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Reusable Babel config.",
   "keywords": [
     "lumos",
