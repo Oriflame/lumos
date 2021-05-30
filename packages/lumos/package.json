@@ -42,7 +42,7 @@
     "cross-env": "^7.0.3",
     "edit-json-file": "^1.6.0",
     "enquirer": "^2.3.6",
-    "execa": "^5.0.0"
+    "execa": "^5.0.1"
   },
   "devDependencies": {
     "@oriflame/config-babel": "^2.0.6",
