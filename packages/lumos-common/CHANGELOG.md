@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.1 - 2021-05-31
+
+#### 📦 Dependencies
+
+- update dependency execa to ^5.0.1 (#605) ([11b6fd8](https://github.com/Oriflame/lumos/commit/11b6fd83a763792917545774511e6cf6e24a61c9)), closes  _#605_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([9318eb9](https://github.com/Oriflame/lumos/commit/9318eb91803da434bc93500b2d733ed675f4e60e))
+
+**Note:** Version bump only for package @oriflame/lumos-common
+
+
+
+
+
 ## 3.1.0 - 2021-05-17
 
 This PR provides support for DLL that can be used for vendor sharing, setup for user is minimal and can be done only via one flag in package.json -> lumos -> setting by setting enableSharedModules to true.

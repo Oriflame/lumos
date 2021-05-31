@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.18 - 2021-05-31
+
+#### 📦 Dependencies
+
+- update dependency execa to ^5.0.1 (#605) ([11b6fd8](https://github.com/Oriflame/lumos/commit/11b6fd83a763792917545774511e6cf6e24a61c9)), closes  _#605_
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 3.1.17 - 2021-05-29
 
 **Note:** Version bump only for package @oriflame/lumos

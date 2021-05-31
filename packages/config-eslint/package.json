@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-eslint",
-  "version": "3.2.7",
+  "version": "3.2.8",
   "description": "Reusable ESLint config.",
   "keywords": [
     "lumos",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@beemo/core": "^1.1.8",
     "@beemo/driver-eslint": "^1.2.3",
-    "@oriflame/lumos-common": "^3.1.0",
+    "@oriflame/lumos-common": "^3.1.1",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
     "babel-eslint": "^10.1.0",
