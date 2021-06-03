@@ -6,7 +6,7 @@
     "prepare": "yarn setup && beemo create-config eslint prettier",
     "postinstall": "husky install",
     "setup": "tsc --build",
-    "clean": "rimraf packages/*/{lib,*.tsbuildinfo}",
+    "clean": "rimraf packages/*/{lib,*.tsbuildinfo,node_modules}",
     "build": "beemo typescript --build --reference-workspaces",
     "test": "yarn run build && yarn run lint && yarn run jest && yarn run test:webpack && yarn run test:webpack-entry",
     "pretest:webpack": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack.test.config.js",
