@@ -186,13 +186,11 @@ export function getConfig({
     optimization: {
       chunkIds: PROD ? undefined : 'named',
       minimize: PROD,
-      // @ts-expect-error -- type error
       minimizer: [
         // @ts-expect-error -- type error
         new TerserPlugin({
           parallel: getParallelValue(parallel),
         }),
-        // @ts-expect-error -- type error
         new CssMinimizerPlugin({
           parallel: getParallelValue(parallel),
         }),
