@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.44 - 2021-06-03
+
+#### 📦 Dependencies
+
+- update dependency jest to ^27.0.4 (#613) ([719b4b4](https://github.com/Oriflame/lumos/commit/719b4b4a8c32c01b6b011a96d8721842c91b34f8)), closes  _#613_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([08fecb9](https://github.com/Oriflame/lumos/commit/08fecb96056ff94b4923d8bd9579a4f4b7785492))
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 1.1.43 - 2021-05-31
 
 **Note:** Version bump only for package @oriflame/config-jest
