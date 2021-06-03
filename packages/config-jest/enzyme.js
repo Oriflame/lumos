@@ -1,6 +1,6 @@
 /* eslint-disable node/no-missing-require -- TODO: solve somehow? */
 
-const { stripHOCs } = require('@oriflame/lumos-common/react');
+const { stripHOCs } = require('@oriflame/lumos-common/lib/react');
 const Enzyme = require('enzyme');
 const { createSerializer } = require('enzyme-to-json');
 
