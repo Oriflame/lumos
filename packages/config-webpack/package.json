@@ -30,7 +30,7 @@
     "react": "*"
   },
   "dependencies": {
-    "@babel/core": "^7.14.3",
+    "@babel/core": "^7.14.5",
     "@beemo/core": "^1.1.8",
     "@beemo/driver-webpack": "^1.2.6",
     "@module-federation/concat-runtime": "^0.0.1",
