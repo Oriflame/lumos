@@ -47,7 +47,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "is-docker": "^2.2.1",
-    "postcss": "^8.3.0",
+    "postcss": "^8.3.1",
     "postcss-browser-reporter": "^0.6.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.2",
