@@ -27,3 +27,7 @@ webpack.config.js
 .npmrc
 junit.xml
 TEST-RESULTS.xml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
