@@ -36,7 +36,7 @@ describe('Check that eslint rules are correct', () => {
         `packages/config-eslint/test/lint-files/${file}`,
         cliOptions,
       );
-      expect(output[0].messages.filter(item => item.severity === 2)).toEqual([]);
+      expect(output[0].messages.filter((item) => item.severity === 2)).toEqual([]);
       expect(output[0].errorCount).toBe(0);
     },
   );
@@ -47,7 +47,7 @@ describe('Check that eslint rules are correct', () => {
       { typescript: true, next: true },
       'typescript.ts',
       { filePath: `${process.cwd()}/packages/config-eslint/src/index.ts` },
-      2,
+      1,
     ],
     [{ node: true }, 'node.js', undefined, 1],
     [{ next: true }, 'next.js', undefined, 2],
@@ -62,7 +62,7 @@ describe('Check that eslint rules are correct', () => {
       { next: true, node: false, prettier: true, typescript: true },
       'combo.ts',
       { filePath: `${process.cwd()}/packages/config-eslint/src/index.ts` },
-      2,
+      1,
     ],
   ])(
     'Config (options: %o) should throw error with file: %s and cliOptions: %o',

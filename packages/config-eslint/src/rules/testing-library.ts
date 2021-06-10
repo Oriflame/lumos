@@ -15,6 +15,7 @@ const config: ESLintConfig['rules'] = {
   'testing-library/no-node-access': 'error', // disallow direct Node access
   'testing-library/no-promise-in-fire-event': 'error', // disallow the use of promises passed to a fireEvent method
   'testing-library/no-render-in-setup': 'off', // disallow the use of render in setup functions
+  'testing-library/no-unnecessary-act': 'error', // disallow wrapping Testing Library utils or empty callbacks in act
   'testing-library/no-wait-for-empty-callback': 'off', // disallow empty callbacks for waitFor and waitForElementToBeRemoved
   'testing-library/no-wait-for-multiple-assertions': 'warn', // disallow the use of multiple expect inside waitFor
   'testing-library/no-wait-for-side-effects': 'warn', // disallow the use of side effects inside waitFor

@@ -88,6 +88,7 @@ const config: ESLintConfig['rules'] = {
   'prefer-exponentiation-operator': 'error', // disallow the use of `Math.pow` in favor of the `**` operator
   'prefer-promise-reject-errors': 'error', // require using Error objects as Promise rejection reasons
   'prefer-regex-literals': 'error', // disallow use of the RegExp constructor in favor of regular expression literals
+  quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }], // enforce the consistent use of either backticks, double, or single quotes
   'require-atomic-updates': 'warn', // disallow assignments that can lead to race conditions due to usage of await or yield
   'require-unicode-regexp': 'off', // enforce the use of `u` flag on RegExp
   'sort-imports': [

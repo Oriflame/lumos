@@ -12,6 +12,7 @@ const config: ESLintConfig['rules'] = {
   'no-array-constructor': 'off', // disallow Array constructors
   'no-dupe-class-members': 'off', // disallow duplicate class members
   'no-duplicate-imports': 'off', // disallow duplicate module imports
+  'no-empty-function': 'off', // disallow empty functions
   'no-implied-eval': 'off', // disallow the use of eval()-like methods
   'no-invalid-this': 'off', // disallow this keywords outside of classes or class-like objects
   'no-loop-func': 'off', // disallow function declarations and expressions inside loop statements
@@ -27,9 +28,9 @@ const config: ESLintConfig['rules'] = {
   'no-unused-vars': 'off', // disallow unused variables
   'no-use-before-define': 'off', // disallow the use of variables before they are defined
   'no-useless-constructor': 'off', // disallow unnecessary constructors
+  quotes: 'off', // enforce the consistent use of either backticks, double, or single quotes
   'require-await': 'off', // disallow async functions which have no await expression
   'space-infix-ops': 'off', // require spacing around infix operators
-  quotes: 'off',
 
   // override eslint-plugin-node rules
   'node/file-extension-in-import': [
@@ -52,7 +53,6 @@ const config: ESLintConfig['rules'] = {
     'always',
     { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
   ], // ensure consistent use of file extension within the import path
-
   'import/no-extraneous-dependencies': [
     'error',
     {
@@ -60,6 +60,8 @@ const config: ESLintConfig['rules'] = {
         `test/**/*.${TJSX_EXTS_GROUP}`,
         `tests/**/*.${TJSX_EXTS_GROUP}`,
         `**/*.test.${TJSX_EXTS_GROUP}`,
+        `__tests__/**/*.${TJSX_EXTS_GROUP}`,
+        `**/__tests__/**/*.${TJSX_EXTS_GROUP}`,
         `**/jest.config.${TJSX_EXTS_GROUP}`,
         `**/webpack.config.${TJSX_EXTS_GROUP}`,
         `**/webpack.config.*.${TJSX_EXTS_GROUP}`,
@@ -142,7 +144,7 @@ const config: ESLintConfig['rules'] = {
       leadingUnderscore: 'forbid',
       trailingUnderscore: 'forbid',
       filter: {
-        regex: '^_+$',
+        regex: '^(_+|__webpack_public_path__)$',
         match: false,
       },
     },
@@ -298,7 +300,7 @@ const config: ESLintConfig['rules'] = {
   '@typescript-eslint/no-throw-literal': 'error', // disallow throwing literals as exceptions
   '@typescript-eslint/no-type-alias': 'off', // disallow the use of type aliases
   '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error', // flags unnecessary equality comparisons against boolean literals
-  '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }], // prevents conditionals where the type is always truthy or always falsy -- false positive for some cases
+  '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }], // prevents conditionals where the type is always truthy or always falsy
   '@typescript-eslint/no-unnecessary-qualifier': 'error', // warns when a namespace qualifier is unnecessary
   '@typescript-eslint/no-unnecessary-type-arguments': 'error', // warns if an explicitly specified type argument is the default for that type parameter
   '@typescript-eslint/no-unnecessary-type-assertion': 'error', // warns if a type assertion does not change the type of an expression
@@ -335,7 +337,7 @@ const config: ESLintConfig['rules'] = {
   '@typescript-eslint/prefer-readonly': 'warn', // requires that private members are marked as readonly if they're never modified outside of the constructor
   '@typescript-eslint/prefer-readonly-parameter-types': 'off', // requires that function parameters are typed as readonly to prevent accidental mutation of inputs
   '@typescript-eslint/prefer-reduce-type-parameter': 'warn', // prefer using type parameter when calling Array#reduce instead of casting
-  '@typescript-eslint/prefer-regexp-exec': 'off', // prefer RegExp#exec() over String#match() if no global flag is provided -- collision with unicorn `unicorn/prefer-regexp-test`
+  '@typescript-eslint/prefer-regexp-exec': 'off', // prefer RegExp#exec() over String#match() if no global flag is provided
   '@typescript-eslint/prefer-string-starts-ends-with': 'off', // enforce the use of String#startsWith and String#endsWith instead of other equivalent methods of checking substrings
   '@typescript-eslint/prefer-ts-expect-error': 'warn', // recommends using // @ts-expect-error over // @ts-ignore
   '@typescript-eslint/promise-function-async': 'warn', // requires any function or method that returns a Promise to be marked async
