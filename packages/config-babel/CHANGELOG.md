@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 2.0.8 - 2021-06-14
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.14.5 (#626) ([722ed52](https://github.com/Oriflame/lumos/commit/722ed5259eaa2aa24cce3ffd953bc5311a0298c5)), closes  _#626_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([b7d3082](https://github.com/Oriflame/lumos/commit/b7d3082dd9e4c70e017550a41c5b13063d87f03a))
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
 ### 2.0.7 - 2021-05-31
 
 **Note:** Version bump only for package @oriflame/config-babel

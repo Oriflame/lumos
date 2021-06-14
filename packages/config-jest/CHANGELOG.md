@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.49 - 2021-06-14
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.14.5 (#626) ([722ed52](https://github.com/Oriflame/lumos/commit/722ed5259eaa2aa24cce3ffd953bc5311a0298c5)), closes  _#626_
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 1.1.48 - 2021-06-13
 
 #### 📦 Dependencies
