@@ -16,7 +16,7 @@ function App() {
 
 const test = '';
 
-var _totally = (0, _classPrivateFieldLooseKey2.default)("totally");
+var _totally = /*#__PURE__*/(0, _classPrivateFieldLooseKey2.default)("totally");
 
 class Ahoj {
   constructor() {
