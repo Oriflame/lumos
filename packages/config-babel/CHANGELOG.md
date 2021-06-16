@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 2.0.9 - 2021-06-16
+
+#### 📦 Dependencies
+
+- update dependency @babel/core to ^7.14.6 (#639) ([7d19fb2](https://github.com/Oriflame/lumos/commit/7d19fb25ec3628e635ef30c46e9a7795315ab590)), closes  _#639_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([ea335f1](https://github.com/Oriflame/lumos/commit/ea335f183b59495c57bde12a8c1e0cfdee88aadd))
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
 ### 2.0.8 - 2021-06-14
 
 #### 📦 Dependencies
