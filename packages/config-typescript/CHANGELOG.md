@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.2.2 - 2021-06-18
+
+#### 📦 Dependencies
+
+- update dependency typescript to ^4.3.4 (#641) ([e1e1594](https://github.com/Oriflame/lumos/commit/e1e159412d341566a130e7daa2162033c95a57ca)), closes  _#641_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([f937904](https://github.com/Oriflame/lumos/commit/f9379047772179d9ff46f093c38e61eb6bdf42d1))
+
+**Note:** Version bump only for package @oriflame/config-typescript
+
+
+
+
+
 ### 1.2.1 - 2021-05-31
 
 #### 🛠 Internals

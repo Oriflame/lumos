@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-typescript",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Reusable TypeScript configs.",
   "keywords": [
     "lumos",
