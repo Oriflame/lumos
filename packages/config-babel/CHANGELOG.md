@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 2.0.10 - 2021-06-18
+
+#### 📦 Dependencies
+
+- update dependency babel-plugin-optimize-clsx to ^2.6.2 (#643) ([5d1b642](https://github.com/Oriflame/lumos/commit/5d1b64224bcfb97bc5dde00cd57fee454c852aca)), closes  _#643_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([c990170](https://github.com/Oriflame/lumos/commit/c990170a59df0313fbee86b555398d573e6507e0))
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
 ### 2.0.9 - 2021-06-16
 
 #### 📦 Dependencies
