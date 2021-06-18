@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.3.0 - 2021-06-18
+
+Fixed multiple issues found in previous version. This version should be stable.
+
+#### 🚀 Updates
+
+- Update rules. (#630) ([5e496ec](https://github.com/Oriflame/lumos/commit/5e496ecfde66472b1d5b85b9f8d8d402a3811870)), closes  _#630_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([04c866b](https://github.com/Oriflame/lumos/commit/04c866b1547bcd0667f58bbfa121f6583a357a7d))
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 3.2.15 - 2021-06-14
 
 #### 📦 Dependencies
