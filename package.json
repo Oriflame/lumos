@@ -79,7 +79,7 @@
     "@commitlint/config-conventional": "^12.1.4",
     "@oriflame/conventional-changelog-lint-config": "^1.1.2",
     "eslint-find-rules": "^3.6.1",
-    "graphql": "^15.5.0",
+    "graphql": "^15.5.1",
     "graphql-tag": "^2.12.4",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
