@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.3.4 - 2021-06-29
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-unicorn to v34 (#657) ([0179070](https://github.com/Oriflame/lumos/commit/017907033a3253751508e82042a18e1a58cd4d64)), closes  _#657_
+
+- update typescript-eslint monorepo to ^4.28.1 (#659) ([d323f62](https://github.com/Oriflame/lumos/commit/d323f6250ec2f48eb52452e926120a2728e5a2e2)), closes  _#659_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 3.3.3 - 2021-06-27
 
 #### 🛠 Internals
