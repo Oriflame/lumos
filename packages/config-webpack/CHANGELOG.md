@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.28 - 2021-07-03
+
+#### 📦 Dependencies
+
+- update dependency postcss-loader to ^6.1.1 (#664) ([210d4d6](https://github.com/Oriflame/lumos/commit/210d4d687f53f2c1ca6e9df3eb1d71c417c666d6)), closes  _#664_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([6aa5887](https://github.com/Oriflame/lumos/commit/6aa58870ace7667459a1a7fe2275baccec3c255d))
+- update dependency @types/terser-webpack-plugin to ^5.0.4 (#667) ([add5b9d](https://github.com/Oriflame/lumos/commit/add5b9dc5d483122144ebd2a88030588135c83ed)), closes  _#667_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.2.27 - 2021-06-27
 
 #### 📦 Dependencies
