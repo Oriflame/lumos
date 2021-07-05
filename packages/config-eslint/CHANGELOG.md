@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.3.7 - 2021-07-05
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-testing-library to ^4.7.0 (#670) ([0785f08](https://github.com/Oriflame/lumos/commit/0785f086348ed87c476c4a8f9541419b3fc9553a)), closes  _#670_
+
+- update typescript-eslint monorepo to ^4.28.2 (#671) ([bb29e85](https://github.com/Oriflame/lumos/commit/bb29e8593708d2d508dec882eacbb9b5888753b8)), closes  _#671_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([34869d9](https://github.com/Oriflame/lumos/commit/34869d9ad3b4055328c30d2ccf14f6f31c6d6200))
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 3.3.6 - 2021-07-03
 
 #### 📦 Dependencies
