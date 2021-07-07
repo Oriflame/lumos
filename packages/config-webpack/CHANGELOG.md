@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.30 - 2021-07-07
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([53aa6fa](https://github.com/Oriflame/lumos/commit/53aa6fa864e129ae0eaba90ab94592560e37cdea))
+- update dependency @types/css-minimizer-webpack-plugin to ^3.0.2 (#674) ([491e0da](https://github.com/Oriflame/lumos/commit/491e0dacadfa3c6def1f6a6280081b54f618f481)), closes  _#674_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.2.29 - 2021-07-04
 
 #### 🛠 Internals
