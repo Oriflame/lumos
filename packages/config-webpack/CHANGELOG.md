@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.31 - 2021-07-09
+
+#### 📦 Dependencies
+
+- update dependency fast-glob to ^3.2.7 (#678) ([00dcd47](https://github.com/Oriflame/lumos/commit/00dcd47165ec5b6bcddeeccea2371d94ffd91232)), closes  _#678_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.2.30 - 2021-07-07
 
 #### 🛠 Internals

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.3 - 2021-07-09
+
+#### 📦 Dependencies
+
+- update dependency fast-glob to ^3.2.7 (#678) ([00dcd47](https://github.com/Oriflame/lumos/commit/00dcd47165ec5b6bcddeeccea2371d94ffd91232)), closes  _#678_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([5279c8e](https://github.com/Oriflame/lumos/commit/5279c8ee36c2fb39af5302970ff3adb960221919))
+
+**Note:** Version bump only for package @oriflame/lumos-common
+
+
+
+
+
 ### 3.1.2 - 2021-06-27
 
 #### 📦 Dependencies
