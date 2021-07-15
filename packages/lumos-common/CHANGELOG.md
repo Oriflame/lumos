@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.5 - 2021-07-15
+
+#### 📦 Dependencies
+
+- update dependency @boost/common to ^2.8.1 (#684) ([c3dbf7e](https://github.com/Oriflame/lumos/commit/c3dbf7ec44e0ade0573795b262ac0bfd54b12b94)), closes  _#684_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([ded49ab](https://github.com/Oriflame/lumos/commit/ded49abeb766cf44c2f53829117a693c3a2f2920))
+
+**Note:** Version bump only for package @oriflame/lumos-common
+
+
+
+
+
 ### 3.1.4 - 2021-07-13
 
 #### 📦 Dependencies
