@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.35 - 2021-07-18
+
+#### 📦 Dependencies
+
+- update dependency css-loader to ^6.1.0 (#685) ([21d7908](https://github.com/Oriflame/lumos/commit/21d7908e138f9c2d48abf117ac312b419d10ee57)), closes  _#685_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.2.34 - 2021-07-15
 
 #### 📦 Dependencies
