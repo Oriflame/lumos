@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.36 - 2021-07-21
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.14.8 (#700) ([420b4ba](https://github.com/Oriflame/lumos/commit/420b4ba084eff7db4bb7ebc4df71ee02ced08413)), closes  _#700_
+
+- update dependency css-loader to ^6.2.0 (#697) ([b6bceac](https://github.com/Oriflame/lumos/commit/b6bceac0279c5aef86c2fa5d28ab24d169cccfa8)), closes  _#697_
+
+- update dependency postcss-modules to ^4.2.0 (#702) ([8b3dca6](https://github.com/Oriflame/lumos/commit/8b3dca6755999bdba4ff3b9996869a813402a82c)), closes  _#702_
+
+- update dependency style-loader to ^3.2.1 (#699) ([a467bb7](https://github.com/Oriflame/lumos/commit/a467bb7ea419826c8ee53d64e994744d91ff16ac)), closes  _#699_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([e15936d](https://github.com/Oriflame/lumos/commit/e15936dbc38807ad78ba3ac126be7ab22c04bce3))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.2.35 - 2021-07-18
 
 #### 📦 Dependencies

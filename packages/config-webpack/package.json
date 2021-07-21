@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-webpack",
-  "version": "3.2.35",
+  "version": "3.2.36",
   "description": "Reusable Webpack configs.",
   "keywords": [
     "lumos",
