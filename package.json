@@ -75,8 +75,8 @@
     "./packages/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@oriflame/conventional-changelog-lint-config": "^1.1.2",
     "eslint-find-rules": "^3.6.1",
     "graphql": "^15.5.1",
