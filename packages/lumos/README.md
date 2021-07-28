@@ -26,14 +26,6 @@ yarn add --dev @oriflame/lumos
 npx lumos-setup
 ```
 
-## Eject files
-
-This will eject files and remove dependency of this package.
-
-```bash
-npx lumos-eject
-```
-
 ## Scaffold dotfile
 
 ```bash
@@ -64,7 +56,6 @@ npm lumos typescript --build --reference-workspaces
 ## Supported drivers
 
 - [babel](../config-babel)
-- [danger](../config-danger)
 - [eslint](../config-eslint)
 - [jest](../config-jest)
 - [prettier](../config-prettier)
@@ -84,6 +75,7 @@ npm lumos typescript --build --reference-workspaces
 ## Supported settings
 
 ```ts
+
 export interface LumosSettings {
   buildFolder: string;
   coverage: number;
@@ -93,7 +85,6 @@ export interface LumosSettings {
   library: boolean;
   next: boolean;
   node: boolean;
-  testingLibrary: boolean;
   react: boolean;
   srcFolder: string;
   testsFolder: string;
@@ -101,13 +92,16 @@ export interface LumosSettings {
   entryPoint?: string;
   publicPath?: string;
   root?: string;
-  parallel?: boolean | string | number;
+  parallel?: boolean | number | string;
   testResultFileName?: string;
   emptyBabelConfig: boolean;
-  nextOptions?: Partial<NextConfigObject>;
   allowJs: boolean;
   skipLibCheck: boolean;
+  devServerContentBase?: string;
+  moduleFederationConfig?: unknown;
   host?: string;
+  enableSharedModules?: boolean;
+  sharedModulesManifestPath?: string;
 }
 ```
 
@@ -181,6 +175,80 @@ module.exports = {
 };
 ```
 
-## Rest of documentation
+### Cli options
 
-[Beemo docs](https://milesj.gitbook.io/beemo/)
+#### Babel
+
+- `string[]` - paths
+- extensions: `string[]` - file extensions
+- outDir: `string` - output directory override
+- esm: `boolean` - es modules compilation
+
+__Example:__
+
+```bash
+lumos babel --extensions .ts,.js ./src --out-dir ./lib
+```
+
+#### Eslint
+
+- `string[]` - paths
+- ext: `string[]` - extension
+- color: `boolean` - enable color output
+
+__Example:__
+
+```bash
+lumos eslint --ext .ts,.js ./src --color
+```
+
+#### Jest
+
+- colors: `boolean` - Enable color output
+- coverage: `boolean` - Enable code coverage
+
+__Example:__
+
+```bash
+lumos jest --colors --coverage
+```
+
+#### Prettier
+
+- `string[]` - paths
+- write: `boolean` - Enable file write
+
+__Example:__
+
+```bash
+lumos prettier --write ./src/**/*.{ts,tsx,js,jsx,scss,css,gql,graphql,yml,yaml,md}
+```
+
+#### Typescript
+
+- referenceWorkspaces: `boolean` - enable workspace references
+- emitDeclarationOnly: `boolean` - Only emit dts files
+
+__Example:__
+
+```bash
+lumos typescript --referenceWorkspaces --emitDeclarationOnly
+```
+
+#### Webpack
+
+- colors: `boolean` - Enable color output
+- progress: `boolean` - Enable webpack progress log
+- bail: `boolean` -
+- parallel: `number` - Enable parallelism
+- buildFolder: `string` - Override build folder
+- entryPoint: `string` - Override entry point
+- sourceMaps: `string` - Enable source maps generation
+- analyze: `string` - Enable webpack analyze plugin
+
+__Example:__
+
+```bash
+lumos webpack --colors --progress
+lumos webpack build
+```
