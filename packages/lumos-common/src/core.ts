@@ -55,6 +55,7 @@ export interface LumosSettings {
   host?: string;
   enableSharedModules?: boolean;
   sharedModulesManifestPath?: string;
+  enableConsoleMocks?: boolean;
 }
 
 export interface LumosPackage extends PackageStructure {
@@ -123,6 +124,7 @@ export function getSettings(): LumosSettings {
     emptyBabelConfig: false,
     allowJs: false,
     skipLibCheck: false,
+    enableConsoleMocks: true,
     ...settings,
   };
 }

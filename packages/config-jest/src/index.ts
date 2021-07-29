@@ -19,6 +19,7 @@ export interface JestOptions {
   threshold?: number;
   workspaces?: string[];
   testResultFileName?: string;
+  enableConsoleMocks?: boolean;
 }
 
 const exts = EXTS.map((ext) => ext.slice(1));
@@ -49,9 +50,15 @@ export function getConfig({
   threshold = 40,
   workspaces = [],
   testResultFileName = 'TEST-RESULTS.xml',
+  enableConsoleMocks = true,
 }: JestOptions): JestConfig {
   const roots: string[] = [];
-  const setupFiles = [fromHere('setup/shims.js'), fromHere('setup/console.js')];
+  const setupFiles = [fromHere('setup/shims.js')];
+
+  if (enableConsoleMocks) {
+    setupFiles.push(fromHere('setup/console.js'));
+  }
+
   const setupFilesAfterEnv = [fromHere('bootstrap/consumer.js')];
 
   if (workspaces.length > 0) {
