@@ -1,7 +1,7 @@
 # ESLint Config
 
 Factory functions for creating preset [ESLint](https://eslint.org) configurations. Primarily used in
-unison with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
+union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 
@@ -56,4 +56,13 @@ export interface ESLintOptions {
 }
 ```
 
-### [Beemo/eslint](https://milesj.gitbook.io/beemo/driver/eslint)
+### CLI Options
+
+- `--fix`
+  - Try to fix autofixable problems.
+
+**Example:**
+
+```bash
+lumos eslint --fix
+```

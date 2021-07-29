@@ -1,7 +1,7 @@
 # Jest Config
 
 Factory functions for creating preset [Jest](https://jestjs.io/) configurations. Primarily used in
-unison with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
+union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 
@@ -40,7 +40,6 @@ export interface JestOptions {
   testsFolder: string;
   threshold?: number;
   workspaces?: string[];
-  testingLibrary?: boolean;
   testResultFileName?: string;
 }
 ```
@@ -48,14 +47,25 @@ export interface JestOptions {
 ### Default values
 
 ```ts
-({
-  graphql = false, // Enables/disables support for react
-  react = false, // Enables/disabled support for react
-  node = false, // Enables/disables support for node
-  testingLibrary = false, // Enables/disabled testing library
-  threshold = 40, // code coverage threshold
-  testResultFileName = 'TEST-RESULTS.xml', // junit output filename
-});
+{
+  graphql = false,
+  react = false,
+  node = false,
+  srcFolder,
+  testsFolder,
+  threshold = 40,
+  workspaces = [],
+  testResultFileName = 'TEST-RESULTS.xml',
+};
 ```
 
-### [Beemo/jest](https://milesj.gitbook.io/beemo/driver/jest)
+### CLI Options
+
+- `--coverage`
+  - Enable code coverage output
+
+__Example:__
+
+```bash
+lumos jest --coverage
+```

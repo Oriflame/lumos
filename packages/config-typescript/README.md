@@ -1,7 +1,7 @@
 # TypeScript Config
 
 Factory functions for creating preset [TypeScript](https://www.typescriptlang.org/) configurations.
-Primarily used in unison with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
+Primarily used in union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 
@@ -39,7 +39,6 @@ export interface TypeScriptOptions {
   next?: boolean;
   node?: boolean;
   react?: boolean;
-  usingNext?: boolean;
   srcFolder: string;
   testsFolder: string;
   typesFolder: string;
@@ -58,7 +57,6 @@ export interface TypeScriptOptions {
   next = false,
   node = false,
   react = false,
-  usingNext = false,
   emitDeclarationOnly = false,
   srcFolder = 'src',
   allowJs = false,
@@ -91,5 +89,3 @@ export interface TypeScriptOptions {
 ```bash
 lumos typescript --emitDeclarationOnly --typesFolder=types
 ```
-
-### [Beemo/typescript](https://milesj.gitbook.io/beemo/driver/typescript)

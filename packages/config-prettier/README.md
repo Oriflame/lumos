@@ -1,7 +1,7 @@
 # Prettier Config
 
 Factory functions for creating preset [Prettier](https://prettier.io/) configurations. Primarily
-used in unison with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
+used in union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 
@@ -32,18 +32,18 @@ modules.exports = {
 
 ```js
 {
-  arrowParens: 'avoid',
-  bracketSpacing: true,
-  jsxBracketSameLine: false,
   printWidth: 100,
-  proseWrap: 'always',
-  requirePragma: false,
+  tabWidth: 2,
+  useTabs: false,
   semi: true,
   singleQuote: true,
-  tabWidth: 2,
+  quoteProps: 'as-needed',
+  jsxSingleQuote: false,
   trailingComma: 'all',
-  useTabs: false,
+  bracketSpacing: true,
+  jsxBracketSameLine: false,
+  arrowParens: 'always',
+  requirePragma: false,
+  proseWrap: 'always',
 }
 ```
-
-### [Beemo/prettier](https://milesj.gitbook.io/beemo/driver/prettier)
