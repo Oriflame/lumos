@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.30 - 2021-07-29
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([a54f03e](https://github.com/Oriflame/lumos/commit/a54f03eac6cb69d30cb1ab630de220b20801c0ab))
+
+**Note:** Version bump only for package @oriflame/config-prettier
+
+
+
+
+
 ### 1.1.29 - 2021-07-15
 
 #### 🛠 Internals

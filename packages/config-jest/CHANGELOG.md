@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.61 - 2021-07-29
+
+#### 🐞 Fixes
+
+- Add jest config for console mocks. ([8c0a453](https://github.com/Oriflame/lumos/commit/8c0a45309102f462a061a37217281b0be20220af))
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([a54f03e](https://github.com/Oriflame/lumos/commit/a54f03eac6cb69d30cb1ab630de220b20801c0ab))
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 1.1.60 - 2021-07-21
 
 #### 📦 Dependencies
