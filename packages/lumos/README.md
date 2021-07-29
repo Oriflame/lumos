@@ -62,6 +62,10 @@ npm lumos typescript --build --reference-workspaces
 - [typescript](../config-typescript)
 - [webpack](../config-webpack)
 
+## Extra configs
+
+- [danger](../config-danger)
+
 ### Set drivers manually
 
 ```json
