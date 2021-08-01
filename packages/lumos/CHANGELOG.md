@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.69 - 2021-08-01
+
+#### 📦 Dependencies
+
+- update dependency chalk to ^4.1.2 (#711) ([9fb02c7](https://github.com/Oriflame/lumos/commit/9fb02c7067911737a9a187a616218bf694a72e1f)), closes  _#711_
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 3.1.68 - 2021-07-29
 
 **Note:** Version bump only for package @oriflame/lumos
