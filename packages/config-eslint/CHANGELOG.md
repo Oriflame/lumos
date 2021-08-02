@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.3.21 - 2021-08-02
+
+#### 📦 Dependencies
+
+- update dependency @typescript-eslint/parser to ^4.29.0 (#715) ([3ce06ef](https://github.com/Oriflame/lumos/commit/3ce06ef755fd5cc6f29916b728834e9a5a2560d6)), closes  _#715_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([07da3f9](https://github.com/Oriflame/lumos/commit/07da3f9684f8621c09879ba47248b27c90a09240))
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 3.3.20 - 2021-08-01
 
 #### 📦 Dependencies
