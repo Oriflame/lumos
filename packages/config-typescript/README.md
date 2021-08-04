@@ -64,6 +64,23 @@ export interface TypeScriptOptions {
 }
 ```
 
+### Settings
+
+- library
+  - Optimized build for library
+- next
+  - Sets target to next version
+- node
+  - Optimized build for node
+- emitDeclarationOnly
+  - Only emits d.ts files
+- srcFolder
+  - Path to source folder
+- allowJs
+  - Enables javascript in typescript
+- skipLibCheck
+  - Skips library check
+
 ### CLI Options
 
 - `--[no-]clean`

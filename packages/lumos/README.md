@@ -78,8 +78,9 @@ npm lumos typescript --build --reference-workspaces
 
 ## Supported settings
 
-```ts
+These setting are supported settings forwarded to the drivers, this settings affect configuration and behavior of the drivers.
 
+```ts
 export interface LumosSettings {
   buildFolder: string;
   coverage: number;

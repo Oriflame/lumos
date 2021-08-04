@@ -56,6 +56,17 @@ export interface ESLintOptions {
 }
 ```
 
+### Settings
+
+- next
+  - Enables rules for new es features
+- node
+  - Enables rules for node js development
+- prettier
+  - Enables integration with prettier
+- typescript
+  - Enables typescript rules
+
 ### CLI Options
 
 - `--fix`
