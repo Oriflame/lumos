@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-jest",
-  "version": "1.1.61",
+  "version": "1.1.62",
   "description": "Reusable Jest config.",
   "keywords": [
     "lumos",
