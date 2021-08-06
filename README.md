@@ -7,9 +7,17 @@ configurations. [Built on and powered by Beemo](https://github.com/beemojs/beemo
 
 Lumos is designed around Oriflame projects. _Use at your own risk._
 
-[Lumos Documentation](./packages/lumos)
-
 </div>
+
+# Packages
+
+- [@oriflame/lumos](./packages/lumos)
+- [@oriflame/config-babel](./packages/config-babel)
+- [@oriflame/config-danger](./packages/config-danger)
+- [@oriflame/config-eslint](./packages/config-eslint)
+- [@oriflame/config-prettier](./packages/config-prettier)
+- [@oriflame/config-typescript](./packages/config-typescript)
+- [@oriflame/config-webpack](./packages/config-webpack)
 
 # Contributing
 

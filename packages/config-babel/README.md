@@ -1,7 +1,7 @@
 # Babel Config
 
 Factory functions for creating preset [Babel](https://babeljs.io/) configurations. Primarily used in
-unison with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
+union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 
@@ -93,10 +93,10 @@ interface LumosEnvSetting {
 }
 ```
 
-### Options
+### Settings
 
 - env
-  - Babel preset evn config
+  - Babel preset env config
 - buildFolder
   - Defines build folder
 - react
@@ -119,6 +119,13 @@ interface LumosEnvSetting {
 
 ### CLI Options
 
-- `--[no-]clean` (bool) - Clean the target `--out-dir` before transpiling. Defaults to `true`.
+- `--[no-]clean`
+  - (bool) - Clean the target `--out-dir` before transpiling. Defaults to `true`.
+- `--esm`
+  - Enable esm build
 
-### [Beemo/babel](https://milesj.gitbook.io/beemo/driver/babel)
+**Example:**
+
+```bash
+lumos babel --esm
+```

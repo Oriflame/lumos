@@ -1,6 +1,6 @@
 # Webpack Config
 
-Provides Webpack dependencies and configuration. Primarily used in unison with the
+Provides Webpack dependencies and configuration. Primarily used in union with the
 [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
@@ -24,15 +24,19 @@ modules.exports = {
 export interface WebpackOptions {
   analyzeBundle?: boolean;
   buildFolder?: string;
-  port?: string | number;
-  parallel?: boolean | string | number;
+  port?: number | string;
+  parallel?: boolean | number | string;
   root?: string;
   react?: boolean;
   sourceMaps?: boolean;
   publicPath?: string;
   srcFolder: string;
   entryPoint?: string;
+  devServerContentBase?: string;
   host?: string;
+  moduleFederationConfig?: ConstructorParameters<typeof container.ModuleFederationPlugin>[0];
+  enableSharedModules?: boolean;
+  sharedModulesManifestPath?: string;
 }
 ```
 
@@ -96,5 +100,3 @@ export interface WebpackOptions {
 ```bash
 lumos webpack --entryPoint=appEntry.tsx --sourceMaps --analyze --buildFolder=build
 ```
-
-### [Beemo/webpack](https://milesj.gitbook.io/beemo/driver/webpack)
