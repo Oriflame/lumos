@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.74 - 2021-08-09
+
+#### 📘 Docs
+
+- Update documentation for the lumos. (#709) ([e1ff0a1](https://github.com/Oriflame/lumos/commit/e1ff0a10ed8fb093cbce5aceee06e177c79eaae2)), closes  _#709_
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 3.1.73 - 2021-08-05
 
 **Note:** Version bump only for package @oriflame/lumos
