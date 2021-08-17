@@ -1,12 +1,6 @@
 import { ESLintConfig } from '@beemo/driver-eslint';
 
 const config: ESLintConfig['rules'] = {
-  // override ESLint rules which are deprecated (because they were moved to eslint-plugin-node), but turned on in AirBnB config
-  'global-require': 'off',
-  'no-buffer-constructor': 'off',
-  'no-new-require': 'off',
-  'no-path-concat': 'off',
-
   // eslint-plugin-node rules
   'node/callback-return': 'warn', // require return statements after callbacks
   'node/exports-style': 'off', // enforce either module.exports or exports

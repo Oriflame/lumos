@@ -8,6 +8,7 @@ import jestRulesConfig from '../../src/rules/jest';
 import nodeRulesConfig from '../../src/rules/node';
 import prettierRulesConfig from '../../src/rules/prettier';
 import promiseRulesConfig from '../../src/rules/promise';
+import reactHooksRulesConfig from '../../src/rules/react-hooks';
 import reactRulesConfig from '../../src/rules/react';
 import testingLibraryRulesConfig from '../../src/rules/testing-library';
 import typescriptRulesConfig from '../../src/rules/typescript';
@@ -31,42 +32,23 @@ const filerDisabledRules = ([ruleName, rule]: [
   return true;
 };
 
-const a11yRules = Object.entries(a11yRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const eslintRules = Object.entries(eslintRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const eslintCommentsRules = Object.entries(eslintCommentsRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const importRules = Object.entries(importRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const jestRules = Object.entries(jestRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const nodeRules = Object.entries(nodeRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const prettierRules = Object.entries(prettierRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const promiseRules = Object.entries(promiseRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const reactRules = Object.entries(reactRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const testingLibraryRules = Object.entries(testingLibraryRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const typescriptRules = Object.entries(typescriptRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
-const unicornRules = Object.entries(unicornRulesConfig!)
-  // .filter(filerDisabledRules)
-  .map(([ruleName]) => ruleName);
+const a11yRules = Object.entries(a11yRulesConfig!).map(([ruleName]) => ruleName);
+const eslintRules = Object.entries(eslintRulesConfig!).map(([ruleName]) => ruleName);
+const eslintCommentsRules = Object.entries(eslintCommentsRulesConfig!).map(
+  ([ruleName]) => ruleName,
+);
+const importRules = Object.entries(importRulesConfig!).map(([ruleName]) => ruleName);
+const jestRules = Object.entries(jestRulesConfig!).map(([ruleName]) => ruleName);
+const nodeRules = Object.entries(nodeRulesConfig!).map(([ruleName]) => ruleName);
+const prettierRules = Object.entries(prettierRulesConfig!).map(([ruleName]) => ruleName);
+const promiseRules = Object.entries(promiseRulesConfig!).map(([ruleName]) => ruleName);
+const reactHookRules = Object.entries(reactHooksRulesConfig!).map(([ruleName]) => ruleName);
+const reactRules = Object.entries(reactRulesConfig!).map(([ruleName]) => ruleName);
+const testingLibraryRules = Object.entries(testingLibraryRulesConfig!).map(
+  ([ruleName]) => ruleName,
+);
+const typescriptRules = Object.entries(typescriptRulesConfig!).map(([ruleName]) => ruleName);
+const unicornRules = Object.entries(unicornRulesConfig!).map(([ruleName]) => ruleName);
 
 const usedRules = [
   ...a11yRules,
@@ -77,6 +59,7 @@ const usedRules = [
   ...nodeRules,
   ...prettierRules,
   ...promiseRules,
+  ...reactHookRules,
   ...reactRules,
   ...testingLibraryRules,
   ...typescriptRules,

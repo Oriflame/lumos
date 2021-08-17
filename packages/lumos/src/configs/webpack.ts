@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/prefer-nullish-coalescing -- fml */
 import { getConfig } from '@oriflame/config-webpack';
 import { getSettings, getPackage } from '@oriflame/lumos-common';
 

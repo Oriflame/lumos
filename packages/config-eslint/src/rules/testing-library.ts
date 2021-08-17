@@ -23,6 +23,7 @@ const config: ESLintConfig['rules'] = {
   'testing-library/prefer-explicit-assert': 'warn', // suggest using explicit assertions rather than just getBy* queries
   'testing-library/prefer-find-by': 'warn', // suggest using findBy* methods instead of the waitFor + getBy queries
   'testing-library/prefer-presence-queries': 'off', // enforce specific queries when checking element is present or not
+  'testing-library/prefer-query-by-disappearance': 'warn', // suggest using queryBy* queries when waiting for disappearance
   'testing-library/prefer-user-event': 'warn', // suggest using userEvent library instead of fireEvent for simulating user interaction
   'testing-library/prefer-screen-queries': 'off', // suggest using screen while using queries
   'testing-library/prefer-wait-for': 'error', // use waitFor instead of deprecated wait methods

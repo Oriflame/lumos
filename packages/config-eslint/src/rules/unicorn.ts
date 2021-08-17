@@ -28,9 +28,11 @@ const config: ESLintConfig['rules'] = {
   'unicorn/no-abusive-eslint-disable': 'off', // enforce specifying rules to disable in eslint-disable comments
   'unicorn/no-array-callback-reference': 'off', // prevent passing a function reference directly to iterator methods
   'unicorn/no-array-for-each': 'off', // prefer for…of over Array#forEach(…)
+  'unicorn/no-array-method-this-argument': 'error', // disallow using the this argument in array methods
   'unicorn/no-array-push-push': 'error', // enforce combining multiple Array#push() into one call
   'unicorn/no-array-reduce': 'off', // disallow Array#reduce() and Array#reduceRight()
   'unicorn/no-console-spaces': 'off', // do not use leading/trailing space between console.log parameters
+  'unicorn/no-document-cookie': 'error', // do not use document.cookie directly
   'unicorn/no-for-loop': 'warn', // Do not use a for loop that can be replaced with a for-of loop
   'unicorn/no-hex-escape': 'warn', // enforce the use of Unicode escapes instead of hexadecimal escapes
   'unicorn/no-instanceof-array': 'error', // require Array.isArray() instead of instanceof Array
@@ -47,6 +49,8 @@ const config: ESLintConfig['rules'] = {
   'unicorn/no-unreadable-array-destructuring': 'warn', // disallow unreadable array destructuring
   'unicorn/no-unsafe-regex': 'off', // disallow unsafe regular expressions
   'unicorn/no-unused-properties': 'off', // disallow unused object properties
+  'unicorn/no-useless-length-check': 'off', // disallow useless array length check
+  'unicorn/no-useless-spread': 'error', // disallow unnecessary spread
   'unicorn/no-useless-undefined': 'off', // disallow useless undefined
   'unicorn/no-zero-fractions': 'error', // disallow number literals with zero fractions or dangling dots
   'unicorn/number-literal-case': 'error', // enforce lowercase identifier and uppercase value for number literals
@@ -57,6 +61,7 @@ const config: ESLintConfig['rules'] = {
   'unicorn/prefer-array-flat-map': 'warn', // prefer .flatMap(…) over .map(…).flat()
   'unicorn/prefer-array-index-of': 'warn', // prefer Array#indexOf() over Array#findIndex() when looking for the index of an item
   'unicorn/prefer-array-some': 'warn', // prefer .some(…) over .find(…)
+  'unicorn/prefer-at': 'warn', // prefer .at() method for index access and String#charAt()
   'unicorn/prefer-date-now': 'warn', // prefer Date.now() to get the number of milliseconds since the Unix Epoch
   'unicorn/prefer-default-parameters': 'error', // prefer default parameters over reassignment
   'unicorn/prefer-dom-node-append': 'warn', // prefer Node#append() over Node#appendChild()
@@ -73,7 +78,10 @@ const config: ESLintConfig['rules'] = {
   'unicorn/prefer-node-protocol': 'off', // Prefer using the `node:` protocol when importing Node.js builtin modules
   'unicorn/prefer-negative-index': 'warn', // prefer negative index over .length - index for {String,Array,TypedArray}#slice() and Array#splice()
   'unicorn/prefer-number-properties': 'warn', // prefer Number static properties over global ones
+  'unicorn/prefer-object-from-entries': 'warn', // prefer using Object.fromEntries(…) to transform a list of key-value pairs into an object
+  'unicorn/prefer-object-has-own': 'warn', // prefer Object.hasOwn(…) over Object.prototype.hasOwnProperty.call(…)
   'unicorn/prefer-optional-catch-binding': 'off', // prefer omitting the catch binding parameter
+  'unicorn/prefer-prototype-methods': 'warn', // prefer borrowing methods from the prototype instead of the instance
   'unicorn/prefer-query-selector': 'off', // prefer .querySelector() over .getElementById(), .querySelectorAll() over .getElementsByClassName() and .getElementsByTagName()
   'unicorn/prefer-reflect-apply': 'off', // prefer Reflect.apply() over Function#apply()
   'unicorn/prefer-regexp-test': 'warn', // prefer RegExp#test() over String#match() and RegExp#exec()
@@ -86,8 +94,13 @@ const config: ESLintConfig['rules'] = {
   'unicorn/prefer-string-trim-start-end': 'warn', // prefer String#trimStart() / String#trimEnd() over String#trimLeft() / String#trimRight()
   'unicorn/prefer-switch': 'off', // prefer switch over multiple else-if
   'unicorn/prefer-ternary': 'off', // prefer ternary expressions over simple if-else statements
+  // FIXME [@jakubmazanec]: enable when we support top-level await
+  'unicorn/prefer-top-level-await': 'off', // prefer top-level await over top-level promises and async function calls
   'unicorn/prefer-type-error': 'warn', // enforce throwing TypeError in type checking conditions
   'unicorn/prevent-abbreviations': 'off', // Prevent abbreviations.
+  'unicorn/require-array-join-separator': 'error', // enforce using the separator argument with Array#join()
+  'unicorn/require-number-to-fixed-digits-argument': 'error', // enforce using the digits argument with Number#toFixed()
+  'unicorn/require-post-message-target-origin': 'error', // enforce using the targetOrigin argument with window.postMessage()
   'unicorn/string-content': 'off', // enforce better string content
   'unicorn/throw-new-error': 'error', // require new when throwing an error
 };
