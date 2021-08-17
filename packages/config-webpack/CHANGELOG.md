@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.2.41 - 2021-08-17
+
+#### 📦 Dependencies
+
+- update dependency webpack-cli to v4.8.0 (#724) ([27c352c](https://github.com/Oriflame/lumos/commit/27c352cef8b15a6c6cd8126948264d59022ac992)), closes  _#724_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([c2a4507](https://github.com/Oriflame/lumos/commit/c2a45074725d62ae2e97e3788f22bc23faf8d4c6))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 3.2.40 - 2021-08-05
 
 #### 📦 Dependencies
