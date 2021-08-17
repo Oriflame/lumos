@@ -4,8 +4,9 @@ import { IGNORE_PATHS } from '@oriflame/lumos-common';
 export interface ESLintOptions {
   next?: boolean;
   node?: boolean;
-  prettier?: boolean;
   typescript?: boolean;
+  nextjs?: boolean;
+  prettier?: boolean;
 }
 
 function fromHere(filePath: string): string {
@@ -16,9 +17,10 @@ function fromHere(filePath: string): string {
 
 export function getExtendsList({
   next = false,
-  prettier = false,
-  typescript = false,
   node = false,
+  typescript = false,
+  nextjs = false,
+  prettier = false,
 }: ESLintOptions): string[] {
   const paths = [fromHere('./presets/base')];
 
@@ -32,6 +34,10 @@ export function getExtendsList({
 
   if (typescript) {
     paths.push(fromHere('./presets/typescript'));
+  }
+
+  if (nextjs) {
+    paths.push(fromHere('./presets/nextjs'));
   }
 
   if (prettier) {

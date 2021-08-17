@@ -5,7 +5,6 @@ union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 
 ## Extending config
 
-
 **Update package.json:**
 
 ```json
@@ -40,8 +39,9 @@ modules.exports = {
 export interface ESLintOptions {
   next?: boolean;
   node?: boolean;
-  prettier?: boolean;
   typescript?: boolean;
+  nextjs?: boolean;
+  prettier?: boolean;
 }
 ```
 
@@ -51,8 +51,9 @@ export interface ESLintOptions {
 {
   next = false,
   node = false,
-  prettier = false,
   typescript = false,
+  nextjs = false,
+  prettier = false,
 }
 ```
 
@@ -62,10 +63,12 @@ export interface ESLintOptions {
   - Enables rules for new es features
 - node
   - Enables rules for node js development
-- prettier
-  - Enables integration with prettier
 - typescript
   - Enables typescript rules
+- nextjs
+  - Enables Next.js rules
+- prettier
+  - Enables integration with prettier
 
 ### CLI Options
 
