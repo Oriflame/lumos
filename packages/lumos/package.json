@@ -30,7 +30,7 @@
     "node": ">=14"
   },
   "dependencies": {
-    "@actions/core": "^1.4.0",
+    "@actions/core": "^1.5.0",
     "@actions/github": "^5.0.0",
     "@beemo/cli": "^1.0.11",
     "@beemo/core": "^1.1.8",
