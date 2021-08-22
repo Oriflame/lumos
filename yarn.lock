@@ -1728,12 +1728,12 @@
     pretty-ms "^5.1.0"
     yaml "^1.9.2"
 
-"@boost/common@^2.8.1":
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/@boost/common/-/common-2.8.1.tgz#0c02dd8d635d1d87aba3f3c5bee9f6d543a29dbc"
-  integrity sha512-TQAr/MtVhIobX2voLoItOU92EepYLJiL25/ZaunEsO0rEiNAgHU7Po5xk8Ew/E8qb37EoiUfog59glwiTfPQYA==
+"@boost/common@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@boost/common/-/common-2.8.2.tgz#e3f65747455f7663d9d2bf2ac6074ff954cd47de"
+  integrity sha512-3B0bx1CyVaAvt/jHLoXMNwQvtQUMPf2RtHkA+i0Cp/9boxPVl0UDEFmXykLbHghjuc1PokDZnsn8aeGOVR9z9A==
   dependencies:
-    "@boost/decorators" "^2.1.3"
+    "@boost/decorators" "^2.1.4"
     "@boost/internal" "^2.2.3"
     fast-glob "^3.2.7"
     json5 "^2.2.0"
@@ -1781,10 +1781,10 @@
     execa "^3.4.0"
     fast-glob "^3.2.2"
 
-"@boost/decorators@^2.1.3":
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/@boost/decorators/-/decorators-2.1.3.tgz#b6ba13c2d6e8088b66e1d4de45e08589f98b1e91"
-  integrity sha512-dkXNRkbrJBUn1QqEGZeAs7TLXno8w3I4St2mKDrMSwYU8NCX8KJ7iINF2UIiD7SNOHRiR/RROR1eteO+esbU5Q==
+"@boost/decorators@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@boost/decorators/-/decorators-2.1.4.tgz#d7197ab817a8792b1ffe365503d46e51ae1befaa"
+  integrity sha512-ZDsh8NwT3cVeOpf6BxjliLC8YEIooskH3xvyNZkNzlbWpBgLmUAsvWiIh+B91lls+RiO+1vZrgX9/nZj8UvaaQ==
 
 "@boost/event@^1.3.1":
   version "1.3.1"
