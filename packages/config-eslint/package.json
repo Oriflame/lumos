@@ -18,7 +18,7 @@
     "access": "public"
   },
   "scripts": {
-    "check-rules": "../../node_modules/.bin/ts-node tools/check-rules/index.ts"
+    "check-rules": "ts-node tools/check-rules/index.ts"
   },
   "engines": {
     "node": ">=10.16.0"
