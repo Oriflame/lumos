@@ -2,7 +2,7 @@ import { Path } from '@beemo/core';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
 export interface ESLintOptions {
-  next?: boolean;
+  future?: boolean;
   node?: boolean;
   typescript?: boolean;
   nextjs?: boolean;
@@ -16,7 +16,7 @@ function fromHere(filePath: string): string {
 }
 
 export function getExtendsList({
-  next = false,
+  future = false,
   node = false,
   typescript = false,
   nextjs = false,
@@ -24,8 +24,8 @@ export function getExtendsList({
 }: ESLintOptions): string[] {
   const paths = [fromHere('./presets/base')];
 
-  if (next) {
-    paths.push(fromHere('./presets/next'));
+  if (future) {
+    paths.push(fromHere('./presets/future'));
   }
 
   if (node) {

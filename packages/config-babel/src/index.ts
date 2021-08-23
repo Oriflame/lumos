@@ -12,7 +12,7 @@ interface BabelOptions {
   esm?: boolean;
   graphql?: boolean;
   library?: boolean;
-  next?: boolean;
+  future?: boolean;
   node?: boolean;
   react?: boolean;
   typescript?: boolean;
@@ -26,7 +26,7 @@ export function getConfig({
   esm = false,
   graphql = false,
   library = false,
-  next = false,
+  future = false,
   node = false,
   react = false,
   typescript = false,
@@ -41,7 +41,7 @@ export function getConfig({
   const envOptions = {
     loose: true,
     modules: esm || moduleFederationEnabled ? false : 'commonjs',
-    shippedProposals: next,
+    shippedProposals: future,
     targets: node ? NODE_TARGET : WEB_TARGET,
     ...env,
   };
@@ -53,7 +53,7 @@ export function getConfig({
   envOptions.bugfixes = typeof envOptions.targets === 'object' && !!envOptions.targets.esmodules;
 
   // Flags
-  let useNext = next;
+  let useFuture = future;
   let removePropTypes = false;
 
   switch (process.env.NODE_ENV) {
@@ -100,7 +100,7 @@ export function getConfig({
   }
 
   if (typescript) {
-    useNext = true;
+    useFuture = true;
     presets.push('@babel/preset-typescript');
 
     plugins.unshift(
@@ -130,7 +130,7 @@ export function getConfig({
     ]);
   }
 
-  if (useNext) {
+  if (useFuture) {
     plugins.push(
       ['@babel/plugin-proposal-class-properties', { loose: envOptions.loose }],
       ['@babel/plugin-proposal-private-methods', { loose: envOptions.loose }],

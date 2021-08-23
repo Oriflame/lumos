@@ -10,7 +10,7 @@ const {
   node,
   react,
   library,
-  next,
+  future,
   allowJs,
   skipLibCheck,
 } = getSettings();
@@ -27,7 +27,7 @@ export = context.args.referenceWorkspaces
       library,
       node,
       react,
-      next,
+      future,
       srcFolder: (context.args.srcFolder as string) || srcFolder,
       testsFolder: (context.args.testsFolder as string) || testsFolder,
       typesFolder: (context.args.typesFolder as string) || typesFolder,

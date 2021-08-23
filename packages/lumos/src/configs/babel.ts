@@ -5,7 +5,7 @@ const { context, tool } = process.beemo;
 const {
   graphql,
   library,
-  next,
+  future,
   node,
   react,
   env,
@@ -19,7 +19,7 @@ export = getConfig({
   esm: !!(context.args.esm || process.env.ESM),
   graphql,
   library,
-  next,
+  future,
   node,
   react,
   typescript: tool.isPluginEnabled('driver', 'typescript'),

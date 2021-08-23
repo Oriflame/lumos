@@ -36,7 +36,7 @@ export interface TypeScriptOptions {
   buildFolder: string;
   includeTests?: boolean;
   library?: boolean;
-  next?: boolean;
+  future?: boolean;
   node?: boolean;
   react?: boolean;
   srcFolder: string;
@@ -54,7 +54,7 @@ export interface TypeScriptOptions {
 ```ts
 {
   library = false,
-  next = false,
+  future = false,
   node = false,
   react = false,
   emitDeclarationOnly = false,
@@ -68,7 +68,7 @@ export interface TypeScriptOptions {
 
 - library
   - Optimized build for library
-- next
+- future
   - Sets target to next version
 - node
   - Optimized build for node

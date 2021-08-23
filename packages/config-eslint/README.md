@@ -37,7 +37,7 @@ modules.exports = {
 
 ```ts
 export interface ESLintOptions {
-  next?: boolean;
+  future?: boolean;
   node?: boolean;
   typescript?: boolean;
   nextjs?: boolean;
@@ -49,7 +49,7 @@ export interface ESLintOptions {
 
 ```ts
 {
-  next = false,
+  future = false,
   node = false,
   typescript = false,
   nextjs = false,
@@ -59,7 +59,7 @@ export interface ESLintOptions {
 
 ### Settings
 
-- next
+- future
   - Enables rules for new es features
 - node
   - Enables rules for node js development

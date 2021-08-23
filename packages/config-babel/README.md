@@ -37,7 +37,7 @@ interface BabelOptions {
   esm?: boolean;
   graphql?: boolean;
   library?: boolean;
-  next?: boolean;
+  future?: boolean;
   node?: boolean;
   react?: boolean;
   typescript?: boolean;
@@ -79,13 +79,13 @@ interface LumosEnvSetting {
   env = {
     loose: true,
     modules: esm ? false : 'commonjs',
-    shippedProposals: next,
+    shippedProposals: future,
     targets: node ? NODE_TARGET : WEB_TARGET,
   },
   esm = false,
   graphql = false,
   library = false,
-  next = false,
+  future = false,
   node = false,
   react = false,
   typescript = false,
@@ -112,7 +112,7 @@ interface LumosEnvSetting {
   - Enable/Disable graph QL usage
 - library
   - Enable/Disable optimization for library
-- next
+- future
   - Enable/Disable experimental plugins
 - node
   - Enable/Disable only node support

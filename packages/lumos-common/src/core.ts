@@ -36,9 +36,10 @@ export interface LumosSettings {
   env: LumosEnvSetting;
   graphql: boolean;
   library: boolean;
-  next: boolean;
+  future: boolean;
   node: boolean;
   react: boolean;
+  nextjs: boolean;
   srcFolder: string;
   testsFolder: string;
   typesFolder: string;
@@ -115,9 +116,10 @@ export function getSettings(): LumosSettings {
     env: {},
     graphql: false,
     library: false,
-    next: false,
+    future: false,
     node: false,
     react: false,
+    nextjs: false,
     srcFolder: 'src',
     testsFolder: 'tests',
     typesFolder: 'types',

@@ -6,7 +6,7 @@ export interface TypeScriptOptions {
   buildFolder: string;
   includeTests?: boolean;
   library?: boolean;
-  next?: boolean;
+  future?: boolean;
   node?: boolean;
   react?: boolean;
   srcFolder: string;
@@ -20,7 +20,7 @@ export interface TypeScriptOptions {
 
 export function getCompilerOptions({
   library = false,
-  next = false,
+  future = false,
   node = false,
   react = false,
   emitDeclarationOnly = false,
@@ -33,7 +33,7 @@ export function getCompilerOptions({
     declaration: library || emitDeclarationOnly,
     esModuleInterop: true,
     forceConsistentCasingInFileNames: true,
-    isolatedModules: !next && !library,
+    isolatedModules: !future && !library,
     jsx: 'preserve',
     lib: ['dom', 'DOM.Iterable', 'esnext'],
     module: node ? 'commonjs' : 'esnext',
@@ -42,13 +42,13 @@ export function getCompilerOptions({
     noImplicitReturns: true,
     pretty: true,
     strict: true,
-    target: next || node ? 'es2018' : 'es2015',
+    target: future || node ? 'es2018' : 'es2015',
     // We want to resolve json modules
     resolveJsonModule: true,
     experimentalDecorators: true,
     // Use define in development for spec accuracy,
     // but omit in production for smaller file sizes.
-    useDefineForClassFields: next && process.env.NODE_ENV === 'development',
+    useDefineForClassFields: future && process.env.NODE_ENV === 'development',
     allowJs,
     skipLibCheck,
   };
