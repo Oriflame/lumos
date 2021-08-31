@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.3.32 - 2021-08-31
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-prettier to v4 (#747) ([a0a380f](https://github.com/Oriflame/lumos/commit/a0a380f09c1fcbcafef8286aebe1b77c1616c40a)), closes  _#747_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 3.3.31 - 2021-08-30
 
 #### 📦 Dependencies
