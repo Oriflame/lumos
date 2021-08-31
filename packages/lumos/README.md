@@ -78,7 +78,8 @@ npm lumos typescript --build --reference-workspaces
 
 ## Supported settings
 
-These setting are supported settings forwarded to the drivers, this settings affect configuration and behavior of the drivers.
+These setting are supported settings forwarded to the drivers, this settings affect configuration
+and behavior of the drivers.
 
 ```ts
 export interface LumosSettings {
@@ -88,9 +89,10 @@ export interface LumosSettings {
   env: LumosEnvSetting;
   graphql: boolean;
   library: boolean;
-  next: boolean;
+  future: boolean;
   node: boolean;
   react: boolean;
+  nextjs: boolean;
   srcFolder: string;
   testsFolder: string;
   typesFolder: string;
@@ -120,9 +122,10 @@ export interface LumosSettings {
   env: {},
   graphql: false,
   library: false,
-  next: false,
+  future: false,
   node: false,
   react: false,
+  nextjs: false,
   testingLibrary: false,
   srcFolder: 'src',
   testsFolder: 'tests',
@@ -189,7 +192,7 @@ module.exports = {
 - outDir: `string` - output directory override
 - esm: `boolean` - es modules compilation
 
-__Example:__
+**Example:**
 
 ```bash
 lumos babel --extensions .ts,.js ./src --out-dir ./lib
@@ -201,7 +204,7 @@ lumos babel --extensions .ts,.js ./src --out-dir ./lib
 - ext: `string[]` - extension
 - color: `boolean` - enable color output
 
-__Example:__
+**Example:**
 
 ```bash
 lumos eslint --ext .ts,.js ./src --color
@@ -212,7 +215,7 @@ lumos eslint --ext .ts,.js ./src --color
 - colors: `boolean` - Enable color output
 - coverage: `boolean` - Enable code coverage
 
-__Example:__
+**Example:**
 
 ```bash
 lumos jest --colors --coverage
@@ -223,7 +226,7 @@ lumos jest --colors --coverage
 - `string[]` - paths
 - write: `boolean` - Enable file write
 
-__Example:__
+**Example:**
 
 ```bash
 lumos prettier --write ./src/**/*.{ts,tsx,js,jsx,scss,css,gql,graphql,yml,yaml,md}
@@ -234,7 +237,7 @@ lumos prettier --write ./src/**/*.{ts,tsx,js,jsx,scss,css,gql,graphql,yml,yaml,m
 - referenceWorkspaces: `boolean` - enable workspace references
 - emitDeclarationOnly: `boolean` - Only emit dts files
 
-__Example:__
+**Example:**
 
 ```bash
 lumos typescript --referenceWorkspaces --emitDeclarationOnly
@@ -251,7 +254,7 @@ lumos typescript --referenceWorkspaces --emitDeclarationOnly
 - sourceMaps: `string` - Enable source maps generation
 - analyze: `string` - Enable webpack analyze plugin
 
-__Example:__
+**Example:**
 
 ```bash
 lumos webpack --colors --progress

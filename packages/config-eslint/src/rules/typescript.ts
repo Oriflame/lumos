@@ -18,7 +18,7 @@ const config: ESLintConfig['rules'] = {
   'no-loop-func': 'off', // disallow function declarations and expressions inside loop statements
   'no-loss-of-precision': 'off', // disallow literal numbers that lose precision
   'no-magic-numbers': 'off', // disallow magic numbers
-  'no-redeclare': 'error', // disallow variable redeclaration
+  'no-redeclare': 'off', // disallow variable redeclaration
   'no-shadow': 'off', // disallow variable declarations from shadowing variables declared in the outer scope
   'no-throw-literal': 'off', // disallow throwing literals as exceptions
   'no-return-await': 'off', // disallow unnecessary return await
@@ -338,6 +338,7 @@ const config: ESLintConfig['rules'] = {
   '@typescript-eslint/prefer-readonly-parameter-types': 'off', // requires that function parameters are typed as readonly to prevent accidental mutation of inputs
   '@typescript-eslint/prefer-reduce-type-parameter': 'warn', // prefer using type parameter when calling Array#reduce instead of casting
   '@typescript-eslint/prefer-regexp-exec': 'off', // prefer RegExp#exec() over String#match() if no global flag is provided
+  '@typescript-eslint/prefer-return-this-type': 'warn', // enforce that this is used when only this type is returned
   '@typescript-eslint/prefer-string-starts-ends-with': 'off', // enforce the use of String#startsWith and String#endsWith instead of other equivalent methods of checking substrings
   '@typescript-eslint/prefer-ts-expect-error': 'warn', // recommends using // @ts-expect-error over // @ts-ignore
   '@typescript-eslint/promise-function-async': 'warn', // requires any function or method that returns a Promise to be marked async

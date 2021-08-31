@@ -16,3 +16,4 @@ build*/
 *.config.js
 packages/config-babel/test/fixtures/**/*
 packages/config-eslint/test/**/*
+packages/config-eslint/tools/check-rules/**/*

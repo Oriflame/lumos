@@ -4,6 +4,9 @@ const config: ESLintConfig['rules'] = {
   // override ESLint rules
   'max-classes-per-file': 'off',
 
+  // override eslint-plugin-node rules
+  'node/no-sync': 'off', // disallow synchronous methods
+
   // override @typescript-eslint/eslint-plugin rules
   '@typescript-eslint/ban-ts-comment': 'off', // bans // @ts-<directive> comments from being used
   '@typescript-eslint/no-floating-promises': 'off', // requires Promise-like values to be handled appropriately
@@ -13,6 +16,12 @@ const config: ESLintConfig['rules'] = {
   'jest/consistent-test-it': 'off', // have control over test and it usages
   'jest/expect-expect': 'warn', // enforce assertion to be made in a test body
   'jest/lowercase-name': 'off', // enforce lowercase test names
+  'jest/max-nested-describe': [
+    'error',
+    {
+      max: 3,
+    },
+  ], // enforces a maximum depth to nested describe calls
   'jest/no-alias-methods': 'warn', // disallow alias methods
   'jest/no-commented-out-tests': 'warn', // disallow commented out tests
   'jest/no-conditional-expect': 'error', // prevent calling expect conditionally

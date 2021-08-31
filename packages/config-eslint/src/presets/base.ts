@@ -15,6 +15,7 @@ import importRules from '../rules/import';
 import jestRules from '../rules/jest';
 import promiseRules from '../rules/promise';
 import reactRules from '../rules/react';
+import reactHooksRules from '../rules/react-hooks';
 import testingLibraryRules from '../rules/testing-library';
 
 const config: ESLintConfig = {
@@ -32,13 +33,15 @@ const config: ESLintConfig = {
   },
   // Extends list for base plugins
   extends: [
-    'airbnb',
-    'plugin:eslint-plugin-promise/recommended',
-    'plugin:jsx-a11y/recommended',
+    'eslint:recommended',
+    'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:node/recommended',
+    'plugin:eslint-plugin-promise/recommended',
   ],
   // Required plugins; doesn't matter if they are used or not.
-  plugins: ['import', 'react', 'react-hooks', 'node', 'eslint-comments', 'promise'],
+  plugins: ['import', 'react', 'react-hooks', 'jsx-a11y', 'node', 'eslint-comments', 'promise'],
 
   env: {
     browser: true,
@@ -105,6 +108,7 @@ const config: ESLintConfig = {
     ...promiseRules,
     ...importRules,
     ...reactRules,
+    ...reactHooksRules,
     ...a11yRules,
   },
   overrides: [
@@ -113,7 +117,7 @@ const config: ESLintConfig = {
 
       plugins: ['jest', 'testing-library'],
 
-      extends: ['plugin:testing-library/react'],
+      extends: ['plugin:jest/recommended', 'plugin:testing-library/react'],
 
       settings: {
         'testing-library/custom-queries': 'off',

@@ -13,7 +13,7 @@ interface SetupPrompt {
   libs: string[];
   type: string;
   node: boolean;
-  next: boolean;
+  future: boolean;
   scaffold: boolean;
   scripts: boolean;
   yarn: boolean;
@@ -44,8 +44,8 @@ function addLumosToPackage(response: SetupPrompt) {
     lumos.settings!.entryPoint = 'app-loader.tsx';
   }
 
-  if (response.next) {
-    lumos.settings!.next = true;
+  if (response.future) {
+    lumos.settings!.future = true;
   }
 
   if (response.node) {
@@ -157,7 +157,7 @@ export async function setup() {
     },
     {
       type: 'confirm',
-      name: 'next',
+      name: 'future',
       message: 'Do you want to enable experimental features?',
     },
     {
