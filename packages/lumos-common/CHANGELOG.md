@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 4.0.0 - 2021-08-31
+
+#### 💥 Breaking
+
+- Change `next` setting to `future` and introduce new `nextjs` setting. (#727) ([9c25bb0](https://github.com/Oriflame/lumos/commit/9c25bb00eda5073cb0d315c20df97ebfd2e03d09)), closes  _#727_
+
+
+#### 🛠 Internals
+
+- Release [ci skip]. ([540ff0d](https://github.com/Oriflame/lumos/commit/540ff0db13ba07b321255552253a68c620363b46))
+
+**Note:** Version bump only for package @oriflame/lumos-common
+
+
+
+
+
 ### 3.1.6 - 2021-07-29
 
 #### 🐞 Fixes

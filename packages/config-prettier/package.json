@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-prettier",
-  "version": "3.4.0",
+  "version": "4.0.0",
   "description": "Reusable Prettier config.",
   "keywords": [
     "lumos",
@@ -26,7 +26,7 @@
   "dependencies": {
     "@beemo/core": "^1.1.8",
     "@beemo/driver-prettier": "^1.3.2",
-    "@oriflame/lumos-common": "^3.4.0",
+    "@oriflame/lumos-common": "^4.0.0",
     "prettier": "^2.3.2"
   }
 }
