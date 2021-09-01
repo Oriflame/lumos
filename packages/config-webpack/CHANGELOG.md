@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.1 - 2021-09-01
+
+#### 📦 Dependencies
+
+- update dependency is-docker to v3 (#753) ([a8827de](https://github.com/Oriflame/lumos/commit/a8827deab601eb7f71addd410152b63aff37b54a)), closes  _#753_
+
+- update dependency webpack-dev-server to ^4.1.0 (#752) ([6ea1cad](https://github.com/Oriflame/lumos/commit/6ea1cadb0232f74020e5e64ff5fcb767b451ed13)), closes  _#752_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 # 4.0.0 - 2021-08-31
 
 #### 💥 Breaking

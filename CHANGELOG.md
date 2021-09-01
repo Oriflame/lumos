@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.1 - 2021-09-01
+
+#### 📦 Dependencies
+
+- update dependency @next/eslint-plugin-next to ^11.1.2 (#749) ([b537552](https://github.com/Oriflame/lumos/commit/b53755237db739b0767a1c6e17e1c0ec710b7ff2)), closes  _#749_
+
+- update dependency is-docker to v3 (#753) ([a8827de](https://github.com/Oriflame/lumos/commit/a8827deab601eb7f71addd410152b63aff37b54a)), closes  _#753_
+
+- update dependency webpack-dev-server to ^4.1.0 (#752) ([6ea1cad](https://github.com/Oriflame/lumos/commit/6ea1cadb0232f74020e5e64ff5fcb767b451ed13)), closes  _#752_
+
+
+#### 🛠 Internals
+
+- update dependency ts-node to ^10.2.1 (#748) ([e17bb01](https://github.com/Oriflame/lumos/commit/e17bb01badefd9dba011a5f3fa570a9e69a8c08e)), closes  _#748_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 # 4.0.0 - 2021-08-31
 
 #### 💥 Breaking
