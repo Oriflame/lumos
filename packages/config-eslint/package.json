@@ -49,6 +49,6 @@
   },
   "devDependencies": {
     "@types/confusing-browser-globals": "^1.0.0",
-    "ts-node": "^10.2.0"
+    "ts-node": "^10.2.1"
   }
 }
