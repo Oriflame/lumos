@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.7 - 2021-09-07
+
+#### 🛠 Internals
+
+- update dependency @types/node to ^14.17.15 (#759) ([a91e743](https://github.com/Oriflame/lumos/commit/a91e7430c77b5279cec3f8f85cae6ac4c0231945)), closes  _#759_
+
+**Note:** Version bump only for package @oriflame/config-danger
+
+
+
+
+
 ### 4.0.2 - 2021-09-03
 
 #### 🛠 Internals
