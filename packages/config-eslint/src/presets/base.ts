@@ -37,7 +37,6 @@ const config: ESLintConfig = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:node/recommended',
     'plugin:eslint-plugin-promise/recommended',
   ],
   // Required plugins; doesn't matter if they are used or not.
