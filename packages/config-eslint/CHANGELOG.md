@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.8 - 2021-09-07
+
+#### 🐞 Fixes
+
+- Remove eslint-plugin-node's recommended extend from base preset. (#760) ([2be5b39](https://github.com/Oriflame/lumos/commit/2be5b39fd5f2abd2e8bd102e676e35acd42d87c9)), closes  _#760_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.0.6 - 2021-09-06
 
 #### 📦 Dependencies
