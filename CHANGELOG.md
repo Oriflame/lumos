@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.9 - 2021-09-08
+
+#### 📦 Dependencies
+
+- update dependency webpack-dev-server to ^4.1.1 (#761) ([c6e01f8](https://github.com/Oriflame/lumos/commit/c6e01f8ad688a774098ecc699097cf13fd2dcb64)), closes  _#761_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.8 - 2021-09-07
 
 #### 🐞 Fixes
