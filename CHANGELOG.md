@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.11 - 2021-09-10
+
+#### 📦 Dependencies
+
+- update dependency @babel/preset-env to ^7.15.6 (#765) ([2003ea8](https://github.com/Oriflame/lumos/commit/2003ea8af54ed700a951c3059198dc2216ccc737)), closes  _#765_
+
+- update dependency eslint-plugin-testing-library to ^4.12.2 (#763) ([ab0c4e3](https://github.com/Oriflame/lumos/commit/ab0c4e35f423c1ba5e71a7325722217fe035918e)), closes  _#763_
+
+- update dependency webpack-dev-server to ^4.2.0 (#766) ([5be6ff2](https://github.com/Oriflame/lumos/commit/5be6ff266a7ef3184c0786137a693299855bc994)), closes  _#766_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.10 - 2021-09-08
 
 #### 📦 Dependencies
