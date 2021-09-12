@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.12 - 2021-09-12
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-unicorn to v36 (#768) ([dc7d956](https://github.com/Oriflame/lumos/commit/dc7d956e5c72d40b6099a0bc66cfdd4f5283c56b)), closes  _#768_
+
+- update dependency typescript to ^4.4.3 (#767) ([09ca8f2](https://github.com/Oriflame/lumos/commit/09ca8f2b54952c1a5ead6bdcf71dc8619aa8ac34)), closes  _#767_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.11 - 2021-09-10
 
 #### 📦 Dependencies

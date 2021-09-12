@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.12 - 2021-09-12
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-unicorn to v36 (#768) ([dc7d956](https://github.com/Oriflame/lumos/commit/dc7d956e5c72d40b6099a0bc66cfdd4f5283c56b)), closes  _#768_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.0.11 - 2021-09-10
 
 #### 📦 Dependencies
