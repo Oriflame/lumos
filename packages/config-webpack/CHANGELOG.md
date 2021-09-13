@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.14 - 2021-09-13
+
+#### 📦 Dependencies
+
+- update dependency terser-webpack-plugin to ^5.2.4 (#751) ([6755b26](https://github.com/Oriflame/lumos/commit/6755b260bdb22e425d7b22492d1d121de4112ca8)), closes  _#751_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 4.0.11 - 2021-09-10
 
 #### 📦 Dependencies
