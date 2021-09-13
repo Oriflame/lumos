@@ -163,6 +163,7 @@ export function getConfig({
     output,
 
     devtool: PROD ? (sourceMaps ? 'source-map' : false) : 'cheap-module-source-map',
+    // @ts-expect-error -- something wrong
     devServer: {
       compress: true,
       contentBase,
@@ -187,7 +188,6 @@ export function getConfig({
       chunkIds: PROD ? undefined : 'named',
       minimize: PROD,
       minimizer: [
-        // @ts-expect-error -- type error
         new TerserPlugin({
           parallel: getParallelValue(parallel),
         }),
