@@ -12,7 +12,8 @@ export function getConfig(): PrettierConfig {
     jsxSingleQuote: false,
     trailingComma: 'all',
     bracketSpacing: true,
-    jsxBracketSameLine: false,
+    // @ts-expect-error -- [@rajzik] fix once types 2.4.0 lands
+    bracketSameLine: false,
     arrowParens: 'always',
     requirePragma: false,
     proseWrap: 'always',
