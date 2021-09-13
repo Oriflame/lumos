@@ -9,20 +9,20 @@ describe('Check that eslint rules are correct', () => {
   test.each<[ESLintOptions, string, OptionsShape?]>([
     [{}, 'javascript.js', undefined],
     [
-      { typescript: true, next: true },
+      { typescript: true, future: true },
       'typescript.ts',
       { filePath: `${process.cwd()}/packages/config-eslint/src/index.ts` },
     ],
     [{ node: true }, 'node.js', undefined],
-    [{ next: true }, 'next.js', undefined],
+    [{ future: true }, 'next.js', undefined],
     [{ prettier: true }, 'prettier.js', undefined],
     [
-      { next: true, node: false, prettier: true, typescript: true },
+      { future: true, node: false, prettier: true, typescript: true },
       'test.js',
       { filePath: 'index.test.js' },
     ],
     [
-      { next: true, node: false, prettier: true, typescript: true },
+      { future: true, node: false, prettier: true, typescript: true },
       'combo.ts',
       { filePath: `${process.cwd()}/packages/config-eslint/src/index.ts` },
     ],
@@ -44,22 +44,22 @@ describe('Check that eslint rules are correct', () => {
   test.each<[ESLintOptions, string, OptionsShape | undefined, number]>([
     [{}, 'javascript.js', undefined, 1],
     [
-      { typescript: true, next: true },
+      { typescript: true, future: true },
       'typescript.ts',
       { filePath: `${process.cwd()}/packages/config-eslint/src/index.ts` },
       1,
     ],
     [{ node: true }, 'node.js', undefined, 1],
-    [{ next: true }, 'next.js', undefined, 2],
+    [{ future: true }, 'next.js', undefined, 2],
     [{ prettier: true }, 'prettier.js', undefined, 4],
     [
-      { next: true, node: false, prettier: true, typescript: true },
+      { future: true, node: false, prettier: true, typescript: true },
       'test.js',
       { filePath: 'index.test.js' },
       1,
     ],
     [
-      { next: true, node: false, prettier: true, typescript: true },
+      { future: true, node: false, prettier: true, typescript: true },
       'combo.ts',
       { filePath: `${process.cwd()}/packages/config-eslint/src/index.ts` },
       1,
