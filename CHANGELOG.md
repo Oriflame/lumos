@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.17 - 2021-09-14
+
+#### 📦 Dependencies
+
+- update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.0 (#773) ([a5cd7de](https://github.com/Oriflame/lumos/commit/a5cd7de32ad202e1129b33ad8de61e066aee0ae7)), closes  _#773_
+
+- update dependency webpack-dev-server to ^4.2.1 (#774) ([a0db2e1](https://github.com/Oriflame/lumos/commit/a0db2e1761322422a3138bf7f724ed5be330a778)), closes  _#774_
+
+- update typescript-eslint monorepo to ^4.31.1 (#772) ([18269c0](https://github.com/Oriflame/lumos/commit/18269c0a0a572c446f5d03af1e1d0f7c7845abd9)), closes  _#772_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.16 - 2021-09-13
 
 #### 📦 Dependencies
