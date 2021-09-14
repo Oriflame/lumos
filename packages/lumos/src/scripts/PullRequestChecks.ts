@@ -9,6 +9,7 @@ const { TRAVIS_PULL_REQUEST, TRAVIS_PULL_REQUEST_SLUG } = process.env;
 
 // Primarily used within CI jobs
 export default class PullRequestChecksScript extends Script {
+  name = '@oriflame/lumos-pull-request-check';
   owner!: string;
 
   repo!: string;
@@ -19,7 +20,7 @@ export default class PullRequestChecksScript extends Script {
     return {};
   }
 
-  bootstrap() {
+  async execute() {
     if (TRAVIS_PULL_REQUEST === 'false') {
       return;
     }
@@ -30,8 +31,8 @@ export default class PullRequestChecksScript extends Script {
     this.repo = repo;
     this.client = createGitHubClient();
 
-    this.task('Checking for invalid lock file changes', this.checkForInvalidLocks);
-    this.task('Checking pull request title', this.checkForConventionalTitle);
+    await this.checkForInvalidLocks();
+    await this.checkForConventionalTitle();
   }
 
   async checkForInvalidLocks() {

@@ -3,11 +3,11 @@
   "name": "lumos-root",
   "version": "0.0.0",
   "scripts": {
-    "prepare": "yarn setup && beemo create-config eslint prettier",
+    "prepare": "beemo create-config eslint",
     "postinstall": "husky install",
     "setup": "tsc --build",
     "clean": "rimraf packages/*/{lib,*.tsbuildinfo,node_modules}",
-    "build": "beemo typescript --build --reference-workspaces",
+    "build": "beemo typescript --build",
     "test": "yarn run build && yarn run lint && yarn run jest && yarn run test:webpack && yarn run test:webpack-entry",
     "pretest:webpack": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack.test.config.js",
     "test:webpack": "cross-env NODE_ENV=production webpack --config ./packages/config-webpack/test/webpack.test.config.js",
@@ -31,46 +31,6 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "beemo": {
-    "module": "@oriflame/lumos",
-    "drivers": [
-      "babel",
-      "eslint",
-      "jest",
-      "prettier",
-      "typescript",
-      "webpack"
-    ],
-    "settings": {
-      "node": true,
-      "testsFolder": "test",
-      "library": true
-    },
-    "eslint": {
-      "env": {
-        "node": true
-      },
-      "extends": [
-        "./packages/config-eslint/lib/presets/SECRET_CONFIG_DO_NOT_USE_THIS"
-      ],
-      "ignore": [
-        "*.config.js",
-        "packages/config-babel/test/fixtures/**/*",
-        "packages/config-eslint/test/**/*",
-        "packages/config-eslint/tools/check-rules/**/*"
-      ]
-    },
-    "prettier": {
-      "ignore": [
-        "*.ejs"
-      ]
-    },
-    "typescript": {
-      "compilerOptions": {
-        "skipLibCheck": true
-      }
-    }
   },
   "workspaces": [
     "./packages/*"

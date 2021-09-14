@@ -8,7 +8,7 @@
     "jsx": "preserve",
     "lib": [
       "dom",
-      "DOM.Iterable",
+      "dom.iterable",
       "esnext"
     ],
     "module": "commonjs",
@@ -23,6 +23,7 @@
     "useDefineForClassFields": false,
     "allowJs": false,
     "skipLibCheck": true,
+    "declarationDir": "./dts",
     "composite": true,
     "declarationMap": true
   }

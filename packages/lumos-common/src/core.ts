@@ -1,4 +1,4 @@
-import Beemo, { BeemoConfig } from '@beemo/core';
+import { BeemoConfig } from '@beemo/core';
 import { PackageStructure } from '@boost/common';
 import execa from 'execa';
 import glob from 'fast-glob';
@@ -79,8 +79,9 @@ let pkgCache: LumosPackage | null = null;
 
 export function getPackage(): LumosPackage {
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `process.beemo` can be undefined
-  const instance = process.beemo?.tool as unknown as Beemo<LumosSettings> | undefined;
+  const instance = process.beemo?.tool;
 
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   if (instance?.package) {
     return instance.package as LumosPackage;
   }
@@ -95,19 +96,13 @@ export function getPackage(): LumosPackage {
   return pkgCache!;
 }
 
-export function getSettings(): LumosSettings {
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `process.beemo` can be undefined
-  const instance = process.beemo?.tool as unknown as Beemo<LumosSettings> | undefined;
-  const settings: Partial<LumosSettings> = {};
-  const pkg = getPackage();
+const { tool } = process.beemo;
 
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `instance.config` can be undefined
-  if (instance?.config?.settings) {
-    Object.assign(settings, instance.config.settings);
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `pkg.lumos` can be undefined
-  } else if (pkg.lumos?.settings) {
-    Object.assign(settings, pkg.lumos.settings);
-  }
+export function getSettings(): LumosSettings {
+  const instance = tool;
+  const settings: Partial<LumosSettings> = {};
+
+  Object.assign(settings, instance.config.settings);
 
   return {
     buildFolder: 'lib',

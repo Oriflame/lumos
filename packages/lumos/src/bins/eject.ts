@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- TODO: better typings*/
 
 import { Path } from '@beemo/core';
+import { PluginEntry } from '@boost/config';
 import { LumosPackage } from '@oriflame/lumos-common';
 import chalk from 'chalk';
 import editJsonFile from 'edit-json-file';
@@ -76,8 +77,8 @@ function migrateDotfiles() {
 function migratePackageScripts(lumos: LumosPackage['lumos']) {
   const pkg = editJsonFile(pkgPath);
   const scripts = pkg.get<LumosPackage['scripts']>('scripts') ?? {};
-  const srcFolder = lumos.settings.srcFolder ?? 'src';
-  const testFolder = lumos.settings.testsFolder ?? 'tests';
+  const srcFolder = lumos.settings?.srcFolder ?? 'src';
+  const testFolder = lumos.settings?.testsFolder ?? 'tests';
 
   if (scripts.prepare.includes('create-config')) {
     delete scripts.prepare;
@@ -210,23 +211,31 @@ export async function eject() {
   migratePackageScripts(lumos);
 
   console.log(`${chalk.cyan('[3/5]')} Migrating drivers`);
+  let drivers: PluginEntry[] = [];
 
-  for (const driver of lumos.drivers) {
+  if (Array.isArray(lumos.drivers)) {
+    drivers = lumos.drivers;
+  } else if (lumos.drivers) {
+    drivers = Object.keys(lumos.drivers);
+  }
+
+  for (const driver of drivers) {
     console.log(`${chalk.gray(`[${driver}]`)} Migrating config`);
+    const currentDriver = Array.isArray(driver) ? driver[0] : driver;
 
-    if (driver === 'eslint') {
+    if (currentDriver === 'eslint') {
       migrateEslint();
-    } else if (driver === 'jest') {
+    } else if (currentDriver === 'jest') {
       migrateJest();
-    } else if (driver === 'webpack') {
+    } else if (currentDriver === 'webpack') {
       migrateWebpack();
     }
 
-    console.log(`${chalk.gray(`[${driver}]`)} Updating dependencies`);
+    console.log(`${chalk.gray(`[${currentDriver}]`)} Updating dependencies`);
 
     // eslint-disable-next-line no-await-in-loop -- we don't mind in this case
     await copyAndInstallDepsFromModule(
-      `@oriflame/config-${driver}`,
+      `@oriflame/config-${currentDriver}`,
       response.yarn,
       response.monorepo,
     );
@@ -237,7 +246,7 @@ export async function eject() {
 
     pkg.set(
       'lumos.drivers',
-      (pkg.get('lumos.drivers') as string[]).filter((d) => d !== driver),
+      (pkg.get('lumos.drivers') as string[]).filter((d) => d !== currentDriver),
     );
     pkg.save();
   }

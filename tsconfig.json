@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.options.json",
   "files": [],
   "references": [
     {
@@ -28,6 +29,5 @@
     {
       "path": "packages/lumos-common"
     }
-  ],
-  "extends": "./tsconfig.options.json"
+  ]
 }

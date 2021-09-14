@@ -35,7 +35,7 @@ export function getCompilerOptions({
     forceConsistentCasingInFileNames: true,
     isolatedModules: !future && !library,
     jsx: 'preserve',
-    lib: ['dom', 'DOM.Iterable', 'esnext'],
+    lib: ['dom', 'dom.iterable', 'esnext'],
     module: node ? 'commonjs' : 'esnext',
     moduleResolution: 'node',
     noEmitOnError: true,
@@ -54,7 +54,6 @@ export function getCompilerOptions({
   };
 
   if (react) {
-    // @ts-expect-error -- not typed
     options.jsx = 'react-jsx';
   }
 

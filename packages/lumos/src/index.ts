@@ -1,11 +1,11 @@
-import Beemo, { DriverContext, Path } from '@beemo/core';
+import { DriverContext, Path, Tool } from '@beemo/core';
 import { getSettings } from '@oriflame/lumos-common';
 import fs from 'fs';
 
-function hasNoPositionalArgs(context: DriverContext, name: string) {
-  const args = context.args._;
+function hasNoParams(context: DriverContext, name: string): boolean {
+  const { params } = context.args;
 
-  return args.length === 0 || (args.length === 1 && args[0] === name);
+  return params.length === 0 || (params.length === 1 && params[0] === name);
 }
 
 function createWorkspacesGlob(workspaces: string[]): string {
@@ -14,13 +14,13 @@ function createWorkspacesGlob(workspaces: string[]): string {
   return paths.length === 1 ? `${paths[0]}/` : `{${paths.join(',')}}/`;
 }
 
-export default function cli(tool: Beemo) {
+export default function cli(tool: Tool) {
   const { buildFolder, docsFolder, srcFolder, testsFolder, typesFolder } = getSettings();
-  const usingBabel = tool.isPluginEnabled('driver', 'babel');
-  const usingPrettier = tool.isPluginEnabled('driver', 'prettier');
-  const usingJest = tool.isPluginEnabled('driver', 'jest');
-  const usingTypescript = tool.isPluginEnabled('driver', 'typescript');
-  const workspaces = tool.getWorkspacePaths({ relative: true });
+  const usingBabel = tool.driverRegistry.isRegistered('babel');
+  const usingPrettier = tool.driverRegistry.isRegistered('prettier');
+  const usingJest = tool.driverRegistry.isRegistered('jest');
+  const usingTypescript = tool.driverRegistry.isRegistered('typescript');
+  const workspaces = tool.project.getWorkspaceGlobs({ relative: true });
   const pathPrefix = workspaces.length > 0 ? createWorkspacesGlob(workspaces) : '';
   const exts = ['.ts', '.tsx', '.js', '.jsx'];
 
@@ -30,13 +30,13 @@ export default function cli(tool: Beemo) {
    * - Add source and output dirs by default.
    */
   tool.onRunDriver.listen((context, _) => {
-    if (!context.args.extensions) {
+    if (!context.getRiskyOption('extensions')) {
       context.addOption('--extensions', exts.join(','));
     }
 
-    if (hasNoPositionalArgs(context, 'babel')) {
-      context.addArg(`./${srcFolder}`);
-      context.addOption('--out-dir', context.args.esm ? './esm' : `./${buildFolder}`);
+    if (hasNoParams(context, 'babel')) {
+      context.addParam(`./${srcFolder}`);
+      context.addOption('--out-dir', context.getRiskyOption('esm') ? './esm' : `./${buildFolder}`);
     }
   }, 'babel');
 
@@ -57,22 +57,23 @@ export default function cli(tool: Beemo) {
    * - Create a `tsconfig.eslint.json` file.
    */
   tool.onRunDriver.listen((context, driver) => {
-    context.addOptions(['--color']);
+    context.addOptions(['--cache', '--color']);
 
-    if (!context.args.ext) {
+    if (usingTypescript && !context.getRiskyOption('ext')) {
       context.addOption('--ext', exts.join(','));
     }
 
-    if (hasNoPositionalArgs(context, 'eslint')) {
+    if (hasNoParams(context, 'eslint')) {
       const args = [`./${pathPrefix}${srcFolder}`];
       if (usingJest) {
         args.push(`./${pathPrefix}${testsFolder}`);
       }
-      context.addArgs(args);
+      context.addParams(args);
     }
 
-    if (usingPrettier) {
-      driver.options.dependencies.push('prettier');
+    // Generate prettier config for the prettier rules
+    if (tool.driverRegistry.isRegistered('prettier')) {
+      context.addDriverDependency(tool.driverRegistry.get('prettier'));
     }
 
     // Create a specialized tsconfig for ESLint
@@ -122,7 +123,7 @@ export default function cli(tool: Beemo) {
   tool.onRunDriver.listen((context, driver) => {
     context.addOptions(['--colors']);
 
-    if (context.args.coverage) {
+    if (context.getRiskyOption('coverage')) {
       context.addOptions(['--logHeapUsage', '--detectOpenHandles']);
     }
 
@@ -142,29 +143,14 @@ export default function cli(tool: Beemo) {
   tool.onRunDriver.listen((context) => {
     context.addOption('--write');
 
-    if (hasNoPositionalArgs(context, 'prettier')) {
-      context.addArgs([
+    if (hasNoParams(context, 'prettier')) {
+      context.addParams([
         `./${pathPrefix}{bin,hooks,scripts,${srcFolder},${testsFolder}}/**/*.{ts,tsx,js,jsx,scss,css,gql,graphql,yml,yaml,md}`,
         `./${docsFolder}/**/*.md`,
         './*.{md,json}',
       ]);
     }
   }, 'prettier');
-
-  /**
-   * TYPESCRIPT
-   * - Pass Lumos settings to the TS driver options.
-   */
-  tool.onRunDriver.listen((_, driver) => {
-    driver.configure({
-      // Don't want to pull in TS types.
-      // @ts-expect-error -- not sure
-      buildFolder,
-      srcFolder,
-      testsFolder,
-      typesFolder,
-    });
-  }, 'typescript');
 
   /**
    * WEBPACK
@@ -190,11 +176,11 @@ export default function cli(tool: Beemo) {
     // we need to set these environment variables for easy access.
     driver.configure({
       env: {
-        SOURCE_MAPS: context.args.sourceMaps ? 'true' : '',
-        WEBPACK_ANALYZE: context.args.analyze ? 'true' : '',
-        WEBPACK_PARALLEL: String(context.args.parallel || ''),
-        LUMOS_BUILD_FOLDER: context.args.buildFolder as string,
-        LUMOS_ENTRY_POINT: context.args.entryPoint as string,
+        SOURCE_MAPS: context.getRiskyOption('sourceMaps') ? 'true' : '',
+        WEBPACK_ANALYZE: context.getRiskyOption('analyze') ? 'true' : '',
+        WEBPACK_PARALLEL: String(context.getRiskyOption('parallel') || ''),
+        LUMOS_BUILD_FOLDER: context.getRiskyOption('buildFolder') as string,
+        LUMOS_ENTRY_POINT: context.getRiskyOption('entryPoint') as string,
       },
     });
   }, 'webpack');

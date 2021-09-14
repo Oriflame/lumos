@@ -5,14 +5,15 @@ import { LERNA_VERSION_ARGS } from '../constants';
 
 // Primarily used within CI jobs
 export default class AutoReleaseScript extends Script {
+  name = '@oriflame/lumos-autorelease-script';
   blueprint() {
     return {};
   }
 
-  bootstrap() {
-    this.task('Setting git environment variables', this.setGitEnvVars);
-    this.task('Bumping package versions', this.versionPackages);
-    this.task('Publishing packages to NPM', this.publishPackages);
+  async execute() {
+    await this.setGitEnvVars();
+    await this.versionPackages();
+    await this.publishPackages();
   }
 
   async setGitEnvVars() {
@@ -85,15 +86,15 @@ export default class AutoReleaseScript extends Script {
         const out = response.stdout.trim();
 
         if (out) {
-          this.tool.log(out);
+          this.tool.msg(out);
         }
 
         return response;
       })
-      .catch((error: unknown) => {
-        this.tool.log.error((error as { stderr: string }).stderr);
+      .catch((error: { stderr: string }) => {
+        this.tool.debug(error.stderr);
 
-        throw error;
+        throw error as unknown;
       });
   }
 }

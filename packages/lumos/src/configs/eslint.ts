@@ -8,8 +8,8 @@ export = {
   extends: getExtendsList({
     future,
     node,
-    prettier: tool.isPluginEnabled('driver', 'prettier'),
-    typescript: tool.isPluginEnabled('driver', 'typescript'),
+    prettier: tool.driverRegistry.isRegistered('prettier'),
+    typescript: tool.driverRegistry.isRegistered('typescript'),
     nextjs,
   }),
   ignore: getIgnoreList(),

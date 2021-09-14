@@ -3,9 +3,10 @@ import { ExecaReturnValue } from 'execa';
 import AutoReleaseScript from './AutoRelease';
 
 export default class PreReleaseScript extends AutoReleaseScript {
-  bootstrap() {
-    this.task('Bumping package versions', this.versionPackages);
-    this.task('Publishing packages to NPM', this.publishPackages);
+  name = '@oriflame/lumos-pre-release';
+  async execute() {
+    await this.versionPackages();
+    await this.publishPackages();
   }
 
   async versionPackages(): Promise<ExecaReturnValue> {

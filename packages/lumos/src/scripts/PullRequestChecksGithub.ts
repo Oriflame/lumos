@@ -17,7 +17,8 @@ const parsePullRequestId = (githubRef: string) => {
 };
 
 // Primarily used within CI jobs
-export default class PullRequestChecksScript extends Script {
+class PullRequestChecksScript extends Script {
+  name = '@oriflame/lumos-pull-request-check-github';
   owner!: string;
 
   repo!: string;
@@ -30,7 +31,7 @@ export default class PullRequestChecksScript extends Script {
     return {};
   }
 
-  bootstrap() {
+  async execute() {
     this.pullRequest = parsePullRequestId(GITHUB_REF as string);
 
     if (this.pullRequest === 'false') {
@@ -44,8 +45,8 @@ export default class PullRequestChecksScript extends Script {
     this.repo = repo;
     this.client = createGitHubClient();
 
-    this.task('Checking for invalid lock file changes', this.checkForInvalidLocks);
-    this.task('Checking pull request title', this.checkForConventionalTitle);
+    await this.checkForInvalidLocks();
+    await this.checkForConventionalTitle();
   }
 
   async checkForInvalidLocks() {
@@ -82,4 +83,8 @@ export default class PullRequestChecksScript extends Script {
       );
     }
   }
+}
+
+export default function checkPullRequest() {
+  return new PullRequestChecksScript();
 }

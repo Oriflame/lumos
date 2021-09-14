@@ -16,13 +16,13 @@ const {
 
 export = getConfig({
   env,
-  esm: !!(context.args.esm || process.env.ESM),
+  esm: !!(context.getRiskyOption('esm') || process.env.ESM),
   graphql,
   library,
   future,
   node,
   react,
-  typescript: tool.isPluginEnabled('driver', 'typescript'),
+  typescript: tool.driverRegistry.isRegistered('typescript'),
   empty,
   srcFolder,
   moduleFederationEnabled: Boolean(moduleFederationConfig),

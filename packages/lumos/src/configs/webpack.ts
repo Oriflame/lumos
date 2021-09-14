@@ -1,5 +1,5 @@
 import { getConfig } from '@oriflame/config-webpack';
-import { getSettings, getPackage } from '@oriflame/lumos-common';
+import { getSettings } from '@oriflame/lumos-common';
 
 const {
   srcFolder,
@@ -15,7 +15,7 @@ const {
   sharedModulesManifestPath,
 } = getSettings();
 
-const pkg = getPackage();
+const { tool } = process.beemo;
 
 export = getConfig({
   analyzeBundle: !!process.env.WEBPACK_ANALYZE,
@@ -23,7 +23,8 @@ export = getConfig({
   port: process.env.PORT,
   react,
   sourceMaps: !!process.env.SOURCE_MAPS,
-  buildFolder: process.env.LUMOS_BUILD_FOLDER || (pkg.lumos.settings.buildFolder && buildFolder),
+  buildFolder:
+    process.env.LUMOS_BUILD_FOLDER || ((tool.config.settings.buildFolder as string) && buildFolder),
   srcFolder,
   entryPoint: process.env.LUMOS_ENTRY_POINT || entryPoint,
   publicPath,

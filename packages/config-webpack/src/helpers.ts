@@ -74,7 +74,6 @@ export function getPlugins({
     );
   }
   if (analyzeBundle) {
-    // @ts-expect-error -- Type errors in bundle analyzer plugin types
     plugins.push(new BundleAnalyzerPlugin());
   }
 

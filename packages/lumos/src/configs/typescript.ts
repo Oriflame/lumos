@@ -1,7 +1,10 @@
 import { getConfig, getConfigWithProjectRefs } from '@oriflame/config-typescript';
 import { getSettings } from '@oriflame/lumos-common';
 
-const { context } = process.beemo;
+const { context, tool } = process.beemo;
+const settings = getSettings();
+const { options } = tool.driverRegistry.get('typescript');
+
 const {
   buildFolder,
   srcFolder,
@@ -13,26 +16,27 @@ const {
   future,
   allowJs,
   skipLibCheck,
-} = getSettings();
+} = { ...settings, ...options };
 
-export = context.args.referenceWorkspaces
+console.log(buildFolder);
+export = context.getRiskyOption('referenceWorkspaces')
   ? getConfigWithProjectRefs({
       node,
       react,
       library,
     })
   : getConfig({
-      buildFolder: (context.args.buildFolder as string) || buildFolder,
-      includeTests: !!context.args.noEmit,
+      buildFolder: (context.getRiskyOption('buildFolder') as string) || buildFolder,
+      includeTests: !!context.getRiskyOption('noEmit'),
       library,
       node,
       react,
       future,
-      srcFolder: (context.args.srcFolder as string) || srcFolder,
-      testsFolder: (context.args.testsFolder as string) || testsFolder,
-      typesFolder: (context.args.typesFolder as string) || typesFolder,
+      srcFolder: (context.getRiskyOption('srcFolder') as string) || srcFolder,
+      testsFolder: (context.getRiskyOption('testsFolder') as string) || testsFolder,
+      typesFolder: (context.getRiskyOption('typesFolder') as string) || typesFolder,
       workspaces: context.workspaces,
-      emitDeclarationOnly: !!context.args.emitDeclarationOnly,
+      emitDeclarationOnly: !!context.getRiskyOption('emitDeclarationOnly'),
       allowJs,
       skipLibCheck,
     });

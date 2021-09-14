@@ -3,6 +3,10 @@ import { getSettings } from '@oriflame/lumos-common';
 
 const { coverage, graphql, react, srcFolder, testsFolder, node } = getSettings();
 
+const { tool } = process.beemo;
+
+const workspacesEnabled = !!tool.package.workspaces;
+
 export = getConfig({
   srcFolder,
   testsFolder,
@@ -10,5 +14,5 @@ export = getConfig({
   react,
   node,
   threshold: coverage,
-  workspaces: process.beemo.tool.getWorkspacePaths({ relative: true }),
+  workspaces: workspacesEnabled ? tool.project.getWorkspaceGlobs({ relative: true }) : undefined,
 });
