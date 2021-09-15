@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.18 - 2021-09-15
+
+#### 🛠 Internals
+
+- update dependency @types/node to ^14.17.16 (#775) ([ded6e54](https://github.com/Oriflame/lumos/commit/ded6e544544b207b1d0956b1b2d0dff8587183b9)), closes  _#775_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.17 - 2021-09-14
 
 #### 📦 Dependencies
