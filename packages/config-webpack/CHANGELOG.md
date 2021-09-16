@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.19 - 2021-09-16
+
+#### 📦 Dependencies
+
+- update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.1 (#777) ([0745c4c](https://github.com/Oriflame/lumos/commit/0745c4ca4e9708a1e1067f85a9a7d5b1c7a19365)), closes  _#777_
+
+- update dependency postcss-normalize to ^10.0.1 (#776) ([ed8271f](https://github.com/Oriflame/lumos/commit/ed8271fd3efedc33a5a04e7be2ff1d119ec0dbe3)), closes  _#776_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 4.0.17 - 2021-09-14
 
 #### 📦 Dependencies

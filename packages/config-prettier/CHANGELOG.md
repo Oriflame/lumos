@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.19 - 2021-09-16
+
+#### 📦 Dependencies
+
+- update dependency prettier to ^2.4.1 (#778) ([3df3367](https://github.com/Oriflame/lumos/commit/3df3367f0423711b613de8feaf35e2a312b72760)), closes  _#778_
+
+**Note:** Version bump only for package @oriflame/config-prettier
+
+
+
+
+
 ### 4.0.15 - 2021-09-13
 
 #### 📦 Dependencies
