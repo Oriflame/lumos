@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.20 - 2021-09-17
+
+#### 🐞 Fixes
+
+- Prettier version. ([867478c](https://github.com/Oriflame/lumos/commit/867478c81f92f130904123cdfecb0c238625b696))
+- Sync version. ([7896e85](https://github.com/Oriflame/lumos/commit/7896e851b39149688f579f786dfbdccb644420f3))
+- Webpack serve. ([8f89fad](https://github.com/Oriflame/lumos/commit/8f89fad66604d9d88e0260feea497bde6e852441))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.19 - 2021-09-16
 
 #### 📦 Dependencies
