@@ -20,6 +20,7 @@ export const LERNA_VERSION_ARGS = [
   '--push',
   // Alter commit message to skip CI
   '--message',
+  '--force-publish',
   'ci: Release [ci skip].',
 ];
 

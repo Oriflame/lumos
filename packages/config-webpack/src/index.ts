@@ -180,7 +180,7 @@ export function getConfig({
       quiet: false,
       port, // This can be a unix socket path so a string is valid
       host,
-      watchOptions: {
+      watch: {
         ignored: /node_modules/,
       },
     },
