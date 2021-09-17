@@ -18,9 +18,9 @@ export const LERNA_VERSION_ARGS = [
   'github',
   // Push changes to git
   '--push',
+  '--force-publish',
   // Alter commit message to skip CI
   '--message',
-  '--force-publish',
   'ci: Release [ci skip].',
 ];
 
