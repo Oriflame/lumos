@@ -180,9 +180,6 @@ export function getConfig({
       quiet: false,
       port, // This can be a unix socket path so a string is valid
       host,
-      watch: {
-        ignored: /node_modules/,
-      },
     },
     optimization: {
       chunkIds: PROD ? undefined : 'named',
