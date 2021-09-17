@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.22 - 2021-09-17
+
+#### 🐞 Fixes
+
+- Webpack dev server. ([da083dc](https://github.com/Oriflame/lumos/commit/da083dcba63efa0a42f729d9be3094a42bed3dbd))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 4.0.21 - 2021-09-17
 
 #### 🐞 Fixes
