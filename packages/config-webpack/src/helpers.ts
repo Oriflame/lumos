@@ -90,7 +90,7 @@ export function getPlugins({
   }
 
   if (react && !PROD) {
-    plugins.push(new webpack.HotModuleReplacementPlugin(), new ReactRefreshWebpackPlugin());
+    plugins.push(new ReactRefreshWebpackPlugin());
   }
 
   return plugins;

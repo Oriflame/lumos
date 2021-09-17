@@ -165,11 +165,14 @@ export function getConfig({
     devtool: PROD ? (sourceMaps ? 'source-map' : false) : 'cheap-module-source-map',
     // @ts-expect-error -- something wrong
     devServer: {
-      compress: true,
-      contentBase,
-      watchContentBase: true,
-      disableHostCheck: true,
-      clientLogLevel: 'none',
+      static: {
+        directory: contentBase,
+        watch: true,
+      },
+      allowedHosts: 'all',
+      client: {
+        logging: 'info',
+      },
       headers: {
         'Service-Worker-Allowed': '/',
       },
@@ -177,7 +180,6 @@ export function getConfig({
         disableDotRule: true,
       },
       hot: true,
-      quiet: false,
       port, // This can be a unix socket path so a string is valid
       host,
     },
