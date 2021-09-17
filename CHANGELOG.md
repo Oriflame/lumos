@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.24 - 2021-09-17
+
+#### 🐞 Fixes
+
+- Webpack dev server. ([052838c](https://github.com/Oriflame/lumos/commit/052838ccfdcf060fd7bbf30c44a477fe804349f5))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.23 - 2021-09-17
 
 #### 📦 Dependencies
