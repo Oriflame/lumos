@@ -49,7 +49,7 @@
     "@oriflame/config-danger": "4.0.18",
     "@oriflame/config-eslint": "4.0.17",
     "@oriflame/config-jest": "4.0.15",
-    "@oriflame/config-prettier": "^.0.19",
+    "@oriflame/config-prettier": "4.0.19",
     "@oriflame/config-typescript": "4.0.12",
     "@oriflame/config-webpack": "4.0.19"
   }
