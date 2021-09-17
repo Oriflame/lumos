@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const execa = require('execa');
-const isDocker = require('is-docker');
 const { PORT } = require('../lib/helpers');
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
@@ -15,10 +14,6 @@ if (Number.isNaN(parseInt(port, 10))) {
   args.push('--port', port);
 }
 
-// Docker requires a special host
-if (isDocker()) {
-  args.push('--host', '0.0.0.0');
-}
 
 // FIXME: https://github.com/webpack/webpack-dev-server/issues/2759
 // execa('webpack-dev-server', args, {
