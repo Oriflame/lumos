@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.25 - 2021-09-19
+
+#### 📦 Dependencies
+
+- update dependency @babel/cli to ^7.15.7 (#782) ([d7b35f6](https://github.com/Oriflame/lumos/commit/d7b35f667359231ca38a1a440d73b09d2b65f9b1)), closes  _#782_
+
+- update dependency css-loader to ^6.3.0 (#783) ([b93cc74](https://github.com/Oriflame/lumos/commit/b93cc743e48dcb456ebc2218c8fca132646658d0)), closes  _#783_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.24 - 2021-09-17
 
 #### 🐞 Fixes
