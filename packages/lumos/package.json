@@ -34,23 +34,26 @@
     "@actions/github": "^5.0.0",
     "@beemo/cli": "^2.0.2",
     "@beemo/core": "^2.1.0",
+    "@beemo/driver-prettier": "^2.0.2",
+    "@beemo/driver-typescript": "^2.0.1",
     "@octokit/rest": "^18.12.0",
+    "@oriflame/config-babel": "4.0.47",
+    "@oriflame/config-eslint": "4.0.47",
+    "@oriflame/config-jest": "4.0.47",
+    "@oriflame/config-webpack": "4.0.47",
     "@oriflame/conventional-changelog": "^1.2.0",
     "@oriflame/lumos-common": "^4.1.15",
     "chalk": "^4.1.2",
     "check-node-version": "^4.1.0",
     "cross-env": "^7.0.3",
+    "prettier": "^2.4.1",
     "edit-json-file": "^1.6.0",
     "enquirer": "^2.3.6",
-    "execa": "^5.0.1"
+    "execa": "^5.0.1",
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
-    "@oriflame/config-babel": "^4.1.15",
-    "@oriflame/config-danger": "^4.1.15",
-    "@oriflame/config-eslint": "^4.1.15",
-    "@oriflame/config-jest": "^4.1.15",
-    "@oriflame/config-prettier": "^4.1.15",
-    "@oriflame/config-typescript": "^4.1.15",
-    "@oriflame/config-webpack": "^4.1.15"
+    "@oriflame/config-danger": "4.0.26",
+    "@types/prettier": "^2.3.2"
   }
 }

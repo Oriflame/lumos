@@ -7,7 +7,7 @@ const { tool } = process.beemo;
 
 const workspacesEnabled = !!tool.package.workspaces;
 
-export = getConfig({
+export default getConfig({
   srcFolder,
   testsFolder,
   graphql,

@@ -1,5 +1,5 @@
 import { DriverContext, Path, Tool } from '@beemo/core';
-import { getSettings } from '@oriflame/lumos-common';
+import { getSettings, DIR_PATTERN_LIST } from '@oriflame/lumos-common';
 import fs from 'fs';
 
 function hasNoParams(context: DriverContext, name: string): boolean {
@@ -15,7 +15,7 @@ function createWorkspacesGlob(workspaces: string[]): string {
 }
 
 export default function cli(tool: Tool) {
-  const { buildFolder, docsFolder, srcFolder, testsFolder, typesFolder } = getSettings();
+  const { buildFolder, srcFolder, testsFolder, typesFolder } = getSettings();
   const usingBabel = tool.driverRegistry.isRegistered('babel');
   const usingPrettier = tool.driverRegistry.isRegistered('prettier');
   const usingJest = tool.driverRegistry.isRegistered('jest');
@@ -142,13 +142,28 @@ export default function cli(tool: Tool) {
    */
   tool.onRunDriver.listen((context) => {
     context.addOption('--write');
+    const customExtensions = '{ts,tsx,js,jsx,scss,css,gql,graphql,yml,yaml}';
+
+
 
     if (hasNoParams(context, 'prettier')) {
-      context.addParams([
-        `./${pathPrefix}{bin,hooks,scripts,${srcFolder},${testsFolder}}/**/*.{ts,tsx,js,jsx,scss,css,gql,graphql,yml,yaml,md}`,
-        `./${docsFolder}/**/*.md`,
-        './*.{md,json}',
-      ]);
+      if (workspaces.length > 0) {
+        workspaces.forEach((wsPrefix) => {
+          context.addParams([
+            new Path(
+              wsPrefix,
+              `{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`,
+              `**/*.${customExtensions}`,
+            ).path(),
+            new Path(wsPrefix, '*.{md,json}').path(),
+          ]);
+        });
+      } else {
+        context.addParams([
+          new Path(`{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`, `**/*.${exts}`).path(),
+          '*.{md,json}',
+        ]);
+      }
     }
   }, 'prettier');
 

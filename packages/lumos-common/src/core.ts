@@ -54,6 +54,7 @@ export interface LumosSettings {
   devServerContentBase?: string;
   moduleFederationConfig?: unknown;
   host?: string;
+  decorators?: false;
   enableSharedModules?: boolean;
   sharedModulesManifestPath?: string;
   enableConsoleMocks?: boolean;
@@ -122,6 +123,7 @@ export function getSettings(): LumosSettings {
     allowJs: false,
     skipLibCheck: false,
     enableConsoleMocks: true,
+    decorators: false,
     ...settings,
   };
 }

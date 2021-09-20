@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "esModuleInterop": true,
+    "experimentalDecorators": false,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": false,
-    "jsx": "preserve",
     "lib": [
-      "dom",
-      "dom.iterable",
       "esnext"
     ],
     "module": "commonjs",
@@ -17,13 +16,12 @@
     "noImplicitReturns": true,
     "pretty": true,
     "strict": true,
-    "target": "es2018",
+    "removeComments": false,
     "resolveJsonModule": true,
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "allowJs": false,
     "skipLibCheck": true,
-    "declarationDir": "./dts",
+    "sourceMap": false,
+    "target": "es2018",
+    "useDefineForClassFields": false,
     "composite": true,
     "declarationMap": true
   }

@@ -4,7 +4,7 @@ import { getSettings } from '@oriflame/lumos-common';
 const { tool } = process.beemo;
 const { future, node, nextjs } = getSettings();
 
-export = {
+export default {
   extends: getExtendsList({
     future,
     node,

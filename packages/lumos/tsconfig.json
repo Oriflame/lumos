@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "declarationDir": "lib",
-    "outDir": "lib",
-    "rootDir": "src"
+    "declarationDir": "dts",
+    "outDir": "dts",
+    "rootDir": "src",
+    "emitDeclarationOnly": true
   },
   "exclude": [
-    "lib",
+    "dts",
     "tests"
   ],
   "extends": "../../tsconfig.options.json",
@@ -29,12 +30,6 @@
     },
     {
       "path": "../config-jest"
-    },
-    {
-      "path": "../config-prettier"
-    },
-    {
-      "path": "../config-typescript"
     },
     {
       "path": "../config-webpack"
