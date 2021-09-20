@@ -1,5 +1,5 @@
 import { getConfig } from '@oriflame/config-webpack';
-import { getSettings } from '@oriflame/lumos-common';
+import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.beemo;
 

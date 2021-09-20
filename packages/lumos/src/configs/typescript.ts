@@ -1,4 +1,4 @@
-import { getSettings } from '@oriflame/lumos-common';
+import { getSettings } from '../helpers/getSettings';
 import { TypeScriptConfig } from '@beemo/driver-typescript';
 
 const { context, tool } = process.beemo;

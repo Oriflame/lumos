@@ -1,6 +1,6 @@
 import { DriverContext, Path, Tool } from '@beemo/core';
-import { getSettings, DIR_PATTERN_LIST } from '@oriflame/lumos-common';
-import fs from 'fs';
+import { DIR_PATTERN_LIST } from '@oriflame/lumos-common';
+import { getSettings }from './helpers/getSettings';
 
 function hasNoParams(context: DriverContext, name: string): boolean {
   const { params } = context.args;
@@ -15,7 +15,7 @@ function createWorkspacesGlob(workspaces: string[]): string {
 }
 
 export default function cli(tool: Tool) {
-  const { buildFolder, srcFolder, testsFolder, typesFolder } = getSettings();
+  const { buildFolder, srcFolder, testsFolder } = getSettings();
   const usingBabel = tool.driverRegistry.isRegistered('babel');
   const usingPrettier = tool.driverRegistry.isRegistered('prettier');
   const usingJest = tool.driverRegistry.isRegistered('jest');
@@ -57,6 +57,7 @@ export default function cli(tool: Tool) {
    * - Create a `tsconfig.eslint.json` file.
    */
   tool.onRunDriver.listen((context, driver) => {
+    console.log('sup mate');
     context.addOptions(['--cache', '--color']);
 
     if (usingTypescript && !context.getRiskyOption('ext')) {

@@ -29,42 +29,6 @@ export interface LumosEnvSetting {
   shippedProposals?: boolean;
 }
 
-export interface LumosSettings {
-  buildFolder: string;
-  coverage: number;
-  docsFolder: string;
-  env: LumosEnvSetting;
-  graphql: boolean;
-  library: boolean;
-  future: boolean;
-  node: boolean;
-  react: boolean;
-  nextjs: boolean;
-  srcFolder: string;
-  testsFolder: string;
-  declarationDir: string;
-  typesFolder: string;
-  entryPoint?: string;
-  publicPath?: string;
-  root?: string;
-  parallel?: boolean | number | string;
-  testResultFileName?: string;
-  emptyBabelConfig: boolean;
-  allowJs: boolean;
-  skipLibCheck: boolean;
-  devServerContentBase?: string;
-  moduleFederationConfig?: unknown;
-  host?: string;
-  decorators?: false;
-  enableSharedModules?: boolean;
-  sharedModulesManifestPath?: string;
-  enableConsoleMocks?: boolean;
-}
-
-export interface LumosPackage extends PackageStructure {
-  lumos: BeemoConfig<Partial<LumosSettings>>;
-}
-
 export { execa, glob };
 
 export function fromRoot(filePath: string, existsCheck = false): string {
@@ -77,15 +41,15 @@ export function fromRoot(filePath: string, existsCheck = false): string {
   return absPath;
 }
 
-let pkgCache: LumosPackage | null = null;
+let pkgCache: PackageStructure | null = null;
 
-export function getPackage(): LumosPackage {
+export function getPackage(): PackageStructure {
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- typings are wrong, `process.beemo` can be undefined
   const instance = process.beemo?.tool;
 
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   if (instance?.package) {
-    return instance.package as LumosPackage;
+    return instance.package as PackageStructure;
   }
 
   if (pkgCache) {
@@ -98,34 +62,3 @@ export function getPackage(): LumosPackage {
   return pkgCache!;
 }
 
-const { tool } = process.beemo;
-
-export function getSettings(): LumosSettings {
-  const instance = tool;
-  const settings: Partial<LumosSettings> = {};
-
-  Object.assign(settings, instance.config.settings);
-
-  return {
-    buildFolder: 'lib',
-    coverage: 75,
-    docsFolder: 'docs',
-    env: {},
-    graphql: false,
-    library: false,
-    future: false,
-    node: false,
-    react: false,
-    nextjs: false,
-    srcFolder: 'src',
-    testsFolder: 'tests',
-    typesFolder: 'types',
-    emptyBabelConfig: false,
-    allowJs: false,
-    skipLibCheck: false,
-    enableConsoleMocks: true,
-    decorators: false,
-    declarationDir: 'dts',
-    ...settings,
-  };
-}

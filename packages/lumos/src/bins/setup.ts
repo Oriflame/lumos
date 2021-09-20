@@ -1,5 +1,5 @@
-import { Path } from '@beemo/core';
-import { LumosPackage, SCAFFOLD_DEPS } from '@oriflame/lumos-common';
+import { PackageStructure, Path } from '@beemo/core';
+import { SCAFFOLD_DEPS } from '@oriflame/lumos-common';
 import chalk from 'chalk';
 import editJsonFile from 'edit-json-file';
 import { prompt } from 'enquirer';
@@ -23,8 +23,7 @@ const pkgPath = Path.resolve('package.json').path();
 
 function addLumosToPackage(response: SetupPrompt) {
   const pkg = editJsonFile(pkgPath);
-  const lumos: Partial<LumosPackage['lumos']> = {
-    drivers: response.drivers,
+  const lumos: any = {
     settings: {},
   };
 
@@ -62,7 +61,7 @@ function addScriptsToPackage(response: SetupPrompt) {
   const client = yarn ? 'yarn' : 'npm';
   const monorepo = type === 'monolib';
 
-  const scripts = pkg.get<LumosPackage['scripts']>('scripts') ?? {};
+  const scripts = pkg.get<PackageStructure['scripts']>('scripts') ?? {};
 
   scripts.prepare = 'lumos create-config --silent';
 

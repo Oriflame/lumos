@@ -1,7 +1,6 @@
 import { PrettierConfig } from '@beemo/driver-prettier';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
-console.log('i am here');
 
 const ignore: PrettierConfig['ignore'] = [
   ...IGNORE_PATHS,

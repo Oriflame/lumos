@@ -1,6 +1,7 @@
 import fs from 'fs';
 import { getExtendsList, getIgnoreList } from '@oriflame/config-eslint';
-import { getSettings } from '@oriflame/lumos-common';
+import { getSettings } from '../helpers/getSettings';
+
 import { Path } from '@beemo/core';
 
 const { tool } = process.beemo;
@@ -40,7 +41,6 @@ if (workspacesEnabled) {
 } else {
   project = Path.resolve('tsconfig.json');
 }
-
 export default {
   extends: getExtendsList({
     future,
