@@ -1,8 +1,45 @@
+import fs from 'fs';
 import { getExtendsList, getIgnoreList } from '@oriflame/config-eslint';
 import { getSettings } from '@oriflame/lumos-common';
+import { Path } from '@beemo/core';
 
 const { tool } = process.beemo;
-const { future, node, nextjs } = getSettings();
+
+const settings = getSettings();
+const { options } = tool.driverRegistry.get('eslint');
+
+const { future, node, nextjs, srcFolder, testsFolder, typesFolder } = { ...settings, ...options };
+
+const workspacesEnabled = !!tool.package.workspaces;
+
+let project: Path;
+
+// Lint crashes with an OOM error when using project references,
+// so just use a single file that globs everything.
+if (workspacesEnabled) {
+  project = Path.resolve('tsconfig.eslint.json');
+
+  const include: Path[] = [];
+
+  tool.project.getWorkspaceGlobs({ relative: true }).forEach((wsPath) => {
+    include.push(
+      new Path(wsPath, `${srcFolder}/**/*`),
+      new Path(wsPath, `${testsFolder}/**/*`),
+      new Path(wsPath, `${typesFolder}/types/**/*`),
+    );
+  });
+
+  fs.writeFileSync(
+    project.path(),
+    JSON.stringify({
+      extends: './tsconfig.options.json',
+      include: include.map((i) => i.path()),
+    }),
+    'utf8',
+  );
+} else {
+  project = Path.resolve('tsconfig.json');
+}
 
 export default {
   extends: getExtendsList({

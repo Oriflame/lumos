@@ -1,6 +1,11 @@
 import { getConfig } from '@oriflame/config-webpack';
 import { getSettings } from '@oriflame/lumos-common';
 
+const { tool } = process.beemo;
+
+const settings = getSettings();
+const { options } = tool.driverRegistry.get('babel');
+
 const {
   srcFolder,
   react,
@@ -13,9 +18,7 @@ const {
   host,
   enableSharedModules,
   sharedModulesManifestPath,
-} = getSettings();
-
-const { tool } = process.beemo;
+} = { ...settings, ...options };
 
 export = getConfig({
   analyzeBundle: !!process.env.WEBPACK_ANALYZE,

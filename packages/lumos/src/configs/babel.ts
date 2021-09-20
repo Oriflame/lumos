@@ -2,6 +2,10 @@ import { getConfig } from '@oriflame/config-babel';
 import { getSettings } from '@oriflame/lumos-common';
 
 const { context, tool } = process.beemo;
+
+const settings = getSettings();
+const { options } = tool.driverRegistry.get('babel');
+
 const {
   graphql,
   library,
@@ -12,7 +16,7 @@ const {
   emptyBabelConfig: empty,
   srcFolder,
   moduleFederationConfig,
-} = getSettings();
+} = { ...settings, ...options };
 
 export default getConfig({
   env,

@@ -17,6 +17,7 @@ const {
   future,
   allowJs,
   skipLibCheck,
+  declarationDir,
 } = { ...settings, ...options };
 
 
@@ -33,6 +34,7 @@ const compilerOptions: TypeScriptConfig['compilerOptions'] = {
   moduleResolution: 'node',
   noEmitOnError: true,
   noImplicitReturns: true,
+  declarationDir,
   pretty: true,
   strict: true,
   removeComments: false,

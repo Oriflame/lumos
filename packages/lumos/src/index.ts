@@ -64,55 +64,12 @@ export default function cli(tool: Tool) {
     }
 
     if (hasNoParams(context, 'eslint')) {
-      const args = [`./${pathPrefix}${srcFolder}`];
-      if (usingJest) {
-        args.push(`./${pathPrefix}${testsFolder}`);
-      }
-      context.addParams(args);
+      workspaces.forEach((wsPrefix) => {
+        context.addParam(new Path(wsPrefix, `{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`).path());
+      });
+    } else {
+      context.addParams([srcFolder, testsFolder]);
     }
-
-    // Generate prettier config for the prettier rules
-    if (tool.driverRegistry.isRegistered('prettier')) {
-      context.addDriverDependency(tool.driverRegistry.get('prettier'));
-    }
-
-    // Create a specialized tsconfig for ESLint
-    driver.onCreateConfigFile.listen((createContext) => {
-      const configPath = createContext.cwd.append('tsconfig.eslint.json');
-      const include = [`${typesFolder}/**/*`]; // Always allow global types
-      let extendsFrom = './tsconfig.json';
-
-      if (workspaces.length === 0) {
-        include.push(`${srcFolder}/**/*`, `${testsFolder}/**/*`);
-      } else {
-        extendsFrom = './tsconfig.options.json';
-
-        workspaces.forEach((ws) => {
-          const wsPath = new Path(ws);
-
-          include.push(
-            wsPath.append(`${srcFolder}/**/*`).path(),
-            wsPath.append(`${testsFolder}/**/*`).path(),
-            wsPath.append(`${typesFolder}/**/*`).path(),
-          );
-        });
-      }
-
-      fs.writeFileSync(
-        configPath.path(),
-        JSON.stringify(
-          {
-            extends: extendsFrom,
-            include,
-          },
-          null,
-          2,
-        ),
-        'utf8',
-      );
-
-      createContext.addConfigPath('eslint', configPath);
-    });
   }, 'eslint');
 
   /**

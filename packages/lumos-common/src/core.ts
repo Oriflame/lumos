@@ -42,6 +42,7 @@ export interface LumosSettings {
   nextjs: boolean;
   srcFolder: string;
   testsFolder: string;
+  declarationDir: string;
   typesFolder: string;
   entryPoint?: string;
   publicPath?: string;
@@ -124,6 +125,7 @@ export function getSettings(): LumosSettings {
     skipLibCheck: false,
     enableConsoleMocks: true,
     decorators: false,
+    declarationDir: 'dts',
     ...settings,
   };
 }

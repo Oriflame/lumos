@@ -7,7 +7,7 @@
     "config",
     "eslint"
   ],
-  "main": "src/index.ts",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git"
