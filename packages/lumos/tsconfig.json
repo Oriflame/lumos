@@ -17,13 +17,7 @@
   ],
   "references": [
     {
-      "path": "../lumos-common"
-    },
-    {
       "path": "../config-babel"
-    },
-    {
-      "path": "../config-danger"
     },
     {
       "path": "../config-eslint"
@@ -33,6 +27,12 @@
     },
     {
       "path": "../config-webpack"
+    },
+    {
+      "path": "../lumos-common"
+    },
+    {
+      "path": "../config-danger"
     }
   ]
 }
