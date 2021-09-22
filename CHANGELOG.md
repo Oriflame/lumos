@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.28 - 2021-09-22
+
+#### 📦 Dependencies
+
+- update dependency jest to ^27.2.1 (#786) ([5bacaa5](https://github.com/Oriflame/lumos/commit/5bacaa5b7bca0ee3b1c6cd504d08e6ac4492b04a)), closes  _#786_
+
+- update dependency postcss to ^8.3.7 (#794) ([97957dd](https://github.com/Oriflame/lumos/commit/97957dd6a7fa20b450055b174e34fe98d620e09f)), closes  _#794_
+
+- update dependency style-loader to ^3.3.0 (#791) ([eeab9ad](https://github.com/Oriflame/lumos/commit/eeab9ad447c345b9560b9e9234d6c5690494d1b5)), closes  _#791_
+
+
+#### 🛠 Internals
+
+- update dependency @types/node to ^14.17.18 (#792) ([2d9254e](https://github.com/Oriflame/lumos/commit/2d9254e77ca9d53411195321410ad260236df282)), closes  _#792_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.27 - 2021-09-22
 
 #### 📦 Dependencies
