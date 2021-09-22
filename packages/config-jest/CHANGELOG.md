@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.27 - 2021-09-22
+
+#### 📦 Dependencies
+
+- update dependency @types/jest to ^27.0.2 (#789) ([f5cad42](https://github.com/Oriflame/lumos/commit/f5cad42eceb83611b2b18de92d2748885a487882)), closes  _#789_
+
+- update dependency graphql to ^15.6.0 (#788) ([9e08e85](https://github.com/Oriflame/lumos/commit/9e08e858c6aae99105342e79f89002063507a97c)), closes  _#788_
+
+- update dependency jest-junit to ^12.3.0 (#793) ([158afac](https://github.com/Oriflame/lumos/commit/158afac534c076622b8752fa4f08d5efaf58ad47)), closes  _#793_
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 4.0.26 - 2021-09-20
 
 **Note:** Version bump only for package @oriflame/config-jest

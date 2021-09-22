@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.27 - 2021-09-22
+
+#### 📦 Dependencies
+
+- update dependency @types/jest to ^27.0.2 (#789) ([f5cad42](https://github.com/Oriflame/lumos/commit/f5cad42eceb83611b2b18de92d2748885a487882)), closes  _#789_
+
+- update dependency eslint-plugin-react to ^7.26.0 (#784) ([df829f7](https://github.com/Oriflame/lumos/commit/df829f7013408e2f76b3ca0919d9bd0e1a98e6f4)), closes  _#784_
+
+- update dependency graphql to ^15.6.0 (#788) ([9e08e85](https://github.com/Oriflame/lumos/commit/9e08e858c6aae99105342e79f89002063507a97c)), closes  _#788_
+
+- update dependency jest-junit to ^12.3.0 (#793) ([158afac](https://github.com/Oriflame/lumos/commit/158afac534c076622b8752fa4f08d5efaf58ad47)), closes  _#793_
+
+- update typescript-eslint monorepo to ^4.31.2 (#787) ([d5d4924](https://github.com/Oriflame/lumos/commit/d5d4924df3761de5480e08cfad746c0353da3c94)), closes  _#787_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.26 - 2021-09-20
 
 #### 📦 Dependencies

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.27 - 2021-09-22
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-react to ^7.26.0 (#784) ([df829f7](https://github.com/Oriflame/lumos/commit/df829f7013408e2f76b3ca0919d9bd0e1a98e6f4)), closes  _#784_
+
+- update typescript-eslint monorepo to ^4.31.2 (#787) ([d5d4924](https://github.com/Oriflame/lumos/commit/d5d4924df3761de5480e08cfad746c0353da3c94)), closes  _#787_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.0.26 - 2021-09-20
 
 #### 📦 Dependencies
