@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.29 - 2021-09-24
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-testing-library to ^4.12.4 (#795) ([3629541](https://github.com/Oriflame/lumos/commit/36295417a3856cedbe3963d201a0b70715d7d543)), closes  _#795_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.28 - 2021-09-22
 
 #### 📦 Dependencies
