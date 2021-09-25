@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.31 - 2021-09-25
+
+#### 📦 Dependencies
+
+- update dependency postcss to ^8.3.8 (#797) ([b8e0e34](https://github.com/Oriflame/lumos/commit/b8e0e344fc9753c60bc056bac932a4ace3894583)), closes  _#797_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.30 - 2021-09-25
 
 #### 🛠 Internals
