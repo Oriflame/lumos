@@ -19,7 +19,7 @@ Primarily used in union with the [Lumos](https://www.npmjs.com/package/@oriflame
 
 **Create file in configs folder:**
 
-`configs/typescript.js`
+`config/typescript.js`
 
 ```js
 modules.exports = {

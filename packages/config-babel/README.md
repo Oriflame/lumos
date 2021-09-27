@@ -22,7 +22,7 @@ union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 `configs/babel.js`
 
 ```js
-modules.exports = {
+module.exports = {
   plugins: ['styled-components'],
 };
 ```
