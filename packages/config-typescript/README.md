@@ -19,10 +19,10 @@ Primarily used in union with the [Lumos](https://www.npmjs.com/package/@oriflame
 
 **Create file in configs folder:**
 
-`config/typescript.js`
+`configs/typescript.js`
 
 ```js
-modules.exports = {
+module.exports = {
   allowSyntheticDefaultImports: true,
 };
 ```
