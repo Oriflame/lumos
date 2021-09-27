@@ -24,7 +24,7 @@ union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 `configs/eslint.js`
 
 ```js
-modules.exports = {
+module.exports = {
   rules: {
     'react-hooks/exhaustive-deps': 'off',
   },

@@ -22,7 +22,7 @@ union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CLI.
 `configs/eslint.js`
 
 ```js
-modules.exports = {
+module.exports = {
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
 };
 ```

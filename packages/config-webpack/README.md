@@ -11,7 +11,7 @@ Provides Webpack dependencies and configuration. Primarily used in union with th
 `configs/webpack.js`
 
 ```js
-modules.exports = {
+module.exports = {
   plugins: [new webpack.NamedChunksPlugin()],
 };
 ```

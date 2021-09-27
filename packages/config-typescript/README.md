@@ -22,7 +22,7 @@ Primarily used in union with the [Lumos](https://www.npmjs.com/package/@oriflame
 `configs/typescript.js`
 
 ```js
-modules.exports = {
+module.exports = {
   allowSyntheticDefaultImports: true,
 };
 ```

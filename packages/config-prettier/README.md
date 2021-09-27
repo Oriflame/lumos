@@ -22,7 +22,7 @@ used in union with the [Lumos](https://www.npmjs.com/package/@oriflame/lumos) CL
 `configs/prettier.js`
 
 ```js
-modules.exports = {
+module.exports = {
   arrowParens: 'avoid',
 };
 ```
