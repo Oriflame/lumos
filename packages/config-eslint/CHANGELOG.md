@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.34 - 2021-09-27
+
+#### 📘 Docs
+
+- Fixed typos in Readme files. (#802) ([092cd6a](https://github.com/Oriflame/lumos/commit/092cd6a35b7a946e11ec915970cb74c7fb3b1047)), closes  _#802_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.0.33 - 2021-09-27
 
 **Note:** Version bump only for package @oriflame/config-eslint
