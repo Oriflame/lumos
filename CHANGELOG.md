@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.35 - 2021-09-28
+
+#### 📦 Dependencies
+
+- update dependency jest to ^27.2.3 (#806) ([c16fc33](https://github.com/Oriflame/lumos/commit/c16fc33d1ba1491102abc6ccb5ec4d106d1626ef)), closes  _#806_
+
+- update typescript-eslint monorepo to ^4.32.0 (#803) ([c5b607a](https://github.com/Oriflame/lumos/commit/c5b607a39983fa064373aa4c250d028f090caf6c)), closes  _#803_
+
+
+#### 🛠 Internals
+
+- update commitlint monorepo to ^13.2.0 (#805) ([313d74b](https://github.com/Oriflame/lumos/commit/313d74b4136ba12b5a4392c240c279625f8f1a60)), closes  _#805_
+
+- update dependency @types/prettier to ^2.4.1 (#804) ([21b459e](https://github.com/Oriflame/lumos/commit/21b459e8fdce58acdd085466b9efa7885876558c)), closes  _#804_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.34 - 2021-09-27
 
 #### 📘 Docs
