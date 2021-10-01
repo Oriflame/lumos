@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.37 - 2021-10-01
+
+#### 📦 Dependencies
+
+- update dependency @actions/core to ^1.6.0 (#807) ([0986fef](https://github.com/Oriflame/lumos/commit/0986fef144a58f208c415fa2be12c76898da85d5)), closes  _#807_
+
+- update dependency eslint-plugin-jest to ^24.5.0 (#808) ([0ab718b](https://github.com/Oriflame/lumos/commit/0ab718b5574ce147d25d328448cbe02f45e11b16)), closes  _#808_
+
+
+#### 🛠 Internals
+
+- update dependency @types/node to ^14.17.20 (#809) ([35636f8](https://github.com/Oriflame/lumos/commit/35636f8c5fcae0c90b4c6984ebf04cf051e233dc)), closes  _#809_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.36 - 2021-10-01
 
 #### 📦 Dependencies
