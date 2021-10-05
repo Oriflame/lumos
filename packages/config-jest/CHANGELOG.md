@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.39 - 2021-10-05
+
+#### 📦 Dependencies
+
+- update dependency jest-junit to v13 (#816) ([5de3d69](https://github.com/Oriflame/lumos/commit/5de3d699d4932bdc4654f9ec3c43dc5ac78fd6d6)), closes  _#816_
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 4.0.38 - 2021-10-04
 
 **Note:** Version bump only for package @oriflame/config-jest

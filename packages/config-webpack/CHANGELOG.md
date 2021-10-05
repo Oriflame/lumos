@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.39 - 2021-10-05
+
+#### 📦 Dependencies
+
+- update dependency css-minimizer-webpack-plugin to ^3.1.0 (#814) ([571ea63](https://github.com/Oriflame/lumos/commit/571ea6369a8a677e30c4702db3742aea6c2d8e5d)), closes  _#814_
+
+- update dependency postcss to ^8.3.9 (#817) ([eb31b39](https://github.com/Oriflame/lumos/commit/eb31b39def660cb57b99497f3001dd8a119d7c3a)), closes  _#817_
+
+- update dependency webpack-dev-server to ^4.3.1 (#813) ([686f1c2](https://github.com/Oriflame/lumos/commit/686f1c2a99509c55852ff3afd2baf44028d58783)), closes  _#813_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 4.0.38 - 2021-10-04
 
 **Note:** Version bump only for package @oriflame/config-webpack

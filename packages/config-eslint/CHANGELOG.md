@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.39 - 2021-10-05
+
+#### 📦 Dependencies
+
+- update typescript-eslint monorepo to ^4.33.0 (#815) ([05128cc](https://github.com/Oriflame/lumos/commit/05128ccd398f396f1e1e508679858d8cda817d13)), closes  _#815_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.0.38 - 2021-10-04
 
 #### 📦 Dependencies
