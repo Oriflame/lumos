@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.42 - 2021-10-08
+
+#### 📦 Dependencies
+
+- update dependency jest to ^27.2.5 (#823) ([61b08e4](https://github.com/Oriflame/lumos/commit/61b08e44b2c5bd9aac6ea74d36e86b35b4f49bdd)), closes  _#823_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.41 - 2021-10-08
 
 #### 📦 Dependencies
