@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.41 - 2021-10-08
+
+#### 📦 Dependencies
+
+- update dependency css-minimizer-webpack-plugin to ^3.1.1 (#819) ([66f389f](https://github.com/Oriflame/lumos/commit/66f389fbf3077f353b3d0be83cadb3075a65469f)), closes  _#819_
+
+- update dependency graphql to ^15.6.1 (#818) ([9e49b1f](https://github.com/Oriflame/lumos/commit/9e49b1fd0bffafb89c6f60031607e047b77eb927)), closes  _#818_
+
+
+#### 🛠 Internals
+
+- update dependency @types/node to ^14.17.21 (#820) ([c2c17f3](https://github.com/Oriflame/lumos/commit/c2c17f3db058cc79c51ab315e784d4a01c53a713)), closes  _#820_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.40 - 2021-10-07
 
 #### 📦 Dependencies
