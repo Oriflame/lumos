@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.46 - 2021-10-14
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.0.45 - 2021-10-12
 
 #### 📦 Dependencies

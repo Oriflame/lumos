@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.46 - 2021-10-14
+
+#### 📦 Dependencies
+
+- update dependency danger to ^10.7.0 (#835) ([6d51a5d](https://github.com/Oriflame/lumos/commit/6d51a5d920265b64de0e4d6762a7b791acaa61f9)), closes  _#835_
+
+- update dependency webpack-bundle-analyzer to ^4.5.0 (#834) ([f15d89b](https://github.com/Oriflame/lumos/commit/f15d89bf1fc4281b0373850552b0afb76882ec08)), closes  _#834_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.45 - 2021-10-12
 
 #### 📦 Dependencies
