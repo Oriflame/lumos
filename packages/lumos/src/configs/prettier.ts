@@ -25,7 +25,6 @@ const config: PrettierConfig = {
   jsxSingleQuote: false,
   trailingComma: 'all',
   bracketSpacing: true,
-  // @ts-expect-error -- [@rajzik] fix once types 2.4.0 lands
   bracketSameLine: false,
   arrowParens: 'always',
   requirePragma: false,

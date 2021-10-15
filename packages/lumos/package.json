@@ -32,9 +32,9 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
-    "@beemo/cli": "^2.0.2",
-    "@beemo/core": "^2.1.0",
-    "@beemo/driver-prettier": "^2.0.2",
+    "@beemo/cli": "^2.0.3",
+    "@beemo/core": "^2.1.1",
+    "@beemo/driver-prettier": "^2.0.3",
     "@beemo/driver-typescript": "^2.0.1",
     "@octokit/rest": "^18.12.0",
     "@oriflame/config-babel": "4.1.15",
@@ -46,14 +46,14 @@
     "chalk": "^4.1.2",
     "check-node-version": "^4.1.0",
     "cross-env": "^7.0.3",
-    "prettier": "^2.4.1",
     "edit-json-file": "^1.6.0",
     "enquirer": "^2.3.6",
     "execa": "^5.0.1",
-    "typescript": "^4.4.3"
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
   },
   "devDependencies": {
-    "@oriflame/config-danger": "4.0.26",
-    "@types/prettier": "^2.3.2"
+    "@oriflame/config-danger": "4.0.47",
+    "@types/prettier": "^2.4.1"
   }
 }

@@ -25,10 +25,10 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.15.8",
-    "@beemo/core": "^2.1.0",
-    "@beemo/driver-eslint": "^2.0.1",
+    "@beemo/core": "^2.1.1",
+    "@beemo/driver-eslint": "^2.0.2",
     "@next/eslint-plugin-next": "^12.0.2",
-    "@oriflame/lumos-common": "^4.1.15",
+    "@oriflame/lumos-common": "^4.0.47",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "confusing-browser-globals": "^1.0.10",

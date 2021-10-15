@@ -22,10 +22,10 @@
   },
   "dependencies": {
     "@babel/core": "^7.15.8",
-    "@beemo/core": "^2.1.0",
-    "@beemo/driver-babel": "^2.0.2",
-    "@beemo/driver-jest": "^2.0.1",
-    "@oriflame/lumos-common": "^4.1.15",
+    "@beemo/core": "^2.1.1",
+    "@beemo/driver-babel": "^2.0.3",
+    "@beemo/driver-jest": "^2.0.2",
+    "@oriflame/lumos-common": "^4.0.47",
     "@testing-library/jest-dom": "^5.14.1",
     "@types/jest": "^27.0.2",
     "airbnb-js-shims": "^2.2.1",
@@ -37,6 +37,6 @@
     "jest-junit": "^13.0.0"
   },
   "optionalDependencies": {
-    "@testing-library/react": ">=11"
+    "@testing-library/react": ">=12"
   }
 }
