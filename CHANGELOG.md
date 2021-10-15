@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.47 - 2021-10-15
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-import to ^2.25.2 (#833) ([f2315d2](https://github.com/Oriflame/lumos/commit/f2315d271a3a64a3cba0129f4add166270436d16)), closes  _#833_
+
+- update dependency eslint-plugin-unicorn to v37 (#830) ([42ded8a](https://github.com/Oriflame/lumos/commit/42ded8ac2b9729e315ae97083484dcd90c8d9cff)), closes  _#830_
+
+- update dependency postcss-loader to ^6.2.0 (#839) ([359f27d](https://github.com/Oriflame/lumos/commit/359f27da849a6d70000cd53483b035c68264afad)), closes  _#839_
+
+- update dependency postcss-reporter to ^7.0.4 (#838) ([c322acf](https://github.com/Oriflame/lumos/commit/c322acf5046c2a44e1fdb1d7a1b0ab59d7adc0b5)), closes  _#838_
+
+
+#### 🛠 Internals
+
+- update dependency @types/node to ^14.17.27 (#836) ([dfc2136](https://github.com/Oriflame/lumos/commit/dfc21365eebdca4a8b67c1d48d6a678d18743c2a)), closes  _#836_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.46 - 2021-10-14
 
 #### 📦 Dependencies
