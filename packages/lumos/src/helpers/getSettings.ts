@@ -24,6 +24,7 @@ export interface LumosEnvSetting {
 
 export interface LumosSettings {
   buildFolder: string;
+  esmBuildFolder: string;
   coverage: number;
   docsFolder: string;
   env: LumosEnvSetting;
@@ -64,6 +65,7 @@ export function getSettings(): LumosSettings {
 
   return {
     buildFolder: 'lib',
+    esmBuildFolder: 'esm',
     coverage: 75,
     docsFolder: 'docs',
     env: {},
