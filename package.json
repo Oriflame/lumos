@@ -3,7 +3,7 @@
   "name": "lumos-root",
   "version": "0.0.0",
   "scripts": {
-    "prepare": "yarn setup && beemo create-config",
+    "prepare": "yarn build && beemo create-config",
     "postinstall": "husky install",
     "setup": "tsc --build",
     "clean": "rimraf packages/*/{lib,dts,*.tsbuildinfo,node_modules}",
