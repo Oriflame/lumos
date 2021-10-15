@@ -1321,13 +1321,6 @@
   resolved "https://registry.yarnpkg.com/@beemo/dependency-graph/-/dependency-graph-1.1.1.tgz#66de1321e16723744d25976c00c9c488796307e2"
   integrity sha512-fGPazlIZmBfqC/ayoPm2jahdurssiYZV9HXb/MOYXmF6WdP6MIMALx6k18kjAxJflv5FcmvS6ESKU+eBrrh0ug==
 
-"@beemo/driver-babel@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@beemo/driver-babel/-/driver-babel-1.2.6.tgz#cb54462aac5444188ba19b5452cafca4a8b9d7f9"
-  integrity sha512-ZQTi87HDBkJwsmtBsL2RYKJ7LH3z/tcxTtkrEBGPCeElBUdQ9Drr1adqQP1AWim9/vq6U/PmiLHl7a+nIBV8Sg==
-  dependencies:
-    rimraf "^3.0.2"
-
 "@beemo/driver-babel@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@beemo/driver-babel/-/driver-babel-2.0.2.tgz#7769ef642d0f5eef4c99b4fcb215bbf1b6c3652c"
@@ -1517,11 +1510,6 @@
     execa "^5.1.1"
     fast-glob "^3.2.7"
 
-"@boost/decorators@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@boost/decorators/-/decorators-2.1.4.tgz#d7197ab817a8792b1ffe365503d46e51ae1befaa"
-  integrity sha512-ZDsh8NwT3cVeOpf6BxjliLC8YEIooskH3xvyNZkNzlbWpBgLmUAsvWiIh+B91lls+RiO+1vZrgX9/nZj8UvaaQ==
-
 "@boost/decorators@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@boost/decorators/-/decorators-3.0.0.tgz#d7d5b09c5eac4551333db1c525517c93d58b521c"
@@ -1548,13 +1536,6 @@
   dependencies:
     chalk "^3.0.0"
     debug "^4.1.1"
-
-"@boost/internal@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@boost/internal/-/internal-2.2.3.tgz#140eab861b04d8740cc01593dbd444eaaf360a5c"
-  integrity sha512-Iws7tmXN/ta9bzcWTKCxFRaeCxtpjRgN0ABhWEoJnXgQjHhjs1PjmbkPK4PfKbQQW/RhbLMgKLz0jLdtwbK0oA==
-  dependencies:
-    debug "^4.3.2"
 
 "@boost/internal@^3.0.0":
   version "3.0.0"
@@ -3166,29 +3147,48 @@
     "@oriflame/conventional-changelog" "^1.1.5"
     danger "^10.6.6"
 
+<<<<<<< HEAD
 "@oriflame/config-eslint@4.0.47":
   version "4.0.47"
   resolved "https://registry.yarnpkg.com/@oriflame/config-eslint/-/config-eslint-4.0.47.tgz#e7455110b479e25f8f02ba513f0491d7339ccba6"
   integrity sha512-RBaN4y2KcPdUjrIVH0HcWXrRbvxLtk//KmxwrOlTSiWNrEJqZ9VnvJU12FizURdv5QbnjOYzwUHDXOl3636tCw==
+=======
+"@oriflame/config-eslint@4.0.26":
+  version "4.0.26"
+  resolved "https://registry.yarnpkg.com/@oriflame/config-eslint/-/config-eslint-4.0.26.tgz#790ac35cd77f89044f9a0b932d228c3415040ff1"
+  integrity sha512-LNKAFA7x/WfzKiZrauAwJgZcHR4j2s0/RbmUo0vi143A0xVpaEYpQoiVkNinxMVEkS8H3oK7W01IsIOKjVqcPg==
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
   dependencies:
     "@beemo/core" "^1.1.8"
     "@beemo/driver-eslint" "^1.2.3"
     "@next/eslint-plugin-next" "^11.1.2"
+<<<<<<< HEAD
     "@oriflame/lumos-common" "^4.0.47"
     "@typescript-eslint/eslint-plugin" "^5.0.0"
     "@typescript-eslint/parser" "^5.0.0"
+=======
+    "@oriflame/lumos-common" "^4.0.26"
+    "@typescript-eslint/eslint-plugin" "^4.31.1"
+    "@typescript-eslint/parser" "^4.31.1"
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
     babel-eslint "^10.1.0"
     confusing-browser-globals "^1.0.10"
     eslint "^7.32.0"
     eslint-config-prettier "^8.3.0"
     eslint-import-resolver-typescript "^2.5.0"
     eslint-plugin-eslint-comments "^3.2.0"
+<<<<<<< HEAD
     eslint-plugin-import "^2.25.2"
     eslint-plugin-jest "^24.7.0"
+=======
+    eslint-plugin-import "^2.24.2"
+    eslint-plugin-jest "^24.4.2"
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
     eslint-plugin-jsx-a11y "^6.4.1"
     eslint-plugin-node "^11.1.0"
     eslint-plugin-prettier "^4.0.0"
     eslint-plugin-promise "^5.1.0"
+<<<<<<< HEAD
     eslint-plugin-react "^7.26.1"
     eslint-plugin-react-hooks "^4.2.0"
     eslint-plugin-testing-library "^4.12.4"
@@ -3258,6 +3258,12 @@
     webpack-dev-server "^4.3.1"
     webpack-graphql-loader "^1.0.2"
     webpack-merge "^5.8.0"
+=======
+    eslint-plugin-react "^7.25.2"
+    eslint-plugin-react-hooks "^4.2.0"
+    eslint-plugin-testing-library "^4.12.3"
+    eslint-plugin-unicorn "^36.0.0"
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
 
 "@oriflame/conventional-changelog-lint-config@^1.1.2":
   version "1.1.2"
@@ -3689,6 +3695,20 @@
   resolved "https://registry.yarnpkg.com/@types/yoga-layout/-/yoga-layout-1.9.2.tgz#efaf9e991a7390dc081a0b679185979a83a9639a"
   integrity sha512-S9q47ByT2pPvD65IvrWp7qppVMpk9WGMbVq9wbWZOHg6tnXSD4vyhao6nOSBwwfDdV2p3Kx9evA9vI+XWTfDvw==
 
+"@typescript-eslint/eslint-plugin@^4.31.1":
+  version "4.33.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.33.0.tgz#c24dc7c8069c7706bc40d99f6fa87edcb2005276"
+  integrity sha512-aINiAxGVdOl1eJyVjaWn/YcVAq4Gi/Yo35qHGCnqbWVz61g39D0h23veY/MA0rFFGfxK7TySg2uwDeNv+JgVpg==
+  dependencies:
+    "@typescript-eslint/experimental-utils" "4.33.0"
+    "@typescript-eslint/scope-manager" "4.33.0"
+    debug "^4.3.1"
+    functional-red-black-tree "^1.0.1"
+    ignore "^5.1.8"
+    regexpp "^3.1.0"
+    semver "^7.3.5"
+    tsutils "^3.21.0"
+
 "@typescript-eslint/eslint-plugin@^5.0.0":
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.3.0.tgz#a55ae72d28ffeb6badd817fe4566c9cced1f5e29"
@@ -3703,10 +3723,29 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
+<<<<<<< HEAD
 "@typescript-eslint/eslint-plugin@^5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.2.0.tgz#2bdb247cc2e2afce7efbce09afb9a6f0a8a08434"
   integrity sha512-qQwg7sqYkBF4CIQSyRQyqsYvP+g/J0To9ZPVNJpfxfekl5RmdvQnFFTVVwpRtaUDFNvjfe/34TgY/dpc3MgNTw==
+=======
+"@typescript-eslint/experimental-utils@4.33.0":
+  version "4.33.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-4.33.0.tgz#6f2a786a4209fa2222989e9380b5331b2810f7fd"
+  integrity sha512-zeQjOoES5JFjTnAhI5QY7ZviczMzDptls15GFsI6jyUOq0kOf9+WonkhtlIhh0RgHRnqj5gdNxW5j1EvAyYg6Q==
+  dependencies:
+    "@types/json-schema" "^7.0.7"
+    "@typescript-eslint/scope-manager" "4.33.0"
+    "@typescript-eslint/types" "4.33.0"
+    "@typescript-eslint/typescript-estree" "4.33.0"
+    eslint-scope "^5.1.1"
+    eslint-utils "^3.0.0"
+
+"@typescript-eslint/experimental-utils@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-5.0.0.tgz#c7d7e67443dfb9fd93a5d060fb72c9e9b5638bbc"
+  integrity sha512-Dnp4dFIsZcPawD6CT1p5NibNUQyGSEz80sULJZkyhyna8AEqArmfwMwJPbmKzWVo4PabqNVzHYlzmcdLQWk+pg==
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
   dependencies:
     "@typescript-eslint/experimental-utils" "5.2.0"
     "@typescript-eslint/scope-manager" "5.2.0"
@@ -3753,6 +3792,16 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
+"@typescript-eslint/parser@^4.31.1":
+  version "4.33.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.33.0.tgz#dfe797570d9694e560528d18eecad86c8c744899"
+  integrity sha512-ZohdsbXadjGBSK0/r+d87X0SBmKzOq4/S5nzK6SBgJspFo9/CUDJ7hjayuze+JK7CZQLDMroqytp7pOcFKTxZA==
+  dependencies:
+    "@typescript-eslint/scope-manager" "4.33.0"
+    "@typescript-eslint/types" "4.33.0"
+    "@typescript-eslint/typescript-estree" "4.33.0"
+    debug "^4.3.1"
+
 "@typescript-eslint/parser@^5.0.0":
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.3.0.tgz#7879f15e26d370ed3f653fb7dd06479531ed3ab9"
@@ -3781,10 +3830,25 @@
     "@typescript-eslint/types" "4.33.0"
     "@typescript-eslint/visitor-keys" "4.33.0"
 
+<<<<<<< HEAD
 "@typescript-eslint/scope-manager@5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-5.2.0.tgz#7ce8e4ab2baaa0ad5282913ea8e13ce03ec6a12a"
   integrity sha512-RW+wowZqPzQw8MUFltfKYZfKXqA2qgyi6oi/31J1zfXJRpOn6tCaZtd9b5u9ubnDG2n/EMvQLeZrsLNPpaUiFQ==
+=======
+"@typescript-eslint/scope-manager@4.33.0":
+  version "4.33.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-4.33.0.tgz#d38e49280d983e8772e29121cf8c6e9221f280a3"
+  integrity sha512-5IfJHpgTsTZuONKbODctL4kKuQje/bzBRkwHE8UOZ4f89Zeddg+EGZs8PD8NcN4LdM3ygHWYB3ukPAYjvl/qbQ==
+  dependencies:
+    "@typescript-eslint/types" "4.33.0"
+    "@typescript-eslint/visitor-keys" "4.33.0"
+
+"@typescript-eslint/scope-manager@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-5.0.0.tgz#aea0fb0e2480c1169a02e89d9005ac3f2835713f"
+  integrity sha512-5RFjdA/ain/MDUHYXdF173btOKncIrLuBmA9s6FJhzDrRAyVSA+70BHg0/MW6TE+UiKVyRtX91XpVS0gVNwVDQ==
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
   dependencies:
     "@typescript-eslint/types" "5.2.0"
     "@typescript-eslint/visitor-keys" "5.2.0"
@@ -3801,6 +3865,14 @@
   version "4.33.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-4.33.0.tgz#a1e59036a3b53ae8430ceebf2a919dc7f9af6d72"
   integrity sha512-zKp7CjQzLQImXEpLt2BUw1tvOMPfNoTAfb8l51evhYbOEEzdWyQNmHWWGPR6hwKJDAi+1VXSBmnhL9kyVTTOuQ==
+<<<<<<< HEAD
+=======
+
+"@typescript-eslint/types@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-5.0.0.tgz#25d93f6d269b2d25fdc51a0407eb81ccba60eb0f"
+  integrity sha512-dU/pKBUpehdEqYuvkojmlv0FtHuZnLXFBn16zsDmlFF3LXkOpkAQ2vrKc3BidIIve9EMH2zfTlxqw9XM0fFN5w==
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
 
 "@typescript-eslint/types@5.2.0":
   version "5.2.0"
@@ -3825,10 +3897,30 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
+<<<<<<< HEAD
 "@typescript-eslint/typescript-estree@5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-5.2.0.tgz#c22e0ff6f8a4a3f78504a80ebd686fe2870a68ae"
   integrity sha512-RsdXq2XmVgKbm9nLsE3mjNUM7BTr/K4DYR9WfFVMUuozHWtH5gMpiNZmtrMG8GR385EOSQ3kC9HiEMJWimxd/g==
+=======
+"@typescript-eslint/typescript-estree@4.33.0":
+  version "4.33.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-4.33.0.tgz#0dfb51c2908f68c5c08d82aefeaf166a17c24609"
+  integrity sha512-rkWRY1MPFzjwnEVHsxGemDzqqddw2QbTJlICPD9p9I9LfsO8fdmfQPOX3uKfUaGRDFJbfrtm/sXhVXN4E+bzCA==
+  dependencies:
+    "@typescript-eslint/types" "4.33.0"
+    "@typescript-eslint/visitor-keys" "4.33.0"
+    debug "^4.3.1"
+    globby "^11.0.3"
+    is-glob "^4.0.1"
+    semver "^7.3.5"
+    tsutils "^3.21.0"
+
+"@typescript-eslint/typescript-estree@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-5.0.0.tgz#bc20f413c6e572c7309dbe5fa3be027984952af3"
+  integrity sha512-V/6w+PPQMhinWKSn+fCiX5jwvd1vRBm7AX7SJQXEGQtwtBvjMPjaU3YTQ1ik2UF1u96X7tsB96HMnulG3eLi9Q==
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
   dependencies:
     "@typescript-eslint/types" "5.2.0"
     "@typescript-eslint/visitor-keys" "5.2.0"
@@ -3859,6 +3951,7 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
+<<<<<<< HEAD
 "@typescript-eslint/visitor-keys@5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-5.2.0.tgz#03522d35df98474f08e0357171a7d1b259a88f55"
@@ -3871,6 +3964,20 @@
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-5.3.0.tgz#a6258790f3b7b2547f70ed8d4a1e0c3499994523"
   integrity sha512-oVIAfIQuq0x2TFDNLVavUn548WL+7hdhxYn+9j3YdJJXB7mH9dAmZNJsPDa7Jc+B9WGqoiex7GUDbyMxV0a/aw==
+=======
+"@typescript-eslint/visitor-keys@4.33.0":
+  version "4.33.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-4.33.0.tgz#2a22f77a41604289b7a186586e9ec48ca92ef1dd"
+  integrity sha512-uqi/2aSz9g2ftcHWf8uLPJA70rUv6yuMW5Bohw+bwcuzaxQIHaKFZCKGoGXIrc9vkTJ3+0txM73K0Hq3d5wgIg==
+  dependencies:
+    "@typescript-eslint/types" "4.33.0"
+    eslint-visitor-keys "^2.0.0"
+
+"@typescript-eslint/visitor-keys@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-5.0.0.tgz#b789f7cd105e59bee5c0983a353942a5a48f56df"
+  integrity sha512-yRyd2++o/IrJdyHuYMxyFyBhU762MRHQ/bAGQeTnN3pGikfh+nEmM61XTqaDH1XDp53afZ+waXrk0ZvenoZ6xw==
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
   dependencies:
     "@typescript-eslint/types" "5.3.0"
     eslint-visitor-keys "^3.0.0"
@@ -6674,7 +6781,7 @@ eslint-plugin-eslint-comments@^3.2.0:
     escape-string-regexp "^1.0.5"
     ignore "^5.0.5"
 
-eslint-plugin-import@^2.25.2:
+eslint-plugin-import@^2.24.2, eslint-plugin-import@^2.25.2:
   version "2.25.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.2.tgz#b3b9160efddb702fc1636659e71ba1d10adbe9e9"
   integrity sha512-qCwQr9TYfoBHOFcVGKY9C9unq05uOxxdklmBXLVvcwo68y5Hta6/GzCZEMx2zQiu0woKNEER0LE7ZgaOfBU14g==
@@ -6693,7 +6800,7 @@ eslint-plugin-import@^2.25.2:
     resolve "^1.20.0"
     tsconfig-paths "^3.11.0"
 
-eslint-plugin-jest@^24.7.0:
+eslint-plugin-jest@^24.4.2, eslint-plugin-jest@^24.7.0:
   version "24.7.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-24.7.0.tgz#206ac0833841e59e375170b15f8d0955219c4889"
   integrity sha512-wUxdF2bAZiYSKBclsUMrYHH6WxiBreNjyDxbRv345TIvPeoCEgPNEn3Sa+ZrSqsf1Dl9SqqSREXMHExlMMu1DA==
@@ -6753,7 +6860,7 @@ eslint-plugin-react-hooks@^4.2.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.2.0.tgz#8c229c268d468956334c943bb45fc860280f5556"
   integrity sha512-623WEiZJqxR7VdxFCKLI6d6LLpwJkGPYKODnkH3D7WpOG5KM8yWueBd8TLsNAetEJNF5iJmolaAKO3F8yzyVBQ==
 
-eslint-plugin-react@^7.26.1:
+eslint-plugin-react@^7.25.2, eslint-plugin-react@^7.26.1:
   version "7.26.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.26.1.tgz#41bcfe3e39e6a5ac040971c1af94437c80daa40e"
   integrity sha512-Lug0+NOFXeOE+ORZ5pbsh6mSKjBKXDXItUD2sQoT+5Yl0eoT82DqnXeTMfUare4QVCn9QwXbfzO/dBLjLXwVjQ==
@@ -6773,19 +6880,39 @@ eslint-plugin-react@^7.26.1:
     semver "^6.3.0"
     string.prototype.matchall "^4.0.5"
 
-eslint-plugin-testing-library@^4.12.4:
+eslint-plugin-testing-library@^4.12.3, eslint-plugin-testing-library@^4.12.4:
   version "4.12.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-testing-library/-/eslint-plugin-testing-library-4.12.4.tgz#86b2abebeb0a6d4a2f1e5f0a515ad824bb9fa627"
   integrity sha512-XZtoeyIZKFTiH8vhwnCaTo/mNrLHoLyufY4kkNg+clzZFeThWPjp+0QfrLam1on1k3JGwiRvoLH/V4QdBaB2oA==
   dependencies:
     "@typescript-eslint/experimental-utils" "^4.30.0"
 
+<<<<<<< HEAD
 eslint-plugin-testing-library@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-testing-library/-/eslint-plugin-testing-library-5.0.0.tgz#eb98bcecf44bbdb0df4e78bb58e87a05685b38e0"
   integrity sha512-lojlPN8nsb7JTFYhJuLNwwI8kALRC0TBz5JRO1lvV7Ifzqu7IoddjDFRCxeM+0d2/zuEO7Sb5oc7ErDqhd4MBw==
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.0.0"
+=======
+eslint-plugin-unicorn@^36.0.0:
+  version "36.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-36.0.0.tgz#db50e1426839e401d33c5a279f49d4a5bbb640d8"
+  integrity sha512-xxN2vSctGWnDW6aLElm/LKIwcrmk6mdiEcW55Uv5krcrVcIFSWMmEgc/hwpemYfZacKZ5npFERGNz4aThsp1AA==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.14.9"
+    ci-info "^3.2.0"
+    clean-regexp "^1.0.0"
+    eslint-template-visitor "^2.3.2"
+    eslint-utils "^3.0.0"
+    is-builtin-module "^3.1.0"
+    lodash "^4.17.21"
+    pluralize "^8.0.0"
+    read-pkg-up "^7.0.1"
+    regexp-tree "^0.1.23"
+    safe-regex "^2.1.1"
+    semver "^7.3.5"
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
 
 eslint-plugin-unicorn@^37.0.1:
   version "37.0.1"
@@ -8304,6 +8431,23 @@ hygen@^5.0.3:
     ts-jest "^24.1.0"
     yargs-parser "^13.0.0"
 
+hygen@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/hygen/-/hygen-5.0.3.tgz#0ba9f6aff0a51dce4e71fc679da5a359cafb38c7"
+  integrity sha512-tepicT366of7FZKfuT/YtTOZ1mU7txQix2EgYEGOCBD4SN3+vf2tRITB/yA7Amd9NPhzijgCYkW/MlIsdXEEEQ==
+  dependencies:
+    chalk "^2.4.2"
+    change-case "^3.1.0"
+    ejs "^2.6.1"
+    enquirer "^2.3.0"
+    execa "^1.0.0"
+    front-matter "^2.3.0"
+    fs-extra "^7.0.1"
+    ignore-walk "^3.0.2"
+    inflection "^1.12.0"
+    ts-jest "^24.1.0"
+    yargs-parser "^13.0.0"
+
 hygen@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/hygen/-/hygen-6.1.0.tgz#0428edb32aead724d040354fa03585a858dda509"
@@ -9057,10 +9201,17 @@ java-properties@^1.0.0:
   resolved "https://registry.yarnpkg.com/java-properties/-/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
   integrity sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==
 
+<<<<<<< HEAD
 jest-changed-files@^27.3.0:
   version "27.3.0"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-27.3.0.tgz#22a02cc2b34583fc66e443171dc271c0529d263c"
   integrity sha512-9DJs9garMHv4RhylUMZgbdCJ3+jHSkpL9aaVKp13xtXAD80qLTLrqcDZL1PHA9dYA0bCI86Nv2BhkLpLhrBcPg==
+=======
+jest-changed-files@^27.2.5:
+  version "27.2.5"
+  resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-27.2.5.tgz#9dfd550d158260bcb6fa80aff491f5647f7daeca"
+  integrity sha512-jfnNJzF89csUKRPKJ4MwZ1SH27wTmX2xiAIHUHrsb/OYd9Jbo4/SXxJ17/nnx6RIifpthk3Y+LEeOk+/dDeGdw==
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
   dependencies:
     "@jest/types" "^27.2.5"
     execa "^5.0.0"
@@ -12360,6 +12511,7 @@ pretty-format@^27.2.0:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
+<<<<<<< HEAD
 pretty-format@^27.3.1:
   version "27.3.1"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.3.1.tgz#7e9486365ccdd4a502061fa761d3ab9ca1b78df5"
@@ -12370,6 +12522,8 @@ pretty-format@^27.3.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
+=======
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
 pretty-ms@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/pretty-ms/-/pretty-ms-5.1.0.tgz#b906bdd1ec9e9799995c372e2b1c34f073f95384"
@@ -12993,11 +13147,14 @@ resolve-url@^0.2.1:
   resolved "https://registry.yarnpkg.com/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
+<<<<<<< HEAD
 resolve.exports@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/resolve.exports/-/resolve.exports-1.1.0.tgz#5ce842b94b05146c0e03076985d1d0e7e48c90c9"
   integrity sha512-J1l+Zxxp4XK3LUDZ9m60LRJF/mAe4z6a4xyabPHk7pvK5t35dACV32iIjJDFeWZFfZlO29w6SZ67knR0tHzJtQ==
 
+=======
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
 resolve@1.x, resolve@^1.1.7, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.20.0, resolve@^1.9.0:
   version "1.20.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
@@ -14210,10 +14367,17 @@ ts-jest@^24.1.0:
     semver "^5.5"
     yargs-parser "10.x"
 
+<<<<<<< HEAD
 ts-node@^10.4.0:
   version "10.4.0"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.4.0.tgz#680f88945885f4e6cf450e7f0d6223dd404895f7"
   integrity sha512-g0FlPvvCXSIO1JDF6S232P5jPYqBkRL9qly81ZgAOSU7rwI0stphCgd2kLiCrU9DjQCrJMWEqcNSjQL02s6d8A==
+=======
+ts-node@^10.3.0:
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.3.0.tgz#a797f2ed3ff50c9a5d814ce400437cb0c1c048b4"
+  integrity sha512-RYIy3i8IgpFH45AX4fQHExrT8BxDeKTdC83QFJkNzkvt8uFB6QJ8XMyhynYiKMLxt9a7yuXaDBZNOYS3XjDcYw==
+>>>>>>> 3cd8339c (fix: Regenerate yarn lock.)
   dependencies:
     "@cspotcode/source-map-support" "0.7.0"
     "@tsconfig/node10" "^1.0.7"
