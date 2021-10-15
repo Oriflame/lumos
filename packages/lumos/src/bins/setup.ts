@@ -23,7 +23,7 @@ const pkgPath = Path.resolve('package.json').path();
 
 function addLumosToPackage(response: SetupPrompt) {
   const pkg = editJsonFile(pkgPath);
-  const lumos: any = {
+  const lumos: unknown = {
     settings: {},
   };
 

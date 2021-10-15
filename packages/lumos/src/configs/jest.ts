@@ -1,4 +1,5 @@
 import { getConfig } from '@oriflame/config-jest';
+
 import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.beemo;

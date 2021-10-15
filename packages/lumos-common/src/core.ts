@@ -1,4 +1,3 @@
-import { BeemoConfig } from '@beemo/core';
 import { PackageStructure } from '@boost/common';
 import execa from 'execa';
 import glob from 'fast-glob';
@@ -49,7 +48,7 @@ export function getPackage(): PackageStructure {
 
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   if (instance?.package) {
-    return instance.package as PackageStructure;
+    return instance.package;
   }
 
   if (pkgCache) {
@@ -61,4 +60,3 @@ export function getPackage(): PackageStructure {
 
   return pkgCache!;
 }
-

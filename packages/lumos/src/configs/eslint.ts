@@ -1,8 +1,8 @@
-import fs from 'fs';
-import { getExtendsList, getIgnoreList } from '@oriflame/config-eslint';
-import { getSettings } from '../helpers/getSettings';
-
 import { Path } from '@beemo/core';
+import { getExtendsList, getIgnoreList } from '@oriflame/config-eslint';
+import fs from 'fs';
+
+import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.beemo;
 
@@ -26,7 +26,7 @@ if (workspacesEnabled) {
     include.push(
       new Path(wsPath, `${srcFolder}/**/*`),
       new Path(wsPath, `${testsFolder}/**/*`),
-      new Path(wsPath, `${typesFolder}/types/**/*`),
+      new Path(wsPath, `${typesFolder}/**/*`),
     );
   });
 

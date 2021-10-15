@@ -1,5 +1,6 @@
-import { getSettings } from '../helpers/getSettings';
 import { TypeScriptConfig } from '@beemo/driver-typescript';
+
+import { getSettings } from '../helpers/getSettings';
 
 const { context, tool } = process.beemo;
 const settings = getSettings();
@@ -19,7 +20,6 @@ const {
   skipLibCheck,
   declarationDir,
 } = { ...settings, ...options };
-
 
 const compilerOptions: TypeScriptConfig['compilerOptions'] = {
   allowJs,
@@ -51,7 +51,6 @@ if (react) {
   compilerOptions.lib!.push('dom');
   compilerOptions.jsx = 'react-jsx';
 }
-
 
 if (!context.getRiskyOption('referenceWorkspaces')) {
   include.push(`./${srcFolder}/**/*`, `./${typesFolder}/**/*`);

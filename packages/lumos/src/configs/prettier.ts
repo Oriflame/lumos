@@ -1,7 +1,6 @@
 import { PrettierConfig } from '@beemo/driver-prettier';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
-
 const ignore: PrettierConfig['ignore'] = [
   ...IGNORE_PATHS,
   'npm-shrinkwrap.json',

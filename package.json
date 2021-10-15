@@ -14,7 +14,7 @@
     "test:webpack": "cross-env NODE_ENV=production webpack --config ./packages/config-webpack/test/webpack.test.config.js",
     "pretest:webpack-entry": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack-entry.test.config.js",
     "test:webpack-entry": "cross-env NODE_ENV=production webpack --config ./packages/config-webpack/test/webpack-entry.test.config.js",
-    "lint": "beemo eslint",
+    "lint": "beemo eslint packages/*/{src,test}/**/*.ts",
     "jest": "beemo jest",
     "jest:coverage": "beemo jest --coverage",
     "prettier": "beemo prettier",
