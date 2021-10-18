@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.49 - 2021-10-18
+
+#### 📦 Dependencies
+
+- update dependency @boost/common to v3 (#840) ([e8783e6](https://github.com/Oriflame/lumos/commit/e8783e6bd005daf49d6254dffe6b2e1dd4699db0)), closes  _#840_
+
+- update dependency jest to ^27.3.0 (#844) ([6fd68e9](https://github.com/Oriflame/lumos/commit/6fd68e99d4c7e82978851abc4bbbc7d6421c5f7b)), closes  _#844_
+
+- update dependency webpack-cli to v4.9.1 (#843) ([205e9db](https://github.com/Oriflame/lumos/commit/205e9dbebc7976b64f1d92c7f2ac3dd574e772f7)), closes  _#843_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.48 - 2021-10-18
 
 #### 🐞 Fixes
