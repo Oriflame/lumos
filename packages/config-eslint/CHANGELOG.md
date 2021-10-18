@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.48 - 2021-10-18
+
+#### 🐞 Fixes
+
+- Correct Next.js ESLint plugin rule names. (#842) ([52cd73a](https://github.com/Oriflame/lumos/commit/52cd73a00f2675ede85f8aac76e354cec4a0c069)), closes  _#842_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.0.47 - 2021-10-15
 
 #### 📦 Dependencies
