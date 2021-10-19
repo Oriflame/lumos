@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.50 - 2021-10-19
+
+#### 📦 Dependencies
+
+- update dependency html-webpack-plugin to ^5.4.0 (#841) ([1e98b27](https://github.com/Oriflame/lumos/commit/1e98b2701aeb85acd2c5f408d00507f35e59ba25)), closes  _#841_
+
+- update typescript-eslint monorepo to ^5.1.0 (#845) ([ccc4db7](https://github.com/Oriflame/lumos/commit/ccc4db7854d407be1b9dfdaf951a01f242c3a258)), closes  _#845_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.49 - 2021-10-18
 
 #### 📦 Dependencies
