@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.52 - 2021-10-20
+
+#### 📦 Dependencies
+
+- update dependency babel-plugin-typescript-to-proptypes to v2 (#847) ([a90799e](https://github.com/Oriflame/lumos/commit/a90799ea81c71cb2c125340b013be0f5edf5e5fb)), closes  _#847_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.51 - 2021-10-19
 
 #### 📦 Dependencies
