@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.1.0 - 2021-10-21
+
+#### 🚀 Updates
+
+- Add azure pr check. (#853) ([87928be](https://github.com/Oriflame/lumos/commit/87928be0da9ac8342b84e0b8ec045d54df3b54e7)), closes  _#853_
+
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-promise to ^5.1.1 (#852) ([e4ebe85](https://github.com/Oriflame/lumos/commit/e4ebe853b249cf36d4c55306e2fa3453576fef13)), closes  _#852_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.0.53 - 2021-10-21
 
 #### 📦 Dependencies

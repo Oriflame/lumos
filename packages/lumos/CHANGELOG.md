@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.1.0 - 2021-10-21
+
+#### 🚀 Updates
+
+- Add azure pr check. (#853) ([87928be](https://github.com/Oriflame/lumos/commit/87928be0da9ac8342b84e0b8ec045d54df3b54e7)), closes  _#853_
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 4.0.53 - 2021-10-21
 
 **Note:** Version bump only for package @oriflame/lumos
