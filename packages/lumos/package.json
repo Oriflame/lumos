@@ -37,7 +37,6 @@
     "@octokit/rest": "^16.43.2",
     "@oriflame/conventional-changelog": "^1.1.5",
     "@oriflame/lumos-common": "^4.1.0",
-    "azure-devops-node-api": "^11.0.1",
     "chalk": "^4.1.2",
     "check-node-version": "^4.1.0",
     "cross-env": "^7.0.3",
