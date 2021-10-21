@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.0.53 - 2021-10-21
+
+#### 📦 Dependencies
+
+- update dependency babel-loader to ^8.2.3 (#850) ([5125798](https://github.com/Oriflame/lumos/commit/5125798bd6db76cfcdd792bccbdcc1f6effd6156)), closes  _#850_
+
+- update dependency postcss to ^8.3.10 (#849) ([461ca42](https://github.com/Oriflame/lumos/commit/461ca42a8b93802a715f6cf28c6a498496907a66)), closes  _#849_
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 4.0.52 - 2021-10-20
 
 **Note:** Version bump only for package @oriflame/config-webpack
