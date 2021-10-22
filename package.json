@@ -87,6 +87,6 @@
     "rimraf": "^3.0.2"
   },
   "resolutions": {
-    "caniuse-lite": "1.0.30001270"
+    "caniuse-lite": "1.0.30001271"
   }
 }
