@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.2 - 2021-10-23
+
+#### 📦 Dependencies
+
+- update dependency style-loader to ^3.3.1 (#855) ([6320670](https://github.com/Oriflame/lumos/commit/632067047b090164c99c341dd9b24e732dba14a9)), closes  _#855_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.1.1 - 2021-10-21
 
 #### 📋 Misc
