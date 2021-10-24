@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.3 - 2021-10-24
+
+#### 📦 Dependencies
+
+- update dependency postcss to ^8.3.11 (#854) ([0166899](https://github.com/Oriflame/lumos/commit/016689981f0d2769de7c738902e4df4f8e614f73)), closes  _#854_
+
+
+#### 🛠 Internals
+
+- update dependency @types/node to ^14.17.29 (#857) ([461e3d2](https://github.com/Oriflame/lumos/commit/461e3d22675730acb781c4768068a968eb87cb6d)), closes  _#857_
+
+- update dependency ts-node to ^10.4.0 (#856) ([afdd21c](https://github.com/Oriflame/lumos/commit/afdd21c2469d740f425468edbeadd393b0b174a9)), closes  _#856_
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.1.2 - 2021-10-23
 
 #### 📦 Dependencies

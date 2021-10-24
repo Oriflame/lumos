@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.3 - 2021-10-24
+
+#### 🛠 Internals
+
+- update dependency ts-node to ^10.4.0 (#856) ([afdd21c](https://github.com/Oriflame/lumos/commit/afdd21c2469d740f425468edbeadd393b0b174a9)), closes  _#856_
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.1.2 - 2021-10-23
 
 **Note:** Version bump only for package @oriflame/config-eslint
