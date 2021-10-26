@@ -1,33 +1,36 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "packages/config-babel"
-    },
-    {
-      "path": "packages/config-danger"
-    },
-    {
-      "path": "packages/config-eslint"
-    },
-    {
-      "path": "packages/config-jest"
-    },
-    {
-      "path": "packages/config-prettier"
-    },
-    {
-      "path": "packages/config-typescript"
-    },
-    {
-      "path": "packages/config-webpack"
-    },
-    {
-      "path": "packages/lumos"
-    },
-    {
-      "path": "packages/lumos-common"
-    }
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "DOM.Iterable",
+      "esnext"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "strict": true,
+    "target": "es2018",
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "declarationDir": "./lib",
+    "outDir": "./lib"
+  },
+  "include": [
+    "./src/**/*",
+    "./types/**/*"
   ],
-  "extends": "./tsconfig.options.json"
+  "exclude": [
+    "**/node_modules/*"
+  ]
 }

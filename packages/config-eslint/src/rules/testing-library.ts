@@ -9,7 +9,7 @@ const config: ESLintConfig['rules'] = {
   'testing-library/no-await-sync-events': 'error', // disallow unnecessary await for sync events
   'testing-library/no-await-sync-query': 'error', // disallow unnecessary await for sync queries
   'testing-library/no-container': 'warn', // disallow the use of container methods
-  'testing-library/no-debug': 'warn', // disallow the use of debug
+  'testing-library/no-debugging-utils': 'warn', // disallow the use of debug
   'testing-library/no-dom-import': ['error', 'react'], // disallow importing from DOM Testing Library
   'testing-library/no-manual-cleanup': 'off', // disallow the use of cleanup
   'testing-library/no-node-access': 'error', // disallow direct Node access
