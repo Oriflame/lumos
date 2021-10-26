@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.6 - 2021-10-26
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-jest to v25 (#829) ([6576642](https://github.com/Oriflame/lumos/commit/657664257eb4eabc7252c8633d6008a398188419)), work items [#829](https://github.com/Oriflame/lumos/issues/829)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.1.5 - 2021-10-26
 
 #### 📦 Dependencies
