@@ -48,15 +48,14 @@ const config: ESLintConfig['rules'] = {
   'jest/prefer-hooks-on-top': 'warn', // suggest having hooks before any test cases
   'jest/prefer-spy-on': 'error', // suggest using jest.spyOn()
   'jest/prefer-strict-equal': 'off', // suggest using toStrictEqual()
-  'jest/prefer-to-be-null': 'warn', // suggest using toBeNull()
-  'jest/prefer-to-be-undefined': 'warn', // suggest using toBeUndefined()
   'jest/prefer-to-contain': 'warn', // suggest using toContain()
   'jest/prefer-to-have-length': 'warn', // suggest using toHaveLength()
   'jest/prefer-todo': 'warn', // suggest using test.todo
   'jest/require-to-throw-message': 'error', // require a message for toThrow()
   'jest/require-top-level-describe': 'error', // require test cases and hooks to be inside a describe block
   'jest/unbound-method': 'error', // enforces unbound methods are called with their expected scope
-  'jest/valid-describe': 'error', // enforce valid describe() callback
+  'jest/valid-describe-callback': 'error', // enforce valid describe() callback
+  'jest/prefer-lowercase-title': 'warn', // enforce valid describe() callback
   'jest/valid-expect': ['error', { alwaysAwait: true }], // enforce valid expect() usage
   'jest/valid-expect-in-promise': 'error', // enforce having return statement when testing with promises
   'jest/valid-title': 'warn', // enforce valid titles
