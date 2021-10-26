@@ -4,7 +4,7 @@ import { VERSION } from '../constants';
 
 export function createGitHubClient(token?: string): Octokit {
   const { GITHUB_TOKEN, GHE_API_URL, GHE_VERSION } = process.env;
-  const options: Octokit.Options = {
+  const options: ConstructorParameters<typeof Octokit>[0] = {
     userAgent: `Lumos v${VERSION}`,
   };
 
