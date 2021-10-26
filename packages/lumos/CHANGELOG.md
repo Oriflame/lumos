@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.7 - 2021-10-26
+
+#### 📦 Dependencies
+
+- update dependency @octokit/rest to v18 (#527) ([7e7f4cd](https://github.com/Oriflame/lumos/commit/7e7f4cd9b07c242dcf60f346ae36fef9fd092f96)), work items [#527](https://github.com/Oriflame/lumos/issues/527)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 4.1.6 - 2021-10-26
 
 **Note:** Version bump only for package @oriflame/lumos
