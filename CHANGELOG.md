@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.8 - 2021-10-26
+
+#### 📦 Dependencies
+
+- update dependency @next/eslint-plugin-next to v12 (#866) ([b875179](https://github.com/Oriflame/lumos/commit/b8751791d510be5058ef099b20db26383982a3db)), work items [#866](https://github.com/Oriflame/lumos/issues/866)
+- update dependency css-loader to ^6.5.0 (#865) ([754e36d](https://github.com/Oriflame/lumos/commit/754e36d4f5379ac0b6ec6b603b140f664fd8c49c)), work items [#865](https://github.com/Oriflame/lumos/issues/865)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.1.7 - 2021-10-26
 
 #### 📦 Dependencies
