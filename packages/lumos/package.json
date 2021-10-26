@@ -35,7 +35,7 @@
     "@beemo/cli": "^1.0.11",
     "@beemo/core": "^1.1.8",
     "@octokit/rest": "^16.43.2",
-    "@oriflame/conventional-changelog": "^1.1.5",
+    "@oriflame/conventional-changelog": "^1.2.0",
     "@oriflame/lumos-common": "^4.1.4",
     "chalk": "^4.1.2",
     "check-node-version": "^4.1.0",
