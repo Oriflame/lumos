@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.5 - 2021-10-26
+
+#### 📦 Dependencies
+
+- update dependency html-webpack-plugin to ^5.5.0 (#860) ([3d11484](https://github.com/Oriflame/lumos/commit/3d1148450078755672998c684307f5668d644659)), work items [#860](https://github.com/Oriflame/lumos/issues/860)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 4.1.4 - 2021-10-26
 
 **Note:** Version bump only for package @oriflame/config-webpack

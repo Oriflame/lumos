@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.5 - 2021-10-26
+
+#### 📦 Dependencies
+
+- update dependency @oriflame/conventional-changelog to ^1.2.0 (#859) ([e37440a](https://github.com/Oriflame/lumos/commit/e37440a0c5a0ac1a18615297c664e0d660b1aaf2)), work items [#859](https://github.com/Oriflame/lumos/issues/859)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 4.1.4 - 2021-10-26
 
 **Note:** Version bump only for package @oriflame/lumos
