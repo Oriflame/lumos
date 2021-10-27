@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.9 - 2021-10-27
+
+#### 📦 Dependencies
+
+- update dependency @next/eslint-plugin-next to ^12.0.1 (#868) ([3307686](https://github.com/Oriflame/lumos/commit/33076867191cdd41f5fdc0dfd4bcab949a89693b)), work items [#868](https://github.com/Oriflame/lumos/issues/868)
+- update dependency graphql to ^15.7.0 (#867) ([64389f4](https://github.com/Oriflame/lumos/commit/64389f44ed781e0ddc287cf37ccd64f7f7340f17)), work items [#867](https://github.com/Oriflame/lumos/issues/867)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.1.8 - 2021-10-26
 
 #### 📦 Dependencies

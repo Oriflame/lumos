@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.9 - 2021-10-27
+
+#### 📦 Dependencies
+
+- update dependency @next/eslint-plugin-next to ^12.0.1 (#868) ([3307686](https://github.com/Oriflame/lumos/commit/33076867191cdd41f5fdc0dfd4bcab949a89693b)), work items [#868](https://github.com/Oriflame/lumos/issues/868)
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.1.8 - 2021-10-26
 
 #### 📦 Dependencies
