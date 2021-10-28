@@ -24,13 +24,13 @@
     "node": ">=10.16.0"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.15.8",
     "@beemo/core": "^1.1.8",
     "@beemo/driver-eslint": "^1.2.3",
     "@next/eslint-plugin-next": "^11.1.2",
     "@oriflame/lumos-common": "^4.1.7",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
-    "babel-eslint": "^10.1.0",
     "confusing-browser-globals": "^1.0.10",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
