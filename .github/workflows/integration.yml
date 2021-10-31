@@ -19,4 +19,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn install --ignore-engines --frozen-lockfile
-      - run: yarn test
+      - run: yarn test -u
+      - run: git commit --no-verify -am"tests: Update tests."
