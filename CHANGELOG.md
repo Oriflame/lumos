@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.14 - 2021-11-01
+
+#### 🛠 Internals
+
+- update commitlint monorepo to v14 (#877) ([9cae023](https://github.com/Oriflame/lumos/commit/9cae023c8bb0b834d288ebe6b1df2bb339fa3ac8)), work items [#877](https://github.com/Oriflame/lumos/issues/877)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.1.13 - 2021-10-31
 
 #### 📦 Dependencies
