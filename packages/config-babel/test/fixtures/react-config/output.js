@@ -3,8 +3,9 @@
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 exports.__esModule = true;
+exports.Ahoj = void 0;
 exports.App = App;
-exports.default = exports.Component = exports.another = exports.Ahoj = void 0;
+exports.default = exports.another = exports.Component = void 0;
 
 var _classPrivateFieldLooseBase2 = _interopRequireDefault(require("@babel/runtime/helpers/classPrivateFieldLooseBase"));
 
