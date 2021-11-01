@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.1.15 - 2021-11-01
+
+#### 📦 Dependencies
+
+- update dependency eslint to v8 (#827) ([6fcd4ea](https://github.com/Oriflame/lumos/commit/6fcd4ea61532eb05185059d849e2862ff5b27cf0)), work items [#827](https://github.com/Oriflame/lumos/issues/827)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.1.14 - 2021-11-01
 
 #### 🛠 Internals
