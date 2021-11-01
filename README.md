@@ -9,6 +9,7 @@ Lumos is designed around Oriflame projects. _Use at your own risk._
 
 </div>
 
+<!-- Only test -->
 # Packages
 
 - [@oriflame/lumos](./packages/lumos)
