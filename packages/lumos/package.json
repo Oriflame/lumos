@@ -48,12 +48,12 @@
     "cross-env": "^7.0.3",
     "edit-json-file": "^1.6.0",
     "enquirer": "^2.3.6",
-    "execa": "^5.0.1",
+    "execa": "^5.1.1",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
   },
   "devDependencies": {
-    "@oriflame/config-danger": "4.0.47",
+    "@oriflame/config-danger": "4.1.15",
     "@types/prettier": "^2.4.1"
   }
 }

@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { PackageStructure, Path } from '@beemo/core';
-import { SCAFFOLD_DEPS } from '@oriflame/lumos-common';
 import chalk from 'chalk';
 import editJsonFile from 'edit-json-file';
 import { prompt } from 'enquirer';
@@ -20,40 +22,6 @@ interface SetupPrompt {
 }
 
 const pkgPath = Path.resolve('package.json').path();
-
-function addLumosToPackage(response: SetupPrompt) {
-  const pkg = editJsonFile(pkgPath);
-  const lumos: unknown = {
-    settings: {},
-  };
-
-  if (response.libs.includes('react')) {
-    lumos.settings!.react = true;
-  }
-
-  if (response.libs.includes('graphql')) {
-    lumos.settings!.graphql = true;
-  }
-
-  if (response.type === 'lib' || response.type === 'monolib') {
-    lumos.settings!.library = true;
-  }
-
-  if (response.type === 'app') {
-    lumos.settings!.entryPoint = 'app-loader.tsx';
-  }
-
-  if (response.future) {
-    lumos.settings!.future = true;
-  }
-
-  if (response.node) {
-    lumos.settings!.node = true;
-  }
-
-  pkg.set('lumos', lumos);
-  pkg.save();
-}
 
 function addScriptsToPackage(response: SetupPrompt) {
   const { drivers, yarn, type } = response;
@@ -180,19 +148,12 @@ export async function setup() {
     response.drivers.push('babel');
   }
 
-  console.log(`${chalk.cyan('[2/6]')} Updating package settings`);
-
-  addLumosToPackage(response);
-
   console.log(`${chalk.cyan('[3/6]')} Installing dependencies`);
 
-  let dependencies = [
-    '@oriflame/lumos',
-    ...response.drivers.map((driver) => `@oriflame/config-${driver}`),
-  ];
+  let dependencies = ['@oriflame/lumos'];
 
   if (response.scaffold) {
-    dependencies = [...dependencies, ...SCAFFOLD_DEPS];
+    dependencies = [...dependencies];
   }
 
   await installDeps(dependencies, response.yarn, response.type === 'monolib');
