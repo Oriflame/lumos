@@ -38,7 +38,7 @@
     "@oriflame/conventional-changelog": "^1.2.0",
     "@oriflame/lumos-common": "^4.1.15",
     "chalk": "^4.1.2",
-    "check-node-version": "^4.1.0",
+    "check-node-version": "^4.2.1",
     "cross-env": "^7.0.3",
     "edit-json-file": "^1.6.0",
     "enquirer": "^2.3.6",
