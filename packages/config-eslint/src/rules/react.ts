@@ -31,7 +31,12 @@ const config: ESLintConfig['rules'] = {
   'react/jsx-filename-extension': ['error', { allow: 'as-needed', extensions: ['.jsx', '.tsx'] }], // restrict file extensions that may contain JSX
   'react/jsx-first-prop-new-line': 'off', // ensure proper position of the first property in JSX
   'react/jsx-fragments': ['error', 'syntax'], // enforce shorthand or standard form for React fragments
-  'react/jsx-handler-names': 'error', // enforce event handler naming conventions in JSX
+  'react/jsx-handler-names': [
+    'error',
+    {
+      checkLocalVariables: true,
+    },
+  ], // enforce event handler naming conventions in JSX
   'react/jsx-indent': 'off', // validate JSX indentation
   'react/jsx-indent-props': 'off', // validate props indentation in JSX
   'react/jsx-key': 'error', // report missing key props in iterators/collection literals
