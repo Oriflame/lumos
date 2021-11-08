@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.2.0 - 2021-11-08
+
+#### 🚀 Updates
+
+- Update ESLint rules. (#885) ([e70c4fd](https://github.com/Oriflame/lumos/commit/e70c4fdac6bf7d7f8d9c1ea4b254e6e7e04db532)), work items [#885](https://github.com/Oriflame/lumos/issues/885)
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 4.1.15 - 2021-11-01
 
 #### 📦 Dependencies

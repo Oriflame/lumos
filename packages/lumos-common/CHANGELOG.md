@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.2.0 - 2021-11-08
+
+**Note:** Version bump only for package @oriflame/lumos-common
+
+
+
+
+
 ### 4.1.15 - 2021-11-01
 
 **Note:** Version bump only for package @oriflame/lumos-common
