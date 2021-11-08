@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.2.1 - 2021-11-08
+
+#### 🐞 Fixes
+
+- Revert react/jsx-handler-names rule change. (#889) ([36f44c1](https://github.com/Oriflame/lumos/commit/36f44c1db0d4e74408334f3dfe5f259e8fc6f05f)), work items [#889](https://github.com/Oriflame/lumos/issues/889)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 4.2.0 - 2021-11-08
 
 #### 🚀 Updates

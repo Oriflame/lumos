@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-babel",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "Reusable Babel config.",
   "keywords": [
     "lumos",
@@ -34,7 +34,7 @@
     "@babel/preset-typescript": "^7.15.0",
     "@beemo/core": "^1.1.8",
     "@beemo/driver-babel": "^1.2.6",
-    "@oriflame/lumos-common": "^4.2.0",
+    "@oriflame/lumos-common": "^4.2.1",
     "babel-plugin-graphql-tag": "^3.3.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-optimize-clsx": "^2.6.2",
