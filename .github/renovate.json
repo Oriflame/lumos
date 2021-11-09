@@ -31,13 +31,6 @@
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "bump",
       "semanticCommitType": "deps"
-    },
-    {
-      "matchDepTypes": [
-        "resolutions"
-      ],
-      "rangeStrategy": "bump",
-      "semanticCommitType": "deps"
     }
   ]
 }

@@ -21,7 +21,7 @@ import testingLibraryRules from '../rules/testing-library';
 const config: ESLintConfig = {
   root: true,
 
-  parser: '@babel/eslint-parser',
+  parser: 'babel-eslint',
 
   parserOptions: {
     requireConfigFile: false,
