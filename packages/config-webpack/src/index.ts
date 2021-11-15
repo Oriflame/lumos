@@ -27,7 +27,7 @@ export function getConfig({
   buildFolder = 'build',
   port = PORT,
   react = false,
-  sourceMaps = false,
+  sourceMaps = true,
   parallel = true,
   root = WEBPACK_ROOT,
   publicPath = 'auto',
@@ -192,6 +192,7 @@ export function getConfig({
         }),
         new CssMinimizerPlugin({
           parallel: getParallelValue(parallel),
+          sourceMap: sourceMaps,
         }),
       ],
     },
