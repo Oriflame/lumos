@@ -162,7 +162,7 @@ export function getConfig({
 
     output,
 
-    devtool: PROD ? (sourceMaps ? 'source-map' : false) : 'cheap-module-source-map',
+    devtool: PROD ? (sourceMaps ? 'source-map' : false) : 'eval-source-map',
     // @ts-expect-error -- something wrong
     devServer: {
       static: {
