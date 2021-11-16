@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.2.3 - 2021-11-16
+
+#### 📋 Misc
+
+- **[webpack]** Enable source maps. (#891) ([f4cd245](https://github.com/Oriflame/lumos/commit/f4cd24501661f77c080c193d800561d68aa347df)), work items [#891](https://github.com/Oriflame/lumos/issues/891)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.2.2 - 2021-11-09
 
 **Note:** Version bump only for package lumos-root

@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-jest",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "description": "Reusable Jest config.",
   "keywords": [
     "lumos",
@@ -25,7 +25,7 @@
     "@beemo/core": "^1.1.8",
     "@beemo/driver-babel": "^1.2.6",
     "@beemo/driver-jest": "^1.2.3",
-    "@oriflame/lumos-common": "^4.2.2",
+    "@oriflame/lumos-common": "^4.2.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@types/jest": "^27.0.2",
     "airbnb-js-shims": "^2.2.1",
