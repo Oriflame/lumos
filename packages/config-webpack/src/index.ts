@@ -18,7 +18,7 @@ import TerserPlugin from 'terser-webpack-plugin';
 import { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
-import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING } from './constants';
+import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING } from './constants';
 import { getParallelValue, getPlugins, getUniqueName, PORT, PROD } from './helpers';
 import { WebpackOptions } from './types';
 
@@ -27,7 +27,7 @@ export function getConfig({
   buildFolder = 'build',
   port = PORT,
   react = false,
-  sourceMaps = false,
+  sourceMaps = true,
   parallel = true,
   root = WEBPACK_ROOT,
   publicPath = 'auto',
@@ -46,6 +46,9 @@ export function getConfig({
   const entry: Configuration['entry'] = {
     index: [srcPath],
   };
+  const POSTCSS_SETTING = { ...DEFAULT_POSTCSS_SETTING };
+
+  POSTCSS_SETTING.options.sourceMap = sourceMaps;
 
   const output: Configuration['output'] = {
     path: internalPath,
@@ -124,7 +127,11 @@ export function getConfig({
         {
           test: CSS_EXT_PATTERN,
           exclude: CSS_MODULE_EXT_PATTERN,
-          use: ['style-loader', 'css-loader', POSTCSS_SETTING],
+          use: [
+            'style-loader',
+            { loader: 'css-loader', options: { sourceMap: sourceMaps } },
+            POSTCSS_SETTING,
+          ],
           sideEffects: true,
         },
         {
@@ -162,7 +169,7 @@ export function getConfig({
 
     output,
 
-    devtool: PROD ? (sourceMaps ? 'source-map' : false) : 'cheap-module-source-map',
+    devtool: PROD ? (sourceMaps ? 'source-map' : false) : 'eval-source-map',
     // @ts-expect-error -- something wrong
     devServer: {
       static: {
@@ -189,6 +196,9 @@ export function getConfig({
       minimizer: [
         new TerserPlugin({
           parallel: getParallelValue(parallel),
+          terserOptions: {
+            sourceMap: sourceMaps,
+          },
         }),
         new CssMinimizerPlugin({
           parallel: getParallelValue(parallel),

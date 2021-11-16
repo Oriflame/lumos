@@ -48,7 +48,7 @@ export interface WebpackOptions {
   buildFolder = 'build',
   port = 3000,
   react = false,
-  sourceMaps = false,
+  sourceMaps = true,
   srcFolder = 'src',
   publicPath = '/',
   root = process.cwd(),
