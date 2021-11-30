@@ -55,7 +55,7 @@ const config: ESLintConfig['rules'] = {
   'jest/require-top-level-describe': 'error', // require test cases and hooks to be inside a describe block
   'jest/unbound-method': 'error', // enforces unbound methods are called with their expected scope
   'jest/valid-describe-callback': 'error', // enforce valid describe() callback
-  'jest/prefer-lowercase-title': 'warn', // enforce valid describe() callback
+  'jest/prefer-lowercase-title': ['warn', { allowedPrefixes: [], ignoreTopLevelDescribe: true }], // enforce valid describe() callback
   'jest/valid-expect': ['error', { alwaysAwait: true }], // enforce valid expect() usage
   'jest/valid-expect-in-promise': 'error', // enforce having return statement when testing with promises
   'jest/valid-title': 'warn', // enforce valid titles
