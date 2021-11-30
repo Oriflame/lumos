@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.3.0 - 2021-11-30
+
+#### 🚀 Updates
+
+- Update ESLint rules. (#892) ([5436a7f](https://github.com/Oriflame/lumos/commit/5436a7f741c50e4d852cb9598ef6bf574e1bbbfc)), work items [#892](https://github.com/Oriflame/lumos/issues/892)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.2.3 - 2021-11-16
 
 #### 📋 Misc
