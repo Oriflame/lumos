@@ -16,25 +16,7 @@
   ],
   "references": [
     {
-      "path": "../config-babel"
-    },
-    {
-      "path": "../config-eslint"
-    },
-    {
-      "path": "../config-jest"
-    },
-    {
-      "path": "../config-prettier"
-    },
-    {
-      "path": "../config-webpack"
-    },
-    {
       "path": "../lumos-common"
-    },
-    {
-      "path": "../config-danger"
     }
   ]
 }

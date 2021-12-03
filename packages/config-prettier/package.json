@@ -1,0 +1,33 @@
+{
+  "name": "@oriflame/config-prettier",
+  "version": "4.3.0",
+  "description": "Reusable Prettier config.",
+  "keywords": [
+    "lumos",
+    "config",
+    "prettier"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Oriflame/lumos.git"
+  },
+  "author": "Silhan Jan",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.16.0"
+  },
+  "devDependencies": {
+    "@types/prettier": "^2.4.2"
+  },
+  "dependencies": {
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-prettier": "^2.0.4",
+    "@oriflame/lumos-common": "^4.3.0",
+    "prettier": "^2.5.0"
+  }
+}

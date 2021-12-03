@@ -15,6 +15,9 @@
       "path": "packages/config-jest"
     },
     {
+      "path": "packages/config-prettier"
+    },
+    {
       "path": "packages/config-webpack"
     },
     {
