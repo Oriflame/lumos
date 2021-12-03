@@ -41,7 +41,7 @@
     "@oriflame/config-eslint": "4.3.0",
     "@oriflame/config-jest": "4.3.0",
     "@oriflame/config-webpack": "4.3.0",
-    "@oriflame/conventional-changelog": "^1.2.0",
+    "@oriflame/conventional-changelog": "^1.2.2",
     "@oriflame/lumos-common": "^4.3.0",
     "chalk": "^4.1.2",
     "check-node-version": "^4.1.0",
