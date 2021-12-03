@@ -22,9 +22,9 @@
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@beemo/core": "^2.1.1",
-    "@beemo/driver-babel": "^2.0.3",
-    "@beemo/driver-jest": "^2.0.2",
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-babel": "^2.0.4",
+    "@beemo/driver-jest": "^2.0.3",
     "@oriflame/lumos-common": "^4.3.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@types/jest": "^27.0.2",

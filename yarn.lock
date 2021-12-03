@@ -1262,35 +1262,35 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@beemo/cli@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@beemo/cli/-/cli-2.0.3.tgz#8b3e83b774a29d4057debadc909f68ba01211138"
-  integrity sha512-/2F/IdMkcN48mUZHrYavc6y1zpA4ElnXLYd4sX6Sic6gJmtFbpdcWl9Xw6bQcfadpIBsQIY7oyaMgpOaP8RxjA==
+"@beemo/cli@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@beemo/cli/-/cli-2.0.4.tgz#8f11fb1c55c09dbd9246d3623c2416372ab7f73a"
+  integrity sha512-usEc+gmi3kz5Nsni2/yyfz78bZmLuDES5VlHQVVX9+srxxTvMoi1bLgk8qjdFw0hAeDfKpYma9gllupRUAdVqA==
   dependencies:
-    "@boost/cli" "^2.11.2"
-    "@boost/common" "^2.8.2"
-    "@boost/pipeline" "^2.2.8"
+    "@boost/cli" "^3.0.1"
+    "@boost/common" "^3.1.0"
+    "@boost/pipeline" "^3.2.0"
     debug "^4.3.2"
     ink "^3.2.0"
     react "^17.0.2"
 
-"@beemo/core@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@beemo/core/-/core-2.1.1.tgz#cd14ec9dd0cc4120182e13f444060d1daa22b148"
-  integrity sha512-/VqnN6dvIpfaRE4+RkNfmXxIO9tqjAcZ5FHpJ/F8TnT09cIop7dcCrCyZ/ibVqfVaILQWP8+4RK+L8oKGEOKqg==
+"@beemo/core@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@beemo/core/-/core-2.1.2.tgz#9f4ec5a3902f6994fc7f2d150cb238838055913f"
+  integrity sha512-64ImziHBLk4KiQ/qcX9UHa5a3CcUSmg9+1I3FNYeCPXen/oSo7FOYFijcrQz+Dz+JtYQM/5zkNsCs5TYY5OokQ==
   dependencies:
-    "@boost/args" "^2.3.4"
-    "@boost/common" "^2.8.2"
-    "@boost/config" "^2.5.2"
-    "@boost/debug" "^2.2.8"
-    "@boost/event" "^2.3.3"
-    "@boost/internal" "^2.2.3"
-    "@boost/log" "^2.2.8"
-    "@boost/module" "^2.0.0"
-    "@boost/pipeline" "^2.2.8"
-    "@boost/plugin" "^2.4.2"
-    "@boost/terminal" "^2.2.3"
-    "@boost/translate" "^2.2.8"
+    "@boost/args" "^3.0.0"
+    "@boost/common" "^3.1.0"
+    "@boost/config" "^3.0.2"
+    "@boost/debug" "^3.0.1"
+    "@boost/event" "^3.0.0"
+    "@boost/internal" "^3.0.0"
+    "@boost/log" "^3.0.1"
+    "@boost/module" "^3.0.1"
+    "@boost/pipeline" "^3.2.0"
+    "@boost/plugin" "^3.0.2"
+    "@boost/terminal" "^3.0.0"
+    "@boost/translate" "^3.0.1"
     execa "^5.1.1"
     fast-glob "^3.2.7"
     fs-extra "^10.0.0"
@@ -1299,90 +1299,77 @@
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-"@beemo/driver-babel@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@beemo/driver-babel/-/driver-babel-2.0.3.tgz#c272199217e1543a5180e6c47d8a54953e651338"
-  integrity sha512-DYiSRGFQUAFjd01qGBn7Nuf2ShA9pG3AJ3ql0XRcnTN32yd5YBt7kgXWbIMS37piD4N/cbbVm5ouJBq2JRY8ew==
+"@beemo/driver-babel@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-babel/-/driver-babel-2.0.4.tgz#5e777c47c6c0efd5a5875d43744be09a626dea90"
+  integrity sha512-lm01xDWkrk6hkGjhgVUsUcMZnACKlbj3GQMK4RAAiYvhH0eYPeWUhZW9Xzeky9yWAVJcoyYHxX5rzsvcu/zMhw==
   dependencies:
     rimraf "^3.0.2"
 
-"@beemo/driver-eslint@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@beemo/driver-eslint/-/driver-eslint-2.0.2.tgz#93a64fe5887066743b76063b5ed279936ffcff2f"
-  integrity sha512-MZMZ5uX/1ewc9Y1EGP8f5u58kDxTKi++zig0XZ8kjQTV6H2LrugH9KdkrEZQDaVhYbXAWX297vMjc8k2eoJ3iw==
+"@beemo/driver-eslint@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-eslint/-/driver-eslint-2.0.3.tgz#52b996bc2fa64a32b0ea36d0532b0befa28387ac"
+  integrity sha512-BmIc+g3f8q16H1zlf8yCEShJvrSYCkJvx9zXEzcyY98037njMSp5b0ZgdbjqEJpB08vJ3k345Sw9LxTwNYiENQ==
   dependencies:
-    "@boost/event" "^2.3.3"
-    "@types/eslint" "^7.28.1"
+    "@boost/event" "^3.0.0"
+    "@types/eslint" "^7.28.2"
 
-"@beemo/driver-jest@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@beemo/driver-jest/-/driver-jest-2.0.2.tgz#774e6e81ec420804643c999aba2fa653e4bc5db3"
-  integrity sha512-Px82rKwCcTinYvJ0E66LsCvczVnu2VLQCUxa0zah190XroYRpuZn8WG0TTonGaZKQaauogZW+E9ieyIy2F51HA==
+"@beemo/driver-jest@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-jest/-/driver-jest-2.0.3.tgz#e10bb16ff959511ba106644e8edcb2ef60ffcaa6"
+  integrity sha512-9gZYtJBBbIMg6JkXWE4Dv+MRucSxxj32SnVyeB7JY5DN6kVhyUHAc3rReMNLamz4AlitKTSzX81H6rWzewpevw==
   dependencies:
     "@jest/types" "^27.2.5"
 
-"@beemo/driver-prettier@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@beemo/driver-prettier/-/driver-prettier-2.0.3.tgz#e7bb1dc38af9526b15616dceeb8905551f21fa39"
-  integrity sha512-ULzMPfgWIbYkRqaBO/vjRrZ6/nHY7AZoMppsKxKwhW+/QsznJU/qCEy/IJ1j7J+5Bgr5M5VDC4DPl+Q66qhNPQ==
+"@beemo/driver-prettier@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-prettier/-/driver-prettier-2.0.4.tgz#66029b3a905334f5c060c6ba024a6cd27d847d35"
+  integrity sha512-Jq8A9qVTBKM6fSASB7fkOu1+1qqsqsPUqi54fhfdxBJwTwXo2+a8C1G55xwDjGev3dV6Ey1qUloEDKJsnpujeA==
   dependencies:
-    "@boost/event" "^2.3.3"
+    "@boost/event" "^3.0.0"
     "@types/prettier" "^2.4.1"
 
-"@beemo/driver-typescript@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@beemo/driver-typescript/-/driver-typescript-2.0.1.tgz#ce7dce066b41cd3490c7029ecd6bbf4b09604bdf"
-  integrity sha512-mwrzKro89RokFgWZg3NaNEsUE7Mt9n4+FhbYf+ZgsqRVQzja/+sSrV8sokVRZ4JsfW4i91BpbS/+BHkV3/EtLg==
+"@beemo/driver-typescript@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-typescript/-/driver-typescript-2.1.0.tgz#76d752e4437a1f1db36d02ed0d35889c145f48fa"
+  integrity sha512-HtUpeBhtKqUF9uPrAHjPcRTAnbqNFiST/j8cRl2QHju+O/88n3W1cNlK94uACXyenlWDXH08bFvoPvTgm38qXw==
   dependencies:
-    "@boost/event" "^2.3.3"
+    "@boost/event" "^3.0.0"
     rimraf "^3.0.2"
 
-"@beemo/driver-webpack@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@beemo/driver-webpack/-/driver-webpack-2.0.3.tgz#af61ac080e14cd5a9720d6e7debda9b5a31f8938"
-  integrity sha512-Zw4yVqLjrVxg/cfchDnr3mN85T/QwQdHdFP5Yf7nkW4ydRro+P2cy0557EWQeA8vmU+ZDBz6/BCod7X18Qy0OA==
+"@beemo/driver-webpack@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-webpack/-/driver-webpack-2.0.4.tgz#857c03ab2f7b2d5d6c2f54209e8444591009c19a"
+  integrity sha512-p3toxasDRp+hGj8x//w4fg5YprZFPyOpT/D2HMcnE6W4k/O/0Q1B+vheoiobHrzSkkEwBGseH6IIzxyJvtl/5g==
 
-"@boost/args@^2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@boost/args/-/args-2.3.4.tgz#4856702a65710e5ad60e4396c7e6aa026504ed3f"
-  integrity sha512-YQWkPMHCEVsFf9a5aCtYUR8FOo07WO0p4lDllU/7vbr9awMMqpB63+Jpo8KKMMw1SE8A3w0+3+3uMW16/AKvfg==
+"@boost/args@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@boost/args/-/args-3.0.0.tgz#226a4e8f6a890099eafe22b027c3a47d06a2bd07"
+  integrity sha512-sbKLzNEEiDTQjKWpE8JifmKag71lzxW/FsMnjoIZe1XaPMyNdYNzfDa3Yo1WQL+YmnDwxKXOUE20+3eMuCEQAw==
   dependencies:
-    "@boost/internal" "^2.2.3"
+    "@boost/internal" "^3.0.0"
     levenary "^1.1.1"
 
-"@boost/cli@^2.11.2":
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/@boost/cli/-/cli-2.11.2.tgz#353951339e59d96239de569f4dcb96662ee719dd"
-  integrity sha512-754M/QV2drdMm7DoLjsRRtbtOmS7WtoF3YJWXfK25Ostec5E1pbrOZ+R2yOuR3a73H5OBrUrgbjtv+4RBVEnqw==
+"@boost/cli@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@boost/cli/-/cli-3.0.1.tgz#db91b2982779a66a835585cb9be584a21211a83a"
+  integrity sha512-xb6OhNaCggKTkqyQWTYsQ3leRGt0QWWYdckKd51jCGqz7taLoNV8QHWYrAx/REgz88OgFaMM0f+1f14nMq3log==
   dependencies:
-    "@boost/args" "^2.3.4"
-    "@boost/common" "^2.8.2"
-    "@boost/event" "^2.3.3"
-    "@boost/internal" "^2.2.3"
-    "@boost/log" "^2.2.8"
-    "@boost/terminal" "^2.2.3"
-    "@boost/translate" "^2.2.8"
+    "@boost/args" "^3.0.0"
+    "@boost/common" "^3.1.0"
+    "@boost/event" "^3.0.0"
+    "@boost/internal" "^3.0.0"
+    "@boost/log" "^3.0.1"
+    "@boost/terminal" "^3.0.0"
+    "@boost/translate" "^3.0.1"
     execa "^5.1.1"
     levenary "^1.1.1"
     semver "^7.3.5"
 
-"@boost/common@^2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@boost/common/-/common-2.8.2.tgz#e3f65747455f7663d9d2bf2ac6074ff954cd47de"
-  integrity sha512-3B0bx1CyVaAvt/jHLoXMNwQvtQUMPf2RtHkA+i0Cp/9boxPVl0UDEFmXykLbHghjuc1PokDZnsn8aeGOVR9z9A==
-  dependencies:
-    "@boost/decorators" "^2.1.4"
-    "@boost/internal" "^2.2.3"
-    fast-glob "^3.2.7"
-    json5 "^2.2.0"
-    optimal "^4.3.0"
-    pretty-ms "^7.0.1"
-    yaml "^1.10.2"
-
-"@boost/common@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@boost/common/-/common-3.0.0.tgz#2fdcc00b458fbf5a4ad0931840a1dd8949facca6"
-  integrity sha512-L5daOK/yjF33yRSPEw3B5dnZdDkrtBnHYnsZgy8QHuRypNsM0Kh4nLa1uxmOMEXwHSmqB5ZKB4wAZfUBh+uj2A==
+"@boost/common@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@boost/common/-/common-3.1.0.tgz#729ad3ad5cf092b132306a65106104733572227c"
+  integrity sha512-CYV8kh9hQ5GtRrMd2L4oCkqpK09eOx+TglC1T/sBOzA3rNlhvlC9PtL8uPaIOh0XBWMoXD6tVdxMTdBC3iktDg==
   dependencies:
     "@boost/decorators" "^3.0.0"
     "@boost/internal" "^3.0.0"
@@ -1393,52 +1380,41 @@
     resolve "^1.20.0"
     yaml "^1.10.2"
 
-"@boost/config@^2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@boost/config/-/config-2.5.2.tgz#03a9f3262c0c3234e6af30c2321d65cea31a4f78"
-  integrity sha512-Zu+9RYzQe1MjASc9XIX9shQPrF2uaMTZrcKSSNhjeaQlLTWxRzi2Y2ml3J587N2oA1Yum2589OPnGAA0gkyHZA==
+"@boost/config@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@boost/config/-/config-3.0.2.tgz#cb83ca1464d8c986a23b95f23cef68b901c95367"
+  integrity sha512-UtNtVzpsm57qq0/NTLbs4vxL7p8bYcNJKvHbn+tvpmn0UDQY4YAPqpCbmYEljX72+ab/LtN1qxPdhwetKXp/ZA==
   dependencies:
-    "@boost/common" "^2.8.2"
-    "@boost/debug" "^2.2.8"
-    "@boost/event" "^2.3.3"
-    "@boost/internal" "^2.2.3"
+    "@boost/common" "^3.1.0"
+    "@boost/debug" "^3.0.1"
+    "@boost/event" "^3.0.0"
+    "@boost/internal" "^3.0.0"
+    "@boost/module" "^3.0.1"
     minimatch "^3.0.4"
 
-"@boost/debug@^2.2.8":
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/@boost/debug/-/debug-2.2.8.tgz#ddb515ee4a19a5ea4412743281d37885afce88b2"
-  integrity sha512-YKArveZh54YK+WnVUEzxsOmtIw5AStMc4c/wV960HA6tLmlbboYYULPWTBbklFnocpBOK6aPjSRYyXfIre7cZA==
+"@boost/debug@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@boost/debug/-/debug-3.0.1.tgz#11fdd34a3df3f3d1ab72d757a4adc1cbf2d556cd"
+  integrity sha512-EjGJnEozBq838TFIfI7mBvwW8+zHbodZa8SNiANwgjpzwElVUSS20IzbxadTr25Asox8ZiE634e/qDR6zS0X1w==
   dependencies:
-    "@boost/common" "^2.8.2"
-    "@boost/internal" "^2.2.3"
+    "@boost/common" "^3.1.0"
+    "@boost/internal" "^3.0.0"
     "@types/debug" "^4.1.7"
     debug "^4.3.2"
     execa "^5.1.1"
     fast-glob "^3.2.7"
-
-"@boost/decorators@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@boost/decorators/-/decorators-2.1.4.tgz#d7197ab817a8792b1ffe365503d46e51ae1befaa"
-  integrity sha512-ZDsh8NwT3cVeOpf6BxjliLC8YEIooskH3xvyNZkNzlbWpBgLmUAsvWiIh+B91lls+RiO+1vZrgX9/nZj8UvaaQ==
 
 "@boost/decorators@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@boost/decorators/-/decorators-3.0.0.tgz#d7d5b09c5eac4551333db1c525517c93d58b521c"
   integrity sha512-ShIwBx9mUCvuRjhYieXvBq+Ab/nFZ09+c73vZRCVrkNJUhluyQW3AayH6FeI8NV4EIte+WZlpcbS1rZXwQoikg==
 
-"@boost/event@^2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@boost/event/-/event-2.3.3.tgz#470aee56d238ff47abee2f61e429065e27c094af"
-  integrity sha512-V5mNBhFDTExXph53f1tkBN38blHXQC8GYyulf6KdLgytlzTiJYU1WhCQ2ru1c/D8+CacrUsOSVQ3GfC2ED04vg==
+"@boost/event@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@boost/event/-/event-3.0.0.tgz#2250545dbf9ace9a5f7723c49ef98843d6d4d69e"
+  integrity sha512-6ca817aFzUeTfQjgkdD5amay/V1GNc22A8pfQlSzs40QzD7mA9Ky2sX1Ue/5l/zu8kohuCzqhL/qQrpXnzqdgw==
   dependencies:
-    "@boost/internal" "^2.2.3"
-
-"@boost/internal@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@boost/internal/-/internal-2.2.3.tgz#140eab861b04d8740cc01593dbd444eaaf360a5c"
-  integrity sha512-Iws7tmXN/ta9bzcWTKCxFRaeCxtpjRgN0ABhWEoJnXgQjHhjs1PjmbkPK4PfKbQQW/RhbLMgKLz0jLdtwbK0oA==
-  dependencies:
-    debug "^4.3.2"
+    "@boost/internal" "^3.0.0"
 
 "@boost/internal@^3.0.0":
   version "3.0.0"
@@ -1447,72 +1423,73 @@
   dependencies:
     debug "^4.3.2"
 
-"@boost/log@^2.2.8":
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/@boost/log/-/log-2.2.8.tgz#67d5317bdd93a11b01348df9c120ffd15c261ada"
-  integrity sha512-yrWVoj5i391HhdYQt/CVMGQ7ZyNjmrWAkKLUv9E/dTzwGMPN6kIiKagM6rE80dsW4EQdw5eqics357B47wSV4w==
+"@boost/log@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@boost/log/-/log-3.0.1.tgz#4c7175f4f28b7aa6f8f6e156c61174fd4f43c6b9"
+  integrity sha512-2N9cuBK2EgIs/VuMn8Ar5qzRxPcAjg2BEASMjFK0CgIvanPlfhEcVvorKAhb/NGuyHZvO/hWOJp3YWbMkLogGw==
   dependencies:
-    "@boost/common" "^2.8.2"
-    "@boost/internal" "^2.2.3"
-    "@boost/translate" "^2.2.8"
-    chalk "^4.1.1"
+    "@boost/common" "^3.1.0"
+    "@boost/internal" "^3.0.0"
+    "@boost/translate" "^3.0.1"
+    chalk "^4.1.2"
 
-"@boost/module@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@boost/module/-/module-2.0.0.tgz#e67c7ca74253d18309e49afd15536de4507170f3"
-  integrity sha512-Rfenjq+FEgpTKLOGn+dCWjLYOjnF32+n2Llq2hxucYjyPN60ogxL+lQ9PPget5OZiP1l3Vh4ZdGkZ1/KlbIGGA==
+"@boost/module@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@boost/module/-/module-3.0.1.tgz#514c0ddc94acea4c0017b828d75ed9345c437a45"
+  integrity sha512-vQO/Hupy/vAsD4FErAhzdC6GBklAqazknqq0qggrgUj7aqTTACK9u89A9uCiqdindfI6exbquypREfL4oiPsjQ==
 
-"@boost/pipeline@^2.2.8":
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/@boost/pipeline/-/pipeline-2.2.8.tgz#27fc5d1a46a45e89a51304aa970c3afff9b47064"
-  integrity sha512-k2X/w1stJIZaN4XFNguG8suDappnvjeC8y2xxRWUFE/bZ/e15DBvK3upbCqKAqG5aj1xrMc5Ub1Ig3cjnzlh1Q==
+"@boost/pipeline@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@boost/pipeline/-/pipeline-3.2.0.tgz#d3ce77dcd9656e84af14efd897e1a573370f2bb4"
+  integrity sha512-B4oClq4GUPr/rJ0gAxVOaqfJUJpP36zy8PsvVSyJWBeXcDy/xYMePiV4VRXQsNBVHO+2N84h+PbIUuZgHqxPiw==
   dependencies:
-    "@boost/common" "^2.8.2"
-    "@boost/debug" "^2.2.8"
-    "@boost/event" "^2.3.3"
-    "@boost/internal" "^2.2.3"
-    "@boost/translate" "^2.2.8"
+    "@boost/common" "^3.1.0"
+    "@boost/debug" "^3.0.1"
+    "@boost/event" "^3.0.0"
+    "@boost/internal" "^3.0.0"
+    "@boost/translate" "^3.0.1"
     execa "^5.1.1"
     lodash "^4.17.21"
     split "^1.0.1"
 
-"@boost/plugin@^2.4.2":
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/@boost/plugin/-/plugin-2.4.2.tgz#c933859b3b8975ee2f27bccd7c0c9f8b30dac900"
-  integrity sha512-7ZIEJzZIirIg7gkvQR/nryJSbOCH4v4NncPeMLbQzndPuN30Xh672zS6eALFyvGge4OODteYHmGqWv1H6HfgGQ==
+"@boost/plugin@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@boost/plugin/-/plugin-3.0.2.tgz#cd876e637e26ad9af13d3c6551573b2322097820"
+  integrity sha512-d964D+lmWPIlJzXOsCgebhG1TDHB6TxR/FW9zgs9gRNIcrwWAlijD0hWpyRmyB2RBGVBJxd4s+pip3QlSydDhw==
   dependencies:
-    "@boost/common" "^2.8.2"
-    "@boost/debug" "^2.2.8"
-    "@boost/event" "^2.3.3"
-    "@boost/internal" "^2.2.3"
+    "@boost/common" "^3.1.0"
+    "@boost/debug" "^3.0.1"
+    "@boost/event" "^3.0.0"
+    "@boost/internal" "^3.0.0"
+    "@boost/module" "^3.0.1"
     lodash "^4.17.21"
     pluralize "^8.0.0"
 
-"@boost/terminal@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@boost/terminal/-/terminal-2.2.3.tgz#c9ee026e3c019c8c9e9a363e3265208ade4c75c2"
-  integrity sha512-CTiUAxXPEU53rA8lwQedl/VvrF9k9OxnVe7es/0Os3iSP7fYUFUnYdGUYP24gMGiB6b4PLyCHTbIbJ7SpRnxJA==
+"@boost/terminal@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@boost/terminal/-/terminal-3.0.0.tgz#4d9da77abda9dbfd1893bcba00849b56e512c5c1"
+  integrity sha512-043sNRFvFEalys3hdFWAxIl37ECIZzRx1o1qlqMOV5tpQwY7P9OOJGjsAXDX1Kbk0SwI+JTkIUhnwYhijIsXjg==
   dependencies:
     ansi-escapes "^4.3.2"
-    ansi-regex "^5.0.0"
-    chalk "^4.1.1"
+    ansi-regex "^5.0.1"
+    chalk "^4.1.2"
     cli-truncate "^2.1.0"
     figures "^3.2.0"
     slice-ansi "^4.0.0"
-    string-width "^4.2.2"
-    strip-ansi "^6.0.0"
+    string-width "^4.2.3"
+    strip-ansi "^6.0.1"
     supports-hyperlinks "^2.2.0"
     term-size "^2.2.1"
     wrap-ansi "^7.0.0"
 
-"@boost/translate@^2.2.8":
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/@boost/translate/-/translate-2.2.8.tgz#269e186da57e99a2f891b5c4accca9544e202451"
-  integrity sha512-Gplg+zQAV6Lsam9K28aEgvXJKf+OPt+3oDHaBhi3daotQEUKTA9RdKRpjp4GkC0irm7OU46VbT3SD/JgNcARog==
+"@boost/translate@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@boost/translate/-/translate-3.0.1.tgz#2ddefc838f79042fa07866924369a2664fb536fe"
+  integrity sha512-9cuNcX4iuti+Tna4YeACnrrIcORmHDJi36eE103Xiz0T4ZGnXswuXhK9EetRqvscJ3mUYEMJuK9Yf5VxXUTXPw==
   dependencies:
-    "@boost/common" "^2.8.2"
-    "@boost/internal" "^2.2.3"
-    i18next "^20.3.2"
+    "@boost/common" "^3.1.0"
+    "@boost/internal" "^3.0.0"
+    i18next "^21.2.6"
     os-locale "^5.0.0"
 
 "@commitlint/cli@^14.1.0":
@@ -3073,10 +3050,18 @@
     "@types/eslint" "*"
     "@types/estree" "*"
 
-"@types/eslint@*", "@types/eslint@^7.28.1":
+"@types/eslint@*":
   version "7.28.2"
   resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.28.2.tgz#0ff2947cdd305897c52d5372294e8c76f351db68"
   integrity sha512-KubbADPkfoU75KgKeKLsFHXnU4ipH7wYg0TRT33NK3N3yiu7jlFAAoygIWBV+KbuHx/G+AvuGX6DllnK35gfJA==
+  dependencies:
+    "@types/estree" "*"
+    "@types/json-schema" "*"
+
+"@types/eslint@^7.28.2":
+  version "7.29.0"
+  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.29.0.tgz#e56ddc8e542815272720bb0b4ccc2aff9c3e1c78"
+  integrity sha512-VNcvioYDH8/FxaeTKkM4/TiTwt6pBV9E3OfGmvaw8tPl0rrHCJ4Ll15HRT+pMiFAf/MLQvAzC+6RzUMEL9Ceng==
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"
@@ -7541,10 +7526,10 @@ hyperlinker@^1.0.0:
   resolved "https://registry.yarnpkg.com/hyperlinker/-/hyperlinker-1.0.0.tgz#23dc9e38a206b208ee49bc2d6c8ef47027df0c0e"
   integrity sha512-Ty8UblRWFEcfSuIaajM34LdPXIhbs1ajEX/BBPv24J+enSVaEVY63xQ6lTO9VRYS5LAoghIG0IDJ+p+IPzKUQQ==
 
-i18next@^20.3.2:
-  version "20.6.1"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-20.6.1.tgz#535e5f6e5baeb685c7d25df70db63bf3cc0aa345"
-  integrity sha512-yCMYTMEJ9ihCwEQQ3phLo7I/Pwycf8uAx+sRHwwk5U9Aui/IZYgQRyMqXafQOw5QQ7DM1Z+WyEXWIqSuJHhG2A==
+i18next@^21.2.6:
+  version "21.5.4"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-21.5.4.tgz#55ab39c31cc0b4f9f58c3a599db50c4515698284"
+  integrity sha512-ukwRJpLhYg4EUfCOtbaKjlwF71qyel1XMXQN78OkQMcaQG68UzlYgLC6g2fhoTNBvoH2tJkaaqzDumhC9skAhA==
   dependencies:
     "@babel/runtime" "^7.12.0"
 
@@ -10262,11 +10247,6 @@ opener@^1.5.2:
   resolved "https://registry.yarnpkg.com/opener/-/opener-1.5.2.tgz#5d37e1f35077b9dcac4301372271afdeb2a13598"
   integrity sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==
 
-optimal@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/optimal/-/optimal-4.3.0.tgz#b0c0e646f4c64f35f1f3f57412ec0a3a51a29789"
-  integrity sha512-WzIbrg0hR3rZPspTIhYlTI2pFXo0+vsderjkJ4nuYj3FsHrdY6Q8EBaC5xhAb9vzwofZADLdSLqju+SlfxBD5w==
-
 optimal@^5.1.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/optimal/-/optimal-5.1.1.tgz#46e564027105d21f2d6913898457394424b716aa"
@@ -12757,7 +12737,7 @@ string-width@^1.0.1:
     is-fullwidth-code-point "^1.0.0"
     strip-ansi "^3.0.0"
 
-"string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.2:
+"string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.2, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
