@@ -3000,13 +3000,6 @@
   resolved "https://registry.yarnpkg.com/@types/confusing-browser-globals/-/confusing-browser-globals-1.0.0.tgz#d81348816d6005c96b217d006b42b4a3eb12d3b5"
   integrity sha512-2RQF2SJW3pAQgkHtlIefyxiRkdlBwXxqNiiDDoPyaR9R0SqIujHoP6ceLSAE95EKd7CCLV3F/n4ohOAMi5edpQ==
 
-"@types/css-minimizer-webpack-plugin@^3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@types/css-minimizer-webpack-plugin/-/css-minimizer-webpack-plugin-3.2.1.tgz#bacbef5d8217074b599bd8a0771ec60ebd46dd16"
-  integrity sha512-MIlnEVQDTX0Y1/ZBY0RyD+F6+ZHlG42qCeSoCVhxI5N1atm+RnmDLQWUCWrdNqebFozUTRLDZJ04v5aYzGG5CA==
-  dependencies:
-    css-minimizer-webpack-plugin "*"
-
 "@types/cssnano@^4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@types/cssnano/-/cssnano-4.0.1.tgz#67fa912753d80973a016e7684a47fedf338aacff"
@@ -5100,7 +5093,7 @@ css-loader@^6.5.0:
     postcss-value-parser "^4.1.0"
     semver "^7.3.5"
 
-css-minimizer-webpack-plugin@*:
+css-minimizer-webpack-plugin@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/css-minimizer-webpack-plugin/-/css-minimizer-webpack-plugin-3.2.0.tgz#f59c56ec11137b37f000081bd19b450095094ad2"
   integrity sha512-5q4myvkmm29jRlI73Fl8Mc008i6o6hCEKnV6/fOrzRVDWD6EFGwDRX+SM2qCVeZ7XiztRDKHpTGDUeUMAOOagg==
@@ -5110,19 +5103,6 @@ css-minimizer-webpack-plugin@*:
     jest-worker "^27.0.2"
     postcss "^8.3.5"
     schema-utils "^4.0.0"
-    serialize-javascript "^6.0.0"
-    source-map "^0.6.1"
-
-css-minimizer-webpack-plugin@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/css-minimizer-webpack-plugin/-/css-minimizer-webpack-plugin-3.1.1.tgz#27bafa3b75054713565b2266c64b0228acd18634"
-  integrity sha512-KlB8l5uoNcf9F7i5kXnkxoqJGd2BXH4f0+Lj2vSWSmuvMLYO1kNsJ1KHSzeDW8e45/whgSOPcKVT/3JopkT8dg==
-  dependencies:
-    cssnano "^5.0.6"
-    jest-worker "^27.0.2"
-    p-limit "^3.0.2"
-    postcss "^8.3.5"
-    schema-utils "^3.1.0"
     serialize-javascript "^6.0.0"
     source-map "^0.6.1"
 
