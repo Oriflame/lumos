@@ -8,6 +8,7 @@
     "eslint"
   ],
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git"
@@ -24,6 +25,7 @@
     "node": ">=10.16.0"
   },
   "dependencies": {
+    "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",
     "@beemo/core": "^2.1.2",
     "@beemo/driver-eslint": "^2.0.3",

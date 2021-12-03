@@ -38,7 +38,6 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
-    "@oriflame/config-eslint": "4.3.0",
     "@oriflame/conventional-changelog-lint-config": "^1.1.4",
     "eslint-find-rules": "^4.0.0",
     "graphql": "^16.0.1",
