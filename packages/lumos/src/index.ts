@@ -1,13 +1,15 @@
-import { DriverContext, Path, Tool } from '@beemo/core';
+import { BeemoConfig, DriverContext, Path, Tool } from '@beemo/core';
 import { DIR_PATTERN_LIST } from '@oriflame/lumos-common';
 
-import { getSettings } from './helpers/getSettings';
+import { getSettings, LumosSettings } from './helpers/getSettings';
 
 function hasNoParams(context: DriverContext, name: string): boolean {
   const { params } = context.args;
 
   return params.length === 0 || (params.length === 1 && params[0] === name);
 }
+
+export type LumosConfig = BeemoConfig<LumosSettings>;
 
 export default function cli(tool: Tool) {
   const { esmBuildFolder, buildFolder, srcFolder, testsFolder } = getSettings();
