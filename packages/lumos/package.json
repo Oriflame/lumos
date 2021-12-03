@@ -54,6 +54,6 @@
   },
   "devDependencies": {
     "@oriflame/config-danger": "4.3.0",
-    "@types/prettier": "^2.4.1"
+    "@types/prettier": "^2.4.2"
   }
 }
