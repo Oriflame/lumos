@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
-import { execa, execaSync } from 'execa';
+import execa from 'execa';
 
 export async function getLastTag(): Promise<string> {
   const output = await execa('git', ['describe', '--tags', '--abbrev=0', '@^']);
@@ -24,7 +24,7 @@ export function getCommitHash(): string {
   }
 
   try {
-    commitHash = execaSync('git', ['rev-parse', '--short=7', 'HEAD']).stdout;
+    commitHash = execa.sync('git', ['rev-parse', '--short=7', 'HEAD']).stdout;
   } catch (error: unknown) {
     // Ignore error
   }
