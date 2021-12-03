@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.3.0 - 2021-11-30
+
+#### 🚀 Updates
+
+- Update ESLint rules. (#892) ([5436a7f](https://github.com/Oriflame/lumos/commit/5436a7f741c50e4d852cb9598ef6bf574e1bbbfc)), work items [#892](https://github.com/Oriflame/lumos/issues/892)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 4.2.3 - 2021-11-16
+
+#### 📋 Misc
+
+- **[webpack]** Enable source maps. (#891) ([f4cd245](https://github.com/Oriflame/lumos/commit/f4cd24501661f77c080c193d800561d68aa347df)), work items [#891](https://github.com/Oriflame/lumos/issues/891)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 4.2.2 - 2021-11-09
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 4.2.1 - 2021-11-08
+
+#### 🐞 Fixes
+
+- Revert react/jsx-handler-names rule change. (#889) ([36f44c1](https://github.com/Oriflame/lumos/commit/36f44c1db0d4e74408334f3dfe5f259e8fc6f05f)), work items [#889](https://github.com/Oriflame/lumos/issues/889)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+## 4.2.0 - 2021-11-08
+
+#### 🚀 Updates
+
+- Update ESLint rules. (#885) ([e70c4fd](https://github.com/Oriflame/lumos/commit/e70c4fdac6bf7d7f8d9c1ea4b254e6e7e04db532)), work items [#885](https://github.com/Oriflame/lumos/issues/885)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 4.1.15 - 2021-11-01
 
 #### 📦 Dependencies

@@ -7,6 +7,7 @@ export const DEFAULT_MANIFEST_PATH = 'node_modules/@ori/shared-libs/build/manife
 export const POSTCSS_SETTING = {
   loader: 'postcss-loader',
   options: {
+    sourceMap: true,
     postcssOptions: {
       ident: 'postcss',
       plugins: [

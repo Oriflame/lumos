@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 4.3.0 - 2021-11-30
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
+### 4.2.3 - 2021-11-16
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
+### 4.2.2 - 2021-11-09
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
+### 4.2.1 - 2021-11-08
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
+### 4.2.0 - 2021-11-08
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
 ### 4.1.15 - 2021-11-01
 
 **Note:** Version bump only for package @oriflame/config-babel
