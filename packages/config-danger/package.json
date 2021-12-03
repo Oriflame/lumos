@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "@oriflame/conventional-changelog": "^1.2.2",
-    "danger": "^10.7.0"
+    "danger": "^10.7.1"
   }
 }

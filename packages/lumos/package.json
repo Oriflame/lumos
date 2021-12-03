@@ -43,14 +43,14 @@
     "@oriflame/config-webpack": "4.3.0",
     "@oriflame/conventional-changelog": "^1.2.2",
     "@oriflame/lumos-common": "^4.3.0",
-    "chalk": "^4.1.2",
-    "check-node-version": "^4.1.0",
+    "chalk": "^5.0.0",
+    "check-node-version": "^4.2.1",
     "cross-env": "^7.0.3",
-    "edit-json-file": "^1.6.0",
+    "edit-json-file": "^1.6.2",
     "enquirer": "^2.3.6",
-    "execa": "^5.1.1",
-    "prettier": "^2.4.1",
-    "typescript": "^4.4.4"
+    "execa": "^6.0.0",
+    "prettier": "^2.5.0",
+    "typescript": "^4.5.2"
   },
   "devDependencies": {
     "@oriflame/config-danger": "4.3.0",
