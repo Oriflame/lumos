@@ -142,4 +142,4 @@ const config: ESLintConfig['rules'] = {
   'react/void-dom-elements-no-children': 'error', // prevent passing of children to void DOM elements (e.g. <br />)
 };
 
-export = config;
+export default config;

@@ -5,4 +5,4 @@ const config: ESLintConfig['rules'] = {
   'prettier/prettier': 'error',
 };
 
-export = config;
+export default config;

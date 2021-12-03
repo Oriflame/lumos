@@ -30,4 +30,4 @@ const config: ESLintConfig['rules'] = {
   'testing-library/render-result-naming-convention': 'warn', // enforce a valid naming for return value from render
 };
 
-export = config;
+export default config;

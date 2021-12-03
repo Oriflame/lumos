@@ -381,4 +381,4 @@ const config: ESLintConfig['rules'] = {
   yoda: 'error', // require or disallow “Yoda” conditions
 };
 
-export = config;
+export default config;

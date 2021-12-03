@@ -76,4 +76,4 @@ const config: ESLintConfig['rules'] = {
   'import/prefer-default-export': 'off', // prefer a default export if module exports a single name
 };
 
-export = config;
+export default config;

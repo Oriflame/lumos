@@ -61,4 +61,4 @@ const config: ESLintConfig['rules'] = {
   'jest/valid-title': 'warn', // enforce valid titles
 };
 
-export = config;
+export default config;

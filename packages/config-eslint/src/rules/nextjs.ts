@@ -16,4 +16,4 @@ const config: ESLintConfig['rules'] = {
   '@next/next/no-typos': 'warn', // ensure no typos were made declaring Next.js's data fetching function
 };
 
-export = config;
+export default config;

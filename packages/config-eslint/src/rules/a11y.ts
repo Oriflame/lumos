@@ -44,4 +44,4 @@ const config: ESLintConfig['rules'] = {
   'jsx-a11y/tabindex-no-positive': 'error', // enforce tabIndex value is not greater than zero
 };
 
-export = config;
+export default config;

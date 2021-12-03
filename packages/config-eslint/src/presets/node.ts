@@ -24,4 +24,4 @@ const config: ESLintConfig = {
   },
 };
 
-export = config;
+export default config;

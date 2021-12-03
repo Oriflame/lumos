@@ -13,4 +13,4 @@ const config: ESLintConfig['rules'] = {
   'eslint-comments/require-description': ['error', { ignore: ['eslint-enable'] }], // require include descriptions in ESLint directive-comments
 };
 
-export = config;
+export default config;

@@ -105,4 +105,4 @@ const config: ESLintConfig['rules'] = {
   'unicorn/throw-new-error': 'error', // require new when throwing an error
 };
 
-export = config;
+export default config;

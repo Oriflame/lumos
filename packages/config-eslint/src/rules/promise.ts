@@ -23,4 +23,4 @@ const config: ESLintConfig['rules'] = {
   'promise/valid-params': 'error', // ensures the proper number of arguments are passed to Promise functions
 };
 
-export = config;
+export default config;

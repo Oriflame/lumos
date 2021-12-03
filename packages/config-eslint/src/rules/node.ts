@@ -44,4 +44,4 @@ const config: ESLintConfig['rules'] = {
   'node/shebang': 'warn', // suggest correct usage of shebang
 };
 
-export = config;
+export default config;

@@ -6,4 +6,4 @@ const config: ESLintConfig['rules'] = {
   'react-hooks/rules-of-hooks': 'error',
 };
 
-export = config;
+export default config;
