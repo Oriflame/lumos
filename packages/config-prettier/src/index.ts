@@ -1,6 +1,7 @@
 import { PrettierConfig } from '@beemo/driver-prettier';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
+export type { PrettierConfig };
 function getIgnoreList(): string[] {
   return [
     ...IGNORE_PATHS,

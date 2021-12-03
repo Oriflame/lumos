@@ -1,4 +1,10 @@
 import { BeemoConfig, DriverContext, Path, Tool } from '@beemo/core';
+import { TypeScriptConfig } from '@beemo/driver-typescript';
+import { BabelConfig } from '@oriflame/config-babel';
+import { ESLintConfig } from '@oriflame/config-eslint';
+import { JestConfig } from '@oriflame/config-jest';
+import { PrettierConfig } from '@oriflame/config-prettier';
+import { WebpackConfig } from '@oriflame/config-webpack';
 import { DIR_PATTERN_LIST } from '@oriflame/lumos-common';
 
 import { getSettings, LumosSettings } from './helpers/getSettings';
@@ -11,8 +17,16 @@ function hasNoParams(context: DriverContext, name: string): boolean {
 
 export type LumosConfig = BeemoConfig<LumosSettings>;
 
+export type {
+  BabelConfig,
+  ESLintConfig,
+  JestConfig,
+  PrettierConfig,
+  WebpackConfig,
+  TypeScriptConfig,
+};
+
 export default function cli(tool: Tool) {
-  const { esmBuildFolder, buildFolder, srcFolder, testsFolder } = getSettings();
   const usingTypescript = tool.driverRegistry.isRegistered('typescript');
   const workspaces = tool.project.getWorkspaceGlobs({ relative: true });
   const exts = ['.ts', '.tsx', '.js', '.jsx'];
@@ -23,13 +37,17 @@ export default function cli(tool: Tool) {
    * - Add source and output dirs by default.
    */
   tool.onRunDriver.listen((context, _) => {
+    const { esmBuildFolder, buildFolder, srcFolder } = tool.config.settings;
     if (usingTypescript && !context.getRiskyOption('extensions')) {
       context.addOption('--extensions', exts.join(','));
     }
 
     if (hasNoParams(context, 'babel')) {
-      context.addParam(srcFolder);
-      context.addOption('--out-dir', context.getRiskyOption('esm') ? esmBuildFolder : buildFolder);
+      context.addParam(srcFolder as string);
+      context.addOption(
+        '--out-dir',
+        context.getRiskyOption('esm') ? (esmBuildFolder as string) : (buildFolder as string),
+      );
     }
   }, 'babel');
 
@@ -40,6 +58,7 @@ export default function cli(tool: Tool) {
    * - Create a `tsconfig.eslint.json` file.
    */
   tool.onRunDriver.listen((context) => {
+    const { srcFolder, testsFolder } = tool.config.settings;
     context.addOptions(['--cache', '--color']);
 
     if (usingTypescript && !context.getRiskyOption('ext')) {
@@ -55,7 +74,7 @@ export default function cli(tool: Tool) {
         });
       }
     } else {
-      context.addParams([srcFolder, testsFolder]);
+      context.addParams([srcFolder as string, testsFolder as string]);
     }
 
     // Generate prettier config for the prettier rules

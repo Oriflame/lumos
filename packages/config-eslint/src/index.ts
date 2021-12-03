@@ -1,4 +1,5 @@
 import { Path } from '@beemo/core';
+import { ESLintConfig } from '@beemo/driver-eslint';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
 export interface ESLintOptions {
@@ -8,6 +9,8 @@ export interface ESLintOptions {
   nextjs?: boolean;
   prettier?: boolean;
 }
+
+export type { ESLintConfig };
 
 function fromHere(filePath: string): string {
   return `./${new Path(process.cwd())
