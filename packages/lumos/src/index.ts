@@ -7,7 +7,7 @@ import { PrettierConfig } from '@oriflame/config-prettier';
 import { WebpackConfig } from '@oriflame/config-webpack';
 import { DIR_PATTERN_LIST } from '@oriflame/lumos-common';
 
-import { getSettings, LumosSettings } from './helpers/getSettings';
+import { LumosSettings } from './helpers/getSettings';
 
 function hasNoParams(context: DriverContext, name: string): boolean {
   const { params } = context.args;
