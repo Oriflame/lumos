@@ -38,7 +38,7 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
-    "@oriflame/conventional-changelog-lint-config": "^1.1.4",
+    "@oriflame/conventional-changelog-lint-config": "^1.1.5",
     "eslint-find-rules": "^4.0.0",
     "graphql": "^16.0.1",
     "graphql-tag": "^2.12.6",

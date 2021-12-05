@@ -41,7 +41,7 @@
     "@oriflame/config-jest": "4.3.0",
     "@oriflame/config-prettier": "^4.3.0",
     "@oriflame/config-webpack": "4.3.0",
-    "@oriflame/conventional-changelog": "^1.2.2",
+    "@oriflame/conventional-changelog": "^1.2.3",
     "@oriflame/lumos-common": "^4.3.0",
     "chalk": "^5.0.0",
     "check-node-version": "^4.2.1",

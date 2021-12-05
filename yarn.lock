@@ -2593,10 +2593,10 @@
   dependencies:
     webpack-sources "^2.2.0"
 
-"@next/eslint-plugin-next@^12.0.4":
-  version "12.0.4"
-  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-12.0.4.tgz#f1751715634e200a868aa3fa42b4c3391254de81"
-  integrity sha512-3N+LG+wQQB0JLfMj4YKkefWnjcsFVBmixRWdzbVBnt/cxbVZ0izf+BR1MzvrPX1oaP0OrYk8X/9Mn9Yftuajvg==
+"@next/eslint-plugin-next@^12.0.7":
+  version "12.0.7"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-12.0.7.tgz#2c71bb66b8f8ff1080086342113406aa3156976f"
+  integrity sha512-xk7eMjw4+roWWR/0ETIoToCNs2wdvCGgQUiUO390Rj33/82yxZsh+ODRSaFWkiKp8zHWQN5GCW+U5pfjt/gyQg==
   dependencies:
     glob "7.1.7"
 
@@ -2850,24 +2850,24 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
-"@oriflame/conventional-changelog-lint-config@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.1.4.tgz#b9ec6f15880c60038fb234ac7937ad5a5102df10"
-  integrity sha512-t17jYvi4i8CxdRjtI+v7+XYSd14IbQbB+6DT6OhjQOnBUXWfK9BawIoYZ48AolnTk9b2rCEPvJHf8jOfxNIceA==
+"@oriflame/conventional-changelog-lint-config@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-lint-config/-/conventional-changelog-lint-config-1.1.5.tgz#8ca1540bdb658b417e49cb09c085a426e9a9d7fc"
+  integrity sha512-eU2PRuIGIY5fQghJfwzJNY9pE9FUlzOq3s4AGDAA2wr8A7GXmxJH9tXna9yAO1oHwd3SPnHUd1FRkMAIMlVNFQ==
   dependencies:
-    "@oriflame/conventional-changelog-types" "^1.0.7"
+    "@oriflame/conventional-changelog-types" "^1.0.8"
 
-"@oriflame/conventional-changelog-types@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-types/-/conventional-changelog-types-1.0.7.tgz#d309cfd20b9a95b02bdd1517e32a9d5b3b9a2fdd"
-  integrity sha512-G+ckh8fZ1cFtEZZ2TOBQkaOoGQS8irGfPoycZRVpucf/7TlR8UZi/LD42RZu1iqczT5+eu92MYXxT1MmMpKFyQ==
+"@oriflame/conventional-changelog-types@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog-types/-/conventional-changelog-types-1.0.8.tgz#80070d1936299abceec2c70395ce8d3a58088148"
+  integrity sha512-/quLmPkT8sgHmGB5ymDysfB0UmiuwCxGDvrLwY+WDGpW58wCR030sm7SD/2vjkiPUvUFWNhf1/YgUkaLNM+rzQ==
 
-"@oriflame/conventional-changelog@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-1.2.2.tgz#46b0dac2dd549d2f7b36887beb20bd717275a7f0"
-  integrity sha512-dMayMsquOWQRbyz/KE7OHrl3oTiobjhI6ZrztC10Fk8HcIBMf1kEiKuAfzuFD70MxUdAroklQtiqAckUQYY5pA==
+"@oriflame/conventional-changelog@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@oriflame/conventional-changelog/-/conventional-changelog-1.2.3.tgz#b68ad7efcb049994b4ad2023cb1e26e04efb86d5"
+  integrity sha512-fKUPpGRlF0KAHdj+tZ8L/zlNuwCBQ1xRPBiQWGVtDJf8C8TrHKNSgcL9iLqrsAUxDnE7x4ezoPuoNTkBkoY2PA==
   dependencies:
-    "@oriflame/conventional-changelog-types" "^1.0.7"
+    "@oriflame/conventional-changelog-types" "^1.0.8"
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.3":
   version "0.5.3"
@@ -10982,10 +10982,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.0.tgz#a6370e2d4594e093270419d9cc47f7670488f893"
-  integrity sha512-FM/zAKgWTxj40rH03VxzIPdXmj39SwSjwG0heUcNFwI+EMZJnY93yAiKXM3dObIKAM5TA88werc8T/EwhB45eg==
+prettier@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 pretty-error@^4.0.0:
   version "4.0.0"
