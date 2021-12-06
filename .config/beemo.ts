@@ -7,7 +7,7 @@ const config: BeemoConfig = {
     'eslint',
     'jest',
     'prettier',
-    ['typescript', { declarationOnly: false, buildFolder: 'lib' }],
+    ['typescript', { declarationOnly: false }],
     'webpack',
   ],
   settings: {
