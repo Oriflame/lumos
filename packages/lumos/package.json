@@ -10,7 +10,8 @@
     "developer",
     "tool"
   ],
-  "main": "src/index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git",
@@ -22,9 +23,7 @@
     "access": "public"
   },
   "bin": {
-    "lumos": "./bin/lumos",
-    "lumos-setup": "./bin/lumos-setup",
-    "lumos-eject": "./bin/lumos-eject"
+    "lumos": "./bin/lumos"
   },
   "engines": {
     "node": ">=14"
