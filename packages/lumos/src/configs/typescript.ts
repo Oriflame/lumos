@@ -32,8 +32,8 @@ const compilerOptions: TypeScriptConfig['compilerOptions'] = {
   experimentalDecorators: Boolean(decorators),
   forceConsistentCasingInFileNames: true,
   isolatedModules: !future && !library,
-  lib: ['esnext'],
-  module: 'commonjs',
+  lib: ['dom.iterable', 'esnext'],
+  module: node ? 'commonjs' : 'esnext',
   moduleResolution: 'node',
   noEmitOnError: true,
   noImplicitReturns: true,
@@ -45,7 +45,7 @@ const compilerOptions: TypeScriptConfig['compilerOptions'] = {
   skipLibCheck,
   emitDeclarationOnly: declarationOnly,
   sourceMap: Boolean(context.getRiskyOption('sourceMaps')),
-  target: node ? 'es2018' : 'es5',
+  target: future || node ? 'es2018' : 'es2015',
   useDefineForClassFields: future && process.env.NODE_ENV === 'development',
 };
 
