@@ -21,6 +21,10 @@
   "engines": {
     "node": ">=10.16.0"
   },
+  "files": [
+    "lib/**/*.{js,map,d.ts}",
+    "src/**/*.{ts,tsx,json}"
+  ],
   "devDependencies": {
     "@beemo/core": "^2.1.2",
     "@beemo/driver-prettier": "^2.0.4",

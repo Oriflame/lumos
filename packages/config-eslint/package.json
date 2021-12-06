@@ -24,6 +24,10 @@
   "engines": {
     "node": ">=10.16.0"
   },
+  "files": [
+    "lib/**/*.{js,map,d.ts}",
+    "src/**/*.{ts,tsx,json}"
+  ],
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",

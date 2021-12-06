@@ -24,6 +24,10 @@
   "bin": {
     "lumos-webpack-server": "./bin/server"
   },
+  "files": [
+    "lib/**/*.{js,map,d.ts}",
+    "src/**/*.{ts,tsx,json}"
+  ],
   "devDependencies": {
     "@beemo/core": "^2.1.2",
     "@beemo/driver-webpack": "^2.0.4",
