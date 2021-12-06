@@ -20,6 +20,7 @@
     "removeComments": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "emitDeclarationOnly": false,
     "sourceMap": false,
     "target": "es2018",
     "useDefineForClassFields": false,

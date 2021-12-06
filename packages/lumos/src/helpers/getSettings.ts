@@ -41,6 +41,7 @@ export interface LumosSettings {
   entryPoint?: string;
   publicPath?: string;
   root?: string;
+  declarationOnly?: boolean;
   parallel?: boolean | number | string;
   testResultFileName?: string;
   emptyBabelConfig: boolean;

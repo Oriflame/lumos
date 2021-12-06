@@ -6,6 +6,8 @@ const { context, tool } = process.beemo;
 const settings = getSettings();
 const { options } = tool.driverRegistry.get('typescript');
 
+console.log(options);
+
 const {
   buildFolder,
   srcFolder,
@@ -19,6 +21,7 @@ const {
   allowJs,
   skipLibCheck,
   declarationDir,
+  declarationOnly = false,
 } = { ...settings, ...options };
 
 const compilerOptions: TypeScriptConfig['compilerOptions'] = {
@@ -40,6 +43,7 @@ const compilerOptions: TypeScriptConfig['compilerOptions'] = {
   removeComments: false,
   resolveJsonModule: true,
   skipLibCheck,
+  emitDeclarationOnly: declarationOnly,
   sourceMap: Boolean(context.getRiskyOption('sourceMaps')),
   target: node ? 'es2018' : 'es5',
   useDefineForClassFields: future && process.env.NODE_ENV === 'development',
