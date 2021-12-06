@@ -71,4 +71,4 @@ const config: TypeScriptConfig = {
   include,
 };
 
-export default config;
+export = config;

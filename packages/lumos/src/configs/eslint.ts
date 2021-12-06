@@ -41,7 +41,8 @@ if (workspacesEnabled) {
 } else {
   project = Path.resolve('tsconfig.json');
 }
-export default {
+
+export = {
   extends: getExtendsList({
     future,
     node,

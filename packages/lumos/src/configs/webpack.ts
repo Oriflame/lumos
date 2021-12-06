@@ -21,7 +21,7 @@ const {
   sharedModulesManifestPath,
 } = { ...settings, ...options };
 
-export default getConfig({
+export = getConfig({
   analyzeBundle: !!process.env.WEBPACK_ANALYZE,
   parallel: process.env.WEBPACK_PARALLEL,
   port: process.env.PORT,
