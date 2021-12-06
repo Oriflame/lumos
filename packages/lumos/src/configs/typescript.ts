@@ -6,8 +6,6 @@ const { context, tool } = process.beemo;
 const settings = getSettings();
 const { options } = tool.driverRegistry.get('typescript');
 
-console.log(options);
-
 const {
   buildFolder,
   srcFolder,

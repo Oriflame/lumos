@@ -25,13 +25,19 @@
     "lumos-webpack-server": "./bin/server"
   },
   "devDependencies": {
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-webpack": "^2.0.4",
     "@types/webpack-bundle-analyzer": "^4.4.1",
-    "react": "*"
+    "react": "*",
+    "webpack": "^5.64.4"
+  },
+  "peerDependencies": {
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-webpack": "^2.0.4",
+    "webpack": "^5.64.4"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@beemo/core": "^2.1.2",
-    "@beemo/driver-webpack": "^2.0.4",
     "@module-federation/concat-runtime": "^0.0.1",
     "@oriflame/lumos-common": "^4.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
@@ -60,7 +66,6 @@
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.2.5",
     "url-loader": "^4.1.1",
-    "webpack": "^5.64.4",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "4.9.1",
     "webpack-dev-server": "^4.6.0",
