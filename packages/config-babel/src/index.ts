@@ -7,7 +7,7 @@ import {
   WEB_TARGET,
 } from '@oriflame/lumos-common';
 
-export type { BabelConfig };
+export { BabelConfig };
 
 interface BabelOptions {
   env?: LumosEnvSetting;

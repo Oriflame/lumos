@@ -10,7 +10,7 @@ export interface ESLintOptions {
   prettier?: boolean;
 }
 
-export type { ESLintConfig };
+export { ESLintConfig };
 
 function fromHere(filePath: string): string {
   return `./${new Path(process.cwd())

@@ -216,4 +216,4 @@ export function getConfig({
     : baseConfig;
 }
 
-export type { WebpackConfig };
+export { WebpackConfig };

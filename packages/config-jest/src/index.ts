@@ -10,7 +10,7 @@ import {
   TJSX_EXT_PATTERN,
 } from '@oriflame/lumos-common';
 
-export type { JestConfig };
+export { JestConfig };
 
 export interface JestOptions {
   graphql?: boolean;

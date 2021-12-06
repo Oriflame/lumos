@@ -17,14 +17,7 @@ function hasNoParams(context: DriverContext, name: string): boolean {
 
 export type LumosConfig = BeemoConfig<LumosSettings>;
 
-export type {
-  BabelConfig,
-  ESLintConfig,
-  JestConfig,
-  PrettierConfig,
-  WebpackConfig,
-  TypeScriptConfig,
-};
+export { BabelConfig, ESLintConfig, JestConfig, PrettierConfig, WebpackConfig, TypeScriptConfig };
 
 export default function cli(tool: Tool) {
   const usingTypescript = tool.driverRegistry.isRegistered('typescript');
@@ -37,17 +30,15 @@ export default function cli(tool: Tool) {
    * - Add source and output dirs by default.
    */
   tool.onRunDriver.listen((context, _) => {
-    const { esmBuildFolder, buildFolder, srcFolder } = tool.config.settings;
+    const { esmBuildFolder, buildFolder, srcFolder } = tool.config
+      .settings as unknown as LumosSettings;
     if (usingTypescript && !context.getRiskyOption('extensions')) {
       context.addOption('--extensions', exts.join(','));
     }
 
     if (hasNoParams(context, 'babel')) {
-      context.addParam(srcFolder as string);
-      context.addOption(
-        '--out-dir',
-        context.getRiskyOption('esm') ? (esmBuildFolder as string) : (buildFolder as string),
-      );
+      context.addParam(srcFolder);
+      context.addOption('--out-dir', context.getRiskyOption('esm') ? esmBuildFolder : buildFolder);
     }
   }, 'babel');
 
@@ -58,7 +49,7 @@ export default function cli(tool: Tool) {
    * - Create a `tsconfig.eslint.json` file.
    */
   tool.onRunDriver.listen((context) => {
-    const { srcFolder, testsFolder } = tool.config.settings;
+    const { srcFolder, testsFolder } = tool.config.settings as unknown as LumosSettings;
     context.addOptions(['--cache', '--color']);
 
     if (usingTypescript && !context.getRiskyOption('ext')) {
@@ -74,7 +65,7 @@ export default function cli(tool: Tool) {
         });
       }
     } else {
-      context.addParams([srcFolder as string, testsFolder as string]);
+      context.addParams([srcFolder, testsFolder]);
     }
 
     // Generate prettier config for the prettier rules
