@@ -11,4 +11,4 @@ process.env.BEEMO_CONFIG_MODULE = '@oriflame/lumos';
 
 process.env.BEEMO_MANUAL_URL = 'https://github.com/Oriflame/lumos';
 
-require('@beemo/cli');
+require('@beemo/cli/lib/bin');
