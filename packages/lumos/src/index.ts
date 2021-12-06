@@ -15,7 +15,7 @@ function hasNoParams(context: DriverContext, name: string): boolean {
   return params.length === 0 || (params.length === 1 && params[0] === name);
 }
 
-export type LumosConfig = BeemoConfig<LumosSettings>;
+export type LumosConfig = BeemoConfig<Partial<LumosSettings>>;
 
 export { BabelConfig, ESLintConfig, JestConfig, PrettierConfig, WebpackConfig, TypeScriptConfig };
 
