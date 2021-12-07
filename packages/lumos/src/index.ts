@@ -5,12 +5,13 @@ import { ESLintConfig } from '@oriflame/config-eslint';
 import { JestConfig } from '@oriflame/config-jest';
 import { PrettierConfig } from '@oriflame/config-prettier';
 import { WebpackConfig } from '@oriflame/config-webpack';
-import { DIR_PATTERN_LIST } from '@oriflame/lumos-common';
+import { DIR_PATTERN_LIST, DIRS } from '@oriflame/lumos-common';
 
 import { LumosSettings, getSettings } from './helpers/getSettings';
 
 function hasNoParams(context: DriverContext, name: string): boolean {
   const { params } = context.args;
+  console.log(params, params.length === 0 || (params.length === 1 && params[0] === name));
 
   return params.length === 0 || (params.length === 1 && params[0] === name);
 }
@@ -63,9 +64,9 @@ export default function cli(tool: Tool) {
             new Path(wsPrefix, `{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`).path(),
           );
         });
+      } else {
+        context.addParams([...DIRS, srcFolder, testsFolder]);
       }
-    } else {
-      context.addParams([srcFolder, testsFolder]);
     }
 
     // Generate prettier config for the prettier rules
