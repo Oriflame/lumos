@@ -7,7 +7,7 @@ import { PrettierConfig } from '@oriflame/config-prettier';
 import { WebpackConfig } from '@oriflame/config-webpack';
 import { DIR_PATTERN_LIST } from '@oriflame/lumos-common';
 
-import { LumosSettings } from './helpers/getSettings';
+import { LumosSettings, getSettings } from './helpers/getSettings';
 
 function hasNoParams(context: DriverContext, name: string): boolean {
   const { params } = context.args;
@@ -20,6 +20,7 @@ export type LumosConfig = BeemoConfig<Partial<LumosSettings>>;
 export { BabelConfig, ESLintConfig, JestConfig, PrettierConfig, WebpackConfig, TypeScriptConfig };
 
 export default function cli(tool: Tool) {
+  const { srcFolder, testsFolder, esmBuildFolder, buildFolder } = getSettings();
   const usingTypescript = tool.driverRegistry.isRegistered('typescript');
   const workspaces = tool.project.getWorkspaceGlobs({ relative: true });
   const exts = ['.ts', '.tsx', '.js', '.jsx'];
@@ -30,8 +31,8 @@ export default function cli(tool: Tool) {
    * - Add source and output dirs by default.
    */
   tool.onRunDriver.listen((context, _) => {
-    const { esmBuildFolder, buildFolder, srcFolder } = tool.config
-      .settings as unknown as LumosSettings;
+    context.addOption('--copy-files');
+
     if (usingTypescript && !context.getRiskyOption('extensions')) {
       context.addOption('--extensions', exts.join(','));
     }
@@ -49,7 +50,6 @@ export default function cli(tool: Tool) {
    * - Create a `tsconfig.eslint.json` file.
    */
   tool.onRunDriver.listen((context) => {
-    const { srcFolder, testsFolder } = tool.config.settings as unknown as LumosSettings;
     context.addOptions(['--cache', '--color']);
 
     if (usingTypescript && !context.getRiskyOption('ext')) {
