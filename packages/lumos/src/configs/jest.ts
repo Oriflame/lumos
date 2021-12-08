@@ -11,7 +11,7 @@ const { coverage, graphql, react, srcFolder, testsFolder, node } = { ...settings
 
 const workspacesEnabled = !!tool.package.workspaces;
 
-export = getConfig({
+const config = getConfig({
   srcFolder,
   testsFolder,
   graphql,
@@ -20,3 +20,5 @@ export = getConfig({
   threshold: coverage,
   workspaces: workspacesEnabled ? tool.project.getWorkspaceGlobs({ relative: true }) : undefined,
 });
+
+export default config;

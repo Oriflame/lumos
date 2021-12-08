@@ -53,7 +53,7 @@ export default function lumos(tool: Tool) {
    * - Create a `tsconfig.eslint.json` file.
    */
   tool.onRunDriver.listen((context) => {
-    context.addOptions(['--cache', '--color']);
+    context.addOptions(['--cache', '--color', '--report-unused-disable-directives']);
 
     if (usingTypescript && !context.getRiskyOption('ext')) {
       context.addOption('--ext', exts.join(','));

@@ -42,7 +42,7 @@ if (workspacesEnabled) {
   project = Path.resolve('tsconfig.json');
 }
 
-export = {
+const config = {
   extends: getExtendsList({
     future,
     node,
@@ -52,3 +52,5 @@ export = {
   }),
   ignore: getIgnoreList(),
 };
+
+export default config;

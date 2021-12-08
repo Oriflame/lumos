@@ -1,5 +1,3 @@
-import { getConfig } from '@oriflame/config-prettier';
+import config from '@oriflame/config-prettier';
 
-const config = getConfig();
-
-export = config;
+export default config;

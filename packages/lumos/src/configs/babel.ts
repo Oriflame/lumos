@@ -19,7 +19,7 @@ const {
   moduleFederationConfig,
 } = { ...settings, ...options };
 
-export = getConfig({
+const config = getConfig({
   env,
   esm: !!(context.getRiskyOption('esm') || process.env.ESM),
   graphql,
@@ -32,3 +32,5 @@ export = getConfig({
   srcFolder,
   moduleFederationEnabled: Boolean(moduleFederationConfig),
 });
+
+export default config;
