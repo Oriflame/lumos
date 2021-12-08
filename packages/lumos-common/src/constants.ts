@@ -18,9 +18,9 @@ export const GQL_EXT_PATTERN = /\.(gql|graphql)$/;
 
 export const ALIAS_PATTERN = '~';
 
-export const DIRS = ['bin', 'hooks', 'scripts'];
+export const ESLINT_DIRS = ['bin', 'hooks', 'scripts'];
 
-export const DIR_PATTERN_LIST = DIRS.join(',');
+export const DIR_PATTERN_LIST = ESLINT_DIRS.join(',');
 
 export const IGNORE_PATHS = [
   '.next/',

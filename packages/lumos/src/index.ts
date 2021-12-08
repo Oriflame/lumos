@@ -5,7 +5,7 @@ import { ESLintConfig } from '@oriflame/config-eslint';
 import { JestConfig } from '@oriflame/config-jest';
 import { PrettierConfig } from '@oriflame/config-prettier';
 import { WebpackConfig } from '@oriflame/config-webpack';
-import { DIR_PATTERN_LIST, DIRS } from '@oriflame/lumos-common';
+import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
 
 import { LumosSettings, getSettings } from './helpers/getSettings';
 
@@ -65,7 +65,7 @@ export default function cli(tool: Tool) {
           );
         });
       } else {
-        context.addParams([srcFolder, testsFolder].push(...DIRS));
+        context.addParams([srcFolder, testsFolder, ...ESLINT_DIRS]);
       }
     }
 
