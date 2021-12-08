@@ -23,7 +23,12 @@
   },
   "files": [
     "lib/**/*.{js,map,d.ts}",
-    "src/**/*.{ts,tsx,json}"
+    "src/**/*.{ts,tsx,json}",
+    "setup/*",
+    "transformers/*",
+    "serializers/*",
+    "mocks/*",
+    "bootstrap/*"
   ],
   "dependencies": {
     "@babel/core": "^7.16.0",

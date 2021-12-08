@@ -40,7 +40,10 @@ export default function cli(tool: Tool) {
 
     if (hasNoParams(context, 'babel')) {
       context.addParam(srcFolder);
-      context.addOption('--out-dir', context.getRiskyOption('esm') ? esmBuildFolder : buildFolder);
+      context.addOption(
+        '--out-dir',
+        tool.config.settings.esm || context.getRiskyOption('esm') ? esmBuildFolder : buildFolder,
+      );
     }
   }, 'babel');
 
@@ -59,6 +62,7 @@ export default function cli(tool: Tool) {
 
     if (hasNoParams(context, 'eslint')) {
       if (workspaces.length > 0) {
+        console.log(workspaces.length);
         workspaces.forEach((wsPrefix) => {
           context.addParam(
             new Path(wsPrefix, `{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`).path(),
