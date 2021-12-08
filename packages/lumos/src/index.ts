@@ -65,7 +65,7 @@ export default function cli(tool: Tool) {
           );
         });
       } else {
-        context.addParams([...DIRS, srcFolder, testsFolder]);
+        context.addParams([srcFolder, testsFolder].push(...DIRS));
       }
     }
 
