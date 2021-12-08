@@ -215,5 +215,3 @@ export function getConfig({
     ? merge<WebpackConfig>(baseConfig, require(customConfigPath) as WebpackConfig)
     : baseConfig;
 }
-
-export { WebpackConfig };

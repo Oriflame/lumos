@@ -1,8 +1,6 @@
 import type { PrettierConfig } from '@beemo/driver-prettier';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
-export { PrettierConfig };
-
 const config = {
   ...(require('prettier-config-oriflame') as PrettierConfig),
   ignore: [

@@ -1,5 +1,5 @@
 import { Path } from '@beemo/core';
-import { JestConfig } from '@beemo/driver-jest';
+import type { JestConfig } from '@beemo/driver-jest';
 import {
   ALIAS_PATTERN,
   ASSET_EXT_PATTERN,
@@ -9,8 +9,6 @@ import {
   IGNORE_PATHS,
   TJSX_EXT_PATTERN,
 } from '@oriflame/lumos-common';
-
-export { JestConfig };
 
 export interface JestOptions {
   graphql?: boolean;

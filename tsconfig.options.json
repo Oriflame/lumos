@@ -19,6 +19,7 @@
     "removeComments": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "declarationDir": "dts",
     "emitDeclarationOnly": true,
     "sourceMap": false,
     "target": "es2020",

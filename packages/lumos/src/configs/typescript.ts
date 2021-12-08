@@ -7,10 +7,10 @@ const settings = getSettings();
 const { options } = tool.driverRegistry.get('typescript');
 
 const {
-  buildFolder,
-  srcFolder,
-  testsFolder,
-  typesFolder,
+  // buildFolder,
+  // srcFolder,
+  // testsFolder,
+  // typesFolder,
   node,
   decorators,
   react,
@@ -18,6 +18,7 @@ const {
   future,
   allowJs,
   skipLibCheck,
+  declarationDir,
   declarationOnly = false,
 } = { ...settings, ...options };
 
@@ -39,6 +40,7 @@ const compilerOptions: TypeScriptConfig['compilerOptions'] = {
   removeComments: false,
   resolveJsonModule: true,
   skipLibCheck,
+  declarationDir,
   emitDeclarationOnly: declarationOnly,
   sourceMap: Boolean(context.getRiskyOption('sourceMaps')),
   target: future || node ? 'es2020' : 'es2015',
