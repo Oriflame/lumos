@@ -2,20 +2,6 @@ import { PrettierConfig } from '@beemo/driver-prettier';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
 export { PrettierConfig };
-function getIgnoreList(): string[] {
-  return [
-    ...IGNORE_PATHS,
-    'npm-shrinkwrap.json',
-    'package-lock.json',
-    'tsconfig.json',
-    'tsconfig.eslint.json',
-    'tsconfig.options.json',
-    'CHANGELOG.md',
-    'jest.config.js',
-    'babel.config.js',
-    'webpack.config.js',
-  ];
-}
 
 const config = {
   printWidth: 100,
@@ -31,7 +17,19 @@ const config = {
   arrowParens: 'always',
   requirePragma: false,
   proseWrap: 'always',
-  ignore: getIgnoreList(),
+  ignore: [
+    ...IGNORE_PATHS,
+    'npm-shrinkwrap.json',
+    'package-lock.json',
+    'yarn.lock',
+    'tsconfig.json',
+    'tsconfig.eslint.json',
+    'tsconfig.options.json',
+    'CHANGELOG.md',
+    'jest.config.js',
+    'babel.config.js',
+    'webpack.config.js',
+  ],
 };
 
 export default config;
