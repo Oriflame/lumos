@@ -6,14 +6,11 @@ import { JestConfig } from '@oriflame/config-jest';
 import { PrettierConfig } from '@oriflame/config-prettier';
 import { WebpackConfig } from '@oriflame/config-webpack';
 import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
-import fs from 'fs';
-import Path from 'path';
 
 import { LumosSettings, getSettings } from './helpers/getSettings';
 
 function hasNoParams(context: DriverContext, name: string): boolean {
   const { params } = context.args;
-  console.log(params, params.length === 0 || (params.length === 1 && params[0] === name));
 
   return params.length === 0 || (params.length === 1 && params[0] === name);
 }
@@ -22,12 +19,10 @@ export type LumosConfig = BeemoConfig<Partial<LumosSettings>>;
 
 export { BabelConfig, ESLintConfig, JestConfig, PrettierConfig, WebpackConfig, TypeScriptConfig };
 
-export default function cli(tool: Tool) {
+export default function lumos(tool: Tool) {
   const { srcFolder, testsFolder, esmBuildFolder, buildFolder } = getSettings();
   const usingTypescript = tool.driverRegistry.isRegistered('typescript');
   const workspaces = tool.project.getWorkspaceGlobs({ relative: true });
-  fs.writeFileSync(Path.join(__dirname, 'a.log'), JSON.stringify(workspaces));
-
   const exts = ['.ts', '.tsx', '.js', '.jsx'];
 
   /**
@@ -35,7 +30,7 @@ export default function cli(tool: Tool) {
    * - Add default extensions.
    * - Add source and output dirs by default.
    */
-  tool.onRunDriver.listen((context, _) => {
+  tool.onRunDriver.listen((context) => {
     context.addOption('--copy-files');
 
     if (usingTypescript && !context.getRiskyOption('extensions')) {
@@ -65,8 +60,6 @@ export default function cli(tool: Tool) {
     }
 
     if (hasNoParams(context, 'eslint')) {
-      fs.writeFileSync(Path.join(__dirname, 'b.log'), JSON.stringify(context));
-
       if (workspaces.length > 0) {
         workspaces.forEach((wsPrefix) => {
           context.addParam(`${wsPrefix}/{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`);
