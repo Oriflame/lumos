@@ -18,7 +18,6 @@ const {
   future,
   allowJs,
   skipLibCheck,
-  declarationDir,
   declarationOnly = false,
 } = { ...settings, ...options };
 
@@ -30,12 +29,11 @@ const compilerOptions: TypeScriptConfig['compilerOptions'] = {
   experimentalDecorators: Boolean(decorators),
   forceConsistentCasingInFileNames: true,
   isolatedModules: !future && !library,
-  lib: ['dom.iterable', 'esnext'],
-  module: node ? 'commonjs' : 'esnext',
+  lib: ['esnext'],
+  module: 'esnext',
   moduleResolution: 'node',
   noEmitOnError: true,
   noImplicitReturns: true,
-  declarationDir,
   pretty: true,
   strict: true,
   removeComments: false,
@@ -43,27 +41,23 @@ const compilerOptions: TypeScriptConfig['compilerOptions'] = {
   skipLibCheck,
   emitDeclarationOnly: declarationOnly,
   sourceMap: Boolean(context.getRiskyOption('sourceMaps')),
-  target: future || node ? 'es2018' : 'es2015',
+  target: future || node ? 'es2020' : 'es2015',
   useDefineForClassFields: future && process.env.NODE_ENV === 'development',
 };
 
 const include: string[] = [];
 
-if (react) {
-  compilerOptions.lib!.push('dom');
-  compilerOptions.jsx = 'react-jsx';
+if (tool.package.workspaces) {
+  compilerOptions.composite = true;
+  compilerOptions.declaration = true;
+  compilerOptions.declarationMap = true;
+  compilerOptions.emitDeclarationOnly = true;
+  compilerOptions.noEmitOnError = false;
 }
 
-if (!context.getRiskyOption('referenceWorkspaces')) {
-  include.push(`./${srcFolder}/**/*`, `./${typesFolder}/**/*`);
-
-  // When --noEmit is passed, we want to run the type checker and include test files.
-  // Otherwise, we do not want to emit declarations for test files.
-  if (context.getRiskyOption('noEmit')) {
-    include.push(`./${testsFolder}/**/*`);
-  }
-
-  compilerOptions.outDir = `./${buildFolder}`;
+if (react) {
+  compilerOptions.lib!.push('dom', 'dom.iterable');
+  compilerOptions.jsx = 'react-jsx';
 }
 
 const config: TypeScriptConfig = {

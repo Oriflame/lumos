@@ -1,3 +1,1 @@
-import config from '@oriflame/config-prettier';
-
-export default config;
+export { default } from '@oriflame/config-prettier';
