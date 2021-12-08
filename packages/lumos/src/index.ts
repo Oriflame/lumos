@@ -1,4 +1,4 @@
-import { BeemoConfig, DriverContext, Path, Tool } from '@beemo/core';
+import { BeemoConfig, DriverContext, Tool } from '@beemo/core';
 import { TypeScriptConfig } from '@beemo/driver-typescript';
 import { BabelConfig } from '@oriflame/config-babel';
 import { ESLintConfig } from '@oriflame/config-eslint';
@@ -6,6 +6,8 @@ import { JestConfig } from '@oriflame/config-jest';
 import { PrettierConfig } from '@oriflame/config-prettier';
 import { WebpackConfig } from '@oriflame/config-webpack';
 import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
+import fs from 'fs';
+import Path from 'path';
 
 import { LumosSettings, getSettings } from './helpers/getSettings';
 
@@ -24,6 +26,8 @@ export default function cli(tool: Tool) {
   const { srcFolder, testsFolder, esmBuildFolder, buildFolder } = getSettings();
   const usingTypescript = tool.driverRegistry.isRegistered('typescript');
   const workspaces = tool.project.getWorkspaceGlobs({ relative: true });
+  fs.writeFileSync(Path.join(__dirname, 'a.log'), JSON.stringify(workspaces));
+
   const exts = ['.ts', '.tsx', '.js', '.jsx'];
 
   /**
@@ -61,6 +65,8 @@ export default function cli(tool: Tool) {
     }
 
     if (hasNoParams(context, 'eslint')) {
+      fs.writeFileSync(Path.join(__dirname, 'b.log'), JSON.stringify(context));
+
       if (workspaces.length > 0) {
         workspaces.forEach((wsPrefix) => {
           context.addParam(`${wsPrefix}/{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`);
