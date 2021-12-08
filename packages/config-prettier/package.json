@@ -32,7 +32,8 @@
     "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@oriflame/lumos-common": "^4.3.0"
+    "@oriflame/lumos-common": "^4.3.0",
+    "prettier-config-oriflame": "1.0.0"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",

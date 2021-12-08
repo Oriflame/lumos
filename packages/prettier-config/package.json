@@ -1,0 +1,24 @@
+{
+  "name": "prettier-config-oriflame",
+  "version": "1.0.0",
+  "description": "Reusable Prettier config for lumos configured projects.",
+  "keywords": [
+    "prettier",
+    "config",
+    "lumos"
+  ],
+  "main": "./prettier.json",
+  "files": [
+    "prettier.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oriflame/lumos.git",
+    "directory": "packages/prettier-config"
+  },
+  "author": "Jan Silhan",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
