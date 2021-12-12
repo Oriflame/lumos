@@ -1,14 +1,6 @@
 import { Path } from '@beemo/core';
 import type { JestConfig } from '@beemo/driver-jest';
-import {
-  ALIAS_PATTERN,
-  ASSET_EXT_PATTERN,
-  CSS_EXT_PATTERN,
-  EXTS,
-  GQL_EXT_PATTERN,
-  IGNORE_PATHS,
-  TJSX_EXT_PATTERN,
-} from '@oriflame/lumos-common';
+import { ALIAS_PATTERN, EXTS, GQL_EXT_PATTERN, TJSX_EXT_PATTERN } from '@oriflame/lumos-common';
 
 export interface JestOptions {
   graphql?: boolean;
@@ -52,26 +44,24 @@ export function getConfig({
   testResultFileName = 'TEST-RESULTS.xml',
   enableConsoleMocks = true,
 }: JestOptions): JestConfig {
-  const roots: string[] = [];
-  const setupFiles = [fromHere('setup/shims.js')];
+  let projects: string[] | undefined;
+  const setupFiles: string[] = [];
 
   if (enableConsoleMocks) {
     setupFiles.push(fromHere('setup/console.js'));
   }
 
-  const setupFilesAfterEnv = [fromHere('bootstrap/consumer.js')];
+  const setupFilesAfterEnv: string[] = [];
 
   if (workspaces.length > 0) {
+    projects = [];
     workspaces.forEach((wsPath) => {
-      roots.push(new Path('<rootDir>', wsPath.replace('/*', '')).path());
+      projects!.push(new Path('<rootDir>', wsPath.replace('/*', '')).path());
     });
-  } else {
-    roots.push('<rootDir>');
   }
 
   if (react) {
     setupFiles.push(fromHere('setup/dom.js'));
-    setupFilesAfterEnv.unshift(fromHere('bootstrap/react.js'));
   }
 
   if (graphql) {
@@ -81,11 +71,10 @@ export function getConfig({
   setupFilesAfterEnv.push('@testing-library/jest-dom/extend-expect');
 
   const config: JestConfig = {
+    preset: 'jest-preset-oriflame',
     bail: false,
     collectCoverageFrom: [createCoveragePattern(srcFolder), createCoveragePattern(testsFolder)],
-    coverageDirectory: './coverage',
-    coveragePathIgnorePatterns: IGNORE_PATHS.filter((ignore) => !ignore.startsWith('*')),
-    coverageReporters: ['lcov', 'json-summary', 'html', 'cobertura'],
+    collectCoverage: true,
     coverageThreshold: {
       global: {
         branches: threshold,
@@ -94,24 +83,13 @@ export function getConfig({
         statements: threshold,
       },
     },
-    globals: {
-      __DEV__: true,
-    },
-    // Add custom mock extension so libs can export mocks
-    moduleFileExtensions: ['mock.js', ...exts, 'node'],
     moduleNameMapper: {
-      [`^.+${ASSET_EXT_PATTERN.source}`]: fromHere('mocks/file.js'),
-      [`^.+${CSS_EXT_PATTERN.source}`]: fromHere('mocks/file.js'),
       [`^${ALIAS_PATTERN}/(.*)`]: `<rootDir>/${srcFolder}/$1`,
     },
-    roots,
+    projects,
     setupFiles,
     setupFilesAfterEnv,
     testEnvironment: node && !react ? 'node' : 'jsdom',
-    transformIgnorePatterns: ['/node_modules/', '/esm/', '/lib/'],
-    testURL: 'http://localhost',
-    timers: 'fake',
-    verbose: false,
     reporters: ['default', ['jest-junit', { outputName: testResultFileName }]],
   };
 

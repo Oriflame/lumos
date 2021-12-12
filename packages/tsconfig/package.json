@@ -1,0 +1,25 @@
+{
+  "name": "tsconfig-oriflame",
+  "version": "1.0.0",
+  "release": "1624590167003",
+  "description": "Pre-packaged tsconfig.json's for oriflame configured projects.",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "oriflame"
+  ],
+  "files": [
+    "tsconfig.json",
+    "tsconfig.workspaces.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oriflame/lumos.git",
+    "directory": "packages/tsconfig"
+  },
+  "author": "Jan Silhan",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

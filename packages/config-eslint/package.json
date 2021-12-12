@@ -7,8 +7,8 @@
     "config",
     "eslint"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git"
@@ -22,44 +22,32 @@
     "check-rules": "ts-node tools/check-rules/index.ts"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
   },
   "files": [
+    "dts/**/*.d.ts",
     "lib/**/*.{js,map,d.ts}",
+    "lib/**/*.{js,map}",
     "src/**/*.{ts,tsx,json}"
   ],
   "dependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/eslint-parser": "^7.16.3",
-    "@next/eslint-plugin-next": "^12.0.7",
     "@oriflame/lumos-common": "^4.3.0",
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
-    "@typescript-eslint/parser": "^5.5.0",
-    "confusing-browser-globals": "^1.0.10",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.3.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-testing-library": "^5.0.1",
-    "eslint-plugin-unicorn": "^39.0.0"
+    "eslint-config-oriflame": "^1.0.0"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.2",
     "@beemo/driver-eslint": "^2.0.3",
-    "@types/confusing-browser-globals": "^1.0.0",
-    "eslint": "^8.4.0",
+    "eslint": "^8.4.1",
     "ts-node": "^10.4.0"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",
     "@beemo/driver-eslint": "^2.0.3",
-    "eslint": "^8.4.0"
+    "eslint": "^8.4.1"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
   }
 }

@@ -8,8 +8,8 @@
     "danger",
     "scripts"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git"
@@ -20,13 +20,23 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.11"
+    "@types/node": "^16.11.12"
   },
   "dependencies": {
     "@oriflame/conventional-changelog": "^1.2.3",
     "danger": "^10.7.1"
-  }
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
+  },
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ]
 }

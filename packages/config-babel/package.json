@@ -7,8 +7,8 @@
     "config",
     "babel"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git"
@@ -19,10 +19,13 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
   },
   "files": [
+    "dts/**/*.d.ts",
     "lib/**/*.{js,map,d.ts}",
+    "lib/**/*.{js,map}",
     "src/**/*.{ts,tsx,json}"
   ],
   "dependencies": {
@@ -56,5 +59,9 @@
     "@babel/core": "^7.16.0",
     "@beemo/core": "^2.1.2",
     "@beemo/driver-babel": "^2.0.4"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
   }
 }

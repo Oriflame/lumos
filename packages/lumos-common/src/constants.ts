@@ -1,3 +1,5 @@
+import path from 'path';
+
 export const EXTS = ['.ts', '.tsx', '.js', '.jsx', '.json'];
 
 export const TJSX_EXTS_GROUP = '{ts,tsx,js,jsx}';
@@ -47,3 +49,8 @@ export const SCAFFOLD_DEPS = [
   'husky',
   'lint-staged',
 ];
+
+export const ROOT = process.env.BEEMO_ROOT || process.cwd();
+
+export const TSCONFIG_JSON_PATH = path.join(ROOT, 'tsconfig.json');
+export const PACKAGE_JSON_PATH = path.join(ROOT, 'package.json');

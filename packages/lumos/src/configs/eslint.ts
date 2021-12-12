@@ -1,5 +1,5 @@
 import { Path } from '@beemo/core';
-import { getExtendsList, getIgnoreList } from '@oriflame/config-eslint';
+import { getConfig } from '@oriflame/config-eslint';
 import fs from 'fs';
 
 import { getSettings } from '../helpers/getSettings';
@@ -10,8 +10,7 @@ const settings = getSettings();
 const { options } = tool.driverRegistry.get('eslint');
 
 const { future, node, nextjs, srcFolder, testsFolder, typesFolder } = { ...settings, ...options };
-
-const workspacesEnabled = !!tool.package.workspaces;
+const workspacesEnabled = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
 
 let project: Path;
 
@@ -42,15 +41,10 @@ if (workspacesEnabled) {
   project = Path.resolve('tsconfig.json');
 }
 
-const config = {
-  extends: getExtendsList({
-    future,
-    node,
-    prettier: tool.driverRegistry.isRegistered('prettier'),
-    typescript: tool.driverRegistry.isRegistered('typescript'),
-    nextjs,
-  }),
-  ignore: getIgnoreList(),
-};
-
-export default config;
+export default getConfig({
+  future,
+  node,
+  prettier: tool.driverRegistry.isRegistered('prettier'),
+  typescript: tool.driverRegistry.isRegistered('typescript'),
+  nextjs,
+});

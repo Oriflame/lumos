@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.options.json",
+  "extends": "tsconfig-oriflame/tsconfig.workspaces.json",
   "files": [],
   "references": [
     {
@@ -12,13 +12,25 @@
       "path": "packages/config-eslint"
     },
     {
+      "path": "packages/config-eslint/test"
+    },
+    {
       "path": "packages/config-jest"
     },
     {
       "path": "packages/config-prettier"
     },
     {
+      "path": "packages/config-typescript"
+    },
+    {
       "path": "packages/config-webpack"
+    },
+    {
+      "path": "packages/jest-preset"
+    },
+    {
+      "path": "packages/eslint-config"
     },
     {
       "path": "packages/lumos"

@@ -7,8 +7,8 @@
     "config",
     "webpack"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git"
@@ -19,13 +19,16 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
   },
   "bin": {
     "lumos-webpack-server": "./bin/server"
   },
   "files": [
+    "dts/**/*.d.ts",
     "lib/**/*.{js,map,d.ts}",
+    "lib/**/*.{js,map}",
     "src/**/*.{ts,tsx,json}"
   ],
   "devDependencies": {
@@ -33,7 +36,7 @@
     "@beemo/driver-webpack": "^2.0.4",
     "@types/webpack-bundle-analyzer": "^4.4.1",
     "react": "*",
-    "webpack": "^5.64.4"
+    "webpack": "^5.65.0"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",
@@ -75,5 +78,9 @@
     "webpack-dev-server": "^4.6.0",
     "webpack-graphql-loader": "^1.0.2",
     "webpack-merge": "^5.8.0"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
   }
 }
