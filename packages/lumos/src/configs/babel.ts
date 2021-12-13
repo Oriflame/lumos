@@ -26,6 +26,7 @@ const config = getConfig({
   react,
   empty,
   srcFolder,
+  workspaces: tool.project.getWorkspaceGlobs({ relative: true }),
 });
 
 export default config;

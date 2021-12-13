@@ -1,8 +1,6 @@
 import type { BabelConfig } from '@beemo/driver-babel';
 import { LumosEnvSetting, NODE_TARGET, WEB_TARGET } from '@oriflame/lumos-common';
 
-const { tool } = process.beemo;
-
 interface BabelOptions {
   env?: LumosEnvSetting;
   esm?: boolean;
@@ -12,6 +10,7 @@ interface BabelOptions {
   react?: boolean;
   empty?: boolean;
   srcFolder: string;
+  workspaces?: string[];
 }
 
 export function getConfig({
@@ -23,6 +22,7 @@ export function getConfig({
   react = false,
   empty = false,
   srcFolder,
+  workspaces,
 }: BabelOptions): BabelConfig {
   if (empty) {
     return {};
@@ -30,7 +30,7 @@ export function getConfig({
 
   const config: BabelConfig = {
     babelrc: true,
-    babelrcRoots: tool.project.getWorkspaceGlobs({ relative: true }),
+    babelrcRoots: workspaces,
     comments: false,
     presets: [
       [
