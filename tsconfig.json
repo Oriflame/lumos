@@ -3,6 +3,9 @@
   "files": [],
   "references": [
     {
+      "path": "packages/babel-preset"
+    },
+    {
       "path": "packages/config-babel"
     },
     {
@@ -10,9 +13,6 @@
     },
     {
       "path": "packages/config-eslint"
-    },
-    {
-      "path": "packages/config-eslint/test"
     },
     {
       "path": "packages/config-jest"
@@ -28,9 +28,6 @@
     },
     {
       "path": "packages/jest-preset"
-    },
-    {
-      "path": "packages/jest-preset/test"
     },
     {
       "path": "packages/eslint-config"
