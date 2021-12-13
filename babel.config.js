@@ -8,6 +8,7 @@ module.exports = {
     'esm/',
     'lib/',
     'tmp/',
+    'babel-preset/lib/index.js',
     'dts/',
     'dist/',
     'build/',
