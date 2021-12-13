@@ -56,7 +56,6 @@ export default function babelPresetOriflame(
         useBuiltIns: false,
         bugfixes: true,
         shippedProposals: true,
-        srcFolder: 'src',
         // Only target node since this is for development
         // Revisit in Babel v8: https://babeljs.io/docs/en/options#no-targets
         targets: targets ?? { node: 'current' },
