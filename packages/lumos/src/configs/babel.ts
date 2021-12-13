@@ -10,13 +10,11 @@ const { options } = tool.driverRegistry.get('babel');
 const {
   graphql,
   library,
-  future,
   node,
   react,
   env,
   emptyBabelConfig: empty,
   srcFolder,
-  moduleFederationConfig,
 } = { ...settings, ...options };
 
 const config = getConfig({
@@ -24,13 +22,10 @@ const config = getConfig({
   esm: !!(context.getRiskyOption('esm') || process.env.ESM),
   graphql,
   library,
-  future,
   node,
   react,
-  typescript: tool.driverRegistry.isRegistered('typescript'),
   empty,
   srcFolder,
-  moduleFederationEnabled: Boolean(moduleFederationConfig),
 });
 
 export default config;
