@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: 16
       - run: yarn install --frozen-lockfile --ignore-engines
+      - run: yarn run pack
       - run: yarn danger ci --use-github-checks
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
