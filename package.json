@@ -20,6 +20,7 @@
     "jest": "jest",
     "prettier": "prettier . --write",
     "release-alpha": "git reset --hard && lerna publish --canary --force-publish --yes",
+    "prerelease": "yarn run pack",
     "release": "git reset --hard && beemo run-script auto-release",
     "check-eslint-deprecations": "eslint-find-rules --deprecated .eslintrc.js",
     "link-packages": "lerna exec -- yarn link",
