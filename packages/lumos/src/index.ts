@@ -45,7 +45,7 @@ export default function lumos(tool: Tool) {
    * - Create a `tsconfig.eslint.json` file.
    */
   tool.onRunDriver.listen((context) => {
-    context.addOptions(['--cache', '--color', '--report-unused-disable-directives']);
+    context.addOptions(['--cache', '--color']);
 
     if (usingTypescript && !context.getRiskyOption('ext')) {
       context.addOption('--ext', exts.join(','));
@@ -54,10 +54,10 @@ export default function lumos(tool: Tool) {
     if (hasNoParams(context, 'eslint')) {
       if (workspaces.length > 0) {
         workspaces.forEach((wsPrefix) => {
-          context.addParam(`${wsPrefix}/{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`);
+          context.addOption(`${wsPrefix}/{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`);
         });
       } else {
-        context.addParams([srcFolder, testsFolder, ...ESLINT_DIRS]);
+        context.addOptions([srcFolder, testsFolder, ...ESLINT_DIRS]);
       }
     }
 
@@ -113,7 +113,7 @@ export default function lumos(tool: Tool) {
   tool.onRunDriver.listen((context) => {
     if (hasNoParams(context, 'prettier')) {
       context.addOption('--write');
-      context.addParam('.');
+      context.addOption('.');
     }
   }, 'prettier');
 
