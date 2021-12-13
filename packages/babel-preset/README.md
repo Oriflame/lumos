@@ -1,10 +1,10 @@
-# `Babel-preset-oriflame`
+# `@oriflame/babel-preset`
 
 ## Installation
 
 ```sh
-npm install --save-dev babel-preset-oriflame @babel/core
-yarn add --dev babel-preset-oriflame @babel/core
+npm install --save-dev @oriflame/babel-preset @babel/core
+yarn add --dev @oriflame/babel-preset @babel/core
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ yarn add --dev babel-preset-oriflame @babel/core
 ```json
 {
   "presets": [
-    ["oriflame",
+    ["@oriflame/babel-preset",
       {
         "react": true
       }

@@ -34,7 +34,7 @@ export function getConfig({
     comments: false,
     presets: [
       [
-        'oriflame',
+        '@oriflame/babel-preset',
         {
           modules: esm,
           react,

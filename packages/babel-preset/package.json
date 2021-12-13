@@ -1,5 +1,5 @@
 {
-  "name": "babel-preset-oriflame",
+  "name": "@oriflame/babel-preset",
   "version": "1.0.0",
   "description": "Babel preset for oriflame projects.",
   "keywords": [
@@ -55,10 +55,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.0"
-  },
-  "funding": {
-    "type": "ko-fi",
-    "url": "https://ko-fi.com/milesjohnson"
   },
   "packemon": {
     "format": "lib",

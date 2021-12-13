@@ -29,8 +29,8 @@
     "src/**/*.{ts,tsx,json}"
   ],
   "dependencies": {
-    "@oriflame/lumos-common": "^4.3.0",
-    "babel-preset-oriflame": "^1.0.0"
+    "@oriflame/babel-preset": "^1.0.0",
+    "@oriflame/lumos-common": "^4.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
