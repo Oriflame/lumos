@@ -1,5 +1,5 @@
 module.exports = {
-  presets: ['oriflame'],
+  presets: ['@oriflame/babel-preset'],
   ignore: [
     '.next/',
     'coverage/',
