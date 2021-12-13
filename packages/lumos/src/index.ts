@@ -12,7 +12,7 @@ function hasNoParams(context: DriverContext, name: string): boolean {
 export type LumosConfig = BeemoConfig<Partial<LumosSettings>>;
 
 export default function lumos(tool: Tool) {
-  const { srcFolder, testsFolder, esmBuildFolder, buildFolder } = getSettings();
+  const { srcFolder, testsFolder, esmBuildFolder, buildFolder } = getSettings(tool);
   const usingTypescript = tool.driverRegistry.isRegistered('typescript');
   const workspaces = tool.project.getWorkspaceGlobs({ relative: true });
   const exts = ['.ts', '.tsx', '.js', '.jsx'];

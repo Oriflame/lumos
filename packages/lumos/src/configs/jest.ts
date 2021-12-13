@@ -4,10 +4,9 @@ import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.beemo;
 
-const settings = getSettings();
-const { options } = tool.driverRegistry.get('eslint');
+const settings = getSettings(tool);
 
-const { coverage, graphql, react, srcFolder, testsFolder, node } = { ...settings, ...options };
+const { coverage, graphql, react, srcFolder, testsFolder, node } = settings;
 
 const workspacesEnabled = !!tool.package.workspaces;
 

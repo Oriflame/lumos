@@ -3,10 +3,10 @@ import { getConfig } from '@oriflame/config-typescript';
 import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.beemo;
-const settings = getSettings();
-const { options } = tool.driverRegistry.get('typescript');
+const settings = getSettings(tool);
 
-const { react, library, future, allowJs, skipLibCheck, srcFolder } = { ...settings, ...options };
+const { react, library, future, allowJs, skipLibCheck, srcFolder, buildFolder } = settings;
+
 const usingWorkspaces = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
 
 export default getConfig({
@@ -16,5 +16,6 @@ export default getConfig({
   srcFolder,
   allowJs,
   skipLibCheck,
+  buildFolder,
   workspaces: usingWorkspaces,
 });

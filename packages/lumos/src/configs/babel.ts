@@ -4,18 +4,9 @@ import { getSettings } from '../helpers/getSettings';
 
 const { context, tool } = process.beemo;
 
-const settings = getSettings();
-const { options } = tool.driverRegistry.get('babel');
+const settings = getSettings(tool);
 
-const {
-  graphql,
-  library,
-  node,
-  react,
-  env,
-  emptyBabelConfig: empty,
-  srcFolder,
-} = { ...settings, ...options };
+const { graphql, library, node, react, env, emptyBabelConfig: empty, srcFolder } = settings;
 
 const config = getConfig({
   env,

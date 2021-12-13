@@ -1,3 +1,5 @@
+import { Tool } from '@beemo/core';
+
 export interface LumosEnvSetting {
   targets?:
     | string[]
@@ -56,9 +58,7 @@ export interface LumosSettings {
   enableConsoleMocks?: boolean;
 }
 
-const { tool } = process.beemo;
-
-export function getSettings(): LumosSettings {
+export function getSettings(tool: Tool): LumosSettings {
   const instance = tool;
   const settings: Partial<LumosSettings> = {};
 

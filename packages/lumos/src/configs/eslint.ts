@@ -6,10 +6,10 @@ import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.beemo;
 
-const settings = getSettings();
-const { options } = tool.driverRegistry.get('eslint');
+const settings = getSettings(tool);
 
-const { future, node, nextjs, srcFolder, testsFolder, typesFolder } = { ...settings, ...options };
+const { future, node, nextjs, srcFolder, testsFolder, typesFolder } = settings;
+
 const workspacesEnabled = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
 
 let project: Path;

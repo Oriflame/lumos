@@ -14,6 +14,7 @@ export interface TypeScriptOptions {
   workspaces?: boolean;
   allowJs?: boolean;
   skipLibCheck?: boolean;
+  buildFolder?: string;
 }
 
 export function getCompilerOptions({
@@ -39,7 +40,7 @@ export function getCompilerOptions({
   compilerOptions.skipLibCheck = skipLibCheck;
 
   if (react) {
-    compilerOptions.lib = [...(compilerOptions.lib ?? []), 'dom', 'dom.iterable'];
+    compilerOptions.lib = [...(compilerOptions.lib ?? []), 'dom.iterable'];
     compilerOptions.jsx = 'react-jsx';
   }
 

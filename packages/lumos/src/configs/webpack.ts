@@ -4,8 +4,7 @@ import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.beemo;
 
-const settings = getSettings();
-const { options } = tool.driverRegistry.get('babel');
+const settings = getSettings(tool);
 
 const {
   srcFolder,
@@ -19,7 +18,7 @@ const {
   host,
   enableSharedModules,
   sharedModulesManifestPath,
-} = { ...settings, ...options };
+} = settings;
 
 const config = getConfig({
   analyzeBundle: !!process.env.WEBPACK_ANALYZE,
