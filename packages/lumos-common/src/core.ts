@@ -1,6 +1,4 @@
 import { PackageStructure } from '@boost/common';
-import execa from 'execa';
-import glob from 'fast-glob';
 import fs from 'fs';
 import path from 'path';
 
@@ -27,8 +25,6 @@ export interface LumosEnvSetting {
   ignoreBrowserslistConfig?: boolean;
   shippedProposals?: boolean;
 }
-
-export { execa, glob };
 
 export function fromRoot(filePath: string, existsCheck = false): string {
   const absPath = path.join(process.cwd(), filePath);
@@ -60,3 +56,7 @@ export function getPackage(): PackageStructure {
 
   return pkgCache!;
 }
+
+export { default as execa } from 'execa';
+
+export { default as glob } from 'fast-glob';

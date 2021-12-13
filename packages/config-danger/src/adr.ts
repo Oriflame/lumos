@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { touchedFiles, countChangesInFile, debug, isRevert, TEST_EXT, SNAP_EXT } from './helpers';
 import { CommonOptions } from './types';
 
@@ -18,7 +19,8 @@ export function checkForADR(docsPath: string, options: CheckAdrOptions = {}) {
   const hasDocsFiles = touchedFiles.some((file) => file.includes(docsPath));
   const docsExclusions = [...exclusions, 'package-lock.json', 'yarn.lock', TEST_EXT, SNAP_EXT];
   const modifiedExclusions = danger.git.modified_files.filter((file) =>
-    docsExclusions.some((ex) => !!file.match(ex)),
+    // @ts-expect-error -- some error
+    docsExclusions.some((ex) => !!ex.test(file)),
   );
 
   void Promise.all(modifiedExclusions.map(countChangesInFile)).then((vals) => {

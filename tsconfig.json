@@ -30,6 +30,9 @@
       "path": "packages/jest-preset"
     },
     {
+      "path": "packages/jest-preset/test"
+    },
+    {
       "path": "packages/eslint-config"
     },
     {

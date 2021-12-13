@@ -1,3 +1,5 @@
-class TestClass {
+class ErrorComboClass {
   constructor() {}
 }
+
+export {}

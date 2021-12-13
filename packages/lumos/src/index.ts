@@ -1,10 +1,4 @@
 import { BeemoConfig, DriverContext, Tool } from '@beemo/core';
-import type { BabelConfig } from '@beemo/driver-babel';
-import type { ESLintConfig } from '@beemo/driver-eslint';
-import type { JestConfig } from '@beemo/driver-jest';
-import type { PrettierConfig } from '@beemo/driver-prettier';
-import type { TypeScriptConfig } from '@beemo/driver-typescript';
-import type { WebpackConfig } from '@beemo/driver-webpack';
 import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
 
 import { LumosSettings, getSettings } from './helpers/getSettings';
@@ -16,15 +10,6 @@ function hasNoParams(context: DriverContext, name: string): boolean {
 }
 
 export type LumosConfig = BeemoConfig<Partial<LumosSettings>>;
-
-export type {
-  BabelConfig,
-  ESLintConfig,
-  JestConfig,
-  PrettierConfig,
-  WebpackConfig,
-  TypeScriptConfig,
-};
 
 export default function lumos(tool: Tool) {
   const { srcFolder, testsFolder, esmBuildFolder, buildFolder } = getSettings();
@@ -165,3 +150,10 @@ export default function lumos(tool: Tool) {
     });
   }, 'webpack');
 }
+
+export type { BabelConfig } from '@beemo/driver-babel';
+export type { JestConfig } from '@beemo/driver-jest';
+export type { ESLintConfig } from '@beemo/driver-eslint';
+export type { TypeScriptConfig } from '@beemo/driver-typescript';
+export type { PrettierConfig } from '@beemo/driver-prettier';
+export type { WebpackConfig } from '@beemo/driver-webpack';

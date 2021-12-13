@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import { WebpackConfig } from '@beemo/driver-webpack';
 import {
   ALIAS_PATTERN,

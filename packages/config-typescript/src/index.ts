@@ -33,7 +33,7 @@ export function getCompilerOptions({
     );
   }
 
-  compilerOptions.isolatedModules = !future && !library;
+  compilerOptions.isolatedModules = future && !library;
   compilerOptions.useDefineForClassFields = future && process.env.NODE_ENV === 'development';
   compilerOptions.allowJs = allowJs;
   compilerOptions.skipLibCheck = skipLibCheck;
