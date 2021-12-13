@@ -5,7 +5,7 @@ exports.default = exports.another = void 0;
 const test = '';
 
 const another = a => {
-  return a != null ? a : '';
+  return a ?? '';
 };
 
 exports.another = another;

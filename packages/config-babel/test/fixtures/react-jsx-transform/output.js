@@ -36,7 +36,7 @@ class Ahoj {
 exports.Ahoj = Ahoj;
 
 const another = a => {
-  return a != null ? a : '';
+  return a ?? '';
 };
 
 exports.another = another;
