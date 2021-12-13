@@ -1,5 +1,0 @@
-class ErrorComboClass {
-  constructor() {}
-}
-
-export {}

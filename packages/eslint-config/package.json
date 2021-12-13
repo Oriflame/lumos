@@ -28,7 +28,6 @@
   "files": [
     "dts/**/*.d.ts",
     "future.js",
-    "lib/**/*.{js,map,d.ts}",
     "lib/**/*.{js,map}",
     "nextjs.js",
     "node.js",

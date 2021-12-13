@@ -1,5 +1,0 @@
-class ErrorTestClass {
-  constructor() {}
-}
-
-export {}

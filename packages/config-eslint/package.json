@@ -18,9 +18,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "check-rules": "ts-node tools/check-rules/index.ts"
-  },
   "engines": {
     "node": ">=12.17.0",
     "npm": ">=6.13.0"

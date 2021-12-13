@@ -4,7 +4,7 @@ import a11yRulesConfig from '../../src/rules/a11y';
 import eslintRulesConfig from '../../src/rules/eslint';
 import eslintCommentsRulesConfig from '../../src/rules/eslint-comments';
 import importRulesConfig from '../../src/rules/import';
-import jestRulesConfig from '../../src/rules/jest';
+import jestRulesConfig from '../../src/rules/jest-rules';
 import nodeRulesConfig from '../../src/rules/node';
 import prettierRulesConfig from '../../src/rules/prettier';
 import promiseRulesConfig from '../../src/rules/promise';
@@ -13,24 +13,6 @@ import reactRulesConfig from '../../src/rules/react';
 import testingLibraryRulesConfig from '../../src/rules/testing-library';
 import typescriptRulesConfig from '../../src/rules/typescript';
 import unicornRulesConfig from '../../src/rules/unicorn';
-import { RuleOptions, RuleSetting } from '@beemo/driver-eslint';
-
-const filerDisabledRules = ([ruleName, rule]: [
-  string,
-  RuleSetting | [RuleSetting, ...RuleOptions[]],
-]) => {
-  if (Array.isArray(rule)) {
-    if (rule[0] === 0 || rule[0] === '0' || rule[0] === 'off') {
-      return false;
-    }
-  }
-
-  if (rule === 0 || rule === '0' || rule === 'off') {
-    return false;
-  }
-
-  return true;
-};
 
 const a11yRules = Object.entries(a11yRulesConfig!).map(([ruleName]) => ruleName);
 const eslintRules = Object.entries(eslintRulesConfig!).map(([ruleName]) => ruleName);
