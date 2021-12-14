@@ -19,7 +19,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=12.17.0",
     "npm": ">=6.13.0"
   },
   "files": [
@@ -34,20 +34,20 @@
     "transformers/*"
   ],
   "dependencies": {
-    "@babel/core": "^7.16.0",
+    "@babel/core": "^7.16.5",
     "@beemo/driver-jest": "^2.0.3",
     "@oriflame/lumos-common": "^4.3.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@types/jest": "^27.0.3",
-    "jest-preset-oriflame": "^1.0.0",
     "dom-storage": "^2.1.0",
     "graphql": "^16.1.0",
-    "graphql-tag": "^2.12.6"
+    "graphql-tag": "^2.12.6",
+    "jest-preset-oriflame": "^1.0.0"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.2",
     "@beemo/driver-babel": "^2.0.4",
-    "jest": "^27.4.4"
+    "jest": "^27.4.5"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",

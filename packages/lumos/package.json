@@ -33,14 +33,14 @@
     "lumos": "./bin/lumos"
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=12.17.0",
     "npm": ">=6.13.0"
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
     "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
+    "@babel/core": "^7.16.5",
     "@beemo/cli": "^2.0.4",
     "@beemo/core": "^2.1.2",
     "@beemo/driver-babel": "^2.0.4",
@@ -64,9 +64,9 @@
     "edit-json-file": "^1.6.2",
     "eslint": "^8.4.1",
     "execa": "^5.1.1",
-    "jest": "^27.4.4",
+    "jest": "^27.4.5",
     "prettier": "^2.5.1",
-    "typescript": "^4.5.3",
+    "typescript": "^4.5.4",
     "webpack": "^5.65.0"
   },
   "devDependencies": {

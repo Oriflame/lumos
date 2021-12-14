@@ -19,7 +19,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=12.17.0",
     "npm": ">=6.13.0"
   },
   "bin": {
@@ -44,7 +44,7 @@
     "webpack": "^5.64.4"
   },
   "dependencies": {
-    "@babel/core": "^7.16.0",
+    "@babel/core": "^7.16.5",
     "@module-federation/concat-runtime": "^0.0.1",
     "@oriflame/lumos-common": "^4.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
@@ -58,7 +58,7 @@
     "fast-glob": "^3.2.7",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "postcss": "^8.4.4",
+    "postcss": "^8.4.5",
     "postcss-browser-reporter": "^0.6.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.2",

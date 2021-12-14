@@ -21,7 +21,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=12.17.0",
     "npm": ">=6.13.0"
   },
   "dependencies": {
