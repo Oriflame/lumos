@@ -37,7 +37,7 @@ export const IGNORE_PATHS = [
   'build/',
 ];
 
-export const NODE_VERSION = '14';
+export const NODE_VERSION = '16';
 
 export const NODE_TARGET = { node: NODE_VERSION };
 
