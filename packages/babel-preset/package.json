@@ -29,7 +29,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=12.17.0",
+    "node": ">=16",
     "npm": ">=6.13.0"
   },
   "peerDependencies": {

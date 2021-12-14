@@ -8,7 +8,7 @@ export interface JestOptions {
   node?: boolean;
   srcFolder: string;
   testsFolder: string;
-  threshold?: number;
+  threshold: number;
   workspaces?: string[];
   testResultFileName?: string;
   enableConsoleMocks?: boolean;
@@ -39,7 +39,7 @@ export function getConfig({
   node = false,
   srcFolder,
   testsFolder,
-  threshold = 40,
+  threshold,
   workspaces = [],
   testResultFileName = 'TEST-RESULTS.xml',
   enableConsoleMocks = true,

@@ -5,10 +5,8 @@ import {
   CSS_EXT_PATTERN,
   CSS_MODULE_EXT_PATTERN,
   EXTS,
-  getESMAliases,
   GQL_EXT_PATTERN,
   TJSX_EXT_PATTERN,
-  WEBPACK_ROOT,
 } from '@oriflame/lumos-common';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import fs from 'fs';
@@ -18,7 +16,15 @@ import { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
 import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING } from './constants';
-import { getParallelValue, getPlugins, getUniqueName, PORT, PROD } from './helpers';
+import {
+  getParallelValue,
+  getPlugins,
+  getUniqueName,
+  PORT,
+  PROD,
+  WEBPACK_ROOT,
+  getESMAliases,
+} from './helpers';
 import { WebpackOptions } from './types';
 
 export function getConfig({

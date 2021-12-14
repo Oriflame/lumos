@@ -32,6 +32,7 @@ export function getRootTSConfig(): TSConfigJSON {
 type PackageDeps = Record<string, string>;
 
 interface PackageJSON {
+  name: string;
   engines?: { node?: string };
   dependencies?: PackageDeps;
   devDependencies?: PackageDeps;
@@ -46,42 +47,6 @@ export function getRootPackageJSON(): PackageJSON {
   }
 
   return packageJson!;
-}
-
-const versionCache: Map<string, number> = new Map();
-
-export function getPackageVersion(pkgName: string): number {
-  if (versionCache.has(pkgName)) {
-    return versionCache.get(pkgName)!;
-  }
-
-  try {
-    const pkg = parseJSON<{ version: string }>(require.resolve(`${pkgName}/package.json`));
-
-    versionCache.set(pkgName, Number.parseFloat(pkg.version));
-
-    return versionCache.get(pkgName)!;
-  } catch {
-    versionCache.set(pkgName, 0);
-  }
-
-  try {
-    const pkg = getRootPackageJSON();
-    const version =
-      pkg.dependencies?.[pkgName] ??
-      pkg.devDependencies?.[pkgName] ??
-      pkg.peerDependencies?.[pkgName];
-
-    if (version) {
-      versionCache.set(pkgName, Number.parseFloat(version.replace(/[^\d.]+/g, '')));
-
-      return versionCache.get(pkgName)!;
-    }
-  } catch {
-    versionCache.set(pkgName, 0);
-  }
-
-  return versionCache.get(pkgName)!;
 }
 
 export function getRootProjectReferences(): ProjectReference[] | undefined {

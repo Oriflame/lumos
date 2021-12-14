@@ -23,9 +23,6 @@ module.exports = {
     "oriflame/future",
     "oriflame/prettier",
   ],
-  "env": {
-    "node": true,
-  },
 };
 ```
 
