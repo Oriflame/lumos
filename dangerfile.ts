@@ -1,8 +1,8 @@
-const {
+import {
   checkForInvalidLocks,
   checkForConventionalPrefix,
   checkForConventionalSquashCommit,
-} = require('./packages/config-danger/lib/index');
+} from '@oriflame/config-danger';
 
 checkForInvalidLocks();
 checkForConventionalPrefix();
