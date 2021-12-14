@@ -19,7 +19,7 @@ let project: Path;
 if (workspacesEnabled) {
   project = Path.resolve('tsconfig.eslint.json');
 
-  const include: Path[] = [];
+  const include: Path[] = [new Path(`${typesFolder}/**/*`)];
 
   tool.project.getWorkspaceGlobs({ relative: true }).forEach((wsPath) => {
     include.push(
