@@ -1,4 +1,4 @@
-import { BeemoConfig, DriverContext, Tool } from '@beemo/core';
+import { BeemoConfig, DriverContext, Path, Tool } from '@beemo/core';
 import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
 
 import { LumosSettings, getSettings } from './helpers/getSettings';
@@ -151,6 +151,14 @@ export default function lumos(tool: Tool) {
       },
     });
   }, 'webpack');
+
+  tool.driverRegistry.get('webpack').onReferenceConfigFile.listen((context, path, config) => {
+    context.configPaths = [];
+    context.addConfigPath(
+      'webpack',
+      new Path(process.cwd(), 'node_modules/@oriflame/lumos/lib/configs/webpack.js'),
+    );
+  });
 }
 
 export type { BabelConfig } from '@beemo/driver-babel';
