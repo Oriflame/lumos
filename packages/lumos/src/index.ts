@@ -146,8 +146,8 @@ export default function lumos(tool: Tool) {
         SOURCE_MAPS: context.getRiskyOption('sourceMaps') ? 'true' : '',
         WEBPACK_ANALYZE: context.getRiskyOption('analyze') ? 'true' : '',
         WEBPACK_PARALLEL: String(context.getRiskyOption('parallel') || ''),
-        LUMOS_BUILD_FOLDER: context.getRiskyOption('buildFolder') as string,
-        LUMOS_ENTRY_POINT: context.getRiskyOption('entryPoint') as string,
+        LUMOS_BUILD_FOLDER: (context.getRiskyOption('buildFolder') as string) || '',
+        LUMOS_ENTRY_POINT: (context.getRiskyOption('entryPoint') as string) || '',
       },
     });
   }, 'webpack');

@@ -26,8 +26,7 @@ const config = getConfig({
   port: process.env.PORT,
   react,
   sourceMaps: !!process.env.SOURCE_MAPS,
-  buildFolder:
-    process.env.LUMOS_BUILD_FOLDER || ((tool.config.settings.buildFolder as string) && buildFolder),
+  buildFolder: process.env.LUMOS_BUILD_FOLDER || buildFolder,
   srcFolder,
   entryPoint: process.env.LUMOS_ENTRY_POINT || entryPoint,
   publicPath,
