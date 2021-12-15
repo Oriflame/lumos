@@ -29,8 +29,7 @@
     "bin/server",
     "dts/**/*.d.ts",
     "lib/**/*.{js,map,d.ts}",
-    "lib/**/*.{js,map}",
-    "src/**/*.{ts,tsx,json}"
+    "lib/**/*.{js,map}"
   ],
   "devDependencies": {
     "@beemo/core": "^2.1.2",
