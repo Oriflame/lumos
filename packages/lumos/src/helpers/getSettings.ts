@@ -42,11 +42,12 @@ export interface LumosSettings {
   coverage: number;
   /**
    * Babel env settings
+   * @see https://babeljs.io/docs/en/babel-preset-env#options
    * @default {}
    */
   env: LumosEnvSetting;
   /**
-   * Enable graphql capabilities
+   * Enable graphql support
    * @default false
    */
   graphql: boolean;
@@ -94,6 +95,10 @@ export interface LumosSettings {
    * @default undefined
    */
   entryPoint?: string;
+  /**
+   * Webpack public path
+   * @see https://webpack.js.org/guides/public-path/
+   */
   publicPath?: string;
   /**
    * Change root folder

@@ -41,15 +41,22 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@oriflame/conventional-changelog-lint-config": "^1.1.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.4.1",
     "eslint-find-rules": "^4.0.0",
     "graphql": "^16.1.0",
     "graphql-tag": "^2.12.6",
     "husky": "^7.0.4",
+    "jest": "^27.4.5",
     "lerna": "^4.0.0",
     "packemon": "^1.9.0",
-    "rimraf": "^3.0.2"
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0"
   },
   "resolutions": {
     "caniuse-lite": "1.0.30001286"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }

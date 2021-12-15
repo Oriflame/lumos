@@ -26,6 +26,7 @@
     "lumos-webpack-server": "./bin/server"
   },
   "files": [
+    "bin/server",
     "dts/**/*.d.ts",
     "lib/**/*.{js,map,d.ts}",
     "lib/**/*.{js,map}",
@@ -41,7 +42,21 @@
   "peerDependencies": {
     "@beemo/core": "^2.1.2",
     "@beemo/driver-webpack": "^2.0.4",
+    "browserslist": "^4.19.1",
+    "graphql": "^16.1.0",
+    "ts-loader": "^9.2.6",
     "webpack": "^5.64.4"
+  },
+  "peerDependenciesMeta": {
+    "browserslist": {
+      "optional": true
+    },
+    "graphql": {
+      "optional": true
+    },
+    "ts-loader": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@babel/core": "^7.16.5",

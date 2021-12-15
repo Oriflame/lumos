@@ -43,7 +43,13 @@
   "peerDependencies": {
     "@babel/core": "^7.16.0",
     "@beemo/core": "^2.1.2",
-    "@beemo/driver-babel": "^2.0.4"
+    "@beemo/driver-babel": "^2.0.4",
+    "typescript": ">=4.5"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   },
   "packemon": {
     "format": "lib",

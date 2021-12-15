@@ -59,11 +59,23 @@
   },
   "devDependencies": {
     "@types/confusing-browser-globals": "^1.0.0",
+    "@types/node": "^16.11.13",
     "eslint": "^8.4.1",
+    "prettier": "^2.5.1",
     "ts-node": "^10.4.0"
   },
   "peerDependencies": {
-    "eslint": "^8.4.0"
+    "eslint": "^8.4.0",
+    "prettier": "^2.5.1",
+    "typescript": ">=4.5"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
   },
   "packemon": {
     "format": "lib",

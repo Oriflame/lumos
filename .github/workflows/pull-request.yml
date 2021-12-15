@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: yarn install --frozen-lockfile --ignore-engines
+      - run: yarn install --immutable
       - run: yarn run pack
       # Workaround for danger
       - run: rm babel.config.js
