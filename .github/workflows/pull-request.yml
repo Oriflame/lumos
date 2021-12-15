@@ -19,7 +19,7 @@ jobs:
       - run: rm babel.config.js
       - run: npx danger ci --use-github-checks
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           DANGER_FAKE_CI: GitHub
           DANGER_TEST_REPO: oriflame/lumos
           DANGER_TEST_PR: ${{ github.event.number }}
