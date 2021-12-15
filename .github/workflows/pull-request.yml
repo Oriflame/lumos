@@ -17,7 +17,7 @@ jobs:
       - run: yarn run pack
       # Workaround for danger
       - run: rm babel.config.js
-      - run: yarn danger ci --use-github-checks
+      - run: npx danger ci --use-github-checks
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DANGER_FAKE_CI: GitHub
