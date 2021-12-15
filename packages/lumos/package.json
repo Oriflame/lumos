@@ -17,6 +17,9 @@
     "url": "git@github.com:Oriflame/lumos.git",
     "directory": "packages/lumos"
   },
+  "scripts": {
+    "prepack": "node ./scripts/delete-package-files.js"
+  },
   "author": "Silhan Jan",
   "license": "MIT",
   "publishConfig": {
