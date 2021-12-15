@@ -9,11 +9,9 @@ import {
   TJSX_EXT_PATTERN,
 } from '@oriflame/lumos-common';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
-import fs from 'fs';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 import { Configuration } from 'webpack';
-import { merge } from 'webpack-merge';
 
 import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING } from './constants';
 import {
@@ -47,7 +45,6 @@ export function getConfig({
   const srcPath = path.join(root, srcFolder);
   const internalPath = path.join(root, buildFolder);
   const contentBase = path.join(root, devServerContentBase);
-  const customConfigPath = path.join(root, 'configs', 'webpack.js');
   const entry: Configuration['entry'] = {
     index: [srcPath],
   };
@@ -216,7 +213,5 @@ export function getConfig({
     stats: !PROD,
   };
 
-  return fs.existsSync(customConfigPath)
-    ? merge<WebpackConfig>(baseConfig, require(customConfigPath) as WebpackConfig)
-    : baseConfig;
+  return baseConfig;
 }

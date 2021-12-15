@@ -11,7 +11,7 @@ function hasNoParams(context: DriverContext, name: string): boolean {
 
 export type LumosConfig = BeemoConfig<Partial<LumosSettings>>;
 
-export type { ConfigTemplateResult, ConfigTemplateOptions, ConfigObject,  } from '@beemo/core';
+export type { ConfigTemplateResult, ConfigTemplateOptions, ConfigObject } from '@beemo/core';
 
 export default function lumos(tool: Tool) {
   const { srcFolder, testsFolder, esmBuildFolder, buildFolder } = getSettings(tool);
