@@ -7,6 +7,9 @@
     "config",
     "webpack"
   ],
+  "scripts": {
+    "prepack": "node ./scripts/delete-package-files.js"
+  },
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "repository": {
