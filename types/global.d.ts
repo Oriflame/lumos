@@ -1,3 +1,5 @@
+import type { BeemoProcess } from '@beemo/core';
+
 declare const __DEV__: boolean;
 
 declare interface BeemoSettings {
@@ -10,5 +12,13 @@ declare interface BeemoSettings {
   // Enable Jest projects
   projects?: boolean;
   // Support React
-  react?: boolean | 'classic' | 'automatic';
+  react?: boolean | 'automatic' | 'classic';
+}
+
+declare global {
+  namespace NodeJS {
+    interface Process {
+      lumos: BeemoProcess;
+    }
+  }
 }

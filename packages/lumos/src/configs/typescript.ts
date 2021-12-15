@@ -2,7 +2,7 @@ import { getConfig } from '@oriflame/config-typescript';
 
 import { getSettings } from '../helpers/getSettings';
 
-const { tool } = process.beemo;
+const { tool } = process.lumos || process.beemo;
 const settings = getSettings(tool);
 
 const { react, library, future, allowJs, skipLibCheck, srcFolder, buildFolder } = settings;

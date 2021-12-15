@@ -4,7 +4,7 @@ import fs from 'fs';
 
 import { getSettings } from '../helpers/getSettings';
 
-const { tool } = process.beemo;
+const { tool } = process.lumos || process.beemo;
 
 const settings = getSettings(tool);
 

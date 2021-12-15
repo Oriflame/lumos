@@ -2,7 +2,7 @@ import { getConfig } from '@oriflame/config-babel';
 
 import { getSettings } from '../helpers/getSettings';
 
-const { context, tool } = process.beemo;
+const { context, tool } = process.lumos || process.beemo;
 
 const settings = getSettings(tool);
 
