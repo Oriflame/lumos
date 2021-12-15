@@ -18,7 +18,7 @@ declare interface BeemoSettings {
 declare global {
   namespace NodeJS {
     interface Process {
-      lumos: BeemoProcess;
+      lumos?: BeemoProcess;
     }
   }
 }
