@@ -127,12 +127,7 @@ export default function lumos(tool: Tool) {
    */
   tool.onRunDriver.listen((context, driver) => {
     const isServe = context.args.params.some((item) => item === 'serve');
-    if (isServe) {
-      // @ts-expect-error -- test
-      driver.options.outputStrategy = 'stream';
-
-      // .options.outputStrategy = 'stream';
-    } else {
+    if (!isServe) {
       context.addOptions(['--colors', '--progress', '--bail']);
     }
 
