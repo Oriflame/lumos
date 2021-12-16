@@ -1,10 +1,14 @@
 import { getConfig } from '@oriflame/config-webpack';
 
 import { getSettings } from '../helpers/getSettings';
+import { LumosSettings } from '../types';
 
 const { tool = {} } = process.lumos || process.beemo;
 
-const settings = getSettings(tool);
+// Workaround for beemo
+const envSettings = JSON.parse(process.env.LUMOS_SETTINGS!) as LumosSettings;
+
+const settings = getSettings(tool, envSettings);
 
 const {
   srcFolder,

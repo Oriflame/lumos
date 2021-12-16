@@ -149,6 +149,7 @@ export default function lumos(tool: Tool) {
         WEBPACK_PARALLEL: String(context.getRiskyOption('parallel') || ''),
         LUMOS_BUILD_FOLDER: (context.getRiskyOption('buildFolder') as string) || '',
         LUMOS_ENTRY_POINT: (context.getRiskyOption('entryPoint') as string) || '',
+        LUMOS_SETTINGS: JSON.stringify(tool.config.settings),
       },
     });
   }, 'webpack');
