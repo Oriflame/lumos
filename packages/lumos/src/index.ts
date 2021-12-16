@@ -126,7 +126,15 @@ export default function lumos(tool: Tool) {
    * - Handle Babel and TS integration.
    */
   tool.onRunDriver.listen((context, driver) => {
-    context.addOptions(['--colors', '--progress', '--bail']);
+    const isServe = context.args.params.some((item) => item === 'serve');
+    if (isServe) {
+      // @ts-expect-error -- test
+      driver.options.outputStrategy = 'stream';
+
+      // .options.outputStrategy = 'stream';
+    } else {
+      context.addOptions(['--colors', '--progress', '--bail']);
+    }
 
     if (tool.driverRegistry.isRegistered('babel')) {
       driver.options.dependencies.push('babel');
