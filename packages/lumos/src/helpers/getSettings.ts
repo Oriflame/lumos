@@ -6,7 +6,7 @@ const settingsCache: Partial<LumosSettings> = {};
 
 export function getSettings(
   instance?: Partial<Tool>,
-  settings?: Partial<LumosSettings>,
+  settings?: Partial<LumosSettings> | null,
 ): LumosSettings {
   Object.assign(settingsCache, instance?.config?.settings || settings || {});
 

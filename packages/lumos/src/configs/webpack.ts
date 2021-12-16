@@ -6,7 +6,7 @@ import { LumosSettings } from '../types';
 const { tool = {} } = process.lumos || process.beemo;
 
 // Workaround for beemo
-const envSettings = JSON.parse(process.env.LUMOS_SETTINGS!) as LumosSettings;
+const envSettings = JSON.parse(process.env.LUMOS_SETTINGS || 'null') as LumosSettings;
 
 const settings = getSettings(tool, envSettings);
 
