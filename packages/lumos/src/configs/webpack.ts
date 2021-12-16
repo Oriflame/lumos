@@ -1,7 +1,8 @@
 import { BeemoConfig } from '@beemo/core';
-import { PathResolver } from '@boost/common';
 import { requireModule } from '@boost/module';
 import { getConfig } from '@oriflame/config-webpack';
+import fs from 'fs';
+import { join } from 'path';
 
 import { getSettings } from '../helpers/getSettings';
 import { LumosSettings } from '../types';
@@ -12,13 +13,11 @@ const tool = (process.lumos || process.beemo)?.tool;
 let lumosSettings: Partial<LumosSettings> | undefined;
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 if (!tool) {
-  const resolver = new PathResolver();
+  let path = join(process.cwd(), '.config/lumos.ts');
+  if (!fs.existsSync(path)) {
+    path = join(process.cwd(), '.config/lumos.js');
+  }
 
-  resolver
-    .lookupFilePath('.config/lumos.ts', process.cwd())
-    .lookupFilePath('.config/lumos.js', process.cwd());
-
-  const path = await resolver.resolvePath();
   lumosSettings = requireModule<BeemoConfig<Partial<LumosSettings>>>(path).default.settings;
 }
 
