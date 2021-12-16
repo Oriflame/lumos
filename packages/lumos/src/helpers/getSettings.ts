@@ -161,11 +161,10 @@ export interface LumosSettings {
   enableConsoleMocks?: boolean;
 }
 
-export function getSettings(tool: Tool): LumosSettings {
-  const instance = tool;
+export function getSettings(instance: Partial<Tool>): LumosSettings {
   const settings: Partial<LumosSettings> = {};
 
-  Object.assign(settings, instance.config.settings);
+  Object.assign(settings, instance.config?.settings || {});
 
   return {
     buildFolder: settings.library ? 'lib' : 'build',
