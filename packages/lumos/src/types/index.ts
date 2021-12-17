@@ -157,4 +157,8 @@ export interface LumosSettings {
    * @default true
    */
   enableConsoleMocks?: boolean;
+  /**
+   * Enable esm build
+   */
+  esm?: boolean;
 }

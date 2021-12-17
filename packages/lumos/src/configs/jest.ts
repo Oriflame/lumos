@@ -4,7 +4,7 @@ import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.lumos || process.beemo;
 
-const settings = getSettings(tool);
+const settings = getSettings(tool, 'jest');
 
 const { coverage, graphql, react, srcFolder, testsFolder, node } = settings;
 

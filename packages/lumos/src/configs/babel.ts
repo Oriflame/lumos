@@ -4,7 +4,7 @@ import { getSettings } from '../helpers/getSettings';
 
 const { context, tool } = process.lumos || process.beemo;
 
-const settings = getSettings(tool);
+const settings = getSettings(tool, 'babel');
 
 const { graphql, library, node, react, env, emptyBabelConfig: empty, srcFolder } = settings;
 

@@ -6,7 +6,7 @@ import { getSettings } from '../helpers/getSettings';
 
 const { tool } = process.lumos || process.beemo;
 
-const settings = getSettings(tool);
+const settings = getSettings(tool, 'eslint');
 
 const { future, node, nextjs, srcFolder, testsFolder, typesFolder } = settings;
 

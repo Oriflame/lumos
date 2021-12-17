@@ -1,17 +1,67 @@
-import { Tool } from '@beemo/core';
+import { BeemoConfig, Tool } from '@beemo/core';
+import { requireModule } from '@boost/module';
+import fs from 'fs';
+import { join } from 'path';
 
 import { LumosSettings } from '../types';
 
-const settingsCache: Partial<LumosSettings> = {};
+let lumosSettingsCache: BeemoConfig<Partial<LumosSettings>>;
 
-export function getSettings(
-  instance?: Partial<Tool>,
-  settings?: Partial<LumosSettings> | null,
-): LumosSettings {
-  Object.assign(settingsCache, instance?.config?.settings || settings || {});
+/**
+ * Read lumos config settings
+ * Try to read ts or js. Ts have precedence.
+ * @param name {string}
+ * @returns
+ */
+function readSettingsForTool(name: string) {
+  let path = join(process.cwd(), '.config/lumos.ts');
+  if (!fs.existsSync(path)) {
+    path = join(process.cwd(), '.config/lumos.js');
+  }
+
+  lumosSettingsCache = requireModule<BeemoConfig<Partial<LumosSettings>>>(path).default;
+  let foundDriverSettings = {};
+  if (Array.isArray(lumosSettingsCache.drivers)) {
+    const driver = lumosSettingsCache.drivers.find((item) => {
+      if (typeof item === 'string') {
+        return item === name;
+      }
+      if (Array.isArray(item)) {
+        return item[0] === name;
+      }
+
+      return false;
+    });
+    if (driver && typeof driver !== 'string') {
+      const [, config] = driver;
+      foundDriverSettings = config;
+    }
+  } else if (typeof lumosSettingsCache.drivers !== 'undefined') {
+    const driver = lumosSettingsCache.drivers[name];
+    if (driver && typeof driver !== 'boolean') {
+      foundDriverSettings = driver;
+    }
+  }
+
+  return { ...lumosSettingsCache.settings, ...foundDriverSettings };
+}
+
+export function getSettings(instance: Tool | undefined, name?: string): LumosSettings {
+  const settings: Partial<LumosSettings> = {};
+
+  if (instance) {
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- expect the worst
+    Object.assign(settings, instance.config?.settings || {});
+    if (name) {
+      const { options = {} } = instance.driverRegistry.get('typescript');
+      Object.assign(settings, options);
+    }
+  } else if (name) {
+    Object.assign(settings, readSettingsForTool(name));
+  }
 
   return {
-    buildFolder: settingsCache.library ? 'lib' : 'build',
+    buildFolder: settings.library ? 'lib' : 'build',
     esmBuildFolder: 'esm',
     coverage: 75,
     env: {},
@@ -28,6 +78,6 @@ export function getSettings(
     allowJs: false,
     skipLibCheck: false,
     enableConsoleMocks: true,
-    ...settingsCache,
+    ...settings,
   };
 }
