@@ -60,7 +60,7 @@ export default function lumos(tool: Tool) {
           context.addOption(`${wsPrefix}/{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`);
         });
       } else {
-        context.addOptions([srcFolder, testsFolder, ...ESLINT_DIRS]);
+        context.addOption(`./{${srcFolder},${testsFolder},${ESLINT_DIRS.join(',')}}`);
       }
     }
 
