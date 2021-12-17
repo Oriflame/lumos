@@ -33,8 +33,8 @@ export function getCompilerOptions({
       (require('tsconfig-oriflame/tsconfig.workspaces.json') as TypeScriptConfig).compilerOptions,
     );
   }
-
-  compilerOptions.isolatedModules = future && !library;
+  // Do we need isolated modules?
+  compilerOptions.isolatedModules = future && library;
   compilerOptions.useDefineForClassFields = future && process.env.NODE_ENV === 'development';
   compilerOptions.allowJs = allowJs;
   compilerOptions.skipLibCheck = skipLibCheck;
