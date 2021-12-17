@@ -1,4 +1,5 @@
 import { WebpackConfig } from '@beemo/driver-webpack';
+import { requireModule } from '@boost/module';
 import {
   ALIAS_PATTERN,
   ASSET_EXT_PATTERN,
@@ -9,9 +10,11 @@ import {
   TJSX_EXT_PATTERN,
 } from '@oriflame/lumos-common';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import fs from 'fs';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 import { Configuration } from 'webpack';
+import { merge } from 'webpack-merge';
 
 import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING } from './constants';
 import {
@@ -24,6 +27,9 @@ import {
   getESMAliases,
 } from './helpers';
 import { WebpackOptions } from './types';
+
+const customConfigPathTs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');
+const customConfigPathJs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');
 
 export function getConfig({
   analyzeBundle = false,
@@ -212,6 +218,17 @@ export function getConfig({
 
     stats: !PROD,
   };
+
+  let config: WebpackConfig | undefined;
+  if (fs.existsSync(customConfigPathTs)) {
+    config = requireModule<WebpackConfig>(customConfigPathTs).default;
+  }
+  if (fs.existsSync(customConfigPathJs)) {
+    config = requireModule<WebpackConfig>(customConfigPathJs).default;
+  }
+  if (config) {
+    return merge<WebpackConfig>(baseConfig, config);
+  }
 
   return baseConfig;
 }

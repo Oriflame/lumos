@@ -62,6 +62,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.16.5",
+    "@boost/module": "^3.0.1",
     "@module-federation/concat-runtime": "^0.0.1",
     "@oriflame/lumos-common": "^4.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
@@ -92,7 +93,8 @@
     "url-loader": "^4.1.1",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-dev-server": "^4.6.0",
-    "webpack-graphql-loader": "^1.0.2"
+    "webpack-graphql-loader": "^1.0.2",
+    "webpack-merge": "^5.8.0"
   },
   "packemon": {
     "format": "lib",
