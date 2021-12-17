@@ -3,9 +3,8 @@
   "display": "Oriflame",
 
   "compilerOptions": {
-    "allowJs": false,
+    "noUncheckedIndexedAccess": true,
     "allowSyntheticDefaultImports": true,
-    "declaration": false,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
