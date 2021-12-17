@@ -17,15 +17,7 @@ import { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
 import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING } from './constants';
-import {
-  getParallelValue,
-  getPlugins,
-  getUniqueName,
-  PORT,
-  PROD,
-  WEBPACK_ROOT,
-  getESMAliases,
-} from './helpers';
+import { getParallelValue, getPlugins, getUniqueName, PORT, PROD, WEBPACK_ROOT } from './helpers';
 import { WebpackOptions } from './types';
 
 const customConfigPathTs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');
@@ -169,7 +161,6 @@ export function getConfig({
 
     resolve: {
       alias: {
-        ...getESMAliases(),
         [`${ALIAS_PATTERN}`]: path.join(root, srcFolder, '/'),
       },
       extensions: ['.wasm', '.mjs', ...EXTS],

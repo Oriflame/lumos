@@ -41,7 +41,7 @@ interface PackageJSON {
 
 let packageJson: PackageJSON | undefined;
 
-export function getRootPackageJSON(): PackageJSON {
+export function getRootPackageJson(): PackageJSON {
   if (packageJson === undefined) {
     packageJson = parseJSON(PACKAGE_JSON_PATH);
   }
