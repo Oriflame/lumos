@@ -90,6 +90,7 @@ export default function lumos(tool: Tool) {
       NODE_ENV: 'test',
       TZ: 'UTC',
     };
+
     // https://jestjs.io/docs/ecmascript-modules
     if (tool.config.settings.esm) {
       env.NODE_OPTIONS = `--experimental-vm-modules ${process.env.NODE_OPTIONS ?? ''}`.trim();
@@ -126,10 +127,7 @@ export default function lumos(tool: Tool) {
    * - Handle Babel and TS integration.
    */
   tool.onRunDriver.listen((context, driver) => {
-    const isServe = context.args.params.some((item) => item === 'serve');
-    if (!isServe) {
-      context.addOptions(['--colors', '--progress', '--bail']);
-    }
+    context.addOptions(['--colors', '--progress', '--bail']);
 
     if (tool.driverRegistry.isRegistered('babel')) {
       driver.options.dependencies.push('babel');
@@ -152,7 +150,6 @@ export default function lumos(tool: Tool) {
         WEBPACK_PARALLEL: String(context.getRiskyOption('parallel') || ''),
         LUMOS_BUILD_FOLDER: (context.getRiskyOption('buildFolder') as string) || '',
         LUMOS_ENTRY_POINT: (context.getRiskyOption('entryPoint') as string) || '',
-        LUMOS_SETTINGS: JSON.stringify(tool.config.settings),
       },
     });
   }, 'webpack');
