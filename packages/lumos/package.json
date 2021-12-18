@@ -32,7 +32,7 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
-    "@beemo/cli": "^1.0.11",
+    "@beemo/cli": "^2.0.5",
     "@beemo/core": "^1.1.8",
     "@octokit/rest": "^18.12.0",
     "@oriflame/conventional-changelog": "^1.2.0",
