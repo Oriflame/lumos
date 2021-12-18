@@ -35,7 +35,6 @@ const config: eslint.Linter.Config['rules'] = {
   'jsx-a11y/no-noninteractive-element-interactions': 'warn', // non-interactive elements should not be assigned mouse or keyboard event listeners
   'jsx-a11y/no-noninteractive-element-to-interactive-role': 'warn', // Non-interactive elements should not be assigned interactive roles
   'jsx-a11y/no-noninteractive-tabindex': 'error', // tabIndex should only be declared on interactive elements
-  'jsx-a11y/no-onchange': 'warn', // enforce usage of onBlur over onChange on select menus for accessibility
   'jsx-a11y/no-redundant-roles': 'error', // enforce explicit role property is not the same as implicit/default role property on element
   'jsx-a11y/no-static-element-interactions': 'warn', // enforce that non-interactive, visible elements (such as <div>) that have click handlers use the role attribute
   'jsx-a11y/role-has-required-aria-props': 'error', // enforce that elements with ARIA roles must have all required attributes for that role
