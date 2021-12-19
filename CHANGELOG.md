@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.5 - 2021-12-19
+
+#### 🛠 Internals
+
+- Fix duplicate install. ([218599c](https://github.com/Oriflame/lumos/commit/218599c3275353989add64739bfe7ef8a09ded07))
+- Update release pipeline. ([dc8c12a](https://github.com/Oriflame/lumos/commit/dc8c12a3e522070be808fddfbbfc0e9bab59d18f))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.4 - 2021-12-19
 
 #### 🛠 Internals
