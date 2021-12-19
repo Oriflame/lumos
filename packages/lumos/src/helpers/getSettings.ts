@@ -47,17 +47,13 @@ function readSettingsForTool(name: string) {
 }
 
 export function getSettings(instance: Tool | undefined, name?: string): LumosSettings {
-  const settings: Partial<LumosSettings> = {};
+  let settings: Partial<LumosSettings> = {};
 
   if (instance) {
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- expect the worst
-    Object.assign(settings, instance.config?.settings || {});
-    if (name) {
-      const { options = {} } = instance.driverRegistry.get('typescript');
-      Object.assign(settings, options);
-    }
+    settings = { ...settings, ...instance.config?.settings };
   } else if (name) {
-    Object.assign(settings, readSettingsForTool(name));
+    settings = { ...settings, ...readSettingsForTool(name) };
   }
 
   return {
