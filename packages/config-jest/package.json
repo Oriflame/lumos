@@ -7,7 +7,8 @@
     "config",
     "jest"
   ],
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git"
@@ -18,25 +19,56 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
   },
+  "files": [
+    "bootstrap/*",
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map,d.ts}",
+    "lib/**/*.{js,map}",
+    "mocks/*",
+    "serializers/*",
+    "setup/*",
+    "src/**/*.{ts,tsx,json}",
+    "transformers/*"
+  ],
   "dependencies": {
-    "@babel/core": "^7.15.8",
-    "@beemo/core": "^1.1.8",
-    "@beemo/driver-babel": "^1.2.6",
-    "@beemo/driver-jest": "^1.2.3",
+    "@babel/core": "^7.16.5",
+    "@beemo/driver-jest": "^2.0.3",
     "@oriflame/lumos-common": "^4.3.0",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@types/jest": "^27.0.2",
-    "airbnb-js-shims": "^2.2.1",
-    "cross-env": "^7.0.3",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@types/jest": "^27.0.3",
     "dom-storage": "^2.1.0",
-    "graphql": "^16.0.0",
-    "graphql-tag": "^2.12.5",
-    "jest": "^27.3.1",
-    "jest-junit": "^13.0.0"
+    "graphql": "^16.1.0",
+    "graphql-tag": "^2.12.6",
+    "jest-preset-oriflame": "^1.0.0"
+  },
+  "devDependencies": {
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-babel": "^2.0.4",
+    "jest": "^27.4.5"
+  },
+  "peerDependencies": {
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-babel": "^2.0.4",
+    "jest": "^27.4.3",
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   },
   "optionalDependencies": {
-    "@testing-library/react": ">=11"
+    "@testing-library/react": ">=12"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
   }
 }

@@ -1,0 +1,51 @@
+{
+  "name": "jest-preset-oriflame",
+  "version": "1.0.0",
+  "description": "Jest preset for lumos configured projects.",
+  "keywords": [
+    "jest-preset",
+    "oriflame",
+    "lumos"
+  ],
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
+  "files": [
+    "dts/**/*.d.ts",
+    "jest-preset.js",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oriflame/lumos.git",
+    "directory": "packages/jest-preset"
+  },
+  "author": "Jan Silhan",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
+  },
+  "peerDependencies": {
+    "jest": ">=27.0.0"
+  },
+  "dependencies": {
+    "@oriflame/lumos-common": "^4.3.0",
+    "@types/jest": "^27.0.3",
+    "jest-junit": "^13.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  },
+  "packemon": {
+    "inputs": {
+      "index": "src/index.ts",
+      "fileMock": "src/fileMock.ts"
+    },
+    "format": "lib",
+    "platform": "node"
+  }
+}

@@ -3,21 +3,24 @@
   "name": "lumos-root",
   "version": "0.0.0",
   "scripts": {
-    "prepare": "yarn setup && beemo create-config eslint prettier",
+    "prepare": "yarn build",
     "postinstall": "husky install",
     "setup": "tsc --build",
-    "clean": "rimraf packages/*/{lib,*.tsbuildinfo,node_modules}",
-    "build": "beemo typescript --build --reference-workspaces",
-    "test": "yarn run build && yarn run lint && yarn run jest && yarn run test:webpack && yarn run test:webpack-entry",
+    "clean": "rimraf packages/*/{lib,dts,*.tsbuildinfo,node_modules}",
+    "syncProjects": "beemo typescript:sync-project-refs",
+    "build": "packemon build --addEngines",
+    "type": "tsc --build",
+    "pack": "cross-env NODE_ENV=production packemon pack --addEngines --declaration=standard",
+    "test": "yarn run pack && yarn run lint && yarn run jest && yarn run test:webpack && yarn run test:webpack-entry",
     "pretest:webpack": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack.test.config.js",
     "test:webpack": "cross-env NODE_ENV=production webpack --config ./packages/config-webpack/test/webpack.test.config.js",
     "pretest:webpack-entry": "cross-env NODE_ENV=development webpack --config ./packages/config-webpack/test/webpack-entry.test.config.js",
     "test:webpack-entry": "cross-env NODE_ENV=production webpack --config ./packages/config-webpack/test/webpack-entry.test.config.js",
-    "lint": "beemo eslint .",
-    "jest": "beemo jest",
-    "jest:coverage": "beemo jest --coverage",
-    "prettier": "beemo prettier",
+    "lint": "eslint --cache --fix packages/*/{src,test}/**/*.ts",
+    "jest": "jest",
+    "prettier": "prettier . --write",
     "release-alpha": "git reset --hard && lerna publish --canary --force-publish --yes",
+    "prerelease": "yarn run pack",
     "release": "git reset --hard && beemo run-script auto-release",
     "check-eslint-deprecations": "eslint-find-rules --deprecated .eslintrc.js",
     "link-packages": "lerna exec -- yarn link",
@@ -32,61 +35,28 @@
   "publishConfig": {
     "access": "public"
   },
-  "beemo": {
-    "module": "@oriflame/lumos",
-    "drivers": [
-      "babel",
-      "eslint",
-      "jest",
-      "prettier",
-      "typescript",
-      "webpack"
-    ],
-    "settings": {
-      "node": true,
-      "testsFolder": "test",
-      "library": true
-    },
-    "eslint": {
-      "env": {
-        "node": true
-      },
-      "extends": [
-        "./packages/config-eslint/lib/presets/SECRET_CONFIG_DO_NOT_USE_THIS"
-      ],
-      "ignore": [
-        "*.config.js",
-        "packages/config-babel/test/fixtures/**/*",
-        "packages/config-eslint/test/**/*",
-        "packages/config-eslint/tools/check-rules/**/*"
-      ]
-    },
-    "prettier": {
-      "ignore": [
-        "*.ejs"
-      ]
-    },
-    "typescript": {
-      "compilerOptions": {
-        "skipLibCheck": true
-      }
-    }
-  },
   "workspaces": [
     "./packages/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^14.1.0",
-    "@commitlint/config-conventional": "^14.1.0",
-    "@oriflame/conventional-changelog-lint-config": "^1.1.2",
-    "eslint-find-rules": "^3.6.1",
-    "graphql": "^16.0.0",
-    "graphql-tag": "^2.12.5",
+    "@commitlint/cli": "^15.0.0",
+    "@oriflame/conventional-changelog-lint-config": "^1.1.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.4.1",
+    "eslint-find-rules": "^4.0.0",
+    "graphql": "^16.1.0",
+    "graphql-tag": "^2.12.6",
     "husky": "^7.0.4",
+    "jest": "^27.4.5",
     "lerna": "^4.0.0",
-    "rimraf": "^3.0.2"
+    "packemon": "^1.9.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0"
   },
   "resolutions": {
-    "caniuse-lite": "1.0.30001274"
-  }
+    "caniuse-lite": "1.0.30001286"
+  },
+  "packageManager": "yarn@3.1.1"
 }

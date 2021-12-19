@@ -1,12 +1,12 @@
 import fs from 'fs';
-import eslint, { ESLint } from 'eslint';
+import { ESLint, Linter } from 'eslint';
 
 export function getErrors(
-  config: ESLint.Options['baseConfig'],
+  config: Linter.Config<Linter.RulesRecord>,
   fileToTest: string,
-  options?: Parameters<ESLint['lintText']>[1]
+  options?: Parameters<ESLint['lintText']>[1],
 ) {
-  const CLIEngine = eslint.ESLint;
+  const CLIEngine = ESLint;
 
   const cli = new CLIEngine({
     baseConfig: config,

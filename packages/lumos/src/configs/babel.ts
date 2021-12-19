@@ -1,29 +1,23 @@
 import { getConfig } from '@oriflame/config-babel';
-import { getSettings } from '@oriflame/lumos-common';
 
-const { context, tool } = process.beemo;
-const {
+import { getSettings } from '../helpers/getSettings';
+
+const { context, tool } = process.lumos || process.beemo;
+
+const settings = getSettings(tool, 'babel');
+
+const { graphql, library, node, react, env, emptyBabelConfig: empty, srcFolder } = settings;
+
+const config = getConfig({
+  env,
+  esm: !!(context.getRiskyOption('esm') || process.env.ESM),
   graphql,
   library,
-  future,
   node,
   react,
-  env,
-  emptyBabelConfig: empty,
-  srcFolder,
-  moduleFederationConfig,
-} = getSettings();
-
-export = getConfig({
-  env,
-  esm: !!(context.args.esm || process.env.ESM),
-  graphql,
-  library,
-  future,
-  node,
-  react,
-  typescript: tool.isPluginEnabled('driver', 'typescript'),
   empty,
   srcFolder,
-  moduleFederationEnabled: Boolean(moduleFederationConfig),
+  workspaces: tool.project.getWorkspaceGlobs({ relative: true }),
 });
+
+export default config;

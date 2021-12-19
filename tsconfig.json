@@ -1,6 +1,10 @@
 {
+  "extends": "tsconfig-oriflame/tsconfig.workspaces.json",
   "files": [],
   "references": [
+    {
+      "path": "packages/babel-preset"
+    },
     {
       "path": "packages/config-babel"
     },
@@ -23,11 +27,16 @@
       "path": "packages/config-webpack"
     },
     {
+      "path": "packages/jest-preset"
+    },
+    {
+      "path": "packages/eslint-config"
+    },
+    {
       "path": "packages/lumos"
     },
     {
       "path": "packages/lumos-common"
     }
-  ],
-  "extends": "./tsconfig.options.json"
+  ]
 }

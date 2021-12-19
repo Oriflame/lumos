@@ -14,15 +14,12 @@ node_modules/
 lib/
 build*/
 coverage/
+dts/
 
 # Configs
 .babelrc
 .prettierignore
-babel.config.js
-jest.config.js
-prettier.config.js
 *.tsbuildinfo
-tsconfig.eslint.json
 webpack.config.js
 .npmrc
 junit.xml
@@ -31,3 +28,13 @@ TEST-RESULTS.xml
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
+
+# yarn@>=2
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

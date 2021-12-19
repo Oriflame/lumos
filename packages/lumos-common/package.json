@@ -8,7 +8,8 @@
     "common",
     "utils"
   ],
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git",
@@ -20,12 +21,19 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
   },
   "dependencies": {
-    "@beemo/core": "^1.1.8",
-    "@boost/common": "^3.0.0",
-    "execa": "^5.0.1",
-    "fast-glob": "^3.2.7"
-  }
+    "@beemo/core": "^2.1.2"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
+  },
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ]
 }

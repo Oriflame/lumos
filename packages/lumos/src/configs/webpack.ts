@@ -1,5 +1,11 @@
 import { getConfig } from '@oriflame/config-webpack';
-import { getSettings, getPackage } from '@oriflame/lumos-common';
+
+import { getSettings } from '../helpers/getSettings';
+
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+const tool = (process.lumos || process.beemo)?.tool;
+
+const settings = getSettings(tool, 'webpack');
 
 const {
   srcFolder,
@@ -13,17 +19,15 @@ const {
   host,
   enableSharedModules,
   sharedModulesManifestPath,
-} = getSettings();
+} = settings;
 
-const pkg = getPackage();
-
-export = getConfig({
+const config = getConfig({
   analyzeBundle: !!process.env.WEBPACK_ANALYZE,
   parallel: process.env.WEBPACK_PARALLEL,
   port: process.env.PORT,
   react,
   sourceMaps: !!process.env.SOURCE_MAPS,
-  buildFolder: process.env.LUMOS_BUILD_FOLDER || (pkg.lumos.settings.buildFolder && buildFolder),
+  buildFolder: process.env.LUMOS_BUILD_FOLDER || buildFolder,
   srcFolder,
   entryPoint: process.env.LUMOS_ENTRY_POINT || entryPoint,
   publicPath,
@@ -36,3 +40,5 @@ export = getConfig({
   enableSharedModules,
   sharedModulesManifestPath,
 });
+
+export default config;

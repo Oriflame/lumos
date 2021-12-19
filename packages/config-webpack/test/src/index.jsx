@@ -1,12 +1,11 @@
-/* eslint-disable node/no-missing-import, import/no-unresolved, import/extensions -- we need it here */
 /* eslint-disable no-console -- we need it here */
 /* eslint-disable react/jsx-filename-extension -- we need it here */
 /* eslint-disable import/no-extraneous-dependencies -- we need it here */
 import React from 'react';
 import './test.css';
 
+import aliasModule from './mdl';
 import mod from './test.module.css';
-import aliasModule from '~/mdl';
 
 console.log(React.version);
 
@@ -26,6 +25,6 @@ const test = {
 
 aliasModule();
 
-const c = { ...test, ...{ sup: 'mate' } };
+const c = { ...test, sup: 'mate' };
 
 console.log(c);

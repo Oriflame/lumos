@@ -1,6 +1,14 @@
 #!/usr/bin/env node
 
+// Name of your company, project, etc in a human-readable format
+process.env.BEEMO_BRAND_NAME = 'Oriflame';
+
+// Name of the command line binary in camel-case
+process.env.BEEMO_BRAND_BINARY = 'lumos';
+
+// NPM configuration module that houses shared configs and the binary itself
 process.env.BEEMO_CONFIG_MODULE = '@oriflame/lumos';
+
 process.env.BEEMO_MANUAL_URL = 'https://github.com/Oriflame/lumos';
 
-require('@beemo/cli');
+require('@beemo/cli/lib/bin');

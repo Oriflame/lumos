@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declarationDir": "dts",
+    "outDir": "dts",
+    "rootDir": "../../"
+  },
+  "exclude": [
+    "dts",
+    "test"
+  ],
+  "extends": "tsconfig-oriflame/tsconfig.workspaces.json",
+  "include": [
+    "src/**/*",
+    "types/**/*",
+    "../../types/**/*"
+  ],
+}

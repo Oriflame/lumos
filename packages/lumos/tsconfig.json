@@ -1,14 +1,14 @@
 {
+  "extends": "tsconfig-oriflame/tsconfig.workspaces.json",
   "compilerOptions": {
-    "declarationDir": "lib",
-    "outDir": "lib",
+    "declarationDir": "dts",
+    "outDir": "dts",
     "rootDir": "src"
   },
   "exclude": [
-    "lib",
-    "tests"
+    "dts",
+    "test"
   ],
-  "extends": "../../tsconfig.options.json",
   "include": [
     "src/**/*",
     "types/**/*",
@@ -16,13 +16,7 @@
   ],
   "references": [
     {
-      "path": "../lumos-common"
-    },
-    {
       "path": "../config-babel"
-    },
-    {
-      "path": "../config-danger"
     },
     {
       "path": "../config-eslint"
@@ -38,6 +32,12 @@
     },
     {
       "path": "../config-webpack"
+    },
+    {
+      "path": "../lumos-common"
+    },
+    {
+      "path": "../config-danger"
     }
   ]
 }

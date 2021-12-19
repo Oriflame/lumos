@@ -1,4 +1,4 @@
-import { Path } from '@beemo/core';
+import type { ESLintConfig } from '@beemo/driver-eslint';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
 export interface ESLintOptions {
@@ -9,51 +9,45 @@ export interface ESLintOptions {
   prettier?: boolean;
 }
 
-function fromHere(filePath: string): string {
-  return `./${new Path(process.cwd())
-    .relativeTo(new Path(__dirname, '../lib', filePath).resolve())
-    .toString()}`;
-}
-
-export function getExtendsList({
+export function getConfig({
   future = false,
   node = false,
   typescript = false,
   nextjs = false,
   prettier = false,
-}: ESLintOptions): string[] {
-  const paths = [fromHere('./presets/base')];
+}: ESLintOptions): ESLintConfig {
+  const presets = ['oriflame'];
 
   if (future) {
-    paths.push(fromHere('./presets/future'));
+    presets.push('oriflame/future');
   }
 
   if (node) {
-    paths.push(fromHere('./presets/node'));
+    presets.push('oriflame/node');
   }
 
   if (typescript) {
-    paths.push(fromHere('./presets/typescript'));
+    presets.push('oriflame/typescript');
   }
 
   if (nextjs) {
-    paths.push(fromHere('./presets/nextjs'));
+    presets.push('oriflame/nextjs');
   }
 
   if (prettier) {
-    paths.push(fromHere('./presets/prettier'));
+    presets.push('oriflame/prettier');
   }
 
-  return paths;
-}
-
-export function getIgnoreList(): string[] {
-  return [
-    ...IGNORE_PATHS,
-    'jest.config.js',
-    'babel.config.js',
-    'webpack.config.js',
-    'build*/',
-    '\\.eslintrc.js',
-  ];
+  return {
+    root: true,
+    extends: presets,
+    ignore: [
+      ...IGNORE_PATHS,
+      'jest.config.js',
+      'babel.config.js',
+      'webpack.config.js',
+      'build*/',
+      '\\.eslintrc.js',
+    ],
+  };
 }

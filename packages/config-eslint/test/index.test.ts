@@ -1,4 +1,4 @@
-import { getExtendsList, ESLintOptions } from '../src';
+import { getConfig, ESLintOptions } from '../src';
 import { getErrors } from './utils/getErrors';
 
 interface OptionsShape {
@@ -31,7 +31,8 @@ describe('Check that eslint rules are correct', () => {
     async (options, file, cliOptions) => {
       const output = await getErrors(
         {
-          extends: getExtendsList(options),
+          // @ts-expect-error
+          extends: getConfig(options).extends,
         },
         `packages/config-eslint/test/lint-files/${file}`,
         cliOptions,
@@ -69,7 +70,8 @@ describe('Check that eslint rules are correct', () => {
     async (options, file, cliOptions, expectedErrors) => {
       const output = await getErrors(
         {
-          extends: getExtendsList(options),
+          // @ts-expect-error
+          extends: getConfig(options).extends,
         },
         `packages/config-eslint/test/lint-files/errors/${file}`,
         cliOptions,

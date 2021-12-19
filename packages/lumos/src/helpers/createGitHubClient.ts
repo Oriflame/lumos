@@ -17,7 +17,6 @@ export function createGitHubClient(token?: string): Octokit {
   }
 
   if (GHE_VERSION) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument -- we need to use require()
     Octokit.plugin(require(`@octokit/plugin-enterprise-rest/ghe-${GHE_VERSION}`));
   }
 

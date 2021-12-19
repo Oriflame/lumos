@@ -1,5 +1,5 @@
 import { Path } from '@beemo/core';
-import { getPackage, WEBPACK_ROOT } from '@oriflame/lumos-common';
+import { getRootPackageJson } from '@oriflame/lumos-common';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
@@ -9,6 +9,8 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { INVALID_CHARS, NUMBER_REGEX } from './constants';
 import getClientEnvironment from './env';
 import { WebpackOptions } from './types';
+
+export const WEBPACK_ROOT = process.cwd();
 
 export const PROD = process.env.NODE_ENV === 'production';
 export const PORT = 3000;
@@ -74,7 +76,6 @@ export function getPlugins({
     );
   }
   if (analyzeBundle) {
-    // @ts-expect-error -- Type errors in bundle analyzer plugin types
     plugins.push(new BundleAnalyzerPlugin());
   }
 
@@ -97,7 +98,7 @@ export function getPlugins({
 }
 
 export function getUniqueName() {
-  const { name } = getPackage();
+  const { name } = getRootPackageJson();
 
   return `${name.replace(NUMBER_REGEX, '').replace(INVALID_CHARS, '')}`;
 }

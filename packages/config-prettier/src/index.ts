@@ -1,30 +1,13 @@
-import { PrettierConfig } from '@beemo/driver-prettier';
+import type { PrettierConfig } from '@beemo/driver-prettier';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
-export function getConfig(): PrettierConfig {
-  return {
-    printWidth: 100,
-    tabWidth: 2,
-    useTabs: false,
-    semi: true,
-    singleQuote: true,
-    quoteProps: 'as-needed',
-    jsxSingleQuote: false,
-    trailingComma: 'all',
-    bracketSpacing: true,
-    // @ts-expect-error -- [@rajzik] fix once types 2.4.0 lands
-    bracketSameLine: false,
-    arrowParens: 'always',
-    requirePragma: false,
-    proseWrap: 'always',
-  };
-}
-
-export function getIgnoreList(): string[] {
-  return [
+const config = {
+  ...(require('prettier-config-oriflame') as PrettierConfig),
+  ignore: [
     ...IGNORE_PATHS,
     'npm-shrinkwrap.json',
     'package-lock.json',
+    'yarn.lock',
     'tsconfig.json',
     'tsconfig.eslint.json',
     'tsconfig.options.json',
@@ -32,5 +15,7 @@ export function getIgnoreList(): string[] {
     'jest.config.js',
     'babel.config.js',
     'webpack.config.js',
-  ];
-}
+  ],
+};
+
+export default config;

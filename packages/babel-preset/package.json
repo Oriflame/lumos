@@ -1,0 +1,75 @@
+{
+  "name": "@oriflame/babel-preset",
+  "version": "1.0.0",
+  "description": "Babel preset for oriflame projects.",
+  "keywords": [
+    "babel-preset",
+    "lumos",
+    "oriflame",
+    "node",
+    "env",
+    "typescript",
+    "react"
+  ],
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oriflame/lumos.git",
+    "directory": "packages/babel-preset"
+  },
+  "author": "Jan Silhan",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
+  },
+  "peerDependencies": {
+    "@babel/core": ">=7.0.0",
+    "graphql-tag": "^2.12.6",
+    "typescript": ">=4.5"
+  },
+  "peerDependenciesMeta": {
+    "graphql-tag": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.16.5",
+    "@babel/plugin-proposal-decorators": "^7.16.5",
+    "@babel/plugin-proposal-export-default-from": "^7.16.5",
+    "@babel/plugin-proposal-export-namespace-from": "^7.16.5",
+    "@babel/plugin-proposal-private-methods": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@emotion/babel-plugin": "^11.7.1",
+    "@oriflame/lumos-common": "^4.3.0",
+    "babel-plugin-graphql-tag": "^3.3.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-optimize-clsx": "^2.6.2",
+    "babel-plugin-transform-dev": "^2.0.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-plugin-typescript-to-proptypes": "^2.0.0",
+    "react-refresh": "^0.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
+  }
+}

@@ -1,15 +1,13 @@
-/* eslint-disable no-nested-ternary */
 import { WebpackConfig } from '@beemo/driver-webpack';
+import { requireModule } from '@boost/module';
 import {
   ALIAS_PATTERN,
   ASSET_EXT_PATTERN,
   CSS_EXT_PATTERN,
   CSS_MODULE_EXT_PATTERN,
   EXTS,
-  getESMAliases,
   GQL_EXT_PATTERN,
   TJSX_EXT_PATTERN,
-  WEBPACK_ROOT,
 } from '@oriflame/lumos-common';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import fs from 'fs';
@@ -19,8 +17,11 @@ import { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
 import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING } from './constants';
-import { getParallelValue, getPlugins, getUniqueName, PORT, PROD } from './helpers';
+import { getParallelValue, getPlugins, getUniqueName, PORT, PROD, WEBPACK_ROOT } from './helpers';
 import { WebpackOptions } from './types';
+
+const customConfigPathTs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');
+const customConfigPathJs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');
 
 export function getConfig({
   analyzeBundle = false,
@@ -42,7 +43,6 @@ export function getConfig({
   const srcPath = path.join(root, srcFolder);
   const internalPath = path.join(root, buildFolder);
   const contentBase = path.join(root, devServerContentBase);
-  const customConfigPath = path.join(root, 'configs', 'webpack.js');
   const entry: Configuration['entry'] = {
     index: [srcPath],
   };
@@ -161,7 +161,6 @@ export function getConfig({
 
     resolve: {
       alias: {
-        ...getESMAliases(),
         [`${ALIAS_PATTERN}`]: path.join(root, srcFolder, '/'),
       },
       extensions: ['.wasm', '.mjs', ...EXTS],
@@ -211,7 +210,16 @@ export function getConfig({
     stats: !PROD,
   };
 
-  return fs.existsSync(customConfigPath)
-    ? merge<WebpackConfig>(baseConfig, require(customConfigPath) as WebpackConfig)
-    : baseConfig;
+  let config: WebpackConfig | undefined;
+  if (fs.existsSync(customConfigPathTs)) {
+    config = requireModule<WebpackConfig>(customConfigPathTs).default;
+  }
+  if (fs.existsSync(customConfigPathJs)) {
+    config = requireModule<WebpackConfig>(customConfigPathJs).default;
+  }
+  if (config) {
+    return merge<WebpackConfig>(baseConfig, config);
+  }
+
+  return baseConfig;
 }

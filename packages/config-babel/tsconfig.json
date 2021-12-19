@@ -1,20 +1,23 @@
 {
+  "extends": "tsconfig-oriflame/tsconfig.workspaces.json",
   "compilerOptions": {
-    "declarationDir": "lib",
-    "outDir": "lib",
+    "declarationDir": "dts",
+    "outDir": "dts",
     "rootDir": "src"
   },
   "exclude": [
-    "lib",
-    "tests"
+    "dts",
+    "test"
   ],
-  "extends": "../../tsconfig.options.json",
   "include": [
     "src/**/*",
     "types/**/*",
     "../../types/**/*"
   ],
   "references": [
+    {
+      "path": "../babel-preset"
+    },
     {
       "path": "../lumos-common"
     }

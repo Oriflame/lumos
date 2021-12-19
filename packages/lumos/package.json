@@ -10,47 +10,75 @@
     "developer",
     "tool"
   ],
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git",
     "directory": "packages/lumos"
+  },
+  "scripts": {
+    "prepack": "node ./scripts/delete-package-files.js"
   },
   "author": "Silhan Jan",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "bin": {
-    "lumos": "./bin/lumos",
-    "lumos-setup": "./bin/lumos-setup",
-    "lumos-eject": "./bin/lumos-eject"
-  },
+  "files": [
+    "bin/lumos",
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map,d.ts}",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}",
+    "templates/**/*.ejs"
+  ],
+  "bin": "./bin/lumos",
   "engines": {
-    "node": ">=14"
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
-    "@beemo/cli": "^1.0.11",
-    "@beemo/core": "^1.1.8",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@beemo/cli": "^2.0.4",
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-babel": "^2.0.4",
+    "@beemo/driver-eslint": "^2.0.3",
+    "@beemo/driver-jest": "^2.0.3",
+    "@beemo/driver-prettier": "^2.0.4",
+    "@beemo/driver-typescript": "^2.1.0",
+    "@beemo/driver-webpack": "^2.0.4",
+    "@boost/common": "^3.1.0",
+    "@boost/module": "^3.0.1",
     "@octokit/rest": "^18.12.0",
-    "@oriflame/conventional-changelog": "^1.2.0",
-    "@oriflame/lumos-common": "^4.3.0",
-    "chalk": "^4.1.2",
-    "check-node-version": "^4.1.0",
-    "cross-env": "^7.0.3",
-    "edit-json-file": "^1.6.0",
-    "enquirer": "^2.3.6",
-    "execa": "^5.0.1"
-  },
-  "devDependencies": {
-    "@oriflame/config-babel": "^4.3.0",
-    "@oriflame/config-danger": "^4.3.0",
-    "@oriflame/config-eslint": "^4.3.0",
-    "@oriflame/config-jest": "^4.3.0",
+    "@oriflame/config-babel": "4.3.0",
+    "@oriflame/config-eslint": "4.3.0",
+    "@oriflame/config-jest": "4.3.0",
     "@oriflame/config-prettier": "^4.3.0",
     "@oriflame/config-typescript": "^4.3.0",
-    "@oriflame/config-webpack": "^4.3.0"
+    "@oriflame/config-webpack": "4.3.0",
+    "@oriflame/conventional-changelog": "^1.2.3",
+    "@oriflame/lumos-common": "^4.3.0",
+    "chalk": "^5.0.0",
+    "check-node-version": "^4.2.1",
+    "cross-env": "^7.0.3",
+    "edit-json-file": "^1.6.2",
+    "eslint": "^8.4.1",
+    "execa": "^5.1.1",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "@oriflame/config-danger": "4.3.0"
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
   }
 }

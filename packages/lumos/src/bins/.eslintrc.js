@@ -1,8 +1,0 @@
-module.exports = {
-  rules: {
-    'global-require': 'off',
-    'no-console': 'off',
-    'import/no-dynamic-require': 'off',
-    '@typescript-eslint/no-require-imports': 'off',
-  },
-};
