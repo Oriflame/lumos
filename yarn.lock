@@ -1694,13 +1694,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-webpack@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@beemo/driver-webpack@npm:2.0.4"
+"@beemo/driver-webpack@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@beemo/driver-webpack@npm:2.0.5"
   peerDependencies:
     "@beemo/core": ^2.0.0
     webpack: ^4.0.0 || ^5.0.0
-  checksum: e7537ea83f049b75bba5f1dfb87dc212e88cce57b83067703ff295b345910c14090c2cbf6eab25c1ba9584540125b7ad8cb041646bae99946af93775e1995d98
+  checksum: c161d54c6aee8e89376c3c982e50cf98d3939481d7feac9392bd65f1361a5de5636d441f50b5a42157fb5984ca86418bd7793f636a62c9f24649848b9d0277e5
   languageName: node
   linkType: hard
 
@@ -3793,7 +3793,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.16.5
     "@beemo/core": ^2.1.2
-    "@beemo/driver-webpack": ^2.0.4
+    "@beemo/driver-webpack": ^2.0.5
     "@boost/module": ^3.0.1
     "@module-federation/concat-runtime": ^0.0.1
     "@oriflame/lumos-common": ^4.3.0
@@ -3900,7 +3900,7 @@ __metadata:
     "@beemo/driver-jest": ^2.0.3
     "@beemo/driver-prettier": ^2.0.4
     "@beemo/driver-typescript": ^2.1.0
-    "@beemo/driver-webpack": ^2.0.4
+    "@beemo/driver-webpack": ^2.0.5
     "@boost/common": ^3.1.0
     "@boost/module": ^3.0.1
     "@octokit/rest": ^18.12.0
