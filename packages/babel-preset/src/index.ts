@@ -50,7 +50,7 @@ export default function babelPresetOriflame(
           '@babel/plugin-transform-async-to-generator',
         ],
         loose: true,
-        modules: modules ? false : 'auto',
+        modules: modules ? false : 'commonjs',
         useBuiltIns: false,
         bugfixes: true,
         shippedProposals: true,
