@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.4 - 2021-12-19
+
+#### 🛠 Internals
+
+- Regenare yarn lock. ([ffa0341](https://github.com/Oriflame/lumos/commit/ffa0341ed80bfc6bdb067d75f6dd321f40a5d206))
+- Update release script. ([435dad1](https://github.com/Oriflame/lumos/commit/435dad14505bc740dc08c749520a189e6f582bf5))
+- Update workflows. ([e9999a1](https://github.com/Oriflame/lumos/commit/e9999a1e9d45f0f15b91d6585d64d7d0f9966206))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.3 - 2021-12-19
 
 #### 🛠 Internals
