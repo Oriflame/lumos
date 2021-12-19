@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.1 - 2021-12-19
+
+#### 📦 Dependencies
+
+- Update to latest. ([4a051aa](https://github.com/Oriflame/lumos/commit/4a051aaba4a187300606947db0a50d7e14a0bfae))
+
+**Note:** Version bump only for package @oriflame/config-prettier
+
+
+
+
+
 # 5.0.0 - 2021-12-19
 
 # @oriflame/lumos was migrated to Beemo v2
