@@ -1631,15 +1631,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-babel@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@beemo/driver-babel@npm:2.0.4"
+"@beemo/driver-babel@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@beemo/driver-babel@npm:2.0.5"
   dependencies:
     rimraf: ^3.0.2
   peerDependencies:
     "@babel/core": ^7.0.0
     "@beemo/core": ^2.0.0
-  checksum: f67130a39e81ba93e9671862dd52b4c70d1be8ac8ba8400372f1e3a0343c1d1e66e9a19959375a3449164a3f269397c887c7b0251c3fb24e06aa28c07df25433
+  checksum: f86d684e47d2b07831e1e729de04d51025eff29d5c55261783f260e841d4f4b9ea8604dd68ec7f0c0707de7052c7a6a5a215c61f8b431139b17ff972d66f0133
   languageName: node
   linkType: hard
 
@@ -3668,7 +3668,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.16.5
     "@beemo/core": ^2.1.2
-    "@beemo/driver-babel": ^2.0.4
+    "@beemo/driver-babel": ^2.0.5
     "@oriflame/babel-preset": ^1.0.0
     "@oriflame/lumos-common": ^4.3.0
     babel-test: ^0.2.4
@@ -3726,7 +3726,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.16.5
     "@beemo/core": ^2.1.2
-    "@beemo/driver-babel": ^2.0.4
+    "@beemo/driver-babel": ^2.0.5
     "@beemo/driver-jest": ^2.0.3
     "@oriflame/lumos-common": ^4.3.0
     "@testing-library/jest-dom": ^5.16.1
@@ -3895,7 +3895,7 @@ __metadata:
     "@babel/core": ^7.16.5
     "@beemo/cli": ^2.0.4
     "@beemo/core": ^2.1.2
-    "@beemo/driver-babel": ^2.0.4
+    "@beemo/driver-babel": ^2.0.5
     "@beemo/driver-eslint": ^2.0.3
     "@beemo/driver-jest": ^2.0.3
     "@beemo/driver-prettier": ^2.0.4
