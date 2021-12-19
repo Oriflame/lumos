@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { touchedFiles, countChangesInFile, debug, isRevert, TEST_EXT, SNAP_EXT } from './helpers';
 import { CommonOptions } from './types';
 
