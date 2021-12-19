@@ -49,4 +49,7 @@ jobs:
         run: yarn install
 
       - name: Push yarn lock
-        run: git commit -am 'internal: Regenerate yarn lock.' && git push
+        run: |
+          yarn install
+          git commit -am 'internal: Regenerate yarn lock.'
+          git push
