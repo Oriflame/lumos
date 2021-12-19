@@ -33,7 +33,7 @@
     "src/**/*.{ts,tsx,json}"
   ],
   "devDependencies": {
-    "@beemo/core": "^2.1.2",
+    "@beemo/core": "^2.1.3",
     "@beemo/driver-webpack": "^2.0.4",
     "@types/webpack-bundle-analyzer": "^4.4.1",
     "react": "*",
