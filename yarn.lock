@@ -1681,16 +1681,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-typescript@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@beemo/driver-typescript@npm:2.1.0"
+"@beemo/driver-typescript@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@beemo/driver-typescript@npm:2.1.1"
   dependencies:
     "@boost/event": ^3.0.0
     rimraf: ^3.0.2
   peerDependencies:
     "@beemo/core": ^2.0.0
     typescript: ^4.0.0
-  checksum: eda14143f8a393261c5c8b61800bb1d57582c51162ffe536a96fdb3abf46948149389b1d062a09b1dfc489a7901a5366d9f440097540898e34cad587520a2dcb
+  checksum: 5246baaf00afe0b7dab2c77c51db522b7de2fa96825550c018e33024fc17f7ad41c916e4a37c8095eb325be12b4f5ecd882adeb80553b51f2d07095e61d27c9e
   languageName: node
   linkType: hard
 
@@ -3776,7 +3776,7 @@ __metadata:
   resolution: "@oriflame/config-typescript@workspace:packages/config-typescript"
   dependencies:
     "@beemo/core": ^2.1.2
-    "@beemo/driver-typescript": ^2.1.0
+    "@beemo/driver-typescript": ^2.1.1
     "@oriflame/lumos-common": ^4.3.0
     tsconfig-oriflame: ^1.0.0
     typescript: ^4.5.4
@@ -3899,7 +3899,7 @@ __metadata:
     "@beemo/driver-eslint": ^2.0.3
     "@beemo/driver-jest": ^2.0.3
     "@beemo/driver-prettier": ^2.0.4
-    "@beemo/driver-typescript": ^2.1.0
+    "@beemo/driver-typescript": ^2.1.1
     "@beemo/driver-webpack": ^2.0.4
     "@boost/common": ^3.1.0
     "@boost/module": ^3.0.1
