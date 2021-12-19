@@ -41,9 +41,11 @@ export function getConfig({
           library,
           graphql,
           removePropTypes: !library && react,
-          targets: node ? NODE_TARGET : WEB_TARGET,
           srcFolder,
-          env,
+          env: {
+            targets: node ? NODE_TARGET : WEB_TARGET,
+            ...env,
+          },
         },
       ],
     ],

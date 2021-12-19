@@ -9,7 +9,6 @@ export interface BabelPresetOriflameOptions {
   graphql?: boolean;
   library?: boolean;
   srcFolder?: string;
-  targets?: Record<string, string> | string[] | string;
   env?: Record<string, unknown>;
 }
 
@@ -18,7 +17,6 @@ export default function babelPresetOriflame(
   {
     modules,
     react,
-    targets,
     removePropTypes,
     graphql,
     library,
@@ -58,7 +56,7 @@ export default function babelPresetOriflame(
         shippedProposals: true,
         // Only target node since this is for development
         // Revisit in Babel v8: https://babeljs.io/docs/en/options#no-targets
-        targets: targets ?? { node: 'current' },
+        targets: { node: 'current' },
         ...env,
       },
     ],
