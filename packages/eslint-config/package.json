@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-oriflame",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Reusable ESLint config for oriflame project",
   "keywords": [
     "lumos",
@@ -39,7 +39,7 @@
     "@babel/core": "^7.16.5",
     "@babel/eslint-parser": "^7.16.5",
     "@next/eslint-plugin-next": "^12.0.7",
-    "@oriflame/lumos-common": "^5.0.1",
+    "@oriflame/lumos-common": "^5.0.2",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "confusing-browser-globals": "^1.0.11",
