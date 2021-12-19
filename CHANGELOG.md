@@ -3,6 +3,88 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 5.0.0 - 2021-12-19
+
+# @oriflame/lumos was migrated to Beemo v2
+
+[Beemo documentation](https://beemo.dev/docs).
+[Beemo migration notes](https://beemo.dev/docs/migration/2.0).
+
+## Breaking changes
+
+- configs are included in lumos
+```diff
+  "devDependencies": {
+-    "@oriflame/config-babel": "4.3.0",
+-    "@oriflame/config-eslint": "4.3.0",
+-    "@oriflame/config-jest": "4.3.0",
+-    "@oriflame/config-prettier": "4.3.0",
+-    "@oriflame/config-typescript": "4.3.0",
+-     "@oriflame/lumos": "4.3.0",
++     "@oriflame/lumos": "5.0.0",
+  }
+```
+- `lumos-setup` and `lumos-eject` was removed
+- Configuration was removed from package.json to `.config/lumos.ts`
+```diff
+-  "lumos": {
+-    "drivers": [
+-      "babel",
+-      "eslint",
+-      "jest",
+-      "prettier",
+-      "typescript"
+-    ],
+-    "settings": {
+-      "react": true,
+-      "testingLibrary": true,
+-      "library": true,
+-      "future": true,
+-      "coverage": 97,
+-      "node": true,
+-      "buildFolder": "esm"
+-    }
+-  },
+```
+- Configs were moved from `config/[driver-name].js` to `.config/lumos/[driver-name].ts`
+- Jest no longer need NODE_ENV and TZ env
+```diff
+-   "jest": "cross-env NODE_ENV=test TZ=UTC lumos jest",
++   "jest": "lumos jest",
+```
+- typescript `--reference-workspaces` was removed
+```diff
+-   "build": "lumos typescript --build --reference-workspaces",
++   "build": "lumos typescript --build",
+```
+- typescript no longer generates tsconfigs in packages automatically. Run `lumos typescript:sync-project-refs` to update them.
+```diff
++   "sync-projects": "lumos typescript:sync-project-refs",
+```
+
+#### 💥 Breaking
+
+- Migrate to beemo v2. (#790) ([475ba3d](https://github.com/Oriflame/lumos/commit/475ba3d25376f8a17fd8b9c70777cc6a3327d35a)), work items [#790](https://github.com/Oriflame/lumos/issues/790)
+
+#### 🐞 Fixes
+
+- Add missing beemo package. ([dddb8e7](https://github.com/Oriflame/lumos/commit/dddb8e74f13905e404fa7c9393f841c9aaaba161))
+- Add missing package. ([93f9811](https://github.com/Oriflame/lumos/commit/93f9811ec193eee6610cc0d27ae4da52bc06df3f))
+- Regenerate yarn lock. ([0270725](https://github.com/Oriflame/lumos/commit/027072551b5d3176c44deb8cff6ebc0c783be259))
+- Release script. ([d870560](https://github.com/Oriflame/lumos/commit/d87056015af685ba3db493f4e056c7fd96895ae5))
+- Update script. ([3a628e5](https://github.com/Oriflame/lumos/commit/3a628e5bb47ceec0707d5e6b3881b97539fec9d5))
+- Update scripts. ([02e4d27](https://github.com/Oriflame/lumos/commit/02e4d2700d363f7ef4888c1dea2335e8780b5a9c))
+
+#### 🛠 Internals
+
+- Update release pipeline. ([4b7e7a9](https://github.com/Oriflame/lumos/commit/4b7e7a9252ac80348d2ffe01e7346560061a960e))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 4.3.0 - 2021-11-30
 
 #### 🚀 Updates
