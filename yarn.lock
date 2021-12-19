@@ -1668,16 +1668,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-prettier@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@beemo/driver-prettier@npm:2.0.4"
+"@beemo/driver-prettier@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@beemo/driver-prettier@npm:2.0.5"
   dependencies:
     "@boost/event": ^3.0.0
-    "@types/prettier": ^2.4.1
+    "@types/prettier": ^2.4.2
   peerDependencies:
     "@beemo/core": ^2.0.0
     prettier: ^2.0.0
-  checksum: da77f3efd149b9bf0112306e9481c92934f149d42f2be89c8fd7423b7161c144e1295673ce530ab0529ef7f61e507ec8a41cb9a93b2a5e36473cf617c44fd311
+  checksum: 56e3f76b82272f8603c4582e1eafba68e0efd2ef483c0801b88dfc8522313e38e691708e06fee97cf729d69b74617fd2a4cd1a713ef2c43fc3d2de1dfe76f4fe
   languageName: node
   linkType: hard
 
@@ -3759,7 +3759,7 @@ __metadata:
   resolution: "@oriflame/config-prettier@workspace:packages/config-prettier"
   dependencies:
     "@beemo/core": ^2.1.2
-    "@beemo/driver-prettier": ^2.0.4
+    "@beemo/driver-prettier": ^2.0.5
     "@oriflame/lumos-common": ^4.3.0
     "@types/prettier": ^2.4.2
     prettier: ^2.5.1
@@ -3898,7 +3898,7 @@ __metadata:
     "@beemo/driver-babel": ^2.0.4
     "@beemo/driver-eslint": ^2.0.3
     "@beemo/driver-jest": ^2.0.3
-    "@beemo/driver-prettier": ^2.0.4
+    "@beemo/driver-prettier": ^2.0.5
     "@beemo/driver-typescript": ^2.1.0
     "@beemo/driver-webpack": ^2.0.4
     "@boost/common": ^3.1.0
@@ -4461,7 +4461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2.1.5, @types/prettier@npm:^2.4.1, @types/prettier@npm:^2.4.2":
+"@types/prettier@npm:^2.1.5, @types/prettier@npm:^2.4.2":
   version: 2.4.2
   resolution: "@types/prettier@npm:2.4.2"
   checksum: 76e230b2d11028af11fe12e09b2d5b10b03738e9abf819ae6ebb0f78cac13d39f860755ce05ac3855b608222518d956628f5d00322dc206cc6d1f2d8d1519f1e
