@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.9 - 2021-12-19
+
+#### 🐞 Fixes
+
+- Babel config. ([232c25d](https://github.com/oriflame/lumos/commit/232c25d1ee819e2a41bacb7e4342103f67988d1b))
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
 ### 5.0.8 - 2021-12-19
 
 #### 🐞 Fixes
