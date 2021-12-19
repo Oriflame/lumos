@@ -51,7 +51,7 @@ class LernaRelease extends Script<LernaReleaseOptions> {
     }
 
     await this.versionPackages(
-      args.options.changelogPreset ?? 'beemo',
+      args.options.changelogPreset ?? '@oriflame/conventional-changelog',
       args.options.graduate,
       preid,
     );
@@ -104,7 +104,9 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 
   // https://github.com/lerna/lerna/tree/master/commands/version#readme
   async versionPackages(preset: string, graduate?: boolean, preid?: string) {
-    const changelogPreset = preset.startsWith('conventional-changelog')
+    const changelogPreset = preset.startsWith('@')
+      ? preset
+      : preset.startsWith('conventional-changelog')
       ? preset
       : `conventional-changelog-${preset}`;
 
@@ -115,9 +117,8 @@ class LernaRelease extends Script<LernaReleaseOptions> {
       // Only run on master
       '--allow-branch',
       'master',
-      // Use the Beemo conventional commit preset
+      // Use the oriflame conventional commit preset
       '--conventional-commits',
-
       // Create a GitHub release
       '--create-release',
       'github',
