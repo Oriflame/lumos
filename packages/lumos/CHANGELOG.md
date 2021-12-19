@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.7 - 2021-12-19
+
+#### 🐞 Fixes
+
+- Update settings. ([2f0e471](https://github.com/Oriflame/lumos/commit/2f0e47107dc8ca9fcd6cb8496de7da9e0aeac712))
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.0.6 - 2021-12-19
 
 **Note:** Version bump only for package @oriflame/lumos
