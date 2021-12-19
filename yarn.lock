@@ -1643,16 +1643,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-eslint@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "@beemo/driver-eslint@npm:2.0.3"
+"@beemo/driver-eslint@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@beemo/driver-eslint@npm:2.0.4"
   dependencies:
     "@boost/event": ^3.0.0
-    "@types/eslint": ^7.28.2
+    "@types/eslint": ^8.2.1
   peerDependencies:
     "@beemo/core": ^2.0.0
     eslint: ^7.0.0 || ^8.0.0
-  checksum: 9594e6c2da1efc8f288422ea88815183696562949ae84b689ee55161de14ec8dd47323032bb8580416a32afa4277560ba635edb99d11f8f90ba39b16e47fe6fa
+  checksum: b2ac05eb7c96a5b07768d7c95be3d1ebe6dcde8ef0a22fc0bbdce414ad5f5ab27d7275384e3c512c7f9daa65b628021976d9355f30ec8a0ee525b7702fbfaf47
   languageName: node
   linkType: hard
 
@@ -3700,7 +3700,7 @@ __metadata:
   resolution: "@oriflame/config-eslint@workspace:packages/config-eslint"
   dependencies:
     "@beemo/core": ^2.1.2
-    "@beemo/driver-eslint": ^2.0.3
+    "@beemo/driver-eslint": ^2.0.4
     "@oriflame/lumos-common": ^4.3.0
     "@types/node": ^16.11.13
     eslint: ^8.4.1
@@ -3896,7 +3896,7 @@ __metadata:
     "@beemo/cli": ^2.0.4
     "@beemo/core": ^2.1.2
     "@beemo/driver-babel": ^2.0.4
-    "@beemo/driver-eslint": ^2.0.3
+    "@beemo/driver-eslint": ^2.0.4
     "@beemo/driver-jest": ^2.0.3
     "@beemo/driver-prettier": ^2.0.4
     "@beemo/driver-typescript": ^2.1.0
@@ -4297,23 +4297,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*":
+"@types/eslint@npm:*, @types/eslint@npm:^8.2.1":
   version: 8.2.1
   resolution: "@types/eslint@npm:8.2.1"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
   checksum: f32753ba184c212056f2bb7ee16937150a36e01da7eed15e2e179b7df76d0bbcbfa49972f30e9336f22be471c7f67fd91bcc8c25ff532462598de0f489df0cd8
-  languageName: node
-  linkType: hard
-
-"@types/eslint@npm:^7.28.2":
-  version: 7.29.0
-  resolution: "@types/eslint@npm:7.29.0"
-  dependencies:
-    "@types/estree": "*"
-    "@types/json-schema": "*"
-  checksum: df13991c554954353ce8f3bb03e19da6cc71916889443d68d178d4f858b561ba4cc4a4f291c6eb9eebb7f864b12b9b9313051b3a8dfea3e513dadf3188a77bdf
   languageName: node
   linkType: hard
 
