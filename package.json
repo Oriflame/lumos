@@ -38,6 +38,7 @@
     "./packages/*"
   ],
   "devDependencies": {
+    "@beemo/core": "^2.1.3",
     "@commitlint/cli": "^15.0.0",
     "@oriflame/conventional-changelog-lint-config": "^1.1.5",
     "cross-env": "^7.0.3",
