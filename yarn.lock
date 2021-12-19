@@ -1656,15 +1656,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-jest@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "@beemo/driver-jest@npm:2.0.3"
+"@beemo/driver-jest@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@beemo/driver-jest@npm:2.0.4"
   dependencies:
-    "@jest/types": ^27.2.5
+    "@jest/types": ^27.4.2
   peerDependencies:
     "@beemo/core": ^2.0.0
     jest: ^26.0.0 || ^27.0.0
-  checksum: 284d7896adc90c40a087fed305358a00f6447bd321c89d803efa99f135978dc59ae1f466e15ef81eaf4d20943724677f29828562752673ec7924560c07720004
+  checksum: 821f09bf1ab4e8694cc2ae1beff1c88c3dcb93ba4f888845cdd0ae984959877ff37484ab04d379cc95bc71aca4c7560ab764ee7531b3d761afdda1e63e26acb0
   languageName: node
   linkType: hard
 
@@ -2437,7 +2437,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/types@npm:^27.2.5, @jest/types@npm:^27.4.2":
+"@jest/types@npm:^27.4.2":
   version: 27.4.2
   resolution: "@jest/types@npm:27.4.2"
   dependencies:
@@ -3727,7 +3727,7 @@ __metadata:
     "@babel/core": ^7.16.5
     "@beemo/core": ^2.1.2
     "@beemo/driver-babel": ^2.0.4
-    "@beemo/driver-jest": ^2.0.3
+    "@beemo/driver-jest": ^2.0.4
     "@oriflame/lumos-common": ^4.3.0
     "@testing-library/jest-dom": ^5.16.1
     "@testing-library/react": ">=12"
@@ -3897,7 +3897,7 @@ __metadata:
     "@beemo/core": ^2.1.2
     "@beemo/driver-babel": ^2.0.4
     "@beemo/driver-eslint": ^2.0.3
-    "@beemo/driver-jest": ^2.0.3
+    "@beemo/driver-jest": ^2.0.4
     "@beemo/driver-prettier": ^2.0.4
     "@beemo/driver-typescript": ^2.1.0
     "@beemo/driver-webpack": ^2.0.4
