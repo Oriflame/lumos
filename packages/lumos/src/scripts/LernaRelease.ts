@@ -143,10 +143,10 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 
   // https://github.com/lerna/lerna/tree/master/commands/publish#readme
   async publishPackages(preid?: string) {
-    const args = ['lerna', 'publish', 'from-git'];
+    const args = ['lerna', 'publish', 'from-git', '--yes'];
 
     if (preid) {
-      args.push('--yes', '--dist-tag', 'next', '--preid', preid);
+      args.push('--dist-tag', 'next', '--preid', preid);
     }
 
     await this.executeCommand(this.npmClient, args);
