@@ -46,7 +46,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install Packages
-        run: yarn install
+        run: yarn install --no-immutable
 
       - name: Push yarn lock
         run: |
