@@ -38,6 +38,7 @@ export default function babelPresetOriflame(
     ['@babel/plugin-proposal-decorators', { legacy: true }],
     ['@babel/plugin-proposal-class-properties', { loose: true }],
     ['@babel/plugin-proposal-private-methods', { loose: true }],
+    ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
   );
 
   const presets: PluginItem[] = [
@@ -48,8 +49,11 @@ export default function babelPresetOriflame(
         exclude: [
           '@babel/plugin-transform-regenerator',
           '@babel/plugin-transform-async-to-generator',
+          '@babel/plugin-proposal-class-properties',
+          '@babel/plugin-proposal-private-methods',
+          '@babel/plugin-proposal-private-property-in-object',
         ],
-        loose: true,
+        loose: false,
         modules: modules ? false : 'commonjs',
         useBuiltIns: false,
         bugfixes: true,
@@ -60,7 +64,7 @@ export default function babelPresetOriflame(
         ...env,
       },
     ],
-    ['@babel/preset-typescript', { allowDeclareFields: true }],
+    ['@babel/preset-typescript', { allowDeclareFields: true, optimizeConstEnums: true }],
   ];
 
   if (graphql) {
@@ -96,18 +100,19 @@ export default function babelPresetOriflame(
   }
 
   if (!library) {
-    plugins.push([
-      'babel-plugin-module-resolver',
-      {
-        extensions: ['ts', 'tsx', 'js', 'jsx'],
-        alias: {
-          [ALIAS_PATTERN]: `./${srcFolder}`,
+    plugins.push(
+      [
+        'babel-plugin-module-resolver',
+        {
+          extensions: ['ts', 'tsx', 'js', 'jsx'],
+          alias: {
+            [ALIAS_PATTERN]: `./${srcFolder}`,
+          },
         },
-      },
-    ]);
+      ],
+      '@babel/plugin-transform-runtime',
+    );
   }
-
-  plugins.push('@babel/plugin-transform-runtime');
 
   return {
     plugins,
