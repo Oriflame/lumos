@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.12 - 2021-12-20
+
+#### 🐞 Fixes
+
+- Add config for module.exports. (#899) ([c56325a](https://github.com/Oriflame/lumos/commit/c56325ad2a1d9eb89eb9ab6edfcdc1bb98d37766)), work items [#899](https://github.com/Oriflame/lumos/issues/899)
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
 ### 5.0.11 - 2021-12-20
 
 #### 🐞 Fixes

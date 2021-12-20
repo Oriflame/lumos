@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.12 - 2021-12-20
+
+#### 📦 Dependencies
+
+- update dependency @boost/module to ^3.1.0 (#896) ([0a79532](https://github.com/Oriflame/lumos/commit/0a7953241e5272916eaf392b74594f1fc2c3674a)), work items [#896](https://github.com/Oriflame/lumos/issues/896)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.0.11 - 2021-12-20
 
 **Note:** Version bump only for package @oriflame/config-webpack
