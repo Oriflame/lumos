@@ -12,3 +12,4 @@ const another = a => {
 
 var _default = test;
 exports.default = _default;
+module.exports = exports.default;

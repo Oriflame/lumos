@@ -32,6 +32,9 @@ export function getConfig({
     babelrc: true,
     babelrcRoots: workspaces,
     comments: false,
+    parserOpts: {
+      ...(library && { sourceType: 'unambiguous' }),
+    },
     presets: [
       [
         '@oriflame/babel-preset',
