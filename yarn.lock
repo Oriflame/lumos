@@ -1756,6 +1756,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@boost/common@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@boost/common@npm:3.2.0"
+  dependencies:
+    "@boost/decorators": ^3.0.0
+    "@boost/internal": ^3.0.0
+    fast-glob: ^3.2.7
+    json5: ^2.2.0
+    optimal: ^5.1.1
+    pretty-ms: ^7.0.1
+    resolve: ^1.20.0
+    yaml: ^1.10.2
+  peerDependencies:
+    typescript: ^4.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 7c22824b4e8ba39fba1e45e3691820a2e458197562617b3aa109fb7f32de4b38066408ca1f0557cfedbd8bc1c95307b475d1299dacb03fb1f0702c76c0964ba4
+  languageName: node
+  linkType: hard
+
 "@boost/config@npm:^3.0.2":
   version: 3.0.2
   resolution: "@boost/config@npm:3.0.2"
@@ -3914,7 +3935,7 @@ __metadata:
     "@beemo/driver-prettier": ^2.0.5
     "@beemo/driver-typescript": ^2.1.1
     "@beemo/driver-webpack": ^2.0.5
-    "@boost/common": ^3.1.0
+    "@boost/common": ^3.2.0
     "@boost/module": ^3.1.0
     "@octokit/rest": ^18.12.0
     "@oriflame/config-babel": ^5.0.12
@@ -13427,7 +13448,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"optimal@npm:^5.1.0":
+"optimal@npm:^5.1.0, optimal@npm:^5.1.1":
   version: 5.1.1
   resolution: "optimal@npm:5.1.1"
   checksum: 7e7d2c831126239fbbb0d5ac034aa8d6fc08e7fc798ecf8598895b83d9147c1defe7e6d02b6eb93e9269b581cfdb895f968d0d47c477096e0898f79287748693
