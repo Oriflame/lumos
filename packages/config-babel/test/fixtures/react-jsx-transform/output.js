@@ -1,17 +1,19 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.Ahoj = void 0;
 exports.App = App;
 exports.default = exports.another = exports.Component = void 0;
 
-var _classPrivateFieldLooseBase2 = _interopRequireDefault(require("@babel/runtime/helpers/classPrivateFieldLooseBase"));
-
-var _classPrivateFieldLooseKey2 = _interopRequireDefault(require("@babel/runtime/helpers/classPrivateFieldLooseKey"));
-
 var _jsxRuntime = require("react/jsx-runtime");
+
+function _classPrivateFieldLooseBase(receiver, privateKey) { if (!Object.prototype.hasOwnProperty.call(receiver, privateKey)) { throw new TypeError("attempted to use private field on non-instance"); } return receiver; }
+
+var id = 0;
+
+function _classPrivateFieldLooseKey(name) { return "__private_" + id++ + "_" + name; }
 
 function App() {
   return (0, _jsxRuntime.jsx)("div", {
@@ -21,7 +23,7 @@ function App() {
 
 const test = '';
 
-var _totally = (0, _classPrivateFieldLooseKey2.default)("totally");
+var _totally = _classPrivateFieldLooseKey("totally");
 
 class Ahoj {
   constructor() {
@@ -32,7 +34,7 @@ class Ahoj {
   }
 
   get Totally() {
-    return (0, _classPrivateFieldLooseBase2.default)(this, _totally)[_totally];
+    return _classPrivateFieldLooseBase(this, _totally)[_totally];
   }
 
 }
