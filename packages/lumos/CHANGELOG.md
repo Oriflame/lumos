@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.13 - 2021-12-20
+
+#### 📦 Dependencies
+
+- update dependency @boost/common to ^3.2.0 (#895) ([9c76844](https://github.com/Oriflame/lumos/commit/9c768443cbf671196084e8ef6edbbc7da61f0cdf)), work items [#895](https://github.com/Oriflame/lumos/issues/895)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.0.12 - 2021-12-20
 
 #### 📦 Dependencies

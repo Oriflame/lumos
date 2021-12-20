@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.13 - 2021-12-20
+
+#### 📦 Dependencies
+
+- update dependency @boost/common to ^3.2.0 (#895) ([9c76844](https://github.com/Oriflame/lumos/commit/9c768443cbf671196084e8ef6edbbc7da61f0cdf)), work items [#895](https://github.com/Oriflame/lumos/issues/895)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([eef5b40](https://github.com/Oriflame/lumos/commit/eef5b4090adce87f83997823c6858a09ee2fdb15))
+- update dependency packemon to ^1.10.0 (#897) ([0de26f6](https://github.com/Oriflame/lumos/commit/0de26f6491177595fbd93ff91f1b11e34e1b31c2)), work items [#897](https://github.com/Oriflame/lumos/issues/897)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.12 - 2021-12-20
 
 #### 🐞 Fixes
