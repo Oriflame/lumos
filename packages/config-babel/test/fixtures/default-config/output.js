@@ -7,3 +7,4 @@ exports.default = void 0;
 const test = '';
 var _default = test;
 exports.default = _default;
+module.exports = exports.default;

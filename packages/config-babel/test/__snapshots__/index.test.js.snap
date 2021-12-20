@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babel typescript test typescript transpilation 1`] = `
+"\\"use strict\\";
+
+Object.defineProperty(exports, \\"__esModule\\", {
+  value: true
+});
+exports.default = void 0;
+
+function _classPrivateFieldLooseBase(receiver, privateKey) { if (!Object.prototype.hasOwnProperty.call(receiver, privateKey)) { throw new TypeError(\\"attempted to use private field on non-instance\\"); } return receiver; }
+
+var id = 0;
+
+function _classPrivateFieldLooseKey(name) { return \\"__private_\\" + id++ + \\"_\\" + name; }
+
+var _initialized = _classPrivateFieldLooseKey(\\"initialized\\");
+
+class Cls {
+  constructor() {
+    Object.defineProperty(this, _initialized, {
+      writable: true,
+      value: false
+    });
+    _classPrivateFieldLooseBase(this, _initialized)[_initialized] = true;
+  }
+
+}
+
+;
+var _default = Cls;
+exports.default = _default;
+module.exports = exports.default;"
+`;

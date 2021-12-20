@@ -54,7 +54,7 @@ export default function babelPresetOriflame(
           '@babel/plugin-proposal-private-property-in-object',
         ],
         loose: false,
-        modules: modules ? false : 'commonjs',
+        modules: modules ? false : 'cjs',
         useBuiltIns: false,
         bugfixes: true,
         shippedProposals: true,
@@ -112,6 +112,8 @@ export default function babelPresetOriflame(
       ],
       '@babel/plugin-transform-runtime',
     );
+  } else if (!modules) {
+    plugins.push('babel-plugin-add-module-exports');
   }
 
   return {
