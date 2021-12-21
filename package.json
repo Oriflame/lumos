@@ -58,7 +58,7 @@
     "webpack": "^5.65.0"
   },
   "resolutions": {
-    "caniuse-lite": "1.0.30001286"
+    "caniuse-lite": "1.0.30001292"
   },
   "packageManager": "yarn@3.1.1"
 }
