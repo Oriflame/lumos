@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.14 - 2021-12-21
+
+#### 📦 Dependencies
+
+- update dependency @emotion/babel-plugin to ^11.7.2 (#901) ([0cf7af2](https://github.com/Oriflame/lumos/commit/0cf7af21857cae9396e89a20871a1d6ab59b9aff)), work items [#901](https://github.com/Oriflame/lumos/issues/901)
+- update dependency webpack-dev-server to ^4.7.0 (#902) ([03fc298](https://github.com/Oriflame/lumos/commit/03fc2986e2eb53d3db42c486acc6f14d60b77a2c)), work items [#902](https://github.com/Oriflame/lumos/issues/902)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([d524180](https://github.com/Oriflame/lumos/commit/d524180487b8b56649d9c87de3d2223b7910e746))
+- update dependency @types/node to ^16.11.15 (#900) ([9274edf](https://github.com/Oriflame/lumos/commit/9274edf4017ee92e82a70d942dc7742f6c65218b)), work items [#900](https://github.com/Oriflame/lumos/issues/900)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.13 - 2021-12-20
 
 #### 📦 Dependencies

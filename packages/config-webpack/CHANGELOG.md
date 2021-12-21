@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.14 - 2021-12-21
+
+#### 📦 Dependencies
+
+- update dependency webpack-dev-server to ^4.7.0 (#902) ([03fc298](https://github.com/Oriflame/lumos/commit/03fc2986e2eb53d3db42c486acc6f14d60b77a2c)), work items [#902](https://github.com/Oriflame/lumos/issues/902)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.0.13 - 2021-12-20
 
 **Note:** Version bump only for package @oriflame/config-webpack

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.14 - 2021-12-21
+
+#### 📦 Dependencies
+
+- update dependency @emotion/babel-plugin to ^11.7.2 (#901) ([0cf7af2](https://github.com/oriflame/lumos/commit/0cf7af21857cae9396e89a20871a1d6ab59b9aff)), work items [#901](https://github.com/oriflame/lumos/issues/901)
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
 ### 5.0.13 - 2021-12-20
 
 **Note:** Version bump only for package @oriflame/babel-preset
