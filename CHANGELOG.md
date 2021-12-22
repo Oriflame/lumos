@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.16 - 2021-12-22
+
+#### 📦 Dependencies
+
+- update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.4 (#905) ([6ea681b](https://github.com/Oriflame/lumos/commit/6ea681bd813d1ca6b82cde9a2c251952f0d8d416)), work items [#905](https://github.com/Oriflame/lumos/issues/905)
+- update typescript-eslint monorepo to ^5.8.0 (#878) ([acf740b](https://github.com/Oriflame/lumos/commit/acf740bd298f20657daff999d6a31ac559048dfa)), work items [#878](https://github.com/Oriflame/lumos/issues/878)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([5a8a0a2](https://github.com/Oriflame/lumos/commit/5a8a0a253bfb50c347c1763e2d7c2590083b26a5))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.15 - 2021-12-21
 
 #### 📦 Dependencies
