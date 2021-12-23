@@ -94,21 +94,20 @@ export default function babelPresetOriflame(
   }
 
   if (!library) {
-    plugins.push(
-      [
-        'babel-plugin-module-resolver',
-        {
-          extensions: ['ts', 'tsx', 'js', 'jsx'],
-          alias: {
-            [ALIAS_PATTERN]: `./${srcFolder}`,
-          },
+    plugins.push([
+      'babel-plugin-module-resolver',
+      {
+        extensions: ['ts', 'tsx', 'js', 'jsx'],
+        alias: {
+          [ALIAS_PATTERN]: `./${srcFolder}`,
         },
-      ],
-      '@babel/plugin-transform-runtime',
-    );
+      },
+    ]);
   } else if (!modules && enableModuleExports) {
     plugins.push('babel-plugin-add-module-exports');
   }
+
+  plugins.push('@babel/plugin-transform-runtime');
 
   return {
     plugins,
