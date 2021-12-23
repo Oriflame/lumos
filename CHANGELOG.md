@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.21 - 2021-12-23
+
+#### 🐞 Fixes
+
+- Babel config. ([314d5b3](https://github.com/Oriflame/lumos/commit/314d5b399bbe3303a944168441e63485f317447d))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([27b8e6a](https://github.com/Oriflame/lumos/commit/27b8e6a896c3c32008da712248c70eeaf0c9d06b))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.20 - 2021-12-23
 
 #### 🐞 Fixes
