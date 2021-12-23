@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.20 - 2021-12-23
+
+#### 🐞 Fixes
+
+- Disable module exports. ([03f63a0](https://github.com/oriflame/lumos/commit/03f63a05965acfc1518858807276727f93d3a54d))
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
 ### 5.0.19 - 2021-12-23
 
 #### 🐞 Fixes

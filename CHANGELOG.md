@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.20 - 2021-12-23
+
+#### 🐞 Fixes
+
+- Disable module exports. ([03f63a0](https://github.com/Oriflame/lumos/commit/03f63a05965acfc1518858807276727f93d3a54d))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([6706742](https://github.com/Oriflame/lumos/commit/670674280c59425761c646e7bf25b96d627d411a))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.19 - 2021-12-23
 
 #### 🐞 Fixes
