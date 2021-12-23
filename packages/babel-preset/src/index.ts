@@ -34,12 +34,7 @@ export default function babelPresetOriflame(
 
   // When using decorators, we must apply loose to explicit plugins
   // https://babeljs.io/docs/en/babel-plugin-proposal-decorators#legacy
-  plugins.unshift(
-    ['@babel/plugin-proposal-decorators', { legacy: true }],
-    ['@babel/plugin-proposal-class-properties', { loose: true }],
-    ['@babel/plugin-proposal-private-methods', { loose: true }],
-    ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
-  );
+  plugins.unshift(['@babel/plugin-proposal-decorators', { legacy: true }]);
 
   const presets: PluginItem[] = [
     [
@@ -49,12 +44,9 @@ export default function babelPresetOriflame(
         exclude: [
           '@babel/plugin-transform-regenerator',
           '@babel/plugin-transform-async-to-generator',
-          '@babel/plugin-proposal-class-properties',
-          '@babel/plugin-proposal-private-methods',
-          '@babel/plugin-proposal-private-property-in-object',
         ],
-        loose: false,
-        modules: modules ? false : 'cjs',
+        loose: true,
+        modules: modules ? false : 'commonjs',
         useBuiltIns: false,
         bugfixes: true,
         shippedProposals: true,
