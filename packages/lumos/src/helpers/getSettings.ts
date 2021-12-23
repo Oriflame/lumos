@@ -67,6 +67,7 @@ export function getSettings(instance: Tool | undefined, name?: string): LumosSet
     node: false,
     react: false,
     nextjs: false,
+    enableModuleExports: false,
     srcFolder: 'src',
     testsFolder: 'tests',
     typesFolder: 'types',

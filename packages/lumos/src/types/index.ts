@@ -158,6 +158,11 @@ export interface LumosSettings {
    */
   enableConsoleMocks?: boolean;
   /**
+   * Enable babel module exports
+   * @default false
+   */
+  enableModuleExports?: boolean;
+  /**
    * Enable esm build
    */
   esm?: boolean;

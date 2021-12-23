@@ -10,6 +10,7 @@ export interface BabelPresetOriflameOptions {
   library?: boolean;
   srcFolder?: string;
   env?: Record<string, unknown>;
+  enableModuleExports?: boolean;
 }
 
 export default function babelPresetOriflame(
@@ -22,6 +23,7 @@ export default function babelPresetOriflame(
     library,
     srcFolder = 'src',
     env = {},
+    enableModuleExports,
   }: BabelPresetOriflameOptions = {},
 ) {
   const plugins: PluginItem[] = [
@@ -104,7 +106,7 @@ export default function babelPresetOriflame(
       ],
       '@babel/plugin-transform-runtime',
     );
-  } else if (!modules) {
+  } else if (!modules && enableModuleExports) {
     plugins.push('babel-plugin-add-module-exports');
   }
 

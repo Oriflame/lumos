@@ -10,6 +10,7 @@ interface BabelOptions {
   react?: boolean;
   empty?: boolean;
   srcFolder: string;
+  enableModuleExports?: boolean;
   workspaces?: string[];
 }
 
@@ -21,6 +22,7 @@ export function getConfig({
   node = false,
   react = false,
   empty = false,
+  enableModuleExports = true,
   srcFolder,
   workspaces,
 }: BabelOptions): BabelConfig {
@@ -45,6 +47,7 @@ export function getConfig({
           graphql,
           removePropTypes: !library && react,
           srcFolder,
+          enableModuleExports,
           env: {
             targets: node ? NODE_TARGET : WEB_TARGET,
             ...env,
