@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.24 - 2021-12-27
+
+#### 🐞 Fixes
+
+- Disable enable module exports. ([043a397](https://github.com/Oriflame/lumos/commit/043a3978d075b50f6a7808e879d4c732c8b996df))
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
 ### 5.0.23 - 2021-12-27
 
 **Note:** Version bump only for package @oriflame/config-babel
