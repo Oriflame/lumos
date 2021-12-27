@@ -46,6 +46,12 @@ const config: eslint.Linter.Config = {
         node: {
           tryExtensions: EXTS,
         },
+        'import/resolver': {
+          typescript: {},
+        },
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
       },
       rules: {
         ...typescriptRules,
