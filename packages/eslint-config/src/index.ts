@@ -18,6 +18,7 @@ const config: eslint.Linter.Config = {
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:eslint-plugin-promise/recommended',
+    'plugin:import/typescript',
     // eslint-disable-next-line node/no-missing-require -- needed
     require.resolve('./presets/base.js'),
   ],
