@@ -63,15 +63,6 @@ const config: eslint.Linter.Config = {
       CSS_EXT_PATTERN.source,
       GQL_EXT_PATTERN.source,
     ],
-    'import/extensions': EXTS,
-    'import/resolver': {
-      node: {
-        extensions: EXTS,
-      },
-      [path.resolve('../resolvers/graphql.js', __dirname)]: {
-        extensions: ['.gql', '.graphql'],
-      },
-    },
     react: {
       version: 'detect',
     },
