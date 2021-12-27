@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.25 - 2021-12-27
+
+#### 🐞 Fixes
+
+- Update import resolver. ([2124451](https://github.com/Oriflame/lumos/commit/2124451b2daa93894f6263ada9859d363ac04a57))
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.0.24 - 2021-12-27
 
 **Note:** Version bump only for package eslint-config-oriflame
