@@ -22,7 +22,7 @@ export function getConfig({
   node = false,
   react = false,
   empty = false,
-  enableModuleExports = true,
+  enableModuleExports = false,
   srcFolder,
   workspaces,
 }: BabelOptions): BabelConfig {
