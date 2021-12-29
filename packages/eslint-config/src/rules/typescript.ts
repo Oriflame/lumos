@@ -102,7 +102,7 @@ const config: eslint.Linter.Config['rules'] = {
   ], // enforces consistent usage of type assertions
   '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'], // consistent with type definition either interface or type
   '@typescript-eslint/consistent-type-exports': [
-    'warning',
+    'warn',
     { fixMixedExportsWithInlineTypeSpecifier: true },
   ], // enforces consistent usage of type exports
   '@typescript-eslint/consistent-type-imports': 'warn', // enforces consistent usage of type imports
