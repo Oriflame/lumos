@@ -3922,7 +3922,7 @@ __metadata:
     postcss-flexbugs-fixes: ^5.0.2
     postcss-import: ^14.0.2
     postcss-loader: ^6.2.1
-    postcss-modules: ^4.2.2
+    postcss-modules: ^4.3.0
     postcss-modules-values: ^4.0.0
     postcss-normalize: ^10.0.1
     postcss-preset-env: ^7.1.0
@@ -9473,12 +9473,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"generic-names@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "generic-names@npm:2.0.1"
+"generic-names@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "generic-names@npm:4.0.0"
   dependencies:
-    loader-utils: ^1.1.0
-  checksum: 5f2d6837dcddf4d7139f7c7ee4ff6ed82564123ae363aadc7a1c1c9967724da1e10d92c904b76b6ff58912465cf63cf47d87f3b400286845f289f54d5092e78f
+    loader-utils: ^3.2.0
+  checksum: 8dabd2505164191501b75f2861b5e1194458a344ae2a7c9776bdd72d1f50b248dff737bcdf118fff677275edb3632f2d10662e6ac122dd7b245c5baa8d303270
   languageName: node
   linkType: hard
 
@@ -12199,6 +12199,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"loader-utils@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "loader-utils@npm:3.2.0"
+  checksum: c7b9a8dc4b3bc19e9ef563c48e3a18ea9f8bb2da1ad38a12e4b88358cfba5f148a7baf12d78fe78ffcb718ce1e062ab31fcf5c148459f1247a672a4213471e80
+  languageName: node
+  linkType: hard
+
 "locate-path@npm:^2.0.0":
   version: 2.0.0
   resolution: "locate-path@npm:2.0.0"
@@ -14849,11 +14856,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-modules@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "postcss-modules@npm:4.2.2"
+"postcss-modules@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "postcss-modules@npm:4.3.0"
   dependencies:
-    generic-names: ^2.0.1
+    generic-names: ^4.0.0
     icss-replace-symbols: ^1.1.0
     lodash.camelcase: ^4.3.0
     postcss-modules-extract-imports: ^3.0.0
@@ -14863,7 +14870,7 @@ __metadata:
     string-hash: ^1.1.1
   peerDependencies:
     postcss: ^8.0.0
-  checksum: 9e8444dfb4cfde814559f91039c1475b721bff7fcae507fcd2d6efd192c58220c66c8ba5608697928b2fd3dfdf2ccfc92a698b6ed50fc02e5515c0b8fa2b9fdb
+  checksum: a67f091a2b297c52ef2339c01e3828835da382677676d2dbfa55ad7a5ca46fc588f0857bc4444245b1c313bbafc8b6c66cb9b578f4ef15a47367ab1d5bb36c38
   languageName: node
   linkType: hard
 
