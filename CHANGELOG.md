@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.29 - 2021-12-29
+
+#### 📦 Dependencies
+
+- update dependency webpack-dev-server to ^4.7.2 (#920) ([d1b64a5](https://github.com/Oriflame/lumos/commit/d1b64a55a2e5542117b2da3b59614155f4d63ad5)), work items [#920](https://github.com/Oriflame/lumos/issues/920)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([6cd2cd8](https://github.com/Oriflame/lumos/commit/6cd2cd8f4ba3181aa6409493b452293797ac3142))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.28 - 2021-12-29
 
 #### 🛠 Internals

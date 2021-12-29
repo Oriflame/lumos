@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.29 - 2021-12-29
+
+**Note:** Version bump only for package @oriflame/config-danger
+
+
+
+
+
 ### 5.0.28 - 2021-12-29
 
 #### 🛠 Internals
