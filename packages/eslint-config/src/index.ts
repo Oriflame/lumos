@@ -1,6 +1,5 @@
-import { ASSET_EXT_PATTERN, CSS_EXT_PATTERN, EXTS, GQL_EXT_PATTERN } from '@oriflame/lumos-common';
+import { ASSET_EXT_PATTERN, CSS_EXT_PATTERN, GQL_EXT_PATTERN } from '@oriflame/lumos-common';
 import type eslint from 'eslint';
-import path from 'path';
 
 const config: eslint.Linter.Config = {
   parser: '@babel/eslint-parser',

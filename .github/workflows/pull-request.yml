@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 16
       - run: yarn install --immutable
-      - run: yarn run pack
+      - run: yarn run build
       # Workaround for danger
       - run: rm babel.config.js
       - run: npx danger ci --use-github-checks

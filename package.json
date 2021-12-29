@@ -8,7 +8,7 @@
     "setup": "tsc --build",
     "clean": "rimraf packages/*/{lib,dts,*.tsbuildinfo,node_modules}",
     "syncProjects": "beemo typescript:sync-project-refs",
-    "build": "packemon build --addEngines",
+    "build": "packemon build --addEngines --declaration=standard",
     "type": "tsc --build",
     "pack": "cross-env NODE_ENV=production packemon pack --addEngines --declaration=standard",
     "test": "yarn run pack && yarn run lint && yarn run jest && yarn run test:webpack && yarn run test:webpack-entry",
