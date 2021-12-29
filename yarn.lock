@@ -4025,7 +4025,7 @@ __metadata:
     chalk: ^5.0.0
     check-node-version: ^4.2.1
     cross-env: ^7.0.3
-    edit-json-file: ^1.6.2
+    edit-json-file: ^1.7.0
     eslint: ^8.5.0
     execa: ^5.1.1
     jest: ^27.4.5
@@ -7997,16 +7997,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"edit-json-file@npm:^1.6.2":
-  version: 1.6.2
-  resolution: "edit-json-file@npm:1.6.2"
+"edit-json-file@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "edit-json-file@npm:1.7.0"
   dependencies:
     find-value: ^1.0.12
     iterate-object: ^1.3.4
     r-json: ^1.2.10
     set-value: ^4.1.0
     w-json: ^1.3.10
-  checksum: be0ce5af404c49aa7797477c7ae5d670120b0a7def46056cc0d66413b121164b5eb58b83e0dfae29e6f51504123ea22cf41099af5a30532952c667f494df82cc
+  checksum: 12bb6fdc67813b47110159bf1dadf133e2186e11b843fa191222c044e63196b446f8430a3217053377ee9c1f9462991a3a0e47d110c89f217a7519dd251179b9
   languageName: node
   linkType: hard
 

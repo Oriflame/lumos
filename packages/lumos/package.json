@@ -62,7 +62,7 @@
     "chalk": "^5.0.0",
     "check-node-version": "^4.2.1",
     "cross-env": "^7.0.3",
-    "edit-json-file": "^1.6.2",
+    "edit-json-file": "^1.7.0",
     "eslint": "^8.5.0",
     "execa": "^5.1.1",
     "jest": "^27.4.5",
