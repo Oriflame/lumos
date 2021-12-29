@@ -17,6 +17,5 @@ class Cls {
 
 ;
 var _default = Cls;
-exports.default = _default;
-module.exports = exports.default;"
+exports.default = _default;"
 `;
