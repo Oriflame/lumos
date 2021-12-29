@@ -28,6 +28,7 @@ const config: eslint.Linter.Config['rules'] = {
   'no-unused-vars': 'off', // disallow unused variables
   'no-use-before-define': 'off', // disallow the use of variables before they are defined
   'no-useless-constructor': 'off', // disallow unnecessary constructors
+  'padding-line-between-statements': 'off', // require or disallow padding lines between statements
   quotes: 'off', // enforce the consistent use of either backticks, double, or single quotes
   'require-await': 'off', // disallow async functions which have no await expression
   'space-infix-ops': 'off', // require spacing around infix operators
@@ -100,6 +101,10 @@ const config: eslint.Linter.Config['rules'] = {
     },
   ], // enforces consistent usage of type assertions
   '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'], // consistent with type definition either interface or type
+  '@typescript-eslint/consistent-type-exports': [
+    'error',
+    { fixMixedExportsWithInlineTypeSpecifier: true },
+  ], // enforces consistent usage of type exports
   '@typescript-eslint/consistent-type-imports': 'off', // enforces consistent usage of type imports
   '@typescript-eslint/default-param-last': 'warn', // enforce default parameters to be last
   '@typescript-eslint/dot-notation': ['error', { allowKeywords: true }], // enforce dot notation whenever possible
@@ -276,7 +281,6 @@ const config: eslint.Linter.Config['rules'] = {
   ], // forbids the use of classes as namespaces
   '@typescript-eslint/no-floating-promises': 'off', // requires Promise-like values to be handled appropriately
   '@typescript-eslint/no-for-in-array': 'error', // disallow iterating over an array with a for-in loop
-  '@typescript-eslint/no-implicit-any-catch': 'error', // disallow usage of the implicit any type in catch clauses
   '@typescript-eslint/no-implied-eval': 'error', // disallow the use of eval()-like methods
   '@typescript-eslint/no-inferrable-types': [
     'error',
@@ -287,13 +291,21 @@ const config: eslint.Linter.Config['rules'] = {
   '@typescript-eslint/no-loop-func': 'warn', // disallow function declarations that contain unsafe references inside loop statements
   '@typescript-eslint/no-loss-of-precision': 'warn', // disallow literal numbers that lose precision
   '@typescript-eslint/no-magic-numbers': 'off', // disallows magic numbers
+  '@typescript-eslint/no-meaningless-void-operator': [
+    'error',
+    {
+      checkNever: true,
+    },
+  ], // disallow the void operator except when used to discard a value
   '@typescript-eslint/no-misused-new': 'error', // enforce valid definition of new and constructor
   '@typescript-eslint/no-misused-promises': ['error'], // avoid using promises in places not designed to handle them
   '@typescript-eslint/no-namespace': 'warn', // disallow the use of custom TypeScript modules and namespaces
+  '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error', // disallows using a non-null assertion in the left operand of the nullish coalescing operator
   '@typescript-eslint/no-non-null-asserted-optional-chain': 'error', // disallows using a non-null assertion after an optional chain expression
   '@typescript-eslint/no-non-null-assertion': 'warn', // disallows non-null assertions using the ! postfix operator
   '@typescript-eslint/no-parameter-properties': 'error', // disallow the use of parameter properties in class constructors
   '@typescript-eslint/no-redeclare': 'error', // disallow variable redeclaration
+  '@typescript-eslint/no-restricted-imports': 'off', // disallow specified modules when loaded by import
   '@typescript-eslint/no-require-imports': 'error', // disallows invocation of require()
   '@typescript-eslint/no-shadow': ['warn', { allow: ['resolve, reject'] }], // disallow variable declarations from shadowing variables declared in the outer scope
   '@typescript-eslint/no-this-alias': 'warn', // disallow aliasing this
@@ -325,6 +337,12 @@ const config: eslint.Linter.Config['rules'] = {
   '@typescript-eslint/no-var-requires': 'off', // disallows the use of require statements except in import statements
   '@typescript-eslint/non-nullable-type-assertion-style': 'off', // prefers a non-null assertion over explicit type cast when possible
   '@typescript-eslint/object-curly-spacing': 'off', // enforce consistent spacing inside braces
+  '@typescript-eslint/padding-line-between-statements': [
+    'warn',
+    { blankLine: 'always', prev: '*', next: 'return' },
+    { blankLine: 'always', prev: 'import', next: '*' },
+    { blankLine: 'any', prev: 'import', next: 'import' },
+  ], // require or disallow padding lines between statements
   '@typescript-eslint/prefer-as-const': 'error', // prefer usage of as const over literal type
   '@typescript-eslint/prefer-enum-initializers': 'off', // prefer initializing each enums member value
   '@typescript-eslint/prefer-for-of': 'warn', // prefer a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated

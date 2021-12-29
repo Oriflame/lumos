@@ -15,13 +15,7 @@ const config: eslint.Linter.Config['rules'] = {
   // eslint-plugin-jest
   'jest/consistent-test-it': 'off', // have control over test and it usages
   'jest/expect-expect': 'warn', // enforce assertion to be made in a test body
-  'jest/lowercase-name': 'off', // enforce lowercase test names
-  'jest/max-nested-describe': [
-    'error',
-    {
-      max: 3,
-    },
-  ], // enforces a maximum depth to nested describe calls
+  'jest/max-nested-describe': ['error', { max: 3 }], // enforces a maximum depth to nested describe calls
   'jest/no-alias-methods': 'warn', // disallow alias methods
   'jest/no-commented-out-tests': 'warn', // disallow commented out tests
   'jest/no-conditional-expect': 'error', // prevent calling expect conditionally
@@ -45,17 +39,20 @@ const config: eslint.Linter.Config['rules'] = {
   'jest/no-test-return-statement': 'error', // disallow explicitly returning from tests
   'jest/prefer-called-with': 'warn', // suggest using toBeCalledWith() or toHaveBeenCalledWith()
   'jest/prefer-expect-assertions': 'off', // suggest using expect.assertions() OR expect.hasAssertions()
+  'jest/prefer-expect-resolves': 'error', // prefer await expect(...).resolves over expect(await ...) syntax
   'jest/prefer-hooks-on-top': 'warn', // suggest having hooks before any test cases
+  'jest/prefer-lowercase-title': ['warn', { allowedPrefixes: [], ignoreTopLevelDescribe: true }], // enforce valid describe() callback
   'jest/prefer-spy-on': 'error', // suggest using jest.spyOn()
   'jest/prefer-strict-equal': 'off', // suggest using toStrictEqual()
+  'jest/prefer-to-be': 'warn', // suggest using toBe() for primitive literals
   'jest/prefer-to-contain': 'warn', // suggest using toContain()
   'jest/prefer-to-have-length': 'warn', // suggest using toHaveLength()
   'jest/prefer-todo': 'warn', // suggest using test.todo
+  'jest/require-hook': 'warn', // require setup and teardown code to be within a hook
   'jest/require-to-throw-message': 'error', // require a message for toThrow()
   'jest/require-top-level-describe': 'error', // require test cases and hooks to be inside a describe block
   'jest/unbound-method': 'error', // enforces unbound methods are called with their expected scope
   'jest/valid-describe-callback': 'error', // enforce valid describe() callback
-  'jest/prefer-lowercase-title': ['warn', { allowedPrefixes: [], ignoreTopLevelDescribe: true }], // enforce valid describe() callback
   'jest/valid-expect': ['error', { alwaysAwait: true }], // enforce valid expect() usage
   'jest/valid-expect-in-promise': 'error', // enforce having return statement when testing with promises
   'jest/valid-title': 'warn', // enforce valid titles

@@ -5,7 +5,7 @@ import a11yRules from '../rules/a11y';
 import eslintRules from '../rules/eslint';
 import commentsRules from '../rules/eslint-comments';
 import importRules from '../rules/import';
-import jestRules from '../rules/jest-rules';
+import jestRules from '../rules/jest';
 import promiseRules from '../rules/promise';
 import reactRules from '../rules/react';
 import reactHooksRules from '../rules/react-hooks';

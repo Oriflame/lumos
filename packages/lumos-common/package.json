@@ -9,7 +9,7 @@
     "utils"
   ],
   "main": "./lib/index.js",
-  "types": "./dts/index.d.ts",
+  "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:Oriflame/lumos.git",

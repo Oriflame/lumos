@@ -31,11 +31,14 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/no-array-method-this-argument': 'error', // disallow using the this argument in array methods
   'unicorn/no-array-push-push': 'error', // enforce combining multiple Array#push() into one call
   'unicorn/no-array-reduce': 'off', // disallow Array#reduce() and Array#reduceRight()
+  'unicorn/no-await-expression-member': 'off', // forbid member access from await expression
   'unicorn/no-console-spaces': 'off', // do not use leading/trailing space between console.log parameters
   'unicorn/no-document-cookie': 'error', // do not use document.cookie directly
+  'unicorn/no-empty-file': 'warn', // disallow empty files
   'unicorn/no-for-loop': 'warn', // Do not use a for loop that can be replaced with a for-of loop
   'unicorn/no-hex-escape': 'warn', // enforce the use of Unicode escapes instead of hexadecimal escapes
   'unicorn/no-instanceof-array': 'error', // require Array.isArray() instead of instanceof Array
+  'unicorn/no-invalid-remove-event-listener': 'error', // prevent calling EventTarget#removeEventListener() with the result of an expression
   'unicorn/no-keyword-prefix': 'off', // disallow identifiers starting with new or class
   'unicorn/no-lonely-if': 'warn', // disallow if statements as the only statement in if blocks without else
   'unicorn/no-nested-ternary': 'error', // disallow nested ternary expressions
@@ -49,6 +52,7 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/no-unreadable-array-destructuring': 'warn', // disallow unreadable array destructuring
   'unicorn/no-unsafe-regex': 'off', // disallow unsafe regular expressions
   'unicorn/no-unused-properties': 'off', // disallow unused object properties
+  'unicorn/no-useless-fallback-in-spread': 'error', // forbid useless fallback when spreading in object literals
   'unicorn/no-useless-length-check': 'off', // disallow useless array length check
   'unicorn/no-useless-spread': 'error', // disallow unnecessary spread
   'unicorn/no-useless-undefined': 'off', // disallow useless undefined
@@ -62,12 +66,14 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/prefer-array-index-of': 'warn', // prefer Array#indexOf() over Array#findIndex() when looking for the index of an item
   'unicorn/prefer-array-some': 'warn', // prefer .some(…) over .find(…)
   'unicorn/prefer-at': 'warn', // prefer .at() method for index access and String#charAt()
+  'unicorn/prefer-code-point': 'warn', // prefer String#codePointAt(…) over String#charCodeAt(…) and String.fromCodePoint(…) over String.fromCharCode(…)
   'unicorn/prefer-date-now': 'warn', // prefer Date.now() to get the number of milliseconds since the Unix Epoch
   'unicorn/prefer-default-parameters': 'error', // prefer default parameters over reassignment
   'unicorn/prefer-dom-node-append': 'warn', // prefer Node#append() over Node#appendChild()
   'unicorn/prefer-dom-node-dataset': 'warn', // prefer using .dataset on DOM elements over .setAttribute(…)
   'unicorn/prefer-dom-node-remove': 'warn', // prefer childNode.remove() over parentNode.removeChild(childNode)
   'unicorn/prefer-dom-node-text-content': 'warn', // prefer .textContent over .innerText
+  'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }], // prefer export…from when re-exporting
   'unicorn/prefer-includes': 'off', // prefer .includes() over .indexOf() when checking for existence or non-existence
   'unicorn/prefer-keyboard-event-key': 'warn', // prefer KeyboardEvent#key over KeyboardEvent#keyCode.
   'unicorn/prefer-math-trunc': 'warn', // enforce the use of Math.trunc instead of bitwise operators
@@ -102,6 +108,7 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/require-number-to-fixed-digits-argument': 'error', // enforce using the digits argument with Number#toFixed()
   'unicorn/require-post-message-target-origin': 'error', // enforce using the targetOrigin argument with window.postMessage()
   'unicorn/string-content': 'off', // enforce better string content
+  'unicorn/template-indent': 'off', // fix whitespace-insensitive template indentation
   'unicorn/throw-new-error': 'error', // require new when throwing an error
 };
 
