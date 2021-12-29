@@ -13,6 +13,7 @@ import reactRulesConfig from '../../src/rules/react';
 import testingLibraryRulesConfig from '../../src/rules/testing-library';
 import typescriptRulesConfig from '../../src/rules/typescript';
 import unicornRulesConfig from '../../src/rules/unicorn';
+import nextjsRulesConfig from '../../src/rules/nextjs';
 
 const a11yRules = Object.entries(a11yRulesConfig!).map(([ruleName]) => ruleName);
 const eslintRules = Object.entries(eslintRulesConfig!).map(([ruleName]) => ruleName);
@@ -31,6 +32,7 @@ const testingLibraryRules = Object.entries(testingLibraryRulesConfig!).map(
 );
 const typescriptRules = Object.entries(typescriptRulesConfig!).map(([ruleName]) => ruleName);
 const unicornRules = Object.entries(unicornRulesConfig!).map(([ruleName]) => ruleName);
+const nextjsRules = Object.entries(nextjsRulesConfig!).map(([ruleName]) => ruleName);
 
 const usedRules = [
   ...a11yRules,
@@ -46,6 +48,7 @@ const usedRules = [
   ...testingLibraryRules,
   ...typescriptRules,
   ...unicornRules,
+  ...nextjsRules,
 ].sort();
 
 const missingRules: string[] = [];

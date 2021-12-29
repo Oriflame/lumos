@@ -2,7 +2,8 @@
   "compilerOptions": {
     "declarationDir": "dts",
     "outDir": "dts",
-    "rootDir": "../../"
+    "rootDir": "../../",
+    "module": "commonjs"
   },
   "exclude": [
     "dts",

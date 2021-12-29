@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-const eslint = require('eslint/lib/rules');
+const eslint = require('eslint/use-at-your-own-risk');
 const eslintPluginTypescript = require('@typescript-eslint/eslint-plugin');
 const eslintPluginEslintComments = require('eslint-plugin-eslint-comments');
 const eslintPluginImport = require('eslint-plugin-import');
@@ -15,72 +15,77 @@ const eslintPluginReact = require('eslint-plugin-react');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
 const eslintPluginUnicorn = require('eslint-plugin-unicorn');
+const eslintPluginNextjs = require('@next/eslint-plugin-next');
 
 interface Rule {
-  meta: {
+  meta?: {
     deprecated: boolean;
   };
 }
 
 const eslintRules: string[] = [];
 
-for (const [ruleName, rule] of eslint.entries()) {
-  if (!rule.meta.deprecated) {
+for (const [ruleName, rule] of eslint.builtinRules.entries()) {
+  if (!rule.meta?.deprecated) {
     eslintRules.push(ruleName);
   }
 }
 
 const typescriptRules = (Object.entries(eslintPluginTypescript.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `@typescript-eslint/${ruleName}`);
 
 const eslintCommentsRules = (
   Object.entries(eslintPluginEslintComments.rules) as Array<[string, Rule]>
 )
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `eslint-comments/${ruleName}`);
 
 const importRules = (Object.entries(eslintPluginImport.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `import/${ruleName}`);
 
 const jestRules = (Object.entries(eslintPluginJest.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `jest/${ruleName}`);
 
 const jsxA11yRules = (Object.entries(eslintPluginJsxA11y.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `jsx-a11y/${ruleName}`);
 
 const nodeRules = (Object.entries(eslintPluginNode.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `node/${ruleName}`);
 
 const prettierRules = (Object.entries(eslintPluginPrettier.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `prettier/${ruleName}`);
 
 const promiseRules = (Object.entries(eslintPluginPromise.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `promise/${ruleName}`);
 
 const reactRules = (Object.entries(eslintPluginReact.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `react/${ruleName}`);
 
 const reactHooksRules = (Object.entries(eslintPluginReactHooks.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `react-hooks/${ruleName}`);
 
 const testingLibraryRules = (
   Object.entries(eslintPluginTestingLibrary.rules) as Array<[string, Rule]>
 )
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `testing-library/${ruleName}`);
 
 const unicornRules = (Object.entries(eslintPluginUnicorn.rules) as Array<[string, Rule]>)
-  .filter(([ruleName, rule]) => !rule.meta.deprecated)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
   .map(([ruleName]) => `unicorn/${ruleName}`);
+
+const nextjsRules = (Object.entries(eslintPluginNextjs.rules) as Array<[string, Rule]>)
+  .filter(([ruleName, rule]) => !rule.meta?.deprecated)
+  .map(([ruleName]) => `@next/next/${ruleName}`);
 
 export const allRules = [
   ...eslintRules,
@@ -96,4 +101,5 @@ export const allRules = [
   ...reactHooksRules,
   ...testingLibraryRules,
   ...unicornRules,
+  ...nextjsRules,
 ];
