@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.27 - 2021-12-29
+
+#### 📦 Dependencies
+
+- update dependency edit-json-file to ^1.7.0 (#910) ([602b6ce](https://github.com/Oriflame/lumos/commit/602b6cee1b08dfc81fa8a76c51a7f03372963e90)), work items [#910](https://github.com/Oriflame/lumos/issues/910)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.0.26 - 2021-12-29
 
 **Note:** Version bump only for package @oriflame/lumos

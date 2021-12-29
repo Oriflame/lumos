@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.27 - 2021-12-29
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-jest to ^25.3.2 (#916) ([a52fb68](https://github.com/Oriflame/lumos/commit/a52fb68da10dc8fd24dea1e7726b5c84bb32cb34)), work items [#916](https://github.com/Oriflame/lumos/issues/916)
+- update typescript-eslint monorepo to ^5.8.1 (#915) ([b22481b](https://github.com/Oriflame/lumos/commit/b22481b60cc0690cd5716219817c42bcc9f44966)), work items [#915](https://github.com/Oriflame/lumos/issues/915)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.0.26 - 2021-12-29
 
 #### 🛠 Internals

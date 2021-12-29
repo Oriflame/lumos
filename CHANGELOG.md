@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.0.27 - 2021-12-29
+
+#### 📦 Dependencies
+
+- update dependency edit-json-file to ^1.7.0 (#910) ([602b6ce](https://github.com/Oriflame/lumos/commit/602b6cee1b08dfc81fa8a76c51a7f03372963e90)), work items [#910](https://github.com/Oriflame/lumos/issues/910)
+- update dependency eslint-plugin-jest to ^25.3.2 (#916) ([a52fb68](https://github.com/Oriflame/lumos/commit/a52fb68da10dc8fd24dea1e7726b5c84bb32cb34)), work items [#916](https://github.com/Oriflame/lumos/issues/916)
+- update dependency postcss-modules to ^4.3.0 (#912) ([29b9ee6](https://github.com/Oriflame/lumos/commit/29b9ee6bfa3a32d6dbabd5d69c88e93dc91e66ad)), work items [#912](https://github.com/Oriflame/lumos/issues/912)
+- update dependency postcss-reporter to ^7.0.5 (#914) ([e5a82d9](https://github.com/Oriflame/lumos/commit/e5a82d927ac6163592e6cf54c45eee6bd415492f)), work items [#914](https://github.com/Oriflame/lumos/issues/914)
+- update typescript-eslint monorepo to ^5.8.1 (#915) ([b22481b](https://github.com/Oriflame/lumos/commit/b22481b60cc0690cd5716219817c42bcc9f44966)), work items [#915](https://github.com/Oriflame/lumos/issues/915)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([4a6c132](https://github.com/Oriflame/lumos/commit/4a6c132ed3c52a395552ade92acbdd8dc2ed1f9e))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.0.26 - 2021-12-29
 
 #### 🛠 Internals
