@@ -68,6 +68,7 @@ const config: eslint.Linter.Config['rules'] = {
   'react/no-access-state-in-setstate': 'error', // reports when this.state is accessed within setState
   'react/no-adjacent-inline-elements': 'off', // prevent adjacent inline elements not separated by whitespace
   'react/no-array-index-key': 'error', // prevent usage of Array index in keys
+  'react/no-arrow-function-lifecycle': 'error', // lifecycle methods should be methods on the prototype, not class fields
   'react/no-children-prop': 'error', // prevent passing of children as props
   'react/no-danger': 'warn', // prevent usage of dangerous JSX props
   'react/no-danger-with-children': 'error', // report when a DOM element is using both children and dangerouslySetInnerHTML
@@ -76,8 +77,10 @@ const config: eslint.Linter.Config['rules'] = {
   'react/no-did-update-set-state': 'error', // prevent usage of setState in componentDidUpdate
   'react/no-direct-mutation-state': 'error', // prevent direct mutation of this.state
   'react/no-find-dom-node': 'error', // prevent usage of findDOMNode
+  'react/no-invalid-html-attribute': 'off', // forbid attribute with an invalid values
   'react/no-is-mounted': 'error', // prevent usage of isMounted
-  'react/no-multi-comp': 'off', // prevent multiple component definition per file
+  'react/no-multi-comp': 'off', // prevent multiple component definition per
+  'react/no-namespace': 'error', // enforce that namespaces are not used in React elements
   'react/no-redundant-should-component-update': 'error', // flag shouldComponentUpdate when extending PureComponent
   'react/no-render-return-value': 'error', // prevent usage of the return value of React.render
   'react/no-set-state': 'off', // prevent usage of setState
@@ -88,10 +91,12 @@ const config: eslint.Linter.Config['rules'] = {
   'react/no-unknown-property': 'warn', // prevent usage of unknown DOM property
   'react/no-unsafe': 'error', // prevent usage of unsafe lifecycle methods
   'react/no-unstable-nested-components': 'error', // prevent creating unstable components inside components
+  'react/no-unused-class-component-methods': 'error', // prevent declaring unused methods of component class
   'react/no-unused-prop-types': 'off', // prevent definitions of unused prop types
   'react/no-unused-state': 'error', // prevent definitions of unused state fields
   'react/no-will-update-set-state': 'error', // prevent usage of setState in componentWillUpdate
   'react/prefer-es6-class': 'error', // enforce ES5 or ES6 class for React Components
+  'react/prefer-exact-props': 'off', // prefer exact proptype definitions
   'react/prefer-read-only-props': 'off', // require read-only props
   'react/prefer-stateless-function': 'error', // enforce stateless React Components to be written as a pure function
   'react/react-in-jsx-scope': 'off', // prevent missing React when using JSX

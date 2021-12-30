@@ -288,6 +288,7 @@ const config: eslint.Linter.Config['rules'] = {
     { allowShortCircuit: true, allowTernary: true, enforceForJSX: true },
   ], // disallow unused expressions
   'no-unused-labels': 'error', // disallow unused labels
+  'no-unused-private-class-members': 'error', //  disallow unused private class members
   'no-unused-vars': ['error', { vars: 'local', args: 'after-used' }], // disallow unused variables
   'no-use-before-define': 'error', // disallow the use of variables before they are defined
   'no-useless-backreference': 'warn', // disallow useless backreferences in regular expressions
@@ -333,6 +334,8 @@ const config: eslint.Linter.Config['rules'] = {
   'prefer-exponentiation-operator': 'error', // disallow the use of `Math.pow` in favor of the `**` operator
   'prefer-named-capture-group': 'off', // enforce using named capture group in regular expression
   'prefer-numeric-literals': 'error', // disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
+  // TODO: set to error when we ensure compatibility (e.g. Node.js v16.9 is needed for Object.hasOwn())
+  'prefer-object-has-own': 'off', // disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`
   'prefer-object-spread': 'error', // disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead.
   'prefer-promise-reject-errors': 'error', // require using Error objects as Promise rejection reasons
   'prefer-regex-literals': 'error', // disallow use of the RegExp constructor in favor of regular expression literals
