@@ -101,10 +101,7 @@ const config: eslint.Linter.Config['rules'] = {
     },
   ], // enforces consistent usage of type assertions
   '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'], // consistent with type definition either interface or type
-  '@typescript-eslint/consistent-type-exports': [
-    'warn',
-    { fixMixedExportsWithInlineTypeSpecifier: true },
-  ], // enforces consistent usage of type exports
+  '@typescript-eslint/consistent-type-exports': 'warn', // enforces consistent usage of type exports
   '@typescript-eslint/consistent-type-imports': 'warn', // enforces consistent usage of type imports
   '@typescript-eslint/default-param-last': 'warn', // enforce default parameters to be last
   '@typescript-eslint/dot-notation': ['error', { allowKeywords: true }], // enforce dot notation whenever possible
