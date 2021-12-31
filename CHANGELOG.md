@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.2 - 2021-12-31
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.16.7 (#923) ([bb62b7b](https://github.com/Oriflame/lumos/commit/bb62b7b2e4d244d363014c7191fbb84e7ff3b085)), work items [#923](https://github.com/Oriflame/lumos/issues/923)
+- update dependency eslint-plugin-jest to ^25.3.3 (#921) ([af74fff](https://github.com/Oriflame/lumos/commit/af74fff3045ac74b45308f05e32ab8785b95adb9)), work items [#921](https://github.com/Oriflame/lumos/issues/921)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([cd7375c](https://github.com/Oriflame/lumos/commit/cd7375c85f79c8b753e26cacf20575c5eb1bb560))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.1 - 2021-12-31
 
 #### 📦 Dependencies
