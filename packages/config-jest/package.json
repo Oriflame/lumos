@@ -34,7 +34,7 @@
     "transformers/*"
   ],
   "dependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.16.7",
     "@beemo/driver-jest": "^2.0.4",
     "@oriflame/lumos-common": "^5.1.0",
     "@testing-library/jest-dom": "^5.16.1",
