@@ -38,7 +38,7 @@
     "@beemo/driver-jest": "^2.0.4",
     "@oriflame/lumos-common": "^5.1.0",
     "@testing-library/jest-dom": "^5.16.1",
-    "@types/jest": "^27.0.3",
+    "@types/jest": "^27.4.0",
     "dom-storage": "^2.1.0",
     "graphql": "^16.2.0",
     "graphql-tag": "^2.12.6",
