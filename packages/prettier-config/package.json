@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-oriflame",
-  "version": "5.1.4",
+  "version": "5.1.5",
   "description": "Reusable Prettier config for lumos configured projects.",
   "keywords": [
     "prettier",
