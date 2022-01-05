@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.8 - 2022-01-05
+
+#### 📦 Dependencies
+
+- update dependency jest to ^27.4.6 (#932) ([108d8f3](https://github.com/Oriflame/lumos/commit/108d8f3db71d7cb7af58a56b5f1bbe9db2fceda7)), work items [#932](https://github.com/Oriflame/lumos/issues/932)
+- update typescript-eslint monorepo to ^5.9.0 (#930) ([0d3871e](https://github.com/Oriflame/lumos/commit/0d3871e8e519faeb16313a9f7483ad7e3ef92968)), work items [#930](https://github.com/Oriflame/lumos/issues/930)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([4f5944a](https://github.com/Oriflame/lumos/commit/4f5944adcc8b8c6b5cbe9343d5893a71c9acbee2))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.7 - 2022-01-04
 
 #### 🛠 Internals
