@@ -50,7 +50,7 @@ const config: eslint.Linter.Config = {
           typescript: {},
         },
         'import/parsers': {
-          '@typescript-eslint/parser': ['.ts', '.tsx'],
+          '@typescript-eslint/parser': ['.ts', '.tsx', '.mts', '.cts'],
         },
       },
       rules: {

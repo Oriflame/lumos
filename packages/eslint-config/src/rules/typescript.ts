@@ -37,7 +37,16 @@ const config: eslint.Linter.Config['rules'] = {
   'node/file-extension-in-import': [
     'error',
     'always',
-    { '.js': 'never', '.jsx': 'never', '.ts': 'never', '.tsx': 'never' },
+    {
+      '.js': 'never',
+      '.jsx': 'never',
+      '.ts': 'never',
+      '.tsx': 'never',
+      '.mjs': 'never',
+      '.cjs': 'never',
+      '.mts': 'never',
+      '.cts': 'never',
+    },
   ], // enforce the style of file extensions in import declarations
   'node/no-missing-import': 'off', // disallow import declarations which import non-existence modules
 

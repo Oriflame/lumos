@@ -12,11 +12,13 @@ const config: eslint.Linter.Config = {
   },
   settings: {
     node: {
-      tryExtensions: ['.js', '.jsx', '.json'],
+      tryExtensions: ['.js', '.jsx', '.json', '.mjs', '.cjs'],
     },
     convertPath: {
       'src/**/*.ts': ['^src/(.+?)\\.ts$', 'lib/$1.js'],
       'src/**/*.tsx': ['^src/(.+?)\\.tsx$', 'lib/$1.js'],
+      'src/**/*.mts': ['^src/(.+?)\\.ts$', 'esm/$1.js'],
+      'src/**/*.cts': ['^src/(.+?)\\.tsx$', 'lib/$1.js'],
     },
   },
   rules: {
