@@ -41,7 +41,7 @@ const config: eslint.Linter.Config['rules'] = {
   'jest/prefer-expect-assertions': 'off', // suggest using expect.assertions() OR expect.hasAssertions()
   'jest/prefer-expect-resolves': 'error', // prefer await expect(...).resolves over expect(await ...) syntax
   'jest/prefer-hooks-on-top': 'warn', // suggest having hooks before any test cases
-  'jest/prefer-lowercase-title': ['warn', { allowedPrefixes: [], ignoreTopLevelDescribe: true }], // enforce valid describe() callback
+  'jest/prefer-lowercase-title': 'off', // enforce lowercase title
   'jest/prefer-spy-on': 'error', // suggest using jest.spyOn()
   'jest/prefer-strict-equal': 'off', // suggest using toStrictEqual()
   'jest/prefer-to-be': 'warn', // suggest using toBe() for primitive literals
