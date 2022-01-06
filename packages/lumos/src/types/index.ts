@@ -112,7 +112,7 @@ export interface LumosSettings {
    * Enable declaration only for typescript
    * @default false
    */
-  emitDeclarationOnly?: boolean;
+  declarationOnly?: boolean;
   /**
    * Change parallelism
    * @default 'auto'

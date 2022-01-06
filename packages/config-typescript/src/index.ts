@@ -18,7 +18,7 @@ export interface TypeScriptOptions {
   testsFolder: string;
   buildFolder: string;
   declarationFolder?: string;
-  emitDeclarationOnly?: boolean;
+  declarationOnly?: boolean;
   skipLibCheck?: boolean;
 }
 
@@ -30,7 +30,7 @@ export function getCompilerOptions({
   allowJs = false,
   skipLibCheck = false,
   sourceMaps = true,
-  emitDeclarationOnly = false,
+  declarationOnly = false,
   declarationFolder,
   buildFolder,
   includeTests,
@@ -47,7 +47,6 @@ export function getCompilerOptions({
   compilerOptions.useDefineForClassFields = future && process.env.NODE_ENV === 'development';
   compilerOptions.allowJs = allowJs;
   compilerOptions.skipLibCheck = skipLibCheck;
-  compilerOptions.declaration = library || emitDeclarationOnly;
 
   if (react) {
     compilerOptions.lib = [...(compilerOptions.lib ?? []), 'dom.iterable'];
@@ -68,9 +67,10 @@ export function getCompilerOptions({
   if (!workspaces) {
     compilerOptions.outDir = buildFolder;
     compilerOptions.rootDir = srcFolder;
+    compilerOptions.composite = library;
+    compilerOptions.declaration = library || declarationOnly;
+    compilerOptions.emitDeclarationOnly = declarationOnly;
   }
-
-  compilerOptions.composite = library && !workspaces;
 
   if (sourceMaps) {
     compilerOptions.sourceMap = true;
