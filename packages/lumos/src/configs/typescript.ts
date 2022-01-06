@@ -13,10 +13,10 @@ const {
   allowJs,
   skipLibCheck,
   srcFolder,
-  buildFolder,
   declarationDir,
   emitDeclarationOnly,
   typesFolder,
+  testsFolder,
 } = settings;
 
 const usingWorkspaces = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
@@ -28,10 +28,10 @@ export default getConfig({
   srcFolder,
   allowJs,
   skipLibCheck,
-  buildFolder,
   includeTests: !!context.getRiskyOption('noEmit'),
   typesFolder,
   emitDeclarationOnly,
   declarationDir,
+  testsFolder,
   workspaces: usingWorkspaces,
 });

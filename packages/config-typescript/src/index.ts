@@ -15,10 +15,10 @@ export interface TypeScriptOptions {
   workspaces?: boolean;
   allowJs?: boolean;
   includeTests?: boolean;
+  testsFolder: string;
   declarationDir?: string;
   emitDeclarationOnly?: boolean;
   skipLibCheck?: boolean;
-  buildFolder?: string;
 }
 
 export function getCompilerOptions({
@@ -31,7 +31,6 @@ export function getCompilerOptions({
   sourceMaps = true,
   emitDeclarationOnly = false,
   declarationDir = 'dts',
-  buildFolder,
   workspaces,
 }: Partial<TypeScriptOptions>) {
   if (workspaces) {
@@ -60,13 +59,10 @@ export function getCompilerOptions({
   }
 
   if (!workspaces) {
-    compilerOptions.outDir = `./${buildFolder}`;
+    compilerOptions.outDir = `./${declarationDir}`;
   }
 
-  if (library && !workspaces) {
-    compilerOptions.composite = true;
-    compilerOptions.declarationDir = `./${declarationDir}`;
-  }
+  compilerOptions.composite = library && !workspaces;
 
   if (sourceMaps) {
     compilerOptions.sourceMap = true;
@@ -77,19 +73,22 @@ export function getCompilerOptions({
 }
 
 export function getConfig(options: TypeScriptOptions): TypeScriptConfig {
-  const { workspaces, library, srcFolder, typesFolder, buildFolder } = options;
+  const { workspaces, srcFolder, typesFolder, includeTests, testsFolder } = options;
   if (workspaces) {
     return {
       compilerOptions: getCompilerOptions(options),
     };
   }
 
-  return {
-    compilerOptions: {
-      ...getCompilerOptions(options),
-      ...(library && { outDir: buildFolder }),
-    },
+  const tsconfig = {
+    compilerOptions: getCompilerOptions(options),
     include: [`./${srcFolder}/**/*`, `./${typesFolder}/**/*`],
     exclude: ['**/node_modules/*'],
   };
+
+  if (includeTests) {
+    tsconfig.include.push(`./${testsFolder}/**/*`);
+  }
+
+  return tsconfig;
 }
