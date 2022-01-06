@@ -69,7 +69,9 @@ export function getCompilerOptions({
       compilerOptions.rootDir = srcFolder;
       compilerOptions.emitDeclarationOnly = declarationOnly;
     }
-    compilerOptions.outDir = buildFolder;
+    if (!declarationOnly) {
+      compilerOptions.outDir = buildFolder;
+    }
     compilerOptions.composite = library;
     compilerOptions.declaration = library || declarationOnly;
   }
