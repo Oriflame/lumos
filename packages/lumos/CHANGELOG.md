@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.11 - 2022-01-06
+
+#### 🐞 Fixes
+
+- Rename prop. ([85e19ce](https://github.com/Oriflame/lumos/commit/85e19ceadc13767584dfbf822a17a47fb1884815))
+- Support for single library. ([6652e1c](https://github.com/Oriflame/lumos/commit/6652e1c7d89cb8647e011c3a46c7e993fab32da0))
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.1.10 - 2022-01-06
 
 #### 📦 Dependencies

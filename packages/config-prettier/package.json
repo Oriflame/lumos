@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-prettier",
-  "version": "5.1.10",
+  "version": "5.1.11",
   "description": "Reusable Prettier config.",
   "keywords": [
     "lumos",
@@ -35,8 +35,8 @@
     "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@oriflame/lumos-common": "^5.1.10",
-    "prettier-config-oriflame": "^5.1.10"
+    "@oriflame/lumos-common": "^5.1.11",
+    "prettier-config-oriflame": "^5.1.11"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",
