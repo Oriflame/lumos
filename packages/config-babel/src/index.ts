@@ -1,5 +1,6 @@
 import type { BabelConfig } from '@beemo/driver-babel';
-import { LumosEnvSetting, NODE_TARGET, WEB_TARGET } from '@oriflame/lumos-common';
+import type { LumosEnvSetting } from '@oriflame/lumos-common';
+import { NODE_TARGET, WEB_TARGET } from '@oriflame/lumos-common';
 
 interface BabelOptions {
   env?: LumosEnvSetting;

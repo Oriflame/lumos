@@ -11,7 +11,7 @@ import {
   IS_TEST,
   JS_EXT,
 } from './helpers';
-import { CommonOptions } from './types';
+import type { CommonOptions } from './types';
 
 const changedSrcFiles = updatedFiles.filter((file) => IS_SRC.test(file) && SRC_EXT.test(file));
 

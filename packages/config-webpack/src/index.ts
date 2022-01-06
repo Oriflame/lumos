@@ -1,4 +1,4 @@
-import { WebpackConfig } from '@beemo/driver-webpack';
+import type { WebpackConfig } from '@beemo/driver-webpack';
 import { requireModule } from '@boost/module';
 import {
   ALIAS_PATTERN,
@@ -13,12 +13,12 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import fs from 'fs';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import { Configuration } from 'webpack';
+import type { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
 import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING } from './constants';
 import { getParallelValue, getPlugins, getUniqueName, PORT, PROD, WEBPACK_ROOT } from './helpers';
-import { WebpackOptions } from './types';
+import type { WebpackOptions } from './types';
 
 const customConfigPathTs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');
 const customConfigPathJs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');

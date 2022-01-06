@@ -3,12 +3,13 @@ import { getRootPackageJson } from '@oriflame/lumos-common';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
-import webpack, { Configuration, container } from 'webpack';
+import type { Configuration } from 'webpack';
+import webpack, { container } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 import { INVALID_CHARS, NUMBER_REGEX } from './constants';
 import getClientEnvironment from './env';
-import { WebpackOptions } from './types';
+import type { WebpackOptions } from './types';
 
 export const WEBPACK_ROOT = process.cwd();
 

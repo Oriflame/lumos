@@ -1,8 +1,8 @@
-import { BeemoConfig, DriverContext, Tool } from '@beemo/core';
+import type { BeemoConfig, DriverContext, Tool } from '@beemo/core';
 import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
 
 import { getSettings } from './helpers/getSettings';
-import { LumosSettings } from './types';
+import type { LumosSettings } from './types';
 
 function hasNoParams(context: DriverContext, name: string): boolean {
   const { params } = context.args;

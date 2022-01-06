@@ -1,9 +1,9 @@
-import { BeemoConfig, Tool } from '@beemo/core';
+import type { BeemoConfig, Tool } from '@beemo/core';
 import { requireModule } from '@boost/module';
 import fs from 'fs';
 import { join } from 'path';
 
-import { LumosSettings } from '../types';
+import type { LumosSettings } from '../types';
 
 let lumosSettingsCache: BeemoConfig<Partial<LumosSettings>>;
 
