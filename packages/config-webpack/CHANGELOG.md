@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.12 - 2022-01-06
+
+#### 🐞 Fixes
+
+- Typescript config for library. (#936) ([e6b5810](https://github.com/Oriflame/lumos/commit/e6b5810ce8c24b8af9c647e0ca78112918871d40)), work items [#936](https://github.com/Oriflame/lumos/issues/936)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.1.11 - 2022-01-06
 
 **Note:** Version bump only for package @oriflame/config-webpack
