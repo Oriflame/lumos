@@ -1,4 +1,5 @@
-import { Arguments, ParserOptions, Path, Script, ScriptContext } from '@beemo/core';
+import type { Arguments, ParserOptions, ScriptContext } from '@beemo/core';
+import { Path, Script } from '@beemo/core';
 
 export interface LernaReleaseOptions {
   changelogPreset?: string;

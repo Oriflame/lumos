@@ -15,10 +15,11 @@ export interface TypeScriptOptions {
   workspaces?: boolean;
   allowJs?: boolean;
   includeTests?: boolean;
-  declarationDir?: string;
-  emitDeclarationOnly?: boolean;
+  testsFolder: string;
+  buildFolder: string;
+  declarationFolder?: string;
+  declarationOnly?: boolean;
   skipLibCheck?: boolean;
-  buildFolder?: string;
 }
 
 export function getCompilerOptions({
@@ -29,9 +30,10 @@ export function getCompilerOptions({
   allowJs = false,
   skipLibCheck = false,
   sourceMaps = true,
-  emitDeclarationOnly = false,
-  declarationDir = 'dts',
+  declarationOnly = false,
+  declarationFolder,
   buildFolder,
+  includeTests,
   workspaces,
 }: Partial<TypeScriptOptions>) {
   if (workspaces) {
@@ -41,11 +43,10 @@ export function getCompilerOptions({
     );
   }
   // Do we need isolated modules?
-  compilerOptions.isolatedModules = future && library;
+  compilerOptions.isolatedModules = future && library && !includeTests;
   compilerOptions.useDefineForClassFields = future && process.env.NODE_ENV === 'development';
   compilerOptions.allowJs = allowJs;
   compilerOptions.skipLibCheck = skipLibCheck;
-  compilerOptions.declaration = library || emitDeclarationOnly;
 
   if (react) {
     compilerOptions.lib = [...(compilerOptions.lib ?? []), 'dom.iterable'];
@@ -59,13 +60,18 @@ export function getCompilerOptions({
     };
   }
 
-  if (!workspaces) {
-    compilerOptions.outDir = `./${buildFolder}`;
+  if (!workspaces && library) {
+    compilerOptions.declarationDir = declarationFolder || buildFolder;
   }
 
-  if (library && !workspaces) {
-    compilerOptions.composite = true;
-    compilerOptions.declarationDir = `./${declarationDir}`;
+  if (!workspaces) {
+    if (!includeTests) {
+      compilerOptions.rootDir = srcFolder;
+      compilerOptions.emitDeclarationOnly = declarationOnly;
+      compilerOptions.declaration = library || declarationOnly;
+      compilerOptions.outDir = buildFolder;
+    }
+    compilerOptions.composite = library;
   }
 
   if (sourceMaps) {
@@ -77,19 +83,22 @@ export function getCompilerOptions({
 }
 
 export function getConfig(options: TypeScriptOptions): TypeScriptConfig {
-  const { workspaces, library, srcFolder, typesFolder, buildFolder } = options;
+  const { workspaces, srcFolder, typesFolder, includeTests, testsFolder } = options;
   if (workspaces) {
     return {
       compilerOptions: getCompilerOptions(options),
     };
   }
 
-  return {
-    compilerOptions: {
-      ...getCompilerOptions(options),
-      ...(library && { outDir: buildFolder }),
-    },
+  const tsconfig = {
+    compilerOptions: getCompilerOptions(options),
     include: [`./${srcFolder}/**/*`, `./${typesFolder}/**/*`],
     exclude: ['**/node_modules/*'],
   };
+
+  if (includeTests) {
+    tsconfig.include.push(`./${testsFolder}/**/*`);
+  }
+
+  return tsconfig;
 }

@@ -1,4 +1,4 @@
-import { container } from 'webpack';
+import type { container } from 'webpack';
 
 export interface WebpackOptions {
   analyzeBundle?: boolean;
