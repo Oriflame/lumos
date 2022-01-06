@@ -8,16 +8,14 @@ const { tool } = process.lumos || process.beemo;
 
 const settings = getSettings(tool, 'eslint');
 
-const { future, node, nextjs, srcFolder, testsFolder, typesFolder } = settings;
+const { future, node, nextjs, srcFolder, testsFolder, typesFolder, library } = settings;
 
 const workspacesEnabled = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
-
-let project: Path;
 
 // Lint crashes with an OOM error when using project references,
 // so just use a single file that globs everything.
 if (workspacesEnabled) {
-  project = Path.resolve('tsconfig.eslint.json');
+  const project = Path.resolve('tsconfig.eslint.json');
 
   const include: Path[] = [new Path(`${typesFolder}/**/*`)];
 
@@ -37,8 +35,23 @@ if (workspacesEnabled) {
     }),
     'utf8',
   );
-} else {
-  project = Path.resolve('tsconfig.json');
+} else if (library) {
+  const project = Path.resolve('tsconfig.eslint.json');
+
+  const include = [
+    new Path(`${srcFolder}/**/*`).path(),
+    new Path(`${testsFolder}/**/*`).path(),
+    new Path(`${typesFolder}/**/*`).path(),
+  ];
+
+  fs.writeFileSync(
+    project.path(),
+    JSON.stringify({
+      extends: './tsconfig.json',
+      include,
+    }),
+    'utf8',
+  );
 }
 
 export default getConfig({
