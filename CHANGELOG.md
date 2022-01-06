@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.13 - 2022-01-06
+
+#### 🐞 Fixes
+
+- Eslint config issue. ([c49635c](https://github.com/Oriflame/lumos/commit/c49635cf7d834d9aa81c738a48d30798f45d9e52))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([b177ee1](https://github.com/Oriflame/lumos/commit/b177ee1342a8c72bb525f77fcbbb0dfee6815ea7))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.12 - 2022-01-06
 
 #### 🐞 Fixes
