@@ -15,7 +15,7 @@ const {
   srcFolder,
   buildFolder,
   declarationDir,
-  declarationOnly,
+  emitDeclarationOnly,
   typesFolder,
 } = settings;
 
