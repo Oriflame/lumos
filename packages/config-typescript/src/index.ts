@@ -63,7 +63,9 @@ export function getCompilerOptions({
     compilerOptions.declarationDir = `./${declarationDir}`;
   }
 
-  compilerOptions.outDir = `./${declarationDir}`;
+  if (!workspaces) {
+    compilerOptions.outDir = `./${declarationDir}`;
+  }
 
   compilerOptions.composite = library && !workspaces;
 
