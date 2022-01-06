@@ -65,6 +65,7 @@ export function getCompilerOptions({
 
   if (!workspaces) {
     compilerOptions.outDir = declarationDir;
+    compilerOptions.rootDir = srcFolder;
   }
 
   compilerOptions.composite = library && !workspaces;
