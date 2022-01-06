@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.14 - 2022-01-06
+
+#### 🐞 Fixes
+
+- Typescript issue. ([99960c8](https://github.com/Oriflame/lumos/commit/99960c874eb194fe2a522ba764eab020458990d9))
+
+**Note:** Version bump only for package @oriflame/config-typescript
+
+
+
+
+
 ### 5.1.13 - 2022-01-06
 
 **Note:** Version bump only for package @oriflame/config-typescript

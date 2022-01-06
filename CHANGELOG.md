@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.14 - 2022-01-06
+
+#### 🐞 Fixes
+
+- Typescript issue. ([99960c8](https://github.com/Oriflame/lumos/commit/99960c874eb194fe2a522ba764eab020458990d9))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([8af5f52](https://github.com/Oriflame/lumos/commit/8af5f5284d37565d8be259e5cbcf568615310669))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.13 - 2022-01-06
 
 #### 🐞 Fixes
