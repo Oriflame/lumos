@@ -69,6 +69,7 @@ export function getCompilerOptions({
       compilerOptions.rootDir = srcFolder;
       compilerOptions.emitDeclarationOnly = declarationOnly;
       compilerOptions.declaration = library || declarationOnly;
+      compilerOptions.declarationMap = library || declarationOnly;
       compilerOptions.outDir = buildFolder;
     }
     compilerOptions.composite = library;
@@ -76,7 +77,6 @@ export function getCompilerOptions({
 
   if (sourceMaps) {
     compilerOptions.sourceMap = true;
-    compilerOptions.declarationMap = true;
   }
 
   return compilerOptions;
