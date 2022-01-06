@@ -16,6 +16,7 @@ export interface TypeScriptOptions {
   allowJs?: boolean;
   includeTests?: boolean;
   testsFolder: string;
+  buildFolder: string;
   declarationDir?: string;
   emitDeclarationOnly?: boolean;
   skipLibCheck?: boolean;
@@ -30,7 +31,8 @@ export function getCompilerOptions({
   skipLibCheck = false,
   sourceMaps = true,
   emitDeclarationOnly = false,
-  declarationDir = 'dts',
+  declarationDir,
+  buildFolder,
   includeTests,
   workspaces,
 }: Partial<TypeScriptOptions>) {
@@ -60,11 +62,11 @@ export function getCompilerOptions({
   }
 
   if (!workspaces && library) {
-    compilerOptions.declarationDir = declarationDir;
+    compilerOptions.declarationDir = declarationDir || buildFolder;
   }
 
   if (!workspaces) {
-    compilerOptions.outDir = declarationDir;
+    compilerOptions.outDir = buildFolder;
     compilerOptions.rootDir = srcFolder;
   }
 
