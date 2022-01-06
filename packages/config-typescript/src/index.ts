@@ -31,6 +31,7 @@ export function getCompilerOptions({
   sourceMaps = true,
   emitDeclarationOnly = false,
   declarationDir = 'dts',
+  includeTests,
   workspaces,
 }: Partial<TypeScriptOptions>) {
   if (workspaces) {
@@ -40,7 +41,7 @@ export function getCompilerOptions({
     );
   }
   // Do we need isolated modules?
-  compilerOptions.isolatedModules = future && library;
+  compilerOptions.isolatedModules = future && library && !includeTests;
   compilerOptions.useDefineForClassFields = future && process.env.NODE_ENV === 'development';
   compilerOptions.allowJs = allowJs;
   compilerOptions.skipLibCheck = skipLibCheck;
@@ -58,9 +59,11 @@ export function getCompilerOptions({
     };
   }
 
-  if (!workspaces) {
-    compilerOptions.outDir = `./${declarationDir}`;
+  if (!workspaces && library) {
+    compilerOptions.declarationDir = `./${declarationDir}`;
   }
+
+  compilerOptions.outDir = `./${declarationDir}`;
 
   compilerOptions.composite = library && !workspaces;
 
