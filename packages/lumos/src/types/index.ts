@@ -104,6 +104,11 @@ export interface LumosSettings {
    */
   root?: string;
   /**
+   * Define declaration dir
+   * @default 'dts'
+   */
+  declarationDir?: string;
+  /**
    * Enable declaration only for typescript
    * @default false
    */

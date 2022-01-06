@@ -11,8 +11,12 @@ export interface TypeScriptOptions {
   future?: boolean;
   react?: boolean;
   srcFolder: string;
+  typesFolder: string;
   workspaces?: boolean;
   allowJs?: boolean;
+  includeTests?: boolean;
+  declarationDir?: string;
+  emitDeclarationOnly?: boolean;
   skipLibCheck?: boolean;
   buildFolder?: string;
 }
@@ -25,6 +29,9 @@ export function getCompilerOptions({
   allowJs = false,
   skipLibCheck = false,
   sourceMaps = true,
+  emitDeclarationOnly = false,
+  declarationDir = 'dts',
+  buildFolder,
   workspaces,
 }: Partial<TypeScriptOptions>) {
   if (workspaces) {
@@ -38,6 +45,7 @@ export function getCompilerOptions({
   compilerOptions.useDefineForClassFields = future && process.env.NODE_ENV === 'development';
   compilerOptions.allowJs = allowJs;
   compilerOptions.skipLibCheck = skipLibCheck;
+  compilerOptions.declaration = library || emitDeclarationOnly;
 
   if (react) {
     compilerOptions.lib = [...(compilerOptions.lib ?? []), 'dom.iterable'];
@@ -51,15 +59,37 @@ export function getCompilerOptions({
     };
   }
 
+  if (!workspaces) {
+    compilerOptions.outDir = `./${buildFolder}`;
+  }
+
+  if (library && !workspaces) {
+    compilerOptions.composite = true;
+    compilerOptions.declarationDir = `./${declarationDir}`;
+  }
+
   if (sourceMaps) {
     compilerOptions.sourceMap = true;
+    compilerOptions.declarationMap = true;
   }
 
   return compilerOptions;
 }
 
 export function getConfig(options: TypeScriptOptions): TypeScriptConfig {
+  const { workspaces, library, srcFolder, typesFolder, buildFolder } = options;
+  if (workspaces) {
+    return {
+      compilerOptions: getCompilerOptions(options),
+    };
+  }
+
   return {
-    compilerOptions: getCompilerOptions(options),
+    compilerOptions: {
+      ...getCompilerOptions(options),
+      ...(library && { outDir: buildFolder }),
+    },
+    include: [`./${srcFolder}/**/*`, `./${typesFolder}/**/*`],
+    exclude: ['**/node_modules/*'],
   };
 }
