@@ -71,6 +71,7 @@ export default config;
 - `srcFolder`(`string`) - Source folder
 - `testsFolder`(`string`) - Test folder
 - `typesFolder`(`string`) - Types folder
+- `declarationFolder`(`string`) - Output declaration folder
 - `entryPoint`(`string`) - Webpack entry point
 - `publicPath`(`string`) - Webpack public path
 - `root`(`string`) - Change root folder

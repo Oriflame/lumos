@@ -11,7 +11,6 @@ const config: BeemoConfig = {
     'webpack',
   ],
   settings: {
-    declarationDir: 'dts',
     node: true,
     testsFolder: 'test',
     library: true,

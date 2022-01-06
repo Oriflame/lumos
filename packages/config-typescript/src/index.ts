@@ -17,7 +17,7 @@ export interface TypeScriptOptions {
   includeTests?: boolean;
   testsFolder: string;
   buildFolder: string;
-  declarationDir?: string;
+  declarationFolder?: string;
   emitDeclarationOnly?: boolean;
   skipLibCheck?: boolean;
 }
@@ -31,7 +31,7 @@ export function getCompilerOptions({
   skipLibCheck = false,
   sourceMaps = true,
   emitDeclarationOnly = false,
-  declarationDir,
+  declarationFolder,
   buildFolder,
   includeTests,
   workspaces,
@@ -62,7 +62,7 @@ export function getCompilerOptions({
   }
 
   if (!workspaces && library) {
-    compilerOptions.declarationDir = declarationDir || buildFolder;
+    compilerOptions.declarationDir = declarationFolder || buildFolder;
   }
 
   if (!workspaces) {
