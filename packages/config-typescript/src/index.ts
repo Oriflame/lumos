@@ -68,12 +68,10 @@ export function getCompilerOptions({
     if (!includeTests) {
       compilerOptions.rootDir = srcFolder;
       compilerOptions.emitDeclarationOnly = declarationOnly;
-    }
-    if (!declarationOnly) {
+      compilerOptions.declaration = library || declarationOnly;
       compilerOptions.outDir = buildFolder;
     }
     compilerOptions.composite = library;
-    compilerOptions.declaration = library || declarationOnly;
   }
 
   if (sourceMaps) {
