@@ -8,7 +8,7 @@ const { tool } = process.lumos || process.beemo;
 
 const settings = getSettings(tool, 'eslint');
 
-const { future, node, nextjs, srcFolder, testsFolder, typesFolder, library } = settings;
+const { future, node, nextjs, srcFolder, testsFolder, typesFolder } = settings;
 
 const workspacesEnabled = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
 
@@ -35,7 +35,7 @@ if (workspacesEnabled) {
     }),
     'utf8',
   );
-} else if (library) {
+} else {
   const project = Path.resolve('tsconfig.eslint.json');
 
   const include = [
