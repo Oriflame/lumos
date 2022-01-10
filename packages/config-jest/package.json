@@ -65,7 +65,7 @@
     }
   },
   "optionalDependencies": {
-    "@testing-library/react": ">=12"
+    "@testing-library/react": ">=12.1.2"
   },
   "packemon": {
     "format": "lib",

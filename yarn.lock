@@ -5005,7 +5005,7 @@ __metadata:
     "@beemo/driver-jest": ^2.0.4
     "@oriflame/lumos-common": ^5.1.15
     "@testing-library/jest-dom": ^5.16.1
-    "@testing-library/react": ">=12"
+    "@testing-library/react": ">=12.1.2"
     "@types/jest": ^27.4.0
     dom-storage: ^2.1.0
     graphql: ^16.2.0
@@ -5427,7 +5427,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:>=12":
+"@testing-library/react@npm:>=12.1.2":
   version: 12.1.2
   resolution: "@testing-library/react@npm:12.1.2"
   dependencies:
