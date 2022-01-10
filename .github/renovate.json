@@ -1,36 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":semanticCommitScopeDisabled"],
-  "semanticCommitType": "deps",
-  "prCreation": "immediate",
-  "npm": {
-    "enabled": true
-  },
-  "semanticCommits": "enabled",
-  "updateLockFiles": true,
-  "lockFileMaintenance": {
-    "enabled": true
-  },
-  "packageRules": [
-    {
-      "matchPackagePrefixes": ["@oriflame/"],
-      "groupName": "Oriflame dependencies",
-      "semanticCommitType": "build"
-    },
-    {
-      "matchDepTypes": ["peerDependencies"],
-      "rangeStrategy": "widen",
-      "semanticCommitType": "deps"
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "rangeStrategy": "bump",
-      "semanticCommitType": "build"
-    },
-    {
-      "matchDepTypes": ["dependencies"],
-      "rangeStrategy": "bump",
-      "semanticCommitType": "deps"
-    }
-  ]
+  "extends": [
+    "github>oriflame/renovate-config",
+    "github>oriflame/renovate-config:frontendRecommended"
+  ],
+  "prCreation": "immediate"
 }
