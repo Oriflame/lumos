@@ -4901,7 +4901,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oriflame/babel-preset@^5.1.16, @oriflame/babel-preset@workspace:packages/babel-preset":
+"@oriflame/babel-preset@^5.1.17, @oriflame/babel-preset@workspace:packages/babel-preset":
   version: 0.0.0-use.local
   resolution: "@oriflame/babel-preset@workspace:packages/babel-preset"
   dependencies:
@@ -4916,7 +4916,7 @@ __metadata:
     "@babel/preset-react": ^7.16.7
     "@babel/preset-typescript": ^7.16.7
     "@emotion/babel-plugin": ^11.7.2
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
     babel-plugin-add-module-exports: ^1.0.4
     babel-plugin-graphql-tag: ^3.3.0
     babel-plugin-module-resolver: ^4.1.0
@@ -4937,15 +4937,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-babel@^5.1.16, @oriflame/config-babel@workspace:packages/config-babel":
+"@oriflame/config-babel@^5.1.17, @oriflame/config-babel@workspace:packages/config-babel":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-babel@workspace:packages/config-babel"
   dependencies:
     "@babel/core": ^7.16.7
     "@beemo/core": ^2.1.3
     "@beemo/driver-babel": ^2.0.5
-    "@oriflame/babel-preset": ^5.1.16
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/babel-preset": ^5.1.17
+    "@oriflame/lumos-common": ^5.1.17
     babel-test: ^0.2.4
     jest-file-snapshot: ^0.5.0
     react: ^17.0.2
@@ -4960,7 +4960,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-danger@^5.1.16, @oriflame/config-danger@workspace:packages/config-danger":
+"@oriflame/config-danger@^5.1.17, @oriflame/config-danger@workspace:packages/config-danger":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-danger@workspace:packages/config-danger"
   dependencies:
@@ -4970,16 +4970,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-eslint@^5.1.16, @oriflame/config-eslint@workspace:packages/config-eslint":
+"@oriflame/config-eslint@^5.1.17, @oriflame/config-eslint@workspace:packages/config-eslint":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-eslint@workspace:packages/config-eslint"
   dependencies:
     "@beemo/core": ^2.1.3
     "@beemo/driver-eslint": ^2.0.4
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
     "@types/node": ^16.11.19
     eslint: ^8.6.0
-    eslint-config-oriflame: ^5.1.16
+    eslint-config-oriflame: ^5.1.17
     ts-node: ^10.4.0
   peerDependencies:
     "@beemo/core": ^2.1.2
@@ -4995,7 +4995,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-jest@^5.1.16, @oriflame/config-jest@workspace:packages/config-jest":
+"@oriflame/config-jest@^5.1.17, @oriflame/config-jest@workspace:packages/config-jest":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-jest@workspace:packages/config-jest"
   dependencies:
@@ -5003,7 +5003,7 @@ __metadata:
     "@beemo/core": ^2.1.3
     "@beemo/driver-babel": ^2.0.5
     "@beemo/driver-jest": ^2.0.4
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
     "@testing-library/jest-dom": ^5.16.1
     "@testing-library/react": ">=12"
     "@types/jest": ^27.4.0
@@ -5011,7 +5011,7 @@ __metadata:
     graphql: ^16.2.0
     graphql-tag: ^2.12.6
     jest: ^27.4.7
-    jest-preset-oriflame: ^5.1.16
+    jest-preset-oriflame: ^5.1.17
   peerDependencies:
     "@beemo/core": ^2.1.2
     "@beemo/driver-babel": ^2.0.4
@@ -5029,16 +5029,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-prettier@^5.1.16, @oriflame/config-prettier@workspace:packages/config-prettier":
+"@oriflame/config-prettier@^5.1.17, @oriflame/config-prettier@workspace:packages/config-prettier":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-prettier@workspace:packages/config-prettier"
   dependencies:
     "@beemo/core": ^2.1.3
     "@beemo/driver-prettier": ^2.0.5
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
     "@types/prettier": ^2.4.2
     prettier: ^2.5.1
-    prettier-config-oriflame: ^5.1.16
+    prettier-config-oriflame: ^5.1.17
   peerDependencies:
     "@beemo/core": ^2.1.2
     "@beemo/driver-prettier": ^2.0.4
@@ -5046,14 +5046,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-typescript@^5.1.16, @oriflame/config-typescript@workspace:packages/config-typescript":
+"@oriflame/config-typescript@^5.1.17, @oriflame/config-typescript@workspace:packages/config-typescript":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-typescript@workspace:packages/config-typescript"
   dependencies:
     "@beemo/core": ^2.1.3
     "@beemo/driver-typescript": ^2.1.1
-    "@oriflame/lumos-common": ^5.1.16
-    tsconfig-oriflame: ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
+    tsconfig-oriflame: ^5.1.17
     typescript: ^4.5.4
   peerDependencies:
     "@beemo/core": ^2.1.2
@@ -5062,7 +5062,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-webpack@^5.1.16, @oriflame/config-webpack@workspace:packages/config-webpack":
+"@oriflame/config-webpack@^5.1.17, @oriflame/config-webpack@workspace:packages/config-webpack":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-webpack@workspace:packages/config-webpack"
   dependencies:
@@ -5071,7 +5071,7 @@ __metadata:
     "@beemo/driver-webpack": ^2.0.5
     "@boost/module": ^3.1.0
     "@module-federation/concat-runtime": ^0.0.1
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.4
     "@types/webpack-bundle-analyzer": ^4.4.1
     babel-loader: ^8.2.3
@@ -5152,7 +5152,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oriflame/lumos-common@^5.1.16, @oriflame/lumos-common@workspace:packages/lumos-common":
+"@oriflame/lumos-common@^5.1.17, @oriflame/lumos-common@workspace:packages/lumos-common":
   version: 0.0.0-use.local
   resolution: "@oriflame/lumos-common@workspace:packages/lumos-common"
   dependencies:
@@ -5179,15 +5179,15 @@ __metadata:
     "@boost/common": ^3.2.0
     "@boost/module": ^3.1.0
     "@octokit/rest": ^18.12.0
-    "@oriflame/config-babel": ^5.1.16
-    "@oriflame/config-danger": ^5.1.16
-    "@oriflame/config-eslint": ^5.1.16
-    "@oriflame/config-jest": ^5.1.16
-    "@oriflame/config-prettier": ^5.1.16
-    "@oriflame/config-typescript": ^5.1.16
-    "@oriflame/config-webpack": ^5.1.16
+    "@oriflame/config-babel": ^5.1.17
+    "@oriflame/config-danger": ^5.1.17
+    "@oriflame/config-eslint": ^5.1.17
+    "@oriflame/config-jest": ^5.1.17
+    "@oriflame/config-prettier": ^5.1.17
+    "@oriflame/config-typescript": ^5.1.17
+    "@oriflame/config-webpack": ^5.1.17
     "@oriflame/conventional-changelog": ^1.2.3
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
     chalk: ^5.0.0
     check-node-version: ^4.2.1
     cross-env: ^7.0.3
@@ -5935,13 +5935,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "@typescript-eslint/eslint-plugin@npm:5.9.0"
+"@typescript-eslint/eslint-plugin@npm:^5.9.1":
+  version: 5.9.1
+  resolution: "@typescript-eslint/eslint-plugin@npm:5.9.1"
   dependencies:
-    "@typescript-eslint/experimental-utils": 5.9.0
-    "@typescript-eslint/scope-manager": 5.9.0
-    "@typescript-eslint/type-utils": 5.9.0
+    "@typescript-eslint/experimental-utils": 5.9.1
+    "@typescript-eslint/scope-manager": 5.9.1
+    "@typescript-eslint/type-utils": 5.9.1
     debug: ^4.3.2
     functional-red-black-tree: ^1.0.1
     ignore: ^5.1.8
@@ -5954,23 +5954,23 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 31443d4331dddf7618d6b3fdbf148ec6d5ce7c64c85ec3973e520e633467d8d5605896f7eab9d7c6f81c050458c84bca10a6b0ed3537d48e6ee728f8b64d46a2
+  checksum: 75119682f9fa14afc093983be0f477fc21c85c700a47889e3fc5b6d4efe98750b99b0667a8ff371d02153814658ae552d2032e1d0c590c983fe6a74f282d51fb
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:5.9.0, @typescript-eslint/experimental-utils@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "@typescript-eslint/experimental-utils@npm:5.9.0"
+"@typescript-eslint/experimental-utils@npm:5.9.1":
+  version: 5.9.1
+  resolution: "@typescript-eslint/experimental-utils@npm:5.9.1"
   dependencies:
     "@types/json-schema": ^7.0.9
-    "@typescript-eslint/scope-manager": 5.9.0
-    "@typescript-eslint/types": 5.9.0
-    "@typescript-eslint/typescript-estree": 5.9.0
+    "@typescript-eslint/scope-manager": 5.9.1
+    "@typescript-eslint/types": 5.9.1
+    "@typescript-eslint/typescript-estree": 5.9.1
     eslint-scope: ^5.1.1
     eslint-utils: ^3.0.0
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-  checksum: 731b27840642b644e65f4ae321ed47e973ffadacd1aa24a19b02b4b298b5bcfbfa16c2d3d034e87a08c3c45f942c5b974f7619cb143eb23fb950f37418dce791
+  checksum: ff8d38fc572aa4395116df82a596a8632b25bbd490c9f6337a58b95cfd878def1f8e1b431ebbb58bfa3e2b746ac63f59bf78d8b424c3eb3cadf4b3128b758d4c
   languageName: node
   linkType: hard
 
@@ -5990,20 +5990,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.9.0":
+"@typescript-eslint/experimental-utils@npm:^5.9.0":
   version: 5.9.0
-  resolution: "@typescript-eslint/parser@npm:5.9.0"
+  resolution: "@typescript-eslint/experimental-utils@npm:5.9.0"
   dependencies:
+    "@types/json-schema": ^7.0.9
     "@typescript-eslint/scope-manager": 5.9.0
     "@typescript-eslint/types": 5.9.0
     "@typescript-eslint/typescript-estree": 5.9.0
+    eslint-scope: ^5.1.1
+    eslint-utils: ^3.0.0
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: 731b27840642b644e65f4ae321ed47e973ffadacd1aa24a19b02b4b298b5bcfbfa16c2d3d034e87a08c3c45f942c5b974f7619cb143eb23fb950f37418dce791
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^5.9.1":
+  version: 5.9.1
+  resolution: "@typescript-eslint/parser@npm:5.9.1"
+  dependencies:
+    "@typescript-eslint/scope-manager": 5.9.1
+    "@typescript-eslint/types": 5.9.1
+    "@typescript-eslint/typescript-estree": 5.9.1
     debug: ^4.3.2
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: ae95a7eb977b7bb4eec98357577b043d8ba48d47ae43ec18eadd350336b485ce91ac969b92e22143cc77797cc96cf37598d2bddcdd974d45fb3ec4f01b53b92a
+  checksum: 138b31115ccae574d25525389537da71e9bd628e367c136da77f8cf3b4a11ebea138f9851dc6d7df3da163db791aeb8a1ef6d2de557a4248ca8e3ecea6b379f1
   languageName: node
   linkType: hard
 
@@ -6027,11 +6043,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/type-utils@npm:5.9.0":
-  version: 5.9.0
-  resolution: "@typescript-eslint/type-utils@npm:5.9.0"
+"@typescript-eslint/scope-manager@npm:5.9.1":
+  version: 5.9.1
+  resolution: "@typescript-eslint/scope-manager@npm:5.9.1"
   dependencies:
-    "@typescript-eslint/experimental-utils": 5.9.0
+    "@typescript-eslint/types": 5.9.1
+    "@typescript-eslint/visitor-keys": 5.9.1
+  checksum: 2b532d355885f8b4691fc4726e3d1abe16325c660735eb9d0dc47739ce9259a30ab3f8bfaec1abacf9713d80efdb6a5da6db7e9f96188c61dfe076689b9a4459
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/type-utils@npm:5.9.1":
+  version: 5.9.1
+  resolution: "@typescript-eslint/type-utils@npm:5.9.1"
+  dependencies:
+    "@typescript-eslint/experimental-utils": 5.9.1
     debug: ^4.3.2
     tsutils: ^3.21.0
   peerDependencies:
@@ -6039,7 +6065,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 787c3277e37f6bbd723ff10aec6ddc61a62860bd2b1d354c4a50c1aec9b479ee4f51be9fd1cdeac2e43e22161481e76409c00e6a4d50549ceaee0c59fc5cd73d
+  checksum: 23df02c241334a7d53cbb1fea911d381db009fc06b38c16b7f48d1789f9ab76a8007f34d03664d15683c87668ba8d0300c4579413b4aeaa5863ee73a4c7f797c
   languageName: node
   linkType: hard
 
@@ -6054,6 +6080,13 @@ __metadata:
   version: 5.9.0
   resolution: "@typescript-eslint/types@npm:5.9.0"
   checksum: 7c4e142600aec266b41418dab1d0cee8cace980b6990692df6522de6eab6705bf515aef36180e4a38c62acb10c92fb474269ac6856a4266d6b035068cd83fad3
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/types@npm:5.9.1":
+  version: 5.9.1
+  resolution: "@typescript-eslint/types@npm:5.9.1"
+  checksum: 99b90da0cad9e8db75c3870adf6457291a93e7bedcdcebcc31ffb0c71db6f82c22845fd1c890684b542c7764b41eb9cbfb6e8c55feaf7692669f334f786b3f14
   languageName: node
   linkType: hard
 
@@ -6093,6 +6126,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/typescript-estree@npm:5.9.1":
+  version: 5.9.1
+  resolution: "@typescript-eslint/typescript-estree@npm:5.9.1"
+  dependencies:
+    "@typescript-eslint/types": 5.9.1
+    "@typescript-eslint/visitor-keys": 5.9.1
+    debug: ^4.3.2
+    globby: ^11.0.4
+    is-glob: ^4.0.3
+    semver: ^7.3.5
+    tsutils: ^3.21.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: a13dabebf8223ddd2f6e8114e6edbb062eb094002ee16d269d901a8c64b9fde6105bf1a8ad491d0abdb770be0641da0022d4bec64e786e4f114c688723ad39ba
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/visitor-keys@npm:5.7.0":
   version: 5.7.0
   resolution: "@typescript-eslint/visitor-keys@npm:5.7.0"
@@ -6110,6 +6161,16 @@ __metadata:
     "@typescript-eslint/types": 5.9.0
     eslint-visitor-keys: ^3.0.0
   checksum: 34a595b83b0e7d4f387d6c81b272804b94a1a91478c5f856fdfdd227595bf8562bf3f5d732606d10b4522c3f2617d09d4bacd2193f757a324ea66b3144a68903
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/visitor-keys@npm:5.9.1":
+  version: 5.9.1
+  resolution: "@typescript-eslint/visitor-keys@npm:5.9.1"
+  dependencies:
+    "@typescript-eslint/types": 5.9.1
+    eslint-visitor-keys: ^3.0.0
+  checksum: 9eb6902161fc9120907d514ed9f4c0237349904e17436571a8ab1820b0426c47de1b8d65eb9804a6544f80b714ffec89f9ed8bf386cb9881f909ef58c145752d
   languageName: node
   linkType: hard
 
@@ -9487,18 +9548,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-oriflame@^5.1.16, eslint-config-oriflame@workspace:packages/eslint-config":
+"eslint-config-oriflame@^5.1.17, eslint-config-oriflame@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "eslint-config-oriflame@workspace:packages/eslint-config"
   dependencies:
     "@babel/core": ^7.16.7
     "@babel/eslint-parser": ^7.16.5
     "@next/eslint-plugin-next": ^12.0.7
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
     "@types/confusing-browser-globals": ^1.0.0
     "@types/node": ^16.11.19
-    "@typescript-eslint/eslint-plugin": ^5.9.0
-    "@typescript-eslint/parser": ^5.9.0
+    "@typescript-eslint/eslint-plugin": ^5.9.1
+    "@typescript-eslint/parser": ^5.9.1
     confusing-browser-globals: ^1.0.11
     eslint: ^8.6.0
     eslint-config-prettier: ^8.3.0
@@ -12660,11 +12721,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-preset-oriflame@^5.1.16, jest-preset-oriflame@workspace:packages/jest-preset":
+"jest-preset-oriflame@^5.1.17, jest-preset-oriflame@workspace:packages/jest-preset":
   version: 0.0.0-use.local
   resolution: "jest-preset-oriflame@workspace:packages/jest-preset"
   dependencies:
-    "@oriflame/lumos-common": ^5.1.16
+    "@oriflame/lumos-common": ^5.1.17
     "@types/jest": ^27.4.0
     jest: ^27.4.7
     jest-junit: ^13.0.0
@@ -16448,7 +16509,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-config-oriflame@^5.1.16, prettier-config-oriflame@workspace:packages/prettier-config":
+"prettier-config-oriflame@^5.1.17, prettier-config-oriflame@workspace:packages/prettier-config":
   version: 0.0.0-use.local
   resolution: "prettier-config-oriflame@workspace:packages/prettier-config"
   languageName: unknown
@@ -18767,7 +18828,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig-oriflame@^5.1.16, tsconfig-oriflame@workspace:packages/tsconfig":
+"tsconfig-oriflame@^5.1.17, tsconfig-oriflame@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "tsconfig-oriflame@workspace:packages/tsconfig"
   languageName: unknown
