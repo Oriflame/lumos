@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.17 - 2022-01-10
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-testing-library to ^5.0.3 (#941) ([d0fa9e4](https://github.com/Oriflame/lumos/commit/d0fa9e4821b5b9afebdabef31201a8291674dee2)), work items [#941](https://github.com/Oriflame/lumos/issues/941)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.1.16 - 2022-01-10
 
 **Note:** Version bump only for package eslint-config-oriflame
