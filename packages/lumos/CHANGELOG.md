@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.15 - 2022-01-10
+
+#### 🐞 Fixes
+
+- Eslint typescript config creation. ([4f357fe](https://github.com/Oriflame/lumos/commit/4f357fe93afabdb1987b90bf695a9a087600dee4))
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.1.14 - 2022-01-06
 
 **Note:** Version bump only for package @oriflame/lumos

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.15 - 2022-01-10
+
+#### 🐞 Fixes
+
+- Eslint typescript config creation. ([4f357fe](https://github.com/Oriflame/lumos/commit/4f357fe93afabdb1987b90bf695a9a087600dee4))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([603e3d7](https://github.com/Oriflame/lumos/commit/603e3d79f0a80f9d97b3700d4d2f395bf31a6e30))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.14 - 2022-01-06
 
 #### 🐞 Fixes
