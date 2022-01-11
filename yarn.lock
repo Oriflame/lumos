@@ -5019,7 +5019,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/config-danger@workspace:packages/config-danger"
   dependencies:
-    "@oriflame/conventional-changelog": ^1.2.3
+    "@oriflame/conventional-changelog": ^1.2.10
     "@types/node": ^16.11.19
     danger: ^10.8.0
   languageName: unknown
@@ -5191,10 +5191,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oriflame/conventional-changelog-types@npm:^1.0.15":
+  version: 1.0.15
+  resolution: "@oriflame/conventional-changelog-types@npm:1.0.15"
+  checksum: 05e4fde5d499518e63b7f82088426407627269218e0392aa371caa380bfd478528c23f92bbe4293d22e7dbf334bfd8f7df9bcd91675200dc6036f6b302b9c462
+  languageName: node
+  linkType: hard
+
 "@oriflame/conventional-changelog-types@npm:^1.0.8":
   version: 1.0.8
   resolution: "@oriflame/conventional-changelog-types@npm:1.0.8"
   checksum: 91a80e2796b0315ebae00e906cb030c6ff9bcc6f084d07306db9f6c304bcee55ec4b528f2fec356d2475f794f2b8e4bff28ee289a853dde1434009dbbda104fa
+  languageName: node
+  linkType: hard
+
+"@oriflame/conventional-changelog@npm:^1.2.10":
+  version: 1.2.10
+  resolution: "@oriflame/conventional-changelog@npm:1.2.10"
+  dependencies:
+    "@oriflame/conventional-changelog-types": ^1.0.15
+  checksum: f21578942fe195ffd9eaa3e39362ad06b5b287f1aced115e92f1389e8bc1ab4cde449475b144262f4f2604d115815271f1c5916326b54687fefc7d8822b33195
   languageName: node
   linkType: hard
 
@@ -5241,7 +5257,7 @@ __metadata:
     "@oriflame/config-prettier": ^5.1.18
     "@oriflame/config-typescript": ^5.1.18
     "@oriflame/config-webpack": ^5.1.18
-    "@oriflame/conventional-changelog": ^1.2.3
+    "@oriflame/conventional-changelog": ^1.2.10
     "@oriflame/lumos-common": ^5.1.18
     chalk: ^5.0.0
     check-node-version: ^4.2.1

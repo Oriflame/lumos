@@ -57,7 +57,7 @@
     "@oriflame/config-prettier": "^5.1.18",
     "@oriflame/config-typescript": "^5.1.18",
     "@oriflame/config-webpack": "^5.1.18",
-    "@oriflame/conventional-changelog": "^1.2.3",
+    "@oriflame/conventional-changelog": "^1.2.10",
     "@oriflame/lumos-common": "^5.1.18",
     "chalk": "^5.0.0",
     "check-node-version": "^4.2.1",
