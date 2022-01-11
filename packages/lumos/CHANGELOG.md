@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.18 - 2022-01-11
+
+#### 📦 Dependencies
+
+- update babel monorepo. (#944) ([c3a9525](https://github.com/Oriflame/lumos/commit/c3a952579e07e559b2a66d1d6f6164b34e690432)), work items [#944](https://github.com/Oriflame/lumos/issues/944)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.1.17 - 2022-01-10
 
 **Note:** Version bump only for package @oriflame/lumos

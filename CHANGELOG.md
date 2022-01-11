@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.18 - 2022-01-11
+
+#### 📦 Dependencies
+
+- update babel monorepo. (#944) ([c3a9525](https://github.com/Oriflame/lumos/commit/c3a952579e07e559b2a66d1d6f6164b34e690432)), work items [#944](https://github.com/Oriflame/lumos/issues/944)
+- update dependency danger to ^10.8.0 (#939) ([c20c90f](https://github.com/Oriflame/lumos/commit/c20c90f9a7113fd30346acde0e93e664acaabe38)), work items [#939](https://github.com/Oriflame/lumos/issues/939)
+- update dependency dotenv. (#945) ([9f39c8e](https://github.com/Oriflame/lumos/commit/9f39c8e436ae0e9b378cfc1c25a8003f67566501)), work items [#945](https://github.com/Oriflame/lumos/issues/945)
+- update typescript-eslint monorepo. (#943) ([b513c65](https://github.com/Oriflame/lumos/commit/b513c65f3b8cbfe811b2875c7c51475b2e918bdc)), work items [#943](https://github.com/Oriflame/lumos/issues/943)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.17 - 2022-01-10
 
 #### 📦 Dependencies
