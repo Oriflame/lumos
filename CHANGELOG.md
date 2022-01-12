@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.22 - 2022-01-12
+
+#### 🐞 Fixes
+
+- Add missing source map setting. ([a80f0b1](https://github.com/Oriflame/lumos/commit/a80f0b1c26cc09d9240e3a198b0e212b4398dbc6))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([2b1322f](https://github.com/Oriflame/lumos/commit/2b1322ff5fc51c43adb8f636b856869893d9177c))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.21 - 2022-01-12
 
 #### 🛠 Internals
