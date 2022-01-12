@@ -150,6 +150,11 @@ export interface LumosSettings {
    */
   host?: string;
   /**
+   * Enable source maps generation
+   * @default true
+   */
+  enableSourceMaps?: boolean;
+  /**
    * Enable shared modules
    */
   enableSharedModules?: boolean;

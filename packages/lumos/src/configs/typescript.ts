@@ -18,11 +18,13 @@ const {
   typesFolder,
   testsFolder,
   buildFolder,
+  enableSourceMaps,
 } = settings;
 
 const usingWorkspaces = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
 
 export default getConfig({
+  sourceMaps: enableSourceMaps,
   library,
   future,
   react,

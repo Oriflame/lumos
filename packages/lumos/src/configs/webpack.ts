@@ -19,6 +19,7 @@ const {
   host,
   enableSharedModules,
   sharedModulesManifestPath,
+  enableSourceMaps,
 } = settings;
 
 const config = getConfig({
@@ -26,7 +27,7 @@ const config = getConfig({
   parallel: process.env.WEBPACK_PARALLEL,
   port: process.env.PORT,
   react,
-  sourceMaps: !!process.env.SOURCE_MAPS,
+  sourceMaps: process.env.SOURCE_MAPS ? Boolean(process.env.SOURCE_MAPS) : enableSourceMaps,
   buildFolder: process.env.LUMOS_BUILD_FOLDER || buildFolder,
   srcFolder,
   entryPoint: process.env.LUMOS_ENTRY_POINT || entryPoint,

@@ -75,6 +75,7 @@ export function getSettings(instance: Tool | undefined, name?: string): LumosSet
     allowJs: false,
     skipLibCheck: false,
     enableConsoleMocks: true,
+    enableSourceMaps: true,
     ...settings,
   };
 }
