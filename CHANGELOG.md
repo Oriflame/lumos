@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.21 - 2022-01-12
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([f372a0e](https://github.com/Oriflame/lumos/commit/f372a0ece6505c85160b8b65dc7e2d129ce07d07))
+- update dependency caniuse-lite. (#947) ([72b13eb](https://github.com/Oriflame/lumos/commit/72b13ebbc9083224eb688965389cde8bc835fb18)), work items [#947](https://github.com/Oriflame/lumos/issues/947)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.20 - 2022-01-11
 
 #### 📦 Dependencies
