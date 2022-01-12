@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.23 - 2022-01-12
+
+#### 📦 Dependencies
+
+- update dependency webpack. (#948) ([94e35cc](https://github.com/Oriflame/lumos/commit/94e35cca16b2ac3ef32ba69f9fd17f91302684ef)), work items [#948](https://github.com/Oriflame/lumos/issues/948)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.1.22 - 2022-01-12
 
 #### 🐞 Fixes
