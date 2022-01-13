@@ -4629,12 +4629,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:^12.0.7":
-  version: 12.0.7
-  resolution: "@next/eslint-plugin-next@npm:12.0.7"
+"@next/eslint-plugin-next@npm:^12.0.8":
+  version: 12.0.8
+  resolution: "@next/eslint-plugin-next@npm:12.0.8"
   dependencies:
     glob: 7.1.7
-  checksum: 9ba7579ef8b006ccc356727003917bd13d2deac10200584b95d2ccf971e93482be944fe4af9caf7395f934355b8a4aec2fd79c2b63c9650131833c8d4d22a053
+  checksum: b6e5bb303ce430f10660dc173462094535797df4c2f1763161f02504954b97d19a47519a977932d6ff7f0399c963939a4735e0e13daee38ae7b17d22318254f1
   languageName: node
   linkType: hard
 
@@ -9647,7 +9647,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.16.7
     "@babel/eslint-parser": ^7.16.5
-    "@next/eslint-plugin-next": ^12.0.7
+    "@next/eslint-plugin-next": ^12.0.8
     "@oriflame/lumos-common": ^5.1.23
     "@types/confusing-browser-globals": ^1.0.0
     "@types/node": ^16.11.19
