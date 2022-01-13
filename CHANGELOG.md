@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.24 - 2022-01-13
+
+#### 📦 Dependencies
+
+- update dependency @next/eslint-plugin-next. (#949) ([9614e7a](https://github.com/Oriflame/lumos/commit/9614e7a03514b9044aa142559a734c73d1ca1c79)), work items [#949](https://github.com/Oriflame/lumos/issues/949)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([fab2ed9](https://github.com/Oriflame/lumos/commit/fab2ed976dd49218fc483871168dcad7cc0e1364))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.23 - 2022-01-12
 
 #### 📦 Dependencies
