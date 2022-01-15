@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.25 - 2022-01-15
+
+#### 📦 Dependencies
+
+- update dependency dotenv. (#950) ([db8f121](https://github.com/Oriflame/lumos/commit/db8f121c545019ba937b53ff2e85310ed8ad1a45)), work items [#950](https://github.com/Oriflame/lumos/issues/950)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.1.24 - 2022-01-13
 
 **Note:** Version bump only for package @oriflame/config-webpack
