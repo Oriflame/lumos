@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.26 - 2022-01-16
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-jest. (#951) ([8884a11](https://github.com/Oriflame/lumos/commit/8884a11c80439bb89a012d1c34e1b07a8fde94b0)), work items [#951](https://github.com/Oriflame/lumos/issues/951)
+- update dependency eslint-plugin-unicorn. (#953) ([deaa23f](https://github.com/Oriflame/lumos/commit/deaa23fffea01773ff5d36129cd53ff97d83af36)), work items [#953](https://github.com/Oriflame/lumos/issues/953)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.1.25 - 2022-01-15
 
 **Note:** Version bump only for package eslint-config-oriflame
