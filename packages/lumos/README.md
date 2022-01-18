@@ -441,9 +441,19 @@ Options that are added automatically.
 lumos webpack
 lumos webpack --analyze
 lumos webpack --sourceMaps=false
+lumos webpack --root=./packages/test
 ```
 
 > Start application with webpack `lumos create-config webpack && lumos-webpack-server`
+
+#### Lumos-webpack-server
+
+**Cli options:**
+
+- `--path=process.cwd()`(`string`)
+- `--port=3000`(`number`)
+- `--entryPoint`(`string`)
+- `--analyze`(`boolean`)
 
 #### Overriding config
 

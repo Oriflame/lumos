@@ -62,6 +62,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.16.12",
+    "@boost/args": "^3.0.0",
     "@boost/module": "^3.1.0",
     "@module-federation/concat-runtime": "^0.0.1",
     "@oriflame/lumos-common": "^5.1.32",
@@ -70,8 +71,8 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.4.1",
-    "dotenv": "^14.0.1",
-    "dotenv-expand": "^5.1.0",
+    "dotenv": "^14.2.0",
+    "dotenv-expand": "^6.0.1",
     "execa": "^5.1.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",

@@ -182,9 +182,7 @@ export function getConfig({
       headers: {
         'Service-Worker-Allowed': '/',
       },
-      historyApiFallback: {
-        disableDotRule: true,
-      },
+      historyApiFallback: true,
       hot: true,
       port, // This can be a unix socket path so a string is valid
       host,

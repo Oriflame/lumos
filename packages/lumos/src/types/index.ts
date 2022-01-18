@@ -90,7 +90,7 @@ export interface LumosSettings {
   typesFolder: string;
   /**
    * Webpack entry point
-   * @default undefined
+   * @default 'appLoader.ts'
    */
   entryPoint?: string;
   /**

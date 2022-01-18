@@ -32,7 +32,7 @@ const config = getConfig({
   srcFolder,
   entryPoint: process.env.LUMOS_ENTRY_POINT || entryPoint,
   publicPath,
-  root,
+  root: process.env.LUMOS_ROOT || root,
   devServerContentBase,
   host,
   moduleFederationConfig: moduleFederationConfig as NonNullable<
