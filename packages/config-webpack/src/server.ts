@@ -72,7 +72,6 @@ execa('webpack', ['serve', ...args], {
     NODE_ENV,
     LUMOS_ROOT,
     WEBPACK_ANALYZE,
-    SOURCE_MAPS,
     LUMOS_ENTRY_POINT,
   },
   preferLocal: true,
