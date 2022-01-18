@@ -1,5 +1,6 @@
 import type { WebpackConfig } from '@beemo/driver-webpack';
 import { requireModule } from '@boost/module';
+import { getAliasForProject } from '@microsoft/webpack-project-references-alias';
 import {
   ALIAS_PATTERN,
   ASSET_EXT_PATTERN,
@@ -161,6 +162,7 @@ export function getConfig({
 
     resolve: {
       alias: {
+        ...getAliasForProject(),
         [`${ALIAS_PATTERN}`]: path.join(root, srcFolder, '/'),
       },
       extensions: ['.wasm', '.mjs', ...EXTS],

@@ -3826,6 +3826,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@microsoft/webpack-project-references-alias@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@microsoft/webpack-project-references-alias@npm:1.1.1"
+  checksum: 03126677cc8ee6a4fda8b33143ce941f9ccf5771e03bc95e2b351ee810ba8ec5ebefa905060596b2aa30fb82a9338d22c369c584c07b0fc20cd60a5ccdf99ed4
+  languageName: node
+  linkType: hard
+
 "@module-federation/concat-runtime@npm:^0.0.1":
   version: 0.0.1
   resolution: "@module-federation/concat-runtime@npm:0.0.1"
@@ -4332,6 +4339,7 @@ __metadata:
     "@beemo/driver-webpack": ^2.0.5
     "@boost/args": ^3.0.0
     "@boost/module": ^3.1.0
+    "@microsoft/webpack-project-references-alias": ^1.1.1
     "@module-federation/concat-runtime": ^0.0.1
     "@oriflame/lumos-common": ^5.1.32
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.4

@@ -64,6 +64,7 @@
     "@babel/core": "^7.16.12",
     "@boost/args": "^3.0.0",
     "@boost/module": "^3.1.0",
+    "@microsoft/webpack-project-references-alias": "^1.1.1",
     "@module-federation/concat-runtime": "^0.0.1",
     "@oriflame/lumos-common": "^5.1.32",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
