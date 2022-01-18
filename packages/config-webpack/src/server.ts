@@ -5,7 +5,7 @@ import path from 'path';
 import { PORT } from './helpers';
 
 // Remove node binary and script
-const argv = process.argv.slice(1);
+const argv = process.argv.slice(2);
 
 // Parse argv into a consumable object
 const { options, rest } = parse<{
