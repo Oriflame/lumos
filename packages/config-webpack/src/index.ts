@@ -161,7 +161,7 @@ export function getConfig({
     },
 
     resolve: {
-      plugins: [new TsconfigPathsPlugin({ silent: true })],
+      plugins: [new TsconfigPathsPlugin({ silent: true, context: root })],
       alias: {
         [`${ALIAS_PATTERN}`]: path.join(root, srcFolder, '/'),
       },
