@@ -1,6 +1,5 @@
 import type { WebpackConfig } from '@beemo/driver-webpack';
 import { requireModule } from '@boost/module';
-import { getAliasForProject } from '@microsoft/webpack-project-references-alias';
 import {
   ALIAS_PATTERN,
   ASSET_EXT_PATTERN,
@@ -14,6 +13,7 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import fs from 'fs';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 import type { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
@@ -161,8 +161,8 @@ export function getConfig({
     },
 
     resolve: {
+      plugins: [new TsconfigPathsPlugin({ silent: true })],
       alias: {
-        ...getAliasForProject(),
         [`${ALIAS_PATTERN}`]: path.join(root, srcFolder, '/'),
       },
       extensions: ['.wasm', '.mjs', ...EXTS],

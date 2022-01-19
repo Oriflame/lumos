@@ -3826,13 +3826,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/webpack-project-references-alias@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@microsoft/webpack-project-references-alias@npm:1.1.1"
-  checksum: 03126677cc8ee6a4fda8b33143ce941f9ccf5771e03bc95e2b351ee810ba8ec5ebefa905060596b2aa30fb82a9338d22c369c584c07b0fc20cd60a5ccdf99ed4
-  languageName: node
-  linkType: hard
-
 "@module-federation/concat-runtime@npm:^0.0.1":
   version: 0.0.1
   resolution: "@module-federation/concat-runtime@npm:0.0.1"
@@ -4339,7 +4332,6 @@ __metadata:
     "@beemo/driver-webpack": ^2.0.5
     "@boost/args": ^3.0.0
     "@boost/module": ^3.1.0
-    "@microsoft/webpack-project-references-alias": ^1.1.1
     "@module-federation/concat-runtime": ^0.0.1
     "@oriflame/lumos-common": ^5.1.32
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.4
@@ -4368,6 +4360,7 @@ __metadata:
     react-refresh: ^0.11.0
     style-loader: ^3.3.1
     terser-webpack-plugin: ^5.3.0
+    tsconfig-paths-webpack-plugin: ^3.5.2
     url-loader: ^4.1.1
     webpack: ^5.65.0
     webpack-bundle-analyzer: ^4.5.0
@@ -8609,7 +8602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.8.3":
+"enhanced-resolve@npm:^5.7.0, enhanced-resolve@npm:^5.8.3":
   version: 5.8.3
   resolution: "enhanced-resolve@npm:5.8.3"
   dependencies:
@@ -18101,6 +18094,17 @@ __metadata:
   resolution: "tsconfig-oriflame@workspace:packages/tsconfig"
   languageName: unknown
   linkType: soft
+
+"tsconfig-paths-webpack-plugin@npm:^3.5.2":
+  version: 3.5.2
+  resolution: "tsconfig-paths-webpack-plugin@npm:3.5.2"
+  dependencies:
+    chalk: ^4.1.0
+    enhanced-resolve: ^5.7.0
+    tsconfig-paths: ^3.9.0
+  checksum: e7872f45b10684204d4a6cbc7989073d885c99e0c9eb5222de6b2b83d2e1594bccb647f52d2f8e00c53da5b9a3084e47a2de44f41c6f7a607ec2b17330a8d9e9
+  languageName: node
+  linkType: hard
 
 "tsconfig-paths@npm:^3.12.0, tsconfig-paths@npm:^3.9.0":
   version: 3.12.0

@@ -1,5 +1,4 @@
 import type { BeemoConfig, DriverContext, Tool } from '@beemo/core';
-import { Path } from '@beemo/core';
 import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
 import path from 'path';
 
