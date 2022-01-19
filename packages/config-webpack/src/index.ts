@@ -97,7 +97,7 @@ export function getConfig({
       rules: [
         {
           test: TJSX_EXT_PATTERN,
-          include: [srcPath],
+          // include: [srcPath],
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
