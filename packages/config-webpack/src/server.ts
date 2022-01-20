@@ -35,16 +35,11 @@ const { options, rest } = parse<{
       description: 'Webpack entry file path (relative to the root)',
       type: 'string',
     },
-    analyze: {
-      description: 'Analyze webpack build',
-      type: 'boolean',
-    },
   },
 });
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 let LUMOS_ROOT: string | undefined;
-const WEBPACK_ANALYZE = options.analyze?.toString();
 const LUMOS_ENTRY_POINT = options.entryPoint?.toString();
 
 if (options.path) {
@@ -71,7 +66,6 @@ execa('webpack', ['serve', ...args], {
   env: {
     NODE_ENV,
     LUMOS_ROOT,
-    WEBPACK_ANALYZE,
     LUMOS_ENTRY_POINT,
   },
   preferLocal: true,
