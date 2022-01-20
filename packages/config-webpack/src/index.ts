@@ -40,6 +40,7 @@ export function getConfig({
   moduleFederationConfig,
   enableSharedModules = false,
   sharedModulesManifestPath = DEFAULT_MANIFEST_PATH,
+  useTsBuild = false,
 }: WebpackOptions): WebpackConfig {
   const srcPath = path.join(root, srcFolder);
   const internalPath = path.join(root, buildFolder);
@@ -100,11 +101,20 @@ export function getConfig({
           // include: [srcPath],
           exclude: /node_modules/,
           use: {
-            loader: 'babel-loader',
-            options: {
-              cacheDirectory: true,
-              configFile: true,
-            },
+            ...(useTsBuild
+              ? {
+                  loader: 'ts-loader',
+                  options: {
+                    context: root,
+                  },
+                }
+              : {
+                  loader: 'babel-loader',
+                  options: {
+                    cacheDirectory: true,
+                    configFile: true,
+                  },
+                }),
           },
         },
         {

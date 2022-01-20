@@ -141,6 +141,7 @@ export default function lumos(tool: Tool) {
     if (usingTypescript) {
       driver.options.dependencies.push('typescript');
     }
+
     let LUMOS_ROOT = '';
     const root = context.getRiskyOption('root');
 

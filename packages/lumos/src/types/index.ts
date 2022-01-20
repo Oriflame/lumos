@@ -176,4 +176,8 @@ export interface LumosSettings {
    * Enable esm build
    */
   esm?: boolean;
+  /**
+   * Enable ts build for webpack
+   */
+  useTsBuild?: boolean;
 }

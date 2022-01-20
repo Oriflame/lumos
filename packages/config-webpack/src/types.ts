@@ -16,4 +16,5 @@ export interface WebpackOptions {
   moduleFederationConfig?: ConstructorParameters<typeof container.ModuleFederationPlugin>[0];
   enableSharedModules?: boolean;
   sharedModulesManifestPath?: string;
+  useTsBuild?: boolean;
 }

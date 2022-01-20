@@ -4360,6 +4360,7 @@ __metadata:
     react-refresh: ^0.11.0
     style-loader: ^3.3.1
     terser-webpack-plugin: ^5.3.0
+    ts-loader: ^9.2.6
     tsconfig-paths-webpack-plugin: ^3.5.2
     url-loader: ^4.1.1
     webpack: ^5.65.0
@@ -8602,7 +8603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.7.0, enhanced-resolve@npm:^5.8.3":
+"enhanced-resolve@npm:^5.0.0, enhanced-resolve@npm:^5.7.0, enhanced-resolve@npm:^5.8.3":
   version: 5.8.3
   resolution: "enhanced-resolve@npm:5.8.3"
   dependencies:
@@ -13274,7 +13275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.2, micromatch@npm:^4.0.4":
+"micromatch@npm:^4.0.0, micromatch@npm:^4.0.2, micromatch@npm:^4.0.4":
   version: 4.0.4
   resolution: "micromatch@npm:4.0.4"
   dependencies:
@@ -18050,6 +18051,21 @@ __metadata:
   version: 1.0.1
   resolution: "trim-right@npm:1.0.1"
   checksum: 9120af534e006a7424a4f9358710e6e707887b6ccf7ea69e50d6ac6464db1fe22268400def01752f09769025d480395159778153fb98d4a2f6f40d4cf5d4f3b6
+  languageName: node
+  linkType: hard
+
+"ts-loader@npm:^9.2.6":
+  version: 9.2.6
+  resolution: "ts-loader@npm:9.2.6"
+  dependencies:
+    chalk: ^4.1.0
+    enhanced-resolve: ^5.0.0
+    micromatch: ^4.0.0
+    semver: ^7.3.4
+  peerDependencies:
+    typescript: "*"
+    webpack: ^5.0.0
+  checksum: 309d8fb6348c0c3a7166d42c1238c585ede00f816155b24217dbca489406a72409395d7954bc5801ddb9ca71c71e7e0b2375dbc342337e0ab1a461944598a7fe
   languageName: node
   linkType: hard
 
