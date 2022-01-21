@@ -27,7 +27,7 @@
     "@types/node": "^16.11.19"
   },
   "dependencies": {
-    "@oriflame/conventional-changelog": "^1.2.10",
+    "@oriflame/conventional-changelog": "^1.2.17",
     "danger": "^10.8.0"
   },
   "packemon": {
