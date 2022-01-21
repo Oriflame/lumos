@@ -36,7 +36,7 @@
     "@beemo/core": "^2.1.3",
     "@beemo/driver-eslint": "^2.0.4",
     "@types/node": "^16.11.19",
-    "eslint": "^8.6.0",
+    "eslint": "^8.7.0",
     "ts-node": "^10.4.0"
   },
   "peerDependencies": {
