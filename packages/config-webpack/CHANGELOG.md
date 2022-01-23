@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.29 - 2022-01-23
+
+#### 📦 Dependencies
+
+- update dependency @babel/core. (#960) ([f7d56b9](https://github.com/Oriflame/lumos/commit/f7d56b956e471bd52f705f0e3ce5a56915e8642f)), work items [#960](https://github.com/Oriflame/lumos/issues/960)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.1.28 - 2022-01-20
 
 #### 📦 Dependencies
