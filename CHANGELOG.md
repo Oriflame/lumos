@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.1.31 - 2022-01-24
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-jest. (#962) ([9202eeb](https://github.com/Oriflame/lumos/commit/9202eebc612a3b8b6ecd6c2b5e3c56e44fa7f7c0)), work items [#962](https://github.com/Oriflame/lumos/issues/962)
+- update dependency webpack-cli. (#961) ([230b12b](https://github.com/Oriflame/lumos/commit/230b12bb34bb735ceed4283580e8e612bb4341d3)), work items [#961](https://github.com/Oriflame/lumos/issues/961)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([c4bbb81](https://github.com/Oriflame/lumos/commit/c4bbb81e111e336b194c45d0a3c6ac22c6558c4f))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.1.30 - 2022-01-23
 
 #### 📦 Dependencies
