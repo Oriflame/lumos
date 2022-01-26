@@ -40,7 +40,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@types/jest": "^27.4.0",
     "dom-storage": "^2.1.0",
-    "graphql": "^16.2.0",
+    "graphql": "^16.3.0",
     "graphql-tag": "^2.12.6",
     "jest-preset-oriflame": "^5.1.32"
   },
