@@ -72,8 +72,7 @@ export function getPlugins({
     plugins.push(
       new webpack.DllReferencePlugin({
         context: root,
-        // eslint-disable-next-line node/no-missing-require
-        manifest: path.join(require.resolve('@ori/shared-libs'), sharedModulesManifestPath!),
+        manifest: require.resolve(`@ori/shared-libs/${sharedModulesManifestPath}`),
       }),
     );
   }
