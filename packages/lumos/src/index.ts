@@ -148,6 +148,10 @@ export default function lumos(tool: Tool) {
     if (typeof root === 'string') {
       LUMOS_ROOT = path.join(process.cwd(), root);
     }
+    let LUMOS_WORKSPACE_ROOT = '';
+    if (workspaces.length > 0) {
+      LUMOS_WORKSPACE_ROOT = context.workspaceRoot.toString();
+    }
 
     // Since webpack config uses references and doesn't have access to Beemo,
     // we need to set these environment variables for easy access.
@@ -159,6 +163,7 @@ export default function lumos(tool: Tool) {
         LUMOS_BUILD_FOLDER: (context.getRiskyOption('buildFolder') as string) || '',
         LUMOS_ENTRY_POINT: (context.getRiskyOption('entryPoint') as string) || '',
         LUMOS_ROOT,
+        LUMOS_WORKSPACE_ROOT,
       },
     });
   }, 'webpack');

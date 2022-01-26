@@ -17,4 +17,5 @@ export interface WebpackOptions {
   enableSharedModules?: boolean;
   sharedModulesPackage?: string;
   sharedModulesManifestPath?: string;
+  monorepoRoot?: string;
 }

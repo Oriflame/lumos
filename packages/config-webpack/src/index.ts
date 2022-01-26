@@ -44,6 +44,7 @@ export function getConfig({
   enableSharedModules = false,
   sharedModulesManifestPath = DEFAULT_MANIFEST_PATH,
   sharedModulesPackage = DEFAULT_MANIFEST_PACKAGE,
+  monorepoRoot,
 }: WebpackOptions): WebpackConfig {
   const srcPath = path.join(root, srcFolder);
   const internalPath = path.join(root, buildFolder);
@@ -52,6 +53,14 @@ export function getConfig({
     index: [srcPath],
   };
   const POSTCSS_SETTING = { ...DEFAULT_POSTCSS_SETTING };
+
+  if (monorepoRoot) {
+    try {
+      process.chdir(monorepoRoot);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   POSTCSS_SETTING.options.sourceMap = sourceMaps;
 
