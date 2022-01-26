@@ -177,7 +177,8 @@ export interface LumosSettings {
    */
   esm?: boolean;
   /**
-   * Enable ts build for webpack
+   * Name of the shared module package
+   * @default '@ori/shared-libs'
    */
-  useTsBuild?: boolean;
+  sharedModulesPackage?: string;
 }

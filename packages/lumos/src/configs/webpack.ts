@@ -20,7 +20,7 @@ const {
   enableSharedModules,
   sharedModulesManifestPath,
   enableSourceMaps,
-  useTsBuild,
+  sharedModulesPackage,
 } = settings;
 
 const config = getConfig({
@@ -41,7 +41,7 @@ const config = getConfig({
   >,
   enableSharedModules,
   sharedModulesManifestPath,
-  useTsBuild,
+  sharedModulesPackage,
 });
 
 export default config;
