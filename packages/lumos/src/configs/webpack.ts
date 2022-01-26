@@ -42,7 +42,7 @@ const config = getConfig({
   enableSharedModules,
   sharedModulesManifestPath,
   sharedModulesPackage,
-  monorepoRoot: process.env.LUMOS_WEBPACK_ROOT || undefined,
+  monorepoRoot: process.env.LUMOS_WORKSPACE_ROOT || undefined,
 });
 
 export default config;
