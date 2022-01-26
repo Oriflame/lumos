@@ -34,7 +34,6 @@ export function getConfig({
   const config: BabelConfig = {
     babelrc: true,
     babelrcRoots: workspaces,
-    comments: false,
     parserOpts: {
       ...(library && { sourceType: 'unambiguous' }),
     },
