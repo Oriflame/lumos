@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.2.0 - 2022-01-28
+
+Webpack support for monorepo. 
+
+New commands that are available:
+```sh
+lumos build --workspaces=*
+lumos-webpack-server --root=./packages/myApp
+```
+
+#### 🚀 Updates
+
+- **[webpack]** Add monorepo support. (#963) ([2215911](https://github.com/Oriflame/lumos/commit/221591101f5f987e7f3f36c914238ca2b8e79893)), work items [#963](https://github.com/Oriflame/lumos/issues/963)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.1.32 - 2022-01-26
 
 #### 📦 Dependencies
