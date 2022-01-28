@@ -10,40 +10,47 @@ const argv = process.argv.slice(2);
 // Parse argv into a consumable object
 const { options, rest } = parse<{
   help: boolean;
-  path?: string;
+  root?: string;
   port?: number;
   entryPoint?: string;
+  env?: string;
   analyze?: boolean;
 }>(argv, {
   options: {
     help: {
       description: 'Show the help menu',
-      short: 'H',
+      short: 'h',
       type: 'boolean',
     },
-    path: {
+    root: {
       description: 'Relative path to project in monorepo',
-      short: 'P',
+      short: 'r',
       type: 'string',
     },
     port: {
       description: 'Dev server port',
       type: 'number',
+      short: 'p',
       default: PORT,
     },
     entryPoint: {
       description: 'Webpack entry file path (relative to the root)',
       type: 'string',
     },
+    env: {
+      description: 'Node env',
+      type: 'string',
+      short: 'e',
+    },
   },
 });
 
-const NODE_ENV = process.env.NODE_ENV || 'development';
-let LUMOS_ROOT: string | undefined;
-const LUMOS_ENTRY_POINT = options.entryPoint?.toString();
+const NODE_ENV = options.env || process.env.NODE_ENV || 'development';
+let LUMOS_WEBPACK_ROOT: string | undefined;
+const LUMOS_WEBPACK_ENTRY_POINT = options.entryPoint?.toString();
 
-if (options.path) {
-  LUMOS_ROOT = path.join(process.cwd(), options.path);
+if (options.root) {
+  LUMOS_WEBPACK_ROOT = path.join(process.cwd(), options.root);
 }
 
 let port: number | string = process.env.PORT || PORT;
@@ -65,8 +72,8 @@ execa('webpack', ['serve', ...args], {
   cwd: process.cwd(),
   env: {
     NODE_ENV,
-    LUMOS_ROOT,
-    LUMOS_ENTRY_POINT,
+    LUMOS_WEBPACK_ROOT,
+    LUMOS_WEBPACK_ENTRY_POINT,
   },
   preferLocal: true,
   stdio: 'inherit',

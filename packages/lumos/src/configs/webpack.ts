@@ -29,20 +29,18 @@ const config = getConfig({
   port: process.env.PORT,
   react,
   sourceMaps: process.env.SOURCE_MAPS ? Boolean(process.env.SOURCE_MAPS) : enableSourceMaps,
-  buildFolder: process.env.LUMOS_BUILD_FOLDER || buildFolder,
+  buildFolder: process.env.LUMOS_WEBPACK_BUILD_FOLDER || buildFolder,
   srcFolder,
-  entryPoint: process.env.LUMOS_ENTRY_POINT || entryPoint,
+  entryPoint: process.env.LUMOS_WEBPACK_ENTRY_POINT || entryPoint,
   publicPath,
-  root: process.env.LUMOS_ROOT || root,
+  root: process.env.LUMOS_WEBPACK_ROOT || root,
   devServerContentBase,
   host,
-  moduleFederationConfig: moduleFederationConfig as NonNullable<
-    Parameters<typeof getConfig>[0]['moduleFederationConfig']
-  >,
+  moduleFederationConfig,
   enableSharedModules,
   sharedModulesManifestPath,
   sharedModulesPackage,
-  monorepoRoot: process.env.LUMOS_WORKSPACE_ROOT || undefined,
+  monorepoRoot: process.env.LUMOS_WEBPACK_WORKSPACE_ROOT || undefined,
 });
 
 export default config;
