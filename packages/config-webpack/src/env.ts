@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import dotenvExpand from 'dotenv-expand';
+import { expand } from 'dotenv-expand';
 import fs from 'fs';
 import path from 'path';
 
@@ -23,7 +23,7 @@ function getClientEnvironment(mode: 'development' | 'production') {
 
   dotenvFiles.forEach((dotenvFile) => {
     if (fs.existsSync(dotenvFile)) {
-      dotenvExpand(
+      expand(
         dotenv.config({
           path: dotenvFile,
         }),
@@ -46,14 +46,12 @@ function getClientEnvironment(mode: 'development' | 'production') {
         NODE_ENV: process.env.NODE_ENV ?? 'development',
       },
     );
+
   // Stringify all values so we can feed into Webpack DefinePlugin
   const stringified = {
-    'process.env': Object.keys(raw).reduce<Record<string, string>>((env, key) => {
-      // eslint-disable-next-line no-param-reassign -- we need to mutate the new object
-      env[key] = JSON.stringify(raw[key]);
-
-      return env;
-    }, {}),
+    'process.env': Object.fromEntries(
+      Object.keys(raw).map((key) => [key, JSON.stringify(raw[key])]),
+    ),
   };
 
   return stringified;

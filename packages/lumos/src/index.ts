@@ -1,5 +1,6 @@
 import type { BeemoConfig, DriverContext, Tool } from '@beemo/core';
 import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
+import path from 'path';
 
 import { getSettings } from './helpers/getSettings';
 import type { LumosSettings } from './types';
@@ -141,6 +142,20 @@ export default function lumos(tool: Tool) {
       driver.options.dependencies.push('typescript');
     }
 
+    let LUMOS_WEBPACK_ROOT = '';
+
+    const root = context.getRiskyOption('root');
+
+    if (typeof root === 'string') {
+      LUMOS_WEBPACK_ROOT = path.join(process.cwd(), root);
+    }
+
+    let LUMOS_WEBPACK_WORKSPACE_ROOT = '';
+
+    if (workspaces.length > 0) {
+      LUMOS_WEBPACK_WORKSPACE_ROOT = context.workspaceRoot.toString();
+    }
+
     // Since webpack config uses references and doesn't have access to Beemo,
     // we need to set these environment variables for easy access.
     driver.configure({
@@ -148,8 +163,10 @@ export default function lumos(tool: Tool) {
         SOURCE_MAPS: context.getRiskyOption('sourceMaps') ? 'true' : '',
         WEBPACK_ANALYZE: context.getRiskyOption('analyze') ? 'true' : '',
         WEBPACK_PARALLEL: String(context.getRiskyOption('parallel') || ''),
-        LUMOS_BUILD_FOLDER: (context.getRiskyOption('buildFolder') as string) || '',
-        LUMOS_ENTRY_POINT: (context.getRiskyOption('entryPoint') as string) || '',
+        LUMOS_WEBPACK_BUILD_FOLDER: (context.getRiskyOption('buildFolder') as string) || '',
+        LUMOS_WEBPACK_ENTRY_POINT: (context.getRiskyOption('entryPoint') as string) || '',
+        LUMOS_WEBPACK_ROOT,
+        LUMOS_WEBPACK_WORKSPACE_ROOT,
       },
     });
   }, 'webpack');

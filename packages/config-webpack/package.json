@@ -37,15 +37,14 @@
     "@beemo/driver-webpack": "^2.0.5",
     "@types/webpack-bundle-analyzer": "^4.4.1",
     "react": "*",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",
     "@beemo/driver-webpack": "^2.0.4",
     "browserslist": "^4.19.1",
     "graphql": "^16.1.0",
-    "ts-loader": "^9.2.6",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1"
   },
@@ -55,13 +54,11 @@
     },
     "graphql": {
       "optional": true
-    },
-    "ts-loader": {
-      "optional": true
     }
   },
   "dependencies": {
     "@babel/core": "^7.16.12",
+    "@boost/args": "^3.0.0",
     "@boost/module": "^3.1.0",
     "@module-federation/concat-runtime": "^0.0.1",
     "@oriflame/lumos-common": "^5.1.32",
@@ -70,8 +67,8 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.4.1",
-    "dotenv": "^14.0.1",
-    "dotenv-expand": "^5.1.0",
+    "dotenv": "^14.3.2",
+    "dotenv-expand": "^6.0.1",
     "execa": "^5.1.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
@@ -83,12 +80,13 @@
     "postcss-modules": "^4.3.0",
     "postcss-modules-values": "^4.0.0",
     "postcss-normalize": "^10.0.1",
-    "postcss-preset-env": "^7.2.1",
+    "postcss-preset-env": "^7.2.3",
     "postcss-reporter": "^7.0.5",
     "postcss-url": "^10.1.3",
     "react-refresh": "^0.11.0",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
     "url-loader": "^4.1.1",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-dev-server": "^4.7.3",

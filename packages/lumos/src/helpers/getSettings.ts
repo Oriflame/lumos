@@ -76,6 +76,7 @@ export function getSettings(instance: Tool | undefined, name?: string): LumosSet
     skipLibCheck: false,
     enableConsoleMocks: true,
     enableSourceMaps: true,
+    entryPoint: 'appLoader.ts',
     ...settings,
   };
 }

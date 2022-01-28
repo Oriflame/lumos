@@ -16,7 +16,11 @@ import TerserPlugin from 'terser-webpack-plugin';
 import type { Configuration } from 'webpack';
 import { merge } from 'webpack-merge';
 
-import { DEFAULT_MANIFEST_PATH, POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING } from './constants';
+import {
+  DEFAULT_MANIFEST_PACKAGE,
+  DEFAULT_MANIFEST_PATH,
+  POSTCSS_SETTING as DEFAULT_POSTCSS_SETTING,
+} from './constants';
 import { getParallelValue, getPlugins, getUniqueName, PORT, PROD, WEBPACK_ROOT } from './helpers';
 import type { WebpackOptions } from './types';
 
@@ -39,6 +43,8 @@ export function getConfig({
   moduleFederationConfig,
   enableSharedModules = false,
   sharedModulesManifestPath = DEFAULT_MANIFEST_PATH,
+  sharedModulesPackage = DEFAULT_MANIFEST_PACKAGE,
+  monorepoRoot,
 }: WebpackOptions): WebpackConfig {
   const srcPath = path.join(root, srcFolder);
   const internalPath = path.join(root, buildFolder);
@@ -47,6 +53,14 @@ export function getConfig({
     index: [srcPath],
   };
   const POSTCSS_SETTING = { ...DEFAULT_POSTCSS_SETTING };
+
+  if (monorepoRoot) {
+    try {
+      process.chdir(monorepoRoot);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   POSTCSS_SETTING.options.sourceMap = sourceMaps;
 
@@ -71,6 +85,7 @@ export function getConfig({
     moduleFederationConfig,
     enableSharedModules,
     sharedModulesManifestPath,
+    sharedModulesPackage,
   });
 
   if (entryPoint) {
@@ -96,7 +111,6 @@ export function getConfig({
       rules: [
         {
           test: TJSX_EXT_PATTERN,
-          include: [srcPath],
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
@@ -163,6 +177,37 @@ export function getConfig({
       alias: {
         [`${ALIAS_PATTERN}`]: path.join(root, srcFolder, '/'),
       },
+      fallback: {
+        assert: false,
+        buffer: false,
+        console: false,
+        constants: false,
+        crypto: false,
+        domain: false,
+        events: false,
+        http: false,
+        https: false,
+        os: false,
+        path: false,
+        punycode: false,
+        process: false,
+        querystring: false,
+        stream: false,
+        string_decoder: false,
+        sys: false,
+        timers: false,
+        tty: false,
+        url: false,
+        util: false,
+        vm: false,
+        zlib: false,
+        fs: false,
+        child_process: false,
+        net: false,
+        dns: false,
+        applicationinsights: false,
+      },
+      mainFields: ['browser', 'source', 'module', 'main'],
       extensions: ['.wasm', '.mjs', ...EXTS],
     },
 
@@ -182,9 +227,7 @@ export function getConfig({
       headers: {
         'Service-Worker-Allowed': '/',
       },
-      historyApiFallback: {
-        disableDotRule: true,
-      },
+      historyApiFallback: true,
       hot: true,
       port, // This can be a unix socket path so a string is valid
       host,

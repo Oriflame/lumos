@@ -1,35 +1,3 @@
 #!/usr/bin/env node
 
-const execa = require('execa');
-const { PORT } = require('../lib/helpers');
-
-const NODE_ENV = process.env.NODE_ENV || 'development';
-const port = process.env.PORT || PORT;
-const args = process.argv.slice(2);
-
-// Unix socket
-if (Number.isNaN(parseInt(port, 10))) {
-  args.push('--socket', port);
-} else {
-  args.push('--port', port);
-}
-
-
-// FIXME: https://github.com/webpack/webpack-dev-server/issues/2759
-// execa('webpack-dev-server', args, {
-//   cwd: process.cwd(),
-//   env: {
-//     NODE_ENV,
-//   },
-//   preferLocal: true,
-//   stdio: 'inherit',
-// });
-
-execa('webpack', ['serve', ...args], {
-  cwd: process.cwd(),
-  env: {
-    NODE_ENV,
-  },
-  preferLocal: true,
-  stdio: 'inherit',
-});
+require('../lib/server');

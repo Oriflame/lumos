@@ -80,8 +80,9 @@ export default config;
 - `skipLibCheck`(`boolean`) - Skip library check in typescript
 - `emptyBabelConfig`(`boolean`) - Enable empty babel configuration
 - `enableSharedModules`(`boolean`) - Enable shared modules
-- `sharedModulesManifestPath`(`string`) - Path to shared module manifest
 - `enableConsoleMocks`(`boolean`) - Enable jest console mocks
+- `sharedModulesManifestPath`(`string`) - Path to shared module manifest relative to package
+- `sharedModulesPackage`(`string`) - Shared module package
 
 ## Usage
 
@@ -420,6 +421,7 @@ export default config;
 - `devServerContentBase`
 - `enableSharedModules`
 - `sharedModulesManifestPath`
+- `sharedModulesPackage`
 
 #### Cli scripts
 
@@ -434,16 +436,53 @@ Options that are added automatically.
 - `--sourceMaps`
 - `--analyze`
 - `--parallel`
-- `--buildFolder=./build`
-- `--entryPoint=appLoader.ts`
+- `--buildFolder`
+  - default: `build`
+- `--entryPoint`
 
 ```sh
 lumos webpack
 lumos webpack --analyze
 lumos webpack --sourceMaps=false
+lumos webpack --root=./packages/test
+lumos webpack build --workspaces=*
 ```
 
 > Start application with webpack `lumos create-config webpack && lumos-webpack-server`
+
+> ⚠️ When using webpack in workspaces packages needs to have `packages/<Package Name>/.config/lumos.ts`
+
+**Webpack cli options:**
+
+Webpack cli options can be find here: [OPTIONS.md](https://github.com/webpack/webpack-cli/blob/master/OPTIONS.md)
+
+**Webpack cli commands:**
+
+### Available Commands
+
+```
+  build|bundle|b                                        Run webpack (default command, can be omitted).
+  help|h [command] [option]                             Display help for commands and options.
+  info|i [options]                                      Outputs information about your system.
+  version|v [commands...]                               Output the version number of 'webpack', 'webpack-cli' and 'webpack-dev-server' and commands.
+```
+
+#### Lumos-webpack-server
+
+**Cli options:**
+
+- `--root`(`string`) - relative path to package
+- `--port`(`number`) - dev server port
+  - default: `3000`
+- `--entryPoint`(`string`) - webpack entry point relative to root
+- `--env`(`string`) - Node env
+  - default: `development`
+
+```sh
+lumos-webpack-server
+lumos-webpack-server --port=3001
+lumos-webpack-server --root=./packages/root
+```
 
 #### Overriding config
 

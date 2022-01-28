@@ -72,11 +72,12 @@ export function getPlugins({
     plugins.push(
       new webpack.DllReferencePlugin({
         context: root,
-        manifest: path.join(root!, sharedModulesManifestPath!),
+        manifest: require.resolve(`@ori/shared-libs/${sharedModulesManifestPath}`),
       }),
     );
   }
   if (analyzeBundle) {
+    // @ts-expect-error -- types error
     plugins.push(new BundleAnalyzerPlugin());
   }
 

@@ -1,3 +1,5 @@
+import type { container } from 'webpack';
+
 export interface LumosEnvSetting {
   targets?:
     | string[]
@@ -90,7 +92,7 @@ export interface LumosSettings {
   typesFolder: string;
   /**
    * Webpack entry point
-   * @default undefined
+   * @default 'appLoader.ts'
    */
   entryPoint?: string;
   /**
@@ -144,7 +146,7 @@ export interface LumosSettings {
   /**
    * Change module federation config
    */
-  moduleFederationConfig?: unknown;
+  moduleFederationConfig?: ConstructorParameters<typeof container.ModuleFederationPlugin>[0];
   /**
    * Change webpack host
    */
@@ -156,12 +158,9 @@ export interface LumosSettings {
   enableSourceMaps?: boolean;
   /**
    * Enable shared modules
+   * @default false
    */
   enableSharedModules?: boolean;
-  /**
-   * Path to shared module manifest
-   */
-  sharedModulesManifestPath?: string;
   /**
    * Enable console mocks
    * @default true
@@ -176,4 +175,14 @@ export interface LumosSettings {
    * Enable esm build
    */
   esm?: boolean;
+  /**
+   * Path to shared module manifest
+   * @default 'build/manifest.json'
+   */
+  sharedModulesManifestPath?: string;
+  /**
+   * Name of the shared module package
+   * @default '@ori/shared-libs'
+   */
+  sharedModulesPackage?: string;
 }
