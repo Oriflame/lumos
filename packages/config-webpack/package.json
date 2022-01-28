@@ -37,7 +37,6 @@
     "@beemo/driver-webpack": "^2.0.5",
     "@types/webpack-bundle-analyzer": "^4.4.1",
     "react": "*",
-    "ts-loader": "^9.2.6",
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.2"
   },
@@ -46,7 +45,6 @@
     "@beemo/driver-webpack": "^2.0.4",
     "browserslist": "^4.19.1",
     "graphql": "^16.1.0",
-    "ts-loader": "^9.2.6",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1"
   },
@@ -55,9 +53,6 @@
       "optional": true
     },
     "graphql": {
-      "optional": true
-    },
-    "ts-loader": {
       "optional": true
     }
   },
