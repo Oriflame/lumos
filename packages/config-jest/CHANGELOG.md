@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.1 - 2022-01-29
+
+#### 📦 Dependencies
+
+- update dependency graphql. (#964) ([5333610](https://github.com/Oriflame/lumos/commit/5333610b9e434b94967dfa5b8387737ed555d747)), work items [#964](https://github.com/Oriflame/lumos/issues/964)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.2.0 - 2022-01-28
 
 **Note:** Version bump only for package @oriflame/config-jest
