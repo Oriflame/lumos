@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.16.12",
-    "@boost/args": "^3.0.0",
+    "@boost/args": "^3.0.1",
     "@boost/module": "^3.1.0",
     "@module-federation/concat-runtime": "^0.0.1",
     "@oriflame/lumos-common": "^5.2.2",
