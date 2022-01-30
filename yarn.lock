@@ -2142,6 +2142,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@boost/args@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@boost/args@npm:3.0.1"
+  dependencies:
+    "@boost/internal": ^3.0.1
+    levenary: ^1.1.1
+  checksum: d2b26a5568bbe2be27f58903526d0a9a6b85786900de5c3c811a2c2f28298083ffba1762b26b058ed59b6cec869c5cd04b99389611c9dcd4d2fb0c398248dd73
+  languageName: node
+  linkType: hard
+
 "@boost/cli@npm:^3.0.1":
   version: 3.0.1
   resolution: "@boost/cli@npm:3.0.1"
@@ -2290,6 +2300,15 @@ __metadata:
   dependencies:
     debug: ^4.3.2
   checksum: f137ce052aca267142ad24b13e6f350c304be7cc4ed173c672125a18b84a6ae93e47b12cc95b891278ceb101503c2060f7c5b9d06f470f073693a36a62279fc3
+  languageName: node
+  linkType: hard
+
+"@boost/internal@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@boost/internal@npm:3.0.1"
+  dependencies:
+    debug: ^4.3.3
+  checksum: 9886da9082eee160cdc7c29666c99777d543a68e2e17dbb25890ddef35c49eeb600d8398a514c1e870289a39962a85464135bd9702b73375e2b3a72e336da27b
   languageName: node
   linkType: hard
 
@@ -4330,7 +4349,7 @@ __metadata:
     "@babel/core": ^7.16.12
     "@beemo/core": ^2.1.3
     "@beemo/driver-webpack": ^2.0.5
-    "@boost/args": ^3.0.0
+    "@boost/args": ^3.0.1
     "@boost/module": ^3.1.0
     "@module-federation/concat-runtime": ^0.0.1
     "@oriflame/lumos-common": ^5.2.2
