@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.3 - 2022-01-30
+
+#### 📦 Dependencies
+
+- update dependency @boost/args. (#965) ([68f72fa](https://github.com/Oriflame/lumos/commit/68f72faf78bd84fe4c179fa6f14af4caaad1b546)), work items [#965](https://github.com/Oriflame/lumos/issues/965)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.2.2 - 2022-01-29
 
 **Note:** Version bump only for package @oriflame/config-webpack

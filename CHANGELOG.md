@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.3 - 2022-01-30
+
+#### 📦 Dependencies
+
+- update dependency @boost/args. (#965) ([68f72fa](https://github.com/Oriflame/lumos/commit/68f72faf78bd84fe4c179fa6f14af4caaad1b546)), work items [#965](https://github.com/Oriflame/lumos/issues/965)
+- update dependency @boost/common. (#966) ([8a8f9f2](https://github.com/Oriflame/lumos/commit/8a8f9f29389bf8538db7983c6a287aacd0c6fc9e)), work items [#966](https://github.com/Oriflame/lumos/issues/966)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([0b40b59](https://github.com/Oriflame/lumos/commit/0b40b59160e16c5aa3254d3d8671f34de53608f0))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.2.2 - 2022-01-29
 
 #### 📦 Dependencies
