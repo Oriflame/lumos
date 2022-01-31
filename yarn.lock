@@ -4380,7 +4380,7 @@ __metadata:
     cross-env: ^7.0.3
     css-loader: ^6.5.1
     css-minimizer-webpack-plugin: ^3.4.1
-    dotenv: ^14.3.2
+    dotenv: ^15.0.0
     dotenv-expand: ^6.0.1
     execa: ^5.1.1
     file-loader: ^6.2.0
@@ -8550,10 +8550,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^14.3.2":
-  version: 14.3.2
-  resolution: "dotenv@npm:14.3.2"
-  checksum: 86c06758915d6facc35275f4a7fafc16705b6f3b44befaa8abca91367991efc8ff8db5437d3cc14778231d19fb97610fe82d60f8a53ba723cdb69fe4171439aa
+"dotenv@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "dotenv@npm:15.0.0"
+  checksum: be5d852b2ad1708780e7038481c0687ce4bb9edf354d439872511e966a5f28c083f296e1d1c182256d695bfdd67e320382eb3b0f2e9d83efa3615cd1757257ab
   languageName: node
   linkType: hard
 
