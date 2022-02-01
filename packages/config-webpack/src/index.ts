@@ -162,12 +162,9 @@ export function getConfig({
         },
         {
           test: GQL_EXT_PATTERN,
+          exclude: /node_modules/,
           use: {
-            loader: 'webpack-graphql-loader',
-            options: {
-              output: 'document',
-              removeUnusedFragments: true,
-            },
+            loader: 'graphql-tag/loader',
           },
         },
       ],

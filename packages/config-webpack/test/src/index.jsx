@@ -5,11 +5,14 @@ import React from 'react';
 import './test.css';
 
 import aliasModule from './mdl';
+import query from './test.gql';
 import mod from './test.module.css';
 
 console.log(React.version);
 
 console.log(mod);
+
+console.log(query);
 
 console.log('Webpack build test!');
 
