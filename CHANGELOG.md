@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.7 - 2022-02-02
+
+#### 🐞 Fixes
+
+- **[webpack]** Remove source fields. ([6bdd7bc](https://github.com/Oriflame/lumos/commit/6bdd7bcca09373f04bce85872287384cfab5e936))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([72018cf](https://github.com/Oriflame/lumos/commit/72018cf84d0265fa7714d2e0d747092023c064c2))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.2.6 - 2022-02-01
 
 #### 📦 Dependencies

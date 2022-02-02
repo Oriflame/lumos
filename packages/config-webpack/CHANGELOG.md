@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.7 - 2022-02-02
+
+#### 🐞 Fixes
+
+- **[webpack]** Remove source fields. ([6bdd7bc](https://github.com/Oriflame/lumos/commit/6bdd7bcca09373f04bce85872287384cfab5e936))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.2.6 - 2022-02-01
 
 #### 📦 Dependencies
