@@ -207,7 +207,7 @@ export function getConfig({
         dns: false,
         applicationinsights: false,
       },
-      mainFields: ['browser', 'source', 'module', 'main'],
+      mainFields: ['browser', 'module', 'main'],
       extensions: ['.wasm', '.mjs', ...EXTS],
     },
 
