@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.8 - 2022-02-03
+
+#### 📦 Dependencies
+
+- update dependency @testing-library/jest-dom. (#975) ([ba829b9](https://github.com/Oriflame/lumos/commit/ba829b9930d7f63f04626c99abcb535713f8b68f)), work items [#975](https://github.com/Oriflame/lumos/issues/975)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.2.7 - 2022-02-02
 
 **Note:** Version bump only for package @oriflame/config-jest
