@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.9 - 2022-02-03
+
+#### 📦 Dependencies
+
+- update dependency css-loader. (#972) ([08535d0](https://github.com/Oriflame/lumos/commit/08535d0cfe28100bb9fa8f327289cdc14df1d885)), work items [#972](https://github.com/Oriflame/lumos/issues/972)
+- update dependency dotenv-expand. (#973) ([2645f6a](https://github.com/Oriflame/lumos/commit/2645f6ac2da41da276840398e072fd28f70e51c8)), work items [#973](https://github.com/Oriflame/lumos/issues/973)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([ee7a176](https://github.com/Oriflame/lumos/commit/ee7a176332c4e15b1ca86949da1a54613e64f85b))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.2.8 - 2022-02-03
 
 #### 📦 Dependencies
