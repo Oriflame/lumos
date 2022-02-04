@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.10 - 2022-02-04
+
+#### 🐞 Fixes
+
+- Add more modules to webpack's `resolve.fallback` config. (#976) ([b194d44](https://github.com/Oriflame/lumos/commit/b194d44ba9349befa6b454458e28427f2a0d2db9)), work items [#976](https://github.com/Oriflame/lumos/issues/976)
+
+#### 📦 Dependencies
+
+- update dependency dotenv-expand. (#977) ([f8cb32b](https://github.com/Oriflame/lumos/commit/f8cb32be92f7663161b74af4fdc5efd43d92d92b)), work items [#977](https://github.com/Oriflame/lumos/issues/977)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([824ff1f](https://github.com/Oriflame/lumos/commit/824ff1f964bc474a916952ea14a9cb51ac76faa3))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.2.9 - 2022-02-03
 
 #### 📦 Dependencies
