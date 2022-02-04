@@ -74,6 +74,14 @@
   "devDependencies": {
     "@oriflame/config-danger": "^5.2.11"
   },
+  "peerDependencies": {
+    "core-js": "^3.21.0"
+  },
+  "peerDependenciesMeta": {
+    "core-js": {
+      "optional": true
+    }
+  },
   "packemon": {
     "format": "lib",
     "platform": "node"

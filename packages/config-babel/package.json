@@ -44,9 +44,13 @@
     "@babel/core": "^7.16.0",
     "@beemo/core": "^2.1.2",
     "@beemo/driver-babel": "^2.0.4",
+    "core-js": "^3.21.0",
     "typescript": ">=4.5"
   },
   "peerDependenciesMeta": {
+    "core-js": {
+      "optional": true
+    },
     "typescript": {
       "optional": true
     }

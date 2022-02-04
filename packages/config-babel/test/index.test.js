@@ -31,4 +31,20 @@ describe('babel typescript test', () => {
 
     expect(code).toMatchSnapshot();
   });
+
+  test('typescript decorators', async ({ transform }) => {
+    const { code } = await transform(
+      `
+      class Cls {
+        @decorator
+        foo() {
+          console.log('Test');
+        }
+      };
+      export default Cls;`,
+      { filename: 'index.ts' },
+    );
+
+    expect(code).toMatchSnapshot();
+  });
 });

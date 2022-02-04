@@ -1,3 +1,4 @@
+import type { Assumptions } from '@oriflame/config-babel';
 import type { container } from 'webpack';
 
 export interface LumosEnvSetting {
@@ -185,4 +186,10 @@ export interface LumosSettings {
    * @default '@ori/shared-libs'
    */
   sharedModulesPackage?: string;
+  /**
+   * Babel assumptions replacement for `loose` option
+   * @see https://babeljs.io/docs/en/babel-preset-env#loose
+   * @see https://babeljs.io/docs/en/assumptions
+   */
+  assumptions?: Assumptions;
 }
