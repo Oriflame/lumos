@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.2.11 - 2022-02-05
+
+#### 📦 Dependencies
+
+- update dependency dotenv. (#974) ([7ef05e5](https://github.com/Oriflame/lumos/commit/7ef05e51d542276c41cb7d1676954bfe6184d8d7)), work items [#974](https://github.com/Oriflame/lumos/issues/974)
+- update dependency jest. (#979) ([72b4e98](https://github.com/Oriflame/lumos/commit/72b4e98f0ed3f5b97a2df0f55930597a0324b64d)), work items [#979](https://github.com/Oriflame/lumos/issues/979)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([8263199](https://github.com/Oriflame/lumos/commit/826319922b10d786fd0a16ebecdea2256db14a60))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.2.10 - 2022-02-04
 
 #### 🐞 Fixes
