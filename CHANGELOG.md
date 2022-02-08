@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.1 - 2022-02-08
+
+#### 📋 Misc
+
+- **[webpack]** Migrate from `graphql loader` to `graphql-tag`. (#971) ([71307cf](https://github.com/Oriflame/lumos/commit/71307cf31711c08e147526f9d4b3664324b9c131)), work items [#971](https://github.com/Oriflame/lumos/issues/971)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([04ba46d](https://github.com/Oriflame/lumos/commit/04ba46dee62f10bcf07e2fccf7503e97ac4bd4d7))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.3.0 - 2022-02-08
 
 - Upgrade babel configuration and update deprecated configuration.
