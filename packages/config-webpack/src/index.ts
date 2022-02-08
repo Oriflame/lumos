@@ -107,6 +107,8 @@ export function getConfig({
 
     plugins,
 
+    stats: 'errors-warnings',
+
     module: {
       rules: [
         {
@@ -248,8 +250,6 @@ export function getConfig({
     },
 
     performance: false,
-
-    stats: !PROD,
   };
 
   let config: WebpackConfig | undefined;
