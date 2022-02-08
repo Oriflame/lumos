@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.3.0 - 2022-02-08
+
+- Upgrade babel configuration and update deprecated configuration.
+- Add support for compiler assumptions.
+
+* misc: Remove comment.
+
+#### 🚀 Updates
+
+- **[babel]** Update babel configuration. (#978) ([8c0de88](https://github.com/oriflame/lumos/commit/8c0de88e3785c346210afe64abc2393fc81f172f)), work items [#978](https://github.com/oriflame/lumos/issues/978)
+
+
+
+
 ### 5.2.11 - 2022-02-05
 
 **Note:** Version bump only for package @oriflame/babel-preset
