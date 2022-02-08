@@ -43,3 +43,9 @@ yarn add --dev @oriflame/babel-preset @babel/core
 - env `object`
   - Change env setting
   - see: [@babel/preset-evn](https://babeljs.io/docs/en/babel-preset-env)
+
+### Using core-js
+
+We support core-js polyfills.
+
+See: [babel documentation](https://babeljs.io/docs/en/babel-preset-env#usebuiltins-entry).

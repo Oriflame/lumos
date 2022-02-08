@@ -61,7 +61,7 @@ export default config;
 - `esmBuildFolder`(`string`) - Es modules build folder
 - `coverage`(`number`) - Code coverage
 - `env`(`LumosEnvSetting`) - Babel env settings (see:
-  [babel-env#options](https://babeljs.io/docs/en/babel-preset-env#options))
+  [preset-env#options](https://babeljs.io/docs/en/babel-preset-env#options))
 - `graphql`(`boolean`) - Enable graphql support
 - `library`(`boolean`) - Enable optimizations for library
 - `future`(`boolean`) - Enable support for esnext javascript
@@ -83,6 +83,7 @@ export default config;
 - `enableConsoleMocks`(`boolean`) - Enable jest console mocks
 - `sharedModulesManifestPath`(`string`) - Path to shared module manifest relative to package
 - `sharedModulesPackage`(`string`) - Shared module package
+- `assumptions`(`Assumptions`) - Babel assumptions (see: [compiler assumptions](https://babeljs.io/docs/en/assumptions), [preset-env#loose](https://babeljs.io/docs/en/babel-preset-env#loose))
 
 ## Usage
 

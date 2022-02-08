@@ -10,7 +10,6 @@ export interface BabelPresetOriflameOptions {
   library?: boolean;
   srcFolder?: string;
   env?: Record<string, unknown>;
-  enableModuleExports?: boolean;
 }
 
 export default function babelPresetOriflame(
@@ -23,20 +22,17 @@ export default function babelPresetOriflame(
     library,
     srcFolder = 'src',
     env = {},
-    enableModuleExports,
   }: BabelPresetOriflameOptions = {},
 ) {
   const plugins: PluginItem[] = [
+    ['@babel/plugin-proposal-decorators', { version: 'legacy', decoratorsBeforeExport: false }],
+    '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-export-default-from',
     '@babel/plugin-proposal-export-namespace-from',
     ['babel-plugin-transform-dev', { evaluate: false }],
     'babel-plugin-optimize-clsx',
     '@emotion',
   ];
-
-  // When using decorators, we must apply loose to explicit plugins
-  // https://babeljs.io/docs/en/babel-plugin-proposal-decorators#legacy
-  plugins.unshift(['@babel/plugin-proposal-decorators', { legacy: true }]);
 
   const presets: PluginItem[] = [
     [
@@ -47,11 +43,11 @@ export default function babelPresetOriflame(
           '@babel/plugin-transform-regenerator',
           '@babel/plugin-transform-async-to-generator',
         ],
-        loose: true,
         modules: modules ? false : 'commonjs',
-        useBuiltIns: false,
+        useBuiltIns: 'entry',
         bugfixes: true,
         shippedProposals: true,
+        corejs: '3.21',
         // Only target node since this is for development
         // Revisit in Babel v8: https://babeljs.io/docs/en/options#no-targets
         targets: { node: 'current' },
@@ -103,8 +99,6 @@ export default function babelPresetOriflame(
         },
       },
     ]);
-  } else if (!modules && enableModuleExports) {
-    plugins.push('babel-plugin-add-module-exports');
   }
 
   plugins.push('@babel/plugin-transform-runtime');
