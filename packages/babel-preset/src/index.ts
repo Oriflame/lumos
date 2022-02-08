@@ -24,8 +24,6 @@ export default function babelPresetOriflame(
     env = {},
   }: BabelPresetOriflameOptions = {},
 ) {
-  // When using decorators, we must apply loose to explicit plugins
-  // https://babeljs.io/docs/en/babel-plugin-proposal-decorators#legacy
   const plugins: PluginItem[] = [
     ['@babel/plugin-proposal-decorators', { version: 'legacy', decoratorsBeforeExport: false }],
     '@babel/plugin-proposal-class-properties',
