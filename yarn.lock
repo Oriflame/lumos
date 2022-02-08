@@ -44,7 +44,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/cli@npm:^7.16.8":
+"@babel/cli@npm:^7.17.0":
   version: 7.17.0
   resolution: "@babel/cli@npm:7.17.0"
   dependencies:
@@ -110,7 +110,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/eslint-parser@npm:^7.16.5":
+"@babel/core@npm:^7.17.2":
+  version: 7.17.2
+  resolution: "@babel/core@npm:7.17.2"
+  dependencies:
+    "@ampproject/remapping": ^2.0.0
+    "@babel/code-frame": ^7.16.7
+    "@babel/generator": ^7.17.0
+    "@babel/helper-compilation-targets": ^7.16.7
+    "@babel/helper-module-transforms": ^7.16.7
+    "@babel/helpers": ^7.17.2
+    "@babel/parser": ^7.17.0
+    "@babel/template": ^7.16.7
+    "@babel/traverse": ^7.17.0
+    "@babel/types": ^7.17.0
+    convert-source-map: ^1.7.0
+    debug: ^4.1.0
+    gensync: ^1.0.0-beta.2
+    json5: ^2.1.2
+    semver: ^6.3.0
+  checksum: 68ab3459f41b41feb5cb263937f15e418e1c46998d482d1b6dfe34f78064765466cfd5b10205c22fb16b69dbd1d46e7a3c26c067884ca4eb514b3dac1e09a57f
+  languageName: node
+  linkType: hard
+
+"@babel/eslint-parser@npm:^7.17.0":
   version: 7.17.0
   resolution: "@babel/eslint-parser@npm:7.17.0"
   dependencies:
@@ -168,7 +191,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-create-class-features-plugin@npm:^7.16.10, @babel/helper-create-class-features-plugin@npm:^7.16.7, @babel/helper-create-class-features-plugin@npm:^7.17.0":
+"@babel/helper-create-class-features-plugin@npm:^7.16.10, @babel/helper-create-class-features-plugin@npm:^7.16.7, @babel/helper-create-class-features-plugin@npm:^7.17.0, @babel/helper-create-class-features-plugin@npm:^7.17.1":
   version: 7.17.1
   resolution: "@babel/helper-create-class-features-plugin@npm:7.17.1"
   dependencies:
@@ -400,6 +423,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helpers@npm:^7.17.2":
+  version: 7.17.2
+  resolution: "@babel/helpers@npm:7.17.2"
+  dependencies:
+    "@babel/template": ^7.16.7
+    "@babel/traverse": ^7.17.0
+    "@babel/types": ^7.17.0
+  checksum: 5fa06bbf59636314fb4098bb2e70cf488e0fb6989553438abab90356357b79976102ac129fb16fc8186893c79e0809de1d90e3304426d6fcdb1750da2b6dff9d
+  languageName: node
+  linkType: hard
+
 "@babel/highlight@npm:^7.16.7":
   version: 7.16.10
   resolution: "@babel/highlight@npm:7.16.10"
@@ -482,7 +516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-decorators@npm:^7.16.7, @babel/plugin-proposal-decorators@npm:^7.17.0":
+"@babel/plugin-proposal-decorators@npm:^7.17.0":
   version: 7.17.0
   resolution: "@babel/plugin-proposal-decorators@npm:7.17.0"
   dependencies:
@@ -494,6 +528,21 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 363d0fc3e9d75753797c6026cc18132c97cef104c8bfb0f0ecf13411bcc484b49e36254afaa9ceb074f8ed16346270285bfe83c391267076d19a90b4befb8083
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-proposal-decorators@npm:^7.17.2":
+  version: 7.17.2
+  resolution: "@babel/plugin-proposal-decorators@npm:7.17.2"
+  dependencies:
+    "@babel/helper-create-class-features-plugin": ^7.17.1
+    "@babel/helper-plugin-utils": ^7.16.7
+    "@babel/helper-replace-supers": ^7.16.7
+    "@babel/plugin-syntax-decorators": ^7.17.0
+    charcodes: ^0.2.0
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: da5424d51e49912a1784a7074e8fb7b2d55b4a41c32bf05a829a81987274068e170f469de81d95d177def3480f7de3402a1808d599ad91f98fdaa44023a416da
   languageName: node
   linkType: hard
 
@@ -1250,7 +1299,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-runtime@npm:^7.16.10, @babel/plugin-transform-runtime@npm:^7.17.0":
+"@babel/plugin-transform-runtime@npm:^7.17.0":
   version: 7.17.0
   resolution: "@babel/plugin-transform-runtime@npm:7.17.0"
   dependencies:
@@ -3625,11 +3674,11 @@ __metadata:
   dependencies:
     "@babel/core": ^7.16.12
     "@babel/plugin-proposal-class-properties": ^7.16.7
-    "@babel/plugin-proposal-decorators": ^7.16.7
+    "@babel/plugin-proposal-decorators": ^7.17.2
     "@babel/plugin-proposal-export-default-from": ^7.16.7
     "@babel/plugin-proposal-export-namespace-from": ^7.16.7
     "@babel/plugin-proposal-private-methods": ^7.16.11
-    "@babel/plugin-transform-runtime": ^7.16.10
+    "@babel/plugin-transform-runtime": ^7.17.0
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
     "@babel/preset-typescript": ^7.16.7
@@ -3722,7 +3771,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/config-jest@workspace:packages/config-jest"
   dependencies:
-    "@babel/core": ^7.16.12
+    "@babel/core": ^7.17.2
     "@beemo/core": ^2.1.3
     "@beemo/driver-babel": ^2.0.5
     "@beemo/driver-jest": ^2.0.4
@@ -3789,7 +3838,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/config-webpack@workspace:packages/config-webpack"
   dependencies:
-    "@babel/core": ^7.16.12
+    "@babel/core": ^7.17.2
     "@beemo/core": ^2.1.3
     "@beemo/driver-webpack": ^2.0.5
     "@boost/args": ^3.0.1
@@ -3888,8 +3937,8 @@ __metadata:
   dependencies:
     "@actions/core": ^1.6.0
     "@actions/github": ^5.0.0
-    "@babel/cli": ^7.16.8
-    "@babel/core": ^7.16.12
+    "@babel/cli": ^7.17.0
+    "@babel/core": ^7.17.2
     "@beemo/cli": ^2.0.5
     "@beemo/core": ^2.1.3
     "@beemo/driver-babel": ^2.0.5
@@ -8036,8 +8085,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-oriflame@workspace:packages/eslint-config"
   dependencies:
-    "@babel/core": ^7.16.12
-    "@babel/eslint-parser": ^7.16.5
+    "@babel/core": ^7.17.2
+    "@babel/eslint-parser": ^7.17.0
     "@next/eslint-plugin-next": ^12.0.9
     "@oriflame/lumos-common": ^5.3.1
     "@types/confusing-browser-globals": ^1.0.0
