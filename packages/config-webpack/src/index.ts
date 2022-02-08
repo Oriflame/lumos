@@ -107,6 +107,8 @@ export function getConfig({
 
     plugins,
 
+    stats: 'errors-warnings',
+
     module: {
       rules: [
         {
@@ -162,12 +164,9 @@ export function getConfig({
         },
         {
           test: GQL_EXT_PATTERN,
+          exclude: /node_modules/,
           use: {
-            loader: 'webpack-graphql-loader',
-            options: {
-              output: 'document',
-              removeUnusedFragments: true,
-            },
+            loader: 'graphql-tag/loader',
           },
         },
       ],
@@ -251,8 +250,6 @@ export function getConfig({
     },
 
     performance: false,
-
-    stats: !PROD,
   };
 
   let config: WebpackConfig | undefined;
