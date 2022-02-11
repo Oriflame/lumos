@@ -12098,7 +12098,7 @@ __metadata:
     husky: ^7.0.4
     jest: ^27.5.1
     lerna: ^4.0.0
-    packemon: ^1.11.1
+    packemon: ^1.12.0
     prettier: ^2.5.1
     rimraf: ^3.0.2
     typescript: ^4.5.5
@@ -13442,7 +13442,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"packemon@npm:^1.11.1":
+"packemon@npm:^1.12.0":
   version: 1.12.0
   resolution: "packemon@npm:1.12.0"
   dependencies:
