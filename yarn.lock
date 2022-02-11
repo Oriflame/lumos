@@ -3782,7 +3782,7 @@ __metadata:
     dom-storage: ^2.1.0
     graphql: ^16.3.0
     graphql-tag: ^2.12.6
-    jest: ^27.4.7
+    jest: ^27.5.1
     jest-preset-oriflame: ^5.3.2
   peerDependencies:
     "@beemo/core": ^2.1.2
@@ -3965,7 +3965,7 @@ __metadata:
     edit-json-file: ^1.7.0
     eslint: ^8.8.0
     execa: ^5.1.1
-    jest: ^27.5.0
+    jest: ^27.5.1
     prettier: ^2.5.1
     typescript: ^4.5.5
     webpack: ^5.68.0
@@ -11094,7 +11094,7 @@ __metadata:
   dependencies:
     "@oriflame/lumos-common": ^5.3.2
     "@types/jest": ^27.4.0
-    jest: ^27.4.7
+    jest: ^27.5.1
     jest-junit: ^13.0.0
   peerDependencies:
     jest: ">=27.0.0"
@@ -11290,7 +11290,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^27.4.7, jest@npm:^27.5.0":
+"jest@npm:^27.5.1":
   version: 27.5.1
   resolution: "jest@npm:27.5.1"
   dependencies:
@@ -12096,7 +12096,7 @@ __metadata:
     graphql: ^16.3.0
     graphql-tag: ^2.12.6
     husky: ^7.0.4
-    jest: ^27.4.7
+    jest: ^27.5.1
     lerna: ^4.0.0
     packemon: ^1.11.1
     prettier: ^2.5.1
