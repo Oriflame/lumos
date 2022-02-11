@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.3 - 2022-02-11
+
+#### 📦 Dependencies
+
+- Update jest. ([4f72bee](https://github.com/Oriflame/lumos/commit/4f72beecac354e1d3158480f279d89bacae1f666))
+- Update oriflame dependencies. ([1819a42](https://github.com/Oriflame/lumos/commit/1819a42858c55e8c206a3af58dd80f1e673f0c82))
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.3.2 - 2022-02-09
 
 #### 📦 Dependencies

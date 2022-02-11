@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.3 - 2022-02-11
+
+#### 🛠 Internals
+
+- Update types monorepo. ([6d847ad](https://github.com/Oriflame/lumos/commit/6d847adc040f750cd4a2bef83c34ed405a48c2de))
+
+**Note:** Version bump only for package @oriflame/config-prettier
+
+
+
+
+
 ### 5.3.2 - 2022-02-09
 
 **Note:** Version bump only for package @oriflame/config-prettier

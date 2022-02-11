@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.3 - 2022-02-11
+
+#### 📦 Dependencies
+
+- Update babel core. ([e1c524e](https://github.com/Oriflame/lumos/commit/e1c524efbf47c69fa06736c25a1d5e74caec0436))
+- Update eslint dependencies. ([ba47574](https://github.com/Oriflame/lumos/commit/ba47574941a2a0d3e734b884619c9c1f9e52218f))
+- Update jest. ([4f72bee](https://github.com/Oriflame/lumos/commit/4f72beecac354e1d3158480f279d89bacae1f666))
+- Update oriflame dependencies. ([1819a42](https://github.com/Oriflame/lumos/commit/1819a42858c55e8c206a3af58dd80f1e673f0c82))
+- Update webpack dependencies. ([3559d15](https://github.com/Oriflame/lumos/commit/3559d156503a9edf1d42562963aee4cd08a97d30))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([9b356ae](https://github.com/Oriflame/lumos/commit/9b356ae6710492dae9d226e44a3b6e1a4063cf5a))
+- Update packemon. ([364b355](https://github.com/Oriflame/lumos/commit/364b35516f399e939e19bdac4c147f580b535f3c))
+- Update ts-node. ([ea4dc04](https://github.com/Oriflame/lumos/commit/ea4dc04bb38afc1241593bd0a97dfedd4230c27b))
+- Update types monorepo. ([6d847ad](https://github.com/Oriflame/lumos/commit/6d847adc040f750cd4a2bef83c34ed405a48c2de))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.3.2 - 2022-02-09
 
 #### 📦 Dependencies

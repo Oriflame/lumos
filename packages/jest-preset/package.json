@@ -1,6 +1,6 @@
 {
   "name": "jest-preset-oriflame",
-  "version": "5.3.2",
+  "version": "5.3.3",
   "description": "Jest preset for lumos configured projects.",
   "keywords": [
     "jest-preset",
@@ -33,7 +33,7 @@
     "jest": ">=27.0.0"
   },
   "dependencies": {
-    "@oriflame/lumos-common": "^5.3.2",
+    "@oriflame/lumos-common": "^5.3.3",
     "@types/jest": "^27.4.0",
     "jest-junit": "^13.0.0"
   },
