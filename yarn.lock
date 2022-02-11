@@ -3752,7 +3752,6 @@ __metadata:
     "@types/node": ^16.11.24
     eslint: ^8.8.0
     eslint-config-oriflame: ^5.3.2
-    ts-node: ^10.4.0
   peerDependencies:
     "@beemo/core": ^2.1.2
     "@beemo/driver-eslint": ^2.0.3
@@ -8116,7 +8115,7 @@ __metadata:
     eslint-plugin-testing-library: ^5.0.5
     eslint-plugin-unicorn: ^40.1.0
     prettier: ^2.5.1
-    ts-node: ^10.4.0
+    ts-node: ^10.5.0
   peerDependencies:
     eslint: ^8.4.0
     prettier: ^2.5.1
@@ -16930,7 +16929,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.4.0":
+"ts-node@npm:^10.4.0, ts-node@npm:^10.5.0":
   version: 10.5.0
   resolution: "ts-node@npm:10.5.0"
   dependencies:
