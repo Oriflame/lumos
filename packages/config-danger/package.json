@@ -24,7 +24,7 @@
     "npm": ">=6.13.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.24"
+    "@types/node": "^16.11.25"
   },
   "dependencies": {
     "@oriflame/conventional-changelog": "^1.2.20",
