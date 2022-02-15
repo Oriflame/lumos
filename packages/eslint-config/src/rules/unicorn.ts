@@ -8,7 +8,7 @@ const config: eslint.Linter.Config['rules'] = {
   // eslint-plugin-unicorn rules
   'unicorn/better-regex': 'warn', // improve regexes by making them shorter, consistent, and safer
   'unicorn/catch-error-name': 'warn', // enforce a specific parameter name in catch clauses
-  'unicorn/consistent-destructuring': 'error', // use destructured variables over properties.
+  'unicorn/consistent-destructuring': 'error', // use destructured variables over properties
   'unicorn/consistent-function-scoping': 'error', // move function definitions to the highest possible scope
   'unicorn/custom-error-definition': 'error', // enforce correct Error subclassing
   'unicorn/empty-brace-spaces': 'off', // enforce no spaces between braces
@@ -48,12 +48,14 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/no-object-as-default-parameter': 'error', // disallow the use of objects as default parameters
   'unicorn/no-process-exit': 'off', // disallow process.exit()
   'unicorn/no-static-only-class': 'error', // forbid classes that only have static members
+  'unicorn/no-thenable': 'error', // disallow then property
   'unicorn/no-this-assignment': 'off', // disallow assigning this to a variable
   'unicorn/no-unreadable-array-destructuring': 'warn', // disallow unreadable array destructuring
   'unicorn/no-unsafe-regex': 'off', // disallow unsafe regular expressions
   'unicorn/no-unused-properties': 'off', // disallow unused object properties
   'unicorn/no-useless-fallback-in-spread': 'error', // forbid useless fallback when spreading in object literals
   'unicorn/no-useless-length-check': 'off', // disallow useless array length check
+  'unicorn/no-useless-promise-resolve-reject': 'error', // disallow returning/yielding Promise.resolve/reject() in async functions or promise callbacks
   'unicorn/no-useless-spread': 'error', // disallow unnecessary spread
   'unicorn/no-useless-undefined': 'off', // disallow useless undefined
   'unicorn/no-zero-fractions': 'error', // disallow number literals with zero fractions or dangling dots
@@ -75,7 +77,8 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/prefer-dom-node-text-content': 'warn', // prefer .textContent over .innerText
   'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }], // prefer export…from when re-exporting
   'unicorn/prefer-includes': 'off', // prefer .includes() over .indexOf() when checking for existence or non-existence
-  'unicorn/prefer-keyboard-event-key': 'warn', // prefer KeyboardEvent#key over KeyboardEvent#keyCode.
+  'unicorn/prefer-json-parse-buffer': 'off', // prefer reading a JSON file as a buffer
+  'unicorn/prefer-keyboard-event-key': 'warn', // prefer KeyboardEvent#key over KeyboardEvent#keyCode
   'unicorn/prefer-math-trunc': 'warn', // enforce the use of Math.trunc instead of bitwise operators
   'unicorn/prefer-modern-dom-apis': 'warn', // prefer .before() over .insertBefore(), .replaceWith() over .replaceChild(), prefer one of .before(), .after(), .append() or .prepend() over insertAdjacentText() and insertAdjacentElement()
   // FIXME [@rajzik]: This is good rule but adoption isn't great so far
@@ -85,7 +88,6 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/prefer-negative-index': 'warn', // prefer negative index over .length - index for {String,Array,TypedArray}#slice() and Array#splice()
   'unicorn/prefer-number-properties': 'warn', // prefer Number static properties over global ones
   'unicorn/prefer-object-from-entries': 'warn', // prefer using Object.fromEntries(…) to transform a list of key-value pairs into an object
-  'unicorn/prefer-object-has-own': 'warn', // prefer Object.hasOwn(…) over Object.prototype.hasOwnProperty.call(…)
   'unicorn/prefer-optional-catch-binding': 'off', // prefer omitting the catch binding parameter
   'unicorn/prefer-prototype-methods': 'warn', // prefer borrowing methods from the prototype instead of the instance
   'unicorn/prefer-query-selector': 'off', // prefer .querySelector() over .getElementById(), .querySelectorAll() over .getElementsByClassName() and .getElementsByTagName()
@@ -103,12 +105,14 @@ const config: eslint.Linter.Config['rules'] = {
   // FIXME [@jakubmazanec]: enable when we support top-level await
   'unicorn/prefer-top-level-await': 'off', // prefer top-level await over top-level promises and async function calls
   'unicorn/prefer-type-error': 'warn', // enforce throwing TypeError in type checking conditions
-  'unicorn/prevent-abbreviations': 'off', // Prevent abbreviations.
+  'unicorn/prevent-abbreviations': 'off', // Prevent abbreviations
+  'unicorn/relative-url-style': 'off', // enforce consistent relative URL style
   'unicorn/require-array-join-separator': 'error', // enforce using the separator argument with Array#join()
   'unicorn/require-number-to-fixed-digits-argument': 'error', // enforce using the digits argument with Number#toFixed()
   'unicorn/require-post-message-target-origin': 'error', // enforce using the targetOrigin argument with window.postMessage()
   'unicorn/string-content': 'off', // enforce better string content
   'unicorn/template-indent': 'off', // fix whitespace-insensitive template indentation
+  'unicorn/text-encoding-identifier-case': 'warn', // enforce consistent case for text encoding identifiers
   'unicorn/throw-new-error': 'error', // require new when throwing an error
 };
 

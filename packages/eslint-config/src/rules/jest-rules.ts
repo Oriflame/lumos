@@ -10,6 +10,7 @@ const config: eslint.Linter.Config['rules'] = {
   // override @typescript-eslint/eslint-plugin rules
   '@typescript-eslint/ban-ts-comment': 'off', // bans // @ts-<directive> comments from being used
   '@typescript-eslint/no-floating-promises': 'off', // requires Promise-like values to be handled appropriately
+  '@typescript-eslint/require-await': 'off', // disallow async functions which have no await expression
   '@typescript-eslint/unbound-method': 'off', // enforces unbound methods are called with their expected scope
 
   // eslint-plugin-jest
@@ -19,6 +20,7 @@ const config: eslint.Linter.Config['rules'] = {
   'jest/no-alias-methods': 'warn', // disallow alias methods
   'jest/no-commented-out-tests': 'warn', // disallow commented out tests
   'jest/no-conditional-expect': 'error', // prevent calling expect conditionally
+  'jest/no-conditional-in-test': 'error', // disallow conditional logic in tests
   'jest/no-deprecated-functions': 'error', // disallow use of deprecated functions
   'jest/no-disabled-tests': 'warn', // disallow disabled tests
   'jest/no-done-callback': 'warn', // avoid using a callback in asynchronous tests and hooks
@@ -27,7 +29,6 @@ const config: eslint.Linter.Config['rules'] = {
   'jest/no-focused-tests': 'error', // disallow focused tests
   'jest/no-hooks': 'off', // disallow setup and teardown hooks
   'jest/no-identical-title': 'error', // disallow identical titles
-  'jest/no-if': 'error', // disallow conditional logic
   'jest/no-interpolation-in-snapshots': 'error', // disallow string interpolation inside snapshots
   'jest/no-jasmine-globals': 'error', // disallow Jasmine globals
   'jest/no-jest-import': 'error', // disallow importing Jest
@@ -38,10 +39,13 @@ const config: eslint.Linter.Config['rules'] = {
   'jest/no-test-prefixes': 'error', // use .only and .skip over f and x
   'jest/no-test-return-statement': 'error', // disallow explicitly returning from tests
   'jest/prefer-called-with': 'warn', // suggest using toBeCalledWith() or toHaveBeenCalledWith()
+  'jest/prefer-comparison-matcher': 'warn', // suggest using the built-in comparison matchers
+  'jest/prefer-equality-matcher': 'warn', // suggest using the built-in equality matchers
   'jest/prefer-expect-assertions': 'off', // suggest using expect.assertions() OR expect.hasAssertions()
   'jest/prefer-expect-resolves': 'error', // prefer await expect(...).resolves over expect(await ...) syntax
   'jest/prefer-hooks-on-top': 'warn', // suggest having hooks before any test cases
   'jest/prefer-lowercase-title': 'off', // enforce lowercase title
+  'jest/prefer-snapshot-hint': 'off', // prefer including a hint with external snapshots
   'jest/prefer-spy-on': 'error', // suggest using jest.spyOn()
   'jest/prefer-strict-equal': 'off', // suggest using toStrictEqual()
   'jest/prefer-to-be': 'warn', // suggest using toBe() for primitive literals
