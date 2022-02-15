@@ -8,7 +8,7 @@ export interface LernaReleaseOptions {
   prerelease?: boolean;
 }
 
-class LernaRelease extends Script<LernaReleaseOptions> {
+class LernaRelease extends Script {
   override readonly name = 'lumos-script-lerna-release';
 
   npmClient = 'npx';
