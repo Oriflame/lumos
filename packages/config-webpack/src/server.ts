@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-arguments */
 import { parse } from '@boost/args';
 import execa from 'execa';
 import path from 'path';
@@ -10,11 +11,10 @@ const argv = process.argv.slice(2);
 // Parse argv into a consumable object
 const { options, rest } = parse<{
   help: boolean;
-  root?: string;
-  port?: number;
-  entryPoint?: string;
-  env?: string;
-  analyze?: boolean;
+  root: string;
+  port: number;
+  entryPoint: string;
+  env: string;
 }>(argv, {
   options: {
     help: {
@@ -47,7 +47,7 @@ const { options, rest } = parse<{
 
 const NODE_ENV = options.env || process.env.NODE_ENV || 'development';
 let LUMOS_WEBPACK_ROOT: string | undefined;
-const LUMOS_WEBPACK_ENTRY_POINT = options.entryPoint?.toString();
+const LUMOS_WEBPACK_ENTRY_POINT = options.entryPoint.toString();
 
 if (options.root) {
   LUMOS_WEBPACK_ROOT = path.join(process.cwd(), options.root);
