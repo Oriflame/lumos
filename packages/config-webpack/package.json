@@ -37,7 +37,7 @@
     "@beemo/driver-webpack": "^2.0.5",
     "@types/webpack-bundle-analyzer": "^4.4.1",
     "react": "*",
-    "webpack": "^5.68.0",
+    "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2"
   },
   "peerDependencies": {
@@ -81,7 +81,7 @@
     "postcss-modules": "^4.3.0",
     "postcss-modules-values": "^4.0.0",
     "postcss-normalize": "^10.0.1",
-    "postcss-preset-env": "^7.3.1",
+    "postcss-preset-env": "^7.4.1",
     "postcss-reporter": "^7.0.5",
     "postcss-url": "^10.1.3",
     "react-refresh": "^0.11.0",
