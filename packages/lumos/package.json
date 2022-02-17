@@ -63,7 +63,7 @@
     "check-node-version": "^4.2.1",
     "cross-env": "^7.0.3",
     "edit-json-file": "^1.7.0",
-    "eslint": "^8.8.0",
+    "eslint": "^8.9.0",
     "execa": "^5.1.1",
     "jest": "^27.5.1",
     "prettier": "^2.5.1",
