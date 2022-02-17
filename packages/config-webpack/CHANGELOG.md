@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.9 - 2022-02-17
+
+#### 📦 Dependencies
+
+- Update babel core. ([14c0ea0](https://github.com/Oriflame/lumos/commit/14c0ea07af0d51fa623f628c58b3024e0b5e844c))
+- Update webpack dependencies. ([8033f44](https://github.com/Oriflame/lumos/commit/8033f44c84442b958cbc3860cd4894dc5aaa4754))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.3.8 - 2022-02-17
 
 **Note:** Version bump only for package @oriflame/config-webpack

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.9 - 2022-02-17
+
+#### 🐞 Fixes
+
+- Change ecmaVersion to latest. ([a83c03e](https://github.com/Oriflame/lumos/commit/a83c03e5f4527131c162ff9f5ab7b68ed4051735))
+
+#### 📦 Dependencies
+
+- Update babel core. ([14c0ea0](https://github.com/Oriflame/lumos/commit/14c0ea07af0d51fa623f628c58b3024e0b5e844c))
+- Update eslint dependencies. ([3476fbc](https://github.com/Oriflame/lumos/commit/3476fbc920edf07f78d8dc0e2568f49935c27b97))
+- Update webpack dependencies. ([8033f44](https://github.com/Oriflame/lumos/commit/8033f44c84442b958cbc3860cd4894dc5aaa4754))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([dc66a87](https://github.com/Oriflame/lumos/commit/dc66a87cdfcd80cd9b53e0f5bf3a177ff3733951))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.3.8 - 2022-02-17
 
 #### 📦 Dependencies
