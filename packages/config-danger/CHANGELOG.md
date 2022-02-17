@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.8 - 2022-02-17
+
+**Note:** Version bump only for package @oriflame/config-danger
+
+
+
+
+
 ### 5.3.7 - 2022-02-16
 
 **Note:** Version bump only for package @oriflame/config-danger
