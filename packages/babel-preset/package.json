@@ -70,7 +70,7 @@
     "react-refresh": "^0.11.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.2"
+    "@babel/core": "^7.17.5"
   },
   "packemon": {
     "format": "lib",
