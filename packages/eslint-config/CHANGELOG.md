@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.10 - 2022-02-20
+
+#### 📦 Dependencies
+
+- update dependency eslint-config-prettier. (#988) ([f174b6d](https://github.com/Oriflame/lumos/commit/f174b6d3317d526249ccc55b809e40553c9afa6a)), work items [#988](https://github.com/Oriflame/lumos/issues/988)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.3.9 - 2022-02-17
 
 #### 🐞 Fixes
