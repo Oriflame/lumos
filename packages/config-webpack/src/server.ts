@@ -5,6 +5,23 @@ import path from 'path';
 
 import { PORT } from './helpers';
 
+function findWebpackConfig(rootDir: string, level = 0): string {
+  if (level > 4) {
+    console.error('Depth of webpack config exceeded 4 exiting');
+    throw new Error("Webpack config wasn't found");
+  }
+
+  try {
+    require.resolve(path.join(rootDir, './webpack.config.js'));
+
+    return rootDir;
+  } catch (error) {
+    // We don't need to do anything with error
+  }
+
+  return findWebpackConfig(path.join(rootDir, '..'), level + 1);
+}
+
 // Remove node binary and script
 const argv = process.argv.slice(2);
 
@@ -51,6 +68,11 @@ const LUMOS_WEBPACK_ENTRY_POINT = options.entryPoint.toString();
 
 if (options.root) {
   LUMOS_WEBPACK_ROOT = path.join(process.cwd(), options.root);
+} else {
+  const rootPath = findWebpackConfig(__dirname);
+  if (rootPath) {
+    process.chdir(rootPath);
+  }
 }
 
 let port: number | string = process.env.PORT || PORT;
