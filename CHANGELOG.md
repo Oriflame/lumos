@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.11 - 2022-02-22
+
+#### 📦 Dependencies
+
+- update dependency @babel/cli. (#990) ([005ffa7](https://github.com/Oriflame/lumos/commit/005ffa7b91930f7e3527dedefbe8ea9d52db704e)), work items [#990](https://github.com/Oriflame/lumos/issues/990)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([132ea30](https://github.com/Oriflame/lumos/commit/132ea304ff47db055a093bb713d615d616cb44e3))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.3.10 - 2022-02-20
 
 #### 📦 Dependencies
