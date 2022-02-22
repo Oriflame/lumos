@@ -488,6 +488,9 @@ lumos-webpack-server --port=3001
 lumos-webpack-server --root=./packages/root
 ```
 
+> lumos webpack server can be run from workspace package `yarn workspace @app/my-app run start` and start script `lumos-webpack-server`.
+> Lumos will try to find `webpack.config.js` in parent directories up to 5 levels.
+
 #### Overriding config
 
 `.configs/lumos/webpack.ts`
