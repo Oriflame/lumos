@@ -5,8 +5,16 @@ import path from 'path';
 
 import { PORT } from './helpers';
 
+/**
+ * Try to lookup webpack config in parent folders. Only looks for 'webpack.config.js'
+ *
+ * @param { string } rootDir - start directory
+ * @param { number = 0 } level - current level of the of the lookup. Maximum is 6
+ * @throws { Error } When level exceeds 6
+ * @returns { string } Absolute path with webpack config
+ */
 function findWebpackConfig(rootDir: string, level = 0): string {
-  if (level > 4) {
+  if (level > 5) {
     console.error('Depth of webpack config exceeded 4 exiting');
     throw new Error("Webpack config wasn't found");
   }
@@ -65,12 +73,15 @@ const { options, rest } = parse<{
 const NODE_ENV = options.env || process.env.NODE_ENV || 'development';
 let LUMOS_WEBPACK_ROOT: string | undefined;
 const LUMOS_WEBPACK_ENTRY_POINT = options.entryPoint.toString();
+const originalCwd = process.cwd();
 
 if (options.root) {
-  LUMOS_WEBPACK_ROOT = path.join(process.cwd(), options.root);
+  LUMOS_WEBPACK_ROOT = path.join(originalCwd, options.root);
 } else {
-  const rootPath = findWebpackConfig(__dirname);
+  const rootPath = findWebpackConfig(originalCwd);
+
   if (rootPath) {
+    LUMOS_WEBPACK_ROOT = rootPath;
     process.chdir(rootPath);
   }
 }
