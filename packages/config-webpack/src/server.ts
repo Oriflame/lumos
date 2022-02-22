@@ -6,7 +6,7 @@ import path from 'path';
 import { PORT } from './helpers';
 
 /**
- * Try to lookup webpack config in parent folders. Only looks for 'webpack.config.js'
+ * Try to naively lookup webpack config in parent folder. Only looks for 'webpack.config.js'.
  *
  * @param { string } rootDir - start directory
  * @param { number = 0 } level - current level of the of the lookup. Maximum is 6
@@ -15,7 +15,7 @@ import { PORT } from './helpers';
  */
 function findWebpackConfig(rootDir: string, level = 0): string {
   if (level > 5) {
-    console.error('Depth of webpack config exceeded 4 exiting');
+    console.error('Depth of webpack config exceeded 5 exiting');
     throw new Error("Webpack config wasn't found");
   }
 
