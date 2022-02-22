@@ -1,6 +1,9 @@
 # Lumos
 
-Centralized CLI for JavaScript and TypeScript dev tools.
+[![npm version](https://badge.fury.io/js/@oriflame%2Flumos.svg)](https://badge.fury.io/js/@oriflame%2Flumos)
+
+Manage dev and build tools, their configuration, and commands in a single centralized repository. Lumos aims to solve the multi-project maintenance fatigue by removing the following burdens across all projects: config and dotfile management, multiple config patterns, up-to-date development dependencies, continuous copy and paste, and more.
+
 [Built on and powered by Beemo](https://github.com/beemojs/beemo).
 
 ## Installation
