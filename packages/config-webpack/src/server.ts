@@ -81,7 +81,7 @@ if (options.root) {
   const rootPath = findWebpackConfig(originalCwd);
 
   if (rootPath) {
-    LUMOS_WEBPACK_ROOT = rootPath;
+    LUMOS_WEBPACK_ROOT = originalCwd;
     process.chdir(rootPath);
   }
 }
