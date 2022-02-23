@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.3.13 - 2022-02-23
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([ab767f1](https://github.com/Oriflame/lumos/commit/ab767f1923553eb3232eda155ad0f8c1db58c8c1))
+- update all dev dependencies. (#984) ([b8496e2](https://github.com/Oriflame/lumos/commit/b8496e2b92526d783de01bda74fa526e72269e7f)), work items [#984](https://github.com/Oriflame/lumos/issues/984)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.3.12 - 2022-02-23
 
 #### 📦 Dependencies
