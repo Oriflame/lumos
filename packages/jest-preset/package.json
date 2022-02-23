@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@oriflame/lumos-common": "^5.3.11",
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.4.1",
     "jest-junit": "^13.0.0"
   },
   "devDependencies": {
