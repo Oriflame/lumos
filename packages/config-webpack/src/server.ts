@@ -5,6 +5,31 @@ import path from 'path';
 
 import { PORT } from './helpers';
 
+/**
+ * Try to naively lookup webpack config in parent folder. Only looks for 'webpack.config.js'.
+ *
+ * @param { string } rootDir - start directory
+ * @param { number = 0 } level - current level of the of the lookup. Maximum is 6
+ * @throws { Error } When level exceeds 6
+ * @returns { string } Absolute path with webpack config
+ */
+function findWebpackConfig(rootDir: string, level = 0): string {
+  if (level > 5) {
+    console.error('Depth of webpack config exceeded 5 exiting');
+    throw new Error("Webpack config wasn't found");
+  }
+
+  try {
+    require.resolve(path.join(rootDir, './webpack.config.js'));
+
+    return rootDir;
+  } catch (error) {
+    // We don't need to do anything with error
+  }
+
+  return findWebpackConfig(path.join(rootDir, '..'), level + 1);
+}
+
 // Remove node binary and script
 const argv = process.argv.slice(2);
 
@@ -48,9 +73,17 @@ const { options, rest } = parse<{
 const NODE_ENV = options.env || process.env.NODE_ENV || 'development';
 let LUMOS_WEBPACK_ROOT: string | undefined;
 const LUMOS_WEBPACK_ENTRY_POINT = options.entryPoint.toString();
+const originalCwd = process.cwd();
 
 if (options.root) {
-  LUMOS_WEBPACK_ROOT = path.join(process.cwd(), options.root);
+  LUMOS_WEBPACK_ROOT = path.join(originalCwd, options.root);
+} else {
+  const rootPath = findWebpackConfig(originalCwd);
+
+  if (rootPath) {
+    LUMOS_WEBPACK_ROOT = originalCwd;
+    process.chdir(rootPath);
+  }
 }
 
 let port: number | string = process.env.PORT || PORT;
