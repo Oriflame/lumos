@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.4.0 - 2022-02-24
+
+#### 🚀 Updates
+
+- **[webpack-server]** Add possibility to run lumos-webpack-server from workspace app. (#991) ([2d091f7](https://github.com/Oriflame/lumos/commit/2d091f78f37aef02f0f6533ed1d173e6e8b5b6a1)), work items [#991](https://github.com/Oriflame/lumos/issues/991)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.3.13 - 2022-02-23
 
 **Note:** Version bump only for package @oriflame/config-webpack

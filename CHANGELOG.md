@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.4.0 - 2022-02-24
+
+#### 🚀 Updates
+
+- **[webpack-server]** Add possibility to run lumos-webpack-server from workspace app. (#991) ([2d091f7](https://github.com/Oriflame/lumos/commit/2d091f78f37aef02f0f6533ed1d173e6e8b5b6a1)), work items [#991](https://github.com/Oriflame/lumos/issues/991)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([fa5b941](https://github.com/Oriflame/lumos/commit/fa5b94169dc3e1bfc3f87aa8bcd5006627390195))
+- update dependency @types/node. (#994) ([1d7a84f](https://github.com/Oriflame/lumos/commit/1d7a84f23e7641c30552805fff5d2280338b548f)), work items [#994](https://github.com/Oriflame/lumos/issues/994)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.3.13 - 2022-02-23
 
 #### 🛠 Internals
