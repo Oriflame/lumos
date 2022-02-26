@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.2 - 2022-02-26
+
+#### 🛠 Internals
+
+- update all dev dependencies. (#997) ([d998651](https://github.com/Oriflame/lumos/commit/d998651147f039b731dcb8c3cb5be888ea9d9ef1)), work items [#997](https://github.com/Oriflame/lumos/issues/997)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.4.1 - 2022-02-25
 
 #### 📦 Dependencies
