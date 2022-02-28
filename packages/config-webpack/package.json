@@ -73,7 +73,7 @@
     "file-loader": "^6.2.0",
     "graphql-tag": "^2.12.6",
     "html-webpack-plugin": "^5.5.0",
-    "postcss": "^8.4.6",
+    "postcss": "^8.4.7",
     "postcss-browser-reporter": "^0.6.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.2",
