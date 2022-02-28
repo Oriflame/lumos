@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.4 - 2022-02-28
+
+#### 🐞 Fixes
+
+- **[webpack-config]** Change path of the configs and fix js extension. (#999) ([5fa927d](https://github.com/Oriflame/lumos/commit/5fa927dd0456cef711456f28debfaa6a112c7cff)), work items [#999](https://github.com/Oriflame/lumos/issues/999)
+
+#### 📦 Dependencies
+
+- Update postcss. ([eb8dc76](https://github.com/Oriflame/lumos/commit/eb8dc765272b9e89365c5bb75d6e8f9ee3394827))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.4.3 - 2022-02-27
 
 **Note:** Version bump only for package @oriflame/config-webpack

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.4 - 2022-02-28
+
+#### 🐞 Fixes
+
+- **[webpack-config]** Change path of the configs and fix js extension. (#999) ([5fa927d](https://github.com/Oriflame/lumos/commit/5fa927dd0456cef711456f28debfaa6a112c7cff)), work items [#999](https://github.com/Oriflame/lumos/issues/999)
+
+#### 📦 Dependencies
+
+- Update conventional changelog oriflame. ([36a9863](https://github.com/Oriflame/lumos/commit/36a9863c75202cfba5006372a0465967ba0cc61b))
+- Update eslint dependencies. ([3d0f72f](https://github.com/Oriflame/lumos/commit/3d0f72f1af73e85539189004bde7cfa41b5b0754))
+- Update postcss. ([eb8dc76](https://github.com/Oriflame/lumos/commit/eb8dc765272b9e89365c5bb75d6e8f9ee3394827))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([f0595c4](https://github.com/Oriflame/lumos/commit/f0595c4f8252d27120971c1fe75c095bfc83e2e5))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.4.3 - 2022-02-27
 
 #### 🛠 Internals
