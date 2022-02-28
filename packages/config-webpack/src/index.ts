@@ -24,8 +24,8 @@ import {
 import { getParallelValue, getPlugins, getUniqueName, PORT, PROD, WEBPACK_ROOT } from './helpers';
 import type { WebpackOptions } from './types';
 
-const customConfigPathTs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');
-const customConfigPathJs = path.join(process.cwd(), '.configs', 'lumos', 'webpack.ts');
+const customConfigPathTs = path.join(process.cwd(), '.config', 'lumos', 'webpack.ts');
+const customConfigPathJs = path.join(process.cwd(), '.config', 'lumos', 'webpack.js');
 
 export function getConfig({
   analyzeBundle = false,
