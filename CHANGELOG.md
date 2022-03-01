@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.6 - 2022-03-01
+
+#### 📦 Dependencies
+
+- update dependency @beemo/driver-babel. (#1003) ([02adb56](https://github.com/Oriflame/lumos/commit/02adb560bee79a4d93abb682dc27de7c295fbb26)), work items [#1003](https://github.com/Oriflame/lumos/issues/1003)
+- update dependency @beemo/driver-prettier. (#1006) ([0f27e2a](https://github.com/Oriflame/lumos/commit/0f27e2a1fbab2b536bae4fd53c20a33d96464bce)), work items [#1006](https://github.com/Oriflame/lumos/issues/1006)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([c0d7374](https://github.com/Oriflame/lumos/commit/c0d737449fb72e57b0dadbb20bdd25f60efff3a1))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.4.5 - 2022-03-01
 
 #### 📦 Dependencies
