@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.7 - 2022-03-01
+
+#### 📦 Dependencies
+
+- update dependency @beemo/driver-jest. (#1005) ([673867a](https://github.com/Oriflame/lumos/commit/673867adfb9dcf6d6ea85783b791f478a03ccad3)), work items [#1005](https://github.com/Oriflame/lumos/issues/1005)
+- update dependency @beemo/driver-webpack. (#1008) ([b5043d2](https://github.com/Oriflame/lumos/commit/b5043d2fbc48cd2a04fcd9fa4e5e73bdbc22e2ed)), work items [#1008](https://github.com/Oriflame/lumos/issues/1008)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([7a55aa2](https://github.com/Oriflame/lumos/commit/7a55aa2a9f367a3a6ed825f01e60baf4ce97bb56))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.4.6 - 2022-03-01
 
 #### 📦 Dependencies

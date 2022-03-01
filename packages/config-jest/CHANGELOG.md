@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.7 - 2022-03-01
+
+#### 📦 Dependencies
+
+- update dependency @beemo/driver-jest. (#1005) ([673867a](https://github.com/Oriflame/lumos/commit/673867adfb9dcf6d6ea85783b791f478a03ccad3)), work items [#1005](https://github.com/Oriflame/lumos/issues/1005)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.4.6 - 2022-03-01
 
 **Note:** Version bump only for package @oriflame/config-jest
