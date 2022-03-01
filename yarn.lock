@@ -1830,6 +1830,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@beemo/driver-webpack@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@beemo/driver-webpack@npm:2.0.6"
+  peerDependencies:
+    "@beemo/core": ^2.0.0
+    webpack: ^4.0.0 || ^5.0.0
+  checksum: 6ed52f21d91baaff1e17e6b4629ca645b76a75a70df220c27892dd483540e9394a91d8361a7547af8303cb970e68c3d96d974709b934dc4f101031d925793ff8
+  languageName: node
+  linkType: hard
+
 "@boost/args@npm:^3.0.0, @boost/args@npm:^3.0.1":
   version: 3.0.1
   resolution: "@boost/args@npm:3.0.1"
@@ -4106,7 +4116,7 @@ __metadata:
     "@beemo/driver-jest": ^2.0.4
     "@beemo/driver-prettier": ^2.0.6
     "@beemo/driver-typescript": ^2.1.1
-    "@beemo/driver-webpack": ^2.0.5
+    "@beemo/driver-webpack": ^2.0.6
     "@boost/common": ^3.2.1
     "@boost/module": ^3.1.0
     "@octokit/rest": ^18.12.0
