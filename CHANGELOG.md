@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.5 - 2022-03-01
+
+#### 📦 Dependencies
+
+- update dependency @beemo/cli. (#1001) ([2582944](https://github.com/Oriflame/lumos/commit/25829447db2a1c78973e7ccb19f1ede5584c1164)), work items [#1001](https://github.com/Oriflame/lumos/issues/1001)
+- update dependency @beemo/driver-eslint. (#1004) ([193e419](https://github.com/Oriflame/lumos/commit/193e41994f0b74a55cb165c0534e14f0062c57ae)), work items [#1004](https://github.com/Oriflame/lumos/issues/1004)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([96252f1](https://github.com/Oriflame/lumos/commit/96252f1342fdffb66ba14406371c87c064959854))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.4.4 - 2022-02-28
 
 #### 🐞 Fixes
