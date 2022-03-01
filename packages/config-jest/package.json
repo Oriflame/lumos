@@ -35,7 +35,7 @@
   ],
   "dependencies": {
     "@babel/core": "^7.17.5",
-    "@beemo/driver-jest": "^2.0.4",
+    "@beemo/driver-jest": "^2.0.5",
     "@oriflame/lumos-common": "^5.4.6",
     "@testing-library/jest-dom": "^5.16.2",
     "@types/jest": "^27.4.1",
