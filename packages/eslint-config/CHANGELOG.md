@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.9 - 2022-03-02
+
+#### 🐞 Fixes
+
+- **[eslint]** Disable `no-unnecessary-type-arguments` false positive. ([4d4ce68](https://github.com/Oriflame/lumos/commit/4d4ce683ead8dd73832f8d373e99410a7696e79a))
+
+#### 📦 Dependencies
+
+- Update typescript-eslint. ([1134689](https://github.com/Oriflame/lumos/commit/11346895d179822903a88b5bd521b90fc067c4f7))
+- Update typescript. ([efbe763](https://github.com/Oriflame/lumos/commit/efbe7637cfe716d128fbbdedfab89a61d098a7a3))
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.4.8 - 2022-03-02
 
 **Note:** Version bump only for package eslint-config-oriflame

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.9 - 2022-03-02
+
+#### 📦 Dependencies
+
+- Update beemo dependencies. ([50eac29](https://github.com/Oriflame/lumos/commit/50eac29a7353021daa4011cfe05e1199d564d8d0))
+- Update typescript. ([efbe763](https://github.com/Oriflame/lumos/commit/efbe7637cfe716d128fbbdedfab89a61d098a7a3))
+
+**Note:** Version bump only for package @oriflame/config-typescript
+
+
+
+
+
 ### 5.4.8 - 2022-03-02
 
 **Note:** Version bump only for package @oriflame/config-typescript
