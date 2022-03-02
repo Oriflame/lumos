@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.4.8 - 2022-03-02
+
+#### 📦 Dependencies
+
+- update dependency @beemo/driver-typescript. (#1007) ([cef5abb](https://github.com/Oriflame/lumos/commit/cef5abb9fccd1aac232d0fb255c85bf169c3ef68)), work items [#1007](https://github.com/Oriflame/lumos/issues/1007)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([22edc67](https://github.com/Oriflame/lumos/commit/22edc6791c9c7a7771a11d4ff2bee15a04424ca3))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.4.7 - 2022-03-01
 
 #### 📦 Dependencies
