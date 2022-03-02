@@ -320,7 +320,8 @@ const config: eslint.Linter.Config['rules'] = {
   '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error', // flags unnecessary equality comparisons against boolean literals
   '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }], // prevents conditionals where the type is always truthy or always falsy
   '@typescript-eslint/no-unnecessary-qualifier': 'error', // warns when a namespace qualifier is unnecessary
-  '@typescript-eslint/no-unnecessary-type-arguments': 'error', // warns if an explicitly specified type argument is the default for that type parameter
+  // FIXME[@rajzik]: False positive in some cases.
+  '@typescript-eslint/no-unnecessary-type-arguments': 'off', // warns if an explicitly specified type argument is the default for that type parameter
   '@typescript-eslint/no-unnecessary-type-assertion': 'error', // warns if a type assertion does not change the type of an expression
   '@typescript-eslint/no-unnecessary-type-constraint': 'warn', // disallows unnecessary constraints on generic types
   '@typescript-eslint/no-unsafe-argument': 'error', // disallows calling an function with an any type value

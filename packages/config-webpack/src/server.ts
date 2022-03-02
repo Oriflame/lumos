@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unnecessary-type-arguments */
 import { parse } from '@boost/args';
 import execa from 'execa';
 import path from 'path';
