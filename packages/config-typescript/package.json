@@ -34,7 +34,7 @@
   "devDependencies": {
     "@beemo/core": "^2.1.4",
     "@beemo/driver-typescript": "^2.1.2",
-    "typescript": "^4.5.5"
+    "typescript": "^4.6.2"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",
