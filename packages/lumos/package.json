@@ -41,7 +41,7 @@
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
     "@beemo/cli": "^2.0.6",
-    "@beemo/core": "^2.1.3",
+    "@beemo/core": "^2.1.4",
     "@beemo/driver-babel": "^2.0.6",
     "@beemo/driver-eslint": "^2.0.5",
     "@beemo/driver-jest": "^2.0.5",

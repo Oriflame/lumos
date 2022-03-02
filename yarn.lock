@@ -1656,24 +1656,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/cli@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "@beemo/cli@npm:2.0.5"
-  dependencies:
-    "@boost/cli": ^3.0.1
-    "@boost/common": ^3.1.0
-    "@boost/pipeline": ^3.2.0
-    debug: ^4.3.3
-    ink: ^3.2.0
-    react: ^17.0.2
-  peerDependencies:
-    "@beemo/core": ^2.0.0
-  bin:
-    beemo: lib/bin.js
-  checksum: 658bb8b2768997e9f52c3c75e5a85c8354edd4132e407ebb056d21086e6cc8f97fd20d1a953671bfd10d4282105e5918a3dbd135e5e6f3c1607e39f2420f384d
-  languageName: node
-  linkType: hard
-
 "@beemo/cli@npm:^2.0.6":
   version: 2.0.6
   resolution: "@beemo/cli@npm:2.0.6"
@@ -1692,42 +1674,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/core@npm:^2.1.3":
-  version: 2.1.3
-  resolution: "@beemo/core@npm:2.1.3"
+"@beemo/core@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "@beemo/core@npm:2.1.4"
   dependencies:
-    "@boost/args": ^3.0.0
-    "@boost/common": ^3.1.0
-    "@boost/config": ^3.0.2
-    "@boost/debug": ^3.0.1
-    "@boost/event": ^3.0.0
-    "@boost/internal": ^3.0.0
-    "@boost/log": ^3.0.1
-    "@boost/module": ^3.0.1
-    "@boost/pipeline": ^3.2.0
-    "@boost/plugin": ^3.0.2
+    "@boost/args": ^3.0.1
+    "@boost/common": ^3.2.1
+    "@boost/config": ^3.2.0
+    "@boost/debug": ^3.0.3
+    "@boost/event": ^3.0.1
+    "@boost/internal": ^3.0.1
+    "@boost/log": ^3.0.3
+    "@boost/module": ^3.1.0
+    "@boost/pipeline": ^3.2.2
+    "@boost/plugin": ^3.0.4
     "@boost/terminal": ^3.0.0
-    "@boost/translate": ^3.0.1
+    "@boost/translate": ^3.0.3
     execa: ^5.1.1
-    fast-glob: ^3.2.7
-    fs-extra: ^10.0.0
-    hygen: ^6.1.0
+    fast-glob: ^3.2.11
+    fs-extra: ^10.0.1
+    hygen: ^6.1.5
     is-glob: ^4.0.3
     lodash: ^4.17.21
     micromatch: ^4.0.4
-  checksum: 00f0197a83a57a681d847551b000957b29f99f899f6bca851c9c800971490560130e3606fda2bb6bd8c13cffb812d1e14d98a75cbf3dd0a9d7bdaa93b509d44b
-  languageName: node
-  linkType: hard
-
-"@beemo/driver-babel@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "@beemo/driver-babel@npm:2.0.5"
-  dependencies:
-    rimraf: ^3.0.2
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    "@beemo/core": ^2.0.0
-  checksum: f86d684e47d2b07831e1e729de04d51025eff29d5c55261783f260e841d4f4b9ea8604dd68ec7f0c0707de7052c7a6a5a215c61f8b431139b17ff972d66f0133
+  checksum: 9de7099ca02cc4b8dd1ae7a682e789615504e9f2df39bcf5e5304ccb23626490f4dc9d4b4ae2cfecb8651bed7fe67e9a54ebf8ec2f9b9fac75d729e7f7c72193
   languageName: node
   linkType: hard
 
@@ -1740,19 +1710,6 @@ __metadata:
     "@babel/core": ^7.0.0
     "@beemo/core": ^2.0.0
   checksum: 829f6a48895e98ddd92579895ed74d970d100c531112c66fd71403a8f72fcb5dd978927e729202686220b8e41a8addec14a00d3c48cde1cd4d261a3543507aea
-  languageName: node
-  linkType: hard
-
-"@beemo/driver-eslint@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@beemo/driver-eslint@npm:2.0.4"
-  dependencies:
-    "@boost/event": ^3.0.0
-    "@types/eslint": ^8.2.1
-  peerDependencies:
-    "@beemo/core": ^2.0.0
-    eslint: ^7.0.0 || ^8.0.0
-  checksum: b2ac05eb7c96a5b07768d7c95be3d1ebe6dcde8ef0a22fc0bbdce414ad5f5ab27d7275384e3c512c7f9daa65b628021976d9355f30ec8a0ee525b7702fbfaf47
   languageName: node
   linkType: hard
 
@@ -1781,19 +1738,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-prettier@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "@beemo/driver-prettier@npm:2.0.5"
-  dependencies:
-    "@boost/event": ^3.0.0
-    "@types/prettier": ^2.4.2
-  peerDependencies:
-    "@beemo/core": ^2.0.0
-    prettier: ^2.0.0
-  checksum: 56e3f76b82272f8603c4582e1eafba68e0efd2ef483c0801b88dfc8522313e38e691708e06fee97cf729d69b74617fd2a4cd1a713ef2c43fc3d2de1dfe76f4fe
-  languageName: node
-  linkType: hard
-
 "@beemo/driver-prettier@npm:^2.0.6":
   version: 2.0.6
   resolution: "@beemo/driver-prettier@npm:2.0.6"
@@ -1804,19 +1748,6 @@ __metadata:
     "@beemo/core": ^2.0.0
     prettier: ^2.0.0
   checksum: b2a9eb669b7965b09162974bed5a952f7aba440983de78e35ae62be81bcd26fa74aba64e9c7c23b09a610a24678b36cb822e297a9a383ffd1b01f5063cf05557
-  languageName: node
-  linkType: hard
-
-"@beemo/driver-typescript@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@beemo/driver-typescript@npm:2.1.1"
-  dependencies:
-    "@boost/event": ^3.0.0
-    rimraf: ^3.0.2
-  peerDependencies:
-    "@beemo/core": ^2.0.0
-    typescript: ^4.0.0
-  checksum: 5246baaf00afe0b7dab2c77c51db522b7de2fa96825550c018e33024fc17f7ad41c916e4a37c8095eb325be12b4f5ecd882adeb80553b51f2d07095e61d27c9e
   languageName: node
   linkType: hard
 
@@ -1833,16 +1764,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-webpack@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "@beemo/driver-webpack@npm:2.0.5"
-  peerDependencies:
-    "@beemo/core": ^2.0.0
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: c161d54c6aee8e89376c3c982e50cf98d3939481d7feac9392bd65f1361a5de5636d441f50b5a42157fb5984ca86418bd7793f636a62c9f24649848b9d0277e5
-  languageName: node
-  linkType: hard
-
 "@beemo/driver-webpack@npm:^2.0.6":
   version: 2.0.6
   resolution: "@beemo/driver-webpack@npm:2.0.6"
@@ -1853,7 +1774,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/args@npm:^3.0.0, @boost/args@npm:^3.0.1":
+"@boost/args@npm:^3.0.1":
   version: 3.0.1
   resolution: "@boost/args@npm:3.0.1"
   dependencies:
@@ -1863,7 +1784,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/cli@npm:^3.0.1, @boost/cli@npm:^3.0.3":
+"@boost/cli@npm:^3.0.3":
   version: 3.0.3
   resolution: "@boost/cli@npm:3.0.3"
   dependencies:
@@ -1884,7 +1805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/common@npm:^3.1.0, @boost/common@npm:^3.2.1":
+"@boost/common@npm:^3.2.1":
   version: 3.2.1
   resolution: "@boost/common@npm:3.2.1"
   dependencies:
@@ -1905,20 +1826,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/config@npm:^3.0.2":
-  version: 3.0.4
-  resolution: "@boost/config@npm:3.0.4"
-  dependencies:
-    "@boost/common": ^3.2.1
-    "@boost/debug": ^3.0.3
-    "@boost/event": ^3.0.1
-    "@boost/internal": ^3.0.1
-    "@boost/module": ^3.1.0
-    minimatch: ^3.0.4
-  checksum: b300b765374f73a7e1d336dc3b5a66aa7b378d724a4f96683ade07f3c6892b5d44b403f4f1fe937c671ab74c42181b9a240a7e2239ef93c802bf8eb956a2db8d
-  languageName: node
-  linkType: hard
-
 "@boost/config@npm:^3.2.0":
   version: 3.2.0
   resolution: "@boost/config@npm:3.2.0"
@@ -1933,7 +1840,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/debug@npm:^3.0.1, @boost/debug@npm:^3.0.3":
+"@boost/debug@npm:^3.0.3":
   version: 3.0.3
   resolution: "@boost/debug@npm:3.0.3"
   dependencies:
@@ -1954,7 +1861,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/event@npm:^3.0.0, @boost/event@npm:^3.0.1":
+"@boost/event@npm:^3.0.1":
   version: 3.0.1
   resolution: "@boost/event@npm:3.0.1"
   dependencies:
@@ -1963,7 +1870,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/internal@npm:^3.0.0, @boost/internal@npm:^3.0.1":
+"@boost/internal@npm:^3.0.1":
   version: 3.0.1
   resolution: "@boost/internal@npm:3.0.1"
   dependencies:
@@ -1972,7 +1879,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/log@npm:^3.0.1, @boost/log@npm:^3.0.3":
+"@boost/log@npm:^3.0.3":
   version: 3.0.3
   resolution: "@boost/log@npm:3.0.3"
   dependencies:
@@ -1984,7 +1891,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/module@npm:^3.0.1, @boost/module@npm:^3.1.0":
+"@boost/module@npm:^3.1.0":
   version: 3.1.0
   resolution: "@boost/module@npm:3.1.0"
   peerDependencies:
@@ -1996,7 +1903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/pipeline@npm:^3.2.0, @boost/pipeline@npm:^3.2.2":
+"@boost/pipeline@npm:^3.2.2":
   version: 3.2.2
   resolution: "@boost/pipeline@npm:3.2.2"
   dependencies:
@@ -2012,7 +1919,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/plugin@npm:^3.0.2":
+"@boost/plugin@npm:^3.0.4":
   version: 3.0.4
   resolution: "@boost/plugin@npm:3.0.4"
   dependencies:
@@ -2046,7 +1953,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/translate@npm:^3.0.1, @boost/translate@npm:^3.0.3":
+"@boost/translate@npm:^3.0.3":
   version: 3.0.3
   resolution: "@boost/translate@npm:3.0.3"
   dependencies:
@@ -3895,8 +3802,8 @@ __metadata:
   resolution: "@oriflame/config-babel@workspace:packages/config-babel"
   dependencies:
     "@babel/core": ^7.17.5
-    "@beemo/core": ^2.1.3
-    "@beemo/driver-babel": ^2.0.5
+    "@beemo/core": ^2.1.4
+    "@beemo/driver-babel": ^2.0.6
     "@oriflame/babel-preset": ^5.4.8
     "@oriflame/lumos-common": ^5.4.8
     babel-test: ^0.2.4
@@ -3930,8 +3837,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/config-eslint@workspace:packages/config-eslint"
   dependencies:
-    "@beemo/core": ^2.1.3
-    "@beemo/driver-eslint": ^2.0.4
+    "@beemo/core": ^2.1.4
+    "@beemo/driver-eslint": ^2.0.5
     "@oriflame/lumos-common": ^5.4.8
     "@types/node": ^16.11.26
     eslint: ^8.10.0
@@ -3955,8 +3862,8 @@ __metadata:
   resolution: "@oriflame/config-jest@workspace:packages/config-jest"
   dependencies:
     "@babel/core": ^7.17.5
-    "@beemo/core": ^2.1.3
-    "@beemo/driver-babel": ^2.0.5
+    "@beemo/core": ^2.1.4
+    "@beemo/driver-babel": ^2.0.6
     "@beemo/driver-jest": ^2.0.5
     "@oriflame/lumos-common": ^5.4.8
     "@testing-library/jest-dom": ^5.16.2
@@ -3988,8 +3895,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/config-prettier@workspace:packages/config-prettier"
   dependencies:
-    "@beemo/core": ^2.1.3
-    "@beemo/driver-prettier": ^2.0.5
+    "@beemo/core": ^2.1.4
+    "@beemo/driver-prettier": ^2.0.6
     "@oriflame/lumos-common": ^5.4.8
     "@types/prettier": ^2.4.4
     prettier: ^2.5.1
@@ -4005,8 +3912,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/config-typescript@workspace:packages/config-typescript"
   dependencies:
-    "@beemo/core": ^2.1.3
-    "@beemo/driver-typescript": ^2.1.1
+    "@beemo/core": ^2.1.4
+    "@beemo/driver-typescript": ^2.1.2
     "@oriflame/lumos-common": ^5.4.8
     tsconfig-oriflame: ^5.4.8
     typescript: ^4.5.5
@@ -4022,8 +3929,8 @@ __metadata:
   resolution: "@oriflame/config-webpack@workspace:packages/config-webpack"
   dependencies:
     "@babel/core": ^7.17.5
-    "@beemo/core": ^2.1.3
-    "@beemo/driver-webpack": ^2.0.5
+    "@beemo/core": ^2.1.4
+    "@beemo/driver-webpack": ^2.0.6
     "@boost/args": ^3.0.1
     "@boost/module": ^3.1.0
     "@module-federation/concat-runtime": ^0.0.1
@@ -4110,7 +4017,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/lumos-common@workspace:packages/lumos-common"
   dependencies:
-    "@beemo/core": ^2.1.3
+    "@beemo/core": ^2.1.4
   languageName: unknown
   linkType: soft
 
@@ -4123,7 +4030,7 @@ __metadata:
     "@babel/cli": ^7.17.6
     "@babel/core": ^7.17.5
     "@beemo/cli": ^2.0.6
-    "@beemo/core": ^2.1.3
+    "@beemo/core": ^2.1.4
     "@beemo/driver-babel": ^2.0.6
     "@beemo/driver-eslint": ^2.0.5
     "@beemo/driver-jest": ^2.0.5
@@ -4559,7 +4466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^8.2.1, @types/eslint@npm:^8.4.1":
+"@types/eslint@npm:*, @types/eslint@npm:^8.4.1":
   version: 8.4.1
   resolution: "@types/eslint@npm:8.4.1"
   dependencies:
@@ -4746,17 +4653,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.14.41":
-  version: 14.18.10
-  resolution: "@types/node@npm:14.18.10"
-  checksum: e722eec37be85dd7dddc4cfd26c501c66f1f2a7e0f603f57ff925348e65a5db603b06363fa27489cbecff44f0ae59812f22509923c4c45ffa5958604cc002401
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:^16.11.26":
   version: 16.11.26
   resolution: "@types/node@npm:16.11.26"
   checksum: 57757caaba3f0d95de82198cb276a1002c49b710108c932a1d02d7c91ff2fa57cfe2dd19fde60853b6dd90b0964b3cf35557981d2628e20aed6a909057aedfe6
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^17.0.19":
+  version: 17.0.21
+  resolution: "@types/node@npm:17.0.21"
+  checksum: 89dcd2fe82f21d3634266f8384e9c865cf8af49685639fbdbd799bdd1040480fb1e8eeda2d3b9fce41edbe704d2a4be9f427118c4ae872e8d9bb7cbeb3c41a94
   languageName: node
   linkType: hard
 
@@ -4774,7 +4681,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2.1.5, @types/prettier@npm:^2.4.2":
+"@types/prettier@npm:^2.1.5":
   version: 2.4.3
   resolution: "@types/prettier@npm:2.4.3"
   checksum: b240434daabac54700c862b0bb52a83fec396e0e9c847447119ba41fd8404d79aadfa174e6306fb094b29efadac586344b7606c3a71c286b71755ab2579d54df
@@ -6496,7 +6403,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -7764,6 +7671,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"degit@npm:^2.8.4":
+  version: 2.8.4
+  resolution: "degit@npm:2.8.4"
+  bin:
+    degit: degit
+  checksum: bb58c48ff1ae3828825d7e614db703afd69905abc2d666009bb4affecb8d87be993511556395889dffc99a5eba7a058117402050c509a6e2c3dd56a579120236
+  languageName: node
+  linkType: hard
+
 "del@npm:^6.0.0":
   version: 6.0.0
   resolution: "del@npm:6.0.0"
@@ -8081,7 +7997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ejs@npm:^3.1.3":
+"ejs@npm:^3.1.6":
   version: 3.1.6
   resolution: "ejs@npm:3.1.6"
   dependencies:
@@ -9013,7 +8929,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.11, fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9":
+"fast-glob@npm:^3.2.11, fast-glob@npm:^3.2.9":
   version: 3.2.11
   resolution: "fast-glob@npm:3.2.11"
   dependencies:
@@ -10222,24 +10138,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hygen@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "hygen@npm:6.1.0"
+"hygen@npm:^6.1.5":
+  version: 6.2.0
+  resolution: "hygen@npm:6.2.0"
   dependencies:
-    "@types/node": ^14.14.41
-    chalk: ^4.1.1
+    "@types/node": ^17.0.19
+    chalk: ^4.1.2
     change-case: ^3.1.0
-    ejs: ^3.1.3
+    debug: ^4.3.3
+    degit: ^2.8.4
+    ejs: ^3.1.6
     enquirer: ^2.3.6
+    eslint-plugin-prettier: ^4.0.0
     execa: ^5.0.0
     front-matter: ^4.0.2
-    fs-extra: ^9.1.0
-    ignore-walk: ^3.0.3
+    fs-extra: ^10.0.0
+    ignore-walk: ^4.0.1
     inflection: ^1.12.0
-    yargs-parser: ^20.2.7
+    yargs-parser: ^21.0.0
   bin:
     hygen: dist/bin.js
-  checksum: 3bfebcc40b415a162b44a0d4ccf889983465d1dc16fcb2e222f9176173dc3f9c9b6ea7edc1cdac035c2d2bcd9ba076c3a5af455c8973a5cc6065401851e4b3d5
+  checksum: a41e6ea467de097884e301b179914fd7e7ca093570026a0669b20f3679e69f4a005d884eb21a174198409edffdfb1b71ddf164124726dcd2d18e3926f30489b3
   languageName: node
   linkType: hard
 
@@ -12329,8 +12248,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "lumos-root@workspace:."
   dependencies:
-    "@beemo/cli": ^2.0.5
-    "@beemo/core": ^2.1.3
+    "@beemo/cli": ^2.0.6
+    "@beemo/core": ^2.1.4
     "@commitlint/cli": ^16.2.1
     "@oriflame/conventional-changelog": ^1.2.28
     "@oriflame/conventional-changelog-lint-config": ^1.1.30
@@ -18372,7 +18291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.3, yargs-parser@npm:^20.2.7":
+"yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.3":
   version: 20.2.9
   resolution: "yargs-parser@npm:20.2.9"
   checksum: 8bb69015f2b0ff9e17b2c8e6bfe224ab463dd00ca211eece72a4cd8a906224d2703fb8a326d36fdd0e68701e201b2a60ed7cf81ce0fd9b3799f9fe7745977ae3
