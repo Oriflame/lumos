@@ -3964,7 +3964,7 @@ __metadata:
     terser-webpack-plugin: ^5.3.1
     tsconfig-paths-webpack-plugin: ^3.5.2
     url-loader: ^4.1.1
-    webpack: ^5.69.1
+    webpack: ^5.70.0
     webpack-bundle-analyzer: ^4.5.0
     webpack-cli: ^4.9.2
     webpack-dev-server: ^4.7.4
@@ -3986,14 +3986,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/conventional-changelog-lint-config@npm:^1.1.30":
-  version: 1.1.30
-  resolution: "@oriflame/conventional-changelog-lint-config@npm:1.1.30"
+"@oriflame/conventional-changelog-lint-config@npm:^1.1.31":
+  version: 1.1.31
+  resolution: "@oriflame/conventional-changelog-lint-config@npm:1.1.31"
   dependencies:
-    "@oriflame/conventional-changelog-types": ^1.0.33
+    "@oriflame/conventional-changelog-types": ^1.0.34
   peerDependencies:
     "@commitlint/cli": ">=12"
-  checksum: 32243d46310f0fdb219d71d87253ef327b3df6172ddf0e53958528fe4dccb2532bb13e7b00988bf0ea2a403effbb115c6cade2a296f3ecae4c252850ad38084d
+  checksum: 4c8de9f60064a432eeb579831ab07271e6a27ad5b81f4a88d51a18645c8ee5efe8856da4738c699c020e8bc18691a37a7554f09208ba5324d12478da1ef856fa
   languageName: node
   linkType: hard
 
@@ -4004,12 +4004,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oriflame/conventional-changelog-types@npm:^1.0.34":
+  version: 1.0.34
+  resolution: "@oriflame/conventional-changelog-types@npm:1.0.34"
+  checksum: 828bda918066cc01c0f6917fab5d29c96763eb9508a003c11e078d18e13aabf156b99faa5fe00ceec3a8da8ac9b20570438e9f8f812abc91d947e1eb095a00d5
+  languageName: node
+  linkType: hard
+
 "@oriflame/conventional-changelog@npm:^1.2.28":
   version: 1.2.28
   resolution: "@oriflame/conventional-changelog@npm:1.2.28"
   dependencies:
     "@oriflame/conventional-changelog-types": ^1.0.33
   checksum: e300ecd28221295fbea3ba775d1fe99ca4288972d577a7175b14638870719df4542fe60bf9f8ec2d7024b1326adc72998e90289695a609c72aaabf75597e6757
+  languageName: node
+  linkType: hard
+
+"@oriflame/conventional-changelog@npm:^1.2.29":
+  version: 1.2.29
+  resolution: "@oriflame/conventional-changelog@npm:1.2.29"
+  dependencies:
+    "@oriflame/conventional-changelog-types": ^1.0.34
+  checksum: 59a6bd6a25d255b4738401ca28ce95551eae4826d92fd4906056dc77a7f5834b9ba7edbad84d77c3d741dd270f218c1cecee3c862fdf5f26d8a5f5d7d8b77515
   languageName: node
   linkType: hard
 
@@ -8075,6 +8091,16 @@ __metadata:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
   checksum: 06435f52670229eb7fd8d92ea2d988a275f9a1b8c08b9023ba45767c6ed844bc87aa9c9c7e6d044eef99ad73fc3b066b78101163696e5c53121909e5bf8efe8b
+  languageName: node
+  linkType: hard
+
+"enhanced-resolve@npm:^5.9.2":
+  version: 5.9.2
+  resolution: "enhanced-resolve@npm:5.9.2"
+  dependencies:
+    graceful-fs: ^4.2.4
+    tapable: ^2.2.0
+  checksum: 792b7a01abb4ee4433b658c71f92d5948675938e0c03cad1732abe843b87395f15cb880ace4f819f78ead94163278283afc79b8be63c0eddca8ab45f7d8c515d
   languageName: node
   linkType: hard
 
@@ -12251,8 +12277,8 @@ __metadata:
     "@beemo/cli": ^2.0.6
     "@beemo/core": ^2.1.4
     "@commitlint/cli": ^16.2.1
-    "@oriflame/conventional-changelog": ^1.2.28
-    "@oriflame/conventional-changelog-lint-config": ^1.1.30
+    "@oriflame/conventional-changelog": ^1.2.29
+    "@oriflame/conventional-changelog-lint-config": ^1.1.31
     cross-env: ^7.0.3
     eslint: ^8.10.0
     eslint-find-rules: ^4.1.0
@@ -12265,7 +12291,7 @@ __metadata:
     prettier: ^2.5.1
     rimraf: ^3.0.2
     typescript: ^4.6.2
-    webpack: ^5.69.1
+    webpack: ^5.70.0
   languageName: unknown
   linkType: soft
 
@@ -17993,6 +18019,43 @@ __metadata:
   bin:
     webpack: bin/webpack.js
   checksum: 490a6e9e4cd9d0ed3b6c7ca08015da2628919fda8fcf9c36f0f6c0e3ad71eaaaf4b0d12753109f22a4faf79fe9a9063552d9708e0ee2352cf8568433b8e296a7
+  languageName: node
+  linkType: hard
+
+"webpack@npm:^5.70.0":
+  version: 5.70.0
+  resolution: "webpack@npm:5.70.0"
+  dependencies:
+    "@types/eslint-scope": ^3.7.3
+    "@types/estree": ^0.0.51
+    "@webassemblyjs/ast": 1.11.1
+    "@webassemblyjs/wasm-edit": 1.11.1
+    "@webassemblyjs/wasm-parser": 1.11.1
+    acorn: ^8.4.1
+    acorn-import-assertions: ^1.7.6
+    browserslist: ^4.14.5
+    chrome-trace-event: ^1.0.2
+    enhanced-resolve: ^5.9.2
+    es-module-lexer: ^0.9.0
+    eslint-scope: 5.1.1
+    events: ^3.2.0
+    glob-to-regexp: ^0.4.1
+    graceful-fs: ^4.2.9
+    json-parse-better-errors: ^1.0.2
+    loader-runner: ^4.2.0
+    mime-types: ^2.1.27
+    neo-async: ^2.6.2
+    schema-utils: ^3.1.0
+    tapable: ^2.1.1
+    terser-webpack-plugin: ^5.1.3
+    watchpack: ^2.3.1
+    webpack-sources: ^3.2.3
+  peerDependenciesMeta:
+    webpack-cli:
+      optional: true
+  bin:
+    webpack: bin/webpack.js
+  checksum: 00439884a9cdd5305aed3ce93735635785a15c5464a6d2cfce87e17727a07585de02420913e82aa85ddd2ae7322175d2cfda6ac0878a17f061cb605e6a7db57a
   languageName: node
   linkType: hard
 
