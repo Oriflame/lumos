@@ -20,6 +20,8 @@ const config: eslint.Linter.Config['rules'] = {
     },
   ], // forbid certain propTypes
   'react/function-component-definition': 'off', // standardize the way function component get defined
+  'react/hook-use-state': 'warn', // ensure symmetric naming of useState hook value and setter variables
+  'react/iframe-missing-sandbox': 'warn', // enforce sandbox attribute on iframe elements
   'react/jsx-boolean-value': ['error', 'never'], // enforce boolean attributes notation in JSX
   'react/jsx-child-element-spacing': 'error', // ensures inline tags are not rendered without spaces between them
   'react/jsx-closing-bracket-location': 'off', // validate closing bracket location in JSX
