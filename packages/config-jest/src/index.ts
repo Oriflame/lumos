@@ -46,6 +46,7 @@ export function getConfig({
 }: JestOptions): JestConfig {
   let projects: string[] | undefined;
   const setupFiles: string[] = [];
+  const snapshotSerializers: string[] = [];
 
   if (enableConsoleMocks) {
     setupFiles.push(fromHere('setup/console.js'));
@@ -61,6 +62,8 @@ export function getConfig({
   }
 
   if (react) {
+    snapshotSerializers.push('@emotion/jest/serializer');
+    setupFilesAfterEnv.push(fromHere('setup/emotion.js'));
     setupFiles.push(fromHere('setup/dom.js'));
   }
 
@@ -75,6 +78,7 @@ export function getConfig({
     bail: false,
     collectCoverageFrom: [createCoveragePattern(srcFolder), createCoveragePattern(testsFolder)],
     collectCoverage: true,
+    snapshotSerializers,
     coverageThreshold: {
       global: {
         branches: threshold,
