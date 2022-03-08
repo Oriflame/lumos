@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.6.1 - 2022-03-08
+
+#### 🐞 Fixes
+
+- Change from import to require. ([749fb51](https://github.com/Oriflame/lumos/commit/749fb51751641d5b7cbab9baa46c677d87056c44))
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ## 5.6.0 - 2022-03-08
 
 #### 🚀 Updates
