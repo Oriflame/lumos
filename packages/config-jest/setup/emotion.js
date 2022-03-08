@@ -1,3 +1,3 @@
-import { matchers } from '@emotion/jest';
+const { matchers } = require('@emotion/jest');
 
 expect.extend(matchers);
