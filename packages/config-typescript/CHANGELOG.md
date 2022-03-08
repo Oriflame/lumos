@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.6.0 - 2022-03-08
+
+**Note:** Version bump only for package @oriflame/config-typescript
+
+
+
+
+
 ### 5.5.2 - 2022-03-07
 
 **Note:** Version bump only for package @oriflame/config-typescript

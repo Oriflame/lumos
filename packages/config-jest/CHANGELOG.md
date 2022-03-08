@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.6.0 - 2022-03-08
+
+#### 🚀 Updates
+
+- Add emotion to jest. (#1010) ([ad5f398](https://github.com/Oriflame/lumos/commit/ad5f39808d37f9d5aa0872b14bd995499d0c3e68)), work items [#1010](https://github.com/Oriflame/lumos/issues/1010)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.5.2 - 2022-03-07
 
 **Note:** Version bump only for package @oriflame/config-jest
