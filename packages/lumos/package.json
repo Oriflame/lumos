@@ -32,7 +32,7 @@
   ],
   "bin": "./bin/lumos",
   "engines": {
-    "node": ">=12.17.0",
+    "node": ">=v16.14.0",
     "npm": ">=6.13.0"
   },
   "dependencies": {

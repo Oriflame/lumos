@@ -22,7 +22,7 @@
     "check-rules": "ts-node tools/check-rules/index.ts"
   },
   "engines": {
-    "node": ">=12.17.0",
+    "node": ">=v16.14.0",
     "npm": ">=6.13.0"
   },
   "files": [
