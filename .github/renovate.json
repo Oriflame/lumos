@@ -4,5 +4,6 @@
     "github>oriflame/renovate-config",
     "github>oriflame/renovate-config:frontendRecommended"
   ],
-  "prCreation": "immediate"
+  "prCreation": "immediate",
+  "platform": "github"
 }
