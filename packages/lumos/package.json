@@ -33,7 +33,7 @@
   "bin": "./bin/lumos",
   "engines": {
     "node": ">=12.17.0",
-    "npm": ">=6.13.0"
+    "npm": ">=8.5.4"
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
