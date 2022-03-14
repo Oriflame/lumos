@@ -304,7 +304,15 @@ const config: eslint.Linter.Config['rules'] = {
     },
   ], // disallow the void operator except when used to discard a value
   '@typescript-eslint/no-misused-new': 'error', // enforce valid definition of new and constructor
-  '@typescript-eslint/no-misused-promises': ['error'], // avoid using promises in places not designed to handle them
+  '@typescript-eslint/no-misused-promises': [
+    'error',
+    {
+      checksVoidReturn: {
+        arguments: false,
+        attributes: false,
+      },
+    },
+  ], // avoid using promises in places not designed to handle them
   '@typescript-eslint/no-namespace': 'warn', // disallow the use of custom TypeScript modules and namespaces
   '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error', // disallows using a non-null assertion in the left operand of the nullish coalescing operator
   '@typescript-eslint/no-non-null-asserted-optional-chain': 'error', // disallows using a non-null assertion after an optional chain expression
