@@ -27,8 +27,6 @@ const config: eslint.Linter.Config = {
 
       plugins: ['jest', 'testing-library'],
 
-      extends: ['plugin:jest/recommended', 'plugin:testing-library/react'],
-
       settings: {
         'testing-library/custom-queries': 'off',
         'testing-library/custom-renders': 'off',

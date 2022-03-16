@@ -19,9 +19,9 @@ const config: eslint.Linter.Config['rules'] = {
   'no-loss-of-precision': 'off', // disallow literal numbers that lose precision
   'no-magic-numbers': 'off', // disallow magic numbers
   'no-redeclare': 'off', // disallow variable redeclaration
+  'no-return-await': 'off', // disallow unnecessary return await
   'no-shadow': 'off', // disallow variable declarations from shadowing variables declared in the outer scope
   'no-throw-literal': 'off', // disallow throwing literals as exceptions
-  'no-return-await': 'off', // disallow unnecessary return await
   'no-undef': 'off', // disallow the use of undeclared variables unless mentioned in /* global */ comments
   'no-underscore-dangle': 'off', // disallow dangling underscores in identifiers
   'no-unused-expressions': 'off', // disallow unused expressions
@@ -31,6 +31,7 @@ const config: eslint.Linter.Config['rules'] = {
   'padding-line-between-statements': 'off', // require or disallow padding lines between statements
   quotes: 'off', // enforce the consistent use of either backticks, double, or single quotes
   'require-await': 'off', // disallow async functions which have no await expression
+  'space-before-blocks': 'off', // enforce consistent spacing before blocks
   'space-infix-ops': 'off', // require spacing around infix operators
 
   // override eslint-plugin-node rules
@@ -248,7 +249,7 @@ const config: eslint.Linter.Config['rules'] = {
       leadingUnderscore: 'allow',
       trailingUnderscore: 'forbid',
       filter: {
-        regex: '__typename', // don't check GraphQL specific properties
+        regex: '__typename|^&', // don't check: GraphQL specific property, properties used as CSS selectors
         match: false,
       },
     },
@@ -308,7 +309,6 @@ const config: eslint.Linter.Config['rules'] = {
     'error',
     {
       checksVoidReturn: {
-        arguments: false,
         attributes: false,
       },
     },
@@ -318,6 +318,7 @@ const config: eslint.Linter.Config['rules'] = {
   '@typescript-eslint/no-non-null-asserted-optional-chain': 'error', // disallows using a non-null assertion after an optional chain expression
   '@typescript-eslint/no-non-null-assertion': 'warn', // disallows non-null assertions using the ! postfix operator
   '@typescript-eslint/no-parameter-properties': 'error', // disallow the use of parameter properties in class constructors
+  '@typescript-eslint/no-redundant-type-constituents': 'warn', // disallow members of unions and intersections that do nothing or override type information
   '@typescript-eslint/no-redeclare': 'error', // disallow variable redeclaration
   '@typescript-eslint/no-restricted-imports': 'off', // disallow specified modules when loaded by import
   '@typescript-eslint/no-require-imports': 'error', // disallows invocation of require()
@@ -328,8 +329,7 @@ const config: eslint.Linter.Config['rules'] = {
   '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error', // flags unnecessary equality comparisons against boolean literals
   '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }], // prevents conditionals where the type is always truthy or always falsy
   '@typescript-eslint/no-unnecessary-qualifier': 'error', // warns when a namespace qualifier is unnecessary
-  // FIXME[@rajzik]: False positive in some cases.
-  '@typescript-eslint/no-unnecessary-type-arguments': 'off', // warns if an explicitly specified type argument is the default for that type parameter
+  '@typescript-eslint/no-unnecessary-type-arguments': 'error', // warns if an explicitly specified type argument is the default for that type parameter
   '@typescript-eslint/no-unnecessary-type-assertion': 'error', // warns if a type assertion does not change the type of an expression
   '@typescript-eslint/no-unnecessary-type-constraint': 'warn', // disallows unnecessary constraints on generic types
   '@typescript-eslint/no-unsafe-argument': 'error', // disallows calling an function with an any type value
@@ -349,6 +349,7 @@ const config: eslint.Linter.Config['rules'] = {
     },
   ], // disallow the use of variables before they are defined
   '@typescript-eslint/no-useless-constructor': 'warn', // disallow unnecessary constructors
+  '@typescript-eslint/no-useless-empty-export': 'error', // disallow empty exports that don't change anything in a module file
   '@typescript-eslint/no-var-requires': 'off', // disallows the use of require statements except in import statements
   '@typescript-eslint/non-nullable-type-assertion-style': 'off', // prefers a non-null assertion over explicit type cast when possible
   '@typescript-eslint/object-curly-spacing': 'off', // enforce consistent spacing inside braces
@@ -387,6 +388,7 @@ const config: eslint.Linter.Config['rules'] = {
   '@typescript-eslint/return-await': 'error', // rules for awaiting returned promises
   '@typescript-eslint/semi': 'off', // require or disallow semicolons instead of ASI
   '@typescript-eslint/sort-type-union-intersection-members': 'warn', // enforces that members of a type union/intersection are sorted alphabetically
+  '@typescript-eslint/space-before-blocks': 'off', // enforces consistent spacing before blocks
   '@typescript-eslint/space-before-function-paren': 'off', // enforce consistent spacing before function definition opening parenthesis
   '@typescript-eslint/space-infix-ops': 'off', // this rule is aimed at ensuring there are spaces around infix operators
   '@typescript-eslint/strict-boolean-expressions': [

@@ -20,7 +20,7 @@ const config: eslint.Linter.Config['rules'] = {
   'jest/no-alias-methods': 'warn', // disallow alias methods
   'jest/no-commented-out-tests': 'warn', // disallow commented out tests
   'jest/no-conditional-expect': 'error', // prevent calling expect conditionally
-  'jest/no-conditional-in-test': 'error', // disallow conditional logic in tests
+  'jest/no-conditional-in-test': 'off', // disallow conditional logic in tests
   'jest/no-deprecated-functions': 'error', // disallow use of deprecated functions
   'jest/no-disabled-tests': 'warn', // disallow disabled tests
   'jest/no-done-callback': 'warn', // avoid using a callback in asynchronous tests and hooks
