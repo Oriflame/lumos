@@ -61,7 +61,7 @@
     "@types/confusing-browser-globals": "^1.0.0",
     "@types/node": "^16.11.26",
     "eslint": "^8.11.0",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.0",
     "ts-node": "^10.7.0"
   },
   "peerDependencies": {
