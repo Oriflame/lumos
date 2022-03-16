@@ -15,13 +15,13 @@ yarn add --dev eslint-config-oriflame eslint
 
 ```javascript
 module.exports = {
-  "root": true,
-  "extends": [
-    "oriflame",
-    "oriflame/node",
-    "oriflame/typescript",
-    "oriflame/future",
-    "oriflame/prettier",
+  root: true,
+  extends: [
+    'oriflame',
+    'oriflame/node',
+    'oriflame/typescript',
+    'oriflame/future',
+    'oriflame/prettier',
   ],
 };
 ```

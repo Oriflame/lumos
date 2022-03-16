@@ -14,7 +14,8 @@ yarn add --dev @oriflame/babel-preset @babel/core
 ```json
 {
   "presets": [
-    ["@oriflame/babel-preset",
+    [
+      "@oriflame/babel-preset",
       {
         "react": true
       }
@@ -36,7 +37,8 @@ yarn add --dev @oriflame/babel-preset @babel/core
 - removePropTypes `boolean`
   - Removes prop types from source code
 - targets `Record<string, string> | string[] | string`
-  - env targets (see: [@babel/preset-env#targets](https://babeljs.io/docs/en/babel-preset-env#targets))
+  - env targets (see:
+    [@babel/preset-env#targets](https://babeljs.io/docs/en/babel-preset-env#targets))
 - srcFolder `string`
   - Change default source folder
   - default: `src`

@@ -2,7 +2,10 @@
 
 [![npm version](https://badge.fury.io/js/@oriflame%2Flumos.svg)](https://badge.fury.io/js/@oriflame%2Flumos)
 
-Manage dev and build tools, their configuration, and commands in a single centralized repository. Lumos aims to solve the multi-project maintenance fatigue by removing the following burdens across all projects: config and dotfile management, multiple config patterns, up-to-date development dependencies, continuous copy and paste, and more.
+Manage dev and build tools, their configuration, and commands in a single centralized repository.
+Lumos aims to solve the multi-project maintenance fatigue by removing the following burdens across
+all projects: config and dotfile management, multiple config patterns, up-to-date development
+dependencies, continuous copy and paste, and more.
 
 [Built on and powered by Beemo](https://github.com/beemojs/beemo).
 
@@ -86,7 +89,9 @@ export default config;
 - `enableConsoleMocks`(`boolean`) - Enable jest console mocks
 - `sharedModulesManifestPath`(`string`) - Path to shared module manifest relative to package
 - `sharedModulesPackage`(`string`) - Shared module package
-- `assumptions`(`Assumptions`) - Babel assumptions (see: [compiler assumptions](https://babeljs.io/docs/en/assumptions), [preset-env#loose](https://babeljs.io/docs/en/babel-preset-env#loose))
+- `assumptions`(`Assumptions`) - Babel assumptions (see:
+  [compiler assumptions](https://babeljs.io/docs/en/assumptions),
+  [preset-env#loose](https://babeljs.io/docs/en/babel-preset-env#loose))
 
 ## Usage
 
@@ -454,11 +459,13 @@ lumos webpack build --workspaces=*
 
 > Start application with webpack `lumos create-config webpack && lumos-webpack-server`
 
-> ⚠️ When using webpack in workspaces packages needs to have `packages/<Package Name>/.config/lumos.ts`
+> ⚠️ When using webpack in workspaces packages needs to have
+> `packages/<Package Name>/.config/lumos.ts`
 
 **Webpack cli options:**
 
-Webpack cli options can be find here: [OPTIONS.md](https://github.com/webpack/webpack-cli/blob/master/OPTIONS.md)
+Webpack cli options can be find here:
+[OPTIONS.md](https://github.com/webpack/webpack-cli/blob/master/OPTIONS.md)
 
 **Webpack cli commands:**
 
@@ -488,8 +495,9 @@ lumos-webpack-server --port=3001
 lumos-webpack-server --root=./packages/root
 ```
 
-> lumos webpack server can be run from workspace package `yarn workspace @app/my-app run start` and start script `lumos-webpack-server`.
-> Lumos will try to find `webpack.config.js` in parent directories up to 5 levels.
+> lumos webpack server can be run from workspace package `yarn workspace @app/my-app run start` and
+> start script `lumos-webpack-server`. Lumos will try to find `webpack.config.js` in parent
+> directories up to 5 levels.
 
 #### Overriding config
 
