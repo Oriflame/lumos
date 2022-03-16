@@ -27,7 +27,7 @@ or you can override part of the config
 
 ```javascript
 module.exports = {
-  ...(require('prettier-config-oriflame')),
-  semi: false
+  ...require('prettier-config-oriflame'),
+  semi: false,
 };
 ```

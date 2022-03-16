@@ -5,7 +5,11 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Oriflame/lumos/tree/master/CONTRIBUTING.md)
 
 # Lumos
-Manage dev and build tools, their configuration, and commands in a single centralized repository. Lumos aims to solve the multi-project maintenance fatigue by removing the following burdens across all projects: config and dotfile management, multiple config patterns, up-to-date development dependencies, continuous copy and paste, and more.
+
+Manage dev and build tools, their configuration, and commands in a single centralized repository.
+Lumos aims to solve the multi-project maintenance fatigue by removing the following burdens across
+all projects: config and dotfile management, multiple config patterns, up-to-date development
+dependencies, continuous copy and paste, and more.
 
 [Built on and powered by Beemo](https://github.com/beemojs/beemo).
 

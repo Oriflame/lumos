@@ -1,4 +1,3 @@
-
 # Contributing
 
 ## Developer setup

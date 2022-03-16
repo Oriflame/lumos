@@ -12,5 +12,6 @@
   "bracketSameLine": false,
   "arrowParens": "always",
   "requirePragma": false,
+  "singleAttributePerLine": true,
   "proseWrap": "always"
 }
