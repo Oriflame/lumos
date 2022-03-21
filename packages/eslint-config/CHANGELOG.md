@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.2 - 2022-03-21
+
+#### 🐞 Fixes
+
+- **[eslint-config]** Modify `naming-convention` for test files. (#1018) ([d3f3599](https://github.com/Oriflame/lumos/commit/d3f359987cf4bbd355ce2f0a8640ac62b40e9b41)), work items [#1018](https://github.com/Oriflame/lumos/issues/1018)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.7.1 - 2022-03-21
 
 **Note:** Version bump only for package eslint-config-oriflame
