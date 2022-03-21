@@ -79,6 +79,7 @@ const config: eslint.Linter.Config = {
           // variables and parameters must use camel case, pascal case or upper case with no leading and trailing underscores - exceptions are names that are only underscores (used e.g. for placeholder parameters)
           {
             selector: 'variableLike',
+            format: ['camelCase', 'PascalCase', 'snake_case', 'UPPER_CASE'],
             leadingUnderscore: 'allow',
             trailingUnderscore: 'allow',
           },
@@ -92,6 +93,7 @@ const config: eslint.Linter.Config = {
           // "member-like" (i.e. properties, methods, etc.) must use camel case, pascal case or upper case with only leading underscore allowed
           {
             selector: 'memberLike',
+            format: ['camelCase', 'PascalCase', 'snake_case', 'UPPER_CASE'],
             leadingUnderscore: 'allow',
             trailingUnderscore: 'allow',
           },
