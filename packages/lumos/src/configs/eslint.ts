@@ -1,8 +1,10 @@
 import { Path } from '@beemo/core';
 import { getConfig } from '@oriflame/config-eslint';
 import fs from 'fs';
+import prettier from 'prettier';
 
 import { getSettings } from '../helpers/getSettings';
+import prettierConfig from './prettier';
 
 const { tool } = process.lumos || process.beemo;
 
@@ -27,11 +29,16 @@ if (workspacesEnabled) {
     );
   });
 
+  const config = JSON.stringify({
+    extends: './tsconfig.options.json',
+    include: include.map((i) => i.path()),
+  });
+
   fs.writeFileSync(
     project.path(),
-    JSON.stringify({
-      extends: './tsconfig.options.json',
-      include: include.map((i) => i.path()),
+    prettier.format(config, {
+      ...prettierConfig,
+      filepath: 'tsconfig.eslint.json',
     }),
     'utf8',
   );
@@ -44,11 +51,16 @@ if (workspacesEnabled) {
     new Path(`${typesFolder}/**/*`).path(),
   ];
 
+  const config = JSON.stringify({
+    extends: './tsconfig.json',
+    include,
+  });
+
   fs.writeFileSync(
     project.path(),
-    JSON.stringify({
-      extends: './tsconfig.json',
-      include,
+    prettier.format(config, {
+      ...prettierConfig,
+      filepath: 'tsconfig.eslint.json',
     }),
     'utf8',
   );
