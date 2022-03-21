@@ -61,7 +61,41 @@ const config: eslint.Linter.Config = {
       files: [`*.test.${TSX_EXTS_GROUP}`],
       rules: {
         '@typescript-eslint/ban-ts-comment': 'off',
-        '@typescript-eslint/naming-convention': 'off',
+        '@typescript-eslint/naming-convention': [
+          'warn',
+          // interfaces cannot start with "I"
+          {
+            selector: 'interface',
+            format: ['PascalCase'],
+            custom: {
+              regex: '^I[A-Z]',
+              match: false,
+            },
+          },
+          {
+            selector: 'typeLike',
+            format: ['PascalCase'],
+          },
+          // variables and parameters must use camel case, pascal case or upper case with no leading and trailing underscores - exceptions are names that are only underscores (used e.g. for placeholder parameters)
+          {
+            selector: 'variableLike',
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+          },
+          // functions must use camel case or pascal case with no leading and trailing underscores
+          {
+            selector: 'function',
+            format: ['camelCase', 'PascalCase'],
+            leadingUnderscore: 'forbid',
+            trailingUnderscore: 'forbid',
+          },
+          // "member-like" (i.e. properties, methods, etc.) must use camel case, pascal case or upper case with only leading underscore allowed
+          {
+            selector: 'memberLike',
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+          },
+        ],
       },
     },
   ],
