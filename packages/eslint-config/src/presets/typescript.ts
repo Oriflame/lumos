@@ -61,6 +61,7 @@ const config: eslint.Linter.Config = {
       files: [`*.test.${TSX_EXTS_GROUP}`],
       rules: {
         '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/naming-convention': 'off',
       },
     },
   ],
