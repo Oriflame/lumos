@@ -249,7 +249,7 @@ const config: eslint.Linter.Config['rules'] = {
       leadingUnderscore: 'allow',
       trailingUnderscore: 'forbid',
       filter: {
-        regex: '__typename|^&', // don't check: GraphQL specific property, properties used as CSS selectors
+        regex: '__typename|^&|^..+', // don't check: GraphQL specific property, properties used as CSS selectors
         match: false,
       },
     },
