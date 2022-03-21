@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.1 - 2022-03-21
+
+#### 🎨 Styles
+
+- Prettify tsconfig.eslint config. (#1017) ([c12dd9f](https://github.com/Oriflame/lumos/commit/c12dd9f06201ca5c6aa7e6b3b134ac1ecc4f6bc5)), work items [#1017](https://github.com/Oriflame/lumos/issues/1017)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([9e55cb5](https://github.com/Oriflame/lumos/commit/9e55cb52ac41ce0699abbe873dfa52e64d938430))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.7.0 - 2022-03-18
 
 #### 🚀 Updates

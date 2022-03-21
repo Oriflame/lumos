@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.1 - 2022-03-21
+
+#### 🎨 Styles
+
+- Prettify tsconfig.eslint config. (#1017) ([c12dd9f](https://github.com/Oriflame/lumos/commit/c12dd9f06201ca5c6aa7e6b3b134ac1ecc4f6bc5)), work items [#1017](https://github.com/Oriflame/lumos/issues/1017)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.7.0 - 2022-03-18
 
 **Note:** Version bump only for package @oriflame/lumos
