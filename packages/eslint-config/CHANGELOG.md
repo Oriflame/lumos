@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.3 - 2022-03-22
+
+#### 🐞 Fixes
+
+- **[eslint-config]** Update `naming-convention` rule. (#1019) ([8ae4a69](https://github.com/Oriflame/lumos/commit/8ae4a69c8dc0d5b19c13fec51649f97017f3dbdb)), work items [#1019](https://github.com/Oriflame/lumos/issues/1019)
+
+#### 📦 Dependencies
+
+- update typescript-eslint monorepo. (#1020) ([222fa3a](https://github.com/Oriflame/lumos/commit/222fa3a002d109090add4c1522b0a0d3475e4ff0)), work items [#1020](https://github.com/Oriflame/lumos/issues/1020)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.7.2 - 2022-03-21
 
 #### 🐞 Fixes
