@@ -36,7 +36,7 @@
     "typescript.js"
   ],
   "dependencies": {
-    "@babel/core": "^7.17.5",
+    "@babel/core": "^7.17.8",
     "@babel/eslint-parser": "^7.17.0",
     "@next/eslint-plugin-next": "^12.1.0",
     "@oriflame/lumos-common": "^5.7.3",
