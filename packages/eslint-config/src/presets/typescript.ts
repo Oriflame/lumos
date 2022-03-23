@@ -72,16 +72,16 @@ const config: eslint.Linter.Config = {
               match: false,
             },
           },
-          {
-            selector: 'typeLike',
-            format: ['PascalCase'],
-          },
           // variables and parameters must use camel case, pascal case or upper case with no leading and trailing underscores - exceptions are names that are only underscores (used e.g. for placeholder parameters)
           {
             selector: 'variableLike',
             format: ['camelCase', 'PascalCase', 'snake_case', 'UPPER_CASE'],
             leadingUnderscore: 'allow',
             trailingUnderscore: 'allow',
+            filter: {
+              regex: '^(_+|__webpack_public_path__)$',
+              match: false,
+            },
           },
           // functions must use camel case or pascal case with no leading and trailing underscores
           {
@@ -90,12 +90,20 @@ const config: eslint.Linter.Config = {
             leadingUnderscore: 'forbid',
             trailingUnderscore: 'forbid',
           },
-          // "member-like" (i.e. properties, methods, etc.) must use camel case, pascal case or upper case with only leading underscore allowed
           {
             selector: 'memberLike',
             format: ['camelCase', 'PascalCase', 'snake_case', 'UPPER_CASE'],
             leadingUnderscore: 'allow',
             trailingUnderscore: 'allow',
+            filter: {
+              regex: '__typename|^&|^..+', // don't check: GraphQL specific property, properties used as CSS selectors
+              match: false,
+            },
+          },
+          // "type-like" (i.e. interface, enum, etc.) must use pascal case
+          {
+            selector: 'typeLike',
+            format: ['PascalCase'],
           },
         ],
       },
