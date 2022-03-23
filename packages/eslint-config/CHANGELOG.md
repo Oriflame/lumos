@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.5 - 2022-03-23
+
+#### 🐞 Fixes
+
+- **[eslint-config]** Update naming convention. ([ae1644c](https://github.com/Oriflame/lumos/commit/ae1644ca0698f4af9d40c946334a36cf46f68be1))
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.7.4 - 2022-03-23
 
 #### 📦 Dependencies
