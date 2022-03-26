@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.6 - 2022-03-26
+
+#### 📦 Dependencies
+
+- update dependency eslint-import-resolver-typescript. (#1023) ([92680de](https://github.com/Oriflame/lumos/commit/92680de19f0557795028a5a90380a862c7fba204)), work items [#1023](https://github.com/Oriflame/lumos/issues/1023)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.7.5 - 2022-03-23
 
 #### 🐞 Fixes
