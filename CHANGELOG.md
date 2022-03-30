@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.7 - 2022-03-30
+
+#### 📦 Dependencies
+
+- update react monorepo. (#1024) ([a3564bf](https://github.com/Oriflame/lumos/commit/a3564bf41b0d2d56f16a81d0fcb7b2336371a472)), work items [#1024](https://github.com/Oriflame/lumos/issues/1024)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([7eb271c](https://github.com/Oriflame/lumos/commit/7eb271cbb21021f7cce8a2a9de3586cb299e5508))
+- update dependency react. (#1025) ([ce30b66](https://github.com/Oriflame/lumos/commit/ce30b66177ce60b191edd78bdc10224bb732a4be)), work items [#1025](https://github.com/Oriflame/lumos/issues/1025)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.7.6 - 2022-03-26
 
 #### 📦 Dependencies

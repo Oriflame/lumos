@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.7 - 2022-03-30
+
+#### 🛠 Internals
+
+- update dependency react. (#1025) ([ce30b66](https://github.com/Oriflame/lumos/commit/ce30b66177ce60b191edd78bdc10224bb732a4be)), work items [#1025](https://github.com/Oriflame/lumos/issues/1025)
+
+**Note:** Version bump only for package @oriflame/config-babel
+
+
+
+
+
 ### 5.7.6 - 2022-03-26
 
 **Note:** Version bump only for package @oriflame/config-babel
