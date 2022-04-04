@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.11 - 2022-04-04
+
+#### 📦 Dependencies
+
+- update dependency @pmmmwh/react-refresh-webpack-plugin. (#1029) ([0b175a3](https://github.com/Oriflame/lumos/commit/0b175a35c72075897bcebe1bd1c2df7eeddcdccc)), work items [#1029](https://github.com/Oriflame/lumos/issues/1029)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.7.10 - 2022-04-02
 
 **Note:** Version bump only for package @oriflame/config-webpack
