@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.13 - 2022-04-06
+
+#### 📦 Dependencies
+
+- update dependency @emotion/jest. (#1032) ([26ead2f](https://github.com/Oriflame/lumos/commit/26ead2f45fda0197fca0c1e8f61e486dc001ef18)), work items [#1032](https://github.com/Oriflame/lumos/issues/1032)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([153fbc7](https://github.com/Oriflame/lumos/commit/153fbc74ebdbdf02e5082ec21ed27f694b5f519a))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.7.12 - 2022-04-06
 
 #### 📦 Dependencies
