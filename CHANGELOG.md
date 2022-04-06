@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.12 - 2022-04-06
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-import. (#1031) ([08da902](https://github.com/Oriflame/lumos/commit/08da902db697a9341ab1863c30e971b128b411e6)), work items [#1031](https://github.com/Oriflame/lumos/issues/1031)
+- update dependency jest-junit. (#1030) ([3caeef0](https://github.com/Oriflame/lumos/commit/3caeef0fee576794c2c2634cfeab5ed2150bf8f2)), work items [#1030](https://github.com/Oriflame/lumos/issues/1030)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([9ff623f](https://github.com/Oriflame/lumos/commit/9ff623fa4829013294806eb8eb9763257e07c7f8))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.7.11 - 2022-04-04
 
 #### 📦 Dependencies

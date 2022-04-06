@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-typescript",
-  "version": "5.7.11",
+  "version": "5.7.12",
   "description": "Reusable typescript config.",
   "keywords": [
     "lumos",
@@ -28,8 +28,8 @@
     "src/**/*.{ts,tsx,json}"
   ],
   "dependencies": {
-    "@oriflame/lumos-common": "^5.7.11",
-    "tsconfig-oriflame": "^5.7.11"
+    "@oriflame/lumos-common": "^5.7.12",
+    "tsconfig-oriflame": "^5.7.12"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.4",
