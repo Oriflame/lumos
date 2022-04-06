@@ -2436,9 +2436,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/jest@npm:^11.8.0":
-  version: 11.8.0
-  resolution: "@emotion/jest@npm:11.8.0"
+"@emotion/jest@npm:^11.9.0":
+  version: 11.9.0
+  resolution: "@emotion/jest@npm:11.9.0"
   dependencies:
     "@babel/runtime": ^7.13.10
     "@emotion/css-prettifier": ^1.0.1
@@ -2453,7 +2453,7 @@ __metadata:
       optional: true
     enzyme-to-json:
       optional: true
-  checksum: 00a6b31eab5a457bb02ff25a5930860566926c8afd10f6c06c2e3e74502ef0577df46902aa45762632316a4cca6b96df9cb1dd9d0be6aad0276b3990f3ba9384
+  checksum: aedecc4ef7ddaee42e2679d451e9af7f708a48c595155c3afaf2b6afe491fb07cfb8f9b134d03129307b1678002ba183a98ccf8cee4a491f58ee175c39254608
   languageName: node
   linkType: hard
 
@@ -4043,7 +4043,7 @@ __metadata:
     "@beemo/core": ^2.1.4
     "@beemo/driver-babel": ^2.0.6
     "@beemo/driver-jest": ^2.0.5
-    "@emotion/jest": ^11.8.0
+    "@emotion/jest": ^11.9.0
     "@oriflame/lumos-common": ^5.7.12
     "@testing-library/jest-dom": ^5.16.2
     "@testing-library/react": ">=13.0.0"
