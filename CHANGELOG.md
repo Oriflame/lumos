@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.14 - 2022-04-07
+
+#### 🐞 Fixes
+
+- Fix incorrect regexp in `naming-convention` ESLint rule. (#1033) ([0d6ca97](https://github.com/Oriflame/lumos/commit/0d6ca97d6710e3df31d92aebc00e7dcce5752a29)), work items [#1033](https://github.com/Oriflame/lumos/issues/1033)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([14cd796](https://github.com/Oriflame/lumos/commit/14cd79635cf30248e0dc7284241a969871f7ea67))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.7.13 - 2022-04-06
 
 #### 📦 Dependencies
