@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.15 - 2022-04-11
+
+#### 📦 Dependencies
+
+- update emotion monorepo. (#1034) ([59cef25](https://github.com/oriflame/lumos/commit/59cef255fe899ac5bab1eb29113aac4369b952be)), work items [#1034](https://github.com/oriflame/lumos/issues/1034)
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
 ### 5.7.14 - 2022-04-07
 
 **Note:** Version bump only for package @oriflame/babel-preset
