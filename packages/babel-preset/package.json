@@ -59,7 +59,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
-    "@emotion/babel-plugin": "^11.7.2",
+    "@emotion/babel-plugin": "^11.9.2",
     "@oriflame/lumos-common": "^5.7.14",
     "babel-plugin-graphql-tag": "^3.3.0",
     "babel-plugin-module-resolver": "^4.1.0",
