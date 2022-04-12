@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.16 - 2022-04-12
+
+#### 🐞 Fixes
+
+- Add missing setting to jest. ([041c1df](https://github.com/Oriflame/lumos/commit/041c1df72f05802909965445803c972f000b321f))
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.7.15 - 2022-04-11
 
 **Note:** Version bump only for package @oriflame/lumos
