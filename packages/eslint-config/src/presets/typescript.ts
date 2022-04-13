@@ -40,6 +40,8 @@ const config: eslint.Linter.Config = {
 
       parserOptions: {
         project,
+        // Fixed issue with webstorm
+        tsconfigRootDir: process.cwd(),
       },
 
       settings: {
