@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.17 - 2022-04-13
+
+#### 🐞 Fixes
+
+- **[eslint-config]** Fix issue with webstorm. (#1036) ([fd4312e](https://github.com/Oriflame/lumos/commit/fd4312e33f1aeaeaf58f7f0aa538742062ad83be)), work items [#1036](https://github.com/Oriflame/lumos/issues/1036)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.7.16 - 2022-04-12
 
 **Note:** Version bump only for package eslint-config-oriflame
