@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.18 - 2022-04-16
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.7.17 - 2022-04-13
 
 **Note:** Version bump only for package @oriflame/lumos
