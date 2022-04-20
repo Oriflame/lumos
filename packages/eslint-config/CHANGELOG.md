@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.20 - 2022-04-20
+
+#### 📦 Dependencies
+
+- Update eslint to 8.13.0. ([34af65d](https://github.com/Oriflame/lumos/commit/34af65dfbf557183dc389da3b564fdf316e84eca))
+- Update eslint-import-resolver-typescript to 2.7.1. ([3d352df](https://github.com/Oriflame/lumos/commit/3d352df5e17aff0191c7c2fc495087622d59f193))
+- Update eslint-plugin-jest to 26.1.4. ([cce3d92](https://github.com/Oriflame/lumos/commit/cce3d922e6a068c3f01b32250bcd8a52fb362069))
+- Update eslint-plugin-testing-library to 5.3.1. ([a6a8448](https://github.com/Oriflame/lumos/commit/a6a8448adb7e5162800bb17cde82fe36f27181ba))
+- Update next/eslint-plugin to 12.1.5. ([fc6e715](https://github.com/Oriflame/lumos/commit/fc6e715a0bf58ae319c0c5a6e8a33108282722f0))
+- Update prettier to 2.6.2. ([4f84a29](https://github.com/Oriflame/lumos/commit/4f84a299f6b7c78079a32d45990dadc97c2e45ec))
+- Update typescript-eslint to 5.20.0. ([cd535db](https://github.com/Oriflame/lumos/commit/cd535db23628d8d0a55e2a2fcb592a8595d1890e))
+
+#### 🛠 Internals
+
+- Change engines. ([b35ad23](https://github.com/Oriflame/lumos/commit/b35ad23c5baae449bf15ec591ad1b2453daa21b8))
+- Update types/node to 16.11.27. ([f116be7](https://github.com/Oriflame/lumos/commit/f116be7859fa7db56668c0d810d1f804a66fdc78))
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.7.19 - 2022-04-20
 
 #### 📦 Dependencies

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.20 - 2022-04-20
+
+#### 📦 Dependencies
+
+- Update eslint to 8.13.0. ([34af65d](https://github.com/Oriflame/lumos/commit/34af65dfbf557183dc389da3b564fdf316e84eca))
+
+#### 🛠 Internals
+
+- Change engines. ([b35ad23](https://github.com/Oriflame/lumos/commit/b35ad23c5baae449bf15ec591ad1b2453daa21b8))
+- Update types/node to 16.11.27. ([f116be7](https://github.com/Oriflame/lumos/commit/f116be7859fa7db56668c0d810d1f804a66fdc78))
+
+**Note:** Version bump only for package @oriflame/config-eslint
+
+
+
+
+
 ### 5.7.19 - 2022-04-20
 
 **Note:** Version bump only for package @oriflame/config-eslint

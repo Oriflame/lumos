@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.20 - 2022-04-20
+
+#### 📦 Dependencies
+
+- Update babel/core to 7.17.9. ([fe8184a](https://github.com/Oriflame/lumos/commit/fe8184ae9a5d9f4c3931e6cdebad0b21d28a408a))
+- Update chalk to 5.0.1. ([19935b4](https://github.com/Oriflame/lumos/commit/19935b42d2acb11bc9bebd61584c42a66ac561b1))
+- Update dotenv-expand to 8.0.3. ([8de2b64](https://github.com/Oriflame/lumos/commit/8de2b641358c0a821ee7dc35b155065785f2da64))
+- Update eslint to 8.13.0. ([34af65d](https://github.com/Oriflame/lumos/commit/34af65dfbf557183dc389da3b564fdf316e84eca))
+- Update eslint-import-resolver-typescript to 2.7.1. ([3d352df](https://github.com/Oriflame/lumos/commit/3d352df5e17aff0191c7c2fc495087622d59f193))
+- Update eslint-plugin-jest to 26.1.4. ([cce3d92](https://github.com/Oriflame/lumos/commit/cce3d922e6a068c3f01b32250bcd8a52fb362069))
+- Update eslint-plugin-testing-library to 5.3.1. ([a6a8448](https://github.com/Oriflame/lumos/commit/a6a8448adb7e5162800bb17cde82fe36f27181ba))
+- Update next/eslint-plugin to 12.1.5. ([fc6e715](https://github.com/Oriflame/lumos/commit/fc6e715a0bf58ae319c0c5a6e8a33108282722f0))
+- Update oriflame dependencies. ([4bc1345](https://github.com/Oriflame/lumos/commit/4bc1345d43d6453e38917ec0c20805230fa08d5f))
+- Update postcss-preset-env to 7.4.3. ([aae9622](https://github.com/Oriflame/lumos/commit/aae9622b6446887c3e210143d5a3bd9df6cdbbfb))
+- Update ppostcss 8.4.12. ([9e6c420](https://github.com/Oriflame/lumos/commit/9e6c4209900d8d2b73b86df0dc388e2e25146404))
+- Update prettier to 2.6.2. ([4f84a29](https://github.com/Oriflame/lumos/commit/4f84a299f6b7c78079a32d45990dadc97c2e45ec))
+- Update testing-library/jest-dom to 5.16.4. ([7aac179](https://github.com/Oriflame/lumos/commit/7aac17932dd5485c89a9b5728ca0a2b4196ac393))
+- Update typescript to 4.6.3. ([11a630e](https://github.com/Oriflame/lumos/commit/11a630e09574038ad108e383cba8a68e20ffa2a8))
+- Update typescript-eslint to 5.20.0. ([cd535db](https://github.com/Oriflame/lumos/commit/cd535db23628d8d0a55e2a2fcb592a8595d1890e))
+- Update webpack to 5.72.0. ([6962326](https://github.com/Oriflame/lumos/commit/69623268ee55450c5468b95688a3cc4093c24c5f))
+- Update webpack-dev-server 4.8.1. ([d599539](https://github.com/Oriflame/lumos/commit/d599539a3c238891a88e937725126190fcecefdd))
+
+#### 🛠 Internals
+
+- Change engines. ([b35ad23](https://github.com/Oriflame/lumos/commit/b35ad23c5baae449bf15ec591ad1b2453daa21b8))
+- Regenerate yarn lock. [ci skip] ([66276df](https://github.com/Oriflame/lumos/commit/66276df1d67ab19150357e556739279c142ad54e))
+- Update commitlint/cli to 16.2.3. ([b3eafda](https://github.com/Oriflame/lumos/commit/b3eafdac994bfa9c32fdbdfda167fab77970311d))
+- Update packemon to 2.0.0. ([c349e5d](https://github.com/Oriflame/lumos/commit/c349e5d8b1ef522cca3c9fd6fc0283310b2f981a))
+- Update types/node to 16.11.27. ([f116be7](https://github.com/Oriflame/lumos/commit/f116be7859fa7db56668c0d810d1f804a66fdc78))
+- Update types/prettier to 2.6.0. ([6b0f159](https://github.com/Oriflame/lumos/commit/6b0f1599cc0a07d05c5f004ed821241de6f4d686))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.7.19 - 2022-04-20
 
 #### 📦 Dependencies

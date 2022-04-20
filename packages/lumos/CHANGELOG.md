@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.20 - 2022-04-20
+
+#### 📦 Dependencies
+
+- Update chalk to 5.0.1. ([19935b4](https://github.com/Oriflame/lumos/commit/19935b42d2acb11bc9bebd61584c42a66ac561b1))
+- Update eslint to 8.13.0. ([34af65d](https://github.com/Oriflame/lumos/commit/34af65dfbf557183dc389da3b564fdf316e84eca))
+- Update oriflame dependencies. ([4bc1345](https://github.com/Oriflame/lumos/commit/4bc1345d43d6453e38917ec0c20805230fa08d5f))
+- Update prettier to 2.6.2. ([4f84a29](https://github.com/Oriflame/lumos/commit/4f84a299f6b7c78079a32d45990dadc97c2e45ec))
+- Update typescript to 4.6.3. ([11a630e](https://github.com/Oriflame/lumos/commit/11a630e09574038ad108e383cba8a68e20ffa2a8))
+- Update webpack to 5.72.0. ([6962326](https://github.com/Oriflame/lumos/commit/69623268ee55450c5468b95688a3cc4093c24c5f))
+
+#### 🛠 Internals
+
+- Change engines. ([b35ad23](https://github.com/Oriflame/lumos/commit/b35ad23c5baae449bf15ec591ad1b2453daa21b8))
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.7.19 - 2022-04-20
 
 #### 📦 Dependencies

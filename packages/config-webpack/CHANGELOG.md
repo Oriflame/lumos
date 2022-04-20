@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.20 - 2022-04-20
+
+#### 📦 Dependencies
+
+- Update dotenv-expand to 8.0.3. ([8de2b64](https://github.com/Oriflame/lumos/commit/8de2b641358c0a821ee7dc35b155065785f2da64))
+- Update postcss-preset-env to 7.4.3. ([aae9622](https://github.com/Oriflame/lumos/commit/aae9622b6446887c3e210143d5a3bd9df6cdbbfb))
+- Update ppostcss 8.4.12. ([9e6c420](https://github.com/Oriflame/lumos/commit/9e6c4209900d8d2b73b86df0dc388e2e25146404))
+- Update webpack to 5.72.0. ([6962326](https://github.com/Oriflame/lumos/commit/69623268ee55450c5468b95688a3cc4093c24c5f))
+- Update webpack-dev-server 4.8.1. ([d599539](https://github.com/Oriflame/lumos/commit/d599539a3c238891a88e937725126190fcecefdd))
+
+#### 🛠 Internals
+
+- Change engines. ([b35ad23](https://github.com/Oriflame/lumos/commit/b35ad23c5baae449bf15ec591ad1b2453daa21b8))
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.7.19 - 2022-04-20
 
 #### 📦 Dependencies

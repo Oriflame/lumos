@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.20 - 2022-04-20
+
+#### 🛠 Internals
+
+- Change engines. ([b35ad23](https://github.com/oriflame/lumos/commit/b35ad23c5baae449bf15ec591ad1b2453daa21b8))
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
 ### 5.7.19 - 2022-04-20
 
 **Note:** Version bump only for package jest-preset-oriflame
