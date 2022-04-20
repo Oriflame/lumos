@@ -38,7 +38,7 @@
     "@beemo/driver-jest": "^2.0.5",
     "@emotion/jest": "^11.9.1",
     "@oriflame/lumos-common": "^5.7.19",
-    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/jest-dom": "^5.16.4",
     "@types/jest": "^27.4.1",
     "dom-storage": "^2.1.0",
     "graphql": "^16.3.0",
