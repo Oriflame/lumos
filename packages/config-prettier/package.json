@@ -32,7 +32,7 @@
     "@beemo/core": "^2.1.4",
     "@beemo/driver-prettier": "^2.0.6",
     "@types/prettier": "^2.6.0",
-    "prettier": "^2.6.0"
+    "prettier": "^2.6.2"
   },
   "dependencies": {
     "@oriflame/lumos-common": "^5.7.19",
