@@ -3979,7 +3979,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/babel-preset@workspace:packages/babel-preset"
   dependencies:
-    "@babel/core": ^7.17.5
+    "@babel/core": ^7.17.9
     "@babel/plugin-proposal-class-properties": ^7.16.7
     "@babel/plugin-proposal-decorators": ^7.17.9
     "@babel/plugin-proposal-export-default-from": ^7.16.7
@@ -4017,7 +4017,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/config-babel@workspace:packages/config-babel"
   dependencies:
-    "@babel/core": ^7.17.5
+    "@babel/core": ^7.17.9
     "@beemo/core": ^2.1.4
     "@beemo/driver-babel": ^2.0.6
     "@oriflame/babel-preset": ^5.7.19
