@@ -4159,7 +4159,7 @@ __metadata:
     css-loader: ^6.7.1
     css-minimizer-webpack-plugin: ^3.4.1
     dotenv: ^16.0.0
-    dotenv-expand: ^8.0.2
+    dotenv-expand: ^8.0.3
     execa: ^5.1.1
     file-loader: ^6.2.0
     graphql-tag: ^2.12.6
@@ -8297,10 +8297,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv-expand@npm:^8.0.2":
-  version: 8.0.2
-  resolution: "dotenv-expand@npm:8.0.2"
-  checksum: 4b42b2602478bccf1bfde25c97ecc0fee4059e74df4f8fda7f076b2ef428315e00b301bda43eec3707bfa083837abb284d6fec91571f164449243001ed8eef81
+"dotenv-expand@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "dotenv-expand@npm:8.0.3"
+  checksum: 128ce90ac825b543de3ece0154a51b056ab0dc36bb26d97a68cd0b8707327ecd3c182fb6ac63b26a0fcdfa85064419906a1065cb634f1f9dc08ad311375f1fc0
   languageName: node
   linkType: hard
 
