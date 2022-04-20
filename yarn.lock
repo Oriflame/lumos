@@ -4043,7 +4043,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/config-danger@workspace:packages/config-danger"
   dependencies:
-    "@oriflame/conventional-changelog": ^1.2.28
+    "@oriflame/conventional-changelog": ^1.2.40
     "@types/node": ^16.11.26
     danger: ^11.0.2
   languageName: unknown
@@ -4203,46 +4203,30 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/conventional-changelog-lint-config@npm:^1.1.32":
-  version: 1.1.32
-  resolution: "@oriflame/conventional-changelog-lint-config@npm:1.1.32"
+"@oriflame/conventional-changelog-lint-config@npm:^1.1.42":
+  version: 1.1.42
+  resolution: "@oriflame/conventional-changelog-lint-config@npm:1.1.42"
   dependencies:
-    "@oriflame/conventional-changelog-types": ^1.0.35
+    "@oriflame/conventional-changelog-types": ^1.0.45
   peerDependencies:
     "@commitlint/cli": ">=12"
-  checksum: 94b59870351aea95f70a0e6a98769bbf1f075ff20a69ba012027c5af203961fac36ea74818ff2b0926d1d61eadb157272a06e658756d19dcfd07a692b1a35a45
+  checksum: d9ccead03e0de672a9dc7dcc20fe9533132cf6fff00bfb502af96382429d4084cb86ea2d8cf0e3582a1921ce958f41962c0e753506ae98bfbdeaaf04eb215fde
   languageName: node
   linkType: hard
 
-"@oriflame/conventional-changelog-types@npm:^1.0.33":
-  version: 1.0.33
-  resolution: "@oriflame/conventional-changelog-types@npm:1.0.33"
-  checksum: f297b279a1134c2f8d6eaf6140a5679b6f1b0954cea0537f651d80f16d1953ea45290a37b019f7f7151f0e43f78e2bd8a2d8aa99bbabf13aa6fece8b5375ac4a
+"@oriflame/conventional-changelog-types@npm:^1.0.45":
+  version: 1.0.45
+  resolution: "@oriflame/conventional-changelog-types@npm:1.0.45"
+  checksum: d836da6be95737c4dd6f05acef8455ffac62cb92454dbe90988cc4ccf879d4b6ef66f865f17bfa22f9d2b6e2052310b8576278d64a9558dadb3c98885c2897e5
   languageName: node
   linkType: hard
 
-"@oriflame/conventional-changelog-types@npm:^1.0.35":
-  version: 1.0.35
-  resolution: "@oriflame/conventional-changelog-types@npm:1.0.35"
-  checksum: 5ddcfa50a7e938485d66059b4eb330624670855427ede0ae931c8c8ed3eae2a7e5534d2c04adf529c6f17a10f7011abfe220c466e2243012a5982ca3cb09431e
-  languageName: node
-  linkType: hard
-
-"@oriflame/conventional-changelog@npm:^1.2.28":
-  version: 1.2.28
-  resolution: "@oriflame/conventional-changelog@npm:1.2.28"
+"@oriflame/conventional-changelog@npm:^1.2.40":
+  version: 1.2.40
+  resolution: "@oriflame/conventional-changelog@npm:1.2.40"
   dependencies:
-    "@oriflame/conventional-changelog-types": ^1.0.33
-  checksum: e300ecd28221295fbea3ba775d1fe99ca4288972d577a7175b14638870719df4542fe60bf9f8ec2d7024b1326adc72998e90289695a609c72aaabf75597e6757
-  languageName: node
-  linkType: hard
-
-"@oriflame/conventional-changelog@npm:^1.2.30":
-  version: 1.2.30
-  resolution: "@oriflame/conventional-changelog@npm:1.2.30"
-  dependencies:
-    "@oriflame/conventional-changelog-types": ^1.0.35
-  checksum: 7f7603c509608204ef47bbb1a31b34957e1d5500213eb4c0ef609ab4c690212d370b20377b47e7037003303c35806c32ee7b6adbdc4ceab4a5331ee8a2214488
+    "@oriflame/conventional-changelog-types": ^1.0.45
+  checksum: b76071583121a9c765785d118eaf8a6af563817f2fa9a7026374b40294a65c700503c32c5c25e613107c2b6aeca5a9366d4099d617f45c0c737307dfb7d1a634
   languageName: node
   linkType: hard
 
@@ -4280,7 +4264,7 @@ __metadata:
     "@oriflame/config-prettier": ^5.7.19
     "@oriflame/config-typescript": ^5.7.19
     "@oriflame/config-webpack": ^5.7.19
-    "@oriflame/conventional-changelog": ^1.2.28
+    "@oriflame/conventional-changelog": ^1.2.40
     "@oriflame/lumos-common": ^5.7.19
     chalk: ^5.0.0
     check-node-version: ^4.2.1
@@ -12615,8 +12599,8 @@ __metadata:
     "@beemo/cli": ^2.0.6
     "@beemo/core": ^2.1.4
     "@commitlint/cli": ^16.2.1
-    "@oriflame/conventional-changelog": ^1.2.30
-    "@oriflame/conventional-changelog-lint-config": ^1.1.32
+    "@oriflame/conventional-changelog": ^1.2.40
+    "@oriflame/conventional-changelog-lint-config": ^1.1.42
     cross-env: ^7.0.3
     eslint: ^8.11.0
     eslint-find-rules: ^4.1.0
