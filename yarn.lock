@@ -1525,16 +1525,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/polyfill@npm:^7.2.5":
-  version: 7.12.1
-  resolution: "@babel/polyfill@npm:7.12.1"
-  dependencies:
-    core-js: ^2.6.5
-    regenerator-runtime: ^0.13.4
-  checksum: 3f59a9d85a41b390b044a1be13e11ae6d8efbfcf4e07217964585c7cef337b828eecfc5e164083227189146d2b6efc1affae8f59c831438eb40b848ab6fe5f39
-  languageName: node
-  linkType: hard
-
 "@babel/preset-env@npm:^7.16.11":
   version: 7.16.11
   resolution: "@babel/preset-env@npm:7.16.11"
@@ -3962,7 +3952,7 @@ __metadata:
   dependencies:
     "@oriflame/conventional-changelog": ^1.2.40
     "@types/node": ^16.11.27
-    danger: ^11.0.2
+    danger: ^11.0.4
   languageName: unknown
   linkType: soft
 
@@ -7396,10 +7386,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^2.6.5":
-  version: 2.6.12
-  resolution: "core-js@npm:2.6.12"
-  checksum: 44fa9934a85f8c78d61e0c8b7b22436330471ffe59ec5076fe7f324d6e8cf7f824b14b1c81ca73608b13bdb0fef035bd820989bf059767ad6fa13123bb8bd016
+"core-js@npm:^3.8.2":
+  version: 3.22.2
+  resolution: "core-js@npm:3.22.2"
+  checksum: 23efd6148d2f564852f23de426401c86f1d8af410eacccf22ae5dd82b1e9de558f05692cacd4b7e709d47993c670d7bca6f601d0b2ab32cf397a113fc5b7d80c
   languageName: node
   linkType: hard
 
@@ -7756,15 +7746,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"danger@npm:^11.0.2":
-  version: 11.0.2
-  resolution: "danger@npm:11.0.2"
+"danger@npm:^11.0.4":
+  version: 11.0.4
+  resolution: "danger@npm:11.0.4"
   dependencies:
-    "@babel/polyfill": ^7.2.5
     "@octokit/rest": ^18.12.0
     async-retry: 1.2.3
     chalk: ^2.3.0
     commander: ^2.18.0
+    core-js: ^3.8.2
     debug: ^4.1.1
     fast-json-patch: ^3.0.0-1
     get-stdin: ^6.0.0
@@ -7794,6 +7784,7 @@ __metadata:
     pinpoint: ^1.1.0
     prettyjson: ^1.2.1
     readline-sync: ^1.4.9
+    regenerator-runtime: ^0.13.9
     require-from-string: ^2.0.2
     supports-hyperlinks: ^1.0.1
   bin:
@@ -7806,7 +7797,7 @@ __metadata:
     danger-process: distribution/commands/danger-process.js
     danger-reset-status: distribution/commands/danger-reset-status.js
     danger-runner: distribution/commands/danger-runner.js
-  checksum: 0fb493cc47aae4d377dc22af6061d3fe6e3464a4fbfde6094abdd8e342a8e6472e1f43d4714927eefcac8324b2fca7b4ee7ffa787cd061290028d7b0e43ed235
+  checksum: dcbef9943dab7ece0808ae3216e31f2dc991ef7d3af40edf062ebeba46501b1ba2423afffc444b62aad3b50b60f0858f3b43b264dc7f2953b4b6277a80d7f987
   languageName: node
   linkType: hard
 
@@ -15746,7 +15737,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regenerator-runtime@npm:^0.13.4":
+"regenerator-runtime@npm:^0.13.4, regenerator-runtime@npm:^0.13.9":
   version: 0.13.9
   resolution: "regenerator-runtime@npm:0.13.9"
   checksum: 65ed455fe5afd799e2897baf691ca21c2772e1a969d19bb0c4695757c2d96249eb74ee3553ea34a91062b2a676beedf630b4c1551cc6299afb937be1426ec55e
