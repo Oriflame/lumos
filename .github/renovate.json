@@ -39,6 +39,13 @@
       ],
       "rangeStrategy": "bump",
       "semanticCommitType": "deps"
+    },
+    {
+      "matchDepTypes": [
+        "resolutions"
+      ],
+      "rangeStrategy": "bump",
+      "semanticCommitType": "build"
     }
   ]
 }
