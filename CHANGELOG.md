@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.22 - 2022-04-23
+
+#### 📦 Dependencies
+
+- update dependency danger to ^11.0.4 (#1040) ([b42c608](https://github.com/Oriflame/lumos/commit/b42c6086ac7dad09c6ef0365076aee208336e1fa)), work items [#1040](https://github.com/Oriflame/lumos/issues/1040)
+- update dependency danger to ^11.0.5 (#1046) ([76e6cc3](https://github.com/Oriflame/lumos/commit/76e6cc3c4c5980abd4f826525c9fe8bf4e0e237e)), work items [#1046](https://github.com/Oriflame/lumos/issues/1046)
+- update dependency eslint-plugin-jest to ^26.1.5 (#1048) ([b9a3aff](https://github.com/Oriflame/lumos/commit/b9a3aff442650855daee6af182874cc3d63d8c8d)), work items [#1048](https://github.com/Oriflame/lumos/issues/1048)
+
+#### 🛠 Internals
+
+- Update renovate config. ([9174f1f](https://github.com/Oriflame/lumos/commit/9174f1f1b7c76e5897f6fba9e7078abe28cb9d94))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.7.21 - 2022-04-22
 
 #### 🛠 Internals
