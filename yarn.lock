@@ -3951,7 +3951,7 @@ __metadata:
   resolution: "@oriflame/config-danger@workspace:packages/config-danger"
   dependencies:
     "@oriflame/conventional-changelog": ^1.2.40
-    "@types/node": ^16.11.28
+    "@types/node": ^16.11.31
     danger: ^11.0.5
   languageName: unknown
   linkType: soft
@@ -3963,7 +3963,7 @@ __metadata:
     "@beemo/core": ^2.1.4
     "@beemo/driver-eslint": ^2.0.5
     "@oriflame/lumos-common": ^5.7.28
-    "@types/node": ^16.11.28
+    "@types/node": ^16.11.31
     eslint: ^8.14.0
     eslint-config-oriflame: ^5.7.28
   peerDependencies:
@@ -4866,10 +4866,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.28":
-  version: 16.11.28
-  resolution: "@types/node@npm:16.11.28"
-  checksum: aba39c8a9fdac1d73f69e5308b669952d607504ac2bd6f9f99201b8b974baedd52ca43f8cbbbb2e5015269eb2c680a85f80a4416816accb6019029bae3a7714c
+"@types/node@npm:^16.11.31":
+  version: 16.11.31
+  resolution: "@types/node@npm:16.11.31"
+  checksum: 0bad289e12c7066cd2ea7a204d051a0bb09a32a29da39850812ea14c075f9e2b4aeaab23aa23447ef9e3aa6a30173bf3d3524e37bbeeb56fb8ffa4bbd783c5db
   languageName: node
   linkType: hard
 
@@ -8559,7 +8559,7 @@ __metadata:
     "@next/eslint-plugin-next": ^12.1.5
     "@oriflame/lumos-common": ^5.7.28
     "@types/confusing-browser-globals": ^1.0.0
-    "@types/node": ^16.11.28
+    "@types/node": ^16.11.31
     "@typescript-eslint/eslint-plugin": ^5.21.0
     "@typescript-eslint/parser": ^5.21.0
     confusing-browser-globals: ^1.0.11
