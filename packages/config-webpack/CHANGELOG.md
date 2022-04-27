@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.7.28 - 2022-04-27
+
+#### 📦 Dependencies
+
+- update react monorepo (#1058) ([d6bf64b](https://github.com/Oriflame/lumos/commit/d6bf64b1ea72f89e32bc8e62ef1772ceaa9c6ea9)), work items [#1058](https://github.com/Oriflame/lumos/issues/1058)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.7.27 - 2022-04-26
 
 **Note:** Version bump only for package @oriflame/config-webpack
