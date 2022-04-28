@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-webpack",
-  "version": "5.8.0",
+  "version": "5.8.1",
   "description": "Reusable Webpack configs.",
   "keywords": [
     "lumos",
@@ -61,7 +61,7 @@
     "@boost/args": "^3.0.1",
     "@boost/module": "^3.1.0",
     "@module-federation/concat-runtime": "^0.0.1",
-    "@oriflame/lumos-common": "^5.8.0",
+    "@oriflame/lumos-common": "^5.8.1",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",

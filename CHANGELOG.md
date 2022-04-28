@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.8.1 - 2022-04-28
+
+#### 📦 Dependencies
+
+- update dependency postcss-preset-env to ^7.4.4 (#1057) ([823d44b](https://github.com/Oriflame/lumos/commit/823d44ba24fefa78f827fcef0bcaca3ff5c59db8)), work items [#1057](https://github.com/Oriflame/lumos/issues/1057)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([be831ce](https://github.com/Oriflame/lumos/commit/be831ceee935b36d9ebfbb0fee8e8831d168e817))
+- update dependency @commitlint/cli to ^16.2.4 (#1059) ([9610a8e](https://github.com/Oriflame/lumos/commit/9610a8ea3179413615708b062e843b3bd56be66a)), work items [#1059](https://github.com/Oriflame/lumos/issues/1059)
+- update dependency caniuse-lite to v1.0.30001334 (#1060) ([ef1165c](https://github.com/Oriflame/lumos/commit/ef1165c0ca85d7c4e7570abcf7179c776506234b)), work items [#1060](https://github.com/Oriflame/lumos/issues/1060)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.8.0 - 2022-04-28
 
 #### 🚀 Updates

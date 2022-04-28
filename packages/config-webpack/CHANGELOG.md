@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.8.1 - 2022-04-28
+
+#### 📦 Dependencies
+
+- update dependency postcss-preset-env to ^7.4.4 (#1057) ([823d44b](https://github.com/Oriflame/lumos/commit/823d44ba24fefa78f827fcef0bcaca3ff5c59db8)), work items [#1057](https://github.com/Oriflame/lumos/issues/1057)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.8.0 - 2022-04-28
 
 **Note:** Version bump only for package @oriflame/config-webpack
