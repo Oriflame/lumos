@@ -1,3 +1,4 @@
+import type { Config } from '@jest/types';
 import {
   IGNORE_PATHS,
   EXTS,
@@ -25,7 +26,7 @@ if (fs.existsSync(jsSetupFilePath)) {
   setupFilesAfterEnv.push(jsSetupFilePath);
 }
 
-const config = {
+const config: Config.InitialOptions = {
   collectCoverage: false, // Enabled by consumers
   collectCoverageFrom: [`**/{src,tests,__tests__}/**/*.{${extsWithoutJSON.join(',')}}`],
   coverageDirectory: './coverage',
@@ -53,9 +54,12 @@ const config = {
   testEnvironment: 'node',
   verbose: false,
   transformIgnorePatterns: ['/node_modules/', '/esm/', '/lib/'],
-  testURL: 'http://localhost',
-  timers: 'fake',
-  testRunner: 'jest-circus/runner',
+  testEnvironmentOptions: {
+    url: 'http://localhost',
+  },
+  fakeTimers: {
+    enableGlobally: true,
+  },
 };
 
 export default config;
