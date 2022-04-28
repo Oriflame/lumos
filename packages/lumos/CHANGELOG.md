@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.8.0 - 2022-04-28
+
+#### 🚀 Updates
+
+- Migrate to jest 28. (#1055) ([d4497c3](https://github.com/Oriflame/lumos/commit/d4497c3b9b6a2ab9d46696d1a8dcbd0b99fc4f86)), work items [#1055](https://github.com/Oriflame/lumos/issues/1055)
+
+#### 📦 Dependencies
+
+- update dependency @actions/core to ^1.7.0 (#1051) ([8c9d16a](https://github.com/Oriflame/lumos/commit/8c9d16ab7b5031b828e3a2b315086747fe591a61)), work items [#1051](https://github.com/Oriflame/lumos/issues/1051)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.7.28 - 2022-04-27
 
 **Note:** Version bump only for package @oriflame/lumos
