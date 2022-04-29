@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.8.3 - 2022-04-29
+
+#### 📦 Dependencies
+
+- update dependency typescript to ^4.6.4 (#1062) ([22920b3](https://github.com/Oriflame/lumos/commit/22920b3324dbe276022494e6a1665d5d0d4e828c)), work items [#1062](https://github.com/Oriflame/lumos/issues/1062)
+
+**Note:** Version bump only for package @oriflame/config-typescript
+
+
+
+
+
 ### 5.8.2 - 2022-04-28
 
 **Note:** Version bump only for package @oriflame/config-typescript

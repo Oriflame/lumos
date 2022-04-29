@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.8.3 - 2022-04-29
+
+#### 📦 Dependencies
+
+- update dependency jest to ^28.0.3 (#1065) ([d0fc81a](https://github.com/Oriflame/lumos/commit/d0fc81a63607f076f0b8eea3578d5093267a0822)), work items [#1065](https://github.com/Oriflame/lumos/issues/1065)
+- update dependency typescript to ^4.6.4 (#1062) ([22920b3](https://github.com/Oriflame/lumos/commit/22920b3324dbe276022494e6a1665d5d0d4e828c)), work items [#1062](https://github.com/Oriflame/lumos/issues/1062)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([840599e](https://github.com/Oriflame/lumos/commit/840599efb839abbb1061e20ef4a4942702e02b8f))
+- update dependency @types/node to ^16.11.32 (#1063) ([a286949](https://github.com/Oriflame/lumos/commit/a286949d83d8cbaf2ad88252bc49b402ea450b5d)), work items [#1063](https://github.com/Oriflame/lumos/issues/1063)
+- update dependency packemon to ^2.2.1 (#1064) ([a296435](https://github.com/Oriflame/lumos/commit/a29643515eb82f7faf00647d6bbcb5a99f4b3aaa)), work items [#1064](https://github.com/Oriflame/lumos/issues/1064)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.8.2 - 2022-04-28
 
 #### 📦 Dependencies
