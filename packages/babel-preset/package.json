@@ -55,8 +55,8 @@
     "@babel/plugin-proposal-export-default-from": "^7.16.7",
     "@babel/plugin-proposal-export-namespace-from": "^7.16.7",
     "@babel/plugin-proposal-private-methods": "^7.16.11",
-    "@babel/plugin-transform-runtime": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@emotion/babel-plugin": "^11.9.2",
@@ -70,7 +70,7 @@
     "react-refresh": "^0.13.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9"
+    "@babel/core": "^7.17.10"
   },
   "packemon": {
     "format": "lib",
