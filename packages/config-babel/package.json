@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-babel",
-  "version": "5.8.3",
+  "version": "5.8.4",
   "description": "Reusable Babel config.",
   "keywords": [
     "lumos",
@@ -29,8 +29,8 @@
     "src/**/*.{ts,tsx,json}"
   ],
   "dependencies": {
-    "@oriflame/babel-preset": "^5.8.3",
-    "@oriflame/lumos-common": "^5.8.3"
+    "@oriflame/babel-preset": "^5.8.4",
+    "@oriflame/lumos-common": "^5.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
