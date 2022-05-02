@@ -38,7 +38,7 @@
   "dependencies": {
     "@babel/core": "^7.17.10",
     "@babel/eslint-parser": "^7.17.0",
-    "@next/eslint-plugin-next": "^12.1.5",
+    "@next/eslint-plugin-next": "^12.1.6",
     "@oriflame/lumos-common": "^5.8.5",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
