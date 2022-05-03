@@ -1,6 +1,6 @@
 {
   "name": "tsconfig-oriflame",
-  "version": "5.8.6",
+  "version": "5.8.7",
   "release": "1624590167003",
   "description": "Pre-packaged tsconfig.json's for oriflame configured projects.",
   "keywords": [

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.8.7 - 2022-05-03
+
+#### 🐞 Fixes
+
+- Add missing jsdom enviroment. ([d92d1d3](https://github.com/Oriflame/lumos/commit/d92d1d3c729353b4cad70c28804a7c1fd806586c))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([af73fc9](https://github.com/Oriflame/lumos/commit/af73fc93a7d635992e70c746a73264d8c935f31e))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.8.6 - 2022-05-03
 
 #### 📦 Dependencies
