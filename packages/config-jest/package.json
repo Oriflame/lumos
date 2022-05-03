@@ -43,6 +43,7 @@
     "dom-storage": "^2.1.0",
     "graphql": "^16.4.0",
     "graphql-tag": "^2.12.6",
+    "jest-environment-jsdom": "^28.0.2",
     "jest-preset-oriflame": "^5.8.6"
   },
   "devDependencies": {
