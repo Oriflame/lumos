@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.8.6 - 2022-05-03
+
+#### 📦 Dependencies
+
+- update dependency @types/jest to ^27.5.0 (#1073) ([0198b5e](https://github.com/oriflame/lumos/commit/0198b5ec8303aa1da8117c9e1cf83a45013154c7)), work items [#1073](https://github.com/oriflame/lumos/issues/1073)
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
 ### 5.8.5 - 2022-05-02
 
 **Note:** Version bump only for package jest-preset-oriflame

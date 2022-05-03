@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.8.6 - 2022-05-03
+
+#### 📦 Dependencies
+
+- update dependency @next/eslint-plugin-next to ^12.1.6 (#1072) ([eead092](https://github.com/Oriflame/lumos/commit/eead092fe5f167dff97179ffb175fcb83201763b)), work items [#1072](https://github.com/Oriflame/lumos/issues/1072)
+- update dependency @types/jest to ^27.5.0 (#1073) ([0198b5e](https://github.com/Oriflame/lumos/commit/0198b5ec8303aa1da8117c9e1cf83a45013154c7)), work items [#1073](https://github.com/Oriflame/lumos/issues/1073)
+- update dependency postcss-preset-env to ^7.5.0 (#1070) ([9111e72](https://github.com/Oriflame/lumos/commit/9111e721f9db254bd8926420006b4fad46efa3b9)), work items [#1070](https://github.com/Oriflame/lumos/issues/1070)
+- update typescript-eslint monorepo to ^5.22.0 (#1071) ([ce6fd3c](https://github.com/Oriflame/lumos/commit/ce6fd3c163b5c0338534cb8cb5811aeca7948a5d)), work items [#1071](https://github.com/Oriflame/lumos/issues/1071)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([411d34c](https://github.com/Oriflame/lumos/commit/411d34c8fbf21cdf7d6ba9e8440afd25f54cd643))
+- update dependency caniuse-lite to v1.0.30001335 (#1069) ([965e079](https://github.com/Oriflame/lumos/commit/965e079b8bfe9ac53b4e9779b3e3534504a4efc1)), work items [#1069](https://github.com/Oriflame/lumos/issues/1069)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.8.5 - 2022-05-02
 
 #### 🛠 Internals
