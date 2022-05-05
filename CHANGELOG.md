@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.9.0 - 2022-05-05
+
+#### 🚀 Updates
+
+- Update ESLint rules. (#1076) ([93a557b](https://github.com/Oriflame/lumos/commit/93a557b9bccfcc6af769a405786ff7d3516c2603)), work items [#1076](https://github.com/Oriflame/lumos/issues/1076)
+
+#### 🛠 Internals
+
+- update dependency caniuse-lite to v1.0.30001336 (#1075) ([c08fb79](https://github.com/Oriflame/lumos/commit/c08fb79ec9ee6df46115eb4b3f6e981df3c966bd)), work items [#1075](https://github.com/Oriflame/lumos/issues/1075)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.8.8 - 2022-05-05
 
 #### 📦 Dependencies
