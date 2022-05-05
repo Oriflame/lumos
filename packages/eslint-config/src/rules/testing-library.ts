@@ -11,6 +11,7 @@ const config: eslint.Linter.Config['rules'] = {
   'testing-library/no-container': 'warn', // disallow the use of container methods
   'testing-library/no-debugging-utils': 'warn', // disallow the use of debug
   'testing-library/no-dom-import': ['error', 'react'], // disallow importing from DOM Testing Library
+  'testing-library/no-global-regexp-flag-in-query': 'error', // disallow the use of the global RegExp flag (/g) in queries
   'testing-library/no-manual-cleanup': 'off', // disallow the use of cleanup
   'testing-library/no-node-access': 'error', // disallow direct Node access
   'testing-library/no-promise-in-fire-event': 'error', // disallow the use of promises passed to a fireEvent method
