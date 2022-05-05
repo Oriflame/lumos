@@ -51,12 +51,14 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/no-thenable': 'error', // disallow then property
   'unicorn/no-this-assignment': 'off', // disallow assigning this to a variable
   'unicorn/no-unreadable-array-destructuring': 'warn', // disallow unreadable array destructuring
+  'unicorn/no-unreadable-iife': 'off', // disallow unreadable IIFEs
   'unicorn/no-unsafe-regex': 'off', // disallow unsafe regular expressions
   'unicorn/no-unused-properties': 'off', // disallow unused object properties
   'unicorn/no-useless-fallback-in-spread': 'error', // forbid useless fallback when spreading in object literals
   'unicorn/no-useless-length-check': 'off', // disallow useless array length check
   'unicorn/no-useless-promise-resolve-reject': 'error', // disallow returning/yielding Promise.resolve/reject() in async functions or promise callbacks
   'unicorn/no-useless-spread': 'error', // disallow unnecessary spread
+  'unicorn/no-useless-switch-case': 'error', // disallow useless case in switch statements
   'unicorn/no-useless-undefined': 'off', // disallow useless undefined
   'unicorn/no-zero-fractions': 'error', // disallow number literals with zero fractions or dangling dots
   'unicorn/number-literal-case': 'error', // enforce lowercase identifier and uppercase value for number literals
@@ -80,11 +82,12 @@ const config: eslint.Linter.Config['rules'] = {
   'unicorn/prefer-json-parse-buffer': 'off', // prefer reading a JSON file as a buffer
   'unicorn/prefer-keyboard-event-key': 'warn', // prefer KeyboardEvent#key over KeyboardEvent#keyCode
   'unicorn/prefer-math-trunc': 'warn', // enforce the use of Math.trunc instead of bitwise operators
-  'unicorn/prefer-modern-dom-apis': 'warn', // prefer .before() over .insertBefore(), .replaceWith() over .replaceChild(), prefer one of .before(), .after(), .append() or .prepend() over insertAdjacentText() and insertAdjacentElement()
+  'unicorn/prefer-modern-dom-apis': 'warn', // prefer .before() over .insertBefore(), .replaceWith() over .replaceChild(), prefer one of .before(), .after(),
+  'unicorn/prefer-modern-math-apis': 'warn', // prefer modern Math APIs over legacy patterns..append() or .prepend() over insertAdjacentText() and insertAdjacentElement()
   // FIXME [@rajzik]: This is good rule but adoption isn't great so far
   'unicorn/prefer-module': 'off', // Prefer JavaScript modules (ESM) over CommonJS
-  // FIXME [eslint-plugin-import]: Once https://github.com/benmosher/eslint-plugin-import/issues/2035 is closed can be enabled
-  'unicorn/prefer-node-protocol': 'off', // Prefer using the `node:` protocol when importing Node.js builtin modules
+  'unicorn/prefer-native-coercion-functions': 'off', // prefer using String, Number, BigInt, Boolean, and Symbol directly
+  'unicorn/prefer-node-protocol': 'warn', // Prefer using the `node:` protocol when importing Node.js builtin modules
   'unicorn/prefer-negative-index': 'warn', // prefer negative index over .length - index for {String,Array,TypedArray}#slice() and Array#splice()
   'unicorn/prefer-number-properties': 'warn', // prefer Number static properties over global ones
   'unicorn/prefer-object-from-entries': 'warn', // prefer using Object.fromEntries(…) to transform a list of key-value pairs into an object

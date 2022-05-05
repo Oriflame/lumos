@@ -270,6 +270,7 @@ const config: eslint.Linter.Config['rules'] = {
     },
   ], // requires expressions of type void to appear in statement position
   '@typescript-eslint/no-dupe-class-members': 'error', // disallow duplicate class members
+  '@typescript-eslint/no-duplicate-enum-values': 'error', // disallow duplicate enum member values
   '@typescript-eslint/no-duplicate-imports': 'error', // disallow duplicate imports
   '@typescript-eslint/no-dynamic-delete': 'off', // bans usage of the delete operator with computed key expressions
   '@typescript-eslint/no-empty-function': 'off', // disallow empty functions
@@ -317,7 +318,6 @@ const config: eslint.Linter.Config['rules'] = {
   '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error', // disallows using a non-null assertion in the left operand of the nullish coalescing operator
   '@typescript-eslint/no-non-null-asserted-optional-chain': 'error', // disallows using a non-null assertion after an optional chain expression
   '@typescript-eslint/no-non-null-assertion': 'warn', // disallows non-null assertions using the ! postfix operator
-  '@typescript-eslint/no-parameter-properties': 'error', // disallow the use of parameter properties in class constructors
   '@typescript-eslint/no-redundant-type-constituents': 'warn', // disallow members of unions and intersections that do nothing or override type information
   '@typescript-eslint/no-redeclare': 'error', // disallow variable redeclaration
   '@typescript-eslint/no-restricted-imports': 'off', // disallow specified modules when loaded by import
@@ -359,6 +359,7 @@ const config: eslint.Linter.Config['rules'] = {
     { blankLine: 'always', prev: 'import', next: '*' },
     { blankLine: 'any', prev: 'import', next: 'import' },
   ], // require or disallow padding lines between statements
+  '@typescript-eslint/parameter-properties': 'error', // require or disallow the use of parameter properties in class constructors
   '@typescript-eslint/prefer-as-const': 'error', // prefer usage of as const over literal type
   '@typescript-eslint/prefer-enum-initializers': 'off', // prefer initializing each enums member value
   '@typescript-eslint/prefer-for-of': 'warn', // prefer a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated

@@ -95,6 +95,7 @@ const config: eslint.Linter.Config['rules'] = {
   'no-confusing-arrow': 'off', // disallow arrow functions where they could be confused with comparisons
   'no-console': 'warn', // disallow the use of console
   'no-const-assign': 'error', // disallow reassigning const variables
+  'no-constant-binary-expression': 'error', // disallows expressions where the operation doesn't affect the value
   'no-constant-condition': 'warn', // disallow constant expressions in conditions
   'no-constructor-return': 'warn', // disallow returning value from constructor
   'no-continue': 'off', // disallow continue statements
