@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.8.8 - 2022-05-05
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
 ### 5.8.7 - 2022-05-03
 
 **Note:** Version bump only for package tsconfig-oriflame
