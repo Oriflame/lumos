@@ -43,13 +43,13 @@
     "dom-storage": "^2.1.0",
     "graphql": "^16.4.0",
     "graphql-tag": "^2.12.6",
-    "jest-environment-jsdom": "^28.0.2",
+    "jest-environment-jsdom": "^28.1.0",
     "jest-preset-oriflame": "^5.9.2"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.4",
     "@beemo/driver-babel": "^2.0.6",
-    "jest": "^28.0.3"
+    "jest": "^28.1.0"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",
