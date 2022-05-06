@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.3 - 2022-05-06
+
+#### 📦 Dependencies
+
+- update jest monorepo to ^28.1.0 (#1079) ([ae159af](https://github.com/Oriflame/lumos/commit/ae159af9dbff721b76ec65872b94a41ac00eeab2)), work items [#1079](https://github.com/Oriflame/lumos/issues/1079)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.9.2 - 2022-05-06
 
 **Note:** Version bump only for package @oriflame/lumos
