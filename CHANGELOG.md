@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.4 - 2022-05-07
+
+#### 📦 Dependencies
+
+- update dependency eslint to ^8.15.0 (#1080) ([607523e](https://github.com/Oriflame/lumos/commit/607523e8b61172c758aff43c7ddca46848d9cd4a)), work items [#1080](https://github.com/Oriflame/lumos/issues/1080)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([4aaf2ec](https://github.com/Oriflame/lumos/commit/4aaf2ec31d46e2159a8435337d2283ea6b8d3189))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.9.3 - 2022-05-06
 
 #### 📦 Dependencies
