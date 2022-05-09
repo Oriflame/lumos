@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.6 - 2022-05-09
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([5089917](https://github.com/Oriflame/lumos/commit/5089917d56b666cc8665429fe23630067efe32af))
+- update dependency husky to v8 (#1082) ([f7d175d](https://github.com/Oriflame/lumos/commit/f7d175d95009ce9b4dacface5911fe3fa815a2af)), work items [#1082](https://github.com/Oriflame/lumos/issues/1082)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.9.5 - 2022-05-08
 
 #### 📦 Dependencies
