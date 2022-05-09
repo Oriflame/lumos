@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.7 - 2022-05-09
+
+#### 📦 Dependencies
+
+- update dependency graphql to ^16.5.0 (#1084) ([05e2997](https://github.com/Oriflame/lumos/commit/05e2997aaf0364855bbf90bfbf5859525b565073)), work items [#1084](https://github.com/Oriflame/lumos/issues/1084)
+- update typescript-eslint monorepo to ^5.23.0 (#1085) ([5529c8c](https://github.com/Oriflame/lumos/commit/5529c8c191ba05389e987767005fd72c43bab517)), work items [#1085](https://github.com/Oriflame/lumos/issues/1085)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([6668c5e](https://github.com/Oriflame/lumos/commit/6668c5e0782d0d7cb4408f445b7fbec640e26676))
+- update dependency husky to ^8.0.1 (#1083) ([11f0487](https://github.com/Oriflame/lumos/commit/11f04871fc2b9a4e306739db789482de1a202762)), work items [#1083](https://github.com/Oriflame/lumos/issues/1083)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.9.6 - 2022-05-09
 
 #### 🛠 Internals
