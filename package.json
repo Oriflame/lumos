@@ -48,7 +48,7 @@
     "eslint-find-rules": "^4.1.0",
     "graphql": "^16.4.0",
     "graphql-tag": "^2.12.6",
-    "husky": "^8.0.0",
+    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "lerna": "^4.0.0",
     "packemon": "^2.2.1",
