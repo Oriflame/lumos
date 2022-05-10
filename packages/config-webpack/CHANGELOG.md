@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.8 - 2022-05-10
+
+#### 📦 Dependencies
+
+- update dependency webpack to ^5.72.1 (#1087) ([c873f7e](https://github.com/Oriflame/lumos/commit/c873f7e6a39b766be07825d821daf242e47fd500)), work items [#1087](https://github.com/Oriflame/lumos/issues/1087)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.9.7 - 2022-05-09
 
 **Note:** Version bump only for package @oriflame/config-webpack
