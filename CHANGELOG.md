@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.9 - 2022-05-11
+
+#### 📦 Dependencies
+
+- update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.6 (#1088) ([93a300b](https://github.com/Oriflame/lumos/commit/93a300bae465ba65ddc867b6b0e6b2967084ae56)), work items [#1088](https://github.com/Oriflame/lumos/issues/1088)
+- update dependency dotenv to ^16.0.1 (#1090) ([0f74af8](https://github.com/Oriflame/lumos/commit/0f74af835d15528f53571ef885d50fc9573e49a9)), work items [#1090](https://github.com/Oriflame/lumos/issues/1090)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([1524300](https://github.com/Oriflame/lumos/commit/1524300d86c51b28cda736b861fc65aba40be005))
+- update dependency @types/node to ^16.11.34 (#1089) ([24dd206](https://github.com/Oriflame/lumos/commit/24dd20690ff3b1a0a3e3c9c3d51d465ad045dca3)), work items [#1089](https://github.com/Oriflame/lumos/issues/1089)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.9.8 - 2022-05-10
 
 #### 📦 Dependencies
