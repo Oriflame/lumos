@@ -4296,7 +4296,7 @@ __metadata:
   dependencies:
     "@oriflame/conventional-changelog": ^1.2.40
     "@types/node": ^16.11.34
-    danger: ^11.0.5
+    danger: ^11.0.6
   languageName: unknown
   linkType: soft
 
@@ -8091,9 +8091,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"danger@npm:^11.0.5":
-  version: 11.0.5
-  resolution: "danger@npm:11.0.5"
+"danger@npm:^11.0.6":
+  version: 11.0.6
+  resolution: "danger@npm:11.0.6"
   dependencies:
     "@octokit/rest": ^18.12.0
     async-retry: 1.2.3
@@ -8142,7 +8142,7 @@ __metadata:
     danger-process: distribution/commands/danger-process.js
     danger-reset-status: distribution/commands/danger-reset-status.js
     danger-runner: distribution/commands/danger-runner.js
-  checksum: d995d74abebaeb398c0dd7a63885145312fe7cdb88c460e05e354ded970c31c1fa5af16f28d2e65463373a99951af19f4655d72ffd596dd2e29e5dd41adfae4f
+  checksum: 088012b78933d6b6a6d3f1c9748288e04d548deba090079367cf5206bb53657f4aeee17ec74a2df0dd7bbe6cce746c5c27994ed53993356f46d398aa78d9afcc
   languageName: node
   linkType: hard
 
