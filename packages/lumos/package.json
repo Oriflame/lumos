@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/lumos",
-  "version": "5.9.10",
+  "version": "5.9.11",
   "description": "Centralized CLI for JavaScript and TypeScript dev tools.",
   "keywords": [
     "lumos",
@@ -51,14 +51,14 @@
     "@boost/common": "^3.2.1",
     "@boost/module": "^3.1.0",
     "@octokit/rest": "^18.12.0",
-    "@oriflame/config-babel": "^5.9.10",
-    "@oriflame/config-eslint": "^5.9.10",
-    "@oriflame/config-jest": "^5.9.10",
-    "@oriflame/config-prettier": "^5.9.10",
-    "@oriflame/config-typescript": "^5.9.10",
-    "@oriflame/config-webpack": "^5.9.10",
+    "@oriflame/config-babel": "^5.9.11",
+    "@oriflame/config-eslint": "^5.9.11",
+    "@oriflame/config-jest": "^5.9.11",
+    "@oriflame/config-prettier": "^5.9.11",
+    "@oriflame/config-typescript": "^5.9.11",
+    "@oriflame/config-webpack": "^5.9.11",
     "@oriflame/conventional-changelog": "^1.2.40",
-    "@oriflame/lumos-common": "^5.9.10",
+    "@oriflame/lumos-common": "^5.9.11",
     "chalk": "^5.0.1",
     "check-node-version": "^4.2.1",
     "cross-env": "^7.0.3",
@@ -71,7 +71,7 @@
     "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
-    "@oriflame/config-danger": "^5.9.10"
+    "@oriflame/config-danger": "^5.9.11"
   },
   "peerDependencies": {
     "core-js": "^3.21.0"
