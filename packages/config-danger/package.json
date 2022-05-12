@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@oriflame/conventional-changelog": "^1.2.40",
-    "danger": "^11.0.5"
+    "danger": "^11.0.6"
   },
   "packemon": {
     "format": "lib",
