@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.12 - 2022-05-13
+
+#### 📦 Dependencies
+
+- update dependency @actions/github to ^5.0.2 (#1097) ([3f20c82](https://github.com/Oriflame/lumos/commit/3f20c827ba53952e34dff213c46eb36526892a72)), work items [#1097](https://github.com/Oriflame/lumos/issues/1097)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([52631e8](https://github.com/Oriflame/lumos/commit/52631e8286f65f53b0526d1a2c8566bd95a53bcd))
+- update dependency @types/prettier to ^2.6.1 (#1095) ([db4ec06](https://github.com/Oriflame/lumos/commit/db4ec0654e6ab429672c1b836af11a0e896b178f)), work items [#1095](https://github.com/Oriflame/lumos/issues/1095)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.9.11 - 2022-05-12
 
 #### 📦 Dependencies
