@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.13 - 2022-05-14
+
+#### 📦 Dependencies
+
+- update dependency @actions/github to ^5.0.3 (#1100) ([a3ae91f](https://github.com/Oriflame/lumos/commit/a3ae91f822eaa2092b768a965f02d5d45828a0d8)), work items [#1100](https://github.com/Oriflame/lumos/issues/1100)
+- update dependency eslint-plugin-jest to ^26.2.1 (#1101) ([caa57fe](https://github.com/Oriflame/lumos/commit/caa57fe4575426bf60acce82e7f757a8fd11cefd)), work items [#1101](https://github.com/Oriflame/lumos/issues/1101)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([8c7aac3](https://github.com/Oriflame/lumos/commit/8c7aac38a5b10182ce13ae30edd1302f7091481c))
+- update dependency caniuse-lite to v1.0.30001341 (#1102) ([bc22a0f](https://github.com/Oriflame/lumos/commit/bc22a0f8167444a2761e7973dff043ad86d64fee)), work items [#1102](https://github.com/Oriflame/lumos/issues/1102)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.9.12 - 2022-05-13
 
 #### 📦 Dependencies
