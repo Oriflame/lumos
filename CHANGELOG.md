@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.15 - 2022-05-15
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-jest to ^26.2.2 (#1104) ([b5ca64f](https://github.com/Oriflame/lumos/commit/b5ca64f3b15960daaa2ee97d04b094e73b6c01f1)), work items [#1104](https://github.com/Oriflame/lumos/issues/1104)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([1202895](https://github.com/Oriflame/lumos/commit/1202895a527fa229e5559a402af36281bb0a89f0))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.9.14 - 2022-05-14
 
 #### 🛠 Internals
