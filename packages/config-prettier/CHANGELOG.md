@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.9.19 - 2022-05-16
+
+**Note:** Version bump only for package @oriflame/config-prettier
+
+
+
+
+
 ### 5.9.18 - 2022-05-15
 
 **Note:** Version bump only for package @oriflame/config-prettier
