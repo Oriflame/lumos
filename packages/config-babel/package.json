@@ -33,7 +33,7 @@
     "@oriflame/lumos-common": "^5.9.19"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.10",
+    "@babel/core": "^7.17.12",
     "@beemo/core": "^2.1.4",
     "@beemo/driver-babel": "^2.0.6",
     "babel-test": "^0.2.4",
