@@ -1,17 +1,13 @@
 import fs from 'fs';
+import json5 from 'json5';
 import type { CompilerOptions, ProjectReference } from 'typescript';
 
 import { TSCONFIG_JSON_PATH, PACKAGE_JSON_PATH } from './constants';
 
 export function parseJSON<T>(filePath: string): T {
-  const content = fs
-    .readFileSync(filePath, 'utf8')
-    .split('\n')
-    // Remove comments from JSON files
-    .filter((line) => !/^\s*(#|\/)/.test(line))
-    .join('\n');
+  const content = fs.readFileSync(filePath, 'utf8');
 
-  return JSON.parse(content) as T;
+  return json5.parse<T>(content);
 }
 
 interface TSConfigJSON {
