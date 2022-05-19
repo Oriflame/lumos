@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.10.1 - 2022-05-19
+
+#### 📦 Dependencies
+
+- update dependency css-minimizer-webpack-plugin to v4 (#1113) ([08b6e78](https://github.com/Oriflame/lumos/commit/08b6e7831c030a53bcaac743a0cee87a743a58f7)), work items [#1113](https://github.com/Oriflame/lumos/issues/1113)
+- update dependency danger to ^11.0.7 (#1110) ([9e65896](https://github.com/Oriflame/lumos/commit/9e6589667bcbebd6e6479cb97b5f8cc5850573a8)), work items [#1110](https://github.com/Oriflame/lumos/issues/1110)
+- update dependency eslint-plugin-react to ^7.30.0 (#1114) ([ad82f8e](https://github.com/Oriflame/lumos/commit/ad82f8e8a8c5520fe06580bc4836b7395d07ae3b)), work items [#1114](https://github.com/Oriflame/lumos/issues/1114)
+- update dependency postcss-loader to v7 (#1112) ([461f269](https://github.com/Oriflame/lumos/commit/461f269b63ae1cf3b123019793e6ef4dffa41623)), work items [#1112](https://github.com/Oriflame/lumos/issues/1112)
+- update dependency postcss-preset-env to ^7.6.0 (#1116) ([303d2da](https://github.com/Oriflame/lumos/commit/303d2da684a8d22d22282f94d8fb6b8b6de3ce00)), work items [#1116](https://github.com/Oriflame/lumos/issues/1116)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([fc93429](https://github.com/Oriflame/lumos/commit/fc934296cdc32a69e1340b1d120bc98cf317b419))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.10.0 - 2022-05-19
 
 #### 🚀 Updates
