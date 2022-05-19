@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.10.0 - 2022-05-19
+
+#### 🚀 Updates
+
+- Use JSON5 for parsing JSON files. (#1115) ([9397bda](https://github.com/Oriflame/lumos/commit/9397bda973ca832e66fa997ebb47d6b81f7088c6)), work items [#1115](https://github.com/Oriflame/lumos/issues/1115)
+
+**Note:** Version bump only for package @oriflame/lumos-common
+
+
+
+
+
 ### 5.9.22 - 2022-05-18
 
 **Note:** Version bump only for package @oriflame/lumos-common
