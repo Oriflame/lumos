@@ -4993,6 +4993,7 @@ __metadata:
   resolution: "@oriflame/lumos-common@workspace:packages/lumos-common"
   dependencies:
     "@beemo/core": ^2.1.4
+    json5: ^2.2.1
   languageName: unknown
   linkType: soft
 

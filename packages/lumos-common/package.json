@@ -25,7 +25,8 @@
     "npm": ">=6.14.0"
   },
   "dependencies": {
-    "@beemo/core": "^2.1.4"
+    "@beemo/core": "^2.1.4",
+    "json5": "^2.2.1"
   },
   "packemon": {
     "format": "lib",
