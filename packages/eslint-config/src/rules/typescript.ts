@@ -249,7 +249,8 @@ const config: eslint.Linter.Config['rules'] = {
       leadingUnderscore: 'allow',
       trailingUnderscore: 'forbid',
       filter: {
-        regex: '(__typename)|(^&)|(^\\..+)', // don't check: GraphQL specific property, properties used as CSS selectors
+        regex:
+          '(^__typename$)|(^&)|(^\\..+)|(^\\d+$)|(^__html$)|(^x-tenant-context$)|(^accept-language$)|(^@media)', // don't check: 1) GraphQL specific property, 2) properties used as CSS selectors, 3) properties used as CSS selectors, 4) properties that are all numbers, 5) React specific property, 6) HTTP request header, 7) HTTP request header, 8) properties used as CSS selectors
         match: false,
       },
     },
@@ -383,7 +384,7 @@ const config: eslint.Linter.Config['rules'] = {
     { avoidEscape: true, allowTemplateLiterals: false },
   ], // enforce the consistent use of either backticks, double, or single quotes
   '@typescript-eslint/require-array-sort-compare': 'warn', // enforce giving compare argument to Array#sort
-  '@typescript-eslint/require-await': 'error', // disallow async functions which have no await expression
+  '@typescript-eslint/require-await': 'off', // disallow async functions which have no await expression
   '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }], // when adding two variables, operands must both be of type number or of type string
   '@typescript-eslint/restrict-template-expressions': 'off', // enforce template literal expressions to be of string type
   '@typescript-eslint/return-await': 'error', // rules for awaiting returned promises
