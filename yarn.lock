@@ -4391,7 +4391,7 @@ __metadata:
     "@boost/module": ^3.1.0
     "@module-federation/concat-runtime": ^0.0.1
     "@oriflame/lumos-common": ^5.10.6
-    "@pmmmwh/react-refresh-webpack-plugin": ^0.5.6
+    "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
     "@types/webpack-bundle-analyzer": ^4.4.1
     babel-loader: ^8.2.5
     cross-env: ^7.0.3
@@ -4526,9 +4526,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@pmmmwh/react-refresh-webpack-plugin@npm:^0.5.6":
-  version: 0.5.6
-  resolution: "@pmmmwh/react-refresh-webpack-plugin@npm:0.5.6"
+"@pmmmwh/react-refresh-webpack-plugin@npm:^0.5.7":
+  version: 0.5.7
+  resolution: "@pmmmwh/react-refresh-webpack-plugin@npm:0.5.7"
   dependencies:
     ansi-html-community: ^0.0.8
     common-path-prefix: ^3.0.0
@@ -4561,7 +4561,7 @@ __metadata:
       optional: true
     webpack-plugin-serve:
       optional: true
-  checksum: 21ab1157c3b8f5d9a1114cc25f14692757506aa47117ffdeeaf484a71ceeba114d9f9a33b705c51b0991f66f573dc30298eb246b939b4e5afb7592add25fb987
+  checksum: 3490649181878cc8808fb91f3870ef095e5a1fb9647b3ac83740df07379c9d1cf540f24bf2b09d5f26a3a8c805b2c6b9c5be7192bdb9317d0ffffa67426e9f66
   languageName: node
   linkType: hard
 
