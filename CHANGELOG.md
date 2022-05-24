@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.1 - 2022-05-24
+
+#### 📦 Dependencies
+
+- update typescript-eslint monorepo to ^5.26.0 (#1124) ([43a346d](https://github.com/Oriflame/lumos/commit/43a346dc096d4d29aeb65aae0495fca1525cc718)), work items [#1124](https://github.com/Oriflame/lumos/issues/1124)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([52bfec4](https://github.com/Oriflame/lumos/commit/52bfec412f3046d42185f8ddc5ff6f7ac0dd605d))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.11.0 - 2022-05-23
 
 #### 🚀 Updates
