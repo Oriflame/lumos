@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.2 - 2022-05-25
+
+#### 📦 Dependencies
+
+- update dependency typescript to ^4.7.2 (#1125) ([e78215c](https://github.com/Oriflame/lumos/commit/e78215c82d857896899332d0067404e00349b26c)), work items [#1125](https://github.com/Oriflame/lumos/issues/1125)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([860febe](https://github.com/Oriflame/lumos/commit/860febe73cb17e0542c4ef3bf5119aa4a1a4434b))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.11.1 - 2022-05-24
 
 #### 📦 Dependencies
