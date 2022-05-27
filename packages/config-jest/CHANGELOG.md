@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.7 - 2022-05-27
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.11.6 - 2022-05-26
 
 **Note:** Version bump only for package @oriflame/config-jest
