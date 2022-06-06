@@ -9364,7 +9364,7 @@ __metadata:
     eslint-import-resolver-typescript: ^2.7.1
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-import: ^2.26.0
-    eslint-plugin-jest: ^26.4.2
+    eslint-plugin-jest: ^26.5.3
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-node: ^11.1.0
     eslint-plugin-prettier: ^4.0.0
@@ -9500,9 +9500,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^26.4.2":
-  version: 26.4.2
-  resolution: "eslint-plugin-jest@npm:26.4.2"
+"eslint-plugin-jest@npm:^26.5.3":
+  version: 26.5.3
+  resolution: "eslint-plugin-jest@npm:26.5.3"
   dependencies:
     "@typescript-eslint/utils": ^5.10.0
   peerDependencies:
@@ -9513,7 +9513,7 @@ __metadata:
       optional: true
     jest:
       optional: true
-  checksum: d43706e1ba5b23b3f567dc7fede7cdf96b4ff05ae5cc306d5a1a0c96a000c1f2055302bb2a58d0d7e21ab3e337bc58dd9d7c59b594d5580f09ad7d2f506efd8d
+  checksum: 16897c56eadf3da19a96e18b1bd983bbd0a34ad9545d5bc6f9ee67d2940e6e2fd2f067f44dbbb26dcaf17c75c0132f89a06a09ff5169761ce48c9708a2acf7d7
   languageName: node
   linkType: hard
 
