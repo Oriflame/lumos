@@ -192,4 +192,8 @@ export interface LumosSettings {
    * @see https://babeljs.io/docs/en/assumptions
    */
   assumptions?: Assumptions;
+  /**
+   * Names of extra folder to be checked by tsc (excluded from build) and eslint
+   */
+  checkedFolders?: string[];
 }

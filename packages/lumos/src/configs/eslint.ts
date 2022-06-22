@@ -1,6 +1,6 @@
 import { Path } from '@beemo/core';
 import { getConfig } from '@oriflame/config-eslint';
-import fs from 'fs';
+import fs from 'node:fs';
 import prettier from 'prettier';
 
 import { getSettings } from '../helpers/getSettings';
@@ -10,7 +10,7 @@ const { tool } = process.lumos || process.beemo;
 
 const settings = getSettings(tool, 'eslint');
 
-const { future, node, nextjs, srcFolder, testsFolder, typesFolder } = settings;
+const { future, checkedFolders, node, nextjs, srcFolder, testsFolder, typesFolder } = settings;
 
 const workspacesEnabled = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
 
@@ -26,6 +26,7 @@ if (workspacesEnabled) {
       new Path(wsPath, `${srcFolder}/**/*`),
       new Path(wsPath, `${testsFolder}/**/*`),
       new Path(wsPath, `${typesFolder}/**/*`),
+      ...(checkedFolders?.map((folder) => new Path(wsPath, `${folder}/**/*`)) ?? []),
     );
   });
 
@@ -49,6 +50,7 @@ if (workspacesEnabled) {
     new Path(`${srcFolder}/**/*`).path(),
     new Path(`${testsFolder}/**/*`).path(),
     new Path(`${typesFolder}/**/*`).path(),
+    ...(checkedFolders?.map((folder) => new Path(`${folder}/**/*`).path()) ?? []),
   ];
 
   const config = JSON.stringify({
