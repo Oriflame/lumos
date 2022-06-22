@@ -193,7 +193,7 @@ export interface LumosSettings {
    */
   assumptions?: Assumptions;
   /**
-   * Names of extra folder to be checked by tsc (excluded from build) and eslint
+   * Names of extra folders to be checked by tsc (excluded from build) and eslint
    */
   checkedFolders?: string[];
 }
