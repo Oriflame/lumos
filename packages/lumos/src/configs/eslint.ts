@@ -22,12 +22,17 @@ if (workspacesEnabled) {
   const include: Path[] = [new Path(`${typesFolder}/**/*`)];
 
   tool.project.getWorkspaceGlobs({ relative: true }).forEach((wsPath) => {
+    const check = checkedFolders?.map((folder) => new Path(wsPath, `${folder}/**/*`));
+
     include.push(
       new Path(wsPath, `${srcFolder}/**/*`),
       new Path(wsPath, `${testsFolder}/**/*`),
       new Path(wsPath, `${typesFolder}/**/*`),
-      ...(checkedFolders?.map((folder) => new Path(wsPath, `${folder}/**/*`)) ?? []),
     );
+
+    if (check) {
+      include.push(...check);
+    }
   });
 
   const config = JSON.stringify({
@@ -46,12 +51,17 @@ if (workspacesEnabled) {
 } else {
   const project = Path.resolve('tsconfig.eslint.json');
 
+  const check = checkedFolders?.map((folder) => new Path(`${folder}/**/*`).path());
+
   const include = [
     new Path(`${srcFolder}/**/*`).path(),
     new Path(`${testsFolder}/**/*`).path(),
     new Path(`${typesFolder}/**/*`).path(),
-    ...(checkedFolders?.map((folder) => new Path(`${folder}/**/*`).path()) ?? []),
   ];
+
+  if (check) {
+    include.push(...check);
+  }
 
   const config = JSON.stringify({
     extends: './tsconfig.json',
