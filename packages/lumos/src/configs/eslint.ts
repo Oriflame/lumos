@@ -1,6 +1,6 @@
 import { Path } from '@beemo/core';
 import { getConfig } from '@oriflame/config-eslint';
-import fs from 'node:fs';
+import fs from 'fs';
 import prettier from 'prettier';
 
 import { getSettings } from '../helpers/getSettings';
