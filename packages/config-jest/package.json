@@ -39,17 +39,17 @@
     "@emotion/jest": "^11.9.1",
     "@oriflame/lumos-common": "^5.11.10",
     "@testing-library/jest-dom": "^5.16.4",
-    "@types/jest": "^27.5.1",
+    "@types/jest": "^27.5.2",
     "dom-storage": "^2.1.0",
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
-    "jest-environment-jsdom": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.2",
     "jest-preset-oriflame": "^5.11.10"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.4",
     "@beemo/driver-babel": "^2.0.6",
-    "jest": "^28.1.0"
+    "jest": "^28.1.2"
   },
   "peerDependencies": {
     "@beemo/core": "^2.1.2",
