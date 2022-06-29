@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-eslint",
-  "version": "5.11.15",
+  "version": "5.12.0",
   "description": "Reusable ESLint config.",
   "keywords": [
     "lumos",
@@ -29,8 +29,8 @@
     "src/**/*.{ts,tsx,json}"
   ],
   "dependencies": {
-    "@oriflame/lumos-common": "^5.11.15",
-    "eslint-config-oriflame": "^5.11.15"
+    "@oriflame/lumos-common": "^5.12.0",
+    "eslint-config-oriflame": "^5.12.0"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.4",
