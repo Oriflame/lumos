@@ -5978,7 +5978,7 @@ __metadata:
     "@beemo/driver-prettier": ^2.0.6
     "@oriflame/lumos-common": ^5.11.13
     "@types/prettier": ^2.6.3
-    prettier: ^2.6.2
+    prettier: ^2.7.1
     prettier-config-oriflame: ^5.11.13
   peerDependencies:
     "@beemo/core": ^2.1.2
@@ -6135,7 +6135,7 @@ __metadata:
     eslint: ^8.18.0
     execa: ^5.1.1
     jest: ^28.1.2
-    prettier: ^2.6.2
+    prettier: ^2.7.1
     typescript: ^4.7.4
     webpack: ^5.73.0
     webpack-cli: ^4.9.2
@@ -10640,7 +10640,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-testing-library: ^5.5.1
     eslint-plugin-unicorn: ^42.0.0
-    prettier: ^2.6.2
+    prettier: ^2.7.1
     ts-node: ^10.8.1
   peerDependencies:
     eslint: ^8.4.0
@@ -14619,7 +14619,7 @@ __metadata:
     jest: ^28.1.2
     lerna: ^5.1.6
     packemon: ^2.3.1
-    prettier: ^2.6.2
+    prettier: ^2.7.1
     rimraf: ^3.0.2
     typescript: ^4.7.4
     webpack: ^5.73.0
@@ -17326,12 +17326,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.6.2":
-  version: 2.6.2
-  resolution: "prettier@npm:2.6.2"
+"prettier@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "prettier@npm:2.7.1"
   bin:
     prettier: bin-prettier.js
-  checksum: 48d08dde8e9fb1f5bccdd205baa7f192e9fc8bc98f86e1b97d919de804e28c806b0e6cc685e4a88211aa7987fa9668f30baae19580d87ced3ed0f2ec6572106f
+  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
   languageName: node
   linkType: hard
 

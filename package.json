@@ -52,7 +52,7 @@
     "jest": "^28.1.2",
     "lerna": "^5.1.6",
     "packemon": "^2.3.1",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4",
     "webpack": "^5.73.0"
