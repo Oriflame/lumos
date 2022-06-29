@@ -44,7 +44,7 @@
     "@oriflame/conventional-changelog": "^1.2.58",
     "@oriflame/conventional-changelog-lint-config": "^1.1.60",
     "cross-env": "^7.0.3",
-    "eslint": "^8.16.0",
+    "eslint": "^8.18.0",
     "eslint-find-rules": "^4.1.0",
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
