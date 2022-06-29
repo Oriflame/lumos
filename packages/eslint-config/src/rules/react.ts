@@ -44,6 +44,7 @@ const config: eslint.Linter.Config['rules'] = {
   'react/jsx-no-constructed-context-values': 'warn', // prevents JSX context provider values from taking values that will cause needless rerenders
   'react/jsx-no-comment-textnodes': 'warn', // comments inside children section of tag should be placed inside braces
   'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }], // enforce no duplicate props
+  'react/jsx-no-leaked-render': ['error', { validStrategies: ['ternary', 'coerce'] }], // prevent problematic leaked values from being rendered
   'react/jsx-no-literals': 'off', // Prevent usage of string literals in JSX
   'react/jsx-no-script-url': 'error', // forbid javascript: URLs
   'react/jsx-no-target-blank': 'error', // forbid target="_blank" attribute without rel="noreferrer"
