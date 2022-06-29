@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.12 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency @emotion/jest to ^11.9.3 (#1145) ([c84472f](https://github.com/Oriflame/lumos/commit/c84472f68e89dbab68ac2e2385070136c5f51e04)), work items [#1145](https://github.com/Oriflame/lumos/issues/1145)
+- update dependency eslint-plugin-react to ^7.30.1 (#1146) ([95955d6](https://github.com/Oriflame/lumos/commit/95955d6efd5c1814d22444f38ef322a11d812cfa)), work items [#1146](https://github.com/Oriflame/lumos/issues/1146)
+- update dependency terser-webpack-plugin to ^5.3.3 (#1147) ([ab215f9](https://github.com/Oriflame/lumos/commit/ab215f9d876bfc10fbc74b345a655d0a00f87141)), work items [#1147](https://github.com/Oriflame/lumos/issues/1147)
+- update dependency typescript to ^4.7.4 (#1148) ([9a45631](https://github.com/Oriflame/lumos/commit/9a456310acdc979c96abb6be93c4e0b9a402b6d2)), work items [#1148](https://github.com/Oriflame/lumos/issues/1148)
+- update dependency webpack-dev-server to ^4.9.3 (#1149) ([491dbb7](https://github.com/Oriflame/lumos/commit/491dbb74a884df23d7aa1d3417087f499878d2a3)), work items [#1149](https://github.com/Oriflame/lumos/issues/1149)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([6697342](https://github.com/Oriflame/lumos/commit/6697342101260953695b8b62bf4490309bcd2045))
+- update dependency caniuse-lite to v1.0.30001361 (#1143) ([9d1475f](https://github.com/Oriflame/lumos/commit/9d1475f8effe006bace075fe2878c701fe80d9e4)), work items [#1143](https://github.com/Oriflame/lumos/issues/1143)
+- update dependency lerna to ^5.1.6 (#1150) ([50c24ca](https://github.com/Oriflame/lumos/commit/50c24caac808096db24e340923fad72f66222277)), work items [#1150](https://github.com/Oriflame/lumos/issues/1150)
+- update dependency ts-node to ^10.8.1 (#1144) ([6e8a735](https://github.com/Oriflame/lumos/commit/6e8a735df205aa85d39a09e1a8ce4f0402a2a812)), work items [#1144](https://github.com/Oriflame/lumos/issues/1144)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.11.11 - 2022-06-29
 
 #### 📦 Dependencies

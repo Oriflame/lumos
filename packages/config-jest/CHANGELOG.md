@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.12 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency @emotion/jest to ^11.9.3 (#1145) ([c84472f](https://github.com/Oriflame/lumos/commit/c84472f68e89dbab68ac2e2385070136c5f51e04)), work items [#1145](https://github.com/Oriflame/lumos/issues/1145)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.11.11 - 2022-06-29
 
 #### 📦 Dependencies
