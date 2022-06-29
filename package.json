@@ -40,7 +40,7 @@
   "devDependencies": {
     "@beemo/cli": "^2.0.6",
     "@beemo/core": "^2.1.4",
-    "@commitlint/cli": "^17.0.1",
+    "@commitlint/cli": "^17.0.3",
     "@oriflame/conventional-changelog": "^1.2.58",
     "@oriflame/conventional-changelog-lint-config": "^1.1.60",
     "cross-env": "^7.0.3",
