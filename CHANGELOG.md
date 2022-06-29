@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.14 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency jest-junit to v14 (#1163) ([9d0797e](https://github.com/Oriflame/lumos/commit/9d0797e0214b6dbeab876bb515be1d96c319d130)), work items [#1163](https://github.com/Oriflame/lumos/issues/1163)
+- update dependency prettier to ^2.7.1 (#1159) ([ec024a2](https://github.com/Oriflame/lumos/commit/ec024a2854f7e531797565577b9693abe178edcb)), work items [#1159](https://github.com/Oriflame/lumos/issues/1159)
+- update dependency webpack to ^5.73.0 (#1160) ([b6b4a91](https://github.com/Oriflame/lumos/commit/b6b4a913e8a962bd55ec79e3cbb5a942597c9e70)), work items [#1160](https://github.com/Oriflame/lumos/issues/1160)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([b960f8a](https://github.com/Oriflame/lumos/commit/b960f8a7ea5c426eabdfce5690ae6ef4adbe4dd2))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.11.13 - 2022-06-29
 
 #### 📦 Dependencies
