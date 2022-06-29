@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.13 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.18.6 (#1152) ([4caddfd](https://github.com/Oriflame/lumos/commit/4caddfd6692f784d6b860fc48196b009f414e71f)), work items [#1152](https://github.com/Oriflame/lumos/issues/1152)
+- update dependency @next/eslint-plugin-next to ^12.2.0 (#1155) ([80deb5d](https://github.com/Oriflame/lumos/commit/80deb5d6ae3b437b0bf4df448d9e234cf2bc7f34)), work items [#1155](https://github.com/Oriflame/lumos/issues/1155)
+- update dependency eslint to ^8.18.0 (#1156) ([fdf4f8f](https://github.com/Oriflame/lumos/commit/fdf4f8fd9e3cee52a59de5edf6e99ef8932f38a9)), work items [#1156](https://github.com/Oriflame/lumos/issues/1156)
+- update dependency eslint-import-resolver-typescript to v3 (#1158) ([bcf88c3](https://github.com/Oriflame/lumos/commit/bcf88c34660420a49cf4c3b9211f1bd285e5e8e1)), work items [#1158](https://github.com/Oriflame/lumos/issues/1158)
+- update dependency eslint-plugin-jsx-a11y to ^6.6.0 (#1157) ([426f699](https://github.com/Oriflame/lumos/commit/426f699ad750a1ad486a44858918f6600364bac4)), work items [#1157](https://github.com/Oriflame/lumos/issues/1157)
+- update dependency eslint-plugin-prettier to ^4.1.0 (#1153) ([0295879](https://github.com/Oriflame/lumos/commit/02958795d6e9d818d7cf0d537cbbc5111a8e4378)), work items [#1153](https://github.com/Oriflame/lumos/issues/1153)
+- update react monorepo (#1154) ([41e3742](https://github.com/Oriflame/lumos/commit/41e3742419e2cd8edc43c2b4e32e01145790ce8d)), work items [#1154](https://github.com/Oriflame/lumos/issues/1154)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.11.12 - 2022-06-29
 
 #### 📦 Dependencies
