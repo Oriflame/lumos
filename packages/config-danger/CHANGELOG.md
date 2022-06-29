@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.9 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update oriflame dependencies (#1041) ([421bb61](https://github.com/Oriflame/lumos/commit/421bb610923bdc5fdfe9b15bcb676ff215dc8838)), work items [#1041](https://github.com/Oriflame/lumos/issues/1041)
+
+**Note:** Version bump only for package @oriflame/config-danger
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 **Note:** Version bump only for package @oriflame/config-danger
