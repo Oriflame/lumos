@@ -100,9 +100,10 @@ const config: eslint.Linter.Config['rules'] = {
   ], // bans specific types from being used
   '@typescript-eslint/brace-style': 'off', // enforce consistent brace style for blocks
   '@typescript-eslint/class-literal-property-style': 'off', // ensures that literals on classes are exposed in a consistent style
-  '@typescript-eslint/consistent-indexed-object-style': 'off', // enforce or disallow the use of the record type
   '@typescript-eslint/comma-dangle': 'off', // require or disallow trailing comma
   '@typescript-eslint/comma-spacing': 'off', // enforces consistent spacing before and after commas
+  '@typescript-eslint/consistent-generic-constructors': 'off', // enforces specifying generic type arguments on type annotation or constructor name of a constructor call
+  '@typescript-eslint/consistent-indexed-object-style': 'off', // enforce or disallow the use of the record type
   '@typescript-eslint/consistent-type-assertions': [
     'error',
     {
@@ -272,7 +273,6 @@ const config: eslint.Linter.Config['rules'] = {
   ], // requires expressions of type void to appear in statement position
   '@typescript-eslint/no-dupe-class-members': 'error', // disallow duplicate class members
   '@typescript-eslint/no-duplicate-enum-values': 'error', // disallow duplicate enum member values
-  '@typescript-eslint/no-duplicate-imports': 'error', // disallow duplicate imports
   '@typescript-eslint/no-dynamic-delete': 'off', // bans usage of the delete operator with computed key expressions
   '@typescript-eslint/no-empty-function': 'off', // disallow empty functions
   '@typescript-eslint/no-empty-interface': 'warn', // disallow the declaration of empty interfaces
