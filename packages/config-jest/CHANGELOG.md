@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.11 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update jest monorepo (#1141) ([2c46ea6](https://github.com/Oriflame/lumos/commit/2c46ea63c1bd4bd760ffa2f5f677c8fbbb07c3da)), work items [#1141](https://github.com/Oriflame/lumos/issues/1141)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.11.10 - 2022-06-29
 
 **Note:** Version bump only for package @oriflame/config-jest

@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/config-jest",
-  "version": "5.11.10",
+  "version": "5.11.11",
   "description": "Reusable Jest config.",
   "keywords": [
     "lumos",
@@ -37,14 +37,14 @@
     "@babel/core": "^7.18.2",
     "@beemo/driver-jest": "^2.0.5",
     "@emotion/jest": "^11.9.1",
-    "@oriflame/lumos-common": "^5.11.10",
+    "@oriflame/lumos-common": "^5.11.11",
     "@testing-library/jest-dom": "^5.16.4",
     "@types/jest": "^27.5.2",
     "dom-storage": "^2.1.0",
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
     "jest-environment-jsdom": "^28.1.2",
-    "jest-preset-oriflame": "^5.11.10"
+    "jest-preset-oriflame": "^5.11.11"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.4",
