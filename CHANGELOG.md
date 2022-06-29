@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.11.10 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency postcss-preset-env to ^7.7.2 (#1137) ([18f10d8](https://github.com/Oriflame/lumos/commit/18f10d816a7e68a535a16360d01a14f4877f9250)), work items [#1137](https://github.com/Oriflame/lumos/issues/1137)
+- update dependency webpack-dev-server to ^4.9.2 (#1138) ([c7c9961](https://github.com/Oriflame/lumos/commit/c7c9961d6557b7329de4f8c09a7e01fcb8cb50a4)), work items [#1138](https://github.com/Oriflame/lumos/issues/1138)
+- update typescript-eslint monorepo to ^5.30.0 (#1136) ([7e3948f](https://github.com/Oriflame/lumos/commit/7e3948fac29dafc8b8b3bc5748a3879f0cbdccb1)), work items [#1136](https://github.com/Oriflame/lumos/issues/1136)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([dc9a2d3](https://github.com/Oriflame/lumos/commit/dc9a2d3c810ae6aac7d61a55bcaa353a37caf7e3))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.11.9 - 2022-06-29
 
 #### 📦 Dependencies
