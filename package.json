@@ -50,7 +50,7 @@
     "graphql-tag": "^2.12.6",
     "husky": "^8.0.1",
     "jest": "^28.1.2",
-    "lerna": "^5.0.0",
+    "lerna": "^5.1.6",
     "packemon": "^2.3.1",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
