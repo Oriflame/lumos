@@ -36,7 +36,7 @@
   "dependencies": {
     "@babel/core": "^7.18.2",
     "@beemo/driver-jest": "^2.0.5",
-    "@emotion/jest": "^11.9.1",
+    "@emotion/jest": "^11.9.3",
     "@oriflame/lumos-common": "^5.11.11",
     "@testing-library/jest-dom": "^5.16.4",
     "@types/jest": "^27.5.2",
