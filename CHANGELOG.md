@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.13.0 - 2022-06-30
+
+#### 🚀 Updates
+
+- Update tsconfig. (#1168) ([97252c7](https://github.com/Oriflame/lumos/commit/97252c74e8945665aabe12d7b74d1216a61fc59b)), work items [#1168](https://github.com/Oriflame/lumos/issues/1168)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([7faa2f4](https://github.com/Oriflame/lumos/commit/7faa2f47efbfddd7f494267bb6800eb6e2cdefb4))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.12.0 - 2022-06-29
 
 #### 🚀 Updates
