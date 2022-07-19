@@ -3,6 +3,101 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.13.0 - 2022-06-30
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
+### 5.12.0 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
+### 5.11.15 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency webpack-cli to ^4.10.0 (#1161) ([277bf82](https://github.com/Oriflame/lumos/commit/277bf82bf91a46a9109d5c840d42237038c0b216)), work items [#1161](https://github.com/Oriflame/lumos/issues/1161)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
+### 5.11.14 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency webpack to ^5.73.0 (#1160) ([b6b4a91](https://github.com/Oriflame/lumos/commit/b6b4a913e8a962bd55ec79e3cbb5a942597c9e70)), work items [#1160](https://github.com/Oriflame/lumos/issues/1160)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
+### 5.11.13 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.18.6 (#1152) ([4caddfd](https://github.com/Oriflame/lumos/commit/4caddfd6692f784d6b860fc48196b009f414e71f)), work items [#1152](https://github.com/Oriflame/lumos/issues/1152)
+- update react monorepo (#1154) ([41e3742](https://github.com/Oriflame/lumos/commit/41e3742419e2cd8edc43c2b4e32e01145790ce8d)), work items [#1154](https://github.com/Oriflame/lumos/issues/1154)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
+### 5.11.12 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency terser-webpack-plugin to ^5.3.3 (#1147) ([ab215f9](https://github.com/Oriflame/lumos/commit/ab215f9d876bfc10fbc74b345a655d0a00f87141)), work items [#1147](https://github.com/Oriflame/lumos/issues/1147)
+- update dependency webpack-dev-server to ^4.9.3 (#1149) ([491dbb7](https://github.com/Oriflame/lumos/commit/491dbb74a884df23d7aa1d3417087f499878d2a3)), work items [#1149](https://github.com/Oriflame/lumos/issues/1149)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
+### 5.11.11 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
+### 5.11.10 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency postcss-preset-env to ^7.7.2 (#1137) ([18f10d8](https://github.com/Oriflame/lumos/commit/18f10d816a7e68a535a16360d01a14f4877f9250)), work items [#1137](https://github.com/Oriflame/lumos/issues/1137)
+- update dependency webpack-dev-server to ^4.9.2 (#1138) ([c7c9961](https://github.com/Oriflame/lumos/commit/c7c9961d6557b7329de4f8c09a7e01fcb8cb50a4)), work items [#1138](https://github.com/Oriflame/lumos/issues/1138)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
+### 5.11.9 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 **Note:** Version bump only for package @oriflame/config-webpack

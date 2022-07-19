@@ -43,6 +43,7 @@ const config: eslint.Linter.Config['rules'] = {
   'jest/prefer-equality-matcher': 'warn', // suggest using the built-in equality matchers
   'jest/prefer-expect-assertions': 'off', // suggest using expect.assertions() OR expect.hasAssertions()
   'jest/prefer-expect-resolves': 'error', // prefer await expect(...).resolves over expect(await ...) syntax
+  'jest/prefer-hooks-in-order': 'warn', // prefer having hooks in a consistent order
   'jest/prefer-hooks-on-top': 'warn', // suggest having hooks before any test cases
   'jest/prefer-lowercase-title': 'off', // enforce lowercase title
   'jest/prefer-snapshot-hint': 'off', // prefer including a hint with external snapshots

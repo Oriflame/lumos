@@ -3,6 +3,171 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.13.0 - 2022-06-30
+
+#### 🚀 Updates
+
+- Update tsconfig. (#1168) ([97252c7](https://github.com/Oriflame/lumos/commit/97252c74e8945665aabe12d7b74d1216a61fc59b)), work items [#1168](https://github.com/Oriflame/lumos/issues/1168)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([7faa2f4](https://github.com/Oriflame/lumos/commit/7faa2f47efbfddd7f494267bb6800eb6e2cdefb4))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+## 5.12.0 - 2022-06-29
+
+#### 🚀 Updates
+
+- Update ESLint rules. (#1166) ([4ff4891](https://github.com/Oriflame/lumos/commit/4ff4891efb9a69413c73cdef464f3f8e66c1a300)), work items [#1166](https://github.com/Oriflame/lumos/issues/1166)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([38c8ebd](https://github.com/Oriflame/lumos/commit/38c8ebd5b60336a76cb66c2a4d9d4593c2a001b4))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 5.11.15 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency webpack-cli to ^4.10.0 (#1161) ([277bf82](https://github.com/Oriflame/lumos/commit/277bf82bf91a46a9109d5c840d42237038c0b216)), work items [#1161](https://github.com/Oriflame/lumos/issues/1161)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([98c83f4](https://github.com/Oriflame/lumos/commit/98c83f44cf521c1dab78e7df5fade07af069d53f))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 5.11.14 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency jest-junit to v14 (#1163) ([9d0797e](https://github.com/Oriflame/lumos/commit/9d0797e0214b6dbeab876bb515be1d96c319d130)), work items [#1163](https://github.com/Oriflame/lumos/issues/1163)
+- update dependency prettier to ^2.7.1 (#1159) ([ec024a2](https://github.com/Oriflame/lumos/commit/ec024a2854f7e531797565577b9693abe178edcb)), work items [#1159](https://github.com/Oriflame/lumos/issues/1159)
+- update dependency webpack to ^5.73.0 (#1160) ([b6b4a91](https://github.com/Oriflame/lumos/commit/b6b4a913e8a962bd55ec79e3cbb5a942597c9e70)), work items [#1160](https://github.com/Oriflame/lumos/issues/1160)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([b960f8a](https://github.com/Oriflame/lumos/commit/b960f8a7ea5c426eabdfce5690ae6ef4adbe4dd2))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 5.11.13 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.18.6 (#1152) ([4caddfd](https://github.com/Oriflame/lumos/commit/4caddfd6692f784d6b860fc48196b009f414e71f)), work items [#1152](https://github.com/Oriflame/lumos/issues/1152)
+- update dependency @next/eslint-plugin-next to ^12.2.0 (#1155) ([80deb5d](https://github.com/Oriflame/lumos/commit/80deb5d6ae3b437b0bf4df448d9e234cf2bc7f34)), work items [#1155](https://github.com/Oriflame/lumos/issues/1155)
+- update dependency eslint to ^8.18.0 (#1156) ([fdf4f8f](https://github.com/Oriflame/lumos/commit/fdf4f8fd9e3cee52a59de5edf6e99ef8932f38a9)), work items [#1156](https://github.com/Oriflame/lumos/issues/1156)
+- update dependency eslint-import-resolver-typescript to v3 (#1158) ([bcf88c3](https://github.com/Oriflame/lumos/commit/bcf88c34660420a49cf4c3b9211f1bd285e5e8e1)), work items [#1158](https://github.com/Oriflame/lumos/issues/1158)
+- update dependency eslint-plugin-jsx-a11y to ^6.6.0 (#1157) ([426f699](https://github.com/Oriflame/lumos/commit/426f699ad750a1ad486a44858918f6600364bac4)), work items [#1157](https://github.com/Oriflame/lumos/issues/1157)
+- update dependency eslint-plugin-prettier to ^4.1.0 (#1153) ([0295879](https://github.com/Oriflame/lumos/commit/02958795d6e9d818d7cf0d537cbbc5111a8e4378)), work items [#1153](https://github.com/Oriflame/lumos/issues/1153)
+- update react monorepo (#1154) ([41e3742](https://github.com/Oriflame/lumos/commit/41e3742419e2cd8edc43c2b4e32e01145790ce8d)), work items [#1154](https://github.com/Oriflame/lumos/issues/1154)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([f0bb316](https://github.com/Oriflame/lumos/commit/f0bb316fc66eb07bf2e2cb3d4726ae6ca53de9b3))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 5.11.12 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency @emotion/jest to ^11.9.3 (#1145) ([c84472f](https://github.com/Oriflame/lumos/commit/c84472f68e89dbab68ac2e2385070136c5f51e04)), work items [#1145](https://github.com/Oriflame/lumos/issues/1145)
+- update dependency eslint-plugin-react to ^7.30.1 (#1146) ([95955d6](https://github.com/Oriflame/lumos/commit/95955d6efd5c1814d22444f38ef322a11d812cfa)), work items [#1146](https://github.com/Oriflame/lumos/issues/1146)
+- update dependency terser-webpack-plugin to ^5.3.3 (#1147) ([ab215f9](https://github.com/Oriflame/lumos/commit/ab215f9d876bfc10fbc74b345a655d0a00f87141)), work items [#1147](https://github.com/Oriflame/lumos/issues/1147)
+- update dependency typescript to ^4.7.4 (#1148) ([9a45631](https://github.com/Oriflame/lumos/commit/9a456310acdc979c96abb6be93c4e0b9a402b6d2)), work items [#1148](https://github.com/Oriflame/lumos/issues/1148)
+- update dependency webpack-dev-server to ^4.9.3 (#1149) ([491dbb7](https://github.com/Oriflame/lumos/commit/491dbb74a884df23d7aa1d3417087f499878d2a3)), work items [#1149](https://github.com/Oriflame/lumos/issues/1149)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([6697342](https://github.com/Oriflame/lumos/commit/6697342101260953695b8b62bf4490309bcd2045))
+- update dependency caniuse-lite to v1.0.30001361 (#1143) ([9d1475f](https://github.com/Oriflame/lumos/commit/9d1475f8effe006bace075fe2878c701fe80d9e4)), work items [#1143](https://github.com/Oriflame/lumos/issues/1143)
+- update dependency lerna to ^5.1.6 (#1150) ([50c24ca](https://github.com/Oriflame/lumos/commit/50c24caac808096db24e340923fad72f66222277)), work items [#1150](https://github.com/Oriflame/lumos/issues/1150)
+- update dependency ts-node to ^10.8.1 (#1144) ([6e8a735](https://github.com/Oriflame/lumos/commit/6e8a735df205aa85d39a09e1a8ce4f0402a2a812)), work items [#1144](https://github.com/Oriflame/lumos/issues/1144)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 5.11.11 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update jest monorepo (#1141) ([2c46ea6](https://github.com/Oriflame/lumos/commit/2c46ea63c1bd4bd760ffa2f5f677c8fbbb07c3da)), work items [#1141](https://github.com/Oriflame/lumos/issues/1141)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([600bb8f](https://github.com/Oriflame/lumos/commit/600bb8fa2549a709f89b3e42f856d97d50a632d3))
+- update dependency @commitlint/cli to ^17.0.3 (#1140) ([6e9304c](https://github.com/Oriflame/lumos/commit/6e9304cd6df720e84ced651c8b7b80027021d2cd)), work items [#1140](https://github.com/Oriflame/lumos/issues/1140)
+- update dependency @types/node to ^16.11.41 (#1139) ([0434363](https://github.com/Oriflame/lumos/commit/04343631d46dcc484fd49d71103b1e0ee9aef007)), work items [#1139](https://github.com/Oriflame/lumos/issues/1139)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 5.11.10 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency postcss-preset-env to ^7.7.2 (#1137) ([18f10d8](https://github.com/Oriflame/lumos/commit/18f10d816a7e68a535a16360d01a14f4877f9250)), work items [#1137](https://github.com/Oriflame/lumos/issues/1137)
+- update dependency webpack-dev-server to ^4.9.2 (#1138) ([c7c9961](https://github.com/Oriflame/lumos/commit/c7c9961d6557b7329de4f8c09a7e01fcb8cb50a4)), work items [#1138](https://github.com/Oriflame/lumos/issues/1138)
+- update typescript-eslint monorepo to ^5.30.0 (#1136) ([7e3948f](https://github.com/Oriflame/lumos/commit/7e3948fac29dafc8b8b3bc5748a3879f0cbdccb1)), work items [#1136](https://github.com/Oriflame/lumos/issues/1136)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([dc9a2d3](https://github.com/Oriflame/lumos/commit/dc9a2d3c810ae6aac7d61a55bcaa353a37caf7e3))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
+### 5.11.9 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-jest to ^26.5.3 (#1134) ([31601cd](https://github.com/Oriflame/lumos/commit/31601cd181a6cb9dff9b7a0cf9c52c61cf53c9f1)), work items [#1134](https://github.com/Oriflame/lumos/issues/1134)
+- update oriflame dependencies (#1041) ([421bb61](https://github.com/Oriflame/lumos/commit/421bb610923bdc5fdfe9b15bcb676ff215dc8838)), work items [#1041](https://github.com/Oriflame/lumos/issues/1041)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([bd3227f](https://github.com/Oriflame/lumos/commit/bd3227ff41442918d12691ca39ce28945a6979d9))
+- update dependency packemon to ^2.3.1 (#1135) ([f2d7b19](https://github.com/Oriflame/lumos/commit/f2d7b19ddf7c60bf16367874de64736572610ec5)), work items [#1135](https://github.com/Oriflame/lumos/issues/1135)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 #### 📦 Dependencies

@@ -3,6 +3,104 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.13.0 - 2022-06-30
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
+### 5.12.0 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
+### 5.11.15 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency webpack-cli to ^4.10.0 (#1161) ([277bf82](https://github.com/Oriflame/lumos/commit/277bf82bf91a46a9109d5c840d42237038c0b216)), work items [#1161](https://github.com/Oriflame/lumos/issues/1161)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
+### 5.11.14 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency prettier to ^2.7.1 (#1159) ([ec024a2](https://github.com/Oriflame/lumos/commit/ec024a2854f7e531797565577b9693abe178edcb)), work items [#1159](https://github.com/Oriflame/lumos/issues/1159)
+- update dependency webpack to ^5.73.0 (#1160) ([b6b4a91](https://github.com/Oriflame/lumos/commit/b6b4a913e8a962bd55ec79e3cbb5a942597c9e70)), work items [#1160](https://github.com/Oriflame/lumos/issues/1160)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
+### 5.11.13 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.18.6 (#1152) ([4caddfd](https://github.com/Oriflame/lumos/commit/4caddfd6692f784d6b860fc48196b009f414e71f)), work items [#1152](https://github.com/Oriflame/lumos/issues/1152)
+- update dependency eslint to ^8.18.0 (#1156) ([fdf4f8f](https://github.com/Oriflame/lumos/commit/fdf4f8fd9e3cee52a59de5edf6e99ef8932f38a9)), work items [#1156](https://github.com/Oriflame/lumos/issues/1156)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
+### 5.11.12 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency typescript to ^4.7.4 (#1148) ([9a45631](https://github.com/Oriflame/lumos/commit/9a456310acdc979c96abb6be93c4e0b9a402b6d2)), work items [#1148](https://github.com/Oriflame/lumos/issues/1148)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
+### 5.11.11 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update jest monorepo (#1141) ([2c46ea6](https://github.com/Oriflame/lumos/commit/2c46ea63c1bd4bd760ffa2f5f677c8fbbb07c3da)), work items [#1141](https://github.com/Oriflame/lumos/issues/1141)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
+### 5.11.10 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
+### 5.11.9 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update oriflame dependencies (#1041) ([421bb61](https://github.com/Oriflame/lumos/commit/421bb610923bdc5fdfe9b15bcb676ff215dc8838)), work items [#1041](https://github.com/Oriflame/lumos/issues/1041)
+
+**Note:** Version bump only for package @oriflame/lumos
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 **Note:** Version bump only for package @oriflame/lumos

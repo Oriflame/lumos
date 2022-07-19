@@ -3,6 +3,90 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.13.0 - 2022-06-30
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
+### 5.12.0 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
+### 5.11.15 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
+### 5.11.14 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
+### 5.11.13 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.18.6 (#1152) ([4caddfd](https://github.com/Oriflame/lumos/commit/4caddfd6692f784d6b860fc48196b009f414e71f)), work items [#1152](https://github.com/Oriflame/lumos/issues/1152)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
+### 5.11.12 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency @emotion/jest to ^11.9.3 (#1145) ([c84472f](https://github.com/Oriflame/lumos/commit/c84472f68e89dbab68ac2e2385070136c5f51e04)), work items [#1145](https://github.com/Oriflame/lumos/issues/1145)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
+### 5.11.11 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update jest monorepo (#1141) ([2c46ea6](https://github.com/Oriflame/lumos/commit/2c46ea63c1bd4bd760ffa2f5f677c8fbbb07c3da)), work items [#1141](https://github.com/Oriflame/lumos/issues/1141)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
+### 5.11.10 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
+### 5.11.9 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 **Note:** Version bump only for package @oriflame/config-jest

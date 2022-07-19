@@ -3,6 +3,83 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.13.0 - 2022-06-30
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
+### 5.12.0 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
+### 5.11.15 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
+### 5.11.14 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
+### 5.11.13 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.18.6 (#1152) ([4caddfd](https://github.com/oriflame/lumos/commit/4caddfd6692f784d6b860fc48196b009f414e71f)), work items [#1152](https://github.com/oriflame/lumos/issues/1152)
+- update react monorepo (#1154) ([41e3742](https://github.com/oriflame/lumos/commit/41e3742419e2cd8edc43c2b4e32e01145790ce8d)), work items [#1154](https://github.com/oriflame/lumos/issues/1154)
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
+### 5.11.12 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
+### 5.11.11 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
+### 5.11.10 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
+### 5.11.9 - 2022-06-29
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 **Note:** Version bump only for package @oriflame/babel-preset

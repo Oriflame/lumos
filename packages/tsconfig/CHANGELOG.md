@@ -3,6 +3,82 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.13.0 - 2022-06-30
+
+#### 🚀 Updates
+
+- Update tsconfig. (#1168) ([97252c7](https://github.com/oriflame/lumos/commit/97252c74e8945665aabe12d7b74d1216a61fc59b)), work items [#1168](https://github.com/oriflame/lumos/issues/1168)
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
+### 5.12.0 - 2022-06-29
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
+### 5.11.15 - 2022-06-29
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
+### 5.11.14 - 2022-06-29
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
+### 5.11.13 - 2022-06-29
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
+### 5.11.12 - 2022-06-29
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
+### 5.11.11 - 2022-06-29
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
+### 5.11.10 - 2022-06-29
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
+### 5.11.9 - 2022-06-29
+
+**Note:** Version bump only for package tsconfig-oriflame
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 **Note:** Version bump only for package tsconfig-oriflame

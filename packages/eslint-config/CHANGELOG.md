@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.13.0 - 2022-06-30
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
+## 5.12.0 - 2022-06-29
+
+#### 🚀 Updates
+
+- Update ESLint rules. (#1166) ([4ff4891](https://github.com/Oriflame/lumos/commit/4ff4891efb9a69413c73cdef464f3f8e66c1a300)), work items [#1166](https://github.com/Oriflame/lumos/issues/1166)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
+### 5.11.15 - 2022-06-29
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
+### 5.11.14 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency prettier to ^2.7.1 (#1159) ([ec024a2](https://github.com/Oriflame/lumos/commit/ec024a2854f7e531797565577b9693abe178edcb)), work items [#1159](https://github.com/Oriflame/lumos/issues/1159)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
+### 5.11.13 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update babel monorepo to ^7.18.6 (#1152) ([4caddfd](https://github.com/Oriflame/lumos/commit/4caddfd6692f784d6b860fc48196b009f414e71f)), work items [#1152](https://github.com/Oriflame/lumos/issues/1152)
+- update dependency @next/eslint-plugin-next to ^12.2.0 (#1155) ([80deb5d](https://github.com/Oriflame/lumos/commit/80deb5d6ae3b437b0bf4df448d9e234cf2bc7f34)), work items [#1155](https://github.com/Oriflame/lumos/issues/1155)
+- update dependency eslint to ^8.18.0 (#1156) ([fdf4f8f](https://github.com/Oriflame/lumos/commit/fdf4f8fd9e3cee52a59de5edf6e99ef8932f38a9)), work items [#1156](https://github.com/Oriflame/lumos/issues/1156)
+- update dependency eslint-import-resolver-typescript to v3 (#1158) ([bcf88c3](https://github.com/Oriflame/lumos/commit/bcf88c34660420a49cf4c3b9211f1bd285e5e8e1)), work items [#1158](https://github.com/Oriflame/lumos/issues/1158)
+- update dependency eslint-plugin-jsx-a11y to ^6.6.0 (#1157) ([426f699](https://github.com/Oriflame/lumos/commit/426f699ad750a1ad486a44858918f6600364bac4)), work items [#1157](https://github.com/Oriflame/lumos/issues/1157)
+- update dependency eslint-plugin-prettier to ^4.1.0 (#1153) ([0295879](https://github.com/Oriflame/lumos/commit/02958795d6e9d818d7cf0d537cbbc5111a8e4378)), work items [#1153](https://github.com/Oriflame/lumos/issues/1153)
+- update react monorepo (#1154) ([41e3742](https://github.com/Oriflame/lumos/commit/41e3742419e2cd8edc43c2b4e32e01145790ce8d)), work items [#1154](https://github.com/Oriflame/lumos/issues/1154)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
+### 5.11.12 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-react to ^7.30.1 (#1146) ([95955d6](https://github.com/Oriflame/lumos/commit/95955d6efd5c1814d22444f38ef322a11d812cfa)), work items [#1146](https://github.com/Oriflame/lumos/issues/1146)
+
+#### 🛠 Internals
+
+- update dependency ts-node to ^10.8.1 (#1144) ([6e8a735](https://github.com/Oriflame/lumos/commit/6e8a735df205aa85d39a09e1a8ce4f0402a2a812)), work items [#1144](https://github.com/Oriflame/lumos/issues/1144)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
+### 5.11.11 - 2022-06-29
+
+#### 🛠 Internals
+
+- update dependency @types/node to ^16.11.41 (#1139) ([0434363](https://github.com/Oriflame/lumos/commit/04343631d46dcc484fd49d71103b1e0ee9aef007)), work items [#1139](https://github.com/Oriflame/lumos/issues/1139)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
+### 5.11.10 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update typescript-eslint monorepo to ^5.30.0 (#1136) ([7e3948f](https://github.com/Oriflame/lumos/commit/7e3948fac29dafc8b8b3bc5748a3879f0cbdccb1)), work items [#1136](https://github.com/Oriflame/lumos/issues/1136)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
+### 5.11.9 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency eslint-plugin-jest to ^26.5.3 (#1134) ([31601cd](https://github.com/Oriflame/lumos/commit/31601cd181a6cb9dff9b7a0cf9c52c61cf53c9f1)), work items [#1134](https://github.com/Oriflame/lumos/issues/1134)
+
+**Note:** Version bump only for package eslint-config-oriflame
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 #### 📦 Dependencies

@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.13.0 - 2022-06-30
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
+### 5.12.0 - 2022-06-29
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
+### 5.11.15 - 2022-06-29
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
+### 5.11.14 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update dependency jest-junit to v14 (#1163) ([9d0797e](https://github.com/oriflame/lumos/commit/9d0797e0214b6dbeab876bb515be1d96c319d130)), work items [#1163](https://github.com/oriflame/lumos/issues/1163)
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
+### 5.11.13 - 2022-06-29
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
+### 5.11.12 - 2022-06-29
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
+### 5.11.11 - 2022-06-29
+
+#### 📦 Dependencies
+
+- update jest monorepo (#1141) ([2c46ea6](https://github.com/oriflame/lumos/commit/2c46ea63c1bd4bd760ffa2f5f677c8fbbb07c3da)), work items [#1141](https://github.com/oriflame/lumos/issues/1141)
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
+### 5.11.10 - 2022-06-29
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
+### 5.11.9 - 2022-06-29
+
+**Note:** Version bump only for package jest-preset-oriflame
+
+
+
+
+
 ### 5.11.8 - 2022-05-29
 
 **Note:** Version bump only for package jest-preset-oriflame

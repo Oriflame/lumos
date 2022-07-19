@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-oriflame",
-  "version": "5.11.8",
+  "version": "5.13.0",
   "description": "Reusable ESLint config for oriflame project",
   "keywords": [
     "lumos",
@@ -36,33 +36,33 @@
     "typescript.js"
   ],
   "dependencies": {
-    "@babel/core": "^7.18.2",
+    "@babel/core": "^7.18.6",
     "@babel/eslint-parser": "^7.18.2",
-    "@next/eslint-plugin-next": "^12.1.6",
-    "@oriflame/lumos-common": "^5.11.8",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
+    "@next/eslint-plugin-next": "^12.2.0",
+    "@oriflame/lumos-common": "^5.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
     "confusing-browser-globals": "^1.0.11",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-import-resolver-typescript": "^3.1.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.4.2",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^4.1.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.5.1",
     "eslint-plugin-unicorn": "^42.0.0"
   },
   "devDependencies": {
     "@types/confusing-browser-globals": "^1.0.0",
-    "@types/node": "^16.11.36",
-    "eslint": "^8.16.0",
-    "prettier": "^2.6.2",
-    "ts-node": "^10.8.0"
+    "@types/node": "^16.11.41",
+    "eslint": "^8.18.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1"
   },
   "peerDependencies": {
     "eslint": "^8.4.0",

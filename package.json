@@ -40,25 +40,25 @@
   "devDependencies": {
     "@beemo/cli": "^2.0.6",
     "@beemo/core": "^2.1.4",
-    "@commitlint/cli": "^17.0.1",
-    "@oriflame/conventional-changelog": "^1.2.40",
-    "@oriflame/conventional-changelog-lint-config": "^1.1.42",
+    "@commitlint/cli": "^17.0.3",
+    "@oriflame/conventional-changelog": "^1.2.58",
+    "@oriflame/conventional-changelog-lint-config": "^1.1.60",
     "cross-env": "^7.0.3",
-    "eslint": "^8.16.0",
+    "eslint": "^8.18.0",
     "eslint-find-rules": "^4.1.0",
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
     "husky": "^8.0.1",
-    "jest": "^28.1.0",
-    "lerna": "^5.0.0",
-    "packemon": "^2.2.2",
-    "prettier": "^2.6.2",
+    "jest": "^28.1.2",
+    "lerna": "^5.1.6",
+    "packemon": "^2.3.1",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.7.2",
-    "webpack": "^5.72.1"
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0"
   },
   "resolutions": {
-    "caniuse-lite": "1.0.30001344"
+    "caniuse-lite": "1.0.30001361"
   },
   "packageManager": "yarn@3.2.1"
 }
