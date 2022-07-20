@@ -92,6 +92,8 @@ export default config;
 - `assumptions`(`Assumptions`) - Babel assumptions (see:
   [compiler assumptions](https://babeljs.io/docs/en/assumptions),
   [preset-env#loose](https://babeljs.io/docs/en/babel-preset-env#loose))
+- `checkedFolders` (`string[]`) - List of extra folder names (relative to root) to be checked with
+  `eslint` and `tsc` (excluded from build)
 
 ## Usage
 
