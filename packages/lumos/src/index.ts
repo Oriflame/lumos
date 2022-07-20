@@ -16,7 +16,7 @@ export type LumosConfig = BeemoConfig<Partial<LumosSettings>>;
 export type { ConfigTemplateResult, ConfigTemplateOptions, ConfigObject } from '@beemo/core';
 
 export default function lumos(tool: Tool) {
-  const { srcFolder, testsFolder, esmBuildFolder, buildFolder } = getSettings(tool);
+  const { srcFolder, testsFolder, esmBuildFolder, buildFolder, checkedFolders } = getSettings(tool);
   const usingTypescript = tool.driverRegistry.isRegistered('typescript');
   const workspaces = tool.project.getWorkspaceGlobs({ relative: true });
   const exts = ['.ts', '.tsx', '.js', '.jsx'];
@@ -56,12 +56,18 @@ export default function lumos(tool: Tool) {
     }
 
     if (hasNoParams(context, 'eslint')) {
+      const check = checkedFolders?.join(',');
+      const checkFolders = check ? `,${check}` : '';
       if (workspaces.length > 0) {
         workspaces.forEach((wsPrefix) => {
-          context.addOption(`${wsPrefix}/{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}}`);
+          context.addOption(
+            `${wsPrefix}/{${DIR_PATTERN_LIST},${srcFolder},${testsFolder}${checkFolders}}`,
+          );
         });
       } else {
-        context.addOption(`./{${srcFolder},${testsFolder},${ESLINT_DIRS.join(',')}}`);
+        context.addOption(
+          `./{${srcFolder},${testsFolder},${ESLINT_DIRS.join(',')}${checkFolders}}`,
+        );
       }
     }
 

@@ -19,9 +19,11 @@ const {
   testsFolder,
   buildFolder,
   enableSourceMaps,
+  checkedFolders,
 } = settings;
 
 const usingWorkspaces = tool.project.getWorkspaceGlobs({ relative: true }).length > 0;
+const noEmit = !!context.getRiskyOption('noEmit');
 
 export default getConfig({
   sourceMaps: enableSourceMaps,
@@ -31,11 +33,12 @@ export default getConfig({
   srcFolder,
   allowJs,
   skipLibCheck,
-  includeTests: !!context.getRiskyOption('noEmit'),
+  includeTests: noEmit,
   typesFolder,
   declarationFolder,
   declarationOnly,
   buildFolder,
   testsFolder,
   workspaces: usingWorkspaces,
+  checkedFolders: noEmit ? checkedFolders : undefined,
 });

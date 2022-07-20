@@ -20,6 +20,7 @@ export interface TypeScriptOptions {
   declarationFolder?: string;
   declarationOnly?: boolean;
   skipLibCheck?: boolean;
+  checkedFolders?: string[];
 }
 
 export function getCompilerOptions({
@@ -83,7 +84,7 @@ export function getCompilerOptions({
 }
 
 export function getConfig(options: TypeScriptOptions): TypeScriptConfig {
-  const { workspaces, srcFolder, typesFolder, includeTests, testsFolder } = options;
+  const { workspaces, srcFolder, typesFolder, includeTests, testsFolder, checkedFolders } = options;
   if (workspaces) {
     return {
       compilerOptions: getCompilerOptions(options),
@@ -98,6 +99,12 @@ export function getConfig(options: TypeScriptOptions): TypeScriptConfig {
 
   if (includeTests) {
     tsconfig.include.push(`./${testsFolder}/**/*`);
+  }
+
+  const check = checkedFolders?.map((folder) => `./${folder}/**/*`);
+
+  if (check) {
+    tsconfig.include.push(...check);
   }
 
   return tsconfig;
