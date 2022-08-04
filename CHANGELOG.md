@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.14.0 - 2022-07-20
+
+#### 🚀 Updates
+
+- Add checked folders option. (#1173) ([2df2c84](https://github.com/Oriflame/lumos/commit/2df2c849d25a2abd882cdf0f31bd1aee1a97ae70)), work items [#1173](https://github.com/Oriflame/lumos/issues/1173)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([0a93189](https://github.com/Oriflame/lumos/commit/0a93189bea35827e33045b473c3cd64da6924e9b))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.13.0 - 2022-06-30
 
 #### 🚀 Updates
