@@ -1,6 +1,6 @@
 import type { BeemoConfig, DriverContext, Tool } from '@beemo/core';
 import { DIR_PATTERN_LIST, ESLINT_DIRS } from '@oriflame/lumos-common';
-import path from 'path';
+import path from 'node:path';
 
 import { getSettings } from './helpers/getSettings';
 import type { LumosSettings } from './types';
@@ -183,4 +183,4 @@ export type { JestConfig } from '@beemo/driver-jest';
 export type { ESLintConfig } from '@beemo/driver-eslint';
 export type { TypeScriptConfig } from '@beemo/driver-typescript';
 export type { PrettierConfig } from '@beemo/driver-prettier';
-export type { WebpackConfig } from '@beemo/driver-webpack';
+export type { WebpackConfig } from './types/webpack';
