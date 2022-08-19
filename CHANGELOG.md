@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.14.2 - 2022-08-19
+
+#### 📦 Dependencies
+
+- update dependency webpack-bundle-analyzer to ^4.6.0 (#1177) ([79b21eb](https://github.com/Oriflame/lumos/commit/79b21eb6a71d286ce93506d5b03b6f954241f07f)), work items [#1177](https://github.com/Oriflame/lumos/issues/1177)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([a595cfa](https://github.com/Oriflame/lumos/commit/a595cfaf33dfa36d87e6f18c4adce4d1dc2b2f51))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.14.1 - 2022-08-19
 
 #### 🐞 Fixes
