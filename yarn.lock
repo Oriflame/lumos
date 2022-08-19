@@ -6015,7 +6015,7 @@ __metadata:
     "@module-federation/concat-runtime": ^0.0.1
     "@oriflame/lumos-common": ^5.14.1
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
-    "@types/webpack-bundle-analyzer": ^4.4.1
+    "@types/webpack-bundle-analyzer": ^4.4.2
     babel-loader: ^8.2.5
     cross-env: ^7.0.3
     css-loader: ^6.7.1
@@ -6044,7 +6044,7 @@ __metadata:
     tsconfig-paths-webpack-plugin: ^3.5.2
     url-loader: ^4.1.1
     webpack: ^5.73.0
-    webpack-bundle-analyzer: ^4.5.0
+    webpack-bundle-analyzer: ^4.6.0
     webpack-cli: ^4.10.0
     webpack-dev-server: ^4.9.3
     webpack-merge: ^5.8.0
@@ -6961,14 +6961,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/webpack-bundle-analyzer@npm:^4.4.1":
-  version: 4.4.1
-  resolution: "@types/webpack-bundle-analyzer@npm:4.4.1"
+"@types/webpack-bundle-analyzer@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "@types/webpack-bundle-analyzer@npm:4.4.2"
   dependencies:
     "@types/node": "*"
     tapable: ^2.2.0
     webpack: ^5
-  checksum: 50afdbd2a40545a8acda4adda09b98772dd646dea894dfa95d9f86d224d3df462405b5d0c04077958e87399cda4c9bac7451bbb7285c99e7220806b439ae7f72
+  checksum: 013260f0122e8d9d7041b16eb71cb25695019d57648d96774ad4a73345a25d9cd1e9667073cc8548110a3c1519321c93a085bbfaa479a983fab72d9eab8143b2
   languageName: node
   linkType: hard
 
@@ -20182,9 +20182,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-bundle-analyzer@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "webpack-bundle-analyzer@npm:4.5.0"
+"webpack-bundle-analyzer@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "webpack-bundle-analyzer@npm:4.6.0"
   dependencies:
     acorn: ^8.0.4
     acorn-walk: ^8.0.0
@@ -20197,7 +20197,7 @@ __metadata:
     ws: ^7.3.1
   bin:
     webpack-bundle-analyzer: lib/bin/analyzer.js
-  checksum: 158e96810ec213d5665ca1c0b257097db44e1f11c4befefab8352b9e5b10890fcb3e3fc1f7bb400dd58762a8edce5621c92afeca86eb4687d2eb64e93186bfcb
+  checksum: f2921b08cb6a7e58e5b94d2324e98039666ef5c4ce46dc29d5c13f122f12b9b5e9036336283196b70f696be793aec900f87b352712f2fc28d1beec4b7080a097
   languageName: node
   linkType: hard
 
