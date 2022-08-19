@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.14.1 - 2022-08-19
+
+#### 🐞 Fixes
+
+- Fix `WebpackConfig` from `@beemo/driver-webpack` to support `devServer` configuration. (#1176) ([1d49640](https://github.com/Oriflame/lumos/commit/1d49640a8373fbc50ca32d2de850a6a1136eef2f)), work items [#1176](https://github.com/Oriflame/lumos/issues/1176)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([6be2d68](https://github.com/Oriflame/lumos/commit/6be2d68d55be48df08a6bb7efac9446a14c64856))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.14.0 - 2022-07-20
 
 #### 🚀 Updates
