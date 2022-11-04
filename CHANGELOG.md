@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.14.3 - 2022-11-04
+
+#### 🐞 Fixes
+
+- Update GraphQL transformer after upgrade to Jest 28. (#1181) ([9de2ac7](https://github.com/Oriflame/lumos/commit/9de2ac709534f0bd6096ef2175de118f90c0ef41)), work items [#1181](https://github.com/Oriflame/lumos/issues/1181)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([52c852e](https://github.com/Oriflame/lumos/commit/52c852ebb0adbe33a0ba0d3a5b3e0f3bdffb86f6))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.14.2 - 2022-08-19
 
 #### 📦 Dependencies

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.14.3 - 2022-11-04
+
+#### 🐞 Fixes
+
+- Update GraphQL transformer after upgrade to Jest 28. (#1181) ([9de2ac7](https://github.com/Oriflame/lumos/commit/9de2ac709534f0bd6096ef2175de118f90c0ef41)), work items [#1181](https://github.com/Oriflame/lumos/issues/1181)
+
+**Note:** Version bump only for package @oriflame/config-jest
+
+
+
+
+
 ### 5.14.2 - 2022-08-19
 
 **Note:** Version bump only for package @oriflame/config-jest
