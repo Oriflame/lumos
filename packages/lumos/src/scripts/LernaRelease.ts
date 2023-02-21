@@ -144,7 +144,7 @@ class LernaRelease extends Script {
 
   // https://github.com/lerna/lerna/tree/master/commands/publish#readme
   async publishPackages(preid?: string) {
-    const args = ['lerna', 'publish', 'from-git', '--yes'];
+    const args = ['lerna', 'publish', 'from-git', '--yes', '--no-verify-access'];
 
     if (preid) {
       args.push('--dist-tag', 'next', '--preid', preid);
