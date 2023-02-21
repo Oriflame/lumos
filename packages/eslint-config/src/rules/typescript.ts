@@ -111,7 +111,7 @@ const config: eslint.Linter.Config['rules'] = {
       objectLiteralTypeAssertions: 'allow-as-parameter',
     },
   ], // enforces consistent usage of type assertions
-  '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'], // consistent with type definition either interface or type
+  '@typescript-eslint/consistent-type-definitions': 'off', // consistent with type definition either interface or type
   '@typescript-eslint/consistent-type-exports': 'warn', // enforces consistent usage of type exports
   '@typescript-eslint/consistent-type-imports': 'warn', // enforces consistent usage of type imports
   '@typescript-eslint/default-param-last': 'warn', // enforce default parameters to be last
@@ -288,7 +288,7 @@ const config: eslint.Linter.Config['rules'] = {
       allowStaticOnly: true,
     },
   ], // forbids the use of classes as namespaces
-  '@typescript-eslint/no-floating-promises': 'off', // requires Promise-like values to be handled appropriately
+  '@typescript-eslint/no-floating-promises': 'warn', // requires Promise-like values to be handled appropriately
   '@typescript-eslint/no-for-in-array': 'error', // disallow iterating over an array with a for-in loop
   '@typescript-eslint/no-implied-eval': 'error', // disallow the use of eval()-like methods
   '@typescript-eslint/no-inferrable-types': [

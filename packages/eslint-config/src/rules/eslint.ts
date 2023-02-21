@@ -16,7 +16,7 @@ const config: eslint.Linter.Config['rules'] = {
   'brace-style': 'off', // enforce consistent brace style for blocks
   camelcase: ['warn', { properties: 'always' }], // enforce camelcase naming convention
   'capitalized-comments': 'off', // enforce or disallow capitalization of the first letter of a comment
-  'class-methods-use-this': 'warn', // enforce that class methods utilize this
+  'class-methods-use-this': 'off', // enforce that class methods utilize this
   'comma-dangle': 'off', // require or disallow trailing commas
   'comma-spacing': 'off', // enforce consistent spacing before and after commas
   'comma-style': 'off', // enforce consistent comma style
