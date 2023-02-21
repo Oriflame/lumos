@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.5 - 2023-02-21
+
+#### 🐞 Fixes
+
+- Tweak Lerna publish command. ([dfd3472](https://github.com/Oriflame/lumos/commit/dfd34727dee76b045f27a602de58490d7fd23103))
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. ([336738b](https://github.com/Oriflame/lumos/commit/336738b29e452f0d4c281d5a5728dba9740ddeba))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.15.4 - 2023-02-21
 
 #### 🛠 Internals
