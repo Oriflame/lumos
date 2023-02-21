@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.3 - 2023-02-21
+
+#### 🛠 Internals
+
+- update dependency caniuse-lite to v1.0.30001457 (#1178) ([c7b33a9](https://github.com/Oriflame/lumos/commit/c7b33a99f8f883db456b863d55e876a49a8716cc)), work items [#1178](https://github.com/Oriflame/lumos/issues/1178)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.15.2 - 2023-02-21
 
 #### 🛠 Internals
