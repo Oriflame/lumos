@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.4 - 2023-02-21
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. ([9db2174](https://github.com/Oriflame/lumos/commit/9db217438b3ac229b12453b985ed0bceaf3bf994))
+- update dependency husky to ^8.0.3 (#1190) ([be2402f](https://github.com/Oriflame/lumos/commit/be2402f74a207ce77de148a897030858f79cc73e)), work items [#1190](https://github.com/Oriflame/lumos/issues/1190)
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.15.3 - 2023-02-21
 
 #### 🛠 Internals
