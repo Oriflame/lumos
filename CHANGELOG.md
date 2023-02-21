@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.1 - 2023-02-21
+
+#### 🛠 Internals
+
+- Fix GitHub workflow. ([7f9fc22](https://github.com/Oriflame/lumos/commit/7f9fc225b5ad476e580ea6e5722c154a79e6b760))
+- Regenerate yarn lock. ([90ea9d7](https://github.com/Oriflame/lumos/commit/90ea9d78fc22e07208d08fa53fb89b33bb2772ba))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ## 5.15.0 - 2023-02-21
 
 #### 🚀 Updates
