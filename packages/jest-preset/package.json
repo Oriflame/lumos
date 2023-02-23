@@ -1,5 +1,5 @@
 {
-  "name": "jest-preset-oriflame",
+  "name": "@oriflame/jest-preset",
   "version": "5.15.6",
   "description": "Jest preset for lumos configured projects.",
   "keywords": [

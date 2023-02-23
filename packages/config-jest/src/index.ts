@@ -74,7 +74,7 @@ export function getConfig({
   setupFilesAfterEnv.push('@testing-library/jest-dom/extend-expect');
 
   const config: JestConfig = {
-    preset: 'jest-preset-oriflame',
+    preset: '@oriflame/jest-preset',
     bail: false,
     collectCoverageFrom: [createCoveragePattern(srcFolder), createCoveragePattern(testsFolder)],
     collectCoverage: true,

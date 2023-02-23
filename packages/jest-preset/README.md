@@ -1,12 +1,12 @@
-# jest-preset-oriflame
+# @oriflame/jest-preset
 
 Sharable jest preset.
 
 ## Installation
 
 ```sh
-npm install --save-dev jest-preset-oriflame jest
-yarn add --dev jest-preset-oriflame jest
+npm install --save-dev @oriflame/jest-preset jest
+yarn add --dev @oriflame/jest-preset jest
 ```
 
 ## Usage
@@ -15,6 +15,6 @@ yarn add --dev jest-preset-oriflame jest
 
 ```javascript
 module.exports = {
-  preset: 'jest-preset-oriflame',
+  preset: '@oriflame/jest-preset',
 };
 ```
