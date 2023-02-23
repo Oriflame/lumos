@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "@oriflame/lumos-common": "^5.15.6",
-    "tsconfig-oriflame": "^5.15.6"
+    "@oriflame/tsconfig": "^5.15.6"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.4",

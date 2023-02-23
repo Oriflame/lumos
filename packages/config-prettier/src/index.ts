@@ -2,7 +2,7 @@ import type { PrettierConfig } from '@beemo/driver-prettier';
 import { IGNORE_PATHS } from '@oriflame/lumos-common';
 
 const config = {
-  ...(require('prettier-config-oriflame') as PrettierConfig),
+  ...(require('@oriflame/prettier-config') as PrettierConfig),
   ignore: [
     ...IGNORE_PATHS,
     'npm-shrinkwrap.json',

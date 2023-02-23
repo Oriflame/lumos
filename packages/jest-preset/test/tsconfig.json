@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig-oriflame/tsconfig.workspaces.json",
+  "extends": "@oriflame/tsconfig/tsconfig.workspaces.json",
   "compilerOptions": {
     "composite": false,
     "emitDeclarationOnly": false,

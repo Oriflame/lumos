@@ -1,3 +1,3 @@
 module.exports = {
-  preset: 'jest-preset-oriflame',
+  preset: '@oriflame/jest-preset',
 };

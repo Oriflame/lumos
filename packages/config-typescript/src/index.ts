@@ -1,7 +1,7 @@
 import type { TypeScriptConfig } from '@beemo/driver-typescript';
 import { ALIAS_PATTERN } from '@oriflame/lumos-common';
 
-const config = require('tsconfig-oriflame/tsconfig.json') as TypeScriptConfig;
+const config = require('@oriflame/tsconfig/tsconfig.json') as TypeScriptConfig;
 
 const compilerOptions = config.compilerOptions!;
 
@@ -40,7 +40,7 @@ export function getCompilerOptions({
   if (workspaces) {
     Object.assign(
       compilerOptions,
-      (require('tsconfig-oriflame/tsconfig.workspaces.json') as TypeScriptConfig).compilerOptions,
+      (require('@oriflame/tsconfig/tsconfig.workspaces.json') as TypeScriptConfig).compilerOptions,
     );
   }
   // Do we need isolated modules?

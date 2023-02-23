@@ -1,12 +1,12 @@
-# tsconfig-oriflame
+# @oriflame/tsconfig
 
 Sharable typescript configuration.
 
 ## Installation
 
 ```sh
-npm install --save-dev tsconfig-oriflame typescript
-yarn add --dev tsconfig-oriflame typescript
+npm install --save-dev @oriflame/tsconfig typescript
+yarn add --dev @oriflame/tsconfig typescript
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ yarn add --dev tsconfig-oriflame typescript
 
 ```json
 {
-  "extends": "tsconfig-oriflame"
+  "extends": "@oriflame/tsconfig"
 }
 ```
 
@@ -23,6 +23,6 @@ Or
 
 ```json
 {
-  "extends": "tsconfig-oriflame/tsconfig.workspace.json"
+  "extends": "@oriflame/tsconfig/tsconfig.workspace.json"
 }
 ```
