@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.7 - 2023-02-23
+
+#### 🐞 Fixes
+
+- Rename package to use [@oriflame](https://github.com/oriflame) namespace. (#1194) ([0c25587](https://github.com/Oriflame/lumos/commit/0c25587778c7779e2b3c9d65044fd972f073e700)), work items [#1194](https://github.com/Oriflame/lumos/issues/1194)
+
+**Note:** Version bump only for package @oriflame/config-danger
+
+
+
+
+
 ### 5.15.6 - 2023-02-21
 
 **Note:** Version bump only for package @oriflame/config-danger
