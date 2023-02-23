@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.8 - 2023-02-23
+
+#### 🐞 Fixes
+
+- Rename package to use [@oriflame](https://github.com/oriflame) namespace. (#1195) ([f2b48c9](https://github.com/Oriflame/lumos/commit/f2b48c9431dc523774bed452f673d6e6b4fe6316)), work items [#1195](https://github.com/Oriflame/lumos/issues/1195)
+
+**Note:** Version bump only for package @oriflame/eslint-config
+
+
+
+
+
 ### 5.15.7 - 2023-02-23
 
 #### 🐞 Fixes
