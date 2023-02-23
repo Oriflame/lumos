@@ -1,12 +1,12 @@
-# `eslint-config-oriflame`
+# `@oriflame/eslint-config`
 
 Sharable configuration for eslint.
 
 ## Installation
 
 ```sh
-npm install --save-dev eslint-config-oriflame eslint
-yarn add --dev eslint-config-oriflame eslint
+npm install --save-dev @oriflame/eslint-config eslint
+yarn add --dev @oriflame/eslint-config eslint
 ```
 
 ## Usage

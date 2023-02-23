@@ -29,8 +29,8 @@
     "src/**/*.{ts,tsx,json}"
   ],
   "dependencies": {
-    "@oriflame/lumos-common": "^5.15.7",
-    "eslint-config-oriflame": "^5.15.7"
+    "@oriflame/eslint-config": "^5.15.7",
+    "@oriflame/lumos-common": "^5.15.7"
   },
   "devDependencies": {
     "@beemo/core": "^2.1.4",

@@ -16,26 +16,26 @@ export function getConfig({
   nextjs = false,
   prettier = false,
 }: ESLintOptions): ESLintConfig {
-  const presets = ['oriflame'];
+  const presets = ['@oriflame/eslint-config'];
 
   if (future) {
-    presets.push('oriflame/future');
+    presets.push('@oriflame/eslint-config/future');
   }
 
   if (node) {
-    presets.push('oriflame/node');
+    presets.push('@oriflame/eslint-config/node');
   }
 
   if (typescript) {
-    presets.push('oriflame/typescript');
+    presets.push('@oriflame/eslint-config/typescript');
   }
 
   if (nextjs) {
-    presets.push('oriflame/nextjs');
+    presets.push('@oriflame/eslint-config/nextjs');
   }
 
   if (prettier) {
-    presets.push('oriflame/prettier');
+    presets.push('@oriflame/eslint-config/prettier');
   }
 
   return {
