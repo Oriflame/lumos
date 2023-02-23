@@ -5994,7 +5994,7 @@ __metadata:
     "@beemo/core": ^2.1.4
     "@beemo/driver-typescript": ^2.1.2
     "@oriflame/lumos-common": ^5.15.6
-    tsconfig-oriflame: ^5.15.6
+    "@oriflame/tsconfig": ^5.15.6
     typescript: ^4.7.4
   peerDependencies:
     "@beemo/core": ^2.1.2
@@ -6146,6 +6146,12 @@ __metadata:
       optional: true
   bin:
     lumos: ./bin/lumos
+  languageName: unknown
+  linkType: soft
+
+"@oriflame/tsconfig@^5.15.6, @oriflame/tsconfig@workspace:packages/tsconfig":
+  version: 0.0.0-use.local
+  resolution: "@oriflame/tsconfig@workspace:packages/tsconfig"
   languageName: unknown
   linkType: soft
 
@@ -19591,12 +19597,6 @@ __metadata:
   checksum: 7d1aa7aa3ae1c0459c4922ed0dbfbade442cfe0c25aebaf620cdf1774f112c8d7a9b14934cb6719274917f35b2c503ba87bcaf5e16a0d39ba0f68ce3e7728363
   languageName: node
   linkType: hard
-
-"tsconfig-oriflame@^5.15.6, tsconfig-oriflame@workspace:packages/tsconfig":
-  version: 0.0.0-use.local
-  resolution: "tsconfig-oriflame@workspace:packages/tsconfig"
-  languageName: unknown
-  linkType: soft
 
 "tsconfig-paths-webpack-plugin@npm:^3.5.2":
   version: 3.5.2

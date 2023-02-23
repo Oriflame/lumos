@@ -9,7 +9,7 @@
     "dts",
     "test"
   ],
-  "extends": "tsconfig-oriflame/tsconfig.workspaces.json",
+  "extends": "@oriflame/tsconfig/tsconfig.workspaces.json",
   "include": [
     "src/**/*",
     "types/**/*",
