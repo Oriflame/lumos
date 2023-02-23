@@ -1,10 +1,10 @@
-# prettier-config-oriflame
+# @oriflame/prettier-config
 
 ## Installation
 
 ```sh
-npm install --save-dev prettier-config-oriflame prettier
-yarn add --dev prettier-config-oriflame prettier
+npm install --save-dev @oriflame/prettier-config prettier
+yarn add --dev @oriflame/prettier-config prettier
 ```
 
 ## Usage
@@ -13,21 +13,21 @@ yarn add --dev prettier-config-oriflame prettier
 
 ```json
 {
-  "prettier": "prettier-config-oriflame"
+  "prettier": "@oriflame/prettier-config"
 }
 ```
 
 `.prettierrc`:
 
 ```javascript
-module.exports = 'prettier-config-oriflame';
+module.exports = '@oriflame/prettier-config';
 ```
 
 or you can override part of the config
 
 ```javascript
 module.exports = {
-  ...require('prettier-config-oriflame'),
+  ...require('@oriflame/prettier-config'),
   semi: false,
 };
 ```

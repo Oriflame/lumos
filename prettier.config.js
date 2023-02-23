@@ -1,1 +1,1 @@
-module.exports = 'prettier-config-oriflame';
+module.exports = '@oriflame/prettier-config';

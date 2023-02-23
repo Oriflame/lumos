@@ -5977,9 +5977,9 @@ __metadata:
     "@beemo/core": ^2.1.4
     "@beemo/driver-prettier": ^2.0.6
     "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/prettier-config": ^5.15.6
     "@types/prettier": ^2.6.3
     prettier: ^2.7.1
-    prettier-config-oriflame: ^5.15.6
   peerDependencies:
     "@beemo/core": ^2.1.2
     "@beemo/driver-prettier": ^2.0.4
@@ -6146,6 +6146,12 @@ __metadata:
       optional: true
   bin:
     lumos: ./bin/lumos
+  languageName: unknown
+  linkType: soft
+
+"@oriflame/prettier-config@^5.15.6, @oriflame/prettier-config@workspace:packages/prettier-config":
+  version: 0.0.0-use.local
+  resolution: "@oriflame/prettier-config@workspace:packages/prettier-config"
   languageName: unknown
   linkType: soft
 
@@ -17316,12 +17322,6 @@ __metadata:
   checksum: c4867c87488e4a0c233e158e4d0d5565b609b105d75e4c05dc760840475f06b731332eb93cc8c9cecb840aa8ec323ca3c9a56ad7820ad2e63f0261dadcb154e4
   languageName: node
   linkType: hard
-
-"prettier-config-oriflame@^5.15.6, prettier-config-oriflame@workspace:packages/prettier-config":
-  version: 0.0.0-use.local
-  resolution: "prettier-config-oriflame@workspace:packages/prettier-config"
-  languageName: unknown
-  linkType: soft
 
 "prettier-linter-helpers@npm:^1.0.0":
   version: 1.0.0
