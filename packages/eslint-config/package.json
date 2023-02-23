@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-oriflame",
+  "name": "@oriflame/eslint-config",
   "version": "5.15.7",
   "description": "Reusable ESLint config for oriflame project",
   "keywords": [
