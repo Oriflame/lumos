@@ -5837,7 +5837,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oriflame/babel-preset@^5.15.6, @oriflame/babel-preset@workspace:packages/babel-preset":
+"@oriflame/babel-preset@^5.15.7, @oriflame/babel-preset@workspace:packages/babel-preset":
   version: 0.0.0-use.local
   resolution: "@oriflame/babel-preset@workspace:packages/babel-preset"
   dependencies:
@@ -5852,7 +5852,7 @@ __metadata:
     "@babel/preset-react": ^7.18.6
     "@babel/preset-typescript": ^7.18.6
     "@emotion/babel-plugin": ^11.9.2
-    "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/lumos-common": ^5.15.7
     babel-plugin-graphql-tag: ^3.3.0
     babel-plugin-module-resolver: ^4.1.0
     babel-plugin-optimize-clsx: ^2.6.2
@@ -5875,15 +5875,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-babel@^5.15.6, @oriflame/config-babel@workspace:packages/config-babel":
+"@oriflame/config-babel@^5.15.7, @oriflame/config-babel@workspace:packages/config-babel":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-babel@workspace:packages/config-babel"
   dependencies:
     "@babel/core": ^7.18.6
     "@beemo/core": ^2.1.4
     "@beemo/driver-babel": ^2.0.6
-    "@oriflame/babel-preset": ^5.15.6
-    "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/babel-preset": ^5.15.7
+    "@oriflame/lumos-common": ^5.15.7
     babel-test: ^0.2.4
     jest-file-snapshot: ^0.5.0
     react: ^18.2.0
@@ -5901,7 +5901,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-danger@^5.15.6, @oriflame/config-danger@workspace:packages/config-danger":
+"@oriflame/config-danger@^5.15.7, @oriflame/config-danger@workspace:packages/config-danger":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-danger@workspace:packages/config-danger"
   dependencies:
@@ -5911,16 +5911,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-eslint@^5.15.6, @oriflame/config-eslint@workspace:packages/config-eslint":
+"@oriflame/config-eslint@^5.15.7, @oriflame/config-eslint@workspace:packages/config-eslint":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-eslint@workspace:packages/config-eslint"
   dependencies:
     "@beemo/core": ^2.1.4
     "@beemo/driver-eslint": ^2.0.5
-    "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/lumos-common": ^5.15.7
     "@types/node": ^16.11.41
     eslint: ^8.18.0
-    eslint-config-oriflame: ^5.15.6
+    eslint-config-oriflame: ^5.15.7
   peerDependencies:
     "@beemo/core": ^2.1.2
     "@beemo/driver-eslint": ^2.0.3
@@ -5935,7 +5935,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-jest@^5.15.6, @oriflame/config-jest@workspace:packages/config-jest":
+"@oriflame/config-jest@^5.15.7, @oriflame/config-jest@workspace:packages/config-jest":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-jest@workspace:packages/config-jest"
   dependencies:
@@ -5944,8 +5944,8 @@ __metadata:
     "@beemo/driver-babel": ^2.0.6
     "@beemo/driver-jest": ^2.0.5
     "@emotion/jest": ^11.9.3
-    "@oriflame/jest-preset": ^5.15.6
-    "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/jest-preset": ^5.15.7
+    "@oriflame/lumos-common": ^5.15.7
     "@testing-library/jest-dom": ^5.16.4
     "@types/jest": ^27.5.2
     dom-storage: ^2.1.0
@@ -5970,14 +5970,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-prettier@^5.15.6, @oriflame/config-prettier@workspace:packages/config-prettier":
+"@oriflame/config-prettier@^5.15.7, @oriflame/config-prettier@workspace:packages/config-prettier":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-prettier@workspace:packages/config-prettier"
   dependencies:
     "@beemo/core": ^2.1.4
     "@beemo/driver-prettier": ^2.0.6
-    "@oriflame/lumos-common": ^5.15.6
-    "@oriflame/prettier-config": ^5.15.6
+    "@oriflame/lumos-common": ^5.15.7
+    "@oriflame/prettier-config": ^5.15.7
     "@types/prettier": ^2.6.3
     prettier: ^2.7.1
   peerDependencies:
@@ -5987,14 +5987,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-typescript@^5.15.6, @oriflame/config-typescript@workspace:packages/config-typescript":
+"@oriflame/config-typescript@^5.15.7, @oriflame/config-typescript@workspace:packages/config-typescript":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-typescript@workspace:packages/config-typescript"
   dependencies:
     "@beemo/core": ^2.1.4
     "@beemo/driver-typescript": ^2.1.2
-    "@oriflame/lumos-common": ^5.15.6
-    "@oriflame/tsconfig": ^5.15.6
+    "@oriflame/lumos-common": ^5.15.7
+    "@oriflame/tsconfig": ^5.15.7
     typescript: ^4.7.4
   peerDependencies:
     "@beemo/core": ^2.1.2
@@ -6003,7 +6003,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/config-webpack@^5.15.6, @oriflame/config-webpack@workspace:packages/config-webpack":
+"@oriflame/config-webpack@^5.15.7, @oriflame/config-webpack@workspace:packages/config-webpack":
   version: 0.0.0-use.local
   resolution: "@oriflame/config-webpack@workspace:packages/config-webpack"
   dependencies:
@@ -6013,7 +6013,7 @@ __metadata:
     "@boost/args": ^3.0.1
     "@boost/module": ^3.1.0
     "@module-federation/concat-runtime": ^0.0.1
-    "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/lumos-common": ^5.15.7
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
     "@types/webpack-bundle-analyzer": ^4.4.2
     babel-loader: ^8.2.5
@@ -6092,12 +6092,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oriflame/jest-preset@^5.15.6, @oriflame/jest-preset@workspace:packages/jest-preset":
+"@oriflame/jest-preset@^5.15.7, @oriflame/jest-preset@workspace:packages/jest-preset":
   version: 0.0.0-use.local
   resolution: "@oriflame/jest-preset@workspace:packages/jest-preset"
   dependencies:
     "@jest/types": ^28.1.1
-    "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/lumos-common": ^5.15.7
     "@types/jest": ^27.5.2
     jest: ^28.1.2
     jest-junit: ^14.0.0
@@ -6106,7 +6106,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/lumos-common@^5.15.6, @oriflame/lumos-common@workspace:packages/lumos-common":
+"@oriflame/lumos-common@^5.15.7, @oriflame/lumos-common@workspace:packages/lumos-common":
   version: 0.0.0-use.local
   resolution: "@oriflame/lumos-common@workspace:packages/lumos-common"
   dependencies:
@@ -6134,15 +6134,15 @@ __metadata:
     "@boost/common": ^3.2.1
     "@boost/module": ^3.1.0
     "@octokit/rest": ^18.12.0
-    "@oriflame/config-babel": ^5.15.6
-    "@oriflame/config-danger": ^5.15.6
-    "@oriflame/config-eslint": ^5.15.6
-    "@oriflame/config-jest": ^5.15.6
-    "@oriflame/config-prettier": ^5.15.6
-    "@oriflame/config-typescript": ^5.15.6
-    "@oriflame/config-webpack": ^5.15.6
+    "@oriflame/config-babel": ^5.15.7
+    "@oriflame/config-danger": ^5.15.7
+    "@oriflame/config-eslint": ^5.15.7
+    "@oriflame/config-jest": ^5.15.7
+    "@oriflame/config-prettier": ^5.15.7
+    "@oriflame/config-typescript": ^5.15.7
+    "@oriflame/config-webpack": ^5.15.7
     "@oriflame/conventional-changelog": ^1.2.58
-    "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/lumos-common": ^5.15.7
     chalk: ^5.0.1
     check-node-version: ^4.2.1
     cross-env: ^7.0.3
@@ -6163,13 +6163,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@oriflame/prettier-config@^5.15.6, @oriflame/prettier-config@workspace:packages/prettier-config":
+"@oriflame/prettier-config@^5.15.7, @oriflame/prettier-config@workspace:packages/prettier-config":
   version: 0.0.0-use.local
   resolution: "@oriflame/prettier-config@workspace:packages/prettier-config"
   languageName: unknown
   linkType: soft
 
-"@oriflame/tsconfig@^5.15.6, @oriflame/tsconfig@workspace:packages/tsconfig":
+"@oriflame/tsconfig@^5.15.7, @oriflame/tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "@oriflame/tsconfig@workspace:packages/tsconfig"
   languageName: unknown
@@ -10639,14 +10639,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-oriflame@^5.15.6, eslint-config-oriflame@workspace:packages/eslint-config":
+"eslint-config-oriflame@^5.15.7, eslint-config-oriflame@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "eslint-config-oriflame@workspace:packages/eslint-config"
   dependencies:
     "@babel/core": ^7.18.6
     "@babel/eslint-parser": ^7.18.2
     "@next/eslint-plugin-next": ^12.2.0
-    "@oriflame/lumos-common": ^5.15.6
+    "@oriflame/lumos-common": ^5.15.7
     "@types/confusing-browser-globals": ^1.0.0
     "@types/node": ^16.11.41
     "@typescript-eslint/eslint-plugin": ^5.30.0
@@ -12405,9 +12405,9 @@ __metadata:
   linkType: hard
 
 "http-cache-semantics@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "http-cache-semantics@npm:4.1.0"
-  checksum: 974de94a81c5474be07f269f9fd8383e92ebb5a448208223bfb39e172a9dbc26feff250192ecc23b9593b3f92098e010406b0f24bd4d588d631f80214648ed42
+  version: 4.1.1
+  resolution: "http-cache-semantics@npm:4.1.1"
+  checksum: 83ac0bc60b17a3a36f9953e7be55e5c8f41acc61b22583060e8dedc9dd5e3607c823a88d0926f9150e571f90946835c7fe150732801010845c72cd8bbff1a236
   languageName: node
   linkType: hard
 
