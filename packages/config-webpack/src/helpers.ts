@@ -96,6 +96,13 @@ export function getPlugins({
     plugins.push(new ReactRefreshWebpackPlugin());
   }
 
+  plugins.push(
+    new webpack.NormalModuleReplacementPlugin(/^node:/, (resource) => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, no-param-reassign -- `NormalModuleReplacementPlugin` has bad typings
+      resource.request = resource.request.replace(/^node:/, '');
+    }),
+  );
+
   return plugins;
 }
 
