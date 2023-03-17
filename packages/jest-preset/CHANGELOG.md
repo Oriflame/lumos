@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.9 - 2023-03-17
+
+**Note:** Version bump only for package @oriflame/jest-preset
+
+
+
+
+
 ### 5.15.8 - 2023-02-23
 
 **Note:** Version bump only for package @oriflame/jest-preset

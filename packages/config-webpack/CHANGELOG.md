@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.9 - 2023-03-17
+
+#### 🐞 Fixes
+
+- Deal with internal packages with node: prefix. (#1198) ([eed890e](https://github.com/Oriflame/lumos/commit/eed890ee521f352d625d1c0f77a2f1eea6d94283)), work items [#1198](https://github.com/Oriflame/lumos/issues/1198)
+
+**Note:** Version bump only for package @oriflame/config-webpack
+
+
+
+
+
 ### 5.15.8 - 2023-02-23
 
 **Note:** Version bump only for package @oriflame/config-webpack
