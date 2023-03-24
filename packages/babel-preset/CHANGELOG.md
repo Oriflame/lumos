@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.10 - 2023-03-24
+
+**Note:** Version bump only for package @oriflame/babel-preset
+
+
+
+
+
 ### 5.15.9 - 2023-03-17
 
 **Note:** Version bump only for package @oriflame/babel-preset
