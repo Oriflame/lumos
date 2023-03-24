@@ -42,6 +42,7 @@ const config: eslint.Linter.Config['rules'] = {
         `**/webpack.config.${JSX_EXTS_GROUP}`,
         `**/webpack.config.*.${JSX_EXTS_GROUP}`,
         `tools/**/*.${JSX_EXTS_GROUP}`,
+        `./*.${JSX_EXTS_GROUP}`,
       ],
       optionalDependencies: false,
     },
