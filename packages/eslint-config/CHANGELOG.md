@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.11 - 2023-03-24
+
+#### 🐞 Fixes
+
+- Fix `import/no-extraneous-dependencies` ESLint rule. (#1201) ([ac2dd0e](https://github.com/Oriflame/lumos/commit/ac2dd0ef3d824309f64719366f1280cffcf813c3)), work items [#1201](https://github.com/Oriflame/lumos/issues/1201)
+
+**Note:** Version bump only for package @oriflame/eslint-config
+
+
+
+
+
 ### 5.15.10 - 2023-03-24
 
 #### 🐞 Fixes
