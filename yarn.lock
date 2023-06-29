@@ -6190,7 +6190,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@oriflame/lumos-common@workspace:packages/lumos-common"
   dependencies:
-    "@beemo/core": ^2.1.4
     json5: ^2.2.1
   languageName: unknown
   linkType: soft
