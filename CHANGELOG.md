@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.14 - 2023-06-29
+
+#### 🐞 Fixes
+
+- Remove unnecessary @beemo/core dependency. (#1204) ([0c99298](https://github.com/Oriflame/lumos/commit/0c99298b219d13e06547c142cda2173c1547630f)), work items [#1204](https://github.com/Oriflame/lumos/issues/1204)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([0a78214](https://github.com/Oriflame/lumos/commit/0a78214e3107d88bb1ccefb7feb0c9daf82e3abe))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.15.13 - 2023-05-10
 
 #### 📦 Dependencies
