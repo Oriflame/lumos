@@ -1,6 +1,6 @@
 {
   "name": "@oriflame/tsconfig",
-  "version": "5.15.14",
+  "version": "5.15.15",
   "release": "1624590167003",
   "description": "Pre-packaged tsconfig.json's for oriflame configured projects.",
   "keywords": [

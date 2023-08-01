@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 5.15.15 - 2023-08-01
+
+#### 📦 Dependencies
+
+- update babel monorepo (#1205) ([4a45935](https://github.com/Oriflame/lumos/commit/4a4593541d3a3c40a04881a4b3f48171bb54d652)), work items [#1205](https://github.com/Oriflame/lumos/issues/1205)
+
+#### 🛠 Internals
+
+- Regenerate yarn lock. [ci skip] ([fae763d](https://github.com/Oriflame/lumos/commit/fae763dda087ba1c07e6030bb272bf0eae9442bb))
+
+**Note:** Version bump only for package lumos-root
+
+
+
+
+
 ### 5.15.14 - 2023-06-29
 
 #### 🐞 Fixes
