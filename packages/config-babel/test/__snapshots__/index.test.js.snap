@@ -4,21 +4,16 @@ exports[`babel typescript test typescript decorators 1`] = `
 "\\"use strict\\";
 
 var _interopRequireDefault = require(\\"@babel/runtime/helpers/interopRequireDefault\\");
-
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
 exports.default = void 0;
-
 var _applyDecoratedDescriptor2 = _interopRequireDefault(require(\\"@babel/runtime/helpers/applyDecoratedDescriptor\\"));
-
 var _class;
-
 let Cls = (_class = class Cls {
   foo() {
     console.log('Test');
   }
-
 }, ((0, _applyDecoratedDescriptor2.default)(_class.prototype, \\"foo\\", [decorator], Object.getOwnPropertyDescriptor(_class.prototype, \\"foo\\"), _class.prototype)), _class);
 ;
 var _default = Cls;
@@ -29,32 +24,23 @@ exports[`babel typescript test typescript transpilation 1`] = `
 "\\"use strict\\";
 
 var _interopRequireDefault = require(\\"@babel/runtime/helpers/interopRequireDefault\\");
-
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
 exports.default = void 0;
-
 var _classPrivateFieldSet2 = _interopRequireDefault(require(\\"@babel/runtime/helpers/classPrivateFieldSet\\"));
-
 function _classPrivateFieldInitSpec(obj, privateMap, value) { _checkPrivateRedeclaration(obj, privateMap); privateMap.set(obj, value); }
-
 function _checkPrivateRedeclaration(obj, privateCollection) { if (privateCollection.has(obj)) { throw new TypeError(\\"Cannot initialize the same private elements twice on an object\\"); } }
-
 var _initialized = /*#__PURE__*/new WeakMap();
-
 class Cls {
   constructor() {
     _classPrivateFieldInitSpec(this, _initialized, {
       writable: true,
       value: false
     });
-
     (0, _classPrivateFieldSet2.default)(this, _initialized, true);
   }
-
 }
-
 ;
 var _default = Cls;
 exports.default = _default;"
