@@ -39,7 +39,7 @@
     "@emotion/jest": "^11.9.3",
     "@oriflame/jest-preset": "^5.15.15",
     "@oriflame/lumos-common": "^5.15.15",
-    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/jest-dom": "^5.17.0",
     "@types/jest": "^27.5.2",
     "dom-storage": "^2.1.0",
     "graphql": "^16.5.0",
