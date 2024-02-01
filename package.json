@@ -49,7 +49,7 @@
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
     "husky": "^8.0.3",
-    "jest": "^28.1.2",
+    "jest": "^29.7.0",
     "lerna": "^5.1.6",
     "packemon": "^2.3.1",
     "prettier": "^2.7.1",
