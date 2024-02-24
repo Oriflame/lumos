@@ -58,7 +58,7 @@
     "eslint-plugin-unicorn": "^47.0.0"
   },
   "devDependencies": {
-    "@types/confusing-browser-globals": "^1.0.0",
+    "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "^16.11.41",
     "eslint": "^8.40.0",
     "prettier": "^2.7.1",

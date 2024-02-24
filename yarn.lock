@@ -6488,7 +6488,7 @@ __metadata:
     "@babel/eslint-parser": ^7.22.9
     "@next/eslint-plugin-next": ^12.2.0
     "@oriflame/lumos-common": ^5.15.15
-    "@types/confusing-browser-globals": ^1.0.0
+    "@types/confusing-browser-globals": ^1.0.3
     "@types/node": ^16.11.41
     "@typescript-eslint/eslint-plugin": ^5.30.0
     "@typescript-eslint/parser": ^5.30.0
@@ -7042,10 +7042,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/confusing-browser-globals@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@types/confusing-browser-globals@npm:1.0.0"
-  checksum: ffe4292de02ca2f012d0402b2b66fc69b7973e53c3f7552abeb756f47ba175faa79043ba90fe44c402e93210ad2187d5e20dc84b47b5c810f1d64ecef15b2837
+"@types/confusing-browser-globals@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@types/confusing-browser-globals@npm:1.0.3"
+  checksum: 596d9ea69fb2b6e5be9b37560e86593a0992e8554850de1a790aea66407c9453b78bc86909da5fd9f4fede99d7652c2b0dfeb9f89ef5d8eca35fadaca3271707
   languageName: node
   linkType: hard
 
