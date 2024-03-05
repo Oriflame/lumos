@@ -60,5 +60,5 @@
   "resolutions": {
     "caniuse-lite": "1.0.30001457"
   },
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.8.1"
 }
